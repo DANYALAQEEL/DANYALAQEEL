@@ -11,7 +11,7 @@
 ![](https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=DANYALAQEEL&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=DANYALAQEEL&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=dark)
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
