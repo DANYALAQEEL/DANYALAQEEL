@@ -60,9 +60,9 @@
 ---
 
 ## 📌 Featured Projects
-🔹 Add your best repositories here to showcase your work  
-🔹 Focus on quality projects instead of quantity  
-🔹 Keep descriptions short and impactful  
+🔹 Pool Game with Online database
+🔹 CHESS Game Full implementation 
+🔹 RDM.NEXUS CORD-19 Search Engine (online deployed)
 
 ---
 
