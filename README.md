@@ -3,7 +3,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
-  <a href="https://portfolio-five-gamma-44.vercel.app/"><img src="https://img.shields.io/badge/Live_Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A&color=10B981" alt="Portfolio"/></a>
+  <a href="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=30&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=400&lines=ACCESS+DENIED;Contact+Node+for+Clearance;Portfolio+Link+is+Private" target="_blank"><img src="https://img.shields.io/badge/Live_Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A&color=10B981" alt="Portfolio"/></a>
   <a href="https://www.linkedin.com/in/danyal-aqeel-853431404/"><img src="https://img.shields.io/badge/LinkedIn-Node_Connected-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=0A0A0A&color=10B981" alt="LinkedIn"/></a>
   <a href="mailto:raqeel.bese24seecs@seecs.edu.pk"><img src="https://img.shields.io/badge/Email-Comm_Link-0A0A0A?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0A0A0A&color=10B981" alt="Email"/></a>
   <br><br>
