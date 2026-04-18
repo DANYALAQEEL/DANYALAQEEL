@@ -83,6 +83,16 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <br>
 
+### ♟️ 05. Tactical Execution (Playable Node)
+> Visitors from around the world can click on a piece below to make a move. The board updates automatically! Let's see if the internet can outplay my logic.
+
+<div align="center">
+<!-- BEGIN SECTION: Chess -->
+<!-- END SECTION: Chess -->
+</div>
+
+<br>
+
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
 </div>
