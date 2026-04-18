@@ -1,80 +1,67 @@
-<h1 align="center">Hi 👋, I'm Danyal</h1>
-<h3 align="center">Software Engineering Student | Problem Solver | Future Developer</h3>
+<div align="center">
+
+# 🔲 Danyal Aqeel
+
+**Backend & Search Architect | Engineering Scalable Intelligence**
 
 <p align="center">
-  <a href="https://github.com/DANYALAQEEL">
-    <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&label=Profile%20views&color=0e75b6&style=flat" alt="views"/>
-  </a>
+  <a href="https://portfolio-five-gamma-44.vercel.app/">Portfolio Node</a> •
+  <a href="https://www.linkedin.com/in/danyal-aqeel-853431404/">LinkedIn Profile</a> •
+  <a href="mailto:raqeel.bese24seecs@seecs.edu.pk">Email Comm Link</a>
 </p>
 
----
-
-## 🧠 About Me
-🎓 Software Engineering student at NUST  
-💻 Focused on Software Development and Problem Solving  
-🚀 Currently learning Java, C++, Data Structures, and Operating Systems  
-⚡ Building projects to strengthen logic and real-world development skills  
+</div>
 
 ---
 
-## 🔭 Current Focus
-• Data Structures & Algorithms mastery  
-• Java-based application development  
-• Writing clean, efficient, and scalable code  
+### ⚡ System Overview
+
+I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
+
+*   🎓 **Current Vector:** Software Engineering Undergraduate at NUST.
+*   🔭 **Focus:** Optimizing search index pipelines, autonomous AI telemetry, and sub-second data retrieval.
 
 ---
 
-## 🌐 Connect With Me
-<p>
-<a href="https://facebook.com/DanyalAqeel"><img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white"/></a>
-<a href="https://instagram.com/_its_danyal_"><img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white"/></a>
-<a href="mailto:raqeel.bese24seecs@seecs.edu.pk"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white"/></a>
+### 🛠️ Core Stack & Architecture
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git" />
 </p>
 
----
-
-## 💻 Tech Stack
-<p>
-<img src="https://skillicons.dev/icons?i=cpp,java,python,mysql,git,github,docker"/>
-</p>
+*   **Architecture:** Vector & Semantic Search, Database Optimization, Docker Orchestration, Distributed Logic, Automated CI/CD.
 
 ---
 
-## 📊 GitHub Analytics
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img src="https://streak-stats.demolab.com?user=DANYALAQEEL&theme=tokyonight&hide_border=true"/>
-</p>
+### 📡 High-Yield Operations
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DANYALAQEEL&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
-
----
-
-## 🏆 Achievements
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=tokyonight&no-frame=true&margin-w=10"/>
-</p>
+| Operation Name | Technical Specs | Status |
+| :--- | :--- | :--- |
+| **[Carbon Sentinel (Tactical HUD)](https://github.com/DANYALAQEEL/fluidhack)** | Autonomous AI-driven environmental agent executing on-chain carbon offsets. Built with Flask, React, Web3, and Supabase. | `OPERATIONAL` |
+| **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)** | Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline. Handles massive vector search workloads. | `OPERATIONAL` |
+| **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)** | Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic and robust database pooling. | `OPERATIONAL` |
+| **[Technical Utility Suite](https://github.com/DANYALAQEEL/Technical-Utility-Suite)** | Elite collection of high-efficiency Python automation tools, including custom Computer Vision parsers. | `OPERATIONAL` |
 
 ---
 
-## 📌 Featured Projects
-🔹 Pool Game with Online database
-🔹 CHESS Game Full implementation 
-🔹 RDM.NEXUS CORD-19 Search Engine (online deployed)
+### 📊 GitHub Telemetry
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a" height="150" alt="Danyal's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DANYALAQEEL&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0a" height="150" alt="Top Languages" />
+</div>
 
 ---
 
-## 🎯 2026 Goals
-• Master Data Structures & Algorithms  
-• Build production-level backend projects  
-• Contribute to open source  
-• Strengthen problem-solving consistency  
+### ♟️ Parallel Processing (Interests)
 
----
+Beyond the terminal, I optimize my processing pathways through:
+*   **Strategic Cognition:** Intermediate Chess
+*   **Precision Mapping:** Realistic Target Sketching
+*   **Physical Optimization:** Competitive Performance Sports
+*   **Algorithmic Solving:** Rapid Rubik's Cube & Puzzle Execution
 
-## ⚡ Developer Mindset
-> Consistency beats intensity. Build daily, improve continuously.
-
----
+<div align="center">
+  <br>
+  <i>"Treating infrastructure as a resilient, dynamic ecosystem."</i>
+</div>
