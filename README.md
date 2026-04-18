@@ -1,67 +1,92 @@
 <div align="center">
 
-# 🔲 Danyal Aqeel
-
-**Backend & Search Architect | Engineering Scalable Intelligence**
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
-  <a href="https://portfolio-five-gamma-44.vercel.app/">Portfolio Node</a> •
-  <a href="https://www.linkedin.com/in/danyal-aqeel-853431404/">LinkedIn Profile</a> •
-  <a href="mailto:raqeel.bese24seecs@seecs.edu.pk">Email Comm Link</a>
+  <a href="https://portfolio-five-gamma-44.vercel.app/"><img src="https://img.shields.io/badge/Live_Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A&color=10B981" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/danyal-aqeel-853431404/"><img src="https://img.shields.io/badge/LinkedIn-Node_Connected-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=0A0A0A&color=10B981" alt="LinkedIn"/></a>
+  <a href="mailto:raqeel.bese24seecs@seecs.edu.pk"><img src="https://img.shields.io/badge/Email-Comm_Link-0A0A0A?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0A0A0A&color=10B981" alt="Email"/></a>
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&color=10B981&style=flat-square&label=PROFILE+HITS" alt="Visitors" />
 </p>
 
 </div>
 
----
+<br>
 
-### ⚡ System Overview
+<table width="100%" border="0">
+<tr>
+<td width="55%" valign="top">
+
+### 💡 01. The Mission Logic
 
 I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
 
-*   🎓 **Current Vector:** Software Engineering Undergraduate at NUST.
-*   🔭 **Focus:** Optimizing search index pipelines, autonomous AI telemetry, and sub-second data retrieval.
+- 🎓 **Current Vector:** Software Engineering Undergraduate at NUST.
+- 🔭 **Current Focus:** Optimizing massive vector search pipelines and autonomous AI telemetry.
+- ⚙️ **Architecture:** Distributed Logic, Automated CI/CD, Container Orchestration.
 
----
+</td>
+<td width="45%" align="center" valign="top">
 
-### 🛠️ Core Stack & Architecture
+### 🛠️ 02. Technical Arsenal
+<br>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git&perline=5" alt="Tech Stack" />
+</a>
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git" />
-</p>
+</td>
+</tr>
+</table>
 
-*   **Architecture:** Vector & Semantic Search, Database Optimization, Docker Orchestration, Distributed Logic, Automated CI/CD.
-
----
-
-### 📡 High-Yield Operations
-
-| Operation Name | Technical Specs | Status |
-| :--- | :--- | :--- |
-| **[Carbon Sentinel (Tactical HUD)](https://github.com/DANYALAQEEL/fluidhack)** | Autonomous AI-driven environmental agent executing on-chain carbon offsets. Built with Flask, React, Web3, and Supabase. | `OPERATIONAL` |
-| **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)** | Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline. Handles massive vector search workloads. | `OPERATIONAL` |
-| **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)** | Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic and robust database pooling. | `OPERATIONAL` |
-| **[Technical Utility Suite](https://github.com/DANYALAQEEL/Technical-Utility-Suite)** | Elite collection of high-efficiency Python automation tools, including custom Computer Vision parsers. | `OPERATIONAL` |
-
----
-
-### 📊 GitHub Telemetry
+### 📊 03. Global Telemetry
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a" height="150" alt="Danyal's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DANYALAQEEL&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0a" height="150" alt="Top Languages" />
+  <a href="https://github.com/DANYALAQEEL">
+  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981" width="48%" />
+  </a>
+  <a href="https://github.com/DANYALAQEEL">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="48%" />
+  </a>
 </div>
 
----
+<br>
 
-### ♟️ Parallel Processing (Interests)
+### 📡 04. High-Yield Operations
 
-Beyond the terminal, I optimize my processing pathways through:
-*   **Strategic Cognition:** Intermediate Chess
-*   **Precision Mapping:** Realistic Target Sketching
-*   **Physical Optimization:** Competitive Performance Sports
-*   **Algorithmic Solving:** Rapid Rubik's Cube & Puzzle Execution
+<table>
+  <thead>
+    <tr>
+      <th>Project System</th>
+      <th>Architectural Specs</th>
+      <th>Network Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b><a href="https://github.com/DANYALAQEEL/fluidhack">Carbon Sentinel</a></b></td>
+      <td>Autonomous AI-driven environmental agent executing on-chain offsets. Built with Flask, React, Web3, and Supabase.</td>
+      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/DANYALAQEEL/Search-Engine-Elite">Search Engine Elite</a></b></td>
+      <td>Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline. Core vector search capability.</td>
+      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/DANYALAQEEL/Production-Core-Engine">Production Core Engine</a></b></td>
+      <td>Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic and robust pooling.</td>
+      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
 
 <div align="center">
-  <br>
+  <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
+</div>
+
+<div align="center">
   <i>"Treating infrastructure as a resilient, dynamic ecosystem."</i>
 </div>
