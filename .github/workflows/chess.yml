@@ -1,0 +1,24 @@
+name: Playable Readme Chess
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Updates automatically if stuck
+  issue_comment:
+    types: [created] # Triggers instantly when someone makes a move
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-chess-board:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Chess Engine
+        uses: marcizhu/readme-chess@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTION_DIR: ./
