@@ -1,10 +1,13 @@
 name: Playable Readme Chess
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: "0 * * * *" # Updates automatically if stuck
+    - cron: "0 * * * *"
   issue_comment:
-    types: [created] # Triggers instantly when someone makes a move
+    types: [created]
 
 permissions:
   contents: write
