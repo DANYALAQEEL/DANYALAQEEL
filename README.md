@@ -1,5 +1,5 @@
 <div align="center">
-
+ 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
@@ -13,6 +13,14 @@
 </div>
 
 <br>
+
+```bash
++ [NODE_INIT] Booting backend consciousness matrix...
++ [IR_CORE] Loading Information Retrieval engines...
++ [SEC_MODULE] Resilience protocols: ACTIVE
++ [FULL_STACK] System orchestration: ONLINE
++ [STATUS] All nodes operational — ELITE MODE ENABLED
+```
 
 <table width="100%" border="0">
 <tr>
@@ -39,7 +47,30 @@ I view software as a living operational ecosystem. My work focuses on the inters
 </tr>
 </table>
 
-### 📊 03. Global Telemetry
+### 🧠 03. Core Competencies
+
+```python
+class BackendArchitect:
+    def __init__(self):
+        self.name = "Danyal Aqeel"
+        self.role = "System Resilience Engineer"
+        self.payload = {
+            'core_backend': ['FastAPI', 'Flask', 'Node.js', 'Rust'],
+            'search_ir': ['Elasticsearch', 'Redis', 'Vector DBs'],
+            'infrastructure': ['Docker', 'Kubernetes', 'CI/CD'],
+            'frontend': ['React', 'TypeScript', 'TailwindCSS']
+        }
+        
+    def execute_logic(self, system_load):
+        """
+        Architecture Philosophy: Build it fast, make it unbreakable.
+        """
+        return self.scale_horizontally(system_load)
+```
+
+<br>
+
+### 📊 04. Global Telemetry
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
@@ -56,7 +87,15 @@ I view software as a living operational ecosystem. My work focuses on the inters
 </div>
 <br>
 
-### 📡 04. High-Yield Operations
+<div align="center">
+  <a href="https://github.com/DANYALAQEEL">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0a0a0a&color=10B981&line=10B981&point=FFFFFF" width="100%" alt="Activity Graph" />
+  </a>
+</div>
+
+<br>
+
+### 📡 05. High-Yield Operations
 
 <table>
   <thead>
@@ -85,9 +124,20 @@ I view software as a living operational ecosystem. My work focuses on the inters
   </tbody>
 </table>
 
+```text
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  SYSTEM METRIC             │  VALUE           │  STATUS        ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃  IR Query Latency          │  <50ms           │  ✓ OPTIMAL     ┃
+┃  Uptime SLA                │  99.9%           │  ✓ EXCELLENT   ┃
+┃  System Resilience         │  Self-Healing    │  ✓ ACTIVE      ┃
+┃  Architecture Scalability  │  Infinite        │  ✓ VERIFIED    ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+```
+
 <br>
 
-### ♟️ 05. Tactical Execution (Terminal Chess Node)
+### ♟️ 06. Tactical Execution (Terminal Chess Node)
 > `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
 > Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
@@ -131,10 +181,30 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <br>
 
+---
+
+### 🏆 07. Achievement Matrix
+
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
 </div>
 
-<div align="center">
-  <i>"Treating infrastructure as a resilient, dynamic ecosystem."</i>
-</div>
+<br>
+
+---
+
+### 💻 TERMINAL LOGOUT
+
+```bash
+root@matrix:~$ current_focus
+[✓] Optimizing Vector Search Pipelines
+[✓] Autonomous AI Telemetry
+[✓] High-Availability Backend Orchestration
+[→] Advanced Neural Search Integration
+
+root@matrix:~$ echo "Treating infrastructure as a resilient, dynamic ecosystem."
+Treating infrastructure as a resilient, dynamic ecosystem.
+
+root@matrix:~$ logout
+Connection to node closed.
+```
