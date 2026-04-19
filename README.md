@@ -108,3 +108,12 @@ I view software as a living operational ecosystem. My work focuses on the inters
 > > 
 <!-- BEGIN CHESS BOARD -->
 <!-- END CHESS BOARD -->
+
+
+## Terminal Chess Engine
+> ENCRYPTED TRANSMISSION DETECTED...
+> > INITIATING CHESS SEQUENCE...
+> >
+> > <!-- BEGIN CHESS BOARD -->
+> > <!-- END CHESS BOARD -->
+> > 
