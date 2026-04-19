@@ -30,6 +30,4 @@ on:
                                                                                                                                                   python main.py
                                                                                                                                                   
                                                                                                                                                         - name: Commit and push changes
-                                                                                                                                                                env:
-                                                                                                                                                                          ISSUE_TITLE: ${{ github.event.issue.title }}
-                                                                                                                                                                                    ISSUE_AUTHOR: ${{ github.event.issue.
+                                                                                                                                                            
