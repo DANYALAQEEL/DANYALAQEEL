@@ -102,18 +102,21 @@ I view software as a living operational ecosystem. My work focuses on the inters
 </div>
 
 
+
+---
+
 ## Terminal Chess Engine
-> ENCRYPTED TRANSMISSION DETECTED...
-> > INITIATING CHESS SEQUENCE...
-> > 
+
 <!-- BEGIN CHESS BOARD -->
 <!-- END CHESS BOARD -->
 
+### Last Moves
+<!-- BEGIN MOVES LIST -->
+<!-- END MOVES LIST -->
 
-## Terminal Chess Engine
-> ENCRYPTED TRANSMISSION DETECTED...
-> > INITIATING CHESS SEQUENCE...
-> >
-> > <!-- BEGIN CHESS BOARD -->
-> > <!-- END CHESS BOARD -->
-> > 
+### Top Players
+<!-- BEGIN TOP PLAYERS -->
+<!-- END TOP PLAYERS -->
+
+Want to play? Just click on a piece and then on a square in the board above!
+To start a new game, create an issue with the title "Chess: Start new game".
