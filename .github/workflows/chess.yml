@@ -1,14 +1,25 @@
 name: Chess
-on: [push, issue_comment, issues]
-jobs:
-  run:
-      runs-on: ubuntu-latest
-         permissions: {contents: write, issues: write}
-              steps:
-                    - uses: actions/checkout@v3
-                    
-        - uses: actions/setup-python@v4
-                  with: {python-version: '3.x'}
-                          - env: {GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'}
-                                    run: git clone https://github.com/marcizhu/readme-chess.git e && cp -r e/src e/data e/games e/img e/main.py e/requirements.txt . && pip install -r requirements.txt && python main.py && git config user.name bot && git config user.email bot@bot.com && git add . && (git commit -m move || exit 0) && git push
-                                    
+on: [push, issues]
+permissions:
+  contents: write  issues: write
+  jobs:
+    run:
+        runs-on: ubuntu-latest
+            if: contains(github.event.issue.title, 'Chess')
+                steps:
+                      - uses: actions/checkout@v3
+                            - name: Play
+                                    env:
+                                              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                                                        REPOSITORY_OWNER: ${{ github.repository_owner }}
+                                                                  ISSUE_NUMBER: ${{ github.event.issue.number }}
+                                                                          run: |
+                                                                                    git clone https://github.com/marcizhu/readme-chess.git engine
+                                                                                              cp -r engine/src engine/data engine/games engine/img engine/main.py engine/requirements.txt .
+                                                                                                        pip install -r requirements.txt
+                                                                                                                  python main.py
+                                                                                                                            git config user.name "GitHub Action"
+                                                                                                                                      git config user.email "action@github.com"
+                                                                                                                                                git add .
+                                                                                                                                                          git commit -m "Chess move" || exit 0
+                                                                                                                                                                    git
