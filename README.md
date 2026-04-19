@@ -1,5 +1,5 @@
 <div align="center">
-## 
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
