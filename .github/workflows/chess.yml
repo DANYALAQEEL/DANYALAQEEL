@@ -37,8 +37,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "Chess Bot"
-          git config user.email "chess-bot@github.com"
+          git config user.name "DANYALAQEEL"
+          git config user.email "raqeel.bese24seecs@seecs.edu.pk"
           git add -A
           git commit -m "Chess: update board" || true
           git push
