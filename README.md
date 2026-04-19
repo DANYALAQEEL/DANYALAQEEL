@@ -83,29 +83,9 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <br>
 
-### ♟️ 05. Tactical Execution (Playable Node)
-> Visitors from around the world can click on a piece below to make a move. The board updates automatically! Let's see if the internet can outplay my logic.
-
-<div align="center">
-<!-- BEGIN SECTION: Chess -->
-<!-- END SECTION: Chess -->
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
-</div>
-
-<div align="center">
-  <i>"Treating infrastructure as a resilient, dynamic ecosystem."</i>
-</div>
-
-
-
----
-
-## Terminal Chess Engine
+### ♟️ 05. Tactical Execution (Terminal Chess Node)
+> `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
+> Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
 <!-- BEGIN CHESS BOARD -->
 |   | A | B | C | D | E | F | G | H |   |
@@ -121,7 +101,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
 |   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |
 <!-- END CHESS BOARD -->
 
-### Last Moves
+### NEXT MOVE
 <!-- BEGIN MOVES LIST -->
 |  FROM  | TO (Just click a link!) |
 | :----: | :---------------------- |
@@ -140,8 +120,17 @@ I view software as a living operational ecosystem. My work focuses on the inters
 <!-- END MOVES LIST -->
 
 ### Top Players
-<!-- BEGIN TOP PLAYERS -->
-<!-- END TOP PLAYERS -->
+<!-- BEGIN TOP MOVES -->
+<!-- END TOP MOVES -->
 
-Want to play? Just click on a piece and then on a square in the board above!
-To start a new game, create an issue with the title "Chess: Start new game".
+> [▶ Start a new game](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?title=Chess%3A+Start+new+game&body=Just+click+Submit)
+
+<br>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
+</div>
+
+<div align="center">
+  <i>"Treating infrastructure as a resilient, dynamic ecosystem."</i>
+</div>
