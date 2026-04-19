@@ -1,3 +1,8 @@
 name: Chess
 on: [push, issue_comment, issues]
-jobs: {run: {runs-on: ubuntu-latest, steps: [{run: ls}]}}
+jobs:
+  run:
+      runs-on: ubuntu-latest    permissions: {contents: write, issues: write}
+          steps:
+                - uses: actions/checkout@v3
+                
