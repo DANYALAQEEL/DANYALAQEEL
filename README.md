@@ -36,11 +36,16 @@ I view software as a living operational ecosystem. My work focuses on the inters
 ### 🧠 02. Core Competencies & Arsenal
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js_|_Rust-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch_|_Redis_|_Vector_DBs-0A0A0A?style=for-the-badge&color=10B981" />
-  <br>
-  <img src="https://img.shields.io/badge/Infrastructure-Docker_|_Kubernetes_|_CI/CD-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS-0A0A0A?style=for-the-badge&color=10B981" />
+ <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js-0A0A0A?style=for-the-badge&color=10B981" />
+<img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch-0A0A0A?style=for-the-badge&color=10B981" />
+<br>
+<img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS_|_Vite-0A0A0A?style=for-the-badge&color=10B981" />
+<img src="https://img.shields.io/badge/Database-MySQL-0A0A0A?style=for-the-badge&color=10B981" />
+<br>
+<img src="https://img.shields.io/badge/Infrastructure-Docker_|_Vercel_|_HuggingFace-0A0A0A?style=for-the-badge&color=10B981" />
+<img src="https://img.shields.io/badge/Graphics_/_Game_Dev-Raylib_|_SFML-0A0A0A?style=for-the-badge&color=10B981" />
+<br>
+<img src="https://img.shields.io/badge/Tools-LaTeX_|_Canva_|_Git-0A0A0A?style=for-the-badge&color=0A0A0A?style=for-the-badge&color=6B7280" />
 </p>
 <p align="center">
 <a href="https://skillicons.dev">
