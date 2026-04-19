@@ -1,13 +1,41 @@
 name: Chess
-on: [push, issue_comment, issues]
-permissions: {contents: write, issues: write}
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   run:
-      runs-on: ubuntu-latest
-          steps:
-                - uses: actions/checkout@v3
-                      - uses: actions/setup-python@v4
-                              with: {python-version: '3.x'}
-                                    - env: {GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'}
-                                            run: git clone https://github.com/marcizhu/readme-chess.git e && cp -r e/src e/data e/games e/img e/main.py e/requirements.txt . && pip install -r requirements.txt && python main.py && git config user.name bot && git config user.email bot@bot.com && git add . && (git commit -m move || exit 0) && git push
-                                            
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'Chess')
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Clone chess engine
+        run: git clone https://github.com/marcizhu/readme-chess.git engine
+
+      - name: Copy engine files
+        run: cp -r engine/src engine/data engine/games engine/img engine/main.py engine/requirements.txt .
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run chess bot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python main.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "Chess Bot"
+          git config user.email "chess-bot@github.com"
+          git add -A
+          git commit -m "Chess: update board" || true
+          git push
