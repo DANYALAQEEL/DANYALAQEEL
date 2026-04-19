@@ -1,3 +1,12 @@
+<!--
+  README authored by DANYAL AQEEL (@DANYALAQEEL)
+  Watermarked — unauthorized replication is actively tracked.
+  Protected under CC BY-NC-ND 4.0
+  Original: https://github.com/DANYALAQEEL/DANYALAQEEL
+-->
+
+![](https://readme-tracker-lexc.vercel.app/api/ping)
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
@@ -36,16 +45,16 @@ I view software as a living operational ecosystem. My work focuses on the inters
 ### 🧠 02. Core Competencies & Arsenal
 
 <p align="center">
- <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js-0A0A0A?style=for-the-badge&color=10B981" />
-<img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch-0A0A0A?style=for-the-badge&color=10B981" />
-<br>
-<img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS_|_Vite-0A0A0A?style=for-the-badge&color=10B981" />
-<img src="https://img.shields.io/badge/Database-MySQL-0A0A0A?style=for-the-badge&color=10B981" />
-<br>
-<img src="https://img.shields.io/badge/Infrastructure-Docker_|_Vercel_|_HuggingFace-0A0A0A?style=for-the-badge&color=10B981" />
-<img src="https://img.shields.io/badge/Graphics_/_Game_Dev-Raylib_|_SFML-0A0A0A?style=for-the-badge&color=10B981" />
-<br>
-<img src="https://img.shields.io/badge/Tools-LaTeX_|_Canva_|_Git-0A0A0A?style=for-the-badge&color=0A0A0A?style=for-the-badge&color=6B7280" />
+  <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS_|_Vite-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Database-MySQL-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Infrastructure-Docker_|_Vercel_|_HuggingFace-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Graphics_/_Game_Dev-Raylib_|_SFML-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Tools-LaTeX_|_Canva_|_Git-0A0A0A?style=for-the-badge&color=6B7280" />
 </p>
 <p align="center">
 <a href="https://skillicons.dev">
@@ -86,13 +95,6 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 ### ⏱️ 04. Live Keystroke Telemetry
 <!--START_SECTION:waka-->
-
-```txt
-From: 18 April 2026 - To: 18 April 2026
-
-No activity tracked
-```
-
 <!--END_SECTION:waka-->
 
 <br>
@@ -208,13 +210,19 @@ No activity tracked
 
 <br>
 
-⭐ **If this matrix inspired you, star a repository — it helps more than you know!** ⭐  
+⭐ **If this matrix inspired you, star a repository — it helps more than you know!** ⭐
 
-Last Computed: April 2026 | Built with 💚 and `<logic>`  
+Last Computed: April 2026 | Built with 💚 and `<logic>`
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<sub>© 2026 DANYALAQEEL — Design & content originally crafted by me. Replication without credit violates the license.</sub>
 
 <br>
 
 ### ░▒▓ END TRANSMISSION ▓▒░
+
+![](https://readme-tracker-lexc.vercel.app/api/ping)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=10B981&height=120&section=footer" width="100%" alt="Footer Wave" />
 
