@@ -17,17 +17,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Generate Snake Animation
+      - name: Generate Neon Cyber-Snake Animation
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # This configures the pitch-black background and the scaling neon green blocks
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#10B981&color_dots=#0a0a0a,#064e3b,#047857,#059669,#10B981
             
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          # This pushes the generated animation to an isolated branch so it doesn't clutter your main commit history
           target_branch: output
           build_dir: dist
         env:
