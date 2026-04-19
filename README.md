@@ -51,10 +51,10 @@ I view software as a living operational ecosystem. My work focuses on the inters
 </div>
 
 <br>
-<br>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
+  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg?v=1" alt="GitHub Contribution Snake" width="100%" />
 </div>
+<br>
 
 ### 📡 04. High-Yield Operations
 
