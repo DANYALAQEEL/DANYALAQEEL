@@ -85,8 +85,9 @@ I view software as a living operational ecosystem. My work focuses on the inters
 <br>
 
 ### ⏱️ 04. Live Keystroke Telemetry
-<!-- START_SECTION:waka -->
-<!-- END_SECTION:waka -->
+<!--START_SECTION:waka-->
+loading telemetry...
+<!--END_SECTION:waka-->
 
 <br>
 
