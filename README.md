@@ -1,5 +1,5 @@
 <div align="center">
- 
+## 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
@@ -9,6 +9,8 @@
   <br><br>
   <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&color=10B981&style=flat-square&label=PROFILE+HITS" alt="Visitors" />
 </p>
+
+<img src="https://novatorem-beige-psi.vercel.app/api?background_type=blur_dark&border_color=10B981" alt="Live Audio Telemetry" />
 
 </div>
 
@@ -85,6 +87,10 @@ class BackendArchitect:
 <div align="center">
   <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg?v=1" alt="GitHub Contribution Snake" width="100%" />
 </div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" alt="3D Isometric Commit Graph" width="100%" />
+</div>
 <br>
 
 <div align="center">
@@ -95,7 +101,13 @@ class BackendArchitect:
 
 <br>
 
-### 📡 05. High-Yield Operations
+### ⏱️ 05. Live Keystroke Telemetry
+<!-- START_SECTION:waka -->
+<!-- END_SECTION:waka -->
+
+<br>
+
+### 📡 06. High-Yield Operations
 
 <table>
   <thead>
@@ -137,7 +149,7 @@ class BackendArchitect:
 
 <br>
 
-### ♟️ 06. Tactical Execution (Terminal Chess Node)
+### ♟️ 07. Tactical Execution (Terminal Chess Node)
 > `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
 > Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
@@ -183,7 +195,7 @@ class BackendArchitect:
 
 ---
 
-### 🏆 07. Achievement Matrix
+### 🏆 08. Achievement Matrix
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
