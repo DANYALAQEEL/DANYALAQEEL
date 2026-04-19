@@ -1,5 +1,5 @@
 <div align="center">
-## 
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
 
 <p align="center">
@@ -9,14 +9,11 @@
   <br><br>
   <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&color=10B981&style=flat-square&label=PROFILE+HITS" alt="Visitors" />
 </p>
-
-<img src="https://novatorem-beige-psi.vercel.app/api?background_type=blur_dark&border_color=10B981" alt="Live Audio Telemetry" />
-
 </div>
 
 <br>
 
-```bash
+```diff
 + [NODE_INIT] Booting backend consciousness matrix...
 + [IR_CORE] Loading Information Retrieval engines...
 + [SEC_MODULE] Resilience protocols: ACTIVE
@@ -24,62 +21,43 @@
 + [STATUS] All nodes operational — ELITE MODE ENABLED
 ```
 
-<table width="100%" border="0">
-<tr>
-<td width="55%" valign="top">
+<br>
 
 ### 💡 01. The Mission Logic
 
 I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
 
-- 🎓 **Current Vector:** Software Engineering Undergraduate at NUST.
-- 🔭 **Current Focus:** Optimizing massive vector search pipelines and autonomous AI telemetry.
-- ⚙️ **Architecture:** Distributed Logic, Automated CI/CD, Container Orchestration.
+> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST  
+> 🔭 **Current Focus:** Optimizing massive vector search pipelines and autonomous AI telemetry  
+> ⚙️ **Architecture:** Distributed Logic, Automated CI/CD, Container Orchestration  
 
-</td>
-<td width="45%" align="center" valign="top">
-
-### 🛠️ 02. Technical Arsenal
 <br>
+
+### 🧠 02. Core Competencies & Arsenal
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js_|_Rust-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch_|_Redis_|_Vector_DBs-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Infrastructure-Docker_|_Kubernetes_|_CI/CD-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS-0A0A0A?style=for-the-badge&color=10B981" />
+</p>
+<p align="center">
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git&perline=5" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git&perline=10" alt="Tech Stack" />
 </a>
-
-</td>
-</tr>
-</table>
-
-### 🧠 03. Core Competencies
-
-```python
-class BackendArchitect:
-    def __init__(self):
-        self.name = "Danyal Aqeel"
-        self.role = "System Resilience Engineer"
-        self.payload = {
-            'core_backend': ['FastAPI', 'Flask', 'Node.js', 'Rust'],
-            'search_ir': ['Elasticsearch', 'Redis', 'Vector DBs'],
-            'infrastructure': ['Docker', 'Kubernetes', 'CI/CD'],
-            'frontend': ['React', 'TypeScript', 'TailwindCSS']
-        }
-        
-    def execute_logic(self, system_load):
-        """
-        Architecture Philosophy: Build it fast, make it unbreakable.
-        """
-        return self.scale_horizontally(system_load)
-```
+</p>
 
 <br>
 
-### 📊 04. Global Telemetry
+### 📊 03. Global Telemetry
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" width="49%" />
   </a>
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="49%" />
   </a>
 </div>
 
@@ -101,55 +79,40 @@ class BackendArchitect:
 
 <br>
 
-### ⏱️ 05. Live Keystroke Telemetry
+### ⏱️ 04. Live Keystroke Telemetry
 <!-- START_SECTION:waka -->
 <!-- END_SECTION:waka -->
 
 <br>
 
-### 📡 06. High-Yield Operations
+### 📡 05. High-Yield Operations
 
-<table>
-  <thead>
-    <tr>
-      <th>Project System</th>
-      <th>Architectural Specs</th>
-      <th>Network Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b><a href="https://github.com/DANYALAQEEL/fluidhack">Carbon Sentinel</a></b></td>
-      <td>Autonomous AI-driven environmental agent executing on-chain offsets. Built with Flask, React, Web3, and Supabase.</td>
-      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
-    </tr>
-    <tr>
-      <td><b><a href="https://github.com/DANYALAQEEL/Search-Engine-Elite">Search Engine Elite</a></b></td>
-      <td>Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline. Core vector search capability.</td>
-      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
-    </tr>
-    <tr>
-      <td><b><a href="https://github.com/DANYALAQEEL/Production-Core-Engine">Production Core Engine</a></b></td>
-      <td>Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic and robust pooling.</td>
-      <td><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" /></td>
-    </tr>
-  </tbody>
-</table>
+> **[Carbon Sentinel](https://github.com/DANYALAQEEL/fluidhack)**  
+> Autonomous AI-driven environmental agent executing on-chain offsets.  
+> *Flask / React / Web3 / Supabase* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+<br>
 
-```text
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃  SYSTEM METRIC             │  VALUE           │  STATUS        ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃  IR Query Latency          │  <50ms           │  ✓ OPTIMAL     ┃
-┃  Uptime SLA                │  99.9%           │  ✓ EXCELLENT   ┃
-┃  System Resilience         │  Self-Healing    │  ✓ ACTIVE      ┃
-┃  Architecture Scalability  │  Infinite        │  ✓ VERIFIED    ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-```
+> **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)**  
+> Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline.  
+> *Vector Search / Parallel Processing* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+<br>
+
+> **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)**  
+> Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic.  
+> *System Resilience / Automated Pooling* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
 
 <br>
 
-### ♟️ 07. Tactical Execution (Terminal Chess Node)
+<p align="center">
+  <img src="https://img.shields.io/badge/IR_Query_Latency-<50ms-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Uptime_SLA-99.9%25-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/System_Resilience-Self--Healing-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Architecture-Infinite_Scaling-0A0A0A?style=for-the-badge&color=10B981" />
+</p>
+
+<br>
+
+### ♟️ 06. Tactical Execution (Terminal Chess Node)
 > `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
 > Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
@@ -195,7 +158,7 @@ class BackendArchitect:
 
 ---
 
-### 🏆 08. Achievement Matrix
+### 🏆 07. Achievement Matrix
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
@@ -205,18 +168,42 @@ class BackendArchitect:
 
 ---
 
-### 💻 TERMINAL LOGOUT
+### 💻 08. TERMINAL LOGOUT
 
-```bash
-root@matrix:~$ current_focus
-[✓] Optimizing Vector Search Pipelines
-[✓] Autonomous AI Telemetry
-[✓] High-Availability Backend Orchestration
-[→] Advanced Neural Search Integration
-
-root@matrix:~$ echo "Treating infrastructure as a resilient, dynamic ecosystem."
-Treating infrastructure as a resilient, dynamic ecosystem.
-
-root@matrix:~$ logout
-Connection to node closed.
+```diff
+- connection_timeout_detected
+! root@matrix:~$ current_focus
++ [✓] Optimizing Vector Search Pipelines
++ [✓] Autonomous AI Telemetry
++ [✓] High-Availability Backend Orchestration
+# Treating infrastructure as a resilient, dynamic ecosystem.
+! root@matrix:~$ logout
+- Connection to node closed.
 ```
+
+<br>
+
+<div align="center">
+
+```text
+╔═══════════════════════════════════════════════════════════════════════╗
+║                                                                       ║
+║   "A resilient system isn't one that never fails; it is one           ║
+║    that heals faster than anyone can notice."                         ║
+║                                                                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+```
+
+<br>
+
+⭐ **If this matrix inspired you, star a repository — it helps more than you know!** ⭐  
+
+Last Computed: April 2026 | Built with 💚 and `<logic>`  
+
+<br>
+
+### ░▒▓ END TRANSMISSION ▓▒░
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=10B981&height=120&section=footer" width="100%" alt="Footer Wave" />
+
+</div>
