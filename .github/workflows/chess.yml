@@ -1,44 +1,18 @@
-name: Chess
+name: Chess Dispatcher
 
 on:
   issues:
     types: [opened]
 
-permissions:
-  contents: write
-  issues: write
-
 jobs:
-  run:
+  dispatch:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.title, 'Chess')
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Clone chess engine
-        run: git clone https://github.com/marcizhu/readme-chess.git engine
-
-      - name: Copy engine files
-        run: |
-          cp -r engine/src engine/img engine/main.py engine/requirements.txt .
-          if [ ! -d "data" ]; then cp -r engine/data .; fi
-          if [ ! -d "games" ]; then cp -r engine/games .; fi
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run chess bot
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          REPOSITORY_OWNER: ${{ github.repository_owner }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: python main.py
-
-      - name: Commit changes
-        run: |
-          git config user.name "DANYALAQEEL"
-          git config user.email "raqeel.bese24seecs@seecs.edu.pk"
-          git add -A
-          git commit -m "Chess: update board" || true
-          git push
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DISPATCH_TOKEN }}
+          repository: DANYALAQEEL/chess-engine-node
+          event-type: chess-move
+          client-payload: '{"issue_number": "${{ github.event.issue.number }}", "issue_title": "${{ github.event.issue.title }}", "issue_author": "${{ github.event.issue.user.login }}"}'
