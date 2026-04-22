@@ -36,9 +36,9 @@
 
 I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
 
-> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST  
-> 🔭 **Current Focus:** Optimizing massive vector search pipelines and autonomous AI telemetry  
-> ⚙️ **Architecture:** Distributed Logic, Automated CI/CD, Container Orchestration  
+> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST (SEECS)  
+> 🔭 **Current Focus:** Building AI-driven autonomous agents (Gemini-powered RPA), cross-repo CI/CD chess engines, and C++ games compiled to WebAssembly  
+> ⚙️ **Architecture:** Repository Dispatch Split, Event-Driven Backend Decoupling, Container Orchestration  
 
 <br>
 
@@ -94,6 +94,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
 <br>
 
 ### ⏱️ 04. Live Keystroke Telemetry
+> *Auto-refreshed weekly via WakaTime CI workflow — shows real coding time across all active projects.*
 <!--START_SECTION:waka-->
 
 ```txt
@@ -107,6 +108,16 @@ Python   10 mins               ████████████████�
 <br>
 
 ### 📡 05. High-Yield Operations
+
+> **[WEB_CHESS — C++ Chess Engine → WebAssembly](https://github.com/DANYALAQEEL/WEB_CHESS)**  
+> A fully playable chess game written in C++ with SDL2, compiled to WebAssembly via Emscripten and deployed on GitHub Pages. Includes a start menu, interactive board, and cross-platform mobile input bridge.  
+> *C++ / SDL2 / Emscripten / WebAssembly / GitHub Actions* <img align="right" src="https://img.shields.io/badge/STATUS-DEPLOYED-10B981?style=flat-square" />
+<br>
+
+> **[Autonomous Supervisor Agent](https://github.com/DANYALAQEEL/Autonomous-Supervisor-Agent)**  
+> AI-powered visual RPA supervisor that monitors the screen using computer vision (MSS + image hashing) and Gemini AI for intelligent UI interpretation. Features a glassmorphism-styled real-time dashboard with emergency kill-switch controls.  
+> *Python / Gemini AI / FastAPI / React / Tesseract OCR / MSS* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+<br>
 
 > **[Carbon Sentinel](https://github.com/DANYALAQEEL/fluidhack)**  
 > Autonomous AI-driven environmental agent executing on-chain offsets.  
@@ -223,7 +234,7 @@ Python   10 mins               ████████████████�
 
 ⭐ **If this matrix inspired you, star a repository — it helps more than you know!** ⭐
 
-Last Computed: April 2026 | Built with 💚 and `<logic>`
+![Last Commit](https://img.shields.io/github/last-commit/DANYALAQEEL/DANYALAQEEL?label=Last+Updated&color=10B981&style=flat-square) | Built with 💚 and `<logic>`
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
