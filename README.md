@@ -148,6 +148,12 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 > `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
 > Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
+<!-- BEGIN TURN -->
+<div align="center">
+  It is **white**'s turn!
+</div
+<!-- END TURN -->
+
 <!-- BEGIN CHESS BOARD -->
 |   | A | B | C | D | E | F | G | H |   |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -161,6 +167,10 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 | **1** | <img src="img/white/rook.svg" width=50px> | <img src="img/white/knight.svg" width=50px> | <img src="img/white/bishop.svg" width=50px> | <img src="img/white/queen.svg" width=50px> | <img src="img/white/king.svg" width=50px> | <img src="img/white/bishop.svg" width=50px> | <img src="img/white/knight.svg" width=50px> | <img src="img/white/rook.svg" width=50px> | **1** |
 |   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |
 <!-- END CHESS BOARD -->
+
+<!-- BEGIN LAST MOVES -->
+**Last 5 moves:**
+<!-- END LAST MOVES -->
 
 ### NEXT MOVE
 <!-- BEGIN MOVES LIST -->
@@ -249,3 +259,4 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 <img src="https://capsule-render.vercel.app/api?type=waving&color=10B981&height=120&section=footer" width="100%" alt="Footer Wave" />
 
 </div>
+
