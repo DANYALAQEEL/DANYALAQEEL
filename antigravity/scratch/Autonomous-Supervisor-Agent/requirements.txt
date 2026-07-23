@@ -1,0 +1,10 @@
+mss
+Pillow
+imagehash
+google-generativeai
+pytesseract
+opencv-python
+pyautogui
+keyboard
+pydantic
+fastapi[standard]

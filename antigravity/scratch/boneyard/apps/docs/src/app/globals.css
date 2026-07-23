@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* Hide scrollbars globally */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@theme {
+  --color-background: #fafaf9;
+  --color-surface: #ffffff;
+  --color-surface-2: #f5f5f4;
+  --color-border: #e7e5e4;
+  --color-text: #1c1917;
+  --color-text-2: #78716c;
+  --color-text-3: #a8a29e;
+  --color-accent: #1c1917;
+  --color-bone: #e7e5e4;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.bone {
+  background: linear-gradient(110deg, var(--color-bone) 47%, rgba(255,255,255,0.1) 50%, var(--color-bone) 53%);
+  background-size: 300% 100%;
+  border-radius: 6px;
+  animation: shimmer 1.8s linear infinite;
+}
+
+/* Shimmer text effect */
+.shimmer-text {
+  background: linear-gradient(90deg, #a8a29e 25%, #78716c 50%, #a8a29e 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite reverse;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shimmer-underline {
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 4px;
+  background: linear-gradient(90deg, #a8a29e 25%, #78716c 50%, #a8a29e 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+/* Dots texture: slightly larger, more visible dots with shimmer sweep */
+.dots-texture {
+  --dot-color: #d4d4d4;
+  background-color: #f5f5f4;
+  background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1px);
+  background-size: 6px 6px;
+  overflow: hidden;
+}
+.dots-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,0.5) 45%,
+    rgba(255,255,255,0.7) 50%,
+    rgba(255,255,255,0.5) 55%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.2s ease-in-out infinite;
+}
+
+/* Subtle bone pulse — animates to a lighter shade of the bone color */
+@keyframes bone-pulse {
+  0%, 100% { background-color: var(--bone-color); }
+  50% { background-color: color-mix(in srgb, var(--bone-color), white var(--bone-pulse-mix, 30%)); }
+}
+.bone-pulse {
+  animation: bone-pulse 1.8s ease-in-out infinite;
+}
+
+
+/* Section divider */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.section-divider span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1917;
+  white-space: nowrap;
+}
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e7e5e4;
+}

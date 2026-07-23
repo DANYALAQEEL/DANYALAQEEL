@@ -1,0 +1,49 @@
+{
+  "breakpoints": {
+    "375": {
+      "name": "chart-traffic",
+      "viewportWidth": 0,
+      "width": 0,
+      "height": 40,
+      "bones": [
+        {
+          "x": 0,
+          "y": 10,
+          "w": 160,
+          "h": 30,
+          "r": 8
+        }
+      ]
+    },
+    "768": {
+      "name": "chart-traffic",
+      "viewportWidth": 123,
+      "width": 123,
+      "height": 40,
+      "bones": [
+        {
+          "x": 0,
+          "y": 12,
+          "w": 123,
+          "h": 23,
+          "r": 8
+        }
+      ]
+    },
+    "1280": {
+      "name": "chart-traffic",
+      "viewportWidth": 267,
+      "width": 267,
+      "height": 40,
+      "bones": [
+        {
+          "x": 53,
+          "y": 10,
+          "w": 160,
+          "h": 30,
+          "r": 8
+        }
+      ]
+    }
+  }
+}

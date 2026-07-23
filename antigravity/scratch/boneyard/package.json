@@ -1,0 +1,19 @@
+{
+  "name": "boneyard-monorepo",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "canvas",
+      "sharp"
+    ]
+  },
+  "version": "",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "build": "cd packages/boneyard && npm run build && cd ../../apps/docs && npx next build"
+  }
+}

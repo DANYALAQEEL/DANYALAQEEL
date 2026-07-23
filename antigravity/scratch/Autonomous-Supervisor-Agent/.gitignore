@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# RPA Logs
+logs/
+*.png
+
+# Environment
+.env
+config.json
+
+# IDEs
+.vscode/
+.idea/

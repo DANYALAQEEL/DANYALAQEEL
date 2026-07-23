@@ -1,0 +1,102 @@
+[
+  {
+    "id": "chrome_login_mission_1",
+    "status": "completed",
+    "type": "system",
+    "steps": [
+      {
+        "action_type": "hotkey",
+        "keys": [
+          "win"
+        ],
+        "description": "Opening Start Menu",
+        "target_description": "Windows Taskbar"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 2,
+        "description": "Waiting for Start Menu to open"
+      },
+      {
+        "action_type": "type",
+        "text": "chrome",
+        "description": "Searching for chrome",
+        "target_description": "Start Menu Search"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 1
+      },
+      {
+        "action_type": "hotkey",
+        "keys": [
+          "enter"
+        ],
+        "description": "Launching Chrome",
+        "target_description": "Chrome Result"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 5,
+        "description": "Waiting for Chrome and profile picker"
+      },
+      {
+        "action_type": "click",
+        "target_description": "The profile named DANYAL with a scenery icon",
+        "description": "Selecting DANYAL profile"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 2
+      },
+      {
+        "action_type": "hotkey",
+        "keys": [
+          "ctrl",
+          "l"
+        ],
+        "description": "Focusing address bar",
+        "target_description": "Chrome Address Bar"
+      },
+      {
+        "action_type": "type",
+        "text": "qalam.nust.edu.pk",
+        "description": "Typing URL",
+        "target_description": "Address Bar Input"
+      },
+      {
+        "action_type": "hotkey",
+        "keys": [
+          "enter"
+        ],
+        "description": "Navigating to Qalam"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 5,
+        "description": "Waiting for page load"
+      },
+      {
+        "action_type": "click",
+        "target_description": "The password input field",
+        "description": "Clicking password field to trigger auto-fill"
+      },
+      {
+        "action_type": "wait",
+        "seconds": 2
+      },
+      {
+        "action_type": "click",
+        "target_description": "The auto-saved account for raqeel.bese24seecs",
+        "description": "Selecting the correct account"
+      },
+      {
+        "action_type": "hotkey",
+        "keys": [
+          "enter"
+        ],
+        "description": "Logging in"
+      }
+    ]
+  }
+]

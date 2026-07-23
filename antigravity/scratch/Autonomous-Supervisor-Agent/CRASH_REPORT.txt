@@ -1,0 +1,745 @@
+
+[Thu Apr 23 13:32:14 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:16 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:18 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:20 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:22 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:24 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:26 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:28 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:30 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:33 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:35 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 98, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:32:37 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:39 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:41 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:43 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:45 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:47 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:49 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:51 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:53 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:55 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:57 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:32:59 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:01 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:04 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:06 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:08 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:10 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:12 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 98, in rpa_loop
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:33:14 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 98, in rpa_loop
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:33:16 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:18 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 98, in rpa_loop
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:33:20 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                    ^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:22 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                    ^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:33:24 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 139, in rpa_loop
+    # Window Focus Check (Security)
+                    ^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:29 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:31 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:33 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 99, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:36:36 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:38 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:40 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:42 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:44 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:46 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:48 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:50 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:52 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:54 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:56 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:36:58 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 99, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:00 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:02 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 99, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:04 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:06 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:08 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:11 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:13 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:15 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:17 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:19 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 99, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:21 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:23 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 99, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:25 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if action_data and action_data.get("action_type") in ["type", "hotkey"]:
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:27 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if action_data and action_data.get("action_type") in ["type", "hotkey"]:
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:29 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 140, in rpa_loop
+    if action_data and action_data.get("action_type") in ["type", "hotkey"]:
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:42 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:42 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:44 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:44 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:46 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:46 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:48 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:48 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:50 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:50 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:52 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:52 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:54 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:54 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:37:56 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:56 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:58 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:37:58 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:38:00 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:38:00 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:38:02 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:02 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:04 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:04 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:06 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:06 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:08 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:08 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:10 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    if not decision.check_progress(image):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:38:10 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+    if not wakatime._is_safe_app_focused(title) and not system_task.is_active:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:12 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:13 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:15 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:15 2026] CRITICAL LOOP ERROR: 'ContextBuffer' object has no attribute 'get_last_event'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 100, in rpa_loop
+    except Exception as e:
+               ^^^^^^^^^^^^
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\supervisor\decision_engine.py", line 90, in check_progress
+    last_action = self.memory.get_last_event()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextBuffer' object has no attribute 'get_last_event'
+
+[Thu Apr 23 13:38:17 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+
+[Thu Apr 23 13:38:17 2026] CRITICAL LOOP ERROR: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.gemini\antigravity\scratch\Autonomous-Supervisor-Agent\main.py", line 141, in rpa_loop
+AttributeError: 'WakaTimeRoutine' object has no attribute '_is_safe_app_focused'
