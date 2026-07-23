@@ -1,0 +1,923 @@
+EXERCISES 5.1Answerstoselectedodd-numberedproblemsbeginonpageANS-15.
+In Problems 1–10, evaluate the deﬁnite integral. If necessary, review the techniques
+of integration in your calculus text.
+1.
+∫ 3
+− 1
+x(x− 1)(x+2) dx 2.
+∫ 0
+− 1
+t2 dt+
+∫ 2
+0
+x2 dx+
+∫ 3
+2
+u2 du
+3.
+∫ 1
+1/2
+sin2πxdx 4.
+∫ π/8
+0
+sec2 2xdx
+5.
+∫ 4
+0
+dx
+2x+1 6.
+∫ ln 3
+ln 2
+e− x dx
+7.
+∫ 4
+2
+xe− x/2 dx 8.
+∫ e
+1
+lnxdx
+9.
+∫ 4
+2
+dx
+x2 − 6x+5 10.
+∫ 4
+2
+2x− 1
+(x+3) 2 dx
+In Problems 11–14, evaluate the line integrals
+∫
+C G(x, y) dx,
+∫
+C G(x, y) dy, and∫
+C G(x, y) dson the indicated curveC.
+11.G(x, y)=2 xy;x= 5cost, y= 5sint,0 ≤ t≤ π/4
+12.G(x, y)= x3 +2 xy2 +2 x;x=2t, y= t2,0 ≤ t≤ 1
+13.G(x, y)=3 x2 +6 y2;y=2x+1 ,−1 ≤ x≤ 0
+14.G(x, y)= x2/y
+3
+;2y=3x3/2,1 ≤ t≤ 8
+
+=== PAGE 10 ===
+244 Chapter 5 Integration in the Complex Plane
+In Problems 15–18, evaluate
+∫
+C (2x+ y) dx+ xydyon the given curve from (−1,2)
+to (2,5).
+15.y= x+3 16.y= x2 +1
+17. 18.y
+x
+(2, 2)
+(2, 5)
+(–1, 2)
+Figure 5.9 Figure for Problem 17
+y
+x
+(2, 0) (–1, 0)
+(2, 5)
+(–1, 2)
+Figure 5.10 Figure for Problem 18
+In Problems 19–22, evaluate
+∫
+C
+ydx+ xdyon the given curve from (0,0) to (1,1).
+19.y= x2 20.y= x
+21.Cconsists of the line segments from (0,0) to (0,1) and from (0,1) to (1,1).
+22.Cconsists of the line segments from (0,0) to (1,0) and from (1,0) to (1,1).
+23.Evaluate
+∫
+C
+(
+6x2 +2 y2 )
+dx+4 xydy, whereC is given byx=
+√
+t, y= t,
+4 ≤ t≤ 9.
+24.Evaluate
+∫
+C
+−y2 dx+ xydy, whereCis given byx=2t, y= t3,0 ≤ t≤ 2.
+25.Evaluate
+∫
+C
+2x3ydx+( 3x+ y) dy, whereCis given byx= y2 from (1,−1)
+to (1,1).
+26.Evaluate
+∫
+C
+4xdx+2 ydy, whereC is given byx= y3 + 1 from (0,−1)
+to (9,2).
+In Problems 27 and 28, evaluate
+∮
+C
+(
+x2 + y2 )
+dx−2xydyon the given closed curve.
+27. 28.
+y
+x
+x2 + y2 = 4
+Figure 5.11 Figure for Problem 27
+y = x2
+y = √x
+y
+x
+(1, 1)
+Figure 5.12 Figure for Problem 28
+
+=== PAGE 11 ===
+5.2 Complex Integrals 245
+In Problems 29 and 30, evaluate
+∮
+C x2y3 dx− xy2 dyon the given closed curve.
+29. 30.
+y
+x
+(1, 1)(–1, 1)
+(1, –1)(–1, –1)
+Figure 5.13 Figure for Problem 29
+y
+x
+(2, 4)
+Figure 5.14 Figure for Problem 30
+31.Evaluate
+∮
+C
+(
+x2 − y2 )
+ds,whereCisgivenbyx= 5cost, y= 5sint,0 ≤ t≤ 2π.
+32.Evaluate
+∫
+− C ydx−xdy, whereCis given byx= 2cost, y= 3sint,0 ≤ t≤ π.
+33.Verify that the line integral
+∫
+C y2 dx+ xydyhas the same value onCfor each
+of the following parametrizations:
+C:x=2t+1 ,y=4t+2 ,0 ≤ t≤ 1
+C:x= t2,y=2t2,1 ≤ t≤
+√
+3
+C:x=l nt, y=2l nt, e≤ t≤ e3.
+34.Consider the three curves between (0, 0) and (2, 4):
+C:x= t, y=2t,0 ≤ t≤ 2
+C:x= t, y= t2,0 ≤ t≤ 2
+C:x=2t− 4,y=4t− 8,2≤ t≤ 3.
+Show that
+∫
+C 1
+xyds=
+∫
+C 3
+xyds, but
+∫
+C 1
+xyds̸=
+∫
+C 2
+xyds.Explain.
+35.Ifρ(x,y) is the density of a wire (mass per unit length), then the mass of
+the wire ism =
+∫
+C ρ(x, y) ds. Find the mass of a wire having the shape of
+a semicirclex= 1 + cost, y= sint,0 ≤ t≤ π,if the density at a pointPis
+directly proportional to the distance from they-axis.
+36.The coordinates of the center of mass of a wire with variable density are given
+by ¯x= My/m,¯y= Mx/mwhere
+m=
+∫
+C
+ρ(x,y) ds, Mx =
+∫
+C
+yρ(x,y) ds, My =
+∫
+C
+xρ(x,y) ds.
+Find the center of mass of the wire in Problem 35.
+5.2 Complex Integrals
+5.2Intheprecedingsectionwereviewedtwotypesofrealintegrals. Wesawthatthedeﬁnition
+ofthedeﬁniteintegralstartswitharealfunctiony= f(x)thatisdeﬁnedonanintervalon
+thex-axis. Becauseaplanarcurveisthetwo-dimensionalanalogueofaninterval,wethen
+generalizedthedeﬁnitionof
+∫ b
+a f(x)dxtointegralsofrealfunctionsoftwovariablesdeﬁned
+onacurveCintheCartesianplane. Weshallseeinthissectionthatacomplexintegralis
+deﬁnedinamannerthatisquitesimilartothatofalineintegralintheCartesianplane.
+Since curves play a big part in the deﬁnition of a complex integral, we begin with a
+briefreviewofhowcurvesarerepresentedinthecomplexplane.
+
+=== PAGE 12 ===
+246 Chapter 5 Integration in the Complex Plane
+Curves RevisitedSuppose the continuous real-valued functions
+x= x(t),y= y(t),a≤ t≤ b, are parametric equations of a curveCin
+thecomplexplane. Ifweusetheseequationsastherealandimaginaryparts
+inz= x+ iy,wesawinSection2.2thatwecandescribethepointszonCby
+meansofacomplex-valuedfunctionofarealvariabletcalledaparametriza-
+tionofC:
+z(t)= x(t)+ iy(t),a≤t≤b. (1)
+For example, the parametric equationsx= cost,y= sint,0 ≤ t≤ 2π,
+describeaunitcirclecenteredattheorigin. Aparametrizationofthiscircle
+isz(t)=cost+ isint,orz(t)= e
+it,0≤t≤2π.See(6)–(10)inSection2.2.
+Thepointz(a)= x(a)+ iy(a)orA=( x(a),y(a))iscalledtheinitial
+pointofCandz(b)= x(b)+ iy(b)orB=( x(b),y(b))isitsterminal point.
+WealsosawinSection2.7thatz(t)= x(t)+ iy(t)couldalsobeinterpreted
+as a two-dimensional vector function. Consequently,z(a) andz(b) can be
+interpreted as position vectors. Astvaries fromt= atot= bwe can
+envisionthecurveCbeingtracedoutbythemovingarrowheadofz(t). See
+Figure5.15.
+y
+z(a)
+z(t)
+z(b)
+C
+A
+B
+x
+Figure 5.15 z(t)= x(t)+ iy(t)a sa
+position vector
+ContoursThenotionsofcurvesinthecomplexplanethataresmooth,
+piecewisesmooth,simple,closed,andsimpleclosedareeasilyformulatedin
+terms of the vector function (1). Suppose the derivative of (1) isz
+′(t)=
+x′(t)+ iy′(t). We say a curveCin the complex plane issmoothifz′(t)
+is continuous and never zero in the intervala≤ t≤ b. As shown Figure
+5.16,sincethevectorz′(t)isnotzeroatanypointPonC,thevectorz′(t)is
+tangenttoCatP. Inotherwords,asmoothcurvehasacontinuouslyturning
+tangent; putyetanotherway,asmoothcurvecanhavenosharpcornersor
+cusps. SeeFigure5.17. Apiecewise smooth curveChasacontinuously
+turningtangent,exceptpossiblyatthepointswherethecomponentsmooth
+curvesC
+1,C2,..., Cn arejoinedtogether. AcurveCinthecomplexplane
+issaidtobeasimpleifz(t1) ̸= z(t2)fort1 ̸= t2,exceptpossiblyfort= a
+andt= b. Cisaclosed curveifz(a)= z(b).Cisasimple closed curve
+ifz(t1) ̸= z(t2)fort1 ̸= t2 andz(a)= z(b). Incomplexanalysis,apiecewise
+smoothcurveCiscalledacontourorpath.
+y
+z′(t)
+z(t) C
+P
+Tangent
+x
+Figure 5.16 z′(t)= x′(t)+ iy′(t)a sa
+tangent vector
+z(b)
+z(a)
+C
+Figure 5.17 CurveC is not smooth
+since it has a cusp.
+C
+C
+(a) Positive direction
+(b) Positive direction
+Figure 5.18 Interior of each curve is to
+the left.
+Justaswedidintheprecedingsection,wedeﬁnethepositive direction
+onacontourCtobethedirectiononthecurvecorrespondingtoincreasing
+values of the parametert. It is also said that the curveChaspositive
+orientation. In the case of a simple closed curveC, the positive direction
+roughly corresponds to the counterclockwise direction or the direction that
+apersonmustwalkonCinordertokeeptheinteriorofCtotheleft. For
+example,thecirclez(t)= e
+it,0≤t≤2π,haspositiveorientation. SeeFigure
+5.18. Thenegative directiononacontourCisthedirectionoppositethe
+positive direction. IfChas an orientation, theopposite curve, that is, a
+curvewithoppositeorientation,isdenotedby−C. Onasimpleclosedcurve,
+thenegativedirectioncorrespondstotheclockwisedirection.
+Complex IntegralAnintegralofafunctionfofacomplexvariablez
+thatisdeﬁnedonacontourCisdenotedby
+∫
+C f(z)dzandiscalledacomplex
+
+=== PAGE 13 ===
+5.2 Complex Integrals 247
+integral. Thefollowinglistofassumptionsisapreludetothedeﬁnitionofa
+complexintegral. Forthesakeofcomparison,youareencouragedtoreview
+thelistsgivenpriortoDeﬁnitions5.1and5.2. Also,lookoverFigure5.19as
+youreadthisnewlist.C
+zk*
+zk
+zn
+zk–1
+z1* z2* z2
+z1
+z0
+Figure 5.19 Partition of curveC into
+n subarcs is induced by a partitionP
+of the parameter interval [a, b].
+Steps Leading to the Deﬁnition of the
+Complex Integral
+1.Letfbeafunctionofacomplexvariablezdeﬁnedatallpointsona
+smoothcurveCthatliesinsomeregionofthecomplexplane. LetC
+bedeﬁnedbytheparametrizationz(t)= x(t)+ iy(t),a≤t≤b.
+2.LetPbeapartitionoftheparameterinterval[a,b]intonsubintervals
+[tk− 1,tk]oflength∆tk = tk −tk− 1:
+a= t0 <t1 <t2 <···<tn− 1 <tn = b.
+The partitionPinduces a partition of the curveCinto n subarcs
+whoseinitialandterminalpointsarethepairsofnumbers
+z0 = x(t0)+ iy(t0),z 1 = x(t1)+ iy(t1),
+z1 = x(t1)+ iy(t1),z 2 = x(t2)+ iy(t2),
+..
+. .
+.
+.
+z
+n− 1 = x(tn− 1)+ iy(tn− 1),z n = x(tn)+ iy(tn).
+Let∆zk = zk −zk− 1,k=1,2,...,n .SeeFigure5.19.
+3.Let∥P∥bethenormofthepartitionPof[a,b],thatis,thelengthof
+thelongestsubinterval.
+4.Chooseapointz∗
+k = x∗
+k+ iy∗
+k oneachsubarcofC. SeeFigure5.19.
+5.Formnproductsf(z∗
+k)∆zk,k=1 ,2,...,n,and then sumthese
+products:
+n∑
+k=1
+f(z∗
+k)∆zk.
+Definition 5.3 Complex Integral
+Thecomplex integraloffonCis
+∫
+C
+f(z)dz= lim
+∥P ∥→ 0
+n∑
+k=1
+f(z∗
+k)∆zk. (2)
+
+=== PAGE 14 ===
+248 Chapter 5 Integration in the Complex Plane
+If the limit in (2) exists, thenfis said to beintegrableonC. The
+limit exists whenever iffis continuous at all points onCandCis either
+smoothorpiecewisesmooth. Consequentlyweshall,hereafter,assumethese
+conditionsasamatterofcourse. Moreover,wewillusethenotation
+∮
+C f(z)dz
+torepresentacomplexintegralaroundapositively orientedclosedcurveC.
+When it is important to distinguish the direction of integration around a
+closedcurve,wewillemploythenotations
+∫
+C
+f(z)dzand
+∫
+C
+f(z)dz
+Generalassumptionsthroughoutthis
+text
+todenoteintegrationinthepositiveandnegativedirections,respectively.
+Note
+Thepointhavingbeenmadethatthedeﬁnitionsofrealintegralsdiscussed
+inSection5.1andDeﬁnition5.3areformallythesame,weshallfromnowon
+refer to a complex integral
+∫
+C f(z)dzby its more common name,contour
+integral.
+Complex-Valued Function of a Real VariableBeforeturn-
+ing to the properties of contour integrals and the all-important question of
+howtoevaluateacontourintegral,weneedtodigressbrieﬂytoenlargeupon
+theconceptofacomplex-valued function of a real variableintroduced
+intheRemarksinSection2.1. Asalreadymentioned, aparametrizationof
+acurveCoftheformgivenin(1)isacaseinpoint. Let’sconsideranother
+simpleexample. Iftrepresentsarealvariable,thentheoutputofthefunction
+f(t)=(2 t+ i)
+2 isacomplexnumber. Fort=2,
+f(2)=(4+ i)2 =16+8 i+ i2 =15+8 i.
+Ingeneral,iff1 andf2 arereal-valuedfunctionsofarealvariablet(thatis,
+realfunctions), thenf(t)= f1(t)+ if2(t)isacomplex-valuedfunctionofa
+realvariablet. Whatwearereallyinterestedinatthemomentisthedeﬁ-
+niteintegral
+∫ b
+a f(t)dt,inotherwords,integrationofcomplex-valuedfunction
+f(t)= f1(t)+ if2(t)ofrealvariabletcarriedoutoverarealinterval. Con-
+tinuingwiththespeciﬁcfunctionf(t)=(2 t+ i)2 itseemslogicaltowriteon,
+say,theinterval0≤t≤1,
+∫ 1
+0
+(2t+ i)2dt=
+∫ 1
+0
+(
+4t2 −1+4ti
+)
+dt=
+∫ 1
+0
+(4t2 −1)dt+ i
+∫ 1
+0
+4tdt.(3)
+Theintegrals
+∫ 1
+0 (4t2 −1)dtand
+∫ 1
+0 4tdtin(3)arereal,andsoonewouldbe
+inclined to call themthe real and im aginary parts of
+∫ 1
+0 (2t+ i)2dt. Each
+of these real integrals can be evaluated using the fundamental theorem of
+calculus((1)ofSection5.1):
+∫
+1
+0
+(4t2 −1)dt=
+(4
+3 t3 −t
+)⏐⏐
+⏐
+⏐
+⏐
+1
+0
+= 1
+3 and
+∫ 1
+0
+4tdt=2 t2
+⏐⏐
+⏐
+1
+0
+=2 .
+Thus(3)becomes
+∫ 1
+0 (2t+ i)2dt= 1
+3 +2 i.
+Sincetheprecedingintegrationseemsveryordinaryandroutine,wegive
+thefollowinggeneralization. Iff1 andf2 arereal-valuedfunctionsofareal
+
+=== PAGE 15 ===
+5.2 Complex Integrals 249
+variabletcontinuous on a common intervala≤ t≤ b, then wedeﬁnethe
+integralofthecomplex-valuedfunctionf(t)= f1(t)+ if2(t)ona≤ t≤ bin
+termsofthedeﬁniteintegralsoftherealandimaginarypartsoff:
+∫ b
+a
+f(t)dt=
+∫ b
+a
+f1(t)dt+ i
+∫ b
+a
+f2(t)dt. (4)
+The continuity off1 andf2 on [a,b] guarantees that both
+∫ b
+a f1(t)dtand∫ b
+a f2(t)dtexist.
+These properties are important in
+the evaluation of contour integrals.
+Theywilloftenbeusedwithoutmen-
+tion.
+Allofthefollowingfamiliarpropertiesofintegralscanbeproveddirectly
+fromthedeﬁnitiongivenin(4). Iff(t)= f1(t)+if2(t)andg(t)= g1(t)+ig2(t)
+are complex-valued functions of a real variabletcontinuous on an interval
+a≤t≤b,then
+∫ b
+a
+kf(t)dt= k
+∫ b
+a
+f(t)dt, kacomplexconstant, (5)
+∫ b
+a
+(f(t)+ g(t))dt=
+∫ b
+a
+f(t)dt+
+∫ b
+a
+g(t)dt, (6)
+∫ b
+a
+f(t)dt=
+∫ c
+a
+f(t)dt+
+∫ b
+c
+f(t)dt, (7)
+∫ a
+b
+f(t)dt= −
+∫ b
+a
+f(t)dt. (8)
+In(7)wechoosetoassumethattherealnumbercisintheinterval[a,b].
+Wenowresumeourdiscussionofcontourintegrals.
+Evaluation of Contour IntegralsTofacilitatethediscussionon
+howtoevaluateacontourintegral
+∫
+C f(z)dz,letuswrite(2)inanabbreviated
+form. Ifweuseu+ ivforf,∆x+ i∆yfor∆z,limfor lim
+||P ||→0
+,∑ for∑n
+k=1 and
+thensuppressallsubscripts,(2)becomes
+∫
+C
+f(z)dz=lim
+∑
+(u+ iv)(∆x+ i∆y)
+=lim
+[∑
+(u∆x−v∆y)+ i
+∑
+(v∆x+ u∆y)
+]
+.
+Theinterpretationofthelastlineis
+∫
+C
+f(z)dz=
+∫
+C
+udx−vdy+ i
+∫
+C
+vdx+ udy. (9)
+See Deﬁnition 5.2. In other words, the real and imaginary parts of a con-
+tour integral
+∫
+C f(z)dzare a pair of real line integrals
+∫
+C udx−vdyand∫
+C vdx+ udy.Nowifx= x(t),y= y(t),a≤t≤bareparametricequations
+ofC, thendx= x′(t)dt, dy= y′(t)dt. By replacing the symbolsx,y,dx,
+
+=== PAGE 16 ===
+250 Chapter 5 Integration in the Complex Plane
+anddybyx(t),y(t),x′(t)dt,andy′(t)dt, respectively, the right side of (9)
+becomes
+∫
+C udx− vdy
+  ∫ b
+a
+[u(x(t),y(t))x′(t)−v(x(t),y(t))y′(t)]dt
++ i
+∫
+C vdx+ udy
+  ∫ b
+a
+[v(x(t),y(t))x′(t)+ u(x(t),y(t))y′(t)]dt.
+(10)
+Ifweusethecomplex-valuedfunction(1)todescribethecontourC,then
+(10)isthesameas
+∫ b
+a f(z(t))z′(t)dtwhentheintegrand
+f(z(t))z′(t)=[u(x(t),y(t))+ iv(x(t),y(t))][x′(t)+ iy′(t)]
+ismultipliedoutand
+∫ b
+a f(z(t))z′(t)dtisexpressedintermsofitsrealand
+imaginaryparts. Thuswearriveatapracticalmeansofevaluatingacontour
+integral.
+Theorem 5.1 Evaluation of a Contour Integral
+Iffis continuous on a smooth curveCgiven by the parametrization
+z(t)= x(t)+ iy(t),a≤t≤b,then
+∫
+C
+f(z)dz=
+∫ b
+a
+f(z(t))z′(t)dt. (11)
+Theforegoingresultsin(10)and(11)bearrepeating—thistimeinsome-
+whatdiﬀerentwords. Supposez(t)= x(t)+ iy(t)andz′(t)= x′(t)+ iy′(t).
+Thentheintegrandf(z(t))z′(t)isacomplex-valuedfunctionofarealvari-
+ablet. Hencetheintegral
+∫ b
+a f(z(t))z′(t)dtisevaluatedinthemannerdeﬁned
+in(4).
+Thenextexampleillustratesthemethod.
+EXAMPLE 1Evaluating a Contour Integral
+Evaluate
+∫
+C ¯zdz,whereCisgivenbyx=3 t,y= t2,−1≤t≤4.
+SolutionFrom(1)aparametrizationofthecontourCisz(t)=3 t+ it2.
+Therefore, with the identiﬁcationf(z)=¯zwe havef(z(t)) =3t+ it2 =
+3t−it2.Also,z′(t)=3+2 it,andsoby(11)theintegralis
+∫
+C
+¯zdz=
+∫ 4
+− 1
+(3t−it2)(3+2 it)dt=
+∫ 4
+− 1
+[
+2t3+9 t+3 t2i
+]
+dt.
+
+=== PAGE 17 ===
+5.2 Complex Integrals 251
+Nowinviewof(4),thelastintegralisthesameas
+∫
+C
+¯zdz=
+∫ 4
+− 1
+(2t3+9 t)dt+ i
+∫ 4
+− 1
+3t2dt
+=
+(1
+2 t4+ 9
+2 t2
+) ⏐⏐
+⏐
+⏐
+⏐
+4
+− 1
++ it3
+⏐⏐
+⏐
+⏐
+⏐
+4
+− 1
+=195+65 i.
+EXAMPLE 2Evaluating a Contour Integral
+Evaluate
+∮
+C
+1
+zdz,whereCisthecirclex=cost,y=sint,0≤t≤2π.
+SolutionInthiscasez(t)=cost+ isint= eit,z′(t)= ieit,andf(z(t))=
+1
+z(t)= e− it. Hence,
+∮
+C
+1
+zdz=
+∫ 2π
+0
+(e− it)ieitdt= i
+∫ 2π
+0
+dt=2 πi.
+As discussed in Section 5.1, for some curves the real variablexitself
+can be used as the parameter. For example, to evaluate
+∫
+C (8x2 −iy)dz
+on the line segmenty=5 x,0 ≤ x≤ 2, we writez= x+5 xi, dz=
+(1+5 i)dx,
+∫
+C (8x2 −iy)dz=
+∫ 2
+0 (8x2 −5ix)(1+5 i)dx, and then integrate
+intheusualmanner:
+∫
+C
+(8x2 −iy)dz=(1+5 i)
+∫ 2
+0
+(8x2 −5ix)dx
+=(1+5 i)
+[8
+3 x3
+]2
+0
+−(1+5 i)i
+[5
+2 x2
+]2
+0
+= 214
+3 + 290
+3 i.
+In general, ifxandyare related by means of a continuous real func-
+tiony= f(x),thenthecorrespondingcurveCinthecomplexplanecanbe
+parametrizedbyz(x)= x+ if(x). Equivalently,wecanletx= tsothat
+asetofparametricequationsforCisx= t,y= f(t).
+PropertiesThefollowingpropertiesofcontourintegralsareanalogous
+tothepropertiesofreallineintegralsaswellasthepropertieslistedin(5)–(8).
+Theorem 5.2 Properties of Contour Integrals
+SupposethefunctionsfandgarecontinuousinadomainD,andCisa
+smoothcurvelyingentirelyinD. Then
+(i)
+∫
+C kf(z)dz= k
+∫
+C f(z)dz,kacomplexconstant.
+(Theoremcontinuesonpage252)
+
+=== PAGE 18 ===
+252 Chapter 5 Integration in the Complex Plane
+(ii)
+∫
+C [f(z)+ g(z)]dz=
+∫
+C f(z)dz+
+∫
+C g(z)dz.
+(iii)
+∫
+C f(z)dz=
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz, whereCconsists of the
+smoothcurvesC1 andC2 joinedendtoend.
+(iv)
+∫
+− C f(z)dz= −
+∫
+C f(z)dz,where–Cdenotesthecurvehavingthe
+oppositeorientationofC.
+ThefourpartsofTheorem5.2alsoholdifCisapiecewisesmoothcurve
+inD.
+EXAMPLE 3C Is a Piecewise Smooth Curve
+Evaluate
+∫
+C (x2+ iy2)dz,whereCisthecontourshowninFigure5.20.
+y
+x
+1 + 2i
+1 + i
+C2
+C1
+Figure 5.20 ContourC is piecewise
+smooth.
+SolutionInviewofTheorem5.2(iii)wewrite
+∫
+C
+(x2+ iy2)dz=
+∫
+C 1
+(x2+ iy2)dz+
+∫
+C 2
+(x2+ iy2)dz.
+SincethecurveC1 isdeﬁnedbyy= x,itmakessensetousexasaparameter.
+Therefore,z(x)= x+ ix, z′(x)=1+ i, f(z)= x2+ iy2,f(z(x))= x2+ ix2,
+and
+∫
+C 1
+(x2+ iy2)dz=
+∫ 1
+0
+(1+i)x2
+  
+(x2+ ix2)(1+ i)dx
+=(1+ i)2
+∫ 1
+0
+x2dx= (1+ i)2
+3 = 2
+3 i. (12)
+ThecurveC2 isdeﬁnedbyx=1,1 ≤y≤2. Ifweuseyasaparameter,then
+z(y)=1+ iy, z′(y)= i, f(z(y))=1+ iy2,and
+∫
+C 2
+(x2+ iy2)dz=
+∫ 2
+1
+(1+ iy2)idy= −
+∫ 2
+1
+y2dy+ i
+∫ 2
+1
+dy= −7
+3 + i.(13)
+Combining(10)and(13)gives
+∫
+C (x2+ iy2)dz= 2
+3i+( − 7
+3 + i)= − 7
+3 + 5
+3i.
+Therearetimesintheapplicationofcomplexintegrationthatitisuse-
+ful to ﬁnd an upper bound for the modulus or absolute value of a contour
+integral. In the next theoremwe use the fact that the length of a plane
+curve isL=
+∫ b
+a
+√
+[x′(t)]2+[y′(t)]2dt. But ifz′(t)= x′(t)+ iy′(t),then
+|z′(t)|=
+√
+[x′(t)]2+[y′(t)]2 and,consequently,L=
+∫ b
+a |z′(t)|dt.
+Theorem 5.3 A Bounding Theorem
+IffiscontinuousonasmoothcurveCandif|f(z)|≤MforallzonC,
+then
+⏐⏐∫
+C f(z)dz
+⏐
+⏐ ≤ML,whereListhelengthofC.
+
+=== PAGE 19 ===
+5.2 Complex Integrals 253
+ProofIt follows fromthe formof the triangle inequality given in (11) of
+Section1.2that
+⏐⏐
+⏐
+⏐
+⏐
+n∑
+k=1
+f(z∗
+k)∆zk
+⏐
+⏐
+⏐
+⏐
+⏐ ≤
+n∑
+k=1
+|f(z∗
+k)||∆zk|≤M
+n∑
+k=1
+|∆zk|. (14)
+Because|∆zk|=
+√
+(∆xk)2+(∆yk)2, we can interpret|∆zk|as the length
+ofthechordjoiningthepointszk andzk− 1 onC. Moreover, sincethesum
+of the lengths of the chords cannot be greater than the lengthLofC, the
+inequality(14)continuesas|∑n
+k=1 f(z∗
+k)∆zk|≤ML.Finally,thecontinuity
+offguarantees that
+∫
+C f(z)dzexists, and so if we let∥P∥→ 0, the last
+inequalityyields
+⏐⏐ ∫
+C f(z)dz
+⏐
+⏐ ≤ML.
+✎
+Theorem5.3 is used often in the theory of com plex integration and is
+sometimesreferredtoastheML-inequality. Itfollowsfromthediscussion
+onpage124ofSection2.6thatsincefiscontinuousonthecontourC,the
+boundMforthevaluesf(z)inTheorem5.3willalwaysexist.
+EXAMPLE 4A Bound for a Contour Integral
+Find an upper bound for the absolute value of
+∮
+C
+ez
+z+1 dzwhereCis the
+circle|z|=4.
+SolutionFirst,thelengthL(circumference)ofthecircleofradius4is8π.
+Next,fromtheinequality(7)ofSection1.2,itfollowsforallpointszonthe
+circlethat|z+1 |≥|z|−1=4 −1=3. Thus
+⏐
+⏐
+⏐
+⏐
+e
+z
+z+1
+⏐
+⏐
+⏐
+⏐ ≤ |e
+z|
+|z|−1= |ez|
+3 . (15)
+Inaddition,|ez|= |ex(cosy+ isiny)|= ex.Forpointsonthecircle|z|=4,
+themaximumthatx=Re(z)canbeis4,andso(15)yields
+⏐
+⏐
+⏐⏐
+e
+z
+z+1
+⏐⏐
+⏐⏐ ≤ e
+4
+3 .
+FromtheML-inequality(Theorem5.3)wehave
+⏐⏐
+⏐
+⏐
+∮
+C
+ez
+z+1 dz
+⏐
+⏐
+⏐
+⏐ ≤ 8πe
+4
+3 .
+
+=== PAGE 20 ===
+254 Chapter 5 Integration in the Complex Plane
+Remarks
+ThereisnouniqueparametrizationforacontourC. Youshouldverify
+that
+z(t)= eit=cost+ isint,0≤t≤2π
+z(t)= e2πit=cos2πt+ isin2πt,0≤t≤1
+z(t)= eπit/2 =cosπt
+2 + isinπt
+2 ,0≤t≤4
+are all parametrizations, oriented in the positive direction, for the unit
+circle|z|=1.

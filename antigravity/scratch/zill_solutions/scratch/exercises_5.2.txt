@@ -1,0 +1,725 @@
+EXERCISES 5.2Answerstoselectedodd-numberedproblemsbeginonpageANS-16.
+In Problems 1-16, evaluate the given integral along the indicated contour.
+1.
+∫
+C
+(z+3) dz, whereCisx=2t,y=4t− 1, 1 ≤ t≤ 3
+2.
+∫
+C
+(2¯z− z) dz, whereCisx= −t,y= t2 +2,0 ≤ t≤ 2
+3.
+∫
+C
+z2 dz, whereCisz(t)=3 t+2 it,−2≤ t≤ 2
+4.
+∫
+C
+(3z2 − 2z) dz, whereCisz(t)= t+ it2,0 ≤ t≤ 1
+5.
+∫
+C
+z+1
+z dz,whereCis the right half of the circle|z|= 1 fromz= −itoz= i
+6.
+∫
+C
+|z|2 dz, whereCisx= t2,y=1 /t,1 ≤ t<2
+7.
+∮
+C
+Re(z) dz, whereCis the circle|z|=1
+8.
+∮
+C
+( 1
+(z+ i) 3 − 5
+z+ i+8
+)
+dz, whereCis the circle|z+ i|=1 ,0 ≤ t≤ 2π
+9.
+∫
+C
+(x2 + iy3) dz, whereCis the straight line fromz=1t oz= i
+10.
+∫
+C
+(x2 − iy3) dz, whereCis the lower half of the circle|z|= 1 fromz= −1
+toz=1
+11.
+∫
+C
+ez dz,whereCis the polygonal path consisting of the line segments from
+z=0t oz= 2 and fromz=2t oz=1+ πi
+12.
+∫
+C
+sinzdz,whereCis the polygonal path consisting of the line segments from
+z=0t oz= 1 and fromz=1t oz=1+ i
+13.
+∫
+C
+Im(z− i) dz,whereCis the polygonal path consisting of the circular arc
+along|z|= 1 fromz=1t oz= iand the line segment fromz= itoz= −1
+
+=== PAGE 21 ===
+5.2 Complex Integrals 255
+14.
+∫
+C
+dz, whereC is the left half of the ellipse1
+36 x2 + 1
+4y2 = 1 fromz=2 i
+toz= −2i
+15.
+∮
+C
+zez dz,whereCis the square with verticesz=0 ,z=1 ,z=1+ i, andz= i
+16.
+∫
+C
+f(z) dz, wheref(z)=
+
+
+
+2,x <0
+6x, x >0
+andCis the parabolay= x2 from
+z= −1+ itoz=1+ i
+In Problems 17–20, evaluate the given integral along the contourC given in
+Figure 5.21.
+17.
+∮
+C
+xdz 18.
+∮
+C
+(2z− 1) dz
+19.
+∮
+C
+z2 dz 20.
+∮
+C
+¯z2 dz
+y
+x
+1
+1 + i
+Figure 5.21Figure for Problems 17–20
+In Problems 21–24, evaluate
+∫
+C (z2 − z+2) dzfromito 1 along the contourCgiven
+in the ﬁgures.
+21. 22.y
+x
+1
+i
+Figure 5.22 Figure for Problem 21
+y
+x
+1
+1 + i i
+Figure 5.23 Figure for Problem 22
+23. 24.
+y
+x
+1
+y = 1 – x2i
+Figure 5.24 Figure for Problem 23
+y
+x
+1
+x2 + y2 = 1i
+Figure 5.25 Figure for Problem 24
+In Problems 25–28, ﬁnd an upper bound for the absolute value of the given integral
+along the indicated contour.
+25.
+∮
+C
+ez
+z2 +1 dz,whereCis the circle|z|=5
+26.
+∫
+C
+1
+z2 − 2idz,whereCis the right half of the circle|z|= 6 fromz= −6i
+toz=6i
+
+=== PAGE 22 ===
+256 Chapter 5 Integration in the Complex Plane
+27.
+∫
+C
+(z2 +4) dz, whereCis the line segment fromz=0t oz=1+ i
+28.
+∫
+C
+1
+z3 dz,whereCis one-quarter of the circle|z|= 4 fromz=4itoz=4
+Focus on Concepts
+29.(a) Use Deﬁnition 5.3 to show for any smooth curveCbetweenz0 andzn that∫
+C dz= zn − z0.
+(b) Use the result in part (a) to verify your answer to Problem 14.
+(c) What is
+∮
+C dzwhenCis a simple closed curve?
+30.Use Deﬁnition 5.3 to show for any smooth curveCbetweenz0 andzn that∫
+C zdz= 1
+2(z2
+n − z2
+0).[Hint: The integral exists. So choosez∗
+k = zk and
+z∗
+k = zk–1.]
+31.Use the results of Problems 29 and 30 to evaluate
+∫
+C (6z+4) dzwhereCis:
+(a) The straight line from 1+ito2+3i.
+(b) The closed contourx4 + y4 =4 .
+32.Find an upper bound for the absolute value of the integral
+∫
+C
+1
+z2 +1 dz, where
+the contourCis the line segment fromz=3t oz=3+ i. Use the fact that⏐⏐z2 +1
+⏐
+⏐
+= |z− i||z+ i|where|z− i|and|z+ i|represent, respectively, the
+distances fromiand−ito pointszonC.
+33.Find an upper bound for the absolute value of the integral
+∫
+C Ln(z+3) dz,
+where the contourCis the line segment fromz=3itoz=4+3 i.
+5.3 Cauchy-Goursat Theorem
+5.3Inthissectionweshallconcentrateoncontourintegrals,wherethecontourCisasimple
+closed curvewithapositive(counterclockwise)orientation. Speciﬁcally,weshallseethat
+whenfisanalyticinaspecialkindofdomainD,thevalueofthecontourintegral
+∮
+C f(z)dz
+isthesameforanysimpleclosedcurveCthatliesentirelywithinD. Thistheorem,called
+theCauchy-Goursat theorem,isoneofthefundamentalresultsincomplexanalysis.
+PreliminarytodiscussingtheCauchy-Goursattheoremandsomeofitsramiﬁcations,
+weneedtodistinguishtwokindsofdomainsinthecomplexplain: simplyconnectedand
+multiplyconnected.
+Simply and Multiply Connected DomainsRecallfromSec-
+tion1.5thatadomainisanopenconnectedsetinthecomplexplane. Wesay
+thatadomainDissimply connectedifeverysimpleclosedcontourClying
+entirelyinDcanbeshrunktoapointwithoutleavingD. SeeFigure5.26.
+Inotherwords,ifwedrawanysimpleclosedcontourCsothatitliesentirely
+withinasimplyconnecteddomain,thenCenclosesonlypointsofthedomain
+
+=== PAGE 23 ===
+5.3 Cauchy-Goursat Theorem 257
+D. Expressedyetanotherway,asimplyconnecteddomainhasno“holes”in
+it. The entire complex plane is an example of a simply connected domain;
+theannulusdeﬁnedby1<|z|<2isnotsimplyconnected. (Why?) Ado-
+mainthatisnotsimplyconnectediscalledamultiply connected domain;
+thatis,amultiplyconnecteddomainhas“holes”init. NoteinFigure5.27
+thatif the curveC
+2 enclosing the“hole” wereshrunkto apoint, thecurve
+wouldhavetoleaveDeventually. Wecalladomainwithone“hole”doubly
+connected,adomainwithtwo“holes”triply connected,andsoon. The
+opendiskdeﬁnedby|z|<2isasimplyconnecteddomain;theopencircular
+annulusdeﬁnedby1<|z|<2isadoublyconnecteddomain.
+D C
+Figure 5.26 Simply connected
+domainD
+D
+C2
+C1
+Figure 5.27 Multiply connected
+domainD
+Cauchy’s TheoremIn1825theFrenchmathematicianLouis-Augustin
+Cauchyprovedonethemostimportanttheoremsincomplexanalysis.
+Cauchy’s Theorem
+Supposethatafunctionfisanalyticinasimplyconnecteddomain
+Dandthatf
+′ iscontinuousinD. Thenforevery simpleclosed(1)
+contourCinD,
+∮
+C f(z)dz=0.
+Cauchy’s Proof of (1)Theproofofthistheoremisanimmediateconse-
+quenceofGreen’stheoremintheplaneandtheCauchy-Riemannequations.
+RecallfromcalculusthatifCisapositivelyoriented,piecewisesmooth,sim-
+ple closed curve forming the boundary of a regionRwithinD, and if the
+real-valuedfunctionsP(x,y)andQ(x,y)alongwiththeirﬁrst-orderpartial
+derivativesarecontinuousonadomainthatcontainsCandR,then
+∮
+C
+Pdx+ Qdy=
+∫∫
+R
+(∂Q
+∂x− ∂P
+∂y
+)
+dA. (2)Green’s theorem expresses a real
+line integral as a double integral
+Nowinthestatement(1)wehaveassumedthatf′ iscontinuousthroughout
+thedomainD. Asaconsequence,therealandimaginarypartsoff(z)= u+iv
+and their ﬁrst partial derivatives are continuous throughoutD. By (9) of
+Section5.2wewrite
+∮
+C f(z)dzintermsofreallineintegralsandapplyGreen’s
+theorem(2)toeachlineintegral:
+∮
+C
+f(z)dz=
+∮
+C
+u(x,y)dx−v(x,y)dy+ i
+∮
+C
+v(x,y)dx+ u(x,y)dy
+=
+∫∫
+R
+(
+−∂v
+∂x− ∂u
+∂y
+)
+dA+ i
+∫∫
+R
+(∂u
+∂x− ∂v
+∂y
+)
+dA. (3)
+Becausefis analytic inD, the real functionsuandvsatisfy the Cauchy-
+Riemannequations,∂u/∂x= ∂v/∂yand∂u/∂y= −∂v/∂x,ateverypointin
+
+=== PAGE 24 ===
+258 Chapter 5 Integration in the Complex Plane
+D. UsingtheCauchy-Riemannequationstoreplace∂u/∂yand∂u/∂xin(3)
+showsthat
+∮
+C
+f(z)dz=
+∫∫
+R
+(
+−∂v
+∂x+ ∂v
+∂x
+)
+dA+ i
+∫∫
+R
+(∂v
+∂y− ∂v
+∂y
+)
+dA
+=
+∫∫
+R
+(0)dA+ i
+∫∫
+R
+(0)dA=0.
+Thiscompletestheproof.✎
+In 1883 the French mathematician Edouard Goursat proved that the
+assumption of continuity off′ is not necessary to reach the conclusion of
+Cauchy’s theorem. The resulting modiﬁed version of Cauchy’s theorem is
+knowntodayastheCauchy-Goursat theorem. Asonemightexpect,with
+fewerhypotheses,theproofofthisversionofCauchy’stheoremismorecom-
+plicatedthantheonejustpresented. AformoftheproofdevisedbyGoursat
+isoutlinedinAppendixII.
+Theorem 5.4 Cauchy-Goursat Theorem
+SupposethatafunctionfisanalyticinasimplyconnecteddomainD.
+ThenforeverysimpleclosedcontourCinD,
+∮
+C f(z)dz=0.
+Sincetheinteriorofasimpleclosedcontourisasimplyconnecteddomain,
+theCauchy-Goursattheoremcanbestatedintheslightlymorepracticalman-
+ner:
+IffisanalyticatallpointswithinandonasimpleclosedcontourC,
+then
+∮
+C f(z)dz=0. (4)
+EXAMPLE 1Applying the Cauchy-Goursat Theorem
+Evaluate
+∮
+C ezdz,wherethecontourCisshowninFigure5.28.
+SolutionThefunctionf(z)= ez isentireandconsequentlyisanalyticatall
+pointswithinandonthesimpleclosedcontourC. Itfollowsfromtheformof
+theCauchy-Goursattheoremgivenin(4)that
+∮
+C ezdz=0.
+y
+x
+C
+Figure 5.28 Contour for Example 1
+ThepointofExample1isthat
+∮
+C ezdz=0foranysimpleclosedcontour
+in the complex plane. Indeed, it follows that for any simple closed contour
+Candanyentirefunctionf,suchasf(z)=sinz,f(z)=cosz,andp(z)=
+a
+nzn + an− 1zn + ···+ a1z+ a0,n=0,1,2,...,that
+∮
+C
+sinzdz=0,
+∮
+C
+coszdz=0,
+∮
+C
+p(z)dz=0,
+andsoon.
+
+=== PAGE 25 ===
+5.3 Cauchy-Goursat Theorem 259
+EXAMPLE 2Applying the Cauchy-Goursat Theorem
+Evaluate
+∮
+C
+dz
+z2,wherethecontourCistheellipse(x−2)2+ 1
+4(y−5)2 =1.
+SolutionTherationalfunctionf(z)=1 /z2 isanalyticeverywhereexcept
+atz=0. Butz=0isnotapointinteriortooronthesimpleclosedelliptical
+contourC. Thus,from(4)wehavethat
+∮
+C
+dz
+z2 =0.
+Cauchy-Goursat Theorem for Multiply Connected
+DomainsIffis analytic in a multiply connected domainDthen we
+cannotconcludethat
+∮
+C f(z)dz=0foreverysimpleclosedcontourCinD.
+Tobegin, supposethatDisadoublyconnecteddomainandCandC1 are
+simpleclosedcontourssuchthatC1 surroundsthe“hole”inthedomainand
+isinteriortoC. SeeFigure5.29(a). Suppose,also,thatfisanalyticoneach
+contourandateachpointinteriortoCbutexteriortoC1. Byintroducing
+the crosscutABshown in Figure 5.29(b), the region bounded between the
+curvesisnowsimplyconnected. From(iv)ofTheorem5.2,theintegralfrom
+AtoBhastheoppositevalueoftheintegralfromBtoA,andsofrom(4)
+wehave
+∫
+C
+f(z)dz+
+∫
+AB
+f(z)dz+
+∫
+− AB
+f(z)dz+
+∫
+C 1
+f(z)dz=0
+or
+∫
+C
+f(z)dz=
+∫
+C 1
+f(z)dz. (5)
+D
+C
+C
+A
+B
+D
+C1
+C1
+(a)
+(b)
+Figure 5.29 Doubly connected
+domainD
+Thelastresultissometimescalledtheprinciple of deformation of con-
+tourssince we can think of the contourC1 as a continuous deformation of
+thecontourC. Underthisdeformationofcontours,thevalueoftheintegral
+doesnotchange. Inotherwords,(5)allowsustoevaluateanintegralovera
+complicatedsimpleclosedcontourCbyreplacingCwithacontourC1 that
+ismoreconvenient.
+EXAMPLE 3Applying Deformation of Contours
+Evaluate
+∮
+C
+dz
+z−i,whereCisthecontourshowninblackinFigure5.30.
+y
+C C1
+i
+x
+–2
+–2i
+4i
+2 – 2i
+2 + 3i
+–2 + 4i
+Figure 5.30 We use the simpler
+contourC 1 in Example 3.
+SolutionInviewof(5),wechoosethemoreconvenientcircularcontourC1
+drawnincolorintheﬁgure. Bytakingtheradiusofthecircletober=1,
+we are guaranteed thatC1 lies withinC. In other words,C1 is the circle
+
+=== PAGE 26 ===
+260 Chapter 5 Integration in the Complex Plane
+|z−i|=1,whichfrom(10)ofSection2.2canbeparametrizedbyz= i+ eit,
+0≤t≤2π. Fromz−i= eitanddz= ieitdtweobtain
+∮
+C
+dz
+z−i=
+∮
+C 1
+dz
+z−i=
+∫ 2π
+0
+ieit
+eitdt= i
+∫ 2π
+0
+dt=2 πi.
+TheresultobtainedinExample3canbegeneralized. Usingtheprinciple
+of deformation of contours (5) and proceeding as in the example, it can be
+shownthatifz0 isanyconstantcomplexnumberinteriortoanysimpleclosed
+contourC,thenfornanintegerwehave
+∮
+C
+dz
+(z−z0)n =
+
+
+
+2πi n=1
+0,n ̸=1.
+(6)
+For example, 1/(z − z0)− 3 =
+(z − z0)3 is a polynomial.
+The fact that the integral in (6) is zero whenn̸= 1 follows only partially
+fromthe Cauchy-Goursat theorem . Whennis zero or a negative integer,
+1/(z−z0)n isapolynomialandthereforeentire. Theorem5.4andthedis-
+cussion following Example 1 then indicates that
+∮
+C dz/(z−z0)n =0 .I ti s
+leftasanexercisetoshowthattheintegralisstillzerowhennisapositive
+integerdiﬀerentfrom1. SeeProblem24inExercises5.3.
+Analyticityofthefunctionfatallpointswithinandonasimpleclosed
+contourCissuﬃcienttoguaranteethat
+∮
+C f(z)dz=0. However,theresult
+in (6) emphasizes that analyticity is notnecessary; in other words, it can
+happenthat
+∮
+C f(z)dz=0withoutfbeinganalyticwithinC. Forinstance,
+ifCinExample2isthecircle|z|=1,then(6),withtheidentiﬁcationsn=2
+andz0 = 0, immediately gives
+∮
+C
+dz
+z2 = 0. Note thatf(z)=1 /z2 is not
+analyticatz=0withinC.
+EXAMPLE 4Applying Formula (6)
+Evaluate
+∮
+C
+5z+7
+z2+2 z−3 dz,whereCiscircle|z−2 |=2 .
+SolutionSincethedenominatorfactorsasz2+2 z−3=( z−1)(z+3)the
+integrandfailstobeanalyticatz=1andz= −3. Ofthesetwopoints,only
+z=1lieswithinthecontourC,whichisacirclecenteredatz=2ofradius
+r=2. Nowbypartialfractions
+5z+7
+z2+2 z−3 = 3
+z−1+ 2
+z+3
+andso
+∮
+C
+5z+7
+z2+2 z−3 dz=3
+∮
+C
+1
+z−1dz+2
+∮
+C
+1
+z+3 dz. (7)
+Inviewoftheresultgivenin(6),theﬁrstintegralin(7)hasthevalue2πi,
+whereasthevalueofthesecondintegralis0bytheCauchy-Goursattheorem.
+
+=== PAGE 27 ===
+5.3 Cauchy-Goursat Theorem 261
+Hence,(7)becomes
+∮
+C
+5z+7
+z2+2 z−3 dz=3(2 πi)+2(0)=6 πi.
+IfC,C1, andC2 aresimpleclosedcontoursasshowninFigure5.31(a)
+and iffis analytic on each of the three contours as well as at each point
+interiortoCbutexteriortobothC1 andC2,thenbyintroducingcrosscuts
+betweenC1 andCandbetweenC2 andC,asillustratedinFigure5.31(b),it
+followsfromTheorem5.4that
+∫
+C
+f(z)dz+
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz=0
+∫
+C
+f(z)dz=
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz. (7)andso
+C1
+C
+D
+C2
+C1
+C
+D
+C2
+(a)
+(b)
+Figure 5.31 Triply connected domainD
+The next theorem summarizes the general result for a multiply connected
+domainwithn“holes.”
+Theorem 5.5 Cauchy-Goursat Theorem for Multiply
+Connnected Domains
+SupposeC,C1,...,Cn aresimpleclosedcurveswithapositiveorientation
+suchthatC1,C2,...,Cn areinteriortoCbuttheregionsinteriortoeach
+Ck,k=1 ,2,...,n,havenopointsincommon. Iffisanalyticoneach
+contourandateachpointinteriortoCbutexteriortoalltheCk,k=1,2,
+...,n,then
+∮
+C
+f(z)dz=
+n∑
+k=1
+∮
+C k
+f(z)dz. (8)
+EXAMPLE 5Applying Theorem 5.5
+Evaluate
+∮
+C
+dz
+z2+1,whereCisthecircle|z|=4.
+SolutionInthiscasethedenominatoroftheintegrandfactorsasz2+1=
+(z−i)(z+ i). Consequently,theintegrand1/(z2+1)isnotanalyticatz= i
+andatz= −i. BothofthesepointsliewithinthecontourC. Usingpartial
+fractiondecompositiononcemore,wehave
+1
+z2+1 = 1
+2i
+1
+z−i− 1
+2i
+1
+z+ i
+
+=== PAGE 28 ===
+262 Chapter 5 Integration in the Complex Plane
+∮
+C
+dz
+z2+1 = 1
+2i
+∮
+C
+[ 1
+z−i− 1
+z+ i
+]
+dz.and
+Wenowsurroundthepointsz= iandz= −ibycircularcontoursC1 and
+C2,respectively,thatlieentirelywithinC. Speciﬁcally,thechoice|z−i|= 1
+2
+forC1 and|z+ i|= 1
+2 forC2 willsuﬃce. SeeFigure5.32. FromTheorem5.5
+wecanwrite
+∮
+C
+dz
+z2+1 = 1
+2i
+∮
+C 1
+[ 1
+z−i− 1
+z+ i
+]
+dz+ 1
+2i
+∮
+C 2
+[ 1
+z−i− 1
+z+ i
+]
+dz
+= 1
+2i
+∮
+C 1
+1
+z−idz− 1
+2i
+∮
+C 1
+1
+z+ idz+ 1
+2i
+∮
+C 2
+1
+z−idz− 1
+2i
+∮
+C 2
+1
+z+ idz.(9)
+C1
+C2
+C
+y
+i
+–i
+x
+Figure 5.32 Contour for Example 5Because1/(z+i)isanalyticonC1andateachpointinitsinteriorandbecause
+1/(z−i)isanalyticonC2 andateachpointinitsinterior,itfollowsfrom(4)
+thatthesecondandthirdintegralsin(9)arezero. Moreover,itfollowsfrom
+(6),withn=1,that
+∮
+C 1
+dz
+z−i=2 πiand
+∮
+C 2
+dz
+z+ i=2 πi.
+Thus(9)becomes
+∮
+C
+dz
+z2+1 = π−π=0.
+C
+D
+Figure 5.33 ContourC is closed but
+not simple.
+Remarks
+Throughout the foregoing discussion we assumed thatCwas a simple
+closed contour, in other words,Cdid not intersect itself. Although we
+shallnotgivetheproof,itcanbeshownthattheCauchy-Goursattheorem
+is valid for any closed contourCin a simply connected domainD.A s
+showninFigure5.33,thecontourCisclosedbutnotsimple. Nevertheless,
+iffis analytic inD, then
+∮
+C f(z)dz=0 .See Problem23 in Exercises
+5.3.

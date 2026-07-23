@@ -1,0 +1,593 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light"><head>
+    <base href="">
+    <title>EMS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="EMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="EMS">
+    <meta property="og:site_name" content="EMS">
+    <link href="/css/site.css?v=KDbfWAEftkS3r5VEbibLHwxnZvBMWnRIdra_8V3cR4Q" rel="stylesheet">
+    <link rel="shortcut icon" href="/Logo/logo.png">
+    <link href="/loader/loading.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+
+    <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css">
+
+
+    <script src="/assets/js/scripts.bundle.js"></script>
+    <script src="/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+
+    <style>
+
+        @media (min-width: 992px) {
+            [data-kt-app-aside-fixed=true] .app-wrapper {
+                margin-right: 10px !important;
+                margin-top: 70px !important;
+            }
+
+            [data-kt-app-aside-enabled=true] .app-header-separator {
+                margin-right: 10px !important;
+            }
+
+            [data-kt-app-sidebar-fixed=true] .app-sidebar {
+                top: 60px !important;
+                padding-top: 20px !important;
+            }
+
+            .app-header {
+                height: 70px !important;
+            }
+        }
+
+        .border-bottom-none {
+            border-bottom: none !important;
+        }
+
+        .btn-group-sm > .btn.btn-icon, .btn.btn-icon.btn-sm {
+            height: calc(1.5em + 1.1rem + -2px) !important;
+            width: calc(1.5em + 1.1rem + -2px) !important;
+        }
+    </style>
+<style>/* Default jquery-loading styles */
+
+.loading-overlay {
+  display: table;
+  opacity: 0.7;
+}
+
+.loading-overlay-content {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.loading-overlay.loading-theme-light {
+  background-color: #fff;
+  color: #000;
+}
+
+.loading-overlay.loading-theme-dark {
+  background-color: #000;
+  color: #fff;
+}
+</style></head>
+
+<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-aside-enabled="true" data-kt-app-aside-fixed="true" data-kt-app-aside-push-toolbar="true" data-kt-app-aside-push-footer="true" class="app-default">
+    <div b-2ygzio75rl="" class="d-flex flex-column flex-root app-root" id="kt_app_root">
+        <div b-2ygzio75rl="" class="app-page flex-column flex-column-fluid" id="kt_app_page">
+            <div b-2ygzio75rl="" id="kt_app_header" class="app-header d-flex flex-column flex-stack">
+                <div b-2ygzio75rl="" class="d-flex flex-stack flex-grow-1">
+                    <div b-2ygzio75rl="" class="app-header-logo d-flex align-items-center ps-lg-12" id="kt_app_header_logo">
+                        <div b-2ygzio75rl="" id="kt_app_sidebar_toggle" class="app-sidebar-toggle btn btn-sm btn-icon bg-body btn-color-gray-500 btn-active-color-primary w-30px h-30px ms-n2 me-4 d-none d-lg-flex" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="app-sidebar-minimize">
+                            <i b-2ygzio75rl="" class="ki-outline ki-abstract-14 fs-3 mt-1"></i>
+                        </div>
+                        <div b-2ygzio75rl="" class="btn btn-icon btn-active-color-primary w-35px h-35px ms-3 me-2 d-flex d-lg-none" id="kt_app_sidebar_mobile_toggle">
+                            <i b-2ygzio75rl="" class="ki-outline ki-abstract-14 fs-2"></i>
+                        </div>
+                        <a b-2ygzio75rl="" href="javascript:;" class="app-sidebar-logo">
+                            <img alt="Logo" src="/Logo/logo.png" class="h-25px theme-light-show">
+                            <img alt="Logo" src="/Logo/logo.png" class="h-25px theme-dark-show">
+                        </a>
+                    </div>
+                    <div b-2ygzio75rl="" class="app-navbar flex-grow-1 justify-content-end" id="kt_app_header_navbar">
+                        <div b-2ygzio75rl="" class="app-navbar-item d-flex align-items-stretch flex-lg-grow-1">
+                        </div>
+
+                        <!-- Bell Icon with Notification Badge -->
+                        <div b-2ygzio75rl="" class="app-navbar-item ms-2 ms-lg-3 me-lg-6 position-relative">
+                            <a b-2ygzio75rl="" href="/Notification/Index" id="notificationBell" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative">
+                                <i b-2ygzio75rl="" class="ki-outline ki-notification-status fs-1"></i>
+                                <span b-2ygzio75rl="" id="notificationBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none; font-size: 10px; min-width: 18px; height: 18px; padding: 0 4px; line-height: 18px;">
+                                    0
+                                </span>
+                            </a>
+                        </div>
+
+                        <div b-2ygzio75rl="" class="app-navbar-item ms-2 ms-lg-6" id="kt_header_user_menu_toggle">
+                            <div b-2ygzio75rl="" class="cursor-pointer symbol symbol-35px symbol-circle" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                                <img src="/assets/media/avatars/blank.png" alt="user">
+                            </div>
+                            <div b-2ygzio75rl="" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                                <div b-2ygzio75rl="" class="menu-item px-3">
+                                    <div b-2ygzio75rl="" class="menu-content d-flex align-items-center px-3">
+                                        <div b-2ygzio75rl="" class="symbol symbol-50px me-5">
+                                            <img alt="Logo" src="/assets/media/avatars/blank.png">
+                                        </div>
+                                        <div b-2ygzio75rl="" class="d-flex flex-column">
+                                            <div b-2ygzio75rl="" class="fw-bold d-flex align-items-center fs-5">
+                                                appadmin@yopmail.com
+                                                <span b-2ygzio75rl="" class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">  Admin</span>
+                                            </div>
+                                            <a b-2ygzio75rl="" href="#" class="fw-semibold text-muted text-hover-primary fs-7">  appadmin@yopmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input b-2ygzio75rl="" type="hidden" id="hfUserId" value="1a31f383-8d04-4e72-d9d9-08dcb53f2e6c" style="">
+                                <div b-2ygzio75rl="" class="separator my-2"></div>
+                                <div b-2ygzio75rl="" class="menu-item px-5">
+                                    <a b-2ygzio75rl="" href="/Account/Profile" class="menu-link px-5">
+                                        My
+                                        Profile
+                                    </a>
+                                </div>
+                                <div b-2ygzio75rl="" class="menu-item px-5">
+                                    <a b-2ygzio75rl="" href="/Account/ChangePassword" class="menu-link px-5">
+                                        Change Password
+                                    </a>
+                                </div>
+                                <div b-2ygzio75rl="" class="menu-item px-5">
+                                    <a b-2ygzio75rl="" href="/Account/Logout" class="menu-link px-5">Sign Out</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div b-2ygzio75rl="" class="app-navbar-item ms-2 ms-lg-3 me-lg-6">
+                            <a b-2ygzio75rl="" href="/Account/Logout" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px">
+                                <i b-2ygzio75rl="" class="ki-outline ki-exit-right fs-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div b-2ygzio75rl="" class="app-header-separator"></div>
+            </div>
+            <div b-2ygzio75rl="" class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+                <div b-2ygzio75rl="" id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+                    <div b-2ygzio75rl="" id="kt_app_sidebar_wrapper" class="app-sidebar-wrapper">
+                        <div b-2ygzio75rl="" class="hover-scroll-y my-5 my-lg-2 ms-4 p-0" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header" data-kt-scroll-wrappers="#kt_app_sidebar_wrapper" data-kt-scroll-offset="5px" style="height: 633px;">
+                            <div b-2ygzio75rl="" id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false" class="app-sidebar-menu-primary kt_app_sidebar_menu menu menu-column menu-rounded menu-sub-indention menu-state-bullet-primary px-3 mb-5">
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/Organization/Index" class="menu-link manage-org-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-people fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                    <span b-2ygzio75rl="" class="path3"></span>
+                                                    <span b-2ygzio75rl="" class="path4"></span>
+                                                    <span b-2ygzio75rl="" class="path5"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Organizations</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/User/Index" class="menu-link manage-users-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-outline ki-people fs-2"></i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Users</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/Gateway/Index" class="menu-link manage-gateway-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-element-7 fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Gateway</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" data-kt-menu-trigger="click" class="menu-item menu-accordion hover show">
+                                        <span b-2ygzio75rl="" class="menu-link manage-devices-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-devices fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                    <span b-2ygzio75rl="" class="path3"></span>
+                                                    <span b-2ygzio75rl="" class="path4"></span>
+                                                    <span b-2ygzio75rl="" class="path5"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Devices</span>
+                                            <span b-2ygzio75rl="" class="menu-arrow open"></span>
+                                        </span>
+                                        <div b-2ygzio75rl="" class="menu-sub menu-sub-accordion show">
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link devices-list-menu-link active" href="/Device/Index">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Devices List </span>
+                                                </a>
+                                            </div>
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link devices-template-menu-link" href="/DeviceTemplate/Index">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Devices Template</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/ManageIcons/Index" class="menu-link manage-icon-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="fa fa-icons fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Icons</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/ManageProducts/Index" class="menu-link manage-products-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="fa fa-store fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Products</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                        <a b-2ygzio75rl="" href="/Data/Index" class="menu-link manage-data-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-data fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                    <span b-2ygzio75rl="" class="path3"></span>
+                                                    <span b-2ygzio75rl="" class="path4"></span>
+                                                    <span b-2ygzio75rl="" class="path5"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Data</span>
+                                            <span b-2ygzio75rl="" class="menu-arrow"></span>
+                                        </a>
+                                        <div b-2ygzio75rl="" class="menu-sub menu-sub-accordion">
+
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link alarm-record-menu-link" href="/Data/VariableAlarmHistory">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Variable Alarm Record</span>
+                                                </a>
+                                            </div>
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link linkage-record-menu-link" href="/Data/LinkageRecord">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Linkage Record</span>
+                                                </a>
+                                            </div>
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link linkage-record-menu-link" href="/Data/History">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Historical Data</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div b-2ygzio75rl="" data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                        <a b-2ygzio75rl="" href="javascript:;" class="menu-link alarm-linkage-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-time fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Alarm Linkage </span>
+                                            <span b-2ygzio75rl="" class="menu-arrow"></span>
+                                        </a>
+                                        <div b-2ygzio75rl="" class="menu-sub menu-sub-accordion">
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link template-triggers-menu-link" href="/AlarmLinkage/TemplateTriggers">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Template Triggers</span>
+                                                </a>
+                                            </div>
+
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link alarm-settings-menu-link" href="/AlarmLinkage/AlarmSettings">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Alarm Settings</span>
+                                                </a>
+                                            </div>
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link alarm-contacts-menu-link" href="/AlarmLinkage/Contacts">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Alarm Contacts</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/DeviceTimestamps/index" class="menu-link manage-device-timestamps-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="fa fa-solid fa-clock-rotate-left fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                    <span b-2ygzio75rl="" class="path3"></span>
+                                                    <span b-2ygzio75rl="" class="path4"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Device Timestamps</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/ScheduleTask/index" class="menu-link manage-schedule-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-financial-schedule fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                    <span b-2ygzio75rl="" class="path3"></span>
+                                                    <span b-2ygzio75rl="" class="path4"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Schedule Task</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/ThemeSettings/index" class="menu-link manage-theme-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-duotone ki-brush fs-2">
+                                                    <span b-2ygzio75rl="" class="path1"></span>
+                                                    <span b-2ygzio75rl="" class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Theme Settings</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" class="menu-item">
+                                        <a b-2ygzio75rl="" href="/ManageSettings/index" class="menu-link settings-list-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="fa-solid fa-gear fs-2"></i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Manage Settings</span>
+                                        </a>
+                                    </div>
+                                    <div b-2ygzio75rl="" data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                        <span b-2ygzio75rl="" class="menu-link others-menu-link">
+                                            <span b-2ygzio75rl="" class="menu-icon">
+                                                <i b-2ygzio75rl="" class="ki-outline ki-abstract-26 fs-2"></i>
+                                            </span>
+                                            <span b-2ygzio75rl="" class="menu-title">Others </span>
+                                            <span b-2ygzio75rl="" class="menu-arrow"></span>
+                                        </span>
+                                        <div b-2ygzio75rl="" class="menu-sub menu-sub-accordion">
+                                            <div b-2ygzio75rl="" class="menu-item">
+                                                <a b-2ygzio75rl="" class="menu-link devices-list-menu-link" href="/Setting/List">
+                                                    <span b-2ygzio75rl="" class="menu-bullet">
+                                                        <span b-2ygzio75rl="" class="bullet bullet-dot"></span>
+                                                    </span>
+                                                    <span b-2ygzio75rl="" class="menu-title">Manage List </span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div b-2ygzio75rl="" class="app-main flex-column flex-row-fluid" id="kt_app_main">
+                    <div b-2ygzio75rl="" class="d-flex flex-column flex-column-fluid">
+                        <div b-2ygzio75rl="" id="kt_app_content" class="app-content flex-column-fluid">
+                            <div b-2ygzio75rl="" id="kt_app_content_container" class="app-container container-fluid">
+                                <style>
+	.dt-buttons {
+		display: none
+	}
+</style>
+<div id="kt_app_toolbar" class="app-toolbar pb-10">
+	<div id="kt_app_toolbar_container" class="container-fluid d-flex align-items-stretch px-0">
+		<div class="app-toolbar-wrapper d-flex flex-stack flex-wrap gap-4 w-100">
+			<div class="page-title d-flex flex-column justify-content-center gap-1 me-3">
+				<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bold fs-3 m-0">Manage Devices</h1>
+				<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0">
+					<li class="breadcrumb-item text-muted">
+						<a href="/Device/Index" class="text-muted text-hover-primary">Manage Devices</a>
+					</li>
+					<li class="breadcrumb-item">
+						<span class="bullet bg-gray-400 w-5px h-2px"></span>
+					</li>
+					<li class="breadcrumb-item text-muted">List</li>
+				</ul>
+
+			</div>
+			<div class="d-flex align-items-center gap-2 gap-lg-2">
+				<a href="AddEdit" class="btn btn-sm btn-flex btn-primary fs-7 fw-bold">Add Device</a>
+				<a href="javascript:;" class="btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold" id="btn-deleteAll">Batch Delete</a>
+				<a href="javascript:;" class="btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold" id="excelExport">Export</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card card-flush h-lg-100">
+	<div class="card-body py-5">
+		<div class="d-flex align-items-center gap-2 gap-lg-2">
+			<div>
+				<select class="form-select form-select-sm w-250px OrganizatonId select2-hidden-accessible" data-placeholder="Organization" data-select2-id="select2-data-1-526k" tabindex="-1" aria-hidden="true">
+					<option value="All" data-select2-id="select2-data-3-0d7u">All</option>
+						<option value="2RVt+aSN/otydH6MXeiSRQ==">CF Smart Technology</option>
+						<option value="rrI74rmt8/tZxnM+QEiGtA==">FICO</option>
+						<option value="Zi1FeGuqC4mIRGVLW4PDTQ==">C Power</option>
+						<option value="UiBkRVolA8AgwOc9UtSJBg==">NUST</option>
+						<option value="GA4VIMV2cCIsd70wBTI6/Q==">Guest Org</option>
+						<option value="fo3rdShkqIi1q4YGbn7Ruw==">Supra Steel</option>
+						<option value="xXcUxzYIkf3jFnaWJh6LYg==">Japan Electronics</option>
+						<option value="RYKccPl4T4+4EqhO7XH4pQ==">Bakery</option>
+						<option value="e6ZU2YBH+74SfM+zgG4sNQ==">Red Chilli</option>
+						<option value="vG4IvY3moOOz1qRuNwIp4w==">Delicia Warehouse</option>
+				</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-2-8s05" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select form-select-sm w-250px OrganizatonId select2-selection--clearable" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-6kkx-container" aria-controls="select2-6kkx-container"><button type="button" class="select2-selection__clear" tabindex="-1" title="Remove all items" aria-label="Remove all items" aria-describedby="select2-6kkx-container" data-select2-id="select2-data-4-le17"><span aria-hidden="true">×</span></button><span class="select2-selection__rendered" id="select2-6kkx-container" role="textbox" aria-readonly="true" title="All">All</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+			</div>
+			<div>
+				<select class="form-select form-select-sm w-250px UserId select2-hidden-accessible" data-placeholder="User" data-select2-id="select2-data-5-feer" tabindex="-1" aria-hidden="true">
+					<option value="All" data-select2-id="select2-data-7-phwi">All Users</option>
+				</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-6-6qu3" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select form-select-sm w-250px UserId select2-selection--clearable" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-hh4u-container" aria-controls="select2-hh4u-container"><button type="button" class="select2-selection__clear" tabindex="-1" title="Remove all items" aria-label="Remove all items" aria-describedby="select2-hh4u-container" data-select2-id="select2-data-8-lh9h"><span aria-hidden="true">×</span></button><span class="select2-selection__rendered" id="select2-hh4u-container" role="textbox" aria-readonly="true" title="All Users">All Users</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+			</div>
+			<div>
+				<select class="form-select form-select-sm w-150px Status">
+					<option value="">All status</option>
+					<option value="Online">Online</option>
+					<option value="Offline">Offline</option>
+					<option value="Alarm">Alarm</option>
+					<option value="Not Configured">Not Configured</option>
+				
+				</select>
+			</div>
+
+			<div>
+				<input class="form-control form-control-sm name" placeholder="Please input device name" style="">
+			</div>
+			<a href="javascript:;" class="btn btn-sm btn-flex btn-primary fs-7 btn-query">Query</a>
+		</div>
+		<div class="py-0">
+			<div class="table-responsive">
+				<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row mb-2"><div class="col-sm-6 d-flex align-items-center justify-conten-start dt-toolbar"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select></label></div></div><div class="col-sm-6 d-flex align-items-center justify-content-end dt-toolbar"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm form-control-solid" placeholder="" aria-controls="DataTables_Table_0" style=""></label></div><div class="dt-buttons btn-group flex-wrap"><button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" type="button"><span>Excel</span></button> </div></div></div><div class="table-responsive"><table class="table datatable table-row-bordered table-row-gray-300 gy-7 dataTable no-footer" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 864px;">
+					<thead>
+						<tr class="fw-bold fs-6 text-gray-800"><th class="align-middle fs-6 sorting_disabled sorting_asc" rowspan="1" colspan="1" style="width: 21px;" aria-label="
+								
+									
+
+								
+							">
+								<label class="form-check form-check-custom form-check-sm">
+									<input class="form-check-input" type="checkbox" data-val="true" id="selectAll" style="">
+
+								</label>
+							</th><th class="px-5 sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 56.5px;" aria-label="Device Status: activate to sort column ascending">Device Status</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 92.25px;" aria-label="Device Name: activate to sort column ascending">Device Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 90.25px;" aria-label="Organization: activate to sort column ascending">Organization</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 92.25px;" aria-label="Gateway: activate to sort column ascending">Gateway</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 106.25px;" aria-label="Device Template: activate to sort column ascending">Device Template</th><th class="px-5 sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 46.5px;" aria-label="Switch: activate to sort column ascending">Switch</th><th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 115.25px;" aria-label="Operation">Operation</th></tr>
+					</thead>
+					<tbody>
+
+					<tr class="odd"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="xXcUxzYIkf3jFnaWJh6LYg==" id="checkbox' + xXcUxzYIkf3jFnaWJh6LYg== + '" style=""></div></td><td class="  px-5"><span class="badge badge-secondary fs-7 fw-semibold"> Offline </span></td><td>Imran's House</td><td>CF Smart Technology</td><td>IMRAN's HOUSE</td><td>IMRAN's HOUSE</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=xXcUxzYIkf3jFnaWJh6LYg==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=xXcUxzYIkf3jFnaWJh6LYg==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="xXcUxzYIkf3jFnaWJh6LYg==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="even"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="Hq0C/AjlfsRO9kjt9fv0WA==" id="checkbox' + Hq0C/AjlfsRO9kjt9fv0WA== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>Fico </td><td>CF Smart Technology</td><td>Fico Furnace</td><td>Fico Furnace</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=Hq0C/AjlfsRO9kjt9fv0WA==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=Hq0C/AjlfsRO9kjt9fv0WA==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="Hq0C/AjlfsRO9kjt9fv0WA==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="odd"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="mYFICw9EaWDW2kpNlsEGiw==" id="checkbox' + mYFICw9EaWDW2kpNlsEGiw== + '" style=""></div></td><td class="  px-5"><span class="badge badge-secondary fs-7 fw-semibold"> Offline </span></td><td>C Power</td><td>C Power</td><td>C-Power</td><td>C Power</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=mYFICw9EaWDW2kpNlsEGiw==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=mYFICw9EaWDW2kpNlsEGiw==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="mYFICw9EaWDW2kpNlsEGiw==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="even"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="VND753NUqHeN8g2LNKfgjA==" id="checkbox' + VND753NUqHeN8g2LNKfgjA== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>EMS PANEL</td><td>CF Smart Technology</td><td>EMS PANEL 1</td><td>EMS PANEL</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=VND753NUqHeN8g2LNKfgjA==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=VND753NUqHeN8g2LNKfgjA==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="VND753NUqHeN8g2LNKfgjA==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="odd"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="pyb6I8boDI6QRbAW1l2sbQ==" id="checkbox' + pyb6I8boDI6QRbAW1l2sbQ== + '" style=""></div></td><td class="  px-5"><span class="badge badge-secondary fs-7 fw-semibold"> Offline </span></td><td>CF BAG</td><td>CF Smart Technology</td><td>EMS PANEL</td><td>CFBAG</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=pyb6I8boDI6QRbAW1l2sbQ==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=pyb6I8boDI6QRbAW1l2sbQ==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="pyb6I8boDI6QRbAW1l2sbQ==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="even"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="KSq8XrXvFddKRfYSPlaBJg==" id="checkbox' + KSq8XrXvFddKRfYSPlaBJg== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>CF SMART TECHNOLOGIES</td><td>CF Smart Technology</td><td>CF SMART TECHNOLOGIES</td><td>CF SMART TECHNOLOGIES MONITORING SYSTEM</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=KSq8XrXvFddKRfYSPlaBJg==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=KSq8XrXvFddKRfYSPlaBJg==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="KSq8XrXvFddKRfYSPlaBJg==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="odd"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="mOXxPSlMgaPcj/wFxEPYyw==" id="checkbox' + mOXxPSlMgaPcj/wFxEPYyw== + '" style=""></div></td><td class="  px-5"><span class="badge badge-secondary fs-7 fw-semibold"> Offline </span></td><td>PV GENSET SYNC</td><td>CF Smart Technology</td><td>PV GENSET SYNC</td><td>PV GENSET SYNC</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=mOXxPSlMgaPcj/wFxEPYyw==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=mOXxPSlMgaPcj/wFxEPYyw==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="mOXxPSlMgaPcj/wFxEPYyw==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="even"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="VPozWAeYwqOwQ75YNYdSug==" id="checkbox' + VPozWAeYwqOwQ75YNYdSug== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>Gulshan-e-Zia</td><td>CF Smart Technology</td><td>Gulshan-e-Zia</td><td>Gulshan-e-Zia</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=VPozWAeYwqOwQ75YNYdSug==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=VPozWAeYwqOwQ75YNYdSug==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="VPozWAeYwqOwQ75YNYdSug==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="odd"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="X8z+Y4sXkmh11SNADtP0GQ==" id="checkbox' + X8z+Y4sXkmh11SNADtP0GQ== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>Supra Steel Furnaces</td><td>Supra Steel</td><td>Supra Steel Furnaces</td><td>SUPRA STEEL FURNACE</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=X8z+Y4sXkmh11SNADtP0GQ==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=X8z+Y4sXkmh11SNADtP0GQ==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="X8z+Y4sXkmh11SNADtP0GQ==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr><tr class="even"><td class="sorting_1"><div class="form-check form-check-custom form-check-sm">
+                            <input class="form-check-input rowCheckBox" type="checkbox" data-did="Ww+8OD8FnyC+HLhuTMTKSQ==" id="checkbox' + Ww+8OD8FnyC+HLhuTMTKSQ== + '" style=""></div></td><td class="  px-5"><span class="badge badge-success fs-7 fw-semibold"> Online </span></td><td>Japan Electronics</td><td>Japan Electronics</td><td>Japan Electronics</td><td>JAPAN ELECTRONICS</td><td class="  px-5"><span class="badge badge-light fs-7 fw-semibold"> OFF </span></td><td class="  text-center"><div class="d-flex justify-content-center flex-shrink-0 gap-2"><a href="/Device/Detail?id=Ww+8OD8FnyC+HLhuTMTKSQ==" class="btn btn-sm btn-icon btn-light-warning btn-hover-warning rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a><a href="/Device/AddEdit?id=Ww+8OD8FnyC+HLhuTMTKSQ==" class="btn btn-sm btn-icon btn-light-primary btn-hover-primary rounded me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil"></i></a><a href="javascript:;" data-id="Ww+8OD8FnyC+HLhuTMTKSQ==" class="btn btn-sm btn-icon btn-light-danger btn-hover-danger rounded me-1 btnDelete" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="bi bi-trash"></i></a></div></td></tr></tbody>
+				</table><div id="DataTables_Table_0_processing" class="dataTables_processing" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div></div><div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 12 records</div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div b-2ygzio75rl="" id="kt_app_footer" class="app-footer">
+                        <div b-2ygzio75rl="" class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
+                            <div b-2ygzio75rl="" class="text-dark order-2 order-md-1 my-3">
+                                <span b-2ygzio75rl="" class="text-muted fw-semibold me-1">2026 ©</span>
+                                <a b-2ygzio75rl="" href="javascript:;" target="_blank" class="text-gray-800 text-hover-primary">EMS</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div b-2ygzio75rl="" id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <i b-2ygzio75rl="" class="ki-outline ki-arrow-up"></i>
+    </div>
+    <script src="/loader/jquery.loading.js"></script>
+    <script src="/js/Common.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/site.js?v=BUM1_5iCjm1yGCjimsfiwFIiQudu16KLCbEXyxvIK6E"></script>
+
+    <script src="/js/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="/pages/notification.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" integrity="sha512-jB0TkTBeQC9ZSkBqDhdmfTv1qdfbWpGE72yJ/01Srq6hEzZIz2xkz1e57p9ai7IeHMwEG7HpzG6NdptChif5Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+	<script src="/pages/Device/Index.js?v=MS0XEDF8HKrkQBalGC6zu1tBBkuRbXx6k-_ZeIHoI3M"></script>
+
+    <script>
+        $('#kt_app_sidebar_toggle').on('click', function (event) {
+            setTimeout(() => {
+                const isMinimized = $('body').attr('data-kt-app-sidebar-minimize') === 'on';
+                localStorage.setItem('sidebarState', isMinimized ? 'collapsed' : 'expanded');
+            }, 100);
+        });
+
+        $(document).ready(function () {
+            const sidebarState = localStorage.getItem('sidebarState');
+
+            if (sidebarState === 'collapsed') {
+                $('body').attr('data-kt-app-sidebar-minimize', 'on');
+            } else {
+                $('body').removeAttr('data-kt-app-sidebar-minimize');
+            }
+        });
+        $(document).ready(function () {
+            const currentPath = window.location.pathname.toLowerCase();
+
+            $('.kt_app_sidebar_menu .menu-item').each(function () {
+                const link = $(this).find('a').first();
+                const href = link.attr('href')?.toLowerCase();
+
+                if (href === currentPath) {
+                    link.addClass('active');
+
+                    const parentAccordion = link.closest('.menu-accordion');
+                    if (parentAccordion.length) {
+                        parentAccordion.addClass('hover show');
+                        parentAccordion.find('.menu-sub').addClass('show');
+                        parentAccordion.find('.menu-arrow').addClass('open');
+                    }
+                }
+            });
+        });
+
+
+    </script>
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>

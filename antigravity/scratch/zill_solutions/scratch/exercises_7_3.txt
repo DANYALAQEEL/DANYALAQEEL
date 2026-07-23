@@ -1,0 +1,588 @@
+1828: EXERCISES 7.3Answers to selected odd-numbered problems begin on page ANS-22.
+1829: In Problems 1–6, use Theorem 7.5 to describe the image of the upper half-plane
+1830: y≥ 0 under the conformal mappingw= f(z) that satisﬁes the given conditions.
+1831: Donottrytosolveforf(z).
+1832: 1. f′(z)=( z−1)− 1/2,f(1)=0
+1833: 2. f′(z)=( z+1) − 1/3,f( −1)=0
+1834: 3. f′(z)=( z+1) − 1/2(z−1)1/2,f( −1)=0, f(1)=1
+1835: 4. f′(z)=( z+1) − 1/2(z−1)− 3/4,f( −1)=0, f(0)=1
+1836: 5. f′(z)=( z+1) 1/2z− 1/2(z−1)− 1/4,f( −1)= i,f(0)=0, f(1)=1
+1837: 6. f′(z)=( z−1)− 1/4z− 1/2(z−1)− 1/4,f( −1)= −1+ i,f(0)=0, f(1)=1+ i
+1838: InProblems7–10,usetheSchwarz-Christoﬀelformula(6)toﬁndf′(z)foraconfor-
+1839: mal mappingw= f(z) from the upper half-plane onto the given polygonal region
+1840: showningray. Usethevaluesx1 = −1,x2 =0, x3 =1, andsoonin(6). Donot
+1841: trytosolveforf(z).
+1842: 7. f( −1)=0 ,f(0)=1 8. f( −1)= −1,f(0)=0
+1843: 1 0
+1844: v
+1845: i
+1846: u
+1847: Figure 7.27 Figure for Problem 7
+1848: 10
+1849: /3
+1850: v
+1851: u
+1852: π
+1853: Figure 7.28 Figure for Problem 8
+1854: 9. f( −1)= −1,f(0)=1 10. f( −1)= i, f(0)=0
+1855: 1–1
+1856: /3 2
+1857: v
+1858: u
+1859: π /3 2π
+1860: Figure 7.29 Figure for Problem 9
+1861: v
+1862: i
+1863: u
+1864: /4π
+1865: Figure 7.30 Figure for Problem 10
+1866: --- PAGE 31 ---
+1867: 7.3 Schwarz-Christoffel Transformations 419
+1868: Focus on Concepts
+1869: 11. UsetheSchwarz-Christoﬀelformula(6)toconstructaconformalmappingfrom
+1870: the upper half-plane onto the polygonal region shown in gray in Figure 7.31.
+1871: Requirethatf( −1)= πiandf(1)=0.
+1872: 12. Use Schwarz-Christoﬀel formula (6) to construct a conformal mapping from
+1873: the upper half-plane onto the polygonal region shown in gray in Figure 7.32.
+1874: Requirethatf( −1)= −aiandf(1)= ai.
+1875: v
+1876: i
+1877: u
+1878: π
+1879: Figure 7.31 Figure for Problem 11
+1880: v
+1881: ai
+1882: –ai
+1883: u
+1884: Figure 7.32 Figure for Problem 12
+1885: 13. Use the Schwarz-Christoﬀel formula (6) to verify the conformal mapping in
+1886: entryM-3ofAppendixIIIbyﬁrstconstructingthederivativeofamappingof
+1887: the upper half-plane onto the polygonal region shown in gray in Figure 7.33.
+1888: Require thatf( −1) =−af(0) =v
+1889: 1i, andf(1) =a, and then letv1 →− ∞
+1890: alongthev-axis.
+1891: 14. Use the Schwarz-Christoﬀel formula (6) to verify the conformal mapping in
+1892: entryM-4ofAppendixIIIbyﬁrstconstructingthederivativeofamappingof
+1893: the upper half-plane onto the polygonal region shown in gray in Figure 7.34.
+1894: Require thatf( −1) =−u
+1895: 1,f(0) =ai, andf(1) =u1, and then letu1 → 0
+1896: alongtheu-axis.
+1897: v
+1898: v1i
+1899: u–aa
+1900: Figure 7.33 Figure for Problem 13
+1901: v
+1902: ai
+1903: u
+1904: u1–u1
+1905: Figure 7.34 Figure for Problem 14
+1906: Computer Lab Assignments
+1907: InProblems15–18,useaCAStoapproximatetheimagesofthepointsz1 = iand
+1908: z2 =1+ iunderthegivenfunction.
+1909: 15. w= f(z)isthemappingfromProblem3.
+1910: 16. w= f(z)isthemappingfromProblem6.
+1911: 17. w= f(z)isthemappingfromProblem8.
+1912: 18. w= f(z)isthemappingfromProblem9.
+1913: --- PAGE 32 ---
+1914: 420 Chapter 7 Conformal Mappings
+1915: 7.4 Poisson Integral Formulas
+1916: 7.4The success of using a conformal mapping to solve a boundary-value problem associated
+1917: with Laplace’s equation often depends on the abilityto solve a related boundary -value
+1918: problem in a simple domain such as the upper half-planey>0 or the open unit disk
+1919: |z|<1. In this section we present two important integral formulas for solving a Dirichlet
+1920: problem in these domains.
+1921: y
+1922: z 
+1923: x
+1924: = 0
+1925: x1
+1926: θ
+1927: = 0φ
+1928: θ
+1929: = k1φ
+1930: = θπ
+1931: = k0φ
+1932: ∇ 2
+1933: Figure 7.35 Dirichlet problem (1)
+1934: Formula for the Upper Half-PlaneWe begin byinvestigating
+1935: the following Dirichlet problem:
+1936: Solve:∂2φ
+1937: ∂x2 + ∂2φ
+1938: ∂y2 =0 ,−∞ <x<∞ ,y>0
+1939: (1)
+1940: Subject to:φ(x,0) =
+1941: 
+1942: 
+1943: 
+1944: k0,−∞ <x<x1
+1945: k1,x1 <x<∞ ,
+1946: wherek0 andk1 are real constants andx1 is a point on thexfunctionφ(x, y)
+1947: thatdependsontheangleθbetweentherayemanatingfromx1 andcontaining
+1948: the pointx1 +1 on thex-axis and the rayemanating fromx1 and containing
+1949: the pointz= x+ iyin the upper half-planey>0. After applying the
+1950: translationz− x1, we observe that the angleθis also the angle between the
+1951: positivex-axis and the vector representation ofz−x1. Sincezis in the upper
+1952: half-plane, this angle is given byθ= Arg(z− x1). In order to satisfythe
+1953: boundaryconditions in (1),φ(x, y) must range fromk1 tok0 asθvaries from
+1954: 0t oπ. The parametrization of a line segment given by(7) in Section 2.2
+1955: suggests thatφ(x, y) be deﬁned as a function ofθby:
+1956: φ(θ)= k1
+1957: (
+1958: 1 − θ
+1959: π
+1960: )
+1961: + k0
+1962: θ
+1963: π
+1964: or φ(x,y)= k1 + 1
+1965: π(k0 − k1)Arg(z− x1), (2)
+1966: where 0≤ θ≤ π.
+1967: We will now show that the functionφ(x, y) deﬁned in (2) is, in fact, a
+1968: solution of the Dirichlet problem (1). In the upper half-planey>0, we have
+1969: thatφ(x, y) is the imaginarypart of the function
+1970: f(z)= ik1 +Ln
+1971: [k0 − k1
+1972: π (z− x1)
+1973: ]
+1974: .
+1975: Becausefis analytic wheny>0, it follows from Theorem 3.7 that its imag-
+1976: inarypart is harmonic. Therefore,φ(x, y) satisﬁes Laplace’s equation
+1977: ∂2φ
+1978: ∂x2 + ∂2φ
+1979: ∂y2 = 0 (3)
+1980: when−∞ <x<∞ andy>0.
+1981: --- PAGE 33 ---
+1982: 7.4 Poisson Integral Formulas 421
+1983: Wenextverifythattheboundaryconditionsof(1)aresatisﬁedbyφ(x, y).
+1984: Assume thatzis in the interval (x1,∞ ) in the real axis. That is,z= x+0i
+1985: withx1 <x<∞ . In this case, Arg(z− x1) = 0, and so (2) gives
+1986: φ(x,0) =k1 + 1
+1987: π(k0 − k1)Arg(z− x1)= k1 + 1
+1988: π(k0 − k1)0= k1. (4)
+1989: On the other hand, ifz= x+0iwith−∞ <x<x1, then Arg(z− x1)= π,
+1990: and so
+1991: φ(x,0) =k1 + 1
+1992: π(k0 − k1)Arg(z− x1)= k1 + 1
+1993: π(k0 − k1)π= k0. (5)
+1994: Therefore,from(3),(4),and(5),weconcludethatthefunctionφ(x, y)deﬁned
+1995: by(2) is a solution of the Dirichlet problem (1).
+1996: The foregoing discussion can be generalized. In particular, consider the
+1997: Dirichlet problem
+1998: Solve:∂2φ
+1999: ∂x2 + ∂2φ
+2000: ∂y2 =0 ,−∞ <x<∞ ,y>0
+2001: (6)
+2002: Subject to:φ(x,0) =
+2003: 
+2004: 
+2005: 
+2006: 
+2007: 
+2008: 
+2009: 
+2010: 
+2011: 
+2012: 
+2013: 
+2014: 
+2015: 
+2016: k
+2017: 0,−∞ <x<x1
+2018: k1,x1 <x<x2
+2019: ..
+2020: . .
+2021: .
+2022: .
+2023: k
+2024: n,xn <x<∞ ,
+2025: wherex1 <x2 < ... < xn arendistinct points on thex-axis andk0,k1,
+2026: ...,kn aren+1 real constants. See Figure 7.36. Observe that (1) is simply
+2027: a special case of (6) corresponding ton= 1. With reasoning similar to that
+2028: used to obtain (2) we construct the function
+2029: φ(x,y)= kn + 1
+2030: π
+2031: n∑
+2032: j=1
+2033: (kj− 1 − kj)Arg(z− xj). (7)
+2034: x1 x2 xn
+2035: y
+2036: x
+2037: = 0φ
+2038: = k0φ = k1φ = k2φ = knφ
+2039: ∇ 2
+2040: Figure 7.36 Dirichlet problem (6)As with (2), we can verifythat this function is harmonic in the domainy>0
+2041: byobserving thatφ(x, y) is the imaginarypart of the analy tic function
+2042: f(z)= ikn +
+2043: n∑
+2044: j=1
+2045: Ln
+2046: [kj− 1 − kj
+2047: π (z− xj)
+2048: ]
+2049: .
+2050: Now we show thatφ(x, y) satisﬁes the boundaryconditions in (6). LetN
+2051: be a ﬁxed value ofj.I fz= x+0iis a point withxN <x<xN +1 , then
+2052: --- PAGE 34 ---
+2053: 422 Chapter 7 Conformal Mappings
+2054: Arg(z− xj) = 0 for 1≤ j≤ N, while Arg(z− xj)= πforN+1 ≤ j≤ n.
+2055: Therefore, forz= x+0iwithxN <x<xN +1 , (7) gives
+2056: φ(x,0) =kn + 1
+2057: π
+2058: n∑
+2059: j=1
+2060: (kj− 1 − kj)Arg(z−xj)
+2061: = kn + 1
+2062: π
+2063: N∑
+2064: j=1
+2065: (kj− 1 − kj)Arg(z−xj)+ 1
+2066: π
+2067: n∑
+2068: j= N +1
+2069: (kj− 1 − kj)Arg(z−xj)
+2070: = kn + 1
+2071: π
+2072: N∑
+2073: j=1
+2074: (kj− 1 − kj)·0+ 1
+2075: π
+2076: n∑
+2077: j= N +1
+2078: (kj− 1 − kj)·π
+2079: = kn +( kN − kN +1 )+(kN +1 − kN +2 )+ ···+( kn− 1 − kn)
+2080: = kN .
+2081: Therefore, the functionφ(x, y) satisﬁes the boundaryconditions of (6). In
+2082: summary, we have shown that the functionφ(x, y) deﬁned in (7) is a solution
+2083: of the Dirichlet problem given by(6). This solution will be used to ﬁnd an
+2084: integral formula for a solution of a more general type of Dirichlet problem in
+2085: the upper half-planey>0.
+2086: EXAMPLE 1Using the Poisson Integral Formula
+2087: Use (7) to solve the Dirichlet problem
+2088: Solve:∂2φ
+2089: ∂x2 + ∂2φ
+2090: ∂y2 =0 ,−∞ <x<∞ ,y>0
+2091: Subject to:φ(x,0) =
+2092: 
+2093: 
+2094: 
+2095: 
+2096: 
+2097: 
+2098: 
+2099: 2, −∞ <x<0
+2100: −1, 0<x<3
+2101: 5, 3<x<∞ ,
+2102: illustrated in Figure 7.37.
+2103: 3
+2104: y
+2105: x
+2106: = 0
+2107: 0
+2108: φ
+2109: = 5φ= 2φ = –1φ
+2110: ∇ 2
+2111: Figure 7.37 Figure for Example 1
+2112: SolutionIdentifyingk0 =2 ,k1 = −1,k2 =5 ,x1 = 0, andx2 = 3 in (7), we
+2113: obtain the solution
+2114: φ(x,y)=5+ 1
+2115: π(2+1)Arg(z− 0)+1
+2116: π(−1 − 5)Arg(z− 3)
+2117: =5+ 3
+2118: πArg(z)− 6
+2119: πArg(z− 3).
+2120: Poisson Integral FormulaA special case of the Dirichlet problem
+2121: (6) occurs whenk0 = kn =0 .
+2122: --- PAGE 35 ---
+2123: 7.4 Poisson Integral Formulas 423
+2124: Solve:∂2φ
+2125: ∂x2 + ∂2φ
+2126: ∂y2 =0 ,−∞ <x<∞ ,y>0
+2127: (8)
+2128: Subject to:φ(x,0) =
+2129: 
+2130: 
+2131: 
+2132: 
+2133: 
+2134: 
+2135: 
+2136: 
+2137: 
+2138: 
+2139: 
+2140: 
+2141: 
+2142: 
+2143: 
+2144: 
+2145: 
+2146: 
+2147: 
+2148: 0, −∞ <x<x
+2149: 1
+2150: k1,x 1 <x<x2
+2151: ..
+2152: .
+2153: .
+2154: .
+2155: .
+2156: k
+2157: n− 1,xn− 1 <x<xn
+2158: 0,x n <x<∞ .
+2159: After settingzi = z− xi fori=1 ,2 ,... nand identifyingk0 = kn = 0, the
+2160: solution given by(7) can be written as
+2161: φ(x,y)=0+ 1
+2162: π[(0− k1)Argz1 +( k1 − k2)Argz2 + ···+( kn− 1 − 0)Argzn]
+2163: = 1
+2164: π[k1(Argz2 − Argz1)+ k2(Argz3 − Argz2)+ ···+ kn− 1(Argzn − Argzn− 1)]
+2165: =
+2166: n− 1∑
+2167: j=1
+2168: kj
+2169: π(Argzj+1 − Argzj)
+2170: That is, the function
+2171: φ(x,y)=
+2172: n− 1∑
+2173: j=1
+2174: kj
+2175: π[Arg(z− xj+1 )− Arg(z− xj)] (9)
+2176: is a solution of the Dirichlet problem in (8).
+2177: We can write (9) in terms of a real improper integral. In order to do so,
+2178: lettbe a real variable and observe that ify>0, then
+2179: Arg(z− t) = cot− 1
+2180: (x− t
+2181: y
+2182: )
+2183: andd
+2184: dtArg(z− t)= y
+2185: (x− t)2 + y2.
+2186: Put another way,
+2187: Arg(zj+1 )− Arg(zj)=
+2188: ∫ xj+1
+2189: xj
+2190: d
+2191: dt
+2192: [ y
+2193: (x− t)2 + y2
+2194: ]
+2195: dt.
+2196: With these substitutions, (9) becomes
+2197: φ(x,y)= 1
+2198: π
+2199: n− 1∑
+2200: j=1
+2201: ∫ xj+1
+2202: xj
+2203: kjy
+2204: (x− t)2 + y2dt.
+2205: Sinceφ(x,0) = 0 whenx<x1 orx>xn,φ(x, y) can also be written as
+2206: φ(x,y)= y
+2207: π
+2208: ∫ ∞
+2209: −∞
+2210: φ(t,0)
+2211: (x− t)2 + y2dt. (10)
+2212: --- PAGE 36 ---
+2213: 424 Chapter 7 Conformal Mappings
+2214: The integral formula in (10) is called thePoisson integral formulafor the
+2215: upper half-planey>0, and it gives a solutionφ(x, y) of the Dirichlet problem
+2216: in (8). The Poisson integral formula can also be used to solve a more general
+2217: type of Dirichlet problem in which the boundary conditions are speciﬁed by
+2218: anypiecewise continuous and bounded function. This is the content of the
+2219: following theorem.
+2220: Theorem 7.6 Poisson Integral Formula for the Half-Plane
+2221: Letf(x) be a piecewise continuous and bounded function on
+2222: −∞ <x<∞ . Then the function deﬁned by
+2223: φ(x,y)= y
+2224: π
+2225: ∫ ∞
+2226: −∞
+2227: f(t)
+2228: (x− t)2 + y2dt (11)
+2229: is a solution of the Dirichlet problem in the upper half-planey>0 with
+2230: boundaryconditionφ(x,0) =f(x) at all points of continuityoff.
+2231: Unfortunately, there are few functionsffor which the Poisson integral
+2232: formula (11) can be evaluated. The following example represents an exception
+2233: to the previous remark.
+2234: EXAMPLE 2Using the Poisson Integral Formula
+2235: Use the Poisson integral formula (11) to ﬁnd a solution of the Dirichlet
+2236: problem
+2237: Solve:∂
+2238: 2φ
+2239: ∂x2 + ∂2φ
+2240: ∂y2 =0 ,−∞ <x<∞ ,y>0
+2241: Subject to:φ(x,0) =
+2242: 
+2243: 
+2244: 
+2245: 
+2246: 
+2247: 
+2248: 0,−∞ <x<−1
+2249: x,−1 <x<1
+2250: 0, 1 <x<∞ ,
+2251: illustrated in Figure 7.38.
+2252: y
+2253: x
+2254: = 0
+2255: –11
+2256: φ
+2257: = 0φ= 0φ = xφ
+2258: ∇ 2
+2259: Figure 7.38 Figure for Example 2
+2260: SolutionWe ﬁrst deﬁne a real functionfbyf(x)= φ(x,0). Then
+2261: f(x)= xon−1 <x<1 and 0 elsewhere. Thus,fis piecewise continu-
+2262: ous and bounded on the real line−∞ <x<∞ . After replacing the symbol
+2263: xwith the integration variablet, we identifyf(t)= φ(t,0) =tfor−1 <t<1
+2264: and 0 elsewhere. Then (11) gives
+2265: φ(x,y)= y
+2266: π
+2267: ∫ ∞
+2268: −∞
+2269: φ(t,0)
+2270: (x− t)2 + y2dt= y
+2271: π
+2272: ∫ 1
+2273: − 1
+2274: t
+2275: (x− t)2 + y2dt.
+2276: --- PAGE 37 ---
+2277: 7.4 Poisson Integral Formulas 425
+2278: With the substitutionss= x− tandds= −dtthis integral becomes
+2279: φ(x,y)= −y
+2280: π
+2281: ∫ x− 1
+2282: x+1
+2283: x− s
+2284: s2 + y2ds= −y
+2285: π
+2286: ∫ x− 1
+2287: x+1
+2288: x
+2289: s2 + y2ds+ y
+2290: π
+2291: ∫ x− 1
+2292: x+1
+2293: s
+2294: s2 + y2ds.
+2295: From elementarycalculus we have that
+2296: ∫ x
+2297: s2 + y2ds= x
+2298: ytan− 1
+2299: (s
+2300: y
+2301: )
+2302: + C1
+2303: ∫ s
+2304: s2 + y2ds= 1
+2305: 2 loge
+2306: (
+2307: s2 + y2)
+2308: + C2.and
+2309: Therefore,
+2310: φ(x,y)= −x
+2311: πtan− 1
+2312: (s
+2313: y
+2314: ) ⏐⏐
+2315: ⏐
+2316: ⏐
+2317: s= x− 1
+2318: s= x+1
+2319: + y
+2320: 2πloge
+2321: (
+2322: s2 + y2)⏐
+2323: ⏐
+2324: ⏐
+2325: s= x− 1
+2326: s= x+1
+2327: = x
+2328: π
+2329: [
+2330: tan− 1
+2331: (x+1
+2332: y
+2333: )
+2334: − tan− 1
+2335: (x− 1
+2336: y
+2337: )]
+2338: + y
+2339: 2πloge
+2340: [(x− 1)2 + y2
+2341: (x+1) 2 + y2
+2342: ]
+2343: is a solution of the Dirichlet problem.
+2344: FormulafortheUnitDiskA Poisson integral formula for the unit
+2345: disk can be derived in a similar manner. This gives an integral formula for
+2346: a solution of a Dirichlet problem in the open unit disk|z|<1 subject to
+2347: certain types of boundary conditions. The following theorem gives the precise
+2348: statement of this result.
+2349: Theorem 7.7 Poisson Integral Formula for the Unit Disk
+2350: Letf(z) be a complex function for which the valuesf
+2351: (
+2352: eiθ)
+2353: on the unit
+2354: circlez= eiθ give a piecewise continuous and bounded function for
+2355: −π≤ θ≤ π. Then the function deﬁned by
+2356: φ(x,y)= 1
+2357: 2π
+2358: ∫ π
+2359: − π
+2360: f
+2361: (
+2362: eit) 1 −|z|2
+2363: |eit− z|2dt (12)
+2364: is a solution of the Dirichlet problem in the open unit disk|z|<1 with
+2365: boundaryconditionφ(cosθ,sinθ)= f
+2366: (
+2367: eiθ)
+2368: atallpointsofcontinuityoff.
+2369: As with Theorem 7.5, the integral given in (12) can seldom be expressed
+2370: in terms of elementaryfunctions. When we cannot evaluate the integral, we
+2371: appeal to numerical methods to approximate values of a solution given by
+2372: (12).
+2373: --- PAGE 38 ---
+2374: 426 Chapter 7 Conformal Mappings
+2375: EXAMPLE 3Using the Poisson Integral Formula
+2376: Use the Poisson integral formula (12) to ﬁnd a solution of the Dirichlet
+2377: problem
+2378: Solve:∂2φ
+2379: ∂x2 + ∂2φ
+2380: ∂y2 =0 ,x2 + y2 <1
+2381: Subject to:φ(cosθ,sinθ)= |θ|,−π<θ≤ π,
+2382: illustrated in Figure 7.39.
+2383: y
+2384: x= 0φ θ
+2385: θ= |  |φ
+2386: ∇ 2
+2387: Figure 7.39 Figure for Example 3
+2388: SolutionThe functionf
+2389: (
+2390: eiθ)
+2391: = φ(cosθ,sinθ)= |θ|is piecewise continuous
+2392: and bounded for−π≤ θ≤ π. Thus, after identifyingf
+2393: (
+2394: eit)
+2395: = φ(cost,sint)=
+2396: |t|in (12) we obtain the integral formula
+2397: φ(x,y)= 1
+2398: 2π
+2399: ∫ π
+2400: − π
+2401: |t|1 −|z|2
+2402: |eit− z|2dt.
+2403: This integral cannot be evaluated in terms of elementaryfunctions. However,
+2404: with the use of theNIntegratecommand inMathematicawe can approxi-
+2405: mate values of the functionφ(x, y). For example,Mathematicaindicates that
+2406: φ
+2407: (1
+2408: 2,0
+2409: )
+2410: ≈ 0.9147 andφ
+2411: (
+2412: 0,1
+2413: 2
+2414: )
+2415: ≈ 1.5708.

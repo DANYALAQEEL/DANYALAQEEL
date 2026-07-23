@@ -1,0 +1,167 @@
+import families/UnixPipeAndFilter.acme;
+system simple-pf : UnixPipeAndFilter = new UnixPipeAndFilter extended with {
+  component Input : FileSystemSourceT = new FileSystemSourceT extended with {
+     port output : FilterOutputPortT = new FilterOutputPortT;
+     property path = "/home/user/data/*";
+
+    };
+    component Capitalize : UnixFilterT = new UnixFilterT extended with {
+       port stdout : UnixFilterOutputPortT = new UnixFilterOutputPortT extended with {
+            rule noDangling = invariant attachedOrBound(self);
+            rule connectedOnlyToInputRoleT = invariant forall r : Role in self.ATTACHEDROLES |
+                declaresType(r, InputRoleT);
+            rule dataInRoles = invariant forall r in self.ATTACHEDROLES |
+                declaresType(r, DataInRoleT);
+
+        };
+        port stdin : UnixFilterInputPortT = new UnixFilterInputPortT extended with {
+            rule noDangling = invariant attachedOrBound(self);
+            rule connectedOnlyToOutputRoleT = invariant forall r : Role in self.ATTACHEDROLES |
+                declaresType(r, OutputRoleT);
+            rule dataOutRoles = invariant forall r in self.ATTACHEDROLES |
+                declaresType(r, DataOutRoleT);
+
+        };
+        property cmd = "java -jar /home/user/capitalize.jar";
+        representation Capitalize_Rep = {
+           system Capitalize_Rep : PipeAndFilterFam = new PipeAndFilterFam extended with {
+              component Split : FilterCompT = new FilterCompT extended with {
+                 port input : FilterInputPortT = new FilterInputPortT;
+                 port output : FilterOutputPortT = new FilterOutputPortT;
+                 port output0 : FilterOutputPortT = new FilterOutputPortT;
+
+                };
+                component Upper : FilterCompT = new FilterCompT extended with {
+                   port input : FilterInputPortT = new FilterInputPortT;
+                   port output : FilterOutputPortT = new FilterOutputPortT;
+
+                };
+                component Lower : FilterCompT = new FilterCompT extended with {
+                   port input : FilterInputPortT = new FilterInputPortT;
+                   port output : FilterOutputPortT = new FilterOutputPortT;
+
+                };
+                component Merge : FilterCompT = new FilterCompT extended with {
+                   port input : FilterInputPortT = new FilterInputPortT;
+                   port output : FilterOutputPortT = new FilterOutputPortT;
+                   port input0 : FilterInputPortT = new FilterInputPortT;
+
+                };
+                connector conn : PipeConnT = new PipeConnT extended with {
+                   role input : DataInRoleT = new DataInRoleT;
+                   role output : DataOutRoleT = new DataOutRoleT;
+
+                };
+                connector conn0 : PipeConnT = new PipeConnT extended with {
+                   role input : DataInRoleT = new DataInRoleT;
+                   role output : DataOutRoleT = new DataOutRoleT;
+
+                };
+                connector conn1 : PipeConnT = new PipeConnT extended with {
+                   role input : DataInRoleT = new DataInRoleT;
+                   role output : DataOutRoleT = new DataOutRoleT;
+
+                };
+                connector conn2 : PipeConnT = new PipeConnT extended with {
+                   role input : DataInRoleT = new DataInRoleT;
+                   role output : DataOutRoleT = new DataOutRoleT;
+
+                };
+                attachment Split.output to conn.input;
+                attachment Upper.input to conn.output;
+                attachment Split.output0 to conn0.input;
+                attachment Lower.input to conn0.output;
+                attachment Upper.output to conn1.input;
+                attachment Merge.input to conn1.output;
+                attachment Lower.output to conn2.input;
+                attachment Merge.input0 to conn2.output;
+            }
+            bindings {
+                stdout to Merge.output;
+                stdin to Split.input;
+            }
+        }
+        rule atLeast1portOfTypeFilterOutputPortT = invariant size(/self/PORTS:!FilterOutputPortT) >= 1;
+        rule atLeast1portOfTypeFilterInputPortT = invariant size(/self/PORTS:!FilterInputPortT) >= 1;
+
+    };
+    component Package : UnixFilterT = new UnixFilterT extended with {
+       port stdout : UnixFilterOutputPortT = new UnixFilterOutputPortT extended with {
+            rule noDangling = invariant attachedOrBound(self);
+            rule connectedOnlyToInputRoleT = invariant forall r : Role in self.ATTACHEDROLES |
+                declaresType(r, InputRoleT);
+            rule dataInRoles = invariant forall r in self.ATTACHEDROLES |
+                declaresType(r, DataInRoleT);
+
+        };
+        port stdin : UnixFilterInputPortT = new UnixFilterInputPortT extended with {
+            rule noDangling = invariant attachedOrBound(self);
+            rule connectedOnlyToOutputRoleT = invariant forall r : Role in self.ATTACHEDROLES |
+                declaresType(r, OutputRoleT);
+            rule dataOutRoles = invariant forall r in self.ATTACHEDROLES |
+                declaresType(r, DataOutRoleT);
+
+        };
+        property cmd = "tar";
+        rule atLeast1portOfTypeFilterOutputPortT = invariant size(/self/PORTS:!FilterOutputPortT) >= 1;
+        rule atLeast1portOfTypeFilterInputPortT = invariant size(/self/PORTS:!FilterInputPortT) >= 1;
+
+    };
+    component Compress : UnixFilterT = new UnixFilterT extended with {
+       port stdout : UnixFilterOutputPortT = new UnixFilterOutputPortT;
+       port stdin : UnixFilterInputPortT = new UnixFilterInputPortT;
+       property cmd = "zip";
+
+    };
+    component output : FileSystemSinkT = new FileSystemSinkT extended with {
+       port input : FilterInputPortT = new FilterInputPortT;
+       property path = "/home/user/processed.tar.zip";
+
+    };
+    connector conn2 : PipeConnT = new PipeConnT extended with {
+       role input : DataInRoleT = new DataInRoleT;
+       role output : DataOutRoleT = new DataOutRoleT;
+
+    };
+    connector conn0 : PipeConnT = new PipeConnT extended with {
+       role input : DataInRoleT = new DataInRoleT extended with {
+            rule dataInMustBeAttachedToFilterOutput = invariant exists p in self.ATTACHEDPORTS |
+                declaresType(p, FilterOutputPortT);
+            rule exactly1attachment = invariant size(self.ATTACHEDPORTS) == 1 or (size(self.ATTACHEDPORTS) == 0 and attachedOrBound(self));
+            rule connectedOnlyToOutputPortT = invariant forall p : Port in self.ATTACHEDPORTS |
+                declaresType(p, OutputPortT);
+
+        };
+        role output : DataOutRoleT = new DataOutRoleT extended with {
+            rule dataOutMustBeAttached = invariant size(self.ATTACHEDPORTS) == 1;
+            rule exactly1attachment = invariant size(self.ATTACHEDPORTS) == 1 or (size(self.ATTACHEDPORTS) == 0 and attachedOrBound(self));
+            rule connectedOnlyToInputPortT = invariant forall p : Port in self.ATTACHEDPORTS |
+                declaresType(p, InputPortT);
+
+        };
+        rule atLeast1RoleOfTypeDataInRoleT = invariant exists e in self.ROLES |
+            declaresType(e, DataInRoleT);
+        rule atLeast1RoleOfTypeDataOutRoleT = invariant exists e in self.ROLES |
+            declaresType(e, DataOutRoleT);
+        rule exactly2roles = invariant size(self.ROLES) == 2;
+
+    };
+    connector conn : PipeConnT = new PipeConnT extended with {
+       role input : DataInRoleT = new DataInRoleT;
+       role output : DataOutRoleT = new DataOutRoleT;
+
+    };
+    connector conn1 : PipeConnT = new PipeConnT extended with {
+       role input : DataInRoleT = new DataInRoleT;
+       role output : DataOutRoleT = new DataOutRoleT;
+
+    };
+    attachment Input.output to conn2.input;
+    attachment output.input to conn1.output;
+    attachment Package.stdin to conn0.output;
+    attachment Capitalize.stdout to conn0.input;
+    attachment Capitalize.stdin to conn2.output;
+    attachment Package.stdout to conn.input;
+    attachment Compress.stdin to conn.output;
+    attachment Compress.stdout to conn1.input;
+}

@@ -1,0 +1,43 @@
+# Antigravity Gitignore Config
+
+antigravity-backup/
+antigravity-browser-profile/
+antigravity-ide/
+
+# Exclude nested git directories in scratch repos
+scratch/*/.git
+scratch/*/*/.git
+**/agency-agents/.git
+**/system_prompts_leaks/.git
+
+# Exclude sensitive secrets and tokens
+*.env
+*.pem
+*.key
+token.json
+credentials.json
+accounts_list.txt
+backend_env_backup
+frontend_env_backup
+
+# Exclude large binary/zip files (>100MB / non-code assets)
+*.zip
+*.pptx
+*.pdf
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.exe
+*.bin
+*.tar.gz
+
+# Exclude system logs, cache, and temporary transcript files
+.system_generated/
+__pycache__/
+node_modules/
+.venv/
+env/
+venv/
+*.log

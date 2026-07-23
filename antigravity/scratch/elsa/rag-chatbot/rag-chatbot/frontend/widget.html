@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsa RAG Chatbot Sandbox</title>
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chatbot Stylesheet -->
+    <link rel="stylesheet" href="chatbot.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #1e293b;
+        }
+
+        .sandbox-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+        }
+
+        .sandbox-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #6366f1, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sandbox-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+
+        .features-list {
+            text-align: left;
+            margin: 0 auto 30px auto;
+            max-width: 400px;
+            padding-left: 20px;
+        }
+
+        .features-list li {
+            margin-bottom: 10px;
+            color: #334155;
+        }
+
+        .btn-start {
+            display: inline-block;
+            background: linear-gradient(135deg, #6366f1, #0ea5e9);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sandbox-card">
+        <h1>Elsa RAG Chatbot</h1>
+        <p>Welcome to the Elsa Energy chatbot test sandbox. This page runs the standalone chat widget interface so you can test it before full system integration.</p>
+        
+        <ul class="features-list">
+            <li><strong>Retrieval-Augmented:</strong> Grounded on Elsa's product docs.</li>
+            <li><strong>Responsive:</strong> Works on desktop and mobile layout.</li>
+            <li><strong>Plug &amp; Play:</strong> Standard JavaScript wrapper that sits on any website.</li>
+        </ul>
+        
+        <button class="btn-start" onclick="document.getElementById('chat-widget-launcher').click()">
+            <i class="fas fa-comments me-2"></i> Open Chat Widget
+        </button>
+    </div>
+
+    <!-- Chatbot Javascript Logic -->
+    <script src="chatbot.js"></script>
+</body>
+</html>

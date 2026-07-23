@@ -1,0 +1,215 @@
+
+
+========================================
+LECTURE: 5. De Moivres Theorem.pdf
+========================================
+
+De Moivre’s
+Theorem and 
+its 
+Applications
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.2
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.3, 1.4, 1.6
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+o De Moivre's theorem, named after the French
+mathematician Abraham de Moivre is used to find the
+roots of a complex number for any power n, given that 𝑛is
+an integer.
+o De Moivre's theorem can be derived from Euler's equation,
+and is important because it connects trigonometry to complex
+numbers.
+De Moivre’s Theorem
+
+For any complex number 𝑧and any integer 𝑛, the
+following is true:
+If    𝑧= 𝑟cos 𝜃+ 𝑖sin 𝜃,
+Then      𝑧𝑛= 𝑟𝑛(cos 𝑛𝜃+ 𝑖sin 𝑛𝜃)
+De Moivre’s Theorem
+
+Example 1
+Expand −3 −𝑖
+3.
+
+Example 1
+We can expand −3 −𝑖
+3 in two ways.
+Method 1:
+Using Binomial Theorem
+−3 −𝑖
+3 = −3
+3 + 3 −3
+2 −𝑖+ 3 −3
+−𝑖2 + −𝑖3
+= −8𝑖
+
+Example 1
+Method 2:
+Using De Moivre’s Theorem
+−3 −𝑖
+3 = 2 cos 7𝜋
+6 + 𝑖sin 7𝜋
+6
+3
+= 23 cos 3 × 7𝜋
+6 + 𝑖sin 3 × 7𝜋
+6
+= −8𝑖
+
+Applications of De Moivre’s Theorem
+
+To express cos 𝑛𝜃and sin 𝑛𝜃as finite sums of trigonometric
+functions of 𝜃, where 𝑛is a positive integer.
+
+To express powers of cos 𝜃(or sin 𝜃) in a series of cosines (or
+sines) of multiples 𝜃.
+
+To find 𝑛th roots of a complex number.
+
+Root of a Complex Number
+Recall from algebra that – 2 and 2 are said to be square roots of the 
+number 4 because −2 2 = 4 and 2 2 = 4. In other words, the two 
+square roots of 4 are distinct solutions of the equation 𝜔2 = 4.
+In like manner, we say 𝜔= 3 is a cube root of 27 since 𝜔3 = 33 = 27. 
+
+Root of a Complex Number
+A number 𝜔is an 𝒏𝒕𝒉root of a nonzero complex number 𝑧if
+𝜔𝑛= 𝑧, where 𝑛is a positive integer.
+For example, 𝜔1 =
+1
+2
+2 +
+1
+2
+2𝑖and 𝜔2 = −
+1
+2
+2 −
+1
+2
+2𝑖are two 
+complex roots of a complex number 𝑧= 𝑖because 𝑤1
+2 = 𝑖and 𝜔2
+2 = 𝑖.
+
+nth Root of a Complex Number
+The 𝑛𝑛𝑡ℎroot of a nonzero complex number 𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃) are given 
+by
+𝜔𝑘= 𝑟
+1
+𝑛
+cos 𝜃+ 2𝑘𝜋
+𝑛
++ 𝑖sin 𝜃+ 2𝑘𝜋
+𝑛
+;
+𝑘= 0, 1, 2, … , 𝑛−1
+These 𝑛values lie on a circle of radius 𝑟
+1
+𝑛with center at the origin and 
+constitute the vertices of a regular polygon of 𝑛sides.
+
+Principal nth Root of a Complex Number
+The unique root of a complex number 𝑧obtained by using the 
+principal value of arg(𝑧) with 𝑘= 0 is naturally referred to as the 
+principal 𝒏𝒕𝒉root of 𝜔.
+
+Example 2
+Find the cube root of 𝑧= 𝑖.
+Solution:
+We have to solve 𝜔3 = 𝑖
+With 𝑟= 1 and arg 𝑖=
+𝜋
+2, we obtain
+𝜔𝑘= 1
+1
+3 cos
+𝜋
+2 + 2𝑘𝜋
+3
++ 𝑖sin
+𝜋
+2 + 2𝑘𝜋
+3
+,
+𝑘= 0, 1, 2.
+Hence the roots are
+𝑘= 0,
+𝜔0 = cos 𝜋
+6 + 𝑖sin 𝜋
+6 =
+3
+2 + 1
+2 𝑖
+𝑘= 1,
+𝜔1 = cos 5𝜋
+6 + 𝑖sin 5𝜋
+6 = −
+3
+2 + 1
+2 𝑖
+𝑘= 2,
+𝜔2 = cos 3𝜋
+2 + 𝑖sin 3𝜋
+2 = −𝑖
+
+Notice 𝐴𝑟𝑔𝑧=
+𝜋
+2, we see that
+𝜔0 =
+3
+2 +
+1
+2 𝑖is the principal root of 𝑖.
+As shown in figure, the three roots lie on a
+circle centered at the origin of radius 𝑟≈1
+and are spaced at equal angular intervals of
+2𝜋/3 radians, beginning with the root
+whose argument is 𝜋/6.
+Example 2
+
+Quadratic Formula
+The quadratic formula is valid when the coefficients 𝑎≠0, 𝑏,
+and 𝑐of a quadratic polynomial equation 𝑎𝑧2 + 𝑏𝑧+ 𝑐= 0 are 
+complex numbers.
+𝑧= −𝑏+ 𝑏2 −4𝑎𝑐1/2
+2𝑎
+
+Factoring a Quadratic Polynomial
+If 𝑧1 and 𝑧2 are the roots of a quadratic equation 𝑎𝑧2 + 𝑏𝑧+ 𝑐= 0
+then the quadratic polynomial 𝑎𝑧2 + 𝑏𝑧+ 𝑐can be factored as
+𝑎𝑧2 + 𝑏𝑧+ 𝑐= 𝑎(𝑧−𝑧1)(𝑧−𝑧2)
+
+Questions
+a. Find the four fourth roots of 𝑧= 1 + 𝑖.
+b. Find the squares of all cube roots of 𝑧= −𝑖.
+c. Solve the equation 𝑧2 + 1 + 𝑖𝑧+ 5𝑖= 0.
+d. Factorize the quadratic polynomial 𝑧2 + 1 + 𝑖𝑧+ 5𝑖.
+
+• Chapter: 1
+• Exercise: 1.3 Questions: 25-32
+• Exercise: 1.4 Questions: 1-19
+• Exercise: 1.6 Questions: 1-12 
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+

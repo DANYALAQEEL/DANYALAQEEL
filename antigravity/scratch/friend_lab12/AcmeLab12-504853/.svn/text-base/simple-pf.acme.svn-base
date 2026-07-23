@@ -1,0 +1,29 @@
+import families/UnixPipeAndFilter.acme;
+system simple-pf : UnixPipeAndFilter = new UnixPipeAndFilter extended with {
+  component Input : FileSystemSourceT = new FileSystemSourceT extended with {
+     port output : FilterOutputPortT = new FilterOutputPortT;
+     property path = "/home/user/data/*";
+  };
+  component Capitalize : UnixFilterT = new UnixFilterT extended with {
+     port stdout : UnixFilterOutputPortT = new UnixFilterOutputPortT;
+     port stdin : UnixFilterInputPortT = new UnixFilterInputPortT;
+     property cmd = "java -jar /home/user/Capitalize.jar";
+  };
+  component Package : UnixFilterT = new UnixFilterT extended with {
+     port stdout : UnixFilterOutputPortT = new UnixFilterOutputPortT;
+     port stdin : UnixFilterInputPortT = new UnixFilterInputPortT;
+     property cmd = "tar";
+  };
+  connector conn : PipeConnT = new PipeConnT extended with {
+     role input : DataInRoleT = new DataInRoleT;
+     role output : DataOutRoleT = new DataOutRoleT;
+  };
+  connector conn0 : PipeConnT = new PipeConnT extended with {
+     role input : DataInRoleT = new DataInRoleT;
+     role output : DataOutRoleT = new DataOutRoleT;
+  };
+  attachment Input.output to conn.input;
+  attachment Capitalize.stdin to conn.output;
+  attachment Capitalize.stdout to conn0.input;
+  attachment Package.stdin to conn0.output;
+}

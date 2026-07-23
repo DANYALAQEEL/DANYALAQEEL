@@ -1,0 +1,277 @@
+
+
+========================================
+LECTURE: 1. Introduction(CVT).pdf
+========================================
+
+Complex Variables 
+and Transforms
+(MATH-232)
+Introduction
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+Semester Planner - Spring 2026
+S
+E
+M
+E
+S
+T
+E
+R
+P
+L
+A
+N
+N
+E
+R
+Week 1
+Week 2
+Week 3
+Week 4
+19-Jan-26
+23-Jan-26
+26-Jan-26
+30-Jan-26
+02-Feb-26
+06-Feb-26
+09-Feb-26
+13-Feb-26
+Week 5
+Week 6
+Week 7
+Week 8
+Mid Term Week
+16-Feb-26
+20-Feb-26
+23-Feb-26
+27-Feb-26
+02-Mar-26
+06-Mar-26
+09-Mar-26
+13-Mar-26
+Week 9
+Week 10
+Week 11
+Week 12
+16-Mar-26
+20-Mar-26
+23-Mar-26
+27-Mar-26
+30-Mar-26
+03-Apr-26
+06-Apr-26
+10-Apr-26
+Week 13
+Week 14
+Week 15
+Week 16
+13-Apr-26
+17-Apr-26
+20-Apr-26
+24-Apr-26
+27-Apr-26
+01-May-26
+04-May-26
+08-May-26
+Week 17
+Week 18
+ESE
+11-May-26
+15-May-26
+18-May-26
+22-May-26
+
+LMs Self-Enrollment Key
+Enrollment Code : 398065421
+
+Course Logistics
+
+Course Code:
+Math-232
+Semester:
+4th
+Credit Hours:
+3+0
+Prerequisite 
+Codes:
+Instructor:
+Dr. Hina Munir Dutt
+Discipline:
+BESE
+Office:
+A-204, Faculty Block
+Telephone:
+051-90852378
+Lecture Days:
+Monday, Tuesday, 
+Wednesday
+E-mail:   
+hina.dutt@seecs.edu.pk
+Class Room:   
+CR-16, CR-17
+Consulting Hours:
+Tuesday: 1500-1700 hours 
+Friday: 1500-1700 hours
+Knowledge Group:
+Applied Mathematics
+Updates on LMS:
+After  every lecture
+
+Course Description
+This course provides sound knowledge of calculus in 
+the complex domain with a detailed discussion on 
+complex algebra, complex functions, analyticity and 
+contour integration.
+It also covers Fourier Series, Fourier Integrals and 
+Fourier Transforms to provide students strong 
+mathematical tools to solve Engineering/Technology 
+problems.
+
+Course Objectives
+Develop understanding of complex functions, 
+analyticity and contour integration. The 
+applications will be covered from potential 
+theory of harmonic functions.
+Learn solution techniques of Fourier series 
+and Fourier transform.
+
+Apply the 
+concepts of 
+complex 
+functions, 
+derivatives 
+and contour 
+integrals.
+PLO1
+C2*
+CLO1
+Formulate 
+the 
+problems 
+from 
+conformal 
+mapping 
+and residue 
+theory. 
+PLO3
+C3*
+CLO2
+Analyze 
+the
+behavior 
+of Fourier 
+series and 
+Fourier 
+integral of 
+a given 
+function.
+PLO2
+PLO2
+C5*
+C4*
+CLO3
+Evaluate 
+Fourier 
+and Z-
+transforms 
+of a given 
+function.
+CLO4
+Course Learning Outcomes (CLOs)
+* BT= Bloom’s Taxonomy, C=Cognitive domain, P=Psychomotor domain, A= Affective domain
+
+Bloom’s Taxonomy
+
+Marks Distribution (Tentative)
+15
+5
+30
+50
+Marks Distribution
+Quizzes
+Assignments & Class Presentations
+MSE
+ESE
+
+Books
+• Advanced Engineering 
+Mathematics (9th Edition) by 
+Ervin Kreyszig.
+• A First Course in Complex 
+Analysis with Applications by 
+Dennis G. Zill.
+Text Books
+• Real and Complex Analysis by 
+Walter Rudin.
+• Complex Variables & 
+Applications by James Ward 
+Brown, Ruel V. Churchill.
+• Advanced Modern 
+Engineering Mathematics by 
+Glyn James.
+Reference 
+Books
+
+Complex Variables and 
+Transforms
+Complex 
+Variables
+Fourier 
+Series
+Fourier 
+Transform 
+and Z-
+Transform
+
+Complex Analysis
+Complex analysis has many applications in heat 
+conduction, fluid flow, electrostatics, and in other areas. 
+It extends “real calculus” to “complex calculus” by 
+introducing complex numbers and functions. 
+
+Why Complex Analysis?
+Complex analysis is important in applied mathematics for three main reasons:
+1. Two-dimensional potential problems can be modeled and solved by methods 
+of analytic functions. This reason is the real and imaginary parts of analytic 
+functions satisfy Laplace’s equation in two real variables.
+2. Many difficult integrals (real or complex) that appear in applications can be 
+solved quite elegantly by complex integration.
+3. Most functions in engineering mathematics are analytic functions, and their 
+study as functions of a complex variable leads to a deeper understanding of 
+their properties and to interrelations in complex that have no analog in real 
+calculus.
+
+Importance of Complex Variables and 
+Transforms
+For most human tasks, real numbers (or even rational numbers) offer an adequate 
+description of data.
+Fractions such as 2/3 and 1/8 are meaningless to a person counting stones, but 
+essential to a person comparing the sizes of different collections of stones. 
+Negative numbers such as −3 and −5 are meaningless when measuring the mass 
+of an object, but essential when keeping track of monetary debits and credits.
+
+Importance of Complex Variables and 
+Transforms
+Imaginary numbers have essential concrete applications in a variety of sciences 
+and related areas such as Signal Processing, Control Theory, Electromagnetism, 
+Communication Systems, Broadband Technologies, Quantum Mechanics, 
+Cartography, Vibration Analysis, and many others.
+The Fourier Transform and Series and their analytic properties are very commonly 
+used in Telecommunications, Digital Signal Processing, Digital Image Processing, 
+Electronics Design, and more.
+
+Dispersion is the phenomenon of different frequencies traveling at different 
+speeds down a wire or other transmission line, and it can prevent signals in a 
+circuit from being properly sent, if proper attention is not paid to it. Fourier and 
+thus complex analysis is critical in understanding dispersion and being able to 
+correct for it.
+Along with the concept of Fourier transformations, we have the Laplace and 𝑍-
+transforms. These transforms are useful in Circuit Analysis and Control Theory to 
+build increasingly complex electronics.
+Importance of Complex Variables and 
+Transforms
+

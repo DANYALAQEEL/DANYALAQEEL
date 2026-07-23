@@ -1,0 +1,317 @@
+﻿2026-04-22T07:47:28.6033883Z Current runner version: '2.333.1'
+2026-04-22T07:47:28.6078188Z ##[group]Runner Image Provisioner
+2026-04-22T07:47:28.6079527Z Hosted Compute Agent
+2026-04-22T07:47:28.6080723Z Version: 20260213.493
+2026-04-22T07:47:28.6081902Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-22T07:47:28.6083284Z Build Date: 2026-02-13T00:28:41Z
+2026-04-22T07:47:28.6084659Z Worker ID: {612752cd-8b3e-46e5-8fb1-4e03ba4bd77b}
+2026-04-22T07:47:28.6085778Z Azure Region: westus
+2026-04-22T07:47:28.6087212Z ##[endgroup]
+2026-04-22T07:47:28.6090068Z ##[group]Operating System
+2026-04-22T07:47:28.6091047Z Ubuntu
+2026-04-22T07:47:28.6091929Z 24.04.4
+2026-04-22T07:47:28.6092823Z LTS
+2026-04-22T07:47:28.6093727Z ##[endgroup]
+2026-04-22T07:47:28.6094739Z ##[group]Runner Image
+2026-04-22T07:47:28.6095697Z Image: ubuntu-24.04
+2026-04-22T07:47:28.6097231Z Version: 20260413.86.1
+2026-04-22T07:47:28.6099380Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+2026-04-22T07:47:28.6102292Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+2026-04-22T07:47:28.6104060Z ##[endgroup]
+2026-04-22T07:47:28.6106242Z ##[group]GITHUB_TOKEN Permissions
+2026-04-22T07:47:28.6110028Z Contents: read
+2026-04-22T07:47:28.6110992Z Metadata: read
+2026-04-22T07:47:28.6111991Z Packages: read
+2026-04-22T07:47:28.6112837Z ##[endgroup]
+2026-04-22T07:47:28.6117181Z Secret source: Actions
+2026-04-22T07:47:28.6118392Z Prepare workflow directory
+2026-04-22T07:47:28.6520404Z Prepare all required actions
+2026-04-22T07:47:28.6560017Z Getting action download info
+2026-04-22T07:47:29.1992962Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-04-22T07:47:29.3413191Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-04-22T07:47:29.5454412Z Complete job name: process
+2026-04-22T07:47:29.6208043Z ##[group]Run actions/checkout@v4
+2026-04-22T07:47:29.6208957Z with:
+2026-04-22T07:47:29.6209440Z   repository: DANYALAQEEL/chess-engine-node
+2026-04-22T07:47:29.6210254Z   token: ***
+2026-04-22T07:47:29.6210643Z   ssh-strict: true
+2026-04-22T07:47:29.6211047Z   ssh-user: git
+2026-04-22T07:47:29.6211467Z   persist-credentials: true
+2026-04-22T07:47:29.6211911Z   clean: true
+2026-04-22T07:47:29.6212326Z   sparse-checkout-cone-mode: true
+2026-04-22T07:47:29.6212805Z   fetch-depth: 1
+2026-04-22T07:47:29.6213205Z   fetch-tags: false
+2026-04-22T07:47:29.6213615Z   show-progress: true
+2026-04-22T07:47:29.6214039Z   lfs: false
+2026-04-22T07:47:29.6214417Z   submodules: false
+2026-04-22T07:47:29.6214821Z   set-safe-directory: true
+2026-04-22T07:47:29.6215493Z ##[endgroup]
+2026-04-22T07:47:29.7468435Z Syncing repository: DANYALAQEEL/chess-engine-node
+2026-04-22T07:47:29.7472045Z ##[group]Getting Git version info
+2026-04-22T07:47:29.7473728Z Working directory is '/home/runner/work/chess-engine-node/chess-engine-node'
+2026-04-22T07:47:29.7475980Z [command]/usr/bin/git version
+2026-04-22T07:47:29.7519418Z git version 2.53.0
+2026-04-22T07:47:29.7553519Z ##[endgroup]
+2026-04-22T07:47:29.7573835Z Temporarily overriding HOME='/home/runner/work/_temp/5cdcd5ee-0354-4b19-8d54-fa697dd6b823' before making global git config changes
+2026-04-22T07:47:29.7577222Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-22T07:47:29.7579869Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/chess-engine-node/chess-engine-node
+2026-04-22T07:47:29.7631530Z Deleting the contents of '/home/runner/work/chess-engine-node/chess-engine-node'
+2026-04-22T07:47:29.7637838Z ##[group]Initializing the repository
+2026-04-22T07:47:29.7643434Z [command]/usr/bin/git init /home/runner/work/chess-engine-node/chess-engine-node
+2026-04-22T07:47:29.7786137Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-22T07:47:29.7788944Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-22T07:47:29.7791007Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-22T07:47:29.7793001Z hint: call:
+2026-04-22T07:47:29.7793988Z hint:
+2026-04-22T07:47:29.7795100Z hint: 	git config --global init.defaultBranch <name>
+2026-04-22T07:47:29.7796290Z hint:
+2026-04-22T07:47:29.7797790Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-22T07:47:29.7799498Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-22T07:47:29.7800825Z hint:
+2026-04-22T07:47:29.7801948Z hint: 	git branch -m <name>
+2026-04-22T07:47:29.7802972Z hint:
+2026-04-22T07:47:29.7804335Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-22T07:47:29.7806978Z Initialized empty Git repository in /home/runner/work/chess-engine-node/chess-engine-node/.git/
+2026-04-22T07:47:29.7810499Z [command]/usr/bin/git remote add origin https://github.com/DANYALAQEEL/chess-engine-node
+2026-04-22T07:47:29.7847098Z ##[endgroup]
+2026-04-22T07:47:29.7848751Z ##[group]Disabling automatic garbage collection
+2026-04-22T07:47:29.7853134Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-22T07:47:29.7889578Z ##[endgroup]
+2026-04-22T07:47:29.7891079Z ##[group]Setting up auth
+2026-04-22T07:47:29.7899263Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-22T07:47:29.7937726Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-22T07:47:29.8287190Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-22T07:47:29.8322022Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-22T07:47:29.8559568Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-22T07:47:29.8593200Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-22T07:47:29.8855016Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-22T07:47:29.8894371Z ##[endgroup]
+2026-04-22T07:47:29.8895764Z ##[group]Fetching the repository
+2026-04-22T07:47:29.8904669Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ab22bb4c0309a3d7b77764a34946b6a2d6542330:refs/remotes/origin/main
+2026-04-22T07:47:30.3053984Z From https://github.com/DANYALAQEEL/chess-engine-node
+2026-04-22T07:47:30.3056803Z  * [new ref]         ab22bb4c0309a3d7b77764a34946b6a2d6542330 -> origin/main
+2026-04-22T07:47:30.3114953Z ##[endgroup]
+2026-04-22T07:47:30.3116315Z ##[group]Determining the checkout info
+2026-04-22T07:47:30.3118326Z ##[endgroup]
+2026-04-22T07:47:30.3119593Z [command]/usr/bin/git sparse-checkout disable
+2026-04-22T07:47:30.3183917Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-22T07:47:30.3235369Z ##[group]Checking out the ref
+2026-04-22T07:47:30.3237452Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-22T07:47:30.3308246Z Switched to a new branch 'main'
+2026-04-22T07:47:30.3330423Z branch 'main' set up to track 'origin/main'.
+2026-04-22T07:47:30.3334596Z ##[endgroup]
+2026-04-22T07:47:30.3410903Z [command]/usr/bin/git log -1 --format=%H
+2026-04-22T07:47:30.3429738Z ab22bb4c0309a3d7b77764a34946b6a2d6542330
+2026-04-22T07:47:30.3793659Z ##[group]Run actions/checkout@v4
+2026-04-22T07:47:30.3794633Z with:
+2026-04-22T07:47:30.3795307Z   repository: DANYALAQEEL/DANYALAQEEL
+2026-04-22T07:47:30.3798149Z   token: ***
+2026-04-22T07:47:30.3798844Z   path: public_repo
+2026-04-22T07:47:30.3799557Z   ssh-strict: true
+2026-04-22T07:47:30.3800222Z   ssh-user: git
+2026-04-22T07:47:30.3800945Z   persist-credentials: true
+2026-04-22T07:47:30.3802001Z   clean: true
+2026-04-22T07:47:30.3802700Z   sparse-checkout-cone-mode: true
+2026-04-22T07:47:30.3803594Z   fetch-depth: 1
+2026-04-22T07:47:30.3804289Z   fetch-tags: false
+2026-04-22T07:47:30.3805008Z   show-progress: true
+2026-04-22T07:47:30.3805723Z   lfs: false
+2026-04-22T07:47:30.3806560Z   submodules: false
+2026-04-22T07:47:30.3807339Z   set-safe-directory: true
+2026-04-22T07:47:30.3808168Z ##[endgroup]
+2026-04-22T07:47:30.4858626Z Syncing repository: DANYALAQEEL/DANYALAQEEL
+2026-04-22T07:47:30.4861792Z ##[group]Getting Git version info
+2026-04-22T07:47:30.4865569Z Working directory is '/home/runner/work/chess-engine-node/chess-engine-node/public_repo'
+2026-04-22T07:47:30.4910581Z [command]/usr/bin/git version
+2026-04-22T07:47:30.4955782Z git version 2.53.0
+2026-04-22T07:47:30.4986879Z ##[endgroup]
+2026-04-22T07:47:30.5003978Z Temporarily overriding HOME='/home/runner/work/_temp/e822b0dd-9ac4-4a87-92c9-188ef018a154' before making global git config changes
+2026-04-22T07:47:30.5009749Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-22T07:47:30.5027505Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/chess-engine-node/chess-engine-node/public_repo
+2026-04-22T07:47:30.5072548Z ##[group]Initializing the repository
+2026-04-22T07:47:30.5075921Z [command]/usr/bin/git init /home/runner/work/chess-engine-node/chess-engine-node/public_repo
+2026-04-22T07:47:30.5121703Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-22T07:47:30.5125640Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-22T07:47:30.5129774Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-22T07:47:30.5132644Z hint: call:
+2026-04-22T07:47:30.5134625Z hint:
+2026-04-22T07:47:30.5137944Z hint: 	git config --global init.defaultBranch <name>
+2026-04-22T07:47:30.5140189Z hint:
+2026-04-22T07:47:30.5142872Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-22T07:47:30.5148377Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-22T07:47:30.5150565Z hint:
+2026-04-22T07:47:30.5151565Z hint: 	git branch -m <name>
+2026-04-22T07:47:30.5152850Z hint:
+2026-04-22T07:47:30.5154765Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-22T07:47:30.5159036Z Initialized empty Git repository in /home/runner/work/chess-engine-node/chess-engine-node/public_repo/.git/
+2026-04-22T07:47:30.5164568Z [command]/usr/bin/git remote add origin https://github.com/DANYALAQEEL/DANYALAQEEL
+2026-04-22T07:47:30.5191302Z ##[endgroup]
+2026-04-22T07:47:30.5193101Z ##[group]Disabling automatic garbage collection
+2026-04-22T07:47:30.5194624Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-22T07:47:30.5240552Z ##[endgroup]
+2026-04-22T07:47:30.5242128Z ##[group]Setting up auth
+2026-04-22T07:47:30.5252696Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-22T07:47:30.5287827Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-22T07:47:30.5751938Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-22T07:47:30.5764104Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-22T07:47:30.5902767Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-22T07:47:30.5939067Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-22T07:47:30.6204367Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-22T07:47:30.6258496Z ##[endgroup]
+2026-04-22T07:47:30.6269489Z ##[group]Determining the default branch
+2026-04-22T07:47:30.6271951Z Retrieving the default branch name
+2026-04-22T07:47:31.1601378Z Default branch 'main'
+2026-04-22T07:47:31.1800299Z ##[endgroup]
+2026-04-22T07:47:31.1802120Z ##[group]Fetching the repository
+2026-04-22T07:47:31.1804340Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+2026-04-22T07:47:31.7102141Z From https://github.com/DANYALAQEEL/DANYALAQEEL
+2026-04-22T07:47:31.7108158Z  * [new branch]      main       -> origin/main
+2026-04-22T07:47:31.7172856Z ##[endgroup]
+2026-04-22T07:47:31.7191711Z ##[group]Determining the checkout info
+2026-04-22T07:47:31.7193135Z ##[endgroup]
+2026-04-22T07:47:31.7229039Z [command]/usr/bin/git sparse-checkout disable
+2026-04-22T07:47:31.7283119Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-22T07:47:31.7374836Z ##[group]Checking out the ref
+2026-04-22T07:47:31.7376132Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-22T07:47:31.7415133Z Switched to a new branch 'main'
+2026-04-22T07:47:31.7416633Z branch 'main' set up to track 'origin/main'.
+2026-04-22T07:47:31.7528803Z ##[endgroup]
+2026-04-22T07:47:31.7539541Z [command]/usr/bin/git log -1 --format=%H
+2026-04-22T07:47:31.7563901Z 9529992b583c906bcf5ceb922be78d9461869914
+2026-04-22T07:47:31.7865285Z ##[group]Run actions/setup-python@v5
+2026-04-22T07:47:31.7865607Z with:
+2026-04-22T07:47:31.7865796Z   python-version: 3.x
+2026-04-22T07:47:31.7866017Z   check-latest: false
+2026-04-22T07:47:31.7866541Z   token: ***
+2026-04-22T07:47:31.7866769Z   update-environment: true
+2026-04-22T07:47:31.7866996Z   allow-prereleases: false
+2026-04-22T07:47:31.7867225Z   freethreaded: false
+2026-04-22T07:47:31.7867422Z ##[endgroup]
+2026-04-22T07:47:31.9728264Z ##[group]Installed versions
+2026-04-22T07:47:31.9734981Z Successfully set up CPython (3.14.4)
+2026-04-22T07:47:31.9735664Z ##[endgroup]
+2026-04-22T07:47:31.9858084Z ##[group]Run pip install -r requirements.txt
+2026-04-22T07:47:31.9858525Z [36;1mpip install -r requirements.txt[0m
+2026-04-22T07:47:32.0008886Z shell: /usr/bin/bash -e {0}
+2026-04-22T07:47:32.0009186Z env:
+2026-04-22T07:47:32.0009455Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:32.0009885Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.4/x64/lib/pkgconfig
+2026-04-22T07:47:32.0010291Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:32.0010657Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:32.0011019Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:32.0011385Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.4/x64/lib
+2026-04-22T07:47:32.0011683Z ##[endgroup]
+2026-04-22T07:47:35.2460903Z Collecting chess>=1.3.2 (from -r requirements.txt (line 1))
+2026-04-22T07:47:35.3027100Z   Downloading chess-1.11.2.tar.gz (6.1 MB)
+2026-04-22T07:47:35.3840505Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.1/6.1 MB 143.4 MB/s  0:00:00
+2026-04-22T07:47:35.5119182Z   Installing build dependencies: started
+2026-04-22T07:47:36.3545786Z   Installing build dependencies: finished with status 'done'
+2026-04-22T07:47:36.3554295Z   Getting requirements to build wheel: started
+2026-04-22T07:47:37.0095271Z   Getting requirements to build wheel: finished with status 'done'
+2026-04-22T07:47:37.0106777Z   Preparing metadata (pyproject.toml): started
+2026-04-22T07:47:37.2866251Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-04-22T07:47:37.3067229Z Collecting PyGithub (from -r requirements.txt (line 2))
+2026-04-22T07:47:37.3098921Z   Downloading pygithub-2.9.1-py3-none-any.whl.metadata (3.9 kB)
+2026-04-22T07:47:37.3577936Z Collecting PyYAML>=5.4.1 (from -r requirements.txt (line 3))
+2026-04-22T07:47:37.3608842Z   Downloading pyyaml-6.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-04-22T07:47:37.3850176Z Collecting pynacl>=1.4.0 (from PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.3880114Z   Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (10.0 kB)
+2026-04-22T07:47:37.4124001Z Collecting requests>=2.14.0 (from PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.4155168Z   Downloading requests-2.33.1-py3-none-any.whl.metadata (4.8 kB)
+2026-04-22T07:47:37.4331856Z Collecting pyjwt>=2.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.4362380Z   Downloading pyjwt-2.12.1-py3-none-any.whl.metadata (4.1 kB)
+2026-04-22T07:47:37.4591034Z Collecting typing-extensions>=4.5.0 (from PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.4620460Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2026-04-22T07:47:37.4832059Z Collecting urllib3>=1.26.0 (from PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.4867962Z   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+2026-04-22T07:47:37.6719868Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.6749137Z   Downloading cryptography-46.0.7-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+2026-04-22T07:47:37.7872225Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]>=2.4.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.7902991Z   Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+2026-04-22T07:47:37.8025169Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.4.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.8077724Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-04-22T07:47:37.9030924Z Collecting charset_normalizer<4,>=2 (from requests>=2.14.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.9060391Z   Downloading charset_normalizer-3.4.7-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+2026-04-22T07:47:37.9244315Z Collecting idna<4,>=2.5 (from requests>=2.14.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.9266689Z   Downloading idna-3.12-py3-none-any.whl.metadata (8.0 kB)
+2026-04-22T07:47:37.9478952Z Collecting certifi>=2023.5.7 (from requests>=2.14.0->PyGithub->-r requirements.txt (line 2))
+2026-04-22T07:47:37.9505989Z   Downloading certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+2026-04-22T07:47:37.9597684Z Downloading pygithub-2.9.1-py3-none-any.whl (449 kB)
+2026-04-22T07:47:37.9667355Z Downloading pyyaml-6.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (794 kB)
+2026-04-22T07:47:37.9740685Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 794.2/794.2 kB 118.1 MB/s  0:00:00
+2026-04-22T07:47:37.9767497Z Downloading pyjwt-2.12.1-py3-none-any.whl (29 kB)
+2026-04-22T07:47:37.9825817Z Downloading cryptography-46.0.7-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+2026-04-22T07:47:38.0017161Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 257.4 MB/s  0:00:00
+2026-04-22T07:47:38.0052255Z Downloading cffi-2.0.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+2026-04-22T07:47:38.0118948Z Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl (1.4 MB)
+2026-04-22T07:47:38.0207417Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 188.5 MB/s  0:00:00
+2026-04-22T07:47:38.0236029Z Downloading requests-2.33.1-py3-none-any.whl (64 kB)
+2026-04-22T07:47:38.0293361Z Downloading charset_normalizer-3.4.7-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (215 kB)
+2026-04-22T07:47:38.0351600Z Downloading idna-3.12-py3-none-any.whl (68 kB)
+2026-04-22T07:47:38.0406302Z Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+2026-04-22T07:47:38.0459386Z Downloading certifi-2026.2.25-py3-none-any.whl (153 kB)
+2026-04-22T07:47:38.0516606Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2026-04-22T07:47:38.0575275Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-04-22T07:47:38.0800536Z Building wheels for collected packages: chess
+2026-04-22T07:47:38.0810870Z   Building wheel for chess (pyproject.toml): started
+2026-04-22T07:47:38.4034924Z   Building wheel for chess (pyproject.toml): finished with status 'done'
+2026-04-22T07:47:38.4042264Z   Created wheel for chess: filename=chess-1.11.2-py3-none-any.whl size=147879 sha256=205f9967fcbaf8bff33c2c9aee8c5a3ae4b271e29ef338ba3395f8d0e6c098e6
+2026-04-22T07:47:38.4044231Z   Stored in directory: /home/runner/.cache/pip/wheels/06/53/ec/27b065e5de042efb4c622f661c996599af695bff1b9db4163b
+2026-04-22T07:47:38.4084415Z Successfully built chess
+2026-04-22T07:47:38.4329229Z Installing collected packages: urllib3, typing-extensions, PyYAML, pyjwt, pycparser, idna, chess, charset_normalizer, certifi, requests, cffi, pynacl, cryptography, PyGithub
+2026-04-22T07:47:39.9957013Z 
+2026-04-22T07:47:39.9968524Z Successfully installed PyGithub-2.9.1 PyYAML-6.0.3 certifi-2026.2.25 cffi-2.0.0 charset_normalizer-3.4.7 chess-1.11.2 cryptography-46.0.7 idna-3.12 pycparser-3.0 pyjwt-2.12.1 pynacl-1.6.2 requests-2.33.1 typing-extensions-4.15.0 urllib3-2.6.3
+2026-04-22T07:47:40.2867755Z ##[group]Run python main.py
+2026-04-22T07:47:40.2868068Z [36;1mpython main.py[0m
+2026-04-22T07:47:40.2890934Z shell: /usr/bin/bash -e {0}
+2026-04-22T07:47:40.2891171Z env:
+2026-04-22T07:47:40.2891413Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:40.2891829Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.4/x64/lib/pkgconfig
+2026-04-22T07:47:40.2892234Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:40.2892578Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:40.2892936Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.4/x64
+2026-04-22T07:47:40.2893306Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.4/x64/lib
+2026-04-22T07:47:40.2894074Z   GITHUB_TOKEN: ***
+2026-04-22T07:47:40.2894295Z   PUBLIC_REPO: DANYALAQEEL/DANYALAQEEL
+2026-04-22T07:47:40.2894550Z   ISSUE_NUMBER: 12
+2026-04-22T07:47:40.2894772Z   ISSUE_TITLE: Chess: Move E2 to E4
+2026-04-22T07:47:40.2895041Z   ISSUE_AUTHOR: DANYALAQEEL
+2026-04-22T07:47:40.2895257Z   REPOSITORY_OWNER: DANYALAQEEL
+2026-04-22T07:47:40.2895496Z   README_PATH: public_repo/README.md
+2026-04-22T07:47:40.2895733Z ##[endgroup]
+2026-04-22T07:47:40.3147233Z /home/runner/work/chess-engine-node/chess-engine-node/main.py:67: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+2026-04-22T07:47:40.3149638Z   match_obj = re.match('Chess: Move ([A-H][1-8]) to ([A-H][1-8])(?:\s*\((Queen|Knight|Rook|Bishop)\))?', title, re.I)
+2026-04-22T07:47:41.9840456Z /home/runner/work/chess-engine-node/chess-engine-node/main.py:233: DeprecationWarning: Argument login_or_token is deprecated, please use auth=github.Auth.Token(...) instead
+2026-04-22T07:47:41.9842418Z   repo = Github(os.environ['GITHUB_TOKEN']).get_repo(repo_name)
+2026-04-22T07:47:45.9273686Z ERROR: Two moves in a row!
+2026-04-22T07:47:45.9998473Z ##[error]Process completed with exit code 1.
+2026-04-22T07:47:46.0094754Z Post job cleanup.
+2026-04-22T07:47:46.1109062Z [command]/usr/bin/git version
+2026-04-22T07:47:46.1167153Z git version 2.53.0
+2026-04-22T07:47:46.1219322Z Temporarily overriding HOME='/home/runner/work/_temp/104edcfd-4c85-4b80-9249-1b2b55cce58b' before making global git config changes
+2026-04-22T07:47:46.1220943Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-22T07:47:46.1227986Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/chess-engine-node/chess-engine-node/public_repo
+2026-04-22T07:47:46.1279550Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-22T07:47:46.1318801Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-22T07:47:46.1572290Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-22T07:47:46.1600077Z http.https://github.com/.extraheader
+2026-04-22T07:47:46.1613013Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-22T07:47:46.1649023Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-22T07:47:46.1890883Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-22T07:47:46.1928806Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-22T07:47:46.2308988Z Post job cleanup.
+2026-04-22T07:47:46.3315862Z [command]/usr/bin/git version
+2026-04-22T07:47:46.3359927Z git version 2.53.0
+2026-04-22T07:47:46.3410253Z Temporarily overriding HOME='/home/runner/work/_temp/ee398be5-c858-4471-af88-641be022eb83' before making global git config changes
+2026-04-22T07:47:46.3412000Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-22T07:47:46.3417764Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/chess-engine-node/chess-engine-node
+2026-04-22T07:47:46.3467393Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-22T07:47:46.3506647Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-22T07:47:46.3760083Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-22T07:47:46.3797554Z http.https://github.com/.extraheader
+2026-04-22T07:47:46.3807907Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-22T07:47:46.3837574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-22T07:47:46.4170674Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-22T07:47:46.4255326Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-22T07:47:46.4763091Z Cleaning up orphan processes
+2026-04-22T07:47:46.5023406Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

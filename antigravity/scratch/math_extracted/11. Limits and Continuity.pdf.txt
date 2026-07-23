@@ -1,0 +1,192 @@
+
+
+========================================
+LECTURE: 11. Limits and Continuity.pdf
+========================================
+
+Limits and 
+continuity
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 2
+• Section: 2.5
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Limit of a Real Function f(x)
+The limit of a function 𝑓given by
+lim
+𝑥→𝑥0 𝑓(𝑥) = 𝐿
+means that values 𝑓(𝑥) of the function 𝑓can be made arbitrarily 
+close to the real number 𝐿if values of 𝑥are chosen sufficiently close 
+to, but not equal to, the real number 𝑥0.
+
+Limit of a Real Function f(x)
+
+Limit of a Complex Function
+
+Nonexistence of a Real Limit
+
+Criterion for the Nonexistence of a Limit
+Note:
+In general, computing values of lim
+𝑧→𝑧0 𝑓(𝑧) as 𝑧
+approaches 𝑧0 from different directions can 
+prove that a limit does not exist, but this 
+technique cannot be used to prove that a limit 
+does exist.
+If 𝑓approaches two complex numbers 𝐿1 ≠𝐿2
+for two different curves or paths through 𝑧0, 
+then lim
+𝑧→𝑧0 𝑓(𝑧) does not exist.
+
+Example 1
+Show that lim
+𝑧→0
+𝑧
+ҧ𝑧does not exist.
+
+Example 2
+Compute the following limits:
+a)
+lim
+𝑧→1+𝑖(𝑧2 + 𝑖)
+b) lim
+𝑧→3𝑖
+Im(𝑧2)
+𝑧+Re(𝑧)
+
+Theorem 2: Properties of Complex Limits
+
+Example 3
+Compute the following limits:
+a) lim
+𝑧→𝑖
+3+𝑖𝑧4−𝑧2+2𝑧
+𝑧+1
+b)
+lim
+𝑧→1+ 3𝑖
+𝑧2−2𝑧+4
+𝑧−1−3𝑖
+c) lim
+𝑧→∞
+𝑖𝑧+1
+2𝑧−𝑖
+
+Continuity of a Function
+A real valued function 𝑓is continuous at a point 𝑥0 if
+lim
+𝑥→𝑥0 𝑓(𝑥) = 𝑓𝑥0 .
+A complex function 𝑓is continuous at a point 𝑧0 if
+lim
+𝑧→𝑧0 𝑓(𝑧) = 𝑓𝑧0 .
+
+Criteria for Continuity at a Point
+A complex function 𝑓is continuous at a point 𝑧0 if each of the 
+following three conditions hold:
+i.
+lim
+𝑧→𝑧0 𝑓(𝑧) exists,
+ii. 𝑓is defined at 𝑧0, and
+iii. lim
+𝑧→𝑧0 𝑓(𝑧) = 𝑓𝑧0 .
+
+Example 4
+
+Example 5 
+1. Show that the function 𝑓𝑧= ҧ𝑧is continuous on ℂ.
+2. Show that the principal square root function 𝑓(𝑧) = 𝑧1/2
+defined by 𝑧1/2 =
+𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/2 is discontinuous at the 
+point 𝑧0 = −1.
+
+Theorem 4: Properties of Continuous 
+Functions
+
+Continuity of Some Functions 
+Polynomial Functions:
+Polynomial functions are continuous on the entire complex plane 
+ℂ.
+Rational functions:
+Rational functions are continuous on their domains.
+
+Continuous Function is Bounded
+If a complex function 𝑓is continuous on a closed and 
+bounded region 𝑅, then 𝑓is bounded on 𝑅. That is, there 
+is a real constant 𝑀> 0 such that
+|𝑓(𝑧)| ≤𝑀for all  𝑧in 𝑅.
+
+Multiple-valued Function
+A multiple-valued function 𝐹is a complex mapping that assigns 
+two or more distinct outputs to one input value 𝑧.
+Examples:
+𝐹𝑧= 𝑧1/𝑛assigns the 𝑛𝑛𝑡ℎroots to each input 𝑧.
+𝐺𝑧= arg(𝑧) assigns the infinite arguments to each input 𝑧.
+Note:
+A multiple-valued function is a 
+mapping and not a function.
+
+Branch of a Multiple-valued Function
+A branch of a multiple-valued function 𝐹is a function 𝑓1 that is continuous 
+on some domain and that assigns exactly one of the multiple values of 𝐹to 
+each point 𝑧in that domain.
+Example:
+The principal square root function 𝑓𝑧= 𝑧1/2 =
+𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/2
+is not a branch of 𝐹𝑧= 𝑧1/2.
+Why? 
+The branches of 𝐹𝑧= 𝑧1/2 are:
+𝑓1 𝑧=
+𝑟𝑒𝑖𝜃/2,
+−𝜋< 𝜃< 𝜋
+𝑓2 𝑧=
+𝑟𝑒𝑖𝜃/2,
+𝜋< 𝜃< 3𝜋
+𝑓3 𝑧=
+𝑟𝑒𝑖𝜃/2,
+−3𝜋
+4 < 𝜃< 5𝜋
+4
+Principal Branch
+
+Branch Cut
+A branch cut for a branch 𝑓1 of a multiple-valued function 𝐹is a 
+portion of a curve that is excluded from the domain of 𝐹so that 𝑓1 is 
+continuous on the remaining points. 
+Examples:
+The nonpositive real axis is a branch cut for the branch 𝑓1 and 
+𝑓2 of the multiple-valued function 𝐹(𝑧) = 𝑧1/2. 
+The branch cut for 𝑓3 is the ray arg(𝑧) = −3𝜋/4 together 
+with the point 𝑧= 0.
+
+Branch Point
+A point with the property that it is on the branch cut of every 
+branch is called a branch point of 𝐹.
+Example:
+The point 𝑧= 0 is common to each branch of the multiple-
+valued function 𝐹𝑧= 𝑧1/2, therefore 𝑧= 0 is the branch 
+point of 𝐹.
+
+• Chapter: 2
+• Exercise: 2.6 Questions: 1-40, 
+51-56
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

@@ -1,0 +1,16 @@
+{
+  "id": "8afa5788-38ad-4c3f-b3df-152f133f05f7",
+  "name": "portfolio-final",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///c%3A/Users/Administrator/.gemini/antigravity/scratch/portfolio-final",
+          "defaultBranch": "main",
+          "allowWrite": true
+        }
+      }
+    ]
+  },
+  "updatedAt": "2026-07-22T13:35:10.179341900Z"
+}

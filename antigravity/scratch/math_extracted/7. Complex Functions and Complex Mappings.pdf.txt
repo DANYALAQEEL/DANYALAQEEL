@@ -1,0 +1,203 @@
+
+
+========================================
+LECTURE: 7. Complex Functions and Complex Mappings.pdf
+========================================
+
+Complex functions
+and
+Complex Mappings
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 2
+• Sections: 2.1, 2.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+In elementary calculus we studied functions whose 
+inputs and outputs were real numbers. Such functions 
+are called real-valued functions of a real variable.
+In this section we begin our study of functions whose 
+inputs and outputs are complex numbers. Naturally, 
+we call these functions complex functions of a 
+complex variable, or complex functions for short.
+
+A function 𝑓from a set 𝐴to a set 𝐵is a rule 
+of correspondence that assigns to each 
+element in 𝐴one and only one element in 𝐵.
+Function
+We often think of a function as a rule or a 
+machine that accepts inputs from the set 𝐴
+and returns outputs in the set 𝐵.
+
+Domain and Range of a Function
+Suppose that 𝑓is a function from the set 𝐴to the set 𝐵. If 𝑓assigns to 
+the element 𝑎in 𝐴the element 𝑏in 𝐵, then we say that 𝑏is the image
+of 𝒂under 𝒇, or the value of 𝑓at 𝑎, and we write 𝑏= 𝑓(𝑎).
+The set 𝐴—the set of inputs—is called the domain of 𝒇and is denoted 
+by 𝐷𝑜𝑚(𝑓). 
+The set of images in 𝐵—the set of outputs—is called the range of 𝒇and 
+is denoted by 𝑅𝑎𝑛𝑔𝑒𝑓.
+
+Complex Function
+A complex function is a function 𝑓whose domain 
+and range are subsets of the set ℂof complex 
+numbers.
+We will use the usual symbols 𝑓, 𝑔and ℎto denote complex 
+functions. In addition, inputs to a complex function 𝑓will 
+typically be denoted by the variable 𝑧and outputs by the 
+variable 𝑤= 𝑓(𝑧).
+
+Complex Function
+
+Example 1; Complex Function
+1) 𝑓(𝑧) = 𝑧2 −(2 + 𝑖)𝑧defines a complex function. 
+At the points 𝑧= 𝑖and 𝑧= 1 + 𝑖we have:
+𝑓(𝑖) = 𝑖2 −(2 + 𝑖)(𝑖) = −1 −2𝑖+ 1 = −2𝑖
+𝑓1 + 𝑖= 1 + 𝑖2 −2 + 𝑖
+1 + 𝑖= 2𝑖−1 −3𝑖
+= −1 −𝑖
+2) 𝑔(𝑧) = 𝑧+ 2 𝑅𝑒(𝑧)
+
+Domain of a Complex Function
+When the domain of a complex function is not explicitly stated, we assume the 
+domain to be the set of all complex numbers 𝑧for which 𝑓(𝑧) is defined. This set 
+is sometimes referred to as the natural domain of 𝑓. 
+For example, the functions 𝑓(𝑧) = 𝑧2 −(2 + 𝑖)𝑧and 𝑔𝑧= 𝑧+ 2 𝑅𝑒(𝑧) in 
+Example 1 are defined for all complex numbers 𝑧, and so, 𝐷𝑜𝑚(𝑓) = ℂand 
+𝐷𝑜𝑚(𝑔) = ℂ. 
+The complex function ℎ𝑧=
+𝑧
+𝑧2+1 is not defined at 𝑧= 𝑖and 𝑧= −𝑖Therefore, 
+𝐷𝑜𝑚ℎ= ℂ−{±𝑖}
+
+Real and Imaginary Parts of a Complex 
+Function
+If 𝑤= 𝑓(𝑧) is a complex function, then the image of a complex number 
+𝑧= 𝑥+ 𝑖𝑦under 𝑓is a complex number. By setting 𝑧= 𝑥+ 𝑖𝑦, we can 
+express any complex function 𝑤= 𝑓(𝑧) in terms of two real functions 
+as:
+𝑓𝑧= 𝑢𝑥, 𝑦+ 𝑖𝑣(𝑥, 𝑦).
+If we replace the symbol 𝑧with 𝑟(cos 𝜃+ 𝑖𝑠𝑖𝑛𝜃), then we can write 
+this function as: 
+𝑓(𝑧) = 𝑢(𝑟, 𝜃) + 𝑖𝑣(𝑟, 𝜃).
+
+Example 2
+Find real and imaginary parts of the following complex functions:
+a) 𝑓𝑧= 𝑧2
+b) 𝑓𝑧=
+1
+𝑧
+c) 𝑓𝑧= 𝑒𝑧
+
+Graph of Complex Function
+A useful tool for the study of real functions in elementary calculus is the graph 
+of the function. In real calculus if 𝑦= 𝑓(𝑥) is a real-valued function of a real 
+variable 𝑥, then the graph of 𝑓is defined to be the set of all points (𝑥, 𝑓(𝑥))
+in the two-dimensional Cartesian plane. An analogous definition can be made 
+for a complex function. However, if 𝑤= 𝑓(𝑧) is a complex function, then both 
+𝑧and 𝑤lie in a complex plane. It follows that the set of all points (𝑧, 𝑓(𝑧))
+lies in four-dimensional space (two dimensions from the input 𝑧and two 
+dimensions from the output 𝑤). Of course, a subset of four-dimensional space 
+cannot be easily illustrated. Therefore: 
+We cannot draw the graph a complex function.
+
+Complex Mapping
+One considers the two complex planes, 𝑧and 𝑤, separately and asks how a 
+region in the 𝑧−plane transforms or maps to a corresponding region or image 
+in the 𝑤−plane. We use the alternative term complex mapping in place of 
+“complex function” when considering the function as this correspondence 
+between points in the 𝑧−plane and points in the 𝑤−plane. 
+The geometric representation of a complex mapping 𝑤= 𝑓(𝑧) attributed to 
+Riemann consists of two figures: 
+The subset 𝑆of points in the 𝑧−plane
+The set 𝑆′ of the images of points in 𝑆under 𝑤= 𝑓(𝑧) in the 𝑤−plane.
+
+Complex Mapping
+
+Complex Mapping
+If the point 𝑧0 in the 
+𝑧−plane corresponds to the 
+point 𝑤0 in the 𝑤−plane, 
+that is, if 𝑤0 = 𝑓(𝑧0), then 
+we say that 𝑓maps 𝑧0 onto 
+𝑤0 or, equivalently, that 𝑧0 is 
+mapped onto 𝑤0 by 𝑓.
+
+Example 3
+Find the image of the half-plane 𝑅𝑒(𝑧) ≥2 under the 
+complex mapping 𝑤= 𝑖𝑧and represent the mapping 
+graphically.
+𝑤= 𝑖𝑧
+
+Example 4
+Determine the image of the vertical line 𝑥= 1 under the complex 
+mapping defined by: 𝑤= 𝑓𝑧= 𝑧2 and represent the mapping 
+graphically.
+
+Complex Parametric Curve
+If 𝑥= 𝑥(𝑡) and 𝑦= 𝑦(𝑡) are real-valued functions of a real variable 𝑡, then 
+the set 𝐶of all points (𝑥(𝑡), 𝑦(𝑡)), where 𝑎≤𝑡≤𝑏, is called a parametric 
+curve. The equations 𝑥= 𝑥(𝑡), 𝑦= 𝑦(𝑡), and 𝑎≤𝑡≤𝑏are called parametric 
+equations of 𝐶. 
+If 𝑥(𝑡) and 𝑦(𝑡) are real-valued functions of a real variable 𝑡, then the set 𝐶
+consisting of all points
+𝑧𝑡= 𝑥𝑡+ 𝑖𝑦𝑡,
+𝑎≤𝑡≤𝑏,
+is called a parametric curve or a complex parametric curve. The complex-
+valued function of the real variable 𝑡, 𝑧𝑡= 𝑥𝑡+ 𝑖𝑦(𝑡), is called a 
+parametrization of 𝐶.
+
+Common Parametric Curves in the Complex 
+Plane
+
+Common Parametric Curves in the Complex 
+Plane
+
+Image of a Parametric Curve under a Complex 
+Mapping
+If  w = 𝑓(𝑧) is a complex mapping and if 𝐶is a curve parametrized by 
+𝑧(𝑡), 𝑎≤𝑡≤𝑏, then
+𝑤(𝑡) = 𝑓(𝑧(𝑡)),
+𝑎≤𝑡≤𝑏
+is a parametrization of the image, 𝐶′ of 𝐶under 𝑤= 𝑓(𝑧).
+
+Example 5
+Determine the image of the line segment from 1 to 𝑖under the complex mapping 
+𝑤= 𝑓𝑧= ഥ𝑖𝑧.
+(∎)
+(∎)
+(∎)
+
+Example 6
+Find the image of upper half of the circle 𝑧= 2 under the 
+complex mapping 𝑤= 𝑧2.
+
+Use of Software
+You can use wolfram alpha to determine the image of a parametric curve under a 
+complex mapping. The link for this software is
+Wolfram|Alpha Widgets: "Conformal mapping" - Free Mathematics Widget 
+(wolframalpha.com)
+
+• Chapter: 2
+• Exercise: 2.1 Questions: 1-26
+• Exercise: 2.2 Questions: 1-26
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

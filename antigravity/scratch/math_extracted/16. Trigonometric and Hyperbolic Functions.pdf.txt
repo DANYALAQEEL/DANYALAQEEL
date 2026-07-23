@@ -1,0 +1,215 @@
+
+
+========================================
+LECTURE: 16. Trigonometric and Hyperbolic Functions.pdf
+========================================
+
+Trigonometric 
+and 
+Hyperbolic 
+Functions
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.6
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 4
+• Section: 4.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+The complex sine and cosine functions are defined as:
+sin 𝑧=
+𝑒𝑖𝑧−𝑒−𝑖𝑧
+2𝑖
+,
+and      cos 𝑧=
+𝑒𝑖𝑧+𝑒−𝑖𝑧
+2
+.
+Complex Trigonometric Functions
+We define the complex tangent, cotangent, secant, and 
+cosecant functions using the complex sine and cosine as: 
+tan 𝑧=
+sin 𝑧
+cos 𝑧, cot 𝑧=
+cos 𝑧
+sin 𝑧, sec 𝑧=
+1
+cos 𝑧, and csc 𝑧=
+1
+sin 𝑧.
+
+Trigonometric Identities
+However, it is important to recognize that some properties of the real 
+trigonometric functions are not satisfied by their complex counterparts. 
+For example, |𝑠𝑖𝑛𝑥| ≤1 and |𝑐𝑜𝑠𝑥| ≤1 for all real 𝑥, but these inequalities, 
+in general, are not satisfied for complex input. Thus, we conclude that unlike 
+the real sine and cosine functions, the complex sine and cosine functions are 
+no longer bounded.
+
+Periodicity
+The complex sine and cosine are periodic functions with 
+a real period of 2𝜋, i.e.,
+sin(𝑧+ 2𝜋) = sin𝑧and cos 𝑧+ 2𝜋= cos 𝑧.
+The identities sin(𝑧+ 𝜋) = −sin𝑧and cos 𝑧+ 𝜋=
+−cos 𝑧can be used to show that the complex tangent 
+and cotangent are periodic with a real period of 𝜋.
+
+Example 1; Solving Trigonometric Equations
+Determine all complex values 𝑧satisfying the given 
+equation:
+i.
+sin 𝑧= 𝑖
+ii. cos 𝑧= 0
+iii. sin 𝑧= 5.
+
+Modulus
+If we replace the symbol 𝑧with the symbol 𝑥+ 𝑖𝑦in the expression for 
+sin𝑧and cos 𝑧, and using  sinh 𝑦=
+𝑒𝑦−𝑒−𝑦
+2
+and   cosh 𝑦=
+𝑒𝑦+𝑒−𝑦
+2
+, 
+then we obtain:
+sin 𝑧= sin 𝑥cosh 𝑦+ 𝑖cos 𝑥sinh 𝑦,
+and                   cos𝑧= cos𝑥cosh𝑦−𝑖sin𝑥sinh𝑦.
+Thus, the modulus of the complex sine and cosine functions are 
+respectively given  as:
+sin 𝑧=
+sin2 𝑥+ sinh2 𝑦
+cos 𝑧=
+cos2 𝑥+ sinh2 𝑦
+
+Zeros of Trigonometric Functions
+One way of obtaining these zeros is to solve the trigonometric equations
+sin𝑧= 0 and cos𝑧= 0. By solving these equations, we have already seen
+that like their real counterparts, the zeros of sin 𝑧are 𝑛𝜋and the zeros of
+cos 𝑧are 𝑛𝜋+ 𝜋/2, where 𝑛is any integer.
+A different method for determining the zeros of these functions involves
+recognizing that a complex number is equal to 0 if and only if its modulus is
+0. Thus, solving the equation sin 𝑧= 0 is equivalent to solving the equation
+|sin𝑧| = 0.
+A zero 𝛼of a function 𝑓(𝑧) satisfies 𝑓𝛼= 0.
+
+Zeros of Trigonometric Functions
+Zeros of complex sine and cosine functions are:
+sin 𝑧= 0 if and only if
+𝑧= 𝑛𝜋,
+cos 𝑧= 0
+if and only if
+𝑧=
+2𝑛+ 1 𝜋
+2
+,
+for 𝑛= 0, ±1, ±2, …
+
+Analyticity of Trigonometric Functions 
+The complex sine and cosine functions are entire functions, since they are linear 
+combinations of  the entire functions 𝑒𝑖𝑧and 𝑒−𝑖𝑧. However, tan 𝑧and sec 𝑧are 
+not entire; they are analytic except at the points where cos 𝑧is zero. Similarly, 
+cot 𝑧and csc 𝑧are analytic except where sin 𝑧is zero. Since,
+sin 𝑧= 0 if and only if
+𝑧= 𝑛𝜋,
+1
+and
+cos 𝑧= 0 if and only if
+𝑧=
+2𝑛+ 1 𝜋
+2
+,
+(2)
+for 𝑛= 0, ±1, ±2, … . 
+Thus, from (1) and (2) it follows that the tan 𝑧and sec 𝑧have singularities at 
+𝑧= (2𝑛+ 1)𝜋/2 for 𝑛= 0, ±1, ±2, … , whereas the cot 𝑧and csc 𝑧have 
+singularities at 𝑧= 𝑛𝜋for 𝑛= 0, ±1, ±2, …
+
+Derivatives of Complex Trigonometric 
+Functions
+
+Trigonometric Mapping
+The complex function sin𝑧is periodic with a real period of 2𝜋, this function takes on all 
+values in any infinite vertical strip 
+𝑥0 < 𝑥≤𝑥0 + 2𝜋,
+−∞< 𝑦< ∞
+Consider the strip −𝜋< 𝑥< 𝜋, −∞< 𝑦< ∞.
+For 𝑧1 = 0 and 𝑧2 = 𝜋are in this region and sin 0 = sin 𝜋= 0. From the identity 
+sin(−𝑧+ 𝜋) = sin 𝑧it follows that the image of the strip −𝜋< 𝑦< ∞, is the same as 
+the image of the strip  𝜋/2 < 𝑥≤𝜋, −∞< 𝑦< ∞, under 𝑤= sin 𝑧.
+Therefore, we need to only consider the mapping 𝑤= sin 𝑧on the region
+−𝜋
+2 ≤𝑥≤𝜋
+2 ,
+−∞< 𝑦< ∞,
+to gain an understanding of this mapping on the entire 𝑧−plane.
+
+Example 2 
+Describe the image of the region
+−𝜋
+2 ≤𝑥≤𝜋
+2 ,
+−∞< 𝑦< ∞,
+under the complex mapping w = sin 𝑧.
+
+Complex Hyperbolic Functions
+The complex hyperbolic sine and hyperbolic cosine functions are defined by:
+sinh 𝑧=
+𝑒𝑧−𝑒−𝑧
+2
+,
+and
+cosh 𝑧=
+𝑒𝑧+𝑒−𝑧
+2
+.
+The complex hyperbolic tangent, cotangent, secant, and cosecant are defined 
+in terms of sinh 𝑧and cosh 𝑧: 
+tanh 𝑧= sinh 𝑧
+cosh 𝑧,
+coth 𝑧= cosh 𝑧
+sinh 𝑧
+sech 𝑧=
+1
+cosh 𝑧,
+csch 𝑧=
+1
+sinh 𝑧.
+
+Relation between Trigonometric and Hyperbolic 
+Functions
+The hyperbolic functions are closely related to the trigonometric 
+functions. Relationship between the complex trigonometric and 
+hyperbolic functions is given as:
+sin 𝑧= −𝑖sinh(𝑖𝑧) and     cos 𝑧= cosh(𝑖𝑧)
+(I)
+sinh 𝑧= −𝑖sin(𝑖𝑧)
+and    cosh 𝑧= cos( 𝑖𝑧)
+(II)
+Relations between the other trigonometric and hyperbolic functions can 
+now be derived from (I) and (II).
+
+Derivatives of Complex Hyperbolic Functions
+
+Hyperbolic Identities
+
+• Chapter: 4
+• Exercise: 4.3
+• Questions: 1-36
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

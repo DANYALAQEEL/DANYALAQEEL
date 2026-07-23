@@ -1,0 +1,31 @@
+Scanning paragraphs for images...
+Paragraph 47 has images: ['media/image1.png'] | Text: in the top rightthere is no such icon, go to Windo
+Paragraph 49 has images: ['media/image2.jpg'] | Text: 
+Paragraph 53 has images: ['media/image4.jpg'] | Text: 
+Paragraph 64 has images: ['media/image5.jpg'] | Text: 
+Paragraph 65 has images: ['media/image7.jpg'] | Text: Note that … symbols may appear momentarily on the 
+Paragraph 83 has images: ['media/image8.jpg'] | Text: For more information on those windows, access the 
+Paragraph 87 has images: ['media/image9.png'] | Text: Click on the Input component in the design. In the
+Paragraph 89 has images: ['media/image11.jpg'] | Text: 
+Paragraph 101 has images: ['media/image12.jpg'] | Text: 
+Paragraph 107 has images: ['media/image14.jpg'] | Text: 1. Add a new filter called Compress to the design.
+Paragraph 118 has images: ['media/image15.jpg'] | Text: 
+Paragraph 122 has images: ['media/image16.jpg'] | Text: Add a pipe between Package and Compress.
+Paragraph 124 has images: ['media/image17.png'] | Text: You can do in two ways. First is using the connect
+Paragraph 126 has images: ['media/image18.jpg'] | Text: The second way to connect components is more elabo
+Paragraph 135 has images: ['media/image19.jpg'] | Text: 
+Paragraph 138 has images: ['media/image20.jpg'] | Text: 
+Paragraph 142 has images: ['media/image21.png'] | Text: To do this, we must create bindings. To create a b
+Paragraph 146 has images: ['media/image22.png', 'media/image22.png'] | Text: Click the  icon from the tool bar.
+Paragraph 164 has images: ['media/image23.png', 'media/image24.png', 'media/image26.png', 'media/image27.png'] | Text: The  icon next to the rule indicates that the rule
+Paragraph 166 has images: ['media/image28.png', 'media/image29.png'] | Text: Select the architectural design as a whole by clic
+Paragraph 170 has images: ['media/image27.png'] | Text: Reconnect the role and notice that the rule is rec
+Paragraph 172 has images: ['media/image7.jpg'] | Text: Remove any pipe by selecting and pressing Delete. 
+Paragraph 174 has images: ['media/image30.png'] | Text: For further information about AcmeStudio, you can 
+Paragraph 186 has images: ['media/image31.jpg'] | Text: Legend has a number of useful visual properties. S
+Paragraph 194 has images: ['media/image32.png'] | Text: 
+Paragraph 203 has images: ['media/image33.jpeg'] | Text: 
+Paragraph 209 has images: ['media/image34.jpeg'] | Text: 
+Paragraph 215 has images: ['media/image35.jpeg'] | Text: 
+Paragraph 220 has images: ['media/image36.jpeg'] | Text: 
+Paragraph 232 has images: ['media/image37.jpeg'] | Text: 

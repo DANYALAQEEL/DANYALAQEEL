@@ -1,0 +1,3424 @@
+
+
+========================================
+LECTURE: 1. Introduction(CVT).pdf
+========================================
+
+Complex Variables 
+and Transforms
+(MATH-232)
+Introduction
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+Semester Planner - Spring 2026
+S
+E
+M
+E
+S
+T
+E
+R
+P
+L
+A
+N
+N
+E
+R
+Week 1
+Week 2
+Week 3
+Week 4
+19-Jan-26
+23-Jan-26
+26-Jan-26
+30-Jan-26
+02-Feb-26
+06-Feb-26
+09-Feb-26
+13-Feb-26
+Week 5
+Week 6
+Week 7
+Week 8
+Mid Term Week
+16-Feb-26
+20-Feb-26
+23-Feb-26
+27-Feb-26
+02-Mar-26
+06-Mar-26
+09-Mar-26
+13-Mar-26
+Week 9
+Week 10
+Week 11
+Week 12
+16-Mar-26
+20-Mar-26
+23-Mar-26
+27-Mar-26
+30-Mar-26
+03-Apr-26
+06-Apr-26
+10-Apr-26
+Week 13
+Week 14
+Week 15
+Week 16
+13-Apr-26
+17-Apr-26
+20-Apr-26
+24-Apr-26
+27-Apr-26
+01-May-26
+04-May-26
+08-May-26
+Week 17
+Week 18
+ESE
+11-May-26
+15-May-26
+18-May-26
+22-May-26
+
+LMs Self-Enrollment Key
+Enrollment Code : 398065421
+
+Course Logistics
+
+Course Code:
+Math-232
+Semester:
+4th
+Credit Hours:
+3+0
+Prerequisite 
+Codes:
+Instructor:
+Dr. Hina Munir Dutt
+Discipline:
+BESE
+Office:
+A-204, Faculty Block
+Telephone:
+051-90852378
+Lecture Days:
+Monday, Tuesday, 
+Wednesday
+E-mail:   
+hina.dutt@seecs.edu.pk
+Class Room:   
+CR-16, CR-17
+Consulting Hours:
+Tuesday: 1500-1700 hours 
+Friday: 1500-1700 hours
+Knowledge Group:
+Applied Mathematics
+Updates on LMS:
+After  every lecture
+
+Course Description
+This course provides sound knowledge of calculus in 
+the complex domain with a detailed discussion on 
+complex algebra, complex functions, analyticity and 
+contour integration.
+It also covers Fourier Series, Fourier Integrals and 
+Fourier Transforms to provide students strong 
+mathematical tools to solve Engineering/Technology 
+problems.
+
+Course Objectives
+Develop understanding of complex functions, 
+analyticity and contour integration. The 
+applications will be covered from potential 
+theory of harmonic functions.
+Learn solution techniques of Fourier series 
+and Fourier transform.
+
+Apply the 
+concepts of 
+complex 
+functions, 
+derivatives 
+and contour 
+integrals.
+PLO1
+C2*
+CLO1
+Formulate 
+the 
+problems 
+from 
+conformal 
+mapping 
+and residue 
+theory. 
+PLO3
+C3*
+CLO2
+Analyze 
+the
+behavior 
+of Fourier 
+series and 
+Fourier 
+integral of 
+a given 
+function.
+PLO2
+PLO2
+C5*
+C4*
+CLO3
+Evaluate 
+Fourier 
+and Z-
+transforms 
+of a given 
+function.
+CLO4
+Course Learning Outcomes (CLOs)
+* BT= Bloom’s Taxonomy, C=Cognitive domain, P=Psychomotor domain, A= Affective domain
+
+Bloom’s Taxonomy
+
+Marks Distribution (Tentative)
+15
+5
+30
+50
+Marks Distribution
+Quizzes
+Assignments & Class Presentations
+MSE
+ESE
+
+Books
+• Advanced Engineering 
+Mathematics (9th Edition) by 
+Ervin Kreyszig.
+• A First Course in Complex 
+Analysis with Applications by 
+Dennis G. Zill.
+Text Books
+• Real and Complex Analysis by 
+Walter Rudin.
+• Complex Variables & 
+Applications by James Ward 
+Brown, Ruel V. Churchill.
+• Advanced Modern 
+Engineering Mathematics by 
+Glyn James.
+Reference 
+Books
+
+Complex Variables and 
+Transforms
+Complex 
+Variables
+Fourier 
+Series
+Fourier 
+Transform 
+and Z-
+Transform
+
+Complex Analysis
+Complex analysis has many applications in heat 
+conduction, fluid flow, electrostatics, and in other areas. 
+It extends “real calculus” to “complex calculus” by 
+introducing complex numbers and functions. 
+
+Why Complex Analysis?
+Complex analysis is important in applied mathematics for three main reasons:
+1. Two-dimensional potential problems can be modeled and solved by methods 
+of analytic functions. This reason is the real and imaginary parts of analytic 
+functions satisfy Laplace’s equation in two real variables.
+2. Many difficult integrals (real or complex) that appear in applications can be 
+solved quite elegantly by complex integration.
+3. Most functions in engineering mathematics are analytic functions, and their 
+study as functions of a complex variable leads to a deeper understanding of 
+their properties and to interrelations in complex that have no analog in real 
+calculus.
+
+Importance of Complex Variables and 
+Transforms
+For most human tasks, real numbers (or even rational numbers) offer an adequate 
+description of data.
+Fractions such as 2/3 and 1/8 are meaningless to a person counting stones, but 
+essential to a person comparing the sizes of different collections of stones. 
+Negative numbers such as −3 and −5 are meaningless when measuring the mass 
+of an object, but essential when keeping track of monetary debits and credits.
+
+Importance of Complex Variables and 
+Transforms
+Imaginary numbers have essential concrete applications in a variety of sciences 
+and related areas such as Signal Processing, Control Theory, Electromagnetism, 
+Communication Systems, Broadband Technologies, Quantum Mechanics, 
+Cartography, Vibration Analysis, and many others.
+The Fourier Transform and Series and their analytic properties are very commonly 
+used in Telecommunications, Digital Signal Processing, Digital Image Processing, 
+Electronics Design, and more.
+
+Dispersion is the phenomenon of different frequencies traveling at different 
+speeds down a wire or other transmission line, and it can prevent signals in a 
+circuit from being properly sent, if proper attention is not paid to it. Fourier and 
+thus complex analysis is critical in understanding dispersion and being able to 
+correct for it.
+Along with the concept of Fourier transformations, we have the Laplace and 𝑍-
+transforms. These transforms are useful in Circuit Analysis and Control Theory to 
+build increasingly complex electronics.
+Importance of Complex Variables and 
+Transforms
+
+
+
+========================================
+LECTURE: 10. Reciprocal Function.pdf
+========================================
+
+Reciprocal 
+function
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 2
+• Section: 2.5
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D.
+Shanahan.
+
+The function 
+𝑓𝑧= 1
+𝑧
+whose domain is the set of all nonzero complex numbers, 
+is called the reciprocal function.
+Reciprocal Function
+
+Reciprocal Function
+We express this mapping in exponential notation by 
+replacing the symbol 𝑧with 𝑟𝑒𝑖𝜃: 
+𝑤= 1
+𝑧=
+1
+𝑟𝑒𝑖𝜃= 1
+r e−𝑖𝜃.
+(1)
+From (1) we see that the
+𝑧
+w
+Modulus:
+𝑟
+1
+𝑟
+Argument:
+𝜃
+−𝜃
+
+Inversion in the Unit Circle
+The function
+𝑔𝑧= 1
+𝑟𝑒𝑖𝜃
+whose domain is the set of all nonzero complex numbers, is 
+called inversion in the unit circle.
+
+Inversion in the Unit Circle
+Case I: Consider a point 𝑧on the unit circle. Since 𝑧= 1 · 𝑒𝑖𝜃, it follows that 
+𝑔𝑧= 1
+1 𝑒𝑖𝜃= 𝑧.
+Therefore, each point on the unit circle is mapped onto itself by 𝑔.
+Case II: Consider a point 𝑧that lies outside the unit circle. For this we have 𝑟> 1, 
+it follows that 
+𝑔𝑧
+= 1
+𝑟𝑒𝑖𝜃= 1
+𝑟< 1.
+Therefore, each point outside the unit circle is mapped onto a point inside the 
+unit circle by 𝑔.
+
+Inversion in the Unit Circle
+Case III: Consider a point 𝑧that lies inside the unit circle. For this we have 
+𝑟< 1, it follows that 
+𝑔𝑧
+= 1
+𝑟𝑒𝑖𝜃= 1
+𝑟> 1.
+Therefore, each point inside the unit circle is mapped onto a point outside 
+the unit circle by 𝑔.
+
+Inversion in the Unit Circle
+
+Inversion in the Unit Circle
+We note for inversion in the unit circle that the arguments of 𝑧and 𝑔(𝑧)
+are equal. It follows that if 𝑧1 ≠0 is a point with modulus 𝑟in the 
+𝑧−plane, then 𝑔(𝑧1) is the unique point in the 𝑤−plane with modulus 
+1
+𝑟
+lying on a ray emanating from the origin making an angle of arg(𝑧0) with 
+the positive 𝑢−axis. In addition, since the moduli of 𝑧and 𝑔(𝑧) are 
+inversely proportional, the farther a point 𝑧is from 0 in the 𝑧−plane, the 
+closer its image 𝑔(𝑧) is to 0 in the 𝑤−plane, and, conversely, the closer 𝑧
+is to 0, the farther 𝑔(𝑧) is from 0.
+
+The function 
+𝑐𝑧= ҧ𝑧
+is called the complex conjugation function.
+Complex Conjugation Function
+
+Complex Conjugation Function
+We can also express the complex conjugation 
+function as 
+𝑐𝑧= 𝑟𝑒𝑖𝜃=
+ҧ𝑟𝑒𝑖𝜃.
+Because 𝑟is real, we have ҧ𝑟= 𝑟. 
+Furthermore, 
+𝑒𝑖𝜃= (cos 𝜃+ 𝑖sin 𝜃) = cos 𝜃−𝑖sin 𝜃
+= cos −𝜃+ 𝑖sin(−𝜃) = 𝑒−𝑖𝜃
+Therefore, the complex conjugation function can 
+be written as
+𝑐𝑧= 𝑟𝑒−𝑖𝜃.
+
+Reciprocal Function as a Composition 
+The reciprocal function 𝑓(𝑧) =
+1
+𝑧can be written as the composition of 
+inversion in the unit circle and complex conjugation. Using the 
+exponential forms 𝑐𝑧= 𝑟𝑒−𝑖𝜃and 𝑔𝑧=
+𝑒𝑖𝜃
+𝑟of these functions we 
+find
+𝑐○𝑔= 𝑐𝑔𝑧
+= 𝑐1
+𝑟𝑒𝑖𝜃
+= 1
+𝑟𝑒−𝑖𝜃= 1
+𝑧
+This implies that, as a mapping, the reciprocal function first inverts in the 
+unit circle, then reflects across the real axis.
+
+Image of a Point under the Reciprocal Mapping
+
+Example 1
+a) Find the image of the semicircle |𝑧| = 2, 0 ≤arg(𝑧) ≤𝜋,
+under the reciprocal mapping 𝑤=
+1
+𝑧.
+b) Show that the reciprocal function maps the circle 𝑧= 𝑘, 𝑘≠0
+onto the circle 𝑤=
+1
+𝑘.
+
+Example 2
+Find the image of the vertical line 𝑥= 1 under the reciprocal 
+mapping 𝑤=
+1
+𝑧.
+
+The Reciprocal Function on the Extended 
+Complex Plane
+
+Example 3
+Find the image of the lines 𝑥= 1 and 𝑦= 1 under the 
+reciprocal mapping 𝑤=
+1
+𝑧on the extended complex plane.
+
+Note
+An infinite line is mapped to a closed bounded (finite) circle.
+The angle 90 is preserved under complex mappings. 
+
+Mapping Lines to Circles with 𝒘=
+𝟏
+𝒛
+
+Mapping Lines to Circles with 𝒘=
+𝟏
+𝒛
+
+• Chapter: 2
+• Exercise: 2.5
+• Questions: 1-18
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 11. Limits and Continuity.pdf
+========================================
+
+Limits and 
+continuity
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 2
+• Section: 2.5
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Limit of a Real Function f(x)
+The limit of a function 𝑓given by
+lim
+𝑥→𝑥0 𝑓(𝑥) = 𝐿
+means that values 𝑓(𝑥) of the function 𝑓can be made arbitrarily 
+close to the real number 𝐿if values of 𝑥are chosen sufficiently close 
+to, but not equal to, the real number 𝑥0.
+
+Limit of a Real Function f(x)
+
+Limit of a Complex Function
+
+Nonexistence of a Real Limit
+
+Criterion for the Nonexistence of a Limit
+Note:
+In general, computing values of lim
+𝑧→𝑧0 𝑓(𝑧) as 𝑧
+approaches 𝑧0 from different directions can 
+prove that a limit does not exist, but this 
+technique cannot be used to prove that a limit 
+does exist.
+If 𝑓approaches two complex numbers 𝐿1 ≠𝐿2
+for two different curves or paths through 𝑧0, 
+then lim
+𝑧→𝑧0 𝑓(𝑧) does not exist.
+
+Example 1
+Show that lim
+𝑧→0
+𝑧
+ҧ𝑧does not exist.
+
+Example 2
+Compute the following limits:
+a)
+lim
+𝑧→1+𝑖(𝑧2 + 𝑖)
+b) lim
+𝑧→3𝑖
+Im(𝑧2)
+𝑧+Re(𝑧)
+
+Theorem 2: Properties of Complex Limits
+
+Example 3
+Compute the following limits:
+a) lim
+𝑧→𝑖
+3+𝑖𝑧4−𝑧2+2𝑧
+𝑧+1
+b)
+lim
+𝑧→1+ 3𝑖
+𝑧2−2𝑧+4
+𝑧−1−3𝑖
+c) lim
+𝑧→∞
+𝑖𝑧+1
+2𝑧−𝑖
+
+Continuity of a Function
+A real valued function 𝑓is continuous at a point 𝑥0 if
+lim
+𝑥→𝑥0 𝑓(𝑥) = 𝑓𝑥0 .
+A complex function 𝑓is continuous at a point 𝑧0 if
+lim
+𝑧→𝑧0 𝑓(𝑧) = 𝑓𝑧0 .
+
+Criteria for Continuity at a Point
+A complex function 𝑓is continuous at a point 𝑧0 if each of the 
+following three conditions hold:
+i.
+lim
+𝑧→𝑧0 𝑓(𝑧) exists,
+ii. 𝑓is defined at 𝑧0, and
+iii. lim
+𝑧→𝑧0 𝑓(𝑧) = 𝑓𝑧0 .
+
+Example 4
+
+Example 5 
+1. Show that the function 𝑓𝑧= ҧ𝑧is continuous on ℂ.
+2. Show that the principal square root function 𝑓(𝑧) = 𝑧1/2
+defined by 𝑧1/2 =
+𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/2 is discontinuous at the 
+point 𝑧0 = −1.
+
+Theorem 4: Properties of Continuous 
+Functions
+
+Continuity of Some Functions 
+Polynomial Functions:
+Polynomial functions are continuous on the entire complex plane 
+ℂ.
+Rational functions:
+Rational functions are continuous on their domains.
+
+Continuous Function is Bounded
+If a complex function 𝑓is continuous on a closed and 
+bounded region 𝑅, then 𝑓is bounded on 𝑅. That is, there 
+is a real constant 𝑀> 0 such that
+|𝑓(𝑧)| ≤𝑀for all  𝑧in 𝑅.
+
+Multiple-valued Function
+A multiple-valued function 𝐹is a complex mapping that assigns 
+two or more distinct outputs to one input value 𝑧.
+Examples:
+𝐹𝑧= 𝑧1/𝑛assigns the 𝑛𝑛𝑡ℎroots to each input 𝑧.
+𝐺𝑧= arg(𝑧) assigns the infinite arguments to each input 𝑧.
+Note:
+A multiple-valued function is a 
+mapping and not a function.
+
+Branch of a Multiple-valued Function
+A branch of a multiple-valued function 𝐹is a function 𝑓1 that is continuous 
+on some domain and that assigns exactly one of the multiple values of 𝐹to 
+each point 𝑧in that domain.
+Example:
+The principal square root function 𝑓𝑧= 𝑧1/2 =
+𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/2
+is not a branch of 𝐹𝑧= 𝑧1/2.
+Why? 
+The branches of 𝐹𝑧= 𝑧1/2 are:
+𝑓1 𝑧=
+𝑟𝑒𝑖𝜃/2,
+−𝜋< 𝜃< 𝜋
+𝑓2 𝑧=
+𝑟𝑒𝑖𝜃/2,
+𝜋< 𝜃< 3𝜋
+𝑓3 𝑧=
+𝑟𝑒𝑖𝜃/2,
+−3𝜋
+4 < 𝜃< 5𝜋
+4
+Principal Branch
+
+Branch Cut
+A branch cut for a branch 𝑓1 of a multiple-valued function 𝐹is a 
+portion of a curve that is excluded from the domain of 𝐹so that 𝑓1 is 
+continuous on the remaining points. 
+Examples:
+The nonpositive real axis is a branch cut for the branch 𝑓1 and 
+𝑓2 of the multiple-valued function 𝐹(𝑧) = 𝑧1/2. 
+The branch cut for 𝑓3 is the ray arg(𝑧) = −3𝜋/4 together 
+with the point 𝑧= 0.
+
+Branch Point
+A point with the property that it is on the branch cut of every 
+branch is called a branch point of 𝐹.
+Example:
+The point 𝑧= 0 is common to each branch of the multiple-
+valued function 𝐹𝑧= 𝑧1/2, therefore 𝑧= 0 is the branch 
+point of 𝐹.
+
+• Chapter: 2
+• Exercise: 2.6 Questions: 1-40, 
+51-56
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 12. Differentiability and Analyticity.pdf
+========================================
+
+Differentiability 
+and 
+Analyticity
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 3
+• Section: 3.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Derivative of Complex Functions
+Suppose the complex function 𝑓is defined in a neighborhood of a 
+point 𝑧0. The derivative of 𝒇at 𝑧0, denoted by 𝑓′(𝑧0), is 
+𝑓′ 𝑧0 = lim
+∆𝑧→0
+𝑓𝑧0 + ∆𝑧−𝑓(𝑧0)
+∆𝑧
+provided this limit exists.
+If we write 𝑧= 𝑧0 + ∆𝑧, then the alternate definition of 𝑓′(𝑧0) is
+𝑓′ 𝑧0 = lim
+𝑧→𝑧0
+𝑓𝑧−𝑓(𝑧0)
+𝑧−𝑧0
+.
+
+Example 1; Using Definition
+Use Definition to find the derivative of 𝑓(𝑧) = 𝑧2 −5𝑧.
+
+Differentiation Rules
+
+Power Rule
+
+Example 2; Using Differentiation Rules
+
+Example 3; A Function That Is Nowhere 
+Differentiable
+Show that the function 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is not differentiable at any point 𝑧.
+
+Example 3; A Function That Is Nowhere 
+Differentiable
+
+Example 4
+Show that the function 𝑓𝑧= ҧ𝑧is nowhere differentiable. 
+
+Analyticity at a Point
+A complex function 𝑤= 𝑓(𝑧) is said to be analytic 
+at a point 𝒛𝟎if 𝑓is differentiable at 𝑧0 and at every 
+point in some neighborhood of 𝑧0.
+A function 𝑓is analytic in a domain 𝑫if it is analytic 
+at every point in 𝐷.
+D
+x
+y
+
+Note
+Analyticity at a point is not the same as differentiability at a point. 
+Analyticity at a point is a neighborhood property; in other words, 
+analyticity is a property that is defined over an open set.
+The function𝑓(𝑧) = 𝑧2 is differentiable at 𝑧= 0, it is not analytic at that 
+point because there exists no neighborhood of 𝑧= 0 throughout which 𝑓
+is differentiable; hence the function 𝑓(𝑧) = 𝑧2 is nowhere analytic.
+Analyticity implies differentiability but converse is not true.
+
+Entire Functions
+A function that is analytic at every point 𝑧in the complex plane is 
+said to be an entire function.
+Complex Functions that are entire:
+1, 𝑧, 𝑧2, 𝑧3, … , 𝑧𝑛
+𝑒𝑧, sin 𝑧, cos 𝑧, sinh 𝑧, cosh 𝑧
+Complex Functions analytic almost everywhere:
+1
+𝑧2 ,
+1
+𝑧2−1 , tan 𝑧, cot 𝑧, tanh 𝑧, coth 𝑧
+
+Theorem 3.1: Polynomial and Rational 
+Functions
+
+Theorem 3.2: Differentiability Implies 
+Continuity
+If 𝑓is differentiable at a point 𝑧0 in a domain 𝐷, 
+then 𝑓is continuous at 𝑧0.
+Differentiable ֜ Continuous
+Not continuous ֜ Not differentiable
+
+Example 5
+The function 𝑓𝑧= ҧ𝑧is continuous in the whole complex plane but 
+differentiable nowhere.
+The function 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is continuous everywhere because the real 
+and imaginary parts of 𝑓, 𝑢(𝑥, 𝑦) = 𝑥and 𝑣(𝑥, 𝑦) = 4𝑦are continuous at 
+any point (𝑥, 𝑦). Yet we saw in Example 3 that 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is not 
+differentiable at any point 𝑧.
+
+Singular Point
+A point 𝑧at which a complex function 𝑤= 𝑓(𝑧) fails to 
+be analytic is called a singular point of 𝑓.
+The function 𝑓𝑧=
+𝑧
+𝑧2+1 is discontinuous at 𝑧= ±𝑖. 
+Therefore, it is not analytical at these points. Hence 𝑧= ±𝑖
+are the singular points of 𝑓.
+
+Theorem 3.3: L’Hෝ𝒐pital’s Rule
+Suppose 𝑓and 𝑔are functions that are analytical at a point 
+𝑧0 and 𝑓𝑧0 = 0, 𝑔𝑧0 = 0, but 𝑔′ 𝑧0 ≠0. Then
+lim
+𝑧→𝑧0
+𝑓(𝑧0)
+𝑔(𝑧0) = 𝑓′(𝑧0)
+𝑔′(𝑧0) .
+
+Example 6; L’Hෝ𝒐pital’s Rule
+Compute the limit
+a)
+lim
+𝑧→2+𝑖
+𝑧2−4𝑧+5
+𝑧3−𝑧−10𝑖
+b)
+lim
+𝑧→1+𝑖
+𝑧5+4𝑧
+𝑧2−2𝑧+2
+
+Exercise
+The function 𝑓𝑧= 𝑧2 is continuous at the origin.
+i.
+Show that 𝑓is differentiable at the origin.
+ii. Show that 𝑓is not differentiable at any point 𝑧≠0.
+
+• Chapter: 3
+• Exercise: 3.1 Questions: 1-30
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 13. CR-equations and Harmonic Functions.pdf
+========================================
+
+CR-Equations 
+and 
+Harmonic 
+functions
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.4
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 3
+• Section: 3.2, 3.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+A complex function 𝑤= 𝑓(𝑧), is said to be analytic 
+in a domain 𝑫if it differentiable at all points in 𝐷. 
+In order to find out if a complex function is analytic, 
+it is not possible to check differentiability at each 
+point. Therefore, an analytic criteria is required to 
+establish analyticity of a complex function. 
+This criteria was first used by Cauchy and later it 
+was formally formulated by Riemann which now 
+known as Cauchy-Riemann equations.
+Introduction
+Augustin-Louis Cauchy
+Bernhard Riemann
+
+Cauchy-Reimann Equations; Criterion for 
+Differentiability
+Suppose the real functions 𝑢(𝑥, 𝑦) and 𝑣(𝑥, 𝑦) are continuous and 
+have continuous first-order partial derivatives in a domain 𝐷. If 𝑢and 𝑣
+satisfy the Cauchy-Riemann equations (CR-equations): 
+𝜕𝑢
+𝜕𝑥= 𝜕𝑣
+𝜕𝑦
+and
+𝜕𝑢
+𝜕𝑦= −𝜕𝑣
+𝜕𝑥
+(1)
+at all points of 𝐷, then the complex function 𝑓𝑧= 𝑢𝑥, 𝑦+ 𝑖𝑣(𝑥, 𝑦)
+is analytic in 𝐷. 
+
+Example 1
+i.
+Determine if the function 𝑓(𝑧) = 𝑧2 is analytic or not?
+ii.
+Determine the points where function 𝑓(𝑧) =
+1
+𝑧−1 is not 
+analytic. 
+
+Criterion for Non-Analyticity
+If the CR-equations are not satisfied at every point 𝑧in a 
+domain 𝐷, then the function 𝑓𝑧= 𝑢(𝑥, 𝑦) + 𝑖𝑣(𝑥, 𝑦)
+cannot be analytic in 𝐷.
+
+Example 2; Criterion for Non-Analyticity
+
+For complicated complex functions it is better to use 
+Euler’s formula which require that the CR-equations are 
+obtained in (𝑟, 𝜃). 
+The Cauchy-Riemann equations in polar coordinates are 
+given by: 
+𝜕𝑢
+𝜕𝑟= 1
+𝑟
+𝜕𝑣
+𝜕𝜃and 𝜕𝑣
+𝜕𝑟= −1
+𝑟
+𝜕𝑢
+𝜕𝜃
+Cauchy-Reimann Equations in Polar 
+Coordinates
+
+Example 3; CR-Equations in Polar Coordinates 
+
+Sufficient Conditions for Differentiability
+If the real functions 𝑢(𝑥, 𝑦) and 𝑣(𝑥, 𝑦) are continuous and have continuous first 
+order partial derivatives in some neighborhood of a point 𝑧= 𝑥+ 𝑖𝑦, and if 𝑢and 
+𝑣satisfy the CR-equations at 𝑧, then the function 𝑓𝑧= 𝑢(𝑥, 𝑦) + 𝑖𝑣(𝑥, 𝑦) is 
+differentiable at 𝑧and 𝑓′(𝑧) is given by: 
+𝑓′(𝑧) = 𝜕𝑢
+𝜕𝑥+ 𝑖𝜕𝑣
+𝜕𝑥= 𝜕𝑣
+𝜕𝑦−𝑖𝜕𝑢
+𝜕𝑦.
+The polar version of the above equation at a point 𝑧whose polar coordinates are 
+(𝑟, 𝜃) is then: 
+𝑓′(𝑧) = 𝑒−𝑖𝜃
+𝜕𝑢
+𝜕𝑟+ 𝑖𝜕𝑣
+𝜕𝑟
+= 1
+𝑟𝑒−𝑖𝜃
+𝜕𝑣
+𝜕𝜃−𝑖𝜕𝑢
+𝜕𝜃
+
+Example 4
+Determine if the following complex function are analytic and if 
+they are analytic determine 𝑓′(𝑧) by using the partial 
+derivatives of real and imaginary parts of 𝑓(𝑧):
+i.
+𝑓(𝑧) = 𝑒𝑧
+ii. 𝑓𝑧= 𝑒ҧ𝑧
+iii. 𝑓𝑧= 𝑧6
+iv. 𝑓(𝑧) = 𝑧−2
+
+Remark
+If a complex function 𝑓(𝑧) = 𝑢(𝑥, 𝑦) + 𝑖𝑣(𝑥, 𝑦) is analytic at 
+a point 𝑧, then all the derivatives of 
+𝑓: 𝑓′(𝑧), 𝑓′′(𝑧), 𝑓′′′(𝑧), … are also analytic at 𝑧. 
+As a consequence of this remarkable fact, we can conclude 
+that all partial derivatives of the real functions 𝑢(𝑥, 𝑦) and 
+𝑣(𝑥, 𝑦) are continuous at 𝑧.
+
+Laplace Equation
+From the continuity of the partial derivatives, we then know that the 
+second-order mixed partial derivatives are equal. This last fact, 
+coupled with the Cauchy-Riemann equations, demonstrates that there 
+is a connection between the real and imaginary parts of an analytic 
+function 𝑓(𝑧) and the second-order partial differential equation 
+𝛻2𝜙= 𝜙𝑥𝑥+ 𝜙𝑦𝑦= 0,
+(2)
+where 𝛻2𝜙is called the Laplacian of 𝝓.
+Equation (2), one of the most famous PDE in Applied Mathematics and 
+Physics, is known as Laplace’s equation in two variables. It occurs in 
+gravitation, electrostatics, fluid flow, heat conduction, and other 
+applications. 
+Pierre-Simon Laplace
+
+Harmonic Function
+A real-valued function 𝜙of two real variables 𝑥and 𝑦
+that has continuous first and second-order partial 
+derivatives in a domain 𝐷and satisfies Laplace’s 
+equation is said to be harmonic function in 𝑫.
+
+Theorem; Harmonic Function
+Suppose the complex function 𝑓𝑧= 𝑢𝑥, 𝑦+ 𝑖𝑣(𝑥, 𝑦)
+is analytic in a domain 𝐷. Then the functions 𝑢(𝑥, 𝑦) and 
+𝑣(𝑥, 𝑦) are harmonic in 𝐷.
+
+Example 5
+The function 𝑓(𝑧) = 𝑧2 = (𝑥2 −𝑦2 ) + 𝑖(2𝑥𝑦) is analytic 
+everywhere. The functions 𝑢(𝑥, 𝑦) = 𝑥2 −𝑦2 and 
+𝑣(𝑥, 𝑦) = 2𝑥𝑦are necessarily harmonic in any domain 𝐷of 
+the complex plane.
+
+Harmonic Conjugate
+Suppose 𝑢(𝑥, 𝑦) is a given real function that is known to be 
+harmonic in 𝐷. If it is possible to find another real harmonic 
+function 𝑣(𝑥, 𝑦) so that 𝑢and 𝑣satisfy the Cauchy-Riemann 
+equations throughout the domain 𝐷, then the function 𝑣(𝑥, 𝑦) is 
+called a harmonic conjugate of 𝑢(𝑥, 𝑦).
+By combining the functions as 𝑢(𝑥, 𝑦) + 𝑖𝑣(𝑥, 𝑦) we obtain a 
+function that is analytic in 𝐷.
+
+Example 6
+Verify that the function 𝑢𝑥, 𝑦= 𝑥3 −3𝑥𝑦2 −5𝑦is 
+harmonic in the entire complex plane. Moreover, determine 
+the harmonic conjugate function of 𝑢. 
+
+Note
+If 𝑣(𝑥, 𝑦) is a harmonic conjugate of 𝑢(𝑥, 𝑦) in some domain 𝐷, then 𝑢(𝑥, 𝑦) is, in 
+general, not a harmonic conjugate of 𝑣(𝑥, 𝑦).
+Example: The function 𝑓(𝑧) = 𝑧2 = (𝑥2 −𝑦2) + 𝑖(2𝑥𝑦) is analytic everywhere. 
+The functions 𝑢(𝑥, 𝑦) = 𝑥2 −𝑦2 and 𝑣(𝑥, 𝑦) = 2𝑥𝑦are harmonic in any domain 𝐷
+of the complex plane. In this case 𝑣(𝑥, 𝑦) is a harmonic conjugate of 𝑢(𝑥, 𝑦)
+throughout the plane but 𝑢(𝑥, 𝑦) cannot be a harmonic conjugate of 𝑣(𝑥, 𝑦) since 
+the function:
+𝑓𝑧= 𝑧2 = 2𝑥𝑦+ 𝑖(𝑥2 −𝑦2)
+is not analytic anywhere. (Verify!)
+
+Example 7
+1. Find the harmonic conjugates of the following:
+i.
+𝑢𝑥, 𝑦= 𝑒2𝑥sin 2𝑦.
+ii. 𝑢𝑥, 𝑦= 𝑥2 −𝑦2.
+2. Find the value of 𝑘for which 𝑢(𝑥, 𝑦) = 𝑒𝑘𝑥sin 4𝑦satisfy 
+Laplace’s equation.
+
+• Chapter: 3
+• Exercise: 3.2 Questions: 1-26
+• Exercise: 3.3 Questions: 1-20
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 14. Exponential and Logarithmic Functions.pdf
+========================================
+
+Exponential 
+and 
+Logarithmic 
+Functions
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.5, 13.7
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 4
+• Section: 4.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Elementary Complex Functions
+Complex Exponential and Logarithmic Functions
+Complex Powers
+Trigonometric and Hyperbolic Function
+
+Complex 
+Exponential 
+Function
+
+Complex Exponential Function
+The function 𝑒𝑧defined by 
+𝑒𝑧= 𝑒𝑥cos 𝑦+ 𝑖𝑒𝑥sin 𝑦
+is called the complex exponential function.
+The exponential function 𝑒𝑧is entire and its derivative is given 
+by: 
+𝑑
+𝑑𝑧𝑒𝑧= 𝑒𝑧
+
+Modulus, Argument and Conjugate
+Let   𝑤= 𝑓𝑧= 𝑒𝑧
+𝑤= 𝑒𝑥+𝑖𝑦= 𝑒𝑥(cos 𝑦+ 𝑖sin 𝑦)
+Modulus of 𝒆𝒛:
+𝑒𝑧= 𝑒𝑥
+Argument of 𝒆𝒛:
+A𝑟𝑔𝑒𝑧= 𝑦+ 2𝑛𝜋,    𝑛= 0, ±1, ±2, …
+Conjugate of 𝒆𝒛:
+𝑒𝑧= 𝑒ҧ𝑧
+
+Algebraic Properties of 𝒆𝒛
+
+Periodicity of 𝒆𝒛
+A complex function 𝑓is periodic with period 𝑇if 
+𝑓(𝑧+ 𝑇) = 𝑓(𝑧)
+for all complex 𝑧. 
+The real exponential function is not periodic, but the complex exponential 
+function is because it is defined using the real cosine and sine functions, which 
+are periodic. 
+In particular,
+𝑒𝑧+2𝜋𝑖= 𝑒𝑧𝑒2𝜋𝑖= 𝑒𝑧cos2𝜋+ 𝑖𝑠𝑖𝑛2𝜋.
+Since cos2𝜋= 1 and sin 2𝜋= 0, this simplifies to: 
+𝑒𝑧+2𝜋𝑖= 𝑒𝑧
+
+Fundamental Region of 𝒆𝒛
+The infinite horizontal strip defined by:
+−∞< 𝑥< ∞,
+−𝜋< 𝑦≤𝜋
+is called the fundamental region of the complex exponential function.
+All values of the complex exponential function 𝑒𝑧are 
+assumed in the fundamental region. The basic property 
+satisfied by a fundamental region of a periodic function 
+is that if one knows the behaviour of the function on 
+the fundamental region, one can use the periodicity to 
+find out the behaviour of the function everywhere, and 
+that it is the smallest region with that property.
+
+Exponential Mapping
+
+Exponential Mapping
+
+Exponential Mapping
+
+Example 2
+Find the image of the grid shown in figure under 𝑤= 𝑒𝑧.
+
+Example 2
+
+Example 3
+Determine the image of the set
+𝑆= {𝑧∈ℂ: 𝑧= 𝑥+ 𝑖𝑦; −1 ≤𝑥≤1 and 0 ≤𝑦≤2}
+under the mapping 𝑤= 𝑒𝑧.
+
+Complex 
+Logarithmic 
+Function
+
+Suppose that 𝑤= 𝑢+ 𝑖𝑣is a solution of 𝑒𝑤= 𝑧. Then we must have |𝑒𝑤| = |𝑧|
+and arg(𝑒𝑤) = arg(𝑧). It follows that 𝑒𝑢= 𝑧(or 𝑢= log𝑒𝑧) and 𝑣= arg 𝑧.
+Therefore, given a nonzero complex number 𝑧we have shown that:
+If 𝑒𝑤= 𝑧, then 𝑤= log𝑒𝑧+ 𝑖arg 𝑧.
+(1)
+Since there are infinitely many arguments of 𝑧,  the above equation gives 
+infinitely many solutions 𝑤to the equation 𝑒𝑤= 𝑧. The set of values given by 
+(1) defines a multiple-valued function  which is called the complex logarithm of 𝒛
+and denoted by ln 𝑧.
+
+Complex Logarithm
+The multiple-valued function ln 𝑧defined by: 
+ln 𝑧= log𝑒𝑧+ 𝑖arg 𝑧
+is called the complex logarithm.
+Notation:
+log𝑒𝑥
+real logarithm
+ln 𝑧
+multiple-valued complex logarithm 
+
+Example 4 
+
+Algebraic Properties of ln z
+
+Principal Value of the Complex Logarithm
+The complex function Ln 𝑧defined by: 
+Ln 𝑧= log𝑒𝑧+ 𝑖Arg 𝑧
+is called the principal value of the complex logarithm.
+
+Note
+It is important to note that the properties for the complex 
+logarithm are not necessarily satisfied by the principal value of 
+the complex logarithm. For example, it is not true that 
+𝐿𝑛(𝑧1𝑧2) = 𝐿𝑛𝑧1 + 𝐿𝑛𝑧2 for all complex numbers 𝑧1 and 𝑧2
+(although it may be true for some complex numbers).
+
+Example 5 
+
+Lnz as an Inverse Function of 𝒆𝒛
+
+Analyticity
+The principal value of the complex logarithm Lnz is discontinuous at 
+the point z = 0 since this function is not defined there. 
+This function also turns out to be discontinuous at every point on the 
+negative real axis. 
+The function Lnz is continuous on the set consisting of the complex 
+plane excluding the nonpositive real axis. 
+
+Branch of Complex Logarithm
+𝐹(𝑧) = ln 𝑧is a multiple-valued function.
+The principal branch of 𝐹is
+𝑓1 𝑧= log𝑒𝑟+ 𝑖𝜃;
+−𝜋< 𝜃< 𝜋.
+The domain of the function 𝑓1 is the set 
+Dom(𝑓1) defined by 𝑧> 0, −𝜋< arg 𝑧< 𝜋.
+The non-positive real axis together with the point 𝑧= 0, 
+is a branch cut for the principal branch 𝑓1 and the point 𝑧=
+0 is the branch point. 
+
+Analyticity of the Principal Branch of 𝒍𝒏𝒛
+The principal branch 𝑓1 of the complex logarithm defined by  is an 
+analytic function and its derivative is given by 
+𝑓′
+1 𝑧= 1
+𝑧,
+that is if  𝑧> 0, −𝜋< arg 𝑧< 𝜋, then
+𝑑
+𝑑𝑧𝐿𝑛𝑧= 1
+𝑧.
+
+Logarithmic Mapping
+The complex logarithmic mapping 𝑤= 𝐿𝑛𝑧can be understood in terms of the 
+exponential mapping 𝑤= 𝑒𝑧since these functions are inverses of each other.
+
+Example 7
+Find the image of the annulus 2 ≤|𝑧| ≤4 under the logarithmic 
+mapping 𝑤= Ln 𝑧.
+
+• Chapter: 4
+• Exercise: 4.1
+• Questions: 1-46
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 15. Complex Powers.pdf
+========================================
+
+Complex 
+powers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.7
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 4
+• Section: 4.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+In Section 2.4 we examined special power functions of the form  𝑧𝑛
+and 𝑧1/𝑛for 𝑛an integer and 𝑛≥2. 
+In this section we analyze the problem of raising a complex number 
+to an arbitrary real or complex power. 
+For simple integer powers this process is easily understood in terms 
+of complex multiplication. For example, 
+1 + 𝑖3 = 1 + 𝑖
+1 + 𝑖
+1 + 𝑖= −2 + 2𝑖.
+However, there is no similar description for a complex power such as 
+1 + 𝑖𝑖. In order to define such expressions, we will use the 
+complex exponential and logarithmic functions.
+Introduction
+
+Complex Power
+If 𝛼is a complex number and 𝑧≠0, then the complex power 𝑧𝛼is
+defined to be:
+𝑧𝛼= 𝑒𝛼ln 𝑧.
+(1)
+In general, (1) gives an infinite set of values because the complex 
+logarithmic function ln 𝑧is a multiple-valued function. Thus, 𝑧𝛼= 𝑒𝛼ln 𝑧
+defines a multiple-valued function. However, when 𝛼= 𝑛is an integer, 
+the expression in (1) is single-valued in agreement with fact that 𝑧𝑛
+(special power functions) is a function when 𝑛is an integer.
+
+Example 1
+
+Example 1
+
+Algebraic Properties of 𝒛𝜶
+
+Principal Value of a Complex Power
+If 𝛼is a complex number and 𝑧≠0, then the function 
+defined by:
+𝑧𝛼= 𝑒𝛼Ln 𝑧,
+(2)
+is called the principal value of the complex power 𝑧𝛼.
+
+Example 2 
+
+Branches of 𝒛𝜶
+In general, the principal value of a complex power 𝑧𝛼defined by (2) is not a 
+continuous function on the complex plane because the function Ln 𝑧is not 
+continuous on the complex plane. However, since the function 𝑒𝛼𝑧is continuous 
+on the entire complex plane, and since the function Ln 𝑧is continuous on the 
+domain |𝑧| > 0, −𝜋< 𝜃< 𝜋, it follows that 𝑧𝛼is continuous on the domain 
+|𝑧| > 0, −𝜋< 𝜃< 𝜋.
+For the multiple-valued function 𝐹(𝑧) = 𝑧𝛼= 𝑒𝛼ln 𝑧
+Principal Branch:   𝑓1 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋< 𝜃< 𝜋,
+(3)
+Branch Cut:  
+non-positive real axis
+Branch Point:
+𝑧= 0
+
+Branches of 𝒛𝜶
+Other branches of the multiple-valued function 𝐹(𝑧) = 𝑧𝛼can be defined 
+using the formula in (3) with a different interval of length 2𝜋defining 𝜃. 
+For example, 
+𝑓2 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋
+4 < 𝜃< 7𝜋
+4 ,
+defines a branch of 𝐹(𝑧) whose branch cut is the ray 𝜃= −𝜋/4 together 
+with the branch point 𝑧= 0.
+
+Analyticity
+The function defined by:
+𝑓1 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋< 𝜃< 𝜋,
+(4)
+is the principal branch of the multiple-valued function 𝐹(𝑧) = 𝑧𝛼= 𝑒𝛼ln 𝑧. The 
+branch 𝑓1 defined by (4) agrees with the principal value of 𝑧𝛼defined by (2) on 
+the domain |𝑧| > 0, −𝜋< 𝜃< 𝜋. Consequently, the derivative of 𝑓1(𝑧) can be 
+found using the chain rule:
+𝑓1
+′ 𝑧= 𝑑
+𝑑𝑧𝑒𝛼Ln 𝑧= 𝑒𝛼Ln 𝑧𝑑
+𝑑𝑧𝛼Ln 𝑧= 𝑒𝛼Ln 𝑧α𝑧−1.
+Using the principal value 𝑧𝛼= 𝑒𝛼Ln 𝑧, the above equation simplifies to 
+𝑓1
+′ 𝑧= α𝑧α−1.
+Thus, on the domain |𝑧| > 0, −𝜋< θ < 𝜋, the principal value of the complex 
+power 𝑧𝛼is differentiable and
+𝑑
+𝑑𝑧𝑧𝛼= α𝑧𝛼−1.
+
+Example 3
+Find the derivative of the principal value 𝑧𝑖at the point 
+𝑧= 1 + 𝑖.
+
+Remarks
+There are some properties of real powers that are not satisfied by complex 
+powers. One example of this is that for complex powers, 𝑧𝛼1 𝛼2 ≠𝑧𝛼1𝛼2
+unless 𝛼2 is an integer. 
+As with complex logarithms, some properties that do hold for complex powers 
+do not hold for principal values of complex powers. For example, we can prove 
+that 𝑧1𝑧2 𝛼= 𝑧1
+𝛼𝑧2
+𝛼for any nonzero complex numbers 𝑧1 and 𝑧2. However, 
+this property does not hold for principal values of these complex powers. In 
+particular, if 𝑧1 = −1, 𝑧2 = 𝑖, and 𝛼= 𝑖, then we have that the principal 
+value of −1 · 𝑖𝑖is 𝑒𝑖𝐿𝑛−𝑖= 𝑒
+𝜋
+2. On the other hand, the product of the 
+principal values of −1 𝑖and 𝑖𝑖is 𝑒𝑖𝐿𝑛(−1)𝑒𝑖𝐿𝑛𝑖= 𝑒−𝜋𝑒−𝜋/2 = 𝑒−3𝜋/2. 
+
+• Chapter: 4
+• Exercise: 4.2
+• Questions: 1-18
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 16. Trigonometric and Hyperbolic Functions.pdf
+========================================
+
+Trigonometric 
+and 
+Hyperbolic 
+Functions
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.6
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 4
+• Section: 4.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+The complex sine and cosine functions are defined as:
+sin 𝑧=
+𝑒𝑖𝑧−𝑒−𝑖𝑧
+2𝑖
+,
+and      cos 𝑧=
+𝑒𝑖𝑧+𝑒−𝑖𝑧
+2
+.
+Complex Trigonometric Functions
+We define the complex tangent, cotangent, secant, and 
+cosecant functions using the complex sine and cosine as: 
+tan 𝑧=
+sin 𝑧
+cos 𝑧, cot 𝑧=
+cos 𝑧
+sin 𝑧, sec 𝑧=
+1
+cos 𝑧, and csc 𝑧=
+1
+sin 𝑧.
+
+Trigonometric Identities
+However, it is important to recognize that some properties of the real 
+trigonometric functions are not satisfied by their complex counterparts. 
+For example, |𝑠𝑖𝑛𝑥| ≤1 and |𝑐𝑜𝑠𝑥| ≤1 for all real 𝑥, but these inequalities, 
+in general, are not satisfied for complex input. Thus, we conclude that unlike 
+the real sine and cosine functions, the complex sine and cosine functions are 
+no longer bounded.
+
+Periodicity
+The complex sine and cosine are periodic functions with 
+a real period of 2𝜋, i.e.,
+sin(𝑧+ 2𝜋) = sin𝑧and cos 𝑧+ 2𝜋= cos 𝑧.
+The identities sin(𝑧+ 𝜋) = −sin𝑧and cos 𝑧+ 𝜋=
+−cos 𝑧can be used to show that the complex tangent 
+and cotangent are periodic with a real period of 𝜋.
+
+Example 1; Solving Trigonometric Equations
+Determine all complex values 𝑧satisfying the given 
+equation:
+i.
+sin 𝑧= 𝑖
+ii. cos 𝑧= 0
+iii. sin 𝑧= 5.
+
+Modulus
+If we replace the symbol 𝑧with the symbol 𝑥+ 𝑖𝑦in the expression for 
+sin𝑧and cos 𝑧, and using  sinh 𝑦=
+𝑒𝑦−𝑒−𝑦
+2
+and   cosh 𝑦=
+𝑒𝑦+𝑒−𝑦
+2
+, 
+then we obtain:
+sin 𝑧= sin 𝑥cosh 𝑦+ 𝑖cos 𝑥sinh 𝑦,
+and                   cos𝑧= cos𝑥cosh𝑦−𝑖sin𝑥sinh𝑦.
+Thus, the modulus of the complex sine and cosine functions are 
+respectively given  as:
+sin 𝑧=
+sin2 𝑥+ sinh2 𝑦
+cos 𝑧=
+cos2 𝑥+ sinh2 𝑦
+
+Zeros of Trigonometric Functions
+One way of obtaining these zeros is to solve the trigonometric equations
+sin𝑧= 0 and cos𝑧= 0. By solving these equations, we have already seen
+that like their real counterparts, the zeros of sin 𝑧are 𝑛𝜋and the zeros of
+cos 𝑧are 𝑛𝜋+ 𝜋/2, where 𝑛is any integer.
+A different method for determining the zeros of these functions involves
+recognizing that a complex number is equal to 0 if and only if its modulus is
+0. Thus, solving the equation sin 𝑧= 0 is equivalent to solving the equation
+|sin𝑧| = 0.
+A zero 𝛼of a function 𝑓(𝑧) satisfies 𝑓𝛼= 0.
+
+Zeros of Trigonometric Functions
+Zeros of complex sine and cosine functions are:
+sin 𝑧= 0 if and only if
+𝑧= 𝑛𝜋,
+cos 𝑧= 0
+if and only if
+𝑧=
+2𝑛+ 1 𝜋
+2
+,
+for 𝑛= 0, ±1, ±2, …
+
+Analyticity of Trigonometric Functions 
+The complex sine and cosine functions are entire functions, since they are linear 
+combinations of  the entire functions 𝑒𝑖𝑧and 𝑒−𝑖𝑧. However, tan 𝑧and sec 𝑧are 
+not entire; they are analytic except at the points where cos 𝑧is zero. Similarly, 
+cot 𝑧and csc 𝑧are analytic except where sin 𝑧is zero. Since,
+sin 𝑧= 0 if and only if
+𝑧= 𝑛𝜋,
+1
+and
+cos 𝑧= 0 if and only if
+𝑧=
+2𝑛+ 1 𝜋
+2
+,
+(2)
+for 𝑛= 0, ±1, ±2, … . 
+Thus, from (1) and (2) it follows that the tan 𝑧and sec 𝑧have singularities at 
+𝑧= (2𝑛+ 1)𝜋/2 for 𝑛= 0, ±1, ±2, … , whereas the cot 𝑧and csc 𝑧have 
+singularities at 𝑧= 𝑛𝜋for 𝑛= 0, ±1, ±2, …
+
+Derivatives of Complex Trigonometric 
+Functions
+
+Trigonometric Mapping
+The complex function sin𝑧is periodic with a real period of 2𝜋, this function takes on all 
+values in any infinite vertical strip 
+𝑥0 < 𝑥≤𝑥0 + 2𝜋,
+−∞< 𝑦< ∞
+Consider the strip −𝜋< 𝑥< 𝜋, −∞< 𝑦< ∞.
+For 𝑧1 = 0 and 𝑧2 = 𝜋are in this region and sin 0 = sin 𝜋= 0. From the identity 
+sin(−𝑧+ 𝜋) = sin 𝑧it follows that the image of the strip −𝜋< 𝑦< ∞, is the same as 
+the image of the strip  𝜋/2 < 𝑥≤𝜋, −∞< 𝑦< ∞, under 𝑤= sin 𝑧.
+Therefore, we need to only consider the mapping 𝑤= sin 𝑧on the region
+−𝜋
+2 ≤𝑥≤𝜋
+2 ,
+−∞< 𝑦< ∞,
+to gain an understanding of this mapping on the entire 𝑧−plane.
+
+Example 2 
+Describe the image of the region
+−𝜋
+2 ≤𝑥≤𝜋
+2 ,
+−∞< 𝑦< ∞,
+under the complex mapping w = sin 𝑧.
+
+Complex Hyperbolic Functions
+The complex hyperbolic sine and hyperbolic cosine functions are defined by:
+sinh 𝑧=
+𝑒𝑧−𝑒−𝑧
+2
+,
+and
+cosh 𝑧=
+𝑒𝑧+𝑒−𝑧
+2
+.
+The complex hyperbolic tangent, cotangent, secant, and cosecant are defined 
+in terms of sinh 𝑧and cosh 𝑧: 
+tanh 𝑧= sinh 𝑧
+cosh 𝑧,
+coth 𝑧= cosh 𝑧
+sinh 𝑧
+sech 𝑧=
+1
+cosh 𝑧,
+csch 𝑧=
+1
+sinh 𝑧.
+
+Relation between Trigonometric and Hyperbolic 
+Functions
+The hyperbolic functions are closely related to the trigonometric 
+functions. Relationship between the complex trigonometric and 
+hyperbolic functions is given as:
+sin 𝑧= −𝑖sinh(𝑖𝑧) and     cos 𝑧= cosh(𝑖𝑧)
+(I)
+sinh 𝑧= −𝑖sin(𝑖𝑧)
+and    cosh 𝑧= cos( 𝑖𝑧)
+(II)
+Relations between the other trigonometric and hyperbolic functions can 
+now be derived from (I) and (II).
+
+Derivatives of Complex Hyperbolic Functions
+
+Hyperbolic Identities
+
+• Chapter: 4
+• Exercise: 4.3
+• Questions: 1-36
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 17. Conformal Mapping.pdf
+========================================
+
+Conformal 
+Mapping
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 7
+• Section: 7.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Introduction
+Conformal mappings are invaluable to the engineers and physicists 
+as an aid in solving problems in potential theory. They are a standard 
+method for solving boundary value problems in two-dimensional 
+potential theory and yield rich applications in electrostatics, heat 
+flow, and fluid flow.
+The main feature of conformal mappings is that they are angle-
+preserving (except at some critical points) and allow a geometric 
+approach to solve boundary value problems in Complex Analysis.
+
+Conformal Mapping
+A non-constant linear mapping acts by rotating, magnifying, and 
+translating points in the complex plane.
+As a result, the angle between any two intersecting arcs in the 
+𝑧−plane is equal to the angle between the images of the arcs in the 
+𝑤−plane under a linear mapping.
+Complex mappings that have this angle-preserving property are called 
+conformal mappings. 
+
+Conformal Mapping
+
+The angle between the lines 𝑥= 1 and 𝑦= 1 under the reciprocal 
+mapping 𝑤=
+1
+𝑧on the extended complex plane is preserved.
+Conformal Mapping
+
+Conformal Behavior of Analytic Functions
+A nice property of a complex analytic function 𝑓(𝑧) = 𝑢+ 𝑖𝑣, is 
+that it preserves angles at each point where 𝑓′ 𝑧≠0, i.e., the 
+angle between any two domain curves is the same as the angle 
+between image curves, except at critical points, that is, points at 
+which the derivative 𝑓′ is zero.
+
+Theorem
+If f is an analytic function in a domain 𝐷containing 𝑧0, and if
+𝑓′(𝑧0) ≠0,
+then the mapping 𝑤= 𝑓(𝑧) is a conformal
+mapping at 𝑧0.
+
+Examples
+i.
+𝑓(𝑧) = 𝑒𝑧is a conformal mapping at every point in the complex
+plane since 𝑓′(𝑧) ≠0 for all z in ℂ.
+ii.
+𝑔(𝑧) = 𝑧2 is a conformal mapping at all points 𝑧, 𝑧≠0, since
+𝑧= 0 is a critical point of 𝑔(𝑧).
+
+Question
+Find all points where the mapping 𝑓𝑧= sin 𝑧is 
+conformal.
+
+• Chapter: 7
+• Exercise: 7.1
+• Questions: 1-10
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 18. Linear Fractional Transformation.pdf
+========================================
+
+Linear 
+Fractional 
+Transformation
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 7
+• Section: 7.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+The first step in the modeling process of solving boundary value problems is to 
+identify the correct conformal mapping that is related to the “geometry” of the 
+boundary value problem.
+The task is to get a good grasp of which conformal mappings map certain regions 
+conformally onto each other, such as, say mapping a disk onto a half-plane. 
+In many applications that involve boundary-value problems associated with 
+Laplace’s equation, it is necessary to find a conformal mapping that maps a disk 
+onto the half-plane 𝑣≥0.
+Such a mapping would have to map the circular boundary of the disk to the 
+boundary line of the half-plane. An important class of elementary conformal 
+mappings that map circles to lines (and vice versa) are the linear fractional 
+transformations.
+Introduction
+
+Linear Fractional Transformations
+If 𝑎, 𝑏, 𝑐, and 𝑑are complex constants with condition that: 𝑎𝑑−𝑏𝑐≠0, 
+then the complex function defined by:
+𝑤= 𝑇𝑧= 𝑎𝑧+ 𝑏
+𝑐𝑧+ 𝑑,
+(1)
+is called a linear fractional transformation. 
+Linear fractional transformations are also called M ሷ𝐨bius transformations or 
+bilinear transformations.
+The domain of a linear fractional transformation 𝑇(𝑧) given by (1) is the set 
+of all complex 𝑧such that 𝑧≠−𝑑/𝑐. 
+
+The Linear fractional transformation is linear in both 𝑧and 𝑤and is analytic
+everywhere except at 𝑧= −𝑑/𝑐. Since,
+𝑇′ 𝑧=
+𝑎𝑑−𝑏𝑐
+𝑐𝑧+ 𝑑2 ,
+it follows from theorem and the requirement that 𝑎𝑑−𝑏𝑐≠0 that linear
+fractional transformations are conformal on their domains.
+(2)
+Analyticity of Linear Fractional Transformations
+
+The linear fractional transformation 𝑇(𝑧) can be extended to the
+entire extended complex plane: ℂ∗= ℂ∪{∞} as:
+Here, 𝑧= −𝑑/𝑐is the pole of 𝑇(𝑧) and ∞is called the ideal point.
+(3)
+Linear Fractional Transformation on Extended 
+Complex Plane
+
+Every linear fractional transformation except 𝑓𝑧= 𝑧has one or 
+two fixed points.
+The linear fractional transformation sends circles and lines 
+to circles or lines.
+Linear fractional transformations preserve symmetry. 
+A linear fractional transformation is a composition of 
+translations, rotations, magnifications, and inversions. 
+Properties of Linear Fractional Transformation
+
+Special Cases of Linear Fractional Transformation
+Special cases of the transformation 𝑤= 𝑇𝑧=
+𝑎𝑧+ 𝑏
+𝑐𝑧+ 𝑑, are:
+𝑤= 𝑧+ 𝑏, 𝑏≠0.
+(Translation)
+𝑤= 𝑎𝑧, |𝑎| = 1.
+(Rotation)
+𝑤= 𝑎𝑧, 𝑎> 0.
+(Magnifications)
+𝑤= 𝑎𝑧+ 𝑏, 𝑎≠0.
+(Linear Mapping)
+𝑤=
+1
+𝑧.
+(Reciprocal Mapping)
+
+If 𝐶is a circle in the 𝑧−plane and if 𝑇is a linear fractional transformation 
+given by:
+then the image of 𝐶under 𝑇is either a circle or a line in the extended 
+𝑤−plane. The image is a line if and only if 𝑐≠0 and the pole
+𝑧= −𝑑/𝑐is on the circle 𝐶.
+(3)
+Theorem
+
+Example 1
+Find the image of the unit circle |𝑧| = 1 under the linear fractional 
+transformation
+𝑇𝑧= 𝑧+ 2
+𝑧−1 .
+What is the image of the interior |𝑧| < 1 of this circle?
+
+Example 1
+Solution:
+The pole of 𝑇is 𝑧= 1 and this point is on the unit circle |𝑧| = 1. Thus, we
+conclude that the image of the unit circle is a line. Since the image is a line, it is
+determined by any two points. Since, 𝑇(−1) = −1/2 and 𝑇(𝑖) = −(1 + 3𝑖)/2,
+we see that the image is the line 𝑢= −1/2. In order to determine the image of
+the interior |𝑧| < 1 of this circle, we note that a linear fractional transformation
+is a rational function, and so it is continuous on its domain. As a consequence,
+the image of the interior of the unit circle is either the half-plane 𝑢< −1/2 or
+the half-plane 𝑢> −1/2. Using 𝑧= 0 as a test point, we find that 𝑇(0) =
+−2, which is to the left of the line 𝑢= −1/2. Thus, we conclude that the image
+of the interior |𝑧| < 1 of this circle is the half-plane 𝑢< −1/2.
+
+Example 1
+
+Example 2
+Show that the mapping
+𝑇𝑧= 𝑖(1 −𝑧)
+1 + 𝑧
+maps the unit disk |𝑧| < 1 onto the upper half plane Im(𝑤) > 0.
+
+Cross-Ratios and Linear Fractional 
+Transformations
+In applications we often need to find a conformal mapping from a
+domain 𝐷that is bounded by circles onto a domain 𝐷′ that is bounded
+by lines. Linear fractional transformations are particularly well-suited for
+such applications. However, in order to use them, we must determine a
+general
+method
+for
+constructing
+the
+desired
+linear
+fractional
+transformation. This can be achieved by means of a cross ratio. The cross
+ratio is invariant under a linear fractional transformation. To determine a
+particular linear fractional transformation, specify the map of three
+points
+which
+preserve
+orientation.
+A
+particular
+linear
+fractional
+transformation is then uniquely determined.
+
+Theorem
+Note: If one of these points is the point ∞(the ideal point), the quotient of the 
+two differences containing this point must be replaced by 1.
+
+Example 3
+Construct a linear fractional transformation that maps the points 1, 𝑖, and −1
+on the unit circle |𝑧| = 1 onto the points −1, 0, 1 on the real axis. Determine
+the image of the interior |𝑧| < 1 under this transformation.
+
+Example 3
+Solution:
+Identifying 𝑧1 = 1, 𝑧2 = 𝑖, 𝑧3 = −1, 𝑤1 = −1, 𝑤2 = 0, and 𝑤3 = 1, in formula for 
+cross ratio, we see that the desired mapping 𝑤= 𝑇(𝑧) must satisfy:
+After solving for 𝑤and simplifying we obtain:
+𝑤= 𝑇𝑧= 𝑧−𝑖
+𝑖𝑧−1 .
+Using the test point 𝑧= 0, we obtain 𝑇(0) = 𝑖. Therefore, the image of the interior 
+|𝑧| < 1 is the upper half-plane 𝑣> 0.
+
+Example 4
+Find the linear fractional transformation that maps 𝑧1 = −1, 𝑧2 = 𝑖, 𝑧3 = 1
+onto 𝑤1 = 0, 𝑤2 = 𝑖, 𝑤3 = ∞, respectively, such that the unit disk is mapped 
+onto the right half-plane. 
+
+Example 4
+Solution:
+Using the given points in the formula for cross ratio, we obtain:
+𝑧+ 1
+𝑧−1
+𝑖−1
+𝑖+ 1 = 𝑤−0
+𝑤−∞
+𝑖−∞
+𝑖−0 .
+After replacing the ratio 
+𝑖−∞
+𝑤−∞by 1 and simplifying we obtain:
+𝑤= 𝑇𝑧= 𝑧+ 1
+1 −𝑧.
+Using the test point 𝑧= 0, we obtain 𝑇(0) = 1. Therefore, the unit disk is mapped 
+onto the right half-plane 𝑢≥0.
+
+• Chapter: 7
+• Exercise: 7.2
+• Questions: 1-16, 21-26
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 2. Complex Conjugate and Algebra of Complex Numbers.pdf
+========================================
+
+Complex 
+Conjugate and 
+algebra of 
+complex numbers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.1
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Section: 1.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Review of Complex Numbers
+Complex Conjugate & Algebra of Complex 
+Numbers
+Polar form of Complex Number
+Euler’s Theorem and Exponential Form
+De Moivre’s Theorem
+
+In the sixteen century, Girolamo Cardano first introduced 
+imaginary numbers in the sixteenth century in the study of 
+solutions to a quadratic equation of the form 𝑥2 + 𝛼= 0,
+with 𝛼> 0. The solutions to  this equation are 𝑥= ± −𝛼.
+Cardano defined −1 to be an “imagined” or imaginary 
+number.
+In the eighteenth century, Euler introduced the symbol 𝑖to 
+represent −1 .
+A Brief History
+
+Imaginary Unit 𝒊
+The imaginary unit 𝑖is defined by 𝑖=
+−1 or 𝑖2 = −1.
+
+
+Example 1; Powers of 𝒊
+Find the powers of 𝑖.
+a. 𝑖37
+b. 𝑖2006
+c. 𝑖−3927
+
+A complex number is a number that can be expressed in
+the form 𝒂+ 𝒊𝒃, where 𝑎and 𝑏are real numbers and 𝑖is 
+the imaginary unit.
+Complex Number
+
+The real number 𝑎in z = 𝑎+ 𝑖𝑏is called real part of 𝑧and 
+abbreviated as 𝑅𝑒(𝑧). 
+The real number 𝑏in z = 𝑎+ 𝑖𝑏is called the imaginary 
+part of 𝑧and is abbreviated as 𝐼𝑚𝑧.
+Real and Imaginary Parts of a Complex 
+Number
+
+
+Complex Number System
+𝑎+ 𝑏𝑖
+Reals
+Rationals
+(Can be written as fractions)
+Integers
+(…, -1, -2, 0, 1, 2, …)
+Whole
+(0, 1, 2, …)
+Natural
+(1, 2, …)
+Irrationals
+(Cannot be 
+written as a 
+fraction)
+𝜋, 𝑒
+Pure Imaginary
+𝑖, 2𝑖, −7𝑖, etc.
+
+Complex numbers z1 = 𝑎1 + 𝑖𝑏1 and z2 = 𝑎2 + 𝑖𝑏2
+are equal if and only if 
+𝑎1 = 𝑎2 and 𝑏1 = 𝑏2.
+Equality of Complex Numbers
+
+Arithmetic Operations on Complex Numbers
+
+Laws for Complex Numbers
+
+The zero in the complex number system is the number 0 + 0𝑖. 
+The zero is the additive identity in the complex number system.
+The unity in complex numbers is 1 + 0𝑖. The unity is the 
+multiplicative identity.
+Zero and Unity of Complex Numbers
+
+Conjugate of Complex Numbers
+If 𝑧is a complex number, the number obtained by changing 
+the sign of its imaginary part is called the complex conjugate, 
+or simply conjugate, of 𝑧and is denoted by the symbol ҧ𝑧. 
+In other words, if 𝑧= 𝑎+ 𝑖𝑏, then its conjugate is
+ҧ𝑧= 𝑎−𝑖𝑏.
+
+Example 3; Conjugate of Complex Numbers
+If 𝑧= 6 + 3𝑖, then  ҧ𝑧= 6 −3𝑖
+If 𝑧= −5 −𝑖, then ҧ𝑧= −5 + 𝑖.
+If 𝑧is a real number, say, 𝑧= 7, then ҧ𝑧= 7.
+
+Properties of Conjugate
+𝑧1 + 𝑧2 = ഥ𝑧1 + ഥ𝑧2
+𝑧1 −𝑧2 = ഥ𝑧1 −ഥ𝑧2
+𝑧1𝑧2 = ഥ𝑧1 ഥ𝑧2
+𝑧1
+𝑧2
+= ഥ𝑧1
+ഥ𝑧2
+ҧҧ𝑧= 𝑧
+
+Developing Useful Rules
+𝑧+ ҧ𝑧= 𝑎+ 𝑖𝑏+ 𝑎−𝑖𝑏= 2𝑎
+𝑧−ҧ𝑧= 𝑎+ 𝑖𝑏−𝑎−𝑖𝑏= 2𝑖𝑏
+∴𝒂= 𝑹𝒆𝒛=
+𝒛+ത𝒛
+𝟐and 𝒃= 𝑰𝒎𝒛=
+𝒛−ത𝒛
+𝟐𝒊
+Also   𝒛ത𝒛= 𝒂+ 𝒊𝒃
+𝒂−𝒊𝒃= 𝒂𝟐+ 𝒃𝟐
+
+In the complex number system, every number 𝑧has a
+unique additive inverse. As in the real number system, the
+additive inverse of 𝑧= 𝑎+ 𝑖𝑏is its negative, −𝑧, where
+−𝑧= −𝑎−𝑖𝑏. For any complex number 𝑧, we have
+𝑧+ (−𝑧) = 0.
+Additive Inverse of a Complex Number
+
+Every nonzero complex number 𝑧has a multiplicative inverse.
+For 𝑧≠0 there exists one and only one nonzero
+complex number 𝑧−1 such that 𝑧𝑧−1 = 1. The multiplicative
+inverse 𝑧−1 is the same as the reciprocal 1/𝑧. 
+Multiplicative Inverse of a Complex Number
+
+• Chapter: 1
+• Exercise: 1.1
+• Questions: 1−42
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 3. Polar Form of a Complex Number.pdf
+========================================
+
+Polar Form of 
+Complex Numbers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.1 , 13.2
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.2, 1.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Representations of Complex Numbers
+Rectangular Form
+Polar Form
+Exponential Form
+
+Complex Numbers and Ordered Pairs
+A complex number 𝑧= 𝑥+ 𝑖𝑦is uniquely 
+determined by an ordered pair of real numbers 
+(𝑥, 𝑦).
+The first and second entries of the ordered pairs 
+correspond with the real and imaginary parts of the 
+complex number.
+
+Complex Numbers and Ordered Pairs
+The ordered pair (2, −3) corresponds to the complex number 
+𝑧= 2 −3𝑖. Conversely, 𝑧= 2 −3𝑖determines the ordered 
+pair (2, −3). The numbers 7, 𝑖, and −5𝑖are equivalent to 
+(7, 0), (0, 1), (0, −5), respectively.
+We can associate a complex number 𝑧= 𝑥+ 𝑖𝑦with a point
+(𝑥, 𝑦) in a coordinate plane.
+
+Complex Plane
+Because of the correspondence between a complex 
+number 𝑧= 𝑥+ 𝑖𝑦and one and only one point (𝑥, 𝑦)
+in a coordinate plane, we shall use the terms complex 
+number and point interchangeably. The coordinate 
+plane illustrated in Figure is called the complex plane 
+or simply the 𝑧−plane. The horizontal or 𝑥−axis is 
+called the real axis because each point on that axis 
+represents a real number. The vertical or 𝑦−axis is 
+called the imaginary axis because a point on that axis 
+represents a pure imaginary number.
+
+Modulus and Argument of a Complex Number
+The modulus of a complex number 𝑧, 
+represented by 𝑧, is the length of the vector
+𝑜𝑧
+𝑟=
+𝑎2 + 𝑏2 = 𝑧
+The argument of a complex number 𝑧,
+represented by arg(𝑧), is the angle the vector 
+𝑜𝑧makes with the positive real axis. 
+An argument 𝜃of a complex number must 
+satisfy the equation tan 𝜃=
+𝑏
+𝑎.
+
+Argument of a complex Number is not unique
+An argument 𝜃of a 
+complex number 
+must satisfy the 
+equations: cos 𝜃=
+𝑎
+𝑟
+and sin 𝜃=
+𝑏
+𝑟
+An argument of a complex 
+number 𝑧is not unique 
+because sin 𝜃and cos 𝜃
+are 2𝜋−periodic. 
+Therefore, if 𝜃0 is an 
+argument of 𝑧, then 
+necessarily the angles: 
+𝜃0 ± 2𝜋, 𝜃0 ± 4𝜋, … . . are 
+also arguments of 𝑧.
+A calculator will give only 
+angles satisfying −𝜋/2 <
+tan −1(𝑦/𝑥) < 𝜋/2, we 
+have to choose 𝜃
+consistent with the 
+quadrant in which 𝑧is 
+located; this may require 
+adding or subtracting 𝜋to 
+tan −1(𝑦/𝑥) when 
+appropriate.
+
+How to Calculate Argument 
+For any given complex number 𝑧= 𝑎+ 𝑖𝑏, we ignore all of its signs and find the angle
+𝛼= arctan
+𝑏
+𝑎, such that 𝑎≥0, 𝑏≥0.
+Then we determine actual angle by first identifying the quadrant in which 𝑧
+resides and find 𝜃∈(0, 2𝜋] by using the following diagram:
+
+Example 1; Modulus and argument
+Calculate the modulus and argument of the following complex 
+numbers.
+a. 1 −𝑖
+b. 4𝑖
+
+Principal Argument
+The argument 𝜃of a complex number that lies in the interval
+−𝜋< 𝜃≤𝜋is called the principal value of arg(𝑧) or the
+principal argument of 𝑧.
+The principal argument of 𝑧is unique and is represented by
+the symbol Arg(𝑧), that is,
+−𝜋< 𝐴𝑟𝑔(𝑧) ≤𝜋.
+
+Relation between Argument and Principal 
+Argument
+Principal argument = 𝐴𝑟𝑔𝑧= 𝜃∈(−𝜋, 𝜋]
+Argument = arg𝑧= 𝐴𝑟𝑔𝑧+ 2𝑛𝜋,
+𝑛∈ℤ.
+
+How to Calculate Principal Argument
+Complex numbers either on the 
+real axis or in the upper half of 
+the complex plane have a 
+positive argument measured 
+anti-clockwise from the real axis.
+Complex numbers in the lower 
+half of the complex plane have 
+a negative argument measured
+clockwise from the real axis.
+
+How to Calculate Principal Argument
+
+Example 2; Calculating Principal Argument
+
+Example 3; Calculating Principal Argument
+Calculate the principal argument of the following 
+complex numbers
+a. 𝑧= 4𝑖
+b. 𝑧= 2 + 2𝑖
+c.
+𝑧= −2 +
+3𝑖
+d. 𝑧= 2 −𝑖
+e. 𝑧= −1 −
+3𝑖
+
+Polar Coordinates of a Point
+Recall from calculus that a point 𝑃in the plane 
+whose rectangular coordinates are (𝑥, 𝑦) can also 
+be described in terms of polar coordinates. The 
+polar coordinate system, invented by Isaac Newton, 
+consists of point 𝑂called the pole and the 
+horizontal half-line emanating from the pole called 
+the polar axis. If 𝑟is a directed distance from the 
+pole to 𝑃and 𝜃is an angle of inclination (in radians) 
+measured from the polar axis to the line 𝑂𝑃, then 
+the point can be described by the ordered pair 
+(𝑟, 𝜃), called the polar coordinates of 𝑃.
+
+Polar Form of Complex Numbers
+Suppose that a polar coordinate system is superimposed
+on the complex plane with the polar axis coinciding
+with the positive 𝑥−axis and the pole 𝑂at the origin.
+Then 𝑎, 𝑏, 𝑟and 𝜃are related by the equations:
+𝑎= 𝑟cos 𝜃, 𝑏= 𝑟sin 𝜃
+These equations enable us to express a nonzero complex
+number 𝑧= 𝑎+ 𝑖𝑏as:
+𝑧= 𝑟cos 𝜃+ 𝑖𝑟sin 𝜃= 𝑟𝑐𝑖𝑠𝜃
+(1)
+We say 𝑟is the polar form or polar representation of 
+the complex number 𝑧.
+
+Example 4; Polar Form
+Express 𝑧= 1 −
+3𝑖in polar form. 
+
+Example 4; Polar Form
+𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧:
+For the present case we have:
+𝑟= 𝑧=
+(1)2 + (−3)2 = 2, 𝛼= tan−1 −3
+1
+3
+−𝜋
+=
+.
+Since the point (1, −3) lies in the fourth quadrant, so for 𝜃∈(−𝜋, 𝜋],
+we take 𝜃= Arg 𝑧= −𝜋. Thus, the polar form of the complex number
+3
+𝑧= 1 −
+3𝑖, is:
+𝑧= 2 cos −𝜋
+3
++ 𝑖sin −𝜋
+3
+= 2 cis −𝜋
+3
+.
+
+Example 4; Polar Form
+As it is clear from figure that for 𝜃∈(0,2𝜋], we take
+𝜃= arg 𝑧= 2𝜋−𝜋
+5𝜋
+3
+3
+=
+.
+Thus, an alternative polar form of the complex number 𝑧= 1 −
+3𝑖, is:
+𝑧= 2 cos 5𝜋
+5𝜋
+3
+3
++ 𝑖sin
+,
+= 2 cis 5𝜋
+3
+.
+
+Example 5; Polar Form
+Represent the following complex numbers in polar 
+form.
+a. −4
+b. −2 3 −2𝑖
+c.
+1
+1−𝑖2
+
+Conversion between the forms
+• 𝑥= 𝑟cos 𝜃, 𝑦= 𝑟sin 𝜃
+Polar to Rectangular
+• 𝑟=
+𝑥2 + 𝑦2
+• tan 𝜃=
+𝑦
+𝑥
+Rectangular to Polar
+
+Example 6; Conversion between the forms
+
+• Chapter: 1
+• Exercise: 1.3 Questions: 1-18
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 4. Eulers Formula and Exponential Form.pdf
+========================================
+
+Euler’ r’s Formula 
+and 
+Exponential 
+form
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.2
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Euler’s Formula
+Euler’s formula is given by
+𝑒𝑖𝜃= cos 𝜃+ 𝑖sin 𝜃.
+If 𝜃is a real number, 𝑒𝑖𝜃will be located 
+somewhere on the circle with radius 1
+centered at the origin because
+𝑒𝑖𝜃=
+cos2 𝜃+ sin2 𝜃= 1
+
+Exponential form of a Complex Number
+By using the Euler’ formula, we can rewrite polar form,
+𝑧= 𝑟(cos𝜃+ 𝑖sin 𝜃) = 𝑟cis 𝜃, of a complex number 𝑧= 𝑎+ 𝑖𝑏as:
+𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃) = 𝑟𝑒𝑖𝜃.
+(1)
+Eq.(1) is reffered to as the exponential form of a complex number 𝑧. 
+The angle 𝜃lies conventionally in the range −𝜋< 𝜃≤ 𝜋, but, since
+rotation by 𝜃is the same as rotation by 𝜃+ 2nπ, where 𝑛is any integer,
+so, 
+𝑟𝑒𝑖𝜃≡𝑟𝑒𝑖𝜃+2𝑛𝜋,
+𝑛𝜖ℤ
+
+Polar Form and Exponential Forms
+Polar Form
+𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃)
+Exponential Form
+𝑧= 𝑟𝑒𝑖𝜃.
+
+Multiplication and Division in Polar Form
+The polar form of a complex number is especially convenient when multiplying
+or dividing two complex numbers. Suppose
+𝑧1 = 𝑟1(cos 𝜃1 + 𝑖sin 𝜃1) and 𝑧2 = 𝑟2(cos 𝜃2 + 𝑖sin 𝜃2),
+where 𝜃1 and 𝜃2 are any arguments of 𝑧1and 𝑧2, respectively. Then
+𝑧1𝑧2 = 𝑟1𝑟2(cos 𝜃1 + 𝑖sin 𝜃1)(cos𝜃2 + 𝑖sin 𝜃2)
+= 𝑟1𝑟2(cos 𝜃1 cos 𝜃2 −sin 𝜃1 sin 𝜃2 + 𝑖(sin 𝜃1 cos𝜃2 + cos 𝜃1 sin 𝜃2))
+= 𝑟1𝑟2(cos( 𝜃1 + 𝜃2) + 𝑖sin( 𝜃1 + 𝜃2)).
+Hence 𝑧1𝑧2 = 𝑧1 𝑧2
+and   arg 𝑧1𝑧2 = arg 𝑧1 + arg 𝑧2
+
+Multiplication and Division in Polar Form
+Similarly for 𝑧2 ≠0,
+𝑧1
+𝑧2
+= 𝑟1
+𝑟2
+[cos 𝜃1 −𝜃2 + 𝑖sin 𝜃1 −𝜃2 ]
+Hence 
+𝑧1
+𝑧2 =
+𝑧1
+𝑧2 and arg
+𝑧1
+𝑧2
+= arg 𝑧1 −arg(𝑧2)
+
+Multiplication and Division in Exponential Form
+The product of 𝑧1 = 𝑟1𝑒𝑖𝜃1 and 𝑧2 = 𝑟2𝑒𝑖𝜃2 is given by:
+𝑧1𝑧2 = 𝑟1𝑒𝑖𝜃1𝑟2𝑒𝑖𝜃2 = 𝑟1𝑟2𝑒𝑖(𝜃1+𝜃2)
+Hence the relationship
+𝑧1𝑧2 = 𝑧1 𝑧2
+and   arg 𝑧1𝑧2 = arg 𝑧1 + arg 𝑧2
+follows immediately.
+
+Multiplication and Division in Exponential Form
+The quotient of 𝑧1 = 𝑟1𝑒𝑖𝜃1 and 𝑧2 = 𝑟2𝑒𝑖𝜃2 is given by:
+𝑧1
+𝑧2
+= 𝑟1𝑒𝑖𝜃1
+𝑟2𝑒𝑖𝜃2 = 𝑟1
+𝑟2
+𝑒𝑖(𝜃1−𝜃2)
+Hence the relationship
+𝑧1
+𝑧2 =
+𝑧1
+𝑧2 and arg
+𝑧1
+𝑧2
+= arg 𝑧1 −arg(𝑧2)
+follows immediately.
+
+Example 1
+Simplify:
+3 cos 𝜋
+3 + 𝑖sin 𝜋
+3 × 4 cos 𝜋
+2 + 𝑖sin 𝜋
+2 .
+Solution:
+3 cos 𝜋
+3 + 𝑖sin 𝜋
+3 × 4 cos 𝜋
+2 + 𝑖sin 𝜋
+2
+= 12 cos 𝜋
+𝜋
+3
+2
++
++ 𝑖sin 𝜋
+𝜋
+3
+2
++
+= 12 cos 5𝜋
+6 + 𝑖sin 5𝜋
+6
+= 12𝑒𝑖6 .
+5𝜋
+
+Example 2
+Use exponential notation to show that
+a.
+3 −𝑖
+1 +
+3𝑖= 2 3 + 2𝑖
+b. 2𝑖
+3 + 𝑖
+1 +
+3𝑖= −8
+
+Example 3
+Express the following in 𝑎+ 𝑖𝑏form.
+a. 8𝑒
+𝑖7𝜋
+3
+b. 𝑒2𝑒𝑖𝜋
+
+Example 4
+Let 𝑧1 = 8𝑖and 𝑧2 = 1 +
+3𝑖.
+a. Represent 𝑧1 and 𝑧2 in polar form.
+b. Find 
+𝑧1
+𝑧2 by using part a.
+
+• Chapter: 1
+• Exercise: 1.3
+• Questions: 19-24
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 5. De Moivres Theorem.pdf
+========================================
+
+De Moivre’s
+Theorem and 
+its 
+Applications
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.2
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.3, 1.4, 1.6
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+o De Moivre's theorem, named after the French
+mathematician Abraham de Moivre is used to find the
+roots of a complex number for any power n, given that 𝑛is
+an integer.
+o De Moivre's theorem can be derived from Euler's equation,
+and is important because it connects trigonometry to complex
+numbers.
+De Moivre’s Theorem
+
+For any complex number 𝑧and any integer 𝑛, the
+following is true:
+If    𝑧= 𝑟cos 𝜃+ 𝑖sin 𝜃,
+Then      𝑧𝑛= 𝑟𝑛(cos 𝑛𝜃+ 𝑖sin 𝑛𝜃)
+De Moivre’s Theorem
+
+Example 1
+Expand −3 −𝑖
+3.
+
+Example 1
+We can expand −3 −𝑖
+3 in two ways.
+Method 1:
+Using Binomial Theorem
+−3 −𝑖
+3 = −3
+3 + 3 −3
+2 −𝑖+ 3 −3
+−𝑖2 + −𝑖3
+= −8𝑖
+
+Example 1
+Method 2:
+Using De Moivre’s Theorem
+−3 −𝑖
+3 = 2 cos 7𝜋
+6 + 𝑖sin 7𝜋
+6
+3
+= 23 cos 3 × 7𝜋
+6 + 𝑖sin 3 × 7𝜋
+6
+= −8𝑖
+
+Applications of De Moivre’s Theorem
+
+To express cos 𝑛𝜃and sin 𝑛𝜃as finite sums of trigonometric
+functions of 𝜃, where 𝑛is a positive integer.
+
+To express powers of cos 𝜃(or sin 𝜃) in a series of cosines (or
+sines) of multiples 𝜃.
+
+To find 𝑛th roots of a complex number.
+
+Root of a Complex Number
+Recall from algebra that – 2 and 2 are said to be square roots of the 
+number 4 because −2 2 = 4 and 2 2 = 4. In other words, the two 
+square roots of 4 are distinct solutions of the equation 𝜔2 = 4.
+In like manner, we say 𝜔= 3 is a cube root of 27 since 𝜔3 = 33 = 27. 
+
+Root of a Complex Number
+A number 𝜔is an 𝒏𝒕𝒉root of a nonzero complex number 𝑧if
+𝜔𝑛= 𝑧, where 𝑛is a positive integer.
+For example, 𝜔1 =
+1
+2
+2 +
+1
+2
+2𝑖and 𝜔2 = −
+1
+2
+2 −
+1
+2
+2𝑖are two 
+complex roots of a complex number 𝑧= 𝑖because 𝑤1
+2 = 𝑖and 𝜔2
+2 = 𝑖.
+
+nth Root of a Complex Number
+The 𝑛𝑛𝑡ℎroot of a nonzero complex number 𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃) are given 
+by
+𝜔𝑘= 𝑟
+1
+𝑛
+cos 𝜃+ 2𝑘𝜋
+𝑛
++ 𝑖sin 𝜃+ 2𝑘𝜋
+𝑛
+;
+𝑘= 0, 1, 2, … , 𝑛−1
+These 𝑛values lie on a circle of radius 𝑟
+1
+𝑛with center at the origin and 
+constitute the vertices of a regular polygon of 𝑛sides.
+
+Principal nth Root of a Complex Number
+The unique root of a complex number 𝑧obtained by using the 
+principal value of arg(𝑧) with 𝑘= 0 is naturally referred to as the 
+principal 𝒏𝒕𝒉root of 𝜔.
+
+Example 2
+Find the cube root of 𝑧= 𝑖.
+Solution:
+We have to solve 𝜔3 = 𝑖
+With 𝑟= 1 and arg 𝑖=
+𝜋
+2, we obtain
+𝜔𝑘= 1
+1
+3 cos
+𝜋
+2 + 2𝑘𝜋
+3
++ 𝑖sin
+𝜋
+2 + 2𝑘𝜋
+3
+,
+𝑘= 0, 1, 2.
+Hence the roots are
+𝑘= 0,
+𝜔0 = cos 𝜋
+6 + 𝑖sin 𝜋
+6 =
+3
+2 + 1
+2 𝑖
+𝑘= 1,
+𝜔1 = cos 5𝜋
+6 + 𝑖sin 5𝜋
+6 = −
+3
+2 + 1
+2 𝑖
+𝑘= 2,
+𝜔2 = cos 3𝜋
+2 + 𝑖sin 3𝜋
+2 = −𝑖
+
+Notice 𝐴𝑟𝑔𝑧=
+𝜋
+2, we see that
+𝜔0 =
+3
+2 +
+1
+2 𝑖is the principal root of 𝑖.
+As shown in figure, the three roots lie on a
+circle centered at the origin of radius 𝑟≈1
+and are spaced at equal angular intervals of
+2𝜋/3 radians, beginning with the root
+whose argument is 𝜋/6.
+Example 2
+
+Quadratic Formula
+The quadratic formula is valid when the coefficients 𝑎≠0, 𝑏,
+and 𝑐of a quadratic polynomial equation 𝑎𝑧2 + 𝑏𝑧+ 𝑐= 0 are 
+complex numbers.
+𝑧= −𝑏+ 𝑏2 −4𝑎𝑐1/2
+2𝑎
+
+Factoring a Quadratic Polynomial
+If 𝑧1 and 𝑧2 are the roots of a quadratic equation 𝑎𝑧2 + 𝑏𝑧+ 𝑐= 0
+then the quadratic polynomial 𝑎𝑧2 + 𝑏𝑧+ 𝑐can be factored as
+𝑎𝑧2 + 𝑏𝑧+ 𝑐= 𝑎(𝑧−𝑧1)(𝑧−𝑧2)
+
+Questions
+a. Find the four fourth roots of 𝑧= 1 + 𝑖.
+b. Find the squares of all cube roots of 𝑧= −𝑖.
+c. Solve the equation 𝑧2 + 1 + 𝑖𝑧+ 5𝑖= 0.
+d. Factorize the quadratic polynomial 𝑧2 + 1 + 𝑖𝑧+ 5𝑖.
+
+• Chapter: 1
+• Exercise: 1.3 Questions: 25-32
+• Exercise: 1.4 Questions: 1-19
+• Exercise: 1.6 Questions: 1-12 
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 6. Topology of Complex Numbers.pdf
+========================================
+
+Topology of 
+Complex 
+Numbers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.5
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Circle and Disk
+The set of points 𝑧that satisfy 𝑧−𝑧0 = 𝜌
+represents a circle of radius 𝜌centered at 𝑧0.
+The set of points 𝑧that satisfy 𝑧−𝑧0 ≤𝜌
+represents a disk of radius 𝜌centered at 𝑧0.
+The points lie either on the circle 𝑧−𝑧0 = 𝜌
+or within the circle.
+
+Neighborhood
+The set of points 𝑧that satisfy 𝑧−𝑧0 < 𝜌
+represents an open disk of radius 𝜌centered 
+at 𝑧0. The points lie within, and not on, a circle 
+of radius 𝜌centered at the point 𝑧0. This set is 
+called a neighborhood of 𝒛𝟎.
+The set of points 𝑧that satisfy 0 < 𝑧−𝑧0 < 𝜌
+is called a deleted neighborhood of 𝑧0
+(punctured open disc).
+
+Open Set
+A point 𝑧0 is said to be an interior point 
+of a set 𝑺of the complex plane if there 
+exists some neighborhood of 𝑧0 that lies 
+entirely within S. If every point 𝑧of a set 
+𝑆is an interior point, then 𝑆is said to be 
+an open set.
+
+Examples; Open Set
+
+Boundary of a Set
+If every neighborhood of a point 𝑧0 of a set 𝑆
+contains at least one point of 𝑆and at least one 
+point not in 𝑆, then 𝑧0 is said to be a boundary 
+point of 𝑺. The collection of boundary points of 
+a set 𝑆is called the boundary of 𝑺.
+A point 𝑧that is neither an interior point nor a 
+boundary point of a set 𝑆is said to be an 
+exterior point of 𝑺.
+
+Closed Set
+A set that contains all its boundary points is said to be closed.
+•
+The disk defined by |𝑧−5| < 3 is an open set.
+•
+The disk defined by |𝑧−5| ≤3 is a closed set.
+•
+The set defined by the inequality 1 ≤|𝑧−5| < 3 contains 
+only some of its boundary points and so it is neither open nor 
+closed.
+
+Circular Annulus 
+The set of points 𝑧that satisfy ρ1 < 𝑧−𝑧0 < 𝜌2
+represents an open circular annulus.
+
+Connected Set and Domain
+If any pair of points 𝑧1 and 𝑧2 in a set 
+𝑆can be connected by a polygonal 
+line that consists of a finite number 
+of line segments joined end to end 
+that lies entirely in the set, then the 
+set 𝑆is said to be connected.
+An open connected set is called a 
+domain.
+
+Bounded Set
+A set 𝑆in the complex plane is bounded if there 
+exists a real number 𝑅> 0 such that 𝑧< 𝑅
+for every 𝑧in 𝑆. That is, 𝑆is bounded if it can 
+be completely enclosed within some 
+neighborhood of the origin. A set is unbounded
+if it is not bounded.
+
+Question 1
+Sketch the graph of the following functions:
+a. 2𝑧−1 = 4
+b. Im 𝑧−𝑖= Re(𝑧+ 4 −3𝑖)
+c. arg 𝑧=
+𝜋
+4
+
+Question 2
+Sketch the set 𝑆of points in the complex plane satisfying the given 
+inequality. Determine whether the set is (i) open, (ii) closed, (iii) a 
+domain, (iv) bounded, or (v) connected.
+a. Im 𝑧< −1
+b.
+Re(𝑧) > 2
+c.
+−1 ≤Im 𝑧< 4
+d. 2 < 𝑧−𝑖< 3
+
+• Chapter: 1
+• Exercise: 1.5
+• Questions: 1-25
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 7. Complex Functions and Complex Mappings.pdf
+========================================
+
+Complex functions
+and
+Complex Mappings
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 2
+• Sections: 2.1, 2.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+In elementary calculus we studied functions whose 
+inputs and outputs were real numbers. Such functions 
+are called real-valued functions of a real variable.
+In this section we begin our study of functions whose 
+inputs and outputs are complex numbers. Naturally, 
+we call these functions complex functions of a 
+complex variable, or complex functions for short.
+
+A function 𝑓from a set 𝐴to a set 𝐵is a rule 
+of correspondence that assigns to each 
+element in 𝐴one and only one element in 𝐵.
+Function
+We often think of a function as a rule or a 
+machine that accepts inputs from the set 𝐴
+and returns outputs in the set 𝐵.
+
+Domain and Range of a Function
+Suppose that 𝑓is a function from the set 𝐴to the set 𝐵. If 𝑓assigns to 
+the element 𝑎in 𝐴the element 𝑏in 𝐵, then we say that 𝑏is the image
+of 𝒂under 𝒇, or the value of 𝑓at 𝑎, and we write 𝑏= 𝑓(𝑎).
+The set 𝐴—the set of inputs—is called the domain of 𝒇and is denoted 
+by 𝐷𝑜𝑚(𝑓). 
+The set of images in 𝐵—the set of outputs—is called the range of 𝒇and 
+is denoted by 𝑅𝑎𝑛𝑔𝑒𝑓.
+
+Complex Function
+A complex function is a function 𝑓whose domain 
+and range are subsets of the set ℂof complex 
+numbers.
+We will use the usual symbols 𝑓, 𝑔and ℎto denote complex 
+functions. In addition, inputs to a complex function 𝑓will 
+typically be denoted by the variable 𝑧and outputs by the 
+variable 𝑤= 𝑓(𝑧).
+
+Complex Function
+
+Example 1; Complex Function
+1) 𝑓(𝑧) = 𝑧2 −(2 + 𝑖)𝑧defines a complex function. 
+At the points 𝑧= 𝑖and 𝑧= 1 + 𝑖we have:
+𝑓(𝑖) = 𝑖2 −(2 + 𝑖)(𝑖) = −1 −2𝑖+ 1 = −2𝑖
+𝑓1 + 𝑖= 1 + 𝑖2 −2 + 𝑖
+1 + 𝑖= 2𝑖−1 −3𝑖
+= −1 −𝑖
+2) 𝑔(𝑧) = 𝑧+ 2 𝑅𝑒(𝑧)
+
+Domain of a Complex Function
+When the domain of a complex function is not explicitly stated, we assume the 
+domain to be the set of all complex numbers 𝑧for which 𝑓(𝑧) is defined. This set 
+is sometimes referred to as the natural domain of 𝑓. 
+For example, the functions 𝑓(𝑧) = 𝑧2 −(2 + 𝑖)𝑧and 𝑔𝑧= 𝑧+ 2 𝑅𝑒(𝑧) in 
+Example 1 are defined for all complex numbers 𝑧, and so, 𝐷𝑜𝑚(𝑓) = ℂand 
+𝐷𝑜𝑚(𝑔) = ℂ. 
+The complex function ℎ𝑧=
+𝑧
+𝑧2+1 is not defined at 𝑧= 𝑖and 𝑧= −𝑖Therefore, 
+𝐷𝑜𝑚ℎ= ℂ−{±𝑖}
+
+Real and Imaginary Parts of a Complex 
+Function
+If 𝑤= 𝑓(𝑧) is a complex function, then the image of a complex number 
+𝑧= 𝑥+ 𝑖𝑦under 𝑓is a complex number. By setting 𝑧= 𝑥+ 𝑖𝑦, we can 
+express any complex function 𝑤= 𝑓(𝑧) in terms of two real functions 
+as:
+𝑓𝑧= 𝑢𝑥, 𝑦+ 𝑖𝑣(𝑥, 𝑦).
+If we replace the symbol 𝑧with 𝑟(cos 𝜃+ 𝑖𝑠𝑖𝑛𝜃), then we can write 
+this function as: 
+𝑓(𝑧) = 𝑢(𝑟, 𝜃) + 𝑖𝑣(𝑟, 𝜃).
+
+Example 2
+Find real and imaginary parts of the following complex functions:
+a) 𝑓𝑧= 𝑧2
+b) 𝑓𝑧=
+1
+𝑧
+c) 𝑓𝑧= 𝑒𝑧
+
+Graph of Complex Function
+A useful tool for the study of real functions in elementary calculus is the graph 
+of the function. In real calculus if 𝑦= 𝑓(𝑥) is a real-valued function of a real 
+variable 𝑥, then the graph of 𝑓is defined to be the set of all points (𝑥, 𝑓(𝑥))
+in the two-dimensional Cartesian plane. An analogous definition can be made 
+for a complex function. However, if 𝑤= 𝑓(𝑧) is a complex function, then both 
+𝑧and 𝑤lie in a complex plane. It follows that the set of all points (𝑧, 𝑓(𝑧))
+lies in four-dimensional space (two dimensions from the input 𝑧and two 
+dimensions from the output 𝑤). Of course, a subset of four-dimensional space 
+cannot be easily illustrated. Therefore: 
+We cannot draw the graph a complex function.
+
+Complex Mapping
+One considers the two complex planes, 𝑧and 𝑤, separately and asks how a 
+region in the 𝑧−plane transforms or maps to a corresponding region or image 
+in the 𝑤−plane. We use the alternative term complex mapping in place of 
+“complex function” when considering the function as this correspondence 
+between points in the 𝑧−plane and points in the 𝑤−plane. 
+The geometric representation of a complex mapping 𝑤= 𝑓(𝑧) attributed to 
+Riemann consists of two figures: 
+The subset 𝑆of points in the 𝑧−plane
+The set 𝑆′ of the images of points in 𝑆under 𝑤= 𝑓(𝑧) in the 𝑤−plane.
+
+Complex Mapping
+
+Complex Mapping
+If the point 𝑧0 in the 
+𝑧−plane corresponds to the 
+point 𝑤0 in the 𝑤−plane, 
+that is, if 𝑤0 = 𝑓(𝑧0), then 
+we say that 𝑓maps 𝑧0 onto 
+𝑤0 or, equivalently, that 𝑧0 is 
+mapped onto 𝑤0 by 𝑓.
+
+Example 3
+Find the image of the half-plane 𝑅𝑒(𝑧) ≥2 under the 
+complex mapping 𝑤= 𝑖𝑧and represent the mapping 
+graphically.
+𝑤= 𝑖𝑧
+
+Example 4
+Determine the image of the vertical line 𝑥= 1 under the complex 
+mapping defined by: 𝑤= 𝑓𝑧= 𝑧2 and represent the mapping 
+graphically.
+
+Complex Parametric Curve
+If 𝑥= 𝑥(𝑡) and 𝑦= 𝑦(𝑡) are real-valued functions of a real variable 𝑡, then 
+the set 𝐶of all points (𝑥(𝑡), 𝑦(𝑡)), where 𝑎≤𝑡≤𝑏, is called a parametric 
+curve. The equations 𝑥= 𝑥(𝑡), 𝑦= 𝑦(𝑡), and 𝑎≤𝑡≤𝑏are called parametric 
+equations of 𝐶. 
+If 𝑥(𝑡) and 𝑦(𝑡) are real-valued functions of a real variable 𝑡, then the set 𝐶
+consisting of all points
+𝑧𝑡= 𝑥𝑡+ 𝑖𝑦𝑡,
+𝑎≤𝑡≤𝑏,
+is called a parametric curve or a complex parametric curve. The complex-
+valued function of the real variable 𝑡, 𝑧𝑡= 𝑥𝑡+ 𝑖𝑦(𝑡), is called a 
+parametrization of 𝐶.
+
+Common Parametric Curves in the Complex 
+Plane
+
+Common Parametric Curves in the Complex 
+Plane
+
+Image of a Parametric Curve under a Complex 
+Mapping
+If  w = 𝑓(𝑧) is a complex mapping and if 𝐶is a curve parametrized by 
+𝑧(𝑡), 𝑎≤𝑡≤𝑏, then
+𝑤(𝑡) = 𝑓(𝑧(𝑡)),
+𝑎≤𝑡≤𝑏
+is a parametrization of the image, 𝐶′ of 𝐶under 𝑤= 𝑓(𝑧).
+
+Example 5
+Determine the image of the line segment from 1 to 𝑖under the complex mapping 
+𝑤= 𝑓𝑧= ഥ𝑖𝑧.
+(∎)
+(∎)
+(∎)
+
+Example 6
+Find the image of upper half of the circle 𝑧= 2 under the 
+complex mapping 𝑤= 𝑧2.
+
+Use of Software
+You can use wolfram alpha to determine the image of a parametric curve under a 
+complex mapping. The link for this software is
+Wolfram|Alpha Widgets: "Conformal mapping" - Free Mathematics Widget 
+(wolframalpha.com)
+
+• Chapter: 2
+• Exercise: 2.1 Questions: 1-26
+• Exercise: 2.2 Questions: 1-26
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 8. Linear Mapping.pdf
+========================================
+
+Linear 
+mapping
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 2
+• Section: 2.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D.
+Shanahan.
+
+Recall that a real function of the form 𝑓𝑥= 𝑎𝑥+ 𝑏where 𝑎and 
+𝑏are any real constants is called a linear function. 
+In keeping with the similarities between real and complex analysis, 
+we define a complex linear function to be a function of the form 
+𝑓(𝑧) = 𝑎𝑧+ 𝑏where 𝑎and 𝑏are any complex constants. 
+Introduction
+In this section, we will show that every non constant complex linear 
+mapping can be described as a composition of three basic types of 
+motions: a translation, a rotation, and a magnification.
+
+A complex linear function 
+𝑇𝑧= 𝑧+ 𝑏,
+is called a translation, where 𝑏≠0 is a complex number.
+Translation
+Translation does not change the shape or 
+size of a figure in the complex plane. That 
+is, the image of a line, circle, or triangle 
+under a translation will also be a line, circle, 
+or triangle, respectively. A mapping with 
+this property is sometimes called a rigid 
+motion.
+
+The image 𝑆’ of the square 𝑆with vertices at 
+1 + 𝑖, 2 + 𝑖, 2 + 2𝑖, and 1 + 2𝑖under the 
+linear mapping  𝑇𝑧= 𝑧+ 2 −𝑖.
+𝑇1 + 𝑖= 1 + 𝑖+
+2 −𝑖= 3
+𝑇2 + 𝑖= 2 + 𝑖+
+2 −𝑖= 4
+𝑇2 + 2𝑖= 2 + 2𝑖+
+2 −𝑖= 4 + 𝑖
+𝑇(1 + 2𝑖) = (1 + 2𝑖) + (2 −𝑖) = 3 + 𝑖.
+Example 1; Translation
+
+Rotation
+A complex linear function 
+𝑅𝑧= 𝑎𝑧,
+is called a rotation, where 𝑎= 1 is a complex number.
+As with translations, rotations will 
+not change the shape or size of a 
+figure in the complex plane. Thus, 
+the image of a line, circle, or triangle 
+under a rotation will also be a line, 
+circle, or triangle, respectively.
+
+We assume 𝐴𝑟𝑔𝑎> 0, we can write
+𝑎= 𝑒𝑖𝜃with    0 < 𝜃≤𝜋
+If we set 𝑎= 𝑒𝑖𝜃and z = 𝑟𝑒𝑖𝜑in 𝑅= 𝑎𝑧, we obtain
+𝑅𝑧= 𝑒𝑖𝜃𝑟𝑒𝑖𝜑= 𝑟𝑒𝑖(𝜃+𝜑)
+Therefore, the linear mapping 𝑅(𝑧) = 𝑎𝑧can be 
+visualized in a single copy of the complex plane as the 
+process of rotating the point 𝑧counterclockwise 
+through an angle of 𝜃radians about the origin to the 
+point 𝑅(𝑧).
+Clearly, this increases the argument of 𝑧by 𝜃radians 
+but does not change its modulus.
+Rotation
+
+Rotation
+In a similar manner, if 𝐴𝑟𝑔(𝑎) < 0, then the linear mapping 
+𝑅(𝑧) = 𝑎𝑧can be visualized in a single copy of the complex 
+plane as the process of rotating points clockwise through an 
+angle of 𝜃radians about the origin. For this reason, the 
+angle 𝜃= 𝐴𝑟𝑔(𝑎) is called an angle of rotation of 𝑅.
+
+The image of the real axis 𝑦= 0
+under the linear mapping
+𝑅𝑧=
+1
+2
+2 + 1
+2
+2𝑖𝑧.
+Example 2; Rotation
+
+Magnification
+A complex linear function 
+𝑀𝑧= 𝑎𝑧,
+is called a magnification, where 𝑎> 0 is a real number.
+The real number a is called the magnification factor of M. 
+If 0 < 𝑎< 1, then the point 𝑀(𝑧) is 
+𝑎times closer to the origin than the 
+point 𝑧. This special case of a 
+magnification is called a 
+contraction.
+
+Example 3; Magnification
+The image of the circle 𝐶given 
+by |𝑧| = 2 under the linear 
+mapping 𝑀𝑧= 3𝑧is the circle 
+𝐶′ given by 𝑤= 6.
+
+Linear Mapping
+A general linear mapping is a composition of a rotation, a 
+magnification, and a translation and is given by
+𝑓𝑧= 𝑎𝑧+ b,
+where 𝑎and 𝑏are complex numbers and 𝑎≠0.
+
+Linear Mapping
+The image, 𝑆′ of a set 𝑆under
+𝑓𝑧= 𝑎𝑧+ 𝑏
+is the set of points obtained by 
+rotating 𝑆through 𝐴𝑟𝑔(𝑎), 
+magnifying by |𝑎|, and then 
+translating by 𝑏.
+rotation
+magnification
+translation
+
+Note
+A complex linear mapping w = 𝑎𝑧+ 𝑏with 𝑎≠0 can distort the size of a figure 
+in the complex plane, but it cannot alter the basic shape of the figure.
+When describing a linear function as a composition of a rotation, a magnification, 
+and a translation, keep in mind that the order of composition is important.
+Consider the mapping 𝑓(𝑧) = 2𝑧+ 𝑖, which magnifies by 2, then translates by 𝑖; 
+so, 0 maps onto 𝑖under 𝑓. If we reverse the order of composition—that is, if we 
+translate by 𝑖, then magnify by 2—the effect is 0 maps onto 2𝑖. Therefore, 
+reversing the order of composition can give a different mapping. 
+In some special cases, however, changing the order of composition does not 
+change the mapping.
+
+Example 4
+Express the given composition of mappings as a linear mapping 
+𝑓𝑧= 𝑎𝑧+ 𝑏.
+a) rotation through 𝜋/4, magnification by 2, and translation by 1 + 𝑖
+b) magnification by 2, translation by 2, and rotation through 𝜋/4
+c) translation by 
+1
+2
+2, rotation through 𝜋/4, then magnification by 2
+
+Example 5
+Find the image of a rectangle with vertices at 0, 2, 𝑖and 2 + 𝑖
+under the linear mapping 
+𝑓𝑧= 1 + 𝑖𝑧+ (1 −2𝑖)
+
+Example 6
+Find the image of the closed disk |𝑧| ≤1 under the given 
+linear mapping
+a) 𝑓(𝑧) = (1 + 𝑖)𝑧
+b) 𝑓(𝑧) = 2𝑧−𝑖
+
+• Chapter: 2
+• Exercise: 2.3 Questions: 1-16
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+
+
+
+========================================
+LECTURE: 9. Complex Power Function.pdf
+========================================
+
+Complex 
+Power 
+functions
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 2
+• Section: 2.4
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D.
+Shanahan.
+
+In this section we study complex polynomials of the form 𝑓(𝑧) = 𝑧𝑛, 𝑛≥2. 
+Unlike the linear mappings studied in the previous section, the mappings 
+𝑤= 𝑧𝑛, 𝑛≥2, do not preserve the basic shape of every figure in the 
+complex plane.
+Associated to the function 𝑧𝑛, 𝑛≥2, we also have the principal 𝑛𝑡ℎroot 
+function 𝑧
+1
+𝑛.
+Introduction
+
+Complex Power Function
+Complex power function is a function of the form 𝑓(𝑧) = 𝑧𝛼, where 𝛼
+is a complex constant.
+o If 𝛼is an integer, then the power function 𝑧𝛼can be evaluated using 
+the algebraic operations on complex numbers. For example, 
+𝑧2 = 𝑧. 𝑧and 𝑧−3 =
+1
+𝑧. 𝑧. 𝑧.
+o If 𝛼is a fraction say 𝛼=
+1
+𝑛, then we take the roots of the complex 
+number. For instance, we can define 𝑧
+1
+4 to be the function that gives 
+the principal fourth root of 𝑧.
+
+Complex Function 𝒇𝒛= 𝒛𝟐
+We  express this mapping in exponential notation by 
+replacing the symbol 𝑧with 𝑟𝑒𝑖𝜃: 
+𝑤= 𝑧2 = 𝑟𝑒𝑖𝜃2 = 𝑟2𝑒𝑖2𝜃.
+(1)
+From (1) we see that the
+𝑧
+w
+Modulus:
+𝑟
+𝑟2
+Argument:
+𝜃
+2𝜃
+If we plot both 𝑧and 𝑤in the same copy of the complex 
+plane, then 𝑤is obtained by magnifying 𝑧by a factor of 
+𝑟and then by rotating the result through the angle 𝜃
+about the origin.
+
+Example 1
+Consider a ray emanating from the origin and making an angle of 𝜑with the 
+positive real axis. 
+Change in argument: All points on this ray have an argument of 𝜑and so the 
+images of these points under 𝑤= 𝑧2 have an argument of 2𝜑. Thus, the 
+images lie on a ray emanating from the origin and making an angle of 2𝜑with 
+the positive real axis.
+Change in Modulus: Since the modulus 𝜌of a point on the ray can be any value 
+in the interval [0, ∞), the modulus 𝜌2 of a point in the image can also be any 
+value in the interval [0, ∞). 
+Thus, a ray emanating from the origin making an angle of 𝜑with the positive 
+real axis is mapped onto a ray emanating from the origin making an angle 2𝜑
+with the positive real axis by 𝑤= 𝑧2.
+
+Note
+It is important to note that the magnification or contraction factor 
+and the rotation angle associated to 𝑤= 𝑓(𝑧) = 𝑧2 depend on 
+where the point 𝑧is located in the complex plane. 
+For example, since 𝑓(2) = 4 and 𝑓(
+𝑖
+2) = −
+1
+4 , the point 𝑧= 2 is 
+magnified by 2 but not rotated, whereas the point 𝑧=
+𝑖
+2 is contracted 
+by 
+1
+2 and rotated through 
+𝜋
+4. In general, the squaring function 𝑧2 does 
+not magnify the modulus of points on the unit circle |𝑧| = 1 and it 
+does not rotate points on the positive real axis.
+
+Example 2
+Find the image of the given set under the mapping 𝑤= 𝑧2. Represent the 
+mapping by drawing the set and its image.
+a) The line 𝑥=
+3
+2
+b) The circular arc |𝑧| =
+4
+3 , −
+𝜋
+2 ≤arg 𝑧≤
+𝜋
+6
+c) The square with vertices 0, 1, 1 + 𝑖, and 𝑖.
+
+Complex Function 𝒇𝒛= 𝒛𝒏
+An analysis similar to that used for the mapping 𝑤= 𝑧2 can be applied to the 
+mapping 𝑤= 𝑧𝑛, 𝑛> 2. 
+By replacing the symbol 𝑧with 𝑟𝑒𝑖𝜃we obtain: 
+𝑤= 𝑧𝑛= 𝑟𝑛𝑒𝑖𝑛𝜃.
+Consequently, if 𝑧and 𝑤= 𝑧𝑛are plotted in the same copy of the complex plane, 
+then this mapping can be visualized as the process of magnifying or contracting the 
+modulus 𝑟of 𝑧to the modulus 𝑟𝑛of 𝑤, and by rotating 𝑧about the origin to 
+increase an argument 𝜃of 𝑧to an argument 𝑛𝜃of 𝑤.
+
+Example 3
+
+Example 5
+Find the image of the region 1 ≤|𝑧| ≤2,
+𝜋
+4 ≤arg(𝑧) ≤
+3𝜋
+4 , under each of 
+the following mappings.
+a) 𝑓(𝑧) = 𝑧2
+b) 𝑓(𝑧) = 𝑧3
+c) 𝑓(𝑧) = 𝑧4
+
+Power Function 𝒇𝒛= 𝒛𝟏/𝒏
+In the previous chapter we have seen that 𝑧1/𝑛represents 𝑛𝑛𝑡ℎroots of a nonzero 
+complex number 𝑧= 𝑟𝑒𝑖𝜃which are given by: 
+𝑛𝑟cos 𝜃+ 2𝑘𝜋
+𝑛
++ 𝑖sin 𝜃+ 2𝑘𝜋
+𝑛
+= 𝑛𝑟𝑒𝑖(𝜃+2𝑘𝜋)/𝑛; 𝑘= 0, 1, 2, … , 𝑛−1
+In particular, for 𝑛= 2, we have that the two square roots of 𝑧are:
+𝑟cos 𝜃+ 2𝑘𝜋
+2
++ 𝑖sin 𝜃+ 2𝑘𝜋
+2
+=
+𝑟𝑒𝑖(𝜃+2𝑘𝜋)/2; 𝑘= 0, 1
+(2)
+The formula in (2) does not define a function because it assigns two complex 
+numbers to the complex number 𝑧. However, by setting 𝜃= 𝐴𝑟𝑔(𝑧) and 𝑘= 0 in 
+(2) we can define a function that assigns to 𝑧the unique principal square root. 
+Naturally, this function is called the principal square root function.
+
+Principal Square Root Function
+The function 𝑧1/2 defined by: 
+𝑧1/2 =
+𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/2
+is called the principal square root function.
+
+Principal 𝒏𝒕𝒉Root Function
+For 𝑛≥2, the function 𝑧1/𝑛defined by: 
+𝑧1/𝑛=
+𝑛𝑧𝑒𝑖𝐴𝑟𝑔(𝑧)/𝑛
+is called the principal 𝒏𝒕𝒉root function.
+
+Example 6
+Find the value of the given principal 𝑛𝑡ℎroot function at the 
+given value of 𝑧.
+a) 𝑧1/2, 𝑧= −𝑖
+b) 𝑧1/5, 𝑧= −4 3 + 4𝑖
+
+One-to-One Function
+A complex function f is one-to-one if each point 𝑤in the range of 𝑓is 
+the image of a unique point 𝑧, called the pre-image of 𝑤, in the 
+domain of 𝑓. 
+i.e., 𝑓is one-to-one if whenever 𝑓(𝑧1) = 𝑓(𝑧2), then 𝑧1 = 𝑧2. 
+A one-to-one complex function will not map distinct points in the 
+𝑧−plane onto the same point in the 𝑤−plane. For example, the 
+function 𝑓(𝑧) = 𝑧2 is not one-to-one because 𝑓(𝑖) = 𝑓(−𝑖) = −1. 
+
+One-to-One and Inverse Function
+If 𝑓is a one-to-one complex function, then for any point 𝑤in the 
+range of 𝑓there is a unique pre-image in the 𝑧−plane, which we 
+denote by 𝑓−1(𝑤). This correspondence between a point 𝑤and 
+its pre-image 𝑓−1(𝑤) defines the inverse function of a one-to-
+one complex function.
+
+Inverse Function
+If 𝑓is a one-to-one complex function with domain 𝐴and range 𝐵, 
+then the inverse function of 𝑓, denoted by 𝑓−1, is the function 
+with domain 𝐵and range 𝐴defined by 𝑓−1 (𝑧) = 𝑤if 𝑓(𝑤) = 𝑧.
+𝐴
+𝐵
+𝑓
+𝑓−1
+𝑓𝑓−1 𝑧
+= 𝑧
+𝑓−1 𝑓𝑧
+= 𝑧
+
+Example 7
+Show that 𝑓(𝑧) = 𝑧2 is a one-to-one function on the set 𝐴defined 
+by −
+𝜋
+2 < arg(𝑧) ≤
+𝜋
+2.
+
+Note
+The inverse function of 𝑓(𝑧) = 𝑧2 on the set 
+𝐴= re𝑖𝜃; −𝜋
+2 < 𝜃≤𝜋
+2
+is the principal square root function 𝑧
+1
+2.
+𝑓𝑧= 𝑧2
+𝑓−1 𝑧= 𝑧1/2
+
+Example 8
+Find the image of the set 𝑆defined by |𝑧| ≤3,
+𝜋
+2 ≤arg 𝑧≤
+3𝜋
+4 ,
+under the principal square root function.
+
+Example 9
+Find the image of the given set under the principal square root 
+mapping.
+a) the ray arg 𝑧= −
+2𝜋
+3
+b) the negative real axis
+c) the arc 𝑧=
+4
+7 , −
+𝜋
+2 ≤arg 𝑧≤
+𝜋
+4
+
+• Chapter: 2
+• Exercise: 2.4 Questions: 1-38
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

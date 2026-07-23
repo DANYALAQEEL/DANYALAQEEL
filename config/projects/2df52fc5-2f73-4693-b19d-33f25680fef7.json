@@ -1,0 +1,21 @@
+{
+  "id": "2df52fc5-2f73-4693-b19d-33f25680fef7",
+  "name": "srsRAN_4G",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///c%3A/Users/Administrator/.gemini/antigravity/scratch/srsRAN_4G",
+          "defaultBranch": "master"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "fileAccessPolicy": "AGENT_SETTING_POLICY_ASK",
+    "internetPolicy": "AGENT_SETTING_POLICY_ASK",
+    "autoExecutionPolicy": "CASCADE_COMMANDS_AUTO_EXECUTION_OFF",
+    "artifactReviewMode": "ARTIFACT_REVIEW_MODE_ALWAYS"
+  },
+  "updatedAt": "2026-06-10T15:09:04.023329Z"
+}

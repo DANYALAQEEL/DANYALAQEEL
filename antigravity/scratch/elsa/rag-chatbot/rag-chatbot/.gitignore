@@ -1,0 +1,15 @@
+# Local environment settings (contains API keys)
+backend/.env
+
+# Local vector store SQLite database
+backend/vector_store.db
+
+# Python cache files
+backend/__pycache__/
+backend/*/__pycache__/
+.pytest_cache/
+*.pyc
+
+# Local IDE configuration
+.vscode/
+.idea/

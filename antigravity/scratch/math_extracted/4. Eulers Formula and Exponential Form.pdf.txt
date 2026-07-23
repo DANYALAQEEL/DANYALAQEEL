@@ -1,0 +1,175 @@
+
+
+========================================
+LECTURE: 4. Eulers Formula and Exponential Form.pdf
+========================================
+
+Euler’ r’s Formula 
+and 
+Exponential 
+form
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.2
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Sections: 1.3
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Euler’s Formula
+Euler’s formula is given by
+𝑒𝑖𝜃= cos 𝜃+ 𝑖sin 𝜃.
+If 𝜃is a real number, 𝑒𝑖𝜃will be located 
+somewhere on the circle with radius 1
+centered at the origin because
+𝑒𝑖𝜃=
+cos2 𝜃+ sin2 𝜃= 1
+
+Exponential form of a Complex Number
+By using the Euler’ formula, we can rewrite polar form,
+𝑧= 𝑟(cos𝜃+ 𝑖sin 𝜃) = 𝑟cis 𝜃, of a complex number 𝑧= 𝑎+ 𝑖𝑏as:
+𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃) = 𝑟𝑒𝑖𝜃.
+(1)
+Eq.(1) is reffered to as the exponential form of a complex number 𝑧. 
+The angle 𝜃lies conventionally in the range −𝜋< 𝜃≤ 𝜋, but, since
+rotation by 𝜃is the same as rotation by 𝜃+ 2nπ, where 𝑛is any integer,
+so, 
+𝑟𝑒𝑖𝜃≡𝑟𝑒𝑖𝜃+2𝑛𝜋,
+𝑛𝜖ℤ
+
+Polar Form and Exponential Forms
+Polar Form
+𝑧= 𝑟(cos 𝜃+ 𝑖sin 𝜃)
+Exponential Form
+𝑧= 𝑟𝑒𝑖𝜃.
+
+Multiplication and Division in Polar Form
+The polar form of a complex number is especially convenient when multiplying
+or dividing two complex numbers. Suppose
+𝑧1 = 𝑟1(cos 𝜃1 + 𝑖sin 𝜃1) and 𝑧2 = 𝑟2(cos 𝜃2 + 𝑖sin 𝜃2),
+where 𝜃1 and 𝜃2 are any arguments of 𝑧1and 𝑧2, respectively. Then
+𝑧1𝑧2 = 𝑟1𝑟2(cos 𝜃1 + 𝑖sin 𝜃1)(cos𝜃2 + 𝑖sin 𝜃2)
+= 𝑟1𝑟2(cos 𝜃1 cos 𝜃2 −sin 𝜃1 sin 𝜃2 + 𝑖(sin 𝜃1 cos𝜃2 + cos 𝜃1 sin 𝜃2))
+= 𝑟1𝑟2(cos( 𝜃1 + 𝜃2) + 𝑖sin( 𝜃1 + 𝜃2)).
+Hence 𝑧1𝑧2 = 𝑧1 𝑧2
+and   arg 𝑧1𝑧2 = arg 𝑧1 + arg 𝑧2
+
+Multiplication and Division in Polar Form
+Similarly for 𝑧2 ≠0,
+𝑧1
+𝑧2
+= 𝑟1
+𝑟2
+[cos 𝜃1 −𝜃2 + 𝑖sin 𝜃1 −𝜃2 ]
+Hence 
+𝑧1
+𝑧2 =
+𝑧1
+𝑧2 and arg
+𝑧1
+𝑧2
+= arg 𝑧1 −arg(𝑧2)
+
+Multiplication and Division in Exponential Form
+The product of 𝑧1 = 𝑟1𝑒𝑖𝜃1 and 𝑧2 = 𝑟2𝑒𝑖𝜃2 is given by:
+𝑧1𝑧2 = 𝑟1𝑒𝑖𝜃1𝑟2𝑒𝑖𝜃2 = 𝑟1𝑟2𝑒𝑖(𝜃1+𝜃2)
+Hence the relationship
+𝑧1𝑧2 = 𝑧1 𝑧2
+and   arg 𝑧1𝑧2 = arg 𝑧1 + arg 𝑧2
+follows immediately.
+
+Multiplication and Division in Exponential Form
+The quotient of 𝑧1 = 𝑟1𝑒𝑖𝜃1 and 𝑧2 = 𝑟2𝑒𝑖𝜃2 is given by:
+𝑧1
+𝑧2
+= 𝑟1𝑒𝑖𝜃1
+𝑟2𝑒𝑖𝜃2 = 𝑟1
+𝑟2
+𝑒𝑖(𝜃1−𝜃2)
+Hence the relationship
+𝑧1
+𝑧2 =
+𝑧1
+𝑧2 and arg
+𝑧1
+𝑧2
+= arg 𝑧1 −arg(𝑧2)
+follows immediately.
+
+Example 1
+Simplify:
+3 cos 𝜋
+3 + 𝑖sin 𝜋
+3 × 4 cos 𝜋
+2 + 𝑖sin 𝜋
+2 .
+Solution:
+3 cos 𝜋
+3 + 𝑖sin 𝜋
+3 × 4 cos 𝜋
+2 + 𝑖sin 𝜋
+2
+= 12 cos 𝜋
+𝜋
+3
+2
++
++ 𝑖sin 𝜋
+𝜋
+3
+2
++
+= 12 cos 5𝜋
+6 + 𝑖sin 5𝜋
+6
+= 12𝑒𝑖6 .
+5𝜋
+
+Example 2
+Use exponential notation to show that
+a.
+3 −𝑖
+1 +
+3𝑖= 2 3 + 2𝑖
+b. 2𝑖
+3 + 𝑖
+1 +
+3𝑖= −8
+
+Example 3
+Express the following in 𝑎+ 𝑖𝑏form.
+a. 8𝑒
+𝑖7𝜋
+3
+b. 𝑒2𝑒𝑖𝜋
+
+Example 4
+Let 𝑧1 = 8𝑖and 𝑧2 = 1 +
+3𝑖.
+a. Represent 𝑧1 and 𝑧2 in polar form.
+b. Find 
+𝑧1
+𝑧2 by using part a.
+
+• Chapter: 1
+• Exercise: 1.3
+• Questions: 19-24
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+

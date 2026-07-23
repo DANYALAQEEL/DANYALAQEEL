@@ -1,0 +1,157 @@
+
+
+========================================
+LECTURE: 12. Differentiability and Analyticity.pdf
+========================================
+
+Differentiability 
+and 
+Analyticity
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.3
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 3
+• Section: 3.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Derivative of Complex Functions
+Suppose the complex function 𝑓is defined in a neighborhood of a 
+point 𝑧0. The derivative of 𝒇at 𝑧0, denoted by 𝑓′(𝑧0), is 
+𝑓′ 𝑧0 = lim
+∆𝑧→0
+𝑓𝑧0 + ∆𝑧−𝑓(𝑧0)
+∆𝑧
+provided this limit exists.
+If we write 𝑧= 𝑧0 + ∆𝑧, then the alternate definition of 𝑓′(𝑧0) is
+𝑓′ 𝑧0 = lim
+𝑧→𝑧0
+𝑓𝑧−𝑓(𝑧0)
+𝑧−𝑧0
+.
+
+Example 1; Using Definition
+Use Definition to find the derivative of 𝑓(𝑧) = 𝑧2 −5𝑧.
+
+Differentiation Rules
+
+Power Rule
+
+Example 2; Using Differentiation Rules
+
+Example 3; A Function That Is Nowhere 
+Differentiable
+Show that the function 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is not differentiable at any point 𝑧.
+
+Example 3; A Function That Is Nowhere 
+Differentiable
+
+Example 4
+Show that the function 𝑓𝑧= ҧ𝑧is nowhere differentiable. 
+
+Analyticity at a Point
+A complex function 𝑤= 𝑓(𝑧) is said to be analytic 
+at a point 𝒛𝟎if 𝑓is differentiable at 𝑧0 and at every 
+point in some neighborhood of 𝑧0.
+A function 𝑓is analytic in a domain 𝑫if it is analytic 
+at every point in 𝐷.
+D
+x
+y
+
+Note
+Analyticity at a point is not the same as differentiability at a point. 
+Analyticity at a point is a neighborhood property; in other words, 
+analyticity is a property that is defined over an open set.
+The function𝑓(𝑧) = 𝑧2 is differentiable at 𝑧= 0, it is not analytic at that 
+point because there exists no neighborhood of 𝑧= 0 throughout which 𝑓
+is differentiable; hence the function 𝑓(𝑧) = 𝑧2 is nowhere analytic.
+Analyticity implies differentiability but converse is not true.
+
+Entire Functions
+A function that is analytic at every point 𝑧in the complex plane is 
+said to be an entire function.
+Complex Functions that are entire:
+1, 𝑧, 𝑧2, 𝑧3, … , 𝑧𝑛
+𝑒𝑧, sin 𝑧, cos 𝑧, sinh 𝑧, cosh 𝑧
+Complex Functions analytic almost everywhere:
+1
+𝑧2 ,
+1
+𝑧2−1 , tan 𝑧, cot 𝑧, tanh 𝑧, coth 𝑧
+
+Theorem 3.1: Polynomial and Rational 
+Functions
+
+Theorem 3.2: Differentiability Implies 
+Continuity
+If 𝑓is differentiable at a point 𝑧0 in a domain 𝐷, 
+then 𝑓is continuous at 𝑧0.
+Differentiable ֜ Continuous
+Not continuous ֜ Not differentiable
+
+Example 5
+The function 𝑓𝑧= ҧ𝑧is continuous in the whole complex plane but 
+differentiable nowhere.
+The function 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is continuous everywhere because the real 
+and imaginary parts of 𝑓, 𝑢(𝑥, 𝑦) = 𝑥and 𝑣(𝑥, 𝑦) = 4𝑦are continuous at 
+any point (𝑥, 𝑦). Yet we saw in Example 3 that 𝑓(𝑧) = 𝑥+ 4𝑖𝑦is not 
+differentiable at any point 𝑧.
+
+Singular Point
+A point 𝑧at which a complex function 𝑤= 𝑓(𝑧) fails to 
+be analytic is called a singular point of 𝑓.
+The function 𝑓𝑧=
+𝑧
+𝑧2+1 is discontinuous at 𝑧= ±𝑖. 
+Therefore, it is not analytical at these points. Hence 𝑧= ±𝑖
+are the singular points of 𝑓.
+
+Theorem 3.3: L’Hෝ𝒐pital’s Rule
+Suppose 𝑓and 𝑔are functions that are analytical at a point 
+𝑧0 and 𝑓𝑧0 = 0, 𝑔𝑧0 = 0, but 𝑔′ 𝑧0 ≠0. Then
+lim
+𝑧→𝑧0
+𝑓(𝑧0)
+𝑔(𝑧0) = 𝑓′(𝑧0)
+𝑔′(𝑧0) .
+
+Example 6; L’Hෝ𝒐pital’s Rule
+Compute the limit
+a)
+lim
+𝑧→2+𝑖
+𝑧2−4𝑧+5
+𝑧3−𝑧−10𝑖
+b)
+lim
+𝑧→1+𝑖
+𝑧5+4𝑧
+𝑧2−2𝑧+2
+
+Exercise
+The function 𝑓𝑧= 𝑧2 is continuous at the origin.
+i.
+Show that 𝑓is differentiable at the origin.
+ii. Show that 𝑓is not differentiable at any point 𝑧≠0.
+
+• Chapter: 3
+• Exercise: 3.1 Questions: 1-30
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

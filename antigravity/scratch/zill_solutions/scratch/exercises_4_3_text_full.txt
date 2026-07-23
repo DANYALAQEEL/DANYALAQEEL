@@ -1,0 +1,318 @@
+202
+Chapter 4
+Elementary Functions
+more useful of the trigonometric identities. Each of the results in (6)–(10) is
+identical to its real analogue.
+sin (−z) = −sin z
+cos (−z) = cos z
+(6)
+cos2 z + sin2 z = 1
+(7)
+sin (z1 ± z2) = sin z1 cos z2 ± cos z1 sin z2
+(8)
+cos (z1 ± z2) = cos z1 cos z2 ∓sin z1 sin z2
+(9)
+Observe that the double-angle formulas:
+sin 2z = 2 sin z cos z
+cos 2z = cos2 z −sin2 z
+(10)
+follow directly from (8) and (9).
+We will verify only identity (7). The other identities follow in a similar
+manner. See Problems 13 and 14 in Exercises 4.3. In order to verify (7),
+we note that by (4) and properties of the complex exponential function from
+Theorem 4.2, we have
+cos2 z =
+
+eiz + e−iz
+2
+2
+= e2iz + 2 + e−2iz
+4
+,
+sin2 z =
+
+eiz −e−iz
+2i
+2
+= −e2iz −2 + e−2iz
+4
+.
+and
+Therefore,
+cos2 z + sin2 z = e2iz + 2 + e−2iz −e2iz + 2 −e−2iz
+4
+= 1.
+
+Note
+It is important to recognize that some properties of the real trigonomet-
+ric functions are not satisﬁed by their complex counterparts. For example,
+|sin x| ≤1 and |cos x| ≤1 for all real x, but, from Example 1 we have |cos i| > 1
+and |sin(2 + i)| > 1 since |cos i| ≈1.5431 and |sin (2 + i)| ≈1.4859, so these
+inequalities, in general, are not satisﬁed for complex input.
+Periodicity
+In Section 4.1 we proved that the complex exponential
+function is periodic with a pure imaginary period of 2πi. That is, we showed
+that ez+2πi = ez for all complex z. Replacing z with iz in this equation we
+obtain eiz+2πi = ei(z+2π) = eiz. Thus, eiz is a periodic function with real
+period 2π. Similarly, we can show that e−i(z+2π) = e−iz and so e−iz is also a
+periodic function with a real period of 2π. Now from Deﬁnition 4.6 it follows
+that:
+sin(z + 2π) = ei(z+2π) −e−i(z+2π)
+2i
+= eiz −e−iz
+2i
+= sin z.
+A similar statement also holds for the complex cosine function. In summary,
+we have:
+sin (z + 2π) = sin z
+and
+cos (z + 2π) = cos z
+(11)
+4.3 Trigonometric and Hyperbolic Functions
+203
+for all z. Put another way, (11) shows that the complex sine and cosine are
+periodic functions with a real period of 2π.
+The periodicity of the secant
+and cosecant functions follows immediately from (11) and (5). The identities
+sin (z + π) = −sin z and cos (z + π) = −cos z can be used to show that the
+complex tangent and cotangent are periodic with a real period of π.
+See
+Problems 51 and 52 in Exercises 4.3.
+Trigonometric Equations
+We now turn our attention to solving
+simple trigonometric equations. Because the complex sine and cosine func-
+tions are periodic, there are always inﬁnitely many solutions to equations of
+the form sin z = w or cos z = w. One approach to solving such equations is to
+use Deﬁnition 4.6 in conjunction with the quadratic formula. We demonstrate
+this method in the following example.
+EXAMPLE 2
+Solving Trigonometric Equations
+Find all solutions to the equation sin z = 5.
+Solution
+By Deﬁnition 4.6, the equation sin z = 5 is equivalent to the
+equation
+eiz −e−iz
+2i
+= 5.
+By multiplying this equation by eiz and simplifying we obtain
+e2iz −10ieiz −1 = 0.
+This equation is quadratic in eiz. That is,
+e2iz −10ieiz −1 =
+
+eiz2 −10i
+
+eiz
+−1 = 0.
+Thus, it follows from the quadratic formula (3) of Section 1.6 that the solutions
+of e2iz −10ieiz −1 = 0 are given by
+eiz = 10i + ( −96)1/2
+2
+= 5i ± 2
+√
+6i =
+
+5 ± 2
+√
+6
+	
+i.
+(12)
+In order to ﬁnd the values of z satisfying (12), we solve the two exponential
+equations in (12) using the complex logarithm. If eiz =
+
+5 + 2
+√
+6
+
+i, then
+iz = ln
+
+5i + 2
+√
+6i
+
+or z = −i ln
+
+5 + 2
+√
+6
+
+i
+
+. Because
+
+5 + 2
+√
+6
+
+i is a pure
+imaginary number and 5 + 2
+√
+6 > 0, we have arg
+
+5 + 2
+√
+6
+
+i
+
+= 1
+2π + 2nπ.
+Thus,
+z = −i log
+
+5 + 2
+√
+6
+	
+i
+
+= −i
+
+loge
+
+5 + 2
+√
+6
+	
++ i
+π
+2 + 2nπ
+	
+z = (4n + 1)π
+2
+−i loge
+
+5 + 2
+√
+6
+	
+(13)
+or
+for n = 0, ±1, ±2, . . . . In a similar manner, we ﬁnd that if eiz =
+
+5 −2
+√
+6
+
+i,
+then z = −i ln
+
+5 −2
+√
+6
+
+i
+
+. Since
+
+5 −2
+√
+6
+
+i is a pure imaginary number
+204
+Chapter 4
+Elementary Functions
+and 5 −2
+√
+6 > 0, it has an argument of π/2, and so:
+z = −i log
+
+5 −2
+√
+6
+	
+i
+
+= −i
+
+loge
+
+5 −2
+√
+6
+	
++ i
+π
+2 + 2nπ
+	
+z = (4n + 1)π
+2
+−i loge
+
+5 −2
+√
+6
+	
+(14)
+or
+for n = 0, ±1, ±2, . . .
+. Therefore, we have shown that if sin z = 5, then z
+is one of the values given in (13) or (14).
+Modulus
+The modulus of a complex trigonometric function can also be
+helpful in solving trigonometric equations. To ﬁnd a formula in terms of x
+and y for the modulus of the sine and cosine functions, we ﬁrst express these
+functions in terms of their real and imaginary parts. If we replace the symbol
+z with the symbol x + iy in the expression for sin z in (4), then we obtain:
+sin z = e−y+ix −ey−ix
+2i
+= e−y (cos x + i sin x) −ey (cos x −i sin x)
+2i
+= sin x
+
+ey + e−y
+2
+
++ i cos x
+
+ey −e−y
+2
+
+.
+(15)
+Since the real hyperbolic sine and cosine functions are deﬁned by sinh y =
+ey −e−y
+2
+and cosh y = ey + e−y
+2
+we can rewrite (15) as
+sin z = sin x cosh y + i cos x sinh y.
+(16)
+A similar computation enables us to express the complex cosine function in
+terms of its real and imaginary parts as:
+cos z = cos x cosh y −i sin x sinh y.
+(17)
+We now use (16) and (17) to derive formulas for the modulus of the complex
+sine and cosine functions. From (16) we have:
+|sin z| =
+
+sin2 x cosh2 y + cos2 x sinh2 y.
+This formula can be simpliﬁed using the identities cos2 x + sin2 x = 1 and
+cosh2 y = 1 + sinh2 y for the real trigonometric and hyperbolic functions:
+or
+|sin z| =
+
+sin2 x
+
+1 + sinh2 y
+
++ cos2 x sinh2 y
+=
+
+sin2 x +
+
+cos2 x + sin2 x
+
+sinh2 y,
+|sin z| =
+
+sin2 x + sinh2 y.
+(18)
+After a similar computation we obtain the following expression for the mod-
+ulus of the complex cosine function:
+|cos z| =
+
+cos2 x + sinh2 y.
+(19)

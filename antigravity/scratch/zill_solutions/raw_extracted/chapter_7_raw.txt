@@ -1,0 +1,3991 @@
+--- PAGE 1 ---
+Conformal
+Mappings
+7
+The planar flow of an ideal fluid.
+See page 440.
+y
+x
+7.1 Conformal Mapping
+7.2 Linear Fractional Transformations
+7.3 Schwarz-Christoﬀel Transformations
+7.4 Poisson Integral Formulas
+7.5 Applications
+7.5.1 Boundary-Value Problems
+7.5.2 FluidFlow
+Chapter 7 Review Quiz
+Introduction In Section 4.5 we saw that analytic
+mappings can be usedto solve certain types of
+boundary-value problems. In this chapter we
+introducethefundamentalnotionofaconformal
+mapping, andwe show that conformal mappings
+can be usedto solve a larger class of bound ary-
+value problems. The methods we introduce are
+appliedto problems in heat ﬂow, electrostatics,
+andﬂuidﬂow.
+389
+--- PAGE 2 ---
+390 Chapter 7 Conformal Mappings
+7.1 Conformal Mapping
+7.1In Section 2.3 we saw that a nonconstant linear mapping acts byrotating, magnify ing, and
+translating points in the complex plane. As a result, the angle between anytwo intersecting
+arcs in thez-plane is equal to the angle between the images of the arcs in thew-plane
+under a linear mapping. Complex mappings that have this angle-preserving propertyare
+calledconformal mappings. In this section we will formallydeﬁne and discuss conformal
+mappings. We show that anyanaly tic complex function is conformal at points where the
+derivative is nonzero. Consequently, all of the elementary functions studied in Chapter 4
+are conformal in some domainD. Later in this chapter we will see that conformal mappings
+have important applications to boundary-value problems involving Laplace’s equation.
+Conformal MappingSuppose thatw= f(z) is a complex mapping
+deﬁned in a domainD. The mapping is said to be conformal at a pointz0
+inDif it “preserves the angle” between anytwo curves intersecting atz0.
+To make this concept precise, assume thatC1 andC2 are smooth curves in
+Dthat intersect atz0 and have a ﬁxed orientation as described in Section
+5.1. Letz1(t) andz2(t) be parametrizations ofC1 andC2 such thatz1(t0)=
+z2(t0)= z0, and such that the orientations onC1 andC2 correspond to the
+increasing values of the parametert. BecauseC1 andC2 are smooth, the
+tangent vectorsz′
+1 = z′
+1(t0) andz′
+2 = z′
+2(t0) are both nonzero. We deﬁne the
+anglebetweenC1 andC2 to be the angleθin the interval [0,π] between
+the tangent vectorsz′
+1 andz′
+2. See Figure 7.1. Now suppose that under the
+complex mappingw= f(z) the curvesC1 andC2 in thez-plane are mapped
+onto the curvesC′
+1 andC′
+2 in thew-plane, respectively. BecauseC1 andC2
+intersect atz0, we must have thatC′
+1 andC′
+2 intersect atf(z0). IfC′
+1 andC′
+2
+are smooth, then the angle betweenC′
+1 andC′
+2 atf(z0) is similarlydeﬁned to
+be the angleφin the interval [0,π] between similarlydeﬁned tangent vectors
+w′
+1 andw′
+2. We saythat the anglesθandφareequal in magnitudeifθ= φ.
+y
+x
+C2
+C1
+z0
+z ′2
+z ′1
+θ
+Figure 7.1 The angleθ betweenC 1
+andC 2
+In thez-plane, the vectorz′
+1, whose initial point isz0, can be rotated
+through the angleθonto the vectorz′
+2. This rotation in thez-plane can be
+either in the counterclockwise or the clockwise direction. Similarly, in thew-
+plane, the vectorw′
+1, whose initial point isf(z0), can be rotated in either the
+counterclockwise or clockwise direction through an angle ofφonto the vector
+w′
+2. If the rotation in thez-plane is the same direction as the rotation in the
+w-plane, we saythat the anglesθandφareequal in sense. The following
+example illustrates these concepts.
+x
+u
+v
+y
+C1
+C2
+z ′1
+C′1
+C′2
+w′2
+w′1
+z ′2
+π /4
+π /4
+2 1.5 1 0.5
+2 1.5 1 0.5
+2.5
+2
+1.5
+1
+0.5
+–0.5
+–1
+–1.5
+–2
+–2.5
+z0
+w = z_
+(a) Curves C1 and C2 in the z-plane
+_(b) Images of the curves in (a) under w = z
+Figure 7.2 Figure for Example 1
+EXAMPLE 1Magnitude and Sense of Angles
+The smooth curvesC1 andC2 shown in Figure 7.2(a) are given byz1(t)=
+t+
+(
+2t− t2)
+iandz2(t)= t+ 1
+2
+(
+t2 +1
+)
+i,0≤ t≤ 2, respectively. These
+curves intersect at the pointz0 = z1(1) =z2( 1 )=1+i. The tangent vectors
+atz0 arez′
+1 = z′
+1(1) = 1 andz′
+2 = z′
+2(1) = 1 +i. Furthermore, from Figure
+7.2(a) we see that the angle betweenC1 andC2 atz0 isθ= π/4. Under
+the complex mappingw=¯z, the images ofC1 andC2 are the curvesC′
+1 and
+C′
+2, respectively, shown in Figure 7.2(b). The image curves are parametrized
+--- PAGE 3 ---
+7.1 Conformal Mapping 391
+byw1(t)= t−
+(
+2t− t2)
+iandw2(t)= t− 1
+2
+(
+t2 +1
+)
+i,0≤ t≤ 2, and
+intersect at the pointw0 = f(z0)=1 − i. In addition, atw0 we have the
+tangent vectorsw′
+1 = w′
+1(1) = 1 andw′
+2 = w′
+2(1) = 1 − itoC′
+1 andC′
+2,
+respectively. Inspection of Figure 7.2(b) indicates that the angle between
+C′
+1 andC′
+2 atw0 isφ= π/4. Therefore, the anglesθandφare equal in
+magnitude. However, because the rotation throughπ/4 of the vectorz′
+1 onto
+z′
+2 must becounterclockwise, whereas the rotation throughπ/4o fw′
+1 ontow′
+2
+must beclockwise, we conclude thatθandφare not equal in sense.
+With the terminologyregarding the magnitude and sense of an angle
+established, we are now in a position to give the following precise deﬁnition
+of a conformal mapping.
+Definition 7.1 Conformal Mapping
+Letw= f(z) be a complex mapping deﬁned in a domainDand letz0 be
+ap o i n ti nD. Then we saythatw= f(z)i sconformalatz0 if for every
+pair of smooth oriented curvesC1 andC2 inDintersecting atz0 the angle
+betweenC1 andC2 atz0 is equal to the angle between the image curves
+C′
+1 andC′
+2 atf(z0) in both magnitude and sense.
+We will also use the termconformal mappingto refer to a complex
+mappingw= f(z) that is conformal atz0. In addition, ifw= f(z) maps a
+domainDonto a domainD′ and ifw= f(z) is conformal at everypoint in
+D, then we callw= f(z) a conformal mapping ofDontoD′. From Section
+2.3 it should be intuitivelyclear that iff(z)= az+ bis a linear function with
+a̸= 0, thenw= f(z) is conformal at everypoint in the complex plane. In
+Example 1 we have shown that thew=¯zis not a conformal mapping at the
+pointz0 =1+ ibecause the anglesθandφare equal in magnitude but not
+in sense.
+Angles between CurvesDeﬁnition 7.1 is seldom used directlyto
+show that a complex mapping is conformal. Rather, we will prove in The-
+orem 7.1 that an analytic functionfis a conformal mapping atzwhenever
+f
+′(z)̸= 0. In order to prove this result we need a procedure to determine
+the angle (in both magnitude and sense) between two smooth curves in the
+complex plane. For our purposes, the most eﬃcient wayto do this is to use
+the argument of a complex number.
+Let us again adopt the notation of Figure 7.1, whereC
+1 andC2 are
+smooth curves parametrized byz1(t) andz2(t), respectively, which intersect
+atz1(t0)= z2(t0)= z0. The requirement thatC1 is smooth ensures that
+the tangent vector toC1 atz0, given byz′
+1 = z′
+1(t0), is nonzero, and so
+arg(z′
+1) is deﬁned and represents an angle between the position vectorz′
+1
+and the positivex-axis. Similarly, the tangent vector toC2 atz0, given by
+z′
+2 = z′
+2(t0), is nonzero, and arg(z′
+2) represents an angle between the position
+--- PAGE 4 ---
+392 Chapter 7 Conformal Mappings
+vectorz′
+2 and the positivex-axis. Inspection of Figure 7.3 shows that the
+angleθbetweenC1 andC2 atz0 is the value of
+arg(z′
+2)− arg(z′
+1) (1)
+x
+y
+C2
+C1
+z ′2
+arg (z ′2) – arg (z′1)
+z ′2 z ′1
+z ′1
+z0
+Figure 7.3 The angle betweenC 1
+andC 2
+in the interval [0,π], provided that we can rotatez′
+1 counterclockwise about
+0 through the angleθontoz′
+2. In the case that a clockwise rotation is needed,
+then−θis the value of (1) in the interval (−π,0). In either case, we see that
+(1) gives both the magnitude and sense of the angle betweenC1 andC2 at
+z0. As an example of this discussion, consider the curvesC1,C2, and their
+images under the complex mappingw=¯zin Example 1. Notice that the
+unique value of
+arg(z′
+2)− arg(z′
+1) = arg(1+i)− arg(1) =π
+4 +2 nπ,
+n=0 ,±1,±2,..., that lies in the interval [0,π]i sπ/4. Therefore, the angle
+betweenC1 andC2 isθ= π/4, and the rotation ofz′
+1 ontoz′
+2 is counterclock-
+wise. On the other hand,
+arg(w′
+2)− arg(w′
+2) = arg(1− i)− arg(1) =−π
+4 +2 nπ,
+n=0 ,±1,±2,..., has no value in [0,π], but has the unique value−π/4 in
+the interval (−π,0). Thus, the angle betweenC′
+1 andC′
+2 isφ= π/4, and the
+rotation ofw′
+1 ontow′
+2 is clockwise.
+Analytic FunctionsWe will now use (1) to prove the following
+theorem.
+Theorem 7.1 Conformal Mapping
+Iffis an analytic function in a domainDcontainingz0, and iff′(z0)̸=0 ,
+thenw= f(z) is a conformal mapping atz0.
+ProofSuppose thatfis analytic in a domainDcontainingz0, and that
+f′(z0)̸= 0. LetC1 andC2 be two smooth curves inDparametrized byz1(t)
+andz2(t), respectively, withz1(t0)= z2(t0)= z0. In addition, assume that
+w= f(z) maps the curvesC1 andC2 onto the curvesC′
+1 andC′
+2. We wish
+to show that the angleθbetweenC1 andC2 atz0 is equal to the angleφ
+betweenC′
+1 andC′
+2 atf(z0) in both magnitude and sense. We mayassume,
+byrenumberingC1 andC2 if necessary, thatz′
+1 = z′
+1(t0) can be rotated
+counterclockwise about 0 through the angleθontoz′
+2 = z′
+2(t0). Thus, by(1),
+the angleθis the unique value of arg(z′
+2)− arg(z′
+1) in the interval [0,π].
+From (11) of Section 2.2,C′
+1 andC′
+2 are parametrized byw1(t)= f(z1(t))
+andw2(t)= f(z2(t)). In order to compute the tangent vectorsw′
+1 andw′
+2 to
+C′
+1 andC′
+2 atf(z0)= f(z1(t0)) =f(z2(t0)) we use the chain rule
+w′
+1 = w′
+1(t0)= f′(z1(t0))·z′
+1(t0)= f′(z0)·z′
+1,
+and w′
+2 = w′
+2(t0)= f′(z2(t0))·z′
+2(t0)= f′(z0)·z′
+2.
+--- PAGE 5 ---
+7.1 Conformal Mapping 393
+SinceC1 andC2 are smooth, bothz′
+1 andz′
+2 are nonzero. Furthermore, by
+our hypothesis, we havef′(z0)̸= 0. Therefore, bothw′
+1 andw′
+2 are nonzero,
+and the angleφbetweenC′
+1 andC′
+2 atf(z0) is a value of
+arg(w′
+2)− arg(w′
+1) = arg(f′(z0)·z′
+2)− arg(f′(z0)·z′
+1).
+Now bytwo applications of (8) from Section 1.3 we obtain:
+arg(f′(z0)·z′
+2)− arg(f′(z0)·z′
+1) = arg(f′(z0))+arg(z′
+2)− [arg(f′(z0))+arg(z′
+1)]
+= arg(z′
+2)− arg(z′
+1).
+This expression has a unique value in [0,π], namelyθ. Therefore,θ= φ
+in both magnitude and sense, and consequentlythew= f(z) is a conformal
+mapping atz0. ✎
+In light of Theorem 7.1 it is relativelyeasyto determine where an analy tic
+function is a conformal mapping.
+EXAMPLE 2Conformal Mappings
+( a) ByTheorem 7.1 the entire functionf(z)= ez is conformal at everypoint
+in the complex plane sincef′(z)= ez ̸= 0 for allzinC.
+( b) ByTheorem 7.1 the entire functiong(z)= z2 is conformal at all points
+z,z̸= 0, sinceg′(z)=2 z̸=0 .
+Critical PointsThe functiong(z)= z2 in part (b) of Example 2 is
+not a conformal mapping atz0 = 0. The reason for this is thatg′( 0 )=0 .I n
+general, if a complex functionfis analytic at a pointz0 and iff′(z0)=0 ,
+thenz0 is called acritical pointoff. Although it does not follow from
+Theorem 7.1, it is true that analytic functions are not conformal at critical
+points. More speciﬁcally, we can show that the following magniﬁcation of
+angles occurs at a critical point.
+Theorem 7.2 Angle Magniﬁcation at a Critical Point
+Letfbe analytic at the critical pointz0.I fn>1 is an integer such that
+f′(z0)= f′′(z0)= ...= f(n− 1)(z0)=0a n df(n)(z0)̸= 0, then the angle
+between anytwo smooth curves intersecting atz0 is increased bya factor
+ofnbythe complex mappingw= f(z). In particular,w= f(z) is not a
+conformal mapping atz0.
+A proof of Theorem 7.2 is sketched in Problem 22 of Exercises 7.1.
+--- PAGE 6 ---
+394 Chapter 7 Conformal Mappings
+EXAMPLE 3Conformal Mappings
+Find all points where the mappingf(z) = sinzis conformal.
+SolutionThe functionf(z) = sinzis entire, and from Section 4.3 we have
+thatf′(z) = cosz. In (21) of Section 4.3 we found that cosz= 0 if and onlyif
+z=( 2n+1)π/2,n=0 ,±1,±2,..., and so each of these points is a critical
+point off. Therefore, byTheorem 7.1,w= sinzis a conformal mapping at
+zfor allz̸=( 2n+1)π/2,n=0 ,±1,±2,.... Furthermore, byTheorem
+7.2,w= sinzis not a conformal mapping atzifz=( 2n+1)π/2,n=0 ,±1,
+±2,.... Becausef′′(z)= − sinz= ±1 at the critical points off, Theorem
+7.2 also indicates that angles at these points are increased bya factor of 2.
+The angle magniﬁcation at a critical point of the complex mappingw=
+sinzin Example 3 can be seen directly. For example, consider the critical
+pointz= π/2. Underw= sinz, the vertical rayC1 in thez-plane emanating
+fromz= π/2 and given byz= π/2+ iy,y≥ 0, is mapped onto the set in
+thew-plane given byw= sin(π/2)coshy+ icos(π/2)sinhy,y≥ 0. Because
+sin(π/2) = 1 and cos(π/2) = 0, the image can be rewritten asw= coshy,
+y≥ 0. In words, the imageC′
+1 is a rayin thew-plane emanating fromw=1
+and containing the pointw= 2. A similar analysis reveals that the image
+C′
+2 of the vertical rayC2 given byz= π/2+ iy,y≤ 0, is also the ray
+emanating fromw= 1 and containing the pointw= 2. That is,C′
+1 = C′
+2.
+The angle between the raysC1 andC2 in thez-plane isπ, and so Theorem
+7.2 implies that the angle between their images in thew-plane is increased to
+2π, or, equivalently, 0. This agrees with the observation thatC′
+1 = C′
+2. See
+Figure 7.4.
+y
+x
+v
+u
+C1
+C2
+π
+π
+π
+6– — π
+6— π
+3— π
+2—π
+3– —π
+2– —
+2
+1.5
+1
+0.5
+–0.5
+–1
+–1.5
+–2
+(a) The angle between the vertical rays in 
+      the z-plane is 
+(b) The angle between the images of the
+      rays in (a) is 2 π or 0
+w = sin z
+2
+1
+1–1
+–1
+–2
+–2–32 3
+C ′1 = C′2
+Figure 7.4 The mappingw = sinz
+Conformal Mappings Using TablesIn Section 4.5 we intro-
+duced a method of solving a particular type of boundary-value problem using
+complex mappings. Speciﬁcally, we saw that a Dirichlet problem in a com-
+plicated domainDcan be solved byﬁnding ananalyticmapping ofDonto
+a simpler domainD
+′ in which the associated Dirichlet problem has already
+been solved. At the end of this chapter we will see a similar application of
+conformalmappings to a generalized type of Dirichlet problem. In these ap-
+plications our method for producing a solution in a domainDwill ﬁrst require
+that we ﬁnd aconformalmapping ofDonto a simpler domainD
+′ in which
+the associated boundary-value problem has a solution. An important aid in
+this task is the table of conformal mappings given in Appendix III.Note
+The mappings in Appendix III have been categorized as elementarymap-
+pings (E-1 to E-9), mappings of half-planes (H-1 to H-6), mappings onto
+circular regions (C-1 to C-5), and miscellaneous mappings (M-1 to M-10).
+Manyproperties of the mappings appearing in this table have been derived
+in Chapter 2 and Chapter 4, whereas other properties will be derived in the
+coming sections. When using the table, bear in mind that in some cases the
+desired mapping will appear as a single entryin the table, whereas in other
+cases one or more successive mappings from the table maybe required. You
+should also note that the mappings in Appendix III are, in general, onlycon-
+--- PAGE 7 ---
+7.1 Conformal Mapping 395
+formal mappings of the interiors of the regions shown. For example, it is clear
+that the complex mapping shown in EntryE-4 is not conformal atB=0 .A s
+a general rule, when we refer to a conformal mapping of a regionRonto a
+regionR′ we are requiring onlythat the mapping be conformal at the points
+in the interior ofR.
+EXAMPLE 4Using a Table of Conformal Mappings
+Use Appendix III to ﬁnd a conformal mapping from the inﬁnite horizontal
+strip 0≤ y≤ 2,−∞ <x<∞ , onto the upper half-planev≥ 0. Under this
+mapping, what is the image of the negativex-axis?
+SolutionEntryH-2 in Appendix III gives a mapping from an inﬁnite hori-
+zontal strip onto the upper half-plane. Settinga= 2, we obtain the desired
+mappingw= e
+πz/2. From H-2 we also see that the points labeledDand
+E= 0 on the negativex-axis in thez-plane are mapped onto the pointsD′
+andE′ = 1 on the positiveu-axis in thew-plane. Noting the relative posi-
+tions of these points, we conclude that the negativex-axis is mapped onto the
+interval (0,1] in theu-axis byw= eπz/2. See Figure 7.5. This observation
+can also be veriﬁed using parametrizations.
+(a) The horizontal strip 0 ≤ y ≤ 2
+(b) Image of the strip in (a)
+w = e
+y
+x
+v
+u
+A C
+F E
+B2i
+D
+D′ E′ F ′C′B′A′
+z/2π
+–11
+Figure 7.5 Figure for Example 4
+EXAMPLE 5Using a Table of Conformal Mappings
+Use Appendix III to ﬁnd a conformal mapping from the inﬁnite horizontal
+strip 0≤ y≤ 2,−∞ <x<∞ , onto the unit disk|w|≤ 1. Under this
+mapping, what is the image of the negativex-axis?
+SolutionAppendix III does not have an entrythat maps an inﬁnite horizon-
+tal strip onto the unit disk. Therefore, we construct the a conformal mapping
+that does this bycomposing two mappings in the table. In Example 4 we
+found that the inﬁnite horizontal strip 0≤ y≤ 2,−∞ <x<∞ , is mapped
+onto the upper half-plane byf(z)= e
+πz/2. In addition, from entryC-4 we
+see that the upper half-plane is mapped onto the unit disk byg(z)= i− z
+i+ z.
+The composition of these two functions
+w= g(f(z)) =i− eπz/2
+i+ eπz/2
+(a) Image of the strip 0 ≤ y ≤ 2 under
+(b) Image of the half-plane in (a) under
+w = e
+w = 
+y
+v
+u
+x
+CDB A
+D′
+C′
+B′
+A′
+z/2π
+–11
+1
+i – z
+i + z——
+w = i – z
+i + z——
+Figure 7.6 Figure for Example 5
+therefore maps the strip 0≤ y≤ 2,−∞ <x<∞ , onto the unit disk|w|≤1.
+Under the ﬁrst of these successive mappings, the negative real axis is mapped
+onto the interval (0,1] in the real axis as was noted in Example 4. Inspection
+ofentryC-4(orFigure7.6)revealsthattheintervalfrom0toC= 1ismapped
+onto the circular arc from 1 toC′ = ion the unit circle|w|= 1. Therefore,
+we conclude that the negative real axis is mapped onto the circular arc from
+1t oion the unit circle underw= i− eπz/2
+i+ eπz/2.
+--- PAGE 8 ---
+396 Chapter 7 Conformal Mappings
+Remarks
+In the foregoing discussion regarding conformal mappings using tables we
+alludedtothefactthatinmanyapplicationsoneneedstoﬁndaconformal
+mapping of a domainDonto a simpler domainD
+′. A natural question to
+ask is whether such a mapping always exists. That is, given domainsD
+andD′, doesthereexistaconformalmappingofDontoD′? Ananswerto
+this question was given bythe mathematician Bernhard Riemann (1826–
+1866). Although there was a gap in Riemann’s original proof (which was
+subsequentlyﬁlled), this amazing theorem still bears his name.
+The Riemann Mapping Theorem Let D be a simply con-
+necteddomaininthez-planesuchthatDisnotallofC.Then
+there exists a one-to-one conformal mappingw= f(z)from
+Donto the open unit disk|w|<1 in the w-plane.
+It is not immediatelyclear that this theorem answers our question of the
+existence of a mapping fromDontoD
+′. To see that it does, we ﬁrst
+use the theorem to ﬁnd a conformal mappingffromDonto the open
+unit disk|w|<1. We then applythe theorem a second time to obtain a
+mappinggfromD′ onto the open unit disk|w|<1. Since the theorem
+ensures thatgis one-to-one, it has a well deﬁned inverse functiong− 1
+that maps the open unit disk ontoD′. The desired mapping fromDonto
+D′ is then given bythe compositionw= g− 1 ◦f(z).
+Riemann’s theorem is of critical theoretical importance, but its proof
+is notconstructive. This means that the theorem establishes theexistence
+of the mappingfbut oﬀers no method of actuallyﬁnding a formula forf.
+A proof of the Riemann mapping theorem is well beyond the scope of this
+text. The interested reader is encouraged to refer to the textComplex
+AnalysisbyLars V. Alfors, McGraw-Hill, 1979.
+EXERCISES 7.1Answers to selected odd-numbered problems begin on page ANS-21.
+InProblems1–6,determinewherethecomplexmappingw= f(z)isconformal.
+1. f(z)= z3 −3z+1 2. f(z)= z2 +2 iz−3
+3. f(z)= z− e− z +1 − i 4. f(z)= zez2− 2
+5. f(z)=tanz 6. f(z)= z−Ln(z+ i)
+InProblems7–10,proceedasinExample1toshowthatthegivenfunctionfisnot
+conformalattheindicatedpoint.
+7. f(z)=( z− i)3; z0 = i 8. f(z)=( iz−3)2; z0 = −3i
+9. f(z)= ez2
+; z0 =0 10. the principle square root function
+f(z)= z1/2; z0 =0
+--- PAGE 9 ---
+7.1 Conformal Mapping 397
+InProblems11–16,useAppendixIIItoﬁndaconformalmappingoftheregionR
+shownincolorontotheregionR′ showningray. Thenﬁndtheimageofthecurve
+fromAtoB.
+11. y v
+xu
+A
+B 2
+RR ′
+Figure 7.7 Figure for Problem 11
+12. y v
+x
+A B
+R
+R′
+u
+iπ
+1
+Figure 7.8 Figure for Problem 12
+13. y v
+xA
+B
+R R′
+u/4π
+1
+Figure 7.9 Figure for Problem 13
+14.
+R′
+v
+u
+i
+y
+xA
+B
+R
+1
+Figure 7.10 Figure for Problem 14
+--- PAGE 10 ---
+398 Chapter 7 Conformal Mappings
+15.
+R′
+v
+u
+R
+y
+x
+i
+A
+B
+Figure 7.11 Figure for Problem 15
+16.
+R′
+v
+u
+R
+y
+xAB
+–11
+Figure 7.12 Figure for Problem 16
+Focus on Concepts
+17. Whereisthemappingw=¯zconformal? Justifyyouranswer.
+18. Supposew= f(z)isaconformalmappingateverypointinthecomplexplane.
+Whereisthemappingw= f(¯z)conformal? Justifyyouranswer.
+19. Supposethatw= f(z)isaconformalmappingateverypointinthecomplex
+plane. Whereisthemappingw= ef(z) conformal?
+20. ThisproblemconcernsdeterminingtheanglebetweentwocurvesC1 andC2 at
+apointwhereone(orboth)ofthecurveshasazerotangentvector.
+( a)Assume that two curvesC1 andC2 are parametrized byz1(t) andz2(t),
+respectively,andthatthecurvesintersectatz1(t0)= z2(t0)= z0. Assume
+furtherthatbothz1 andz2 arediﬀerentiablefunctionsoft, andletz′
+1 =
+z′
+1(t0)andz′
+2 = z′
+2(t0). Explainwhyarg(z′
+2)−arg(z′
+1) does not represent
+theanglebetweenC1 andC2 ifeitherz′
+1 orz′
+2 iszero.
+( b)Explainwhy lim
+t→ t0
+[arg(z2(t)− z0)]−lim
+t→ t0
+[arg(z1(t)− z0)]doesrepresentthe
+anglebetweenC1 andC2 regardlessofwhetherz′
+1 orz′
+2 iszero.
+( c)Use part (b) to determine the angle between the curves parametrized by
+z1(t)= t+ it2 andz2(t)= t2 + it2, −1 ≤ t≤ 1, atz0 = 0. Does this
+computationmatchyourintuition?
+21. On page 393 we showed that the functionf(z)= z2 was not conformal at
+z0 =0 because theangle between the positivex-andy-axes was doubled. In
+this problem you will show thatevery pair of smooth curves intersecting at
+z0 = 0 has the angle between them doubled byf(z)= z2. This is a very
+speciﬁccaseofTheorem7.2.
+( a)SupposethatthesmoothcurvesC1 andC2 areparametrizedbyz1(t)and
+z2(t) withz1(t0)= z2(t0)=0 .Ifz′
+1 = z′
+1(t0) andz′
+2 = z′
+2(t0) are both
+--- PAGE 11 ---
+7.2 Linear Fractional Transformations 399
+nonzero,thentheangleθbetweenC1 andC2 isgivenby(1). Explainwhy
+φ=arg(f′(0) ·z′
+2) −arg(f′(0) ·z′
+1) does not representtheanglebetween
+the imagesC′
+1 andC′
+2 ofC1 andC2 under the mappingw= f(z)= z2,
+respectively.
+( b)Use Problem 20 to write down an expression involving arguments that
+does represent the angleφbetweenC′
+1 andC′
+2.[Hint: C′
+1 andC′
+2 are
+parametrized byw1(t)= f(z1(t) )=[z1(t)]2 andw2(t)= f(z2(t)) =
+[z2(t)]2.]
+( c)Use(8)ofSection1.3toshowthatyourexpressionforφfrom(b)isequal
+to2θ.
+22. InthisproblemyouwillproveTheorem7.2. Letfbeananalyticfunctionat
+thepointz0 suchthatf′(z0)= f′′(z0)= ...= f(n − 1)(z0)=0andf(n )(z0) ̸=0
+forsomen>1.
+( a)Explainwhyfcanbewrittenas
+f(z)= f(z0)+ f(n )(z0)
+n! (z− z0)n (1+ g(z)),
+wheregisananalyticfunctionatz0 andg(z0)=0.
+( b)Use(a)andProblem20toshowthattheanglebetweentwosmoothcurves
+intersectingatz
+0 isincreasedbyafactorofnbythemappingw= f(z).
+7.2 Linear Fractional Transformations
+7.2In manyapplications that involve boundary -value problems associated with Laplace’s equa-
+tion, it is necessaryto ﬁnd a conformal mapping that maps a disk onto the half-planev≥ 0.
+Such a mapping would have to map the circular boundaryof the disk to the boundaryline
+of the half-plane. An important class of elementaryconformal mappings that map circles
+to lines (and vice versa) are the linear fractional transformations. In this section we will
+deﬁne and studythis special class of mappings.
+LinearFractionalTransformationsIn Section 2.3 we examined
+complex linear mappingsw= az+ bwhereaandbare complex constants and
+a̸= 0. Recall that such mappings act byrotating, magnify ing, and translat-
+ing points in the complex plane. We then discussed the complex reciprocal
+mappingw=1 /zin Section 2.5. An important propertyof the reciprocal
+mapping, when deﬁned on the extended complex plane, is that it maps cer-
+tainlinestocirclesandcertaincirclestolines. Amoregeneraltypeofmapping
+that has similar properties is a linear fractional transformation deﬁned next.
+--- PAGE 12 ---
+400 Chapter 7 Conformal Mappings
+Definition 7.2 Linear Fractional Transformation
+Ifa,b,c, anddare complex constants withad−bc̸= 0, then the complex
+function deﬁned by:
+T(z)= az+ b
+cz+ d (1)
+is called alinear fractional transformation.
+Linear fractional transformations are also calledM¨ obius transforma-
+tionsorbilinear transformations.I fc= 0, then the transformationT
+given by(1) is a linear mapping, and so a linear mapping is a special case of
+a linear fractional transformation. Ifc̸= 0, then we can write
+T(z)= az+ b
+cz+ d= bc− ad
+c
+1
+cz+ d+ a
+c. (2)
+SettingA= bc− ad
+c andB= a
+c, we see that the linear transformationTin
+(2) can be written as the compositionT(z)= f◦g◦h(z), wheref(z)= Az+ B
+andh(z)= cz+darelinearfunctionsandg(z)=1 /zisthereciprocalfunction.
+The domain of a linear fractional transformationTgiven by(1) is the set
+of all complexzsuch thatz̸= −d/c. Furthermore, since
+T′(z)= ad− bc
+(cz+ d)2
+it follows from Theorem 7.1 and the requirement thatad− bc̸= 0 that linear
+fractional transformations are conformal on their domains. The requirement
+thatad−bc̸= 0 also ensures that theTis a one-to-one function on its domain.
+See Problem 27 in Exercises 7.2.
+Observe that ifc̸= 0, then (1) can be written as
+T(z)= az+ b
+cz+ d= (a/c)(z+ b/a)
+z+ d/c = φ(z)
+z− (−d/c),
+whereφ(z)=( a/c)(z+ b/a). Becausead−bc̸= 0, we have thatφ(−d/c)̸=0 ,
+and so from Theorem 6.12 of Section 6.4 it follows that the pointz= −d/cis
+a simple pole ofT.
+Whenc̸= 0, that is, whenTis not a linear function, it is often helpful to
+viewTas a mapping of the extended complex plane. SinceTis deﬁned for
+all points in the extended plane except the polez= −d/cand the ideal point
+∞ , we need onlyextend the deﬁnition ofTto include these points. We make
+this deﬁnition byconsidering the limit ofTasztends to the pole and asz
+tends to the ideal point. Because
+lim
+z→− d/c
+cz+ d
+az+ b= 0
+a(−d/c)+ b= 0
+−ad+ bc=0,
+it follows from (25) of Section 2.6 that
+lim
+z→− d/c
+az+ b
+cz+ d= ∞ .
+--- PAGE 13 ---
+7.2 Linear Fractional Transformations 401
+Moreover, from (24) of Section 2.6 we have that
+lim
+z→∞
+az+ b
+cz+ d= lim
+z→ 0
+a/z+ b
+c/z+ d= lim
+z→ 0
+a+ zb
+c+ zd= a
+c.
+The values of these two limits indicate how to extend the deﬁnition ofT.I n
+particular, ifc̸= 0, then we regardTas a one-to-one mapping of the extended
+complex plane deﬁned by:
+T(z)=
+
+
+
+
+
+
+
+
+
+
+
+
+
+az+ b
+cz+ d,z̸= −d
+c,z̸= ∞
+∞ ,z = −d
+c
+a
+c,z = ∞ .
+(3)
+A special case of (3) corresponding toa=0 ,b=1 ,c= 1, andd=0
+is the reciprocal function deﬁned on the extended complex plane. Refer to
+Deﬁnition 2.7.
+EXAMPLE 1A Linear Fractional Transformation
+Find the images of the points 0, 1 +i,i, and∞ under the linear fractional
+transformationT(z)=( 2z+1)/(z− i).
+SolutionForz= 0 andz=1+ iwe have:
+T(0) =2(0)+1
+0− i = 1
+−i= iandT(1+ i)= 2(1+ i)+1
+(1+ i)− i= 3+2 i
+1 =3+2 i.
+Identifyinga=2 ,b=1 ,c= 1, andd= −iin (3), we also have:
+T(i)= T
+(
+−d
+c
+)
+= ∞ andT(∞ )= a
+c=2 .
+Circle-Preserving PropertyIn the discussion preceding Exam-
+ple 1 we indicated that the reciprocal function 1/zis a special case of a linear
+fractional transformation. We saw two interesting properties of the recipro-
+cal mapping in Section 2.7. First, the image of a circle centered at the pole
+z= 0 of 1/zis a circle, and second, the image of a circle with center on the
+x-o ry-axis and containing the polez= 0 is a vertical or horizontal line.
+Linear fractional transformations have a similar mapping property. This is
+the content of the following theorem.
+--- PAGE 14 ---
+402 Chapter 7 Conformal Mappings
+Theorem 7.3 Circle-Preserving Property
+IfCis a circle in thez-plane and ifTis a linear fractional transformation
+given by(3), then the image ofCunderTis either a circle or a line in
+the extendedw-plane. The image is a line if and onlyifc̸= 0 and the
+polez= −d/cis on the circleC.
+ProofWhenc=0 ,Tis a linear function, and we saw in Section 2.3 that
+linear functions map circles onto circles. It remains to be seen that the the-
+orem still holds forc̸= 0. Assume then thatc̸= 0. From (2) we have that
+T(z)= f◦g◦h(z), wheref(z)= Az+ Bandh(z)= cz+ dare linear functions
+andg(z)=1 /zis the reciprocal function. Observe that sincehis a linear
+mapping, the imageC′ of the circleCunderhis a circle. We now examine
+two cases:
+Case 1Assume that the originw= 0 is on the circleC′. This occurs if and
+onlyif the polez= −d/cis on the circleC. From the Remarks in Section
+2.5, ifw= 0 is onC′, then the image ofC′ underg(z)=1 /zis either a
+horizontal or vertical lineL. Furthermore, becausefis a linear function, the
+image of the lineLunderfis also a line. Thus, we have shown that if the
+polez= −d/cis on the circleC, then the image ofCunderTis a line.
+Case2Assume that the pointw= 0 is not onC′. That is, the polez= −d/c
+is not on the circleC. LetC′ be the circle given by|w− w0|= ρ. If we set
+ξ= f(w)=1 /wandξ0 = f(w0)=1 /w0, then for anypointwonC′ we have
+|ξ− ξ0|=
+⏐⏐
+⏐
+⏐
+1
+w− 1
+w0
+⏐
+⏐
+⏐
+⏐ = |w− w
+0|
+|w||w0|= ρ|ξ0||ξ|. (4)
+It can be shown that the set of points satisfying the equation
+|ξ− a|= λ|ξ− b| (5)
+is a line ifλ= 1 and is a circle ifλ>0 andλ̸= 1. See Problem 28 in
+Exercises 7.2. Thus, with the identiﬁcationsa= ξ0,b= 0, andλ= ρ|ξ0|we
+see that (4) can be put into the form (5). Sincew= 0 is not onC′, we have
+|w0| ̸= ρ, or, equivalently,λ= ρ|ξ0| ̸= 1. This implies that the set of points
+given by(4) is a circle. Finally , sincefis a linear function, the image of this
+circle underfis again a circle, and so we conclude that the image ofCunder
+Tis a circle. ✎
+The keyobservation in the foregoing proof was that a linear fractional
+transformation (1) can be written as a composition of the reciprocal function
+and two linear functions as shown in (2). In Problem 27 of Exercises 2.5 you
+were asked to show that the image of anylineLunder the reciprocal mapping
+--- PAGE 15 ---
+7.2 Linear Fractional Transformations 403
+w=1 /zis a line or a circle. Therefore, using similar reasoning, we can also
+show:
+Mapping Lines to Circles withT(z)
+IfTis a linear fractional transformation given by(3), then the image of
+a lineLunderTis either a line or a circle. The image is a circle if and
+onlyifc̸= 0 and the polez= −d/cis not on the lineL.
+EXAMPLE 2Image of a Circle
+Find the image of the unit circle|z|= 1 under the linear fractional transfor-
+mationT(z)=( z+2)/(z− 1). What is the image of the interior|z|<1o f
+this circle?
+SolutionThe pole ofTisz= 1 and this point is on the unit circle|z|=1 .
+Thus, from Theorem 7.3 we conclude that the image of the unit circle is a
+line. Since the image is a line, it is determined byanytwo points. Because
+T(−1) =−
+1
+2 andT(i)= − 1
+2 − 3
+2i, weseethattheimageisthelineu= − 1
+2.T o
+answerthesecondquestionweﬁrstnotethatalinearfractionaltransformation
+is a rational function, and so it is continuous on its domain. As a consequence,
+the image of the interior|z|<1 of the unit circle is either the half-plane
+u<−
+1
+2 or the half-planeu>− 1
+2. Usingz= 0 as atest point, we ﬁnd
+thatT(0) =−2, which is to the left of the lineu= − 1
+2, and so the image is
+the half-planeu<− 1
+2. This mapping is illustrated in Figure 7.13. The circle
+|z|= 1 is shown in color in Figure 7.13(a) and its imageu= − 1
+2 is shown in
+black in Figure 7.13(b).
+C′
+v
+u
+y
+x
+C
+1
+w = z + 2
+z – 1——
+(a) The unit circle |z| = 1
+(b) The image of the circle in (a)
+Figure 7.13 The linear
+fractional transformation
+T( z)=( z+2 ) /( z − 1)
+EXAMPLE 3Image of a Circle
+Find the image of the unit circle|z|= 2 under the linear fractional trans-
+formationT(z)=( z+2)/(z− 1). What is the image of the disk|z|≤ 2
+underT?
+SolutionIn this example the polez= 1 does not lie on the circle|z|= 2, and
+so Theorem 7.3 indicates that the image of|z|= 2 is a circleC′. To ﬁnd an
+algebraic description ofC′, we ﬁrst note that the circle|z|= 2 is symmetric
+with respect to thex-axis. That is, ifzis on the circle|z|= 2, then so is ¯z.
+Furthermore, we observe that for allz,
+T(¯z)= ¯z+2
+¯z− 1 = z+2
+z− 1 =
+(z+2
+z− 1
+)
+= T(z).
+Hence, ifzand ¯zare on the circle|z|= 2, then we must have that both
+w= T(z) and ¯w= T(z)= T(¯z) are on the circleC′. It follows thatC′
+--- PAGE 16 ---
+404 Chapter 7 Conformal Mappings
+is symmetric with respect to theu-axis. Sincez= 2 and−2 are on the
+circle|z|= 2, the two pointsT(2) = 4 andT(−2) = 0 are onC′. The
+symmetry ofC′ implies that 0 and 4 are endpoints of a diameter, and so
+C′ is the circle|w− 2 |=2 . Usingz= 0 as a test point, we ﬁnd that
+w= T(0) =−2, which is outside the circle|w− 2 |= 2. Therefore, the image
+of the interior of the circle|z|= 2 is the exterior of the circle|w− 2 |=2 .I n
+summary, the disk|z|≤ 2 shown in color in Figure 7.14(a) is mapped onto
+the region|w− 2 |≥2 shown in grayin Figure 7.14(b) bythe linear fractional
+transformationT(z)=( z+2)/(z− 1).
+C′
+v
+u
+y
+x
+C
+2
+2
+w = z + 2
+z – 1——
+(a) The circle |z| = 2
+(b) The image of the circle in (a)
+Figure 7.14 The linear
+fractional transformation
+T( z)=( z+2 ) /( z − 1)
+Linear Fractional Transformations as MatricesMatrices
+can be used to simplifymanyof the computations associated with linear
+fractional transformations. In order to do so, we associate the matrix
+A =
+
+ ab
+cd
+
+ (6)
+with the linear fractional transformation
+T(z)= az+ b
+cz+ d (7)
+The assignment in (6) is not unique because ifeis a nonzero complex number,
+then the linear fractional transformationT(z)=( az+ b)/(cz+ d) is also
+given byT(z)=( eaz+ eb)/(ecz+ ed). However, ife̸= 1, then the two
+matrices
+A =
+
+ ab
+cd
+
+ andB =
+
+ ea eb
+ec ed
+
+ = eA (8)
+are not equal even though theyrepresent the same linear fractional transfor-
+mation.
+It is easyto verifythat the compositionT
+2 ◦T1 of two linear fractional
+transformations
+T1(z)=( a1z+ b1)/(c1z+ d1) andT2(z)=( a2z+ b2)/(c2z+ d2)
+is represented bythe product of matrices
+
+ a
+2 b2
+c2 d2
+
+
+
+ a
+1 b1
+c1 d1
+
+ =
+
+ a
+2a1 + b2c1 a2b1 + b2d1
+c2a1 + d2c1 c2b1 + d2d1
+
+ . (9)
+In Problem 27 of Exercises 7.2 you are asked to ﬁnd the formula forT
+− 1(z)
+bysolving the equationw= T(z) forz. The formula for the inverse function
+T− 1(z) of a linear fractional transformationTof (7) is represented bythe
+inverse of the matrixA in (6)
+--- PAGE 17 ---
+7.2 Linear Fractional Transformations 405
+A − 1 =
+
+ ab
+cd
+
+
+− 1
+= 1
+ad− bc
+
+ d −b
+−ca
+
+ .
+Byidentify inge= 1
+ad− bcin (8) we can also representT− 1(z)b yt h e
+matrix
+
+ d −b
+−ca
+
+ .
+∗ (10)
+EXAMPLE 4Using Matrices
+SupposeS(z)=( z− i)/(iz− 1) andT(z)=( 2z− 1)/(z+2). Use matrices
+to ﬁndS− 1(T(z)).
+SolutionWe represent the linear fractional transformationsSandTbythe
+matrices
+
+ 1 −i
+i −1
+
+ and
+
+ 2 −1
+12
+
+,
+respectively. By (10), the transformationS
+− 1 is given by
+
+ −1 i
+−i 1
+
+,
+and so, from (9), the compositionS
+− 1 ◦Tis given by
+
+ −1 i
+−i 1
+
+
+
+ 2 −1
+12
+
+ =
+
+ −2+ i 1+2 i
+1 − 2i 2+ i
+
+
+Therefore,
+S
+− 1 (T(z)) =(−2+ i)z+1+2 i
+(1 − 2i)z+2+ i.
+Cross-RatioInapplicationsweoftenneedtoﬁndaconformalmapping
+from a domainDthat is bounded bycircles onto a domainD′ that is bounded
+bylines. Linearfractionaltransformationsareparticularlywell-suitedforsuch
+applications. However, in order to use them, we must determine a general
+∗You may recall that this matrix is called theadjoint matrixofA .
+--- PAGE 18 ---
+406 Chapter 7 Conformal Mappings
+method to construct a linear fractional transformationw= T(z), which maps
+three given distinct pointsz1,z2, andz3 on the boundaryofDto three given
+distinct pointsw1,w2, andw3 on the boundaryofD′. This is accomplished
+using thecross-ratio, which is deﬁned as follows.
+Recall, a circle is uniquely determined
+by three noncolinear points.
+Definition 7.3 Cross-Ratio
+Thecross-ratioof the complex numbersz,z1,z2, andz3 is the complex
+number
+z− z1
+z− z3
+z2 − z3
+z2 − z1
+. (11)
+When computing a cross-ratio, we must be careful with the order of the
+complex numbers. For example, you should verify that the cross-ratio of 0, 1,
+i, and 2 is3
+4 + 1
+4i, whereas the cross-ratio of 0,i,1 ,a n d2i s1
+4 − 1
+4i.
+We extend the concept of the cross-ratio to include points in the extended
+complex plane byusing the limit formula (24) from the Remarks in Section
+2.6. For example, the cross-ratio of, say,∞ ,z
+1,z2, andz3 is given bythe
+limit
+lim
+z→∞
+z− z1
+z− z3
+z2 − z3
+z2 − z1
+.
+Thefollowingtheoremillustratestheimportanceofcross-ratiosinthestudyof
+linear fractional transformations. In particular, we prove that the cross-ratio
+is invariant under a linear fractional transformation.
+Theorem 7.4 Cross-Ratios andLinear
+Fractional Transformations
+Ifw= T(z) is a linear fractional transformation that maps the distinct
+pointsz1,z2, andz3 onto the distinct pointsw1,w2, andw3, respectively,
+then
+z− z1
+z− z3
+z2 − z3
+z2 − z1
+= w− w1
+w− w3
+w2 − w3
+w2 − w1
+(12)
+for allz.
+ProofLetRbe the linear fractional transformation
+R(z)= z− z1
+z− z3
+z2 − z3
+z2 − z1
+, (13)
+and note thatR(z1)=0 ,R(z2) = 1, andR(z3)= ∞ . Consider also the linear
+fractional transformation
+S(z)= z− w1
+z− w3
+w2 − w3
+w2 − w1
+. (14)
+--- PAGE 19 ---
+7.2 Linear Fractional Transformations 407
+For the transformationS, we haveS(w1)=0 ,S(w2) = 1, andS(w3)= ∞ .
+Therefore, the pointsz1,z2, andz3 are mapped onto the pointsw1,w2, and
+w3, respectively, by the linear fractional transformationS− 1(R(z)). From this
+it follows that 0, 1, and∞ are mapped onto 0, 1, and∞ , respectively, by the
+compositionT− 1(S− 1(R(z))). Now it is a straightforward exercise to verify
+that the onlylinear fractional transformation that maps 0, 1, and∞ onto 0,
+1, and∞ is the identitymapping. See Problem 30 in Exercises 7.2. From this
+we conclude thatT− 1(S− 1(R(z))) =z, or, equivalently, thatR(z)= S(T(z)).
+Identifyingw= T(z), we have shown thatR(z)= S(w). Therefore, from (13)
+and (14) we have
+z− z1
+z− z3
+z2 − z3
+z2 − z1
+= w− w1
+w− w3
+w2 − w3
+w2 − w1
+.
+✎
+EXAMPLE 5Constructing a Linear Fractional Transformation
+Construct a linear fractional transformation that maps the points 1,i, and−1
+on the unit circle|z|= 1 onto the points−1, 0, 1 on the real axis. Determine
+the image of the interior|z|<1 under this transformation.
+Note: A linear fractional transfor-
+mation can have many equivalent forms.
+SolutionIdentifyingz1 =1 ,z2 = i,z3 = −1,w1 = −1,w2 = 0, andw3 =1 ,
+in (12) we see from Theorem 7.4 that the desired mappingw= T(z) must
+satisfy
+z− 1
+z− (−1)
+i− (−1)
+i− 1 = w− (−1)
+w− 1
+0− 1
+0− (−1).
+After solving forwand simplifying we obtain
+w= T(z)= z− i
+iz− 1.
+Using the test pointz= 0, we obtainT(0) =i. Therefore, the image of the
+interior|z|<1 is the upper half-planev>0.
+EXAMPLE 6Constructing a Linear Fractional Transformation
+Construct a linear fractional transformation that maps the points –i,1 ,a n d
+∞ on the liney= x−1 onto the points 1,i, and−1 on the unit circle|w|=1 .
+SolutionWe proceed as in Example 5. Using (24) of Section 2.6, we ﬁnd
+that the cross-ratio ofz,z1 = −i,z2 = 1, andz3 = ∞ is
+lim
+z3→∞
+z+ i
+z− z3
+1 − z3
+1+ i= lim
+z3→ 0
+z+ i
+z− 1/ z3
+1 − 1/ z3
+1+ i = lim
+z3→ 0
+z+ i
+zz3 − 1
+z3 − 1
+1+ i= z+ i
+1+ i.
+--- PAGE 20 ---
+408 Chapter 7 Conformal Mappings
+Now from (12) of Theorem 7.4 withw1 =1 ,w2 = i, andw3 = −1, the desired
+mappingw= T(z) must satisfy
+z+ i
+1+ i= w− 1
+w+1
+i+1
+i− 1.
+After solving forwand simplifying we obtain
+w= T(z)= z+1
+−z+1 − 2i.
+EXERCISES 7.2Answers to selected odd-numbered problems begin on page ANS-22.
+InProblems1–4,ﬁndtheimagesofthepoints0,1,i,and∞ underthegivenlinear
+fractionaltransformationT.
+1. T(z)= i
+z 2. T(z)= 2
+z− i
+3. T(z)= z+ i
+z− i 4. T(z)= z−1
+z
+InProblems5–8,ﬁndtheimageofthedisks|z|≤1and|z− i|≤1underthegiven
+linearfractionaltransformationT.
+5. TisthemappinginProblem16. TisthemappinginProblem2
+7. TisthemappinginProblem38. TisthemappinginProblem4
+InProblems9–12,ﬁndtheimageofthehalf-planesx≥0andy≤1underthegiven
+linearfractionaltransformationT.
+9. TisthemappinginProblem110. TisthemappinginProblem2
+11. TisthemappinginProblem312. TisthemappinginProblem4
+In Problems 13–16, ﬁnd the image of the region shown in color under the given
+linearfractionaltransformation.
+13. T(z)= z
+z−2 14. T(z)= z− i
+z+1
+y
+x1
+Figure 7.15 Figure for Problem 13
+y
+x1
+Figure 7.16 Figure for Problem 14
+--- PAGE 21 ---
+7.2 Linear Fractional Transformations 409
+15. T(z)= z+1
+z−2 16. T(z)= −z−1+ i
+z−1+ i
+y
+x2–3
+Figure 7.17 Figure for Problem 15
+y
+x
+1 – i
+1 + i
+Figure 7.18 Figure for Problem 16
+InProblems17–20,usematricestoﬁnd(a)S− 1(z)and(b)S− 1(T(z)).
+17. T(z)= z
+iz−1,S(z)= iz+1
+z−1 18. T(z)= iz
+z−2i,S(z)= 2z+1
+z+1
+19. T(z)= 2z−3
+z−3,S(z)= z−2
+z−1 20. T(z)= z−1+ i
+iz−2 ,S(z)= (2 − i)z
+z−1 − i
+InProblems21–26,constructalinearfractionaltransformationthattakesthegiven
+pointsz1,z2,andz3 ontothegivenpointsw1,w2,andw3,respectively.
+21. z1 = −1,z2 =0 ,z3 =2; w1 =0 ,w2 =1 ,w3 = ∞
+22. z1 = i, z2 =0 ,z3 = −i; w1 =0 ,w2 =1 ,w3 = ∞
+23. z1 =0 ,z2 = i, z3 = ∞; w1 =0 ,w2 =1 ,w3 =2
+24. z1 = −1,z2 =0 ,z3 =1; w1 = i, w2 =0 ,w3 = ∞
+25. z1 =1 ,z2 = i, z3 = −i; w1 = −1,w2 =0 ,w3 =3
+26. z1 =1 ,z2 = i, z3 = −i; w1 = −i, w2 = i, w3 = ∞
+Focus on Concepts
+27. Leta,b,c,anddbecomplexnumberssuchthatad− bc̸=0.
+( a)Solvetheequationw= az+ b
+cz+ dforz.
+( b)Explain why (a) implies that the linear fractional transformation
+T(z)=( az+ b)/(cz+ d)isaone-to-onefunction.
+28. Considertheequation
+|z− a|= λ|z− b| (15)
+whereλisapositiverealconstant.
+( a)Showthatthesetofpointssatisfying(15)isalineifλ=1.
+( b)Showthatthesetofpointssatisfying(15)isacircleifλ̸=1.
+29. LetT(z)=( az+ b)/(cz+ d)bealinearfractionaltransformation.
+( a)IfT(0)=0,thenwhat,ifanything,canbesaidaboutthecoeﬃcientsa,b,
+c,andd?
+--- PAGE 22 ---
+410 Chapter 7 Conformal Mappings
+( b)IfT(1)=1,thenwhat,ifanything,canbesaidaboutthecoeﬃcientsa,b,
+c,andd?
+( c)IfT( ∞)= ∞,thenwhat,ifanything,canbesaidaboutthecoeﬃcientsa,
+b,c,andd?
+30. Use Problem 29 to show that ifTis a linear fractional transformation and
+T(0) = 0,T(1) = 1, andT( ∞)= ∞, thenTmust be the identity function.
+Thatis,T(z)= z.
+31. UseTheorem7.4toderivethemappinginentryH-1inAppendixIII.
+32. UseTheorem7.4toderivethemappinginentryH-3inAppendixIII.
+7.3 Schwarz-Christoﬀel Transformations
+7.3One problem that arises frequentlyin the studyof ﬂuid ﬂow is that of constructing the
+ﬂow of an ideal ﬂuid that remains inside a polygonal domainD′. We will see in Section 7.5
+that this problem can be solved byﬁnding a one-to-one complex mapping of the half-plane
+y≥ 0 onto the polygonal region that is a conformal mapping in the domainy>0. The
+existenceofsuchamappingisguaranteedbytheRiemannmappingtheoremdiscussedinthe
+Remarks at the end of Section 7.1. However, even though the Riemann mapping theorem
+does assert the existence of a mapping, it gives no practical means of ﬁnding a formula for
+the mapping. In this section we present the Schwarz-Christoﬀel formula, which provides an
+explicit formula for the derivative of a conformal mapping from the upper half-plane onto
+a polygonal region.
+Polygonal RegionsA polygonal regionin the complex plane is
+a region that is bounded bya simple, connected, piecewise smooth curve
+consisting of a ﬁnite number of line segments. The boundarycurve of a
+polygonal region is called apolygonand the endpoints of the line segments in
+the polygon are calledverticesof the polygon. If a polygon is a closed curve,
+then the region enclosed bythe poly gon is called abounded polygonal
+region, and a polygonal region that is not bounded is called anunbounded
+polygonal region. See Figure 7.19. In the case of an unbounded polygonal
+region, the ideal point∞ is also called a vertex of the polygon.
+y
+x
+y
+x
+(a) A bounded polygonal region
+(b) An unbounded polygonal region
+Figure 7.19 Polygonal regions
+Simple examples of polygonal regions include the region bounded by the
+triangle with vertices 0, 1, andi, which is an example of a bounded polygonal
+region, and the region deﬁned by0≤ x≤ 1, 0≤ y<∞ , which is an example
+of an unbounded polygonal region whose vertices are 0, 1, and∞ .
+Special CasesIn order to motivate a general formula for a conformal
+mapping of the upper half-planey≥ 0 onto a polygonal region, we ﬁrst
+examine the complex mapping
+w= f(z)=( z− x1)α/π, (1)
+wherex1 andαare a real numbers and 0<α<2π. The mapping in (1)
+is the composition of a translationT(z)= z− x1 followed bythe real power
+--- PAGE 23 ---
+7.3 Schwarz-Christoffel Transformations 411
+functionF(z)= zα/π. Becausex1 is real,Ttranslates in a direction parallel
+to the real axis. Under this translation thex-axis is mapped onto theu-axis
+with the pointz= x1 mapping onto the pointw= 0. In order to understand
+the power functionFas a complex mapping we replace the symbolzwith the
+exponential notationreiθ to obtain:
+F(z)=
+(
+reiθ)α/π
+= rα/πei(αθ/π ). (2)
+From (2) we see that the complex mappingw= zα/π can be visualized as the
+processofmagnifyingorcontractingthemodulusrofztothemodulusrα/π of
+w, and rotatingzthroughα/πradians about the origin to increase or decrease
+an argumentθofzto an argumentαθ/πofw. Thus, under the composition
+w= F(T(z)) = (z− x1)α/π, a rayemanating fromx1 and making an angle of
+φradians with the real axis is mapped onto a rayemanating from the origin
+and making an angle ofαφ/πradians with the real axis. See Figure 7.20.
+y
+xx1
+(a) A ray emanating from x1
+(b) Image of the ray in (a)
+φ
+v
+u
+φ
+w = (z – x1) πα/
+πα   /
+0
+Figure 7.20 The mapping
+w =( z − x1)α/π
+Now consider the mapping (1) on the half-planey≥ 0. Since this set
+consists of the pointz= x1 together with the set of rays arg(z− x1)= φ,
+0 ≤ φ≤ π, the image underw=( z− x1)α/π consists of the pointw=0
+together with the set of rays arg(w)= αφ/π,0≤ αφ/π≤ α. Put another
+way, the image of the half-planey≥ 0 is the pointw= 0 together with the
+wedge 0≤ arg(w)≤ α. See Figure 7.21.
+y
+xx1
+(a) The half-plane y ≥ 0
+(b) The image of the half-plane
+v
+u
+w = (z – x1) πα/
+α
+0
+Figure 7.21 The mapping
+w =( z − x1)α/π
+The functionfgiven by(1), which maps the half-planey≥ 0o n t oa n
+unbounded polygonal region with a single vertex, has derivative:
+f′(z)= α
+π(z− x1)(α/π )− 1 . (3)
+Sincef′(z)̸=0i fz= x+ iyandy>0, it follows thatw= f(z) is a conformal
+mapping at anypointzwithy>0. In general, we will use the derivative
+f′, notf, to describe a conformal mapping of the upper half-planey≥ 0
+onto an arbitrarypoly gonal region. With this in mind, we will now present a
+generalization of the mapping in (1) based on its derivative in (3).
+Consider a new functionf, which is analytic in the domainy>0 and
+whose derivative is:
+f′(z)= A(z− x1)(α 1/π)− 1 (z− x2)(α 2/π)− 1 , (4)
+wherex1,x2,α1, andα2 are real,x1 <x2, andAis a complex constant.
+A useful fact that will help us determine the image of the half-planey≥ 0
+underfis that a parametrizationw(t),a<t<b, gives a line segment if
+and onlyif there is a constant value of arg(w′(t)) for alltin the interval
+a<t<b. We now use this fact to determine the images of the intervals
+(−∞ ,x1), (x1,x2), and (x2,∞ ) on the real axis under the complex mapping
+w= f(z). If we parametrize the interval (−∞ ,x1)b yz(t)= t,−∞ <t<x1,
+then by(11) of Section 2.2 the image underw= f(z) is parametrized by
+w(t)= f(z(t)) =f(t),−∞ <t<x1. From (4) with the identiﬁcationz= t,
+we obtain:
+w′(t)= f′(t)= A(t− x1)(α 1/π)− 1 (t− x2)(α 2/π)− 1 .
+--- PAGE 24 ---
+412 Chapter 7 Conformal Mappings
+An argument ofw′(t) is then given by:
+Arg(A)+
+(α1
+π− 1
+)
+Arg(t− x1)+
+(α2
+π− 1
+)
+Arg(t− x2). (5)
+Because−∞ <t<x1, we have thatt− x1 is a negative real number, and
+so Arg(t− x1)= π. In addition, sincex1 <x2, we also have thatt− x2 is a
+negative real number, and thus Arg(t− x2)= π. Bysubstituting these values
+into (5) we ﬁnd that Arg(A)+ α1 + α2 − 2πis a constant value of arg(w′(t))
+for alltin the interval (−∞ ,x1). Therefore, we conclude that the interval
+(−∞ ,x1) is mapped onto a line segment byw= f(z).
+Bysimilarreasoningwedeterminethattheintervals(x1,x2)and(x2,∞ )
+also map onto line segments. A value of the argument ofw′ for each interval
+is summarized in the following table. The change in the value of the argument
+is also listed.
+IntervalAn Argument ofw ′ Change in Argument
+(−∞ ,x1) Arg(A)+ α1 + α2 − 2π 0
+(x1,x2) Arg(A)+ α2 − π π− α1
+(x2,∞ ) Arg(A) π− α2
+Table 7.1 Arguments ofw ′
+Sincefis an analytic (and, hence, continuous) mapping, we conclude that
+the image of the half-planey≥ 0 is an unbounded polygonal region. By Table
+7.1 we see that the exterior angles between successive sides of the polygonal
+boundaryare given bythe change in argument ofw
+′ from one interval to the
+next. Therefore, the interior angles of the polygon areα1 andα2. See Figure
+7.22.
+y
+xx2x1
+(a) The upper half-plane y ≥ 0
+(b) The image of the region in (a)
+v
+u
+w = f(z)
+α 2
+α 1
+απ 2–απ 1–
+Figure 7.22 The mapping associated
+with (4) Schwarz-ChristoﬀelFormulaTheforegoingdiscussioncanbegen-
+eralized to produce a formula for the derivativef′ of a functionfthat maps
+the half-planey≥ 0 onto a polygonal region with any number of sides. This
+formula, given in the following theorem, is called theSchwarz-Christoﬀel
+formula.
+Theorem 7.5 Schwarz-Christoﬀel Formula
+Letfbe a function that is analytic in the domainy>0 and has the
+derivative
+f′(z)= A(z− x1)(α 1/π)− 1 (z− x2)(α 2/π)− 1 ···(z− xn)(α n /π)− 1, (6)
+wherex1 <x2 <···<xn,0<αi<2πfor 1≤ i≤ n, andAis a complex
+constant. Then the upper half-planey≥ 0 is mapped byw= f(z)o n t o
+an unbounded polygonal region with interior anglesα1,α2,...,αn.
+--- PAGE 25 ---
+7.3 Schwarz-Christoffel Transformations 413
+It follows from Theorem 7.1 of Section 7.1 that the function given bythe
+Schwarz-Christoﬀel formula (6) is a conformal mapping in the domainy>0.
+For the sake of brevity, we will, henceforth, refer to a mapping obtained from
+(6) as aconformalmappingfromtheupperhalf-planeonto a polygonal region.
+Itshouldbekeptinmindthatalthoughsuchamappingisdeﬁnedontheupper
+half-planey≥ 0, it is onlyconformal in the domainy>0.
+Note
+Before investigating some examples of the Schwarz-Christoﬀel formula,
+we need to point out three things. First, in practice we usuallyhave some
+freedom in the selection of the pointsx
+k on thex-axis. A judicious choice can
+simplifythe computation off(z). Second, Theorem 7.4 provides a formula
+onlyfor the derivative off. A general formula forfis given byan integral
+f(z)= A
+∫
+(z− x1)(α 1/π)− 1 (z− x2)(α 2/π)− 1 ···(z− xn)(α n /π)− 1 dz+ B,
+whereAandBare complex constants. Thus,fis the composition of the
+function
+g(z)=
+∫
+(z− x1)(α 1/π)− 1 (z− x2)(α 2/π)− 1 ···(z− xn)(α n /π)− 1 dz
+and the linear mappingh(z)= Az+ B. As described in Section 2.3, the linear
+mappinghallows us to rotate, magnify(or contract), and translate the poly g-
+onal region produced byg. Third, although it is not stated in Theorem 7.4,
+the Schwarz-Christoﬀel formula (6) can also be used to construct a mapping
+of the upper half-planey≥ 0 onto a bounded polygonal region. To do so, we
+apply(6) using onlyn− 1o ft h eninterior angles of the bounded polygonal
+region.
+† We illustrate these ideas in the following examples.
+EXAMPLE 1Using the Schwarz-Christoﬀel Formula
+Use the Schwarz-Christoﬀel formula (6) to construct a conformal mapping
+from the upper half-plane onto the polygonal region deﬁned byu≥ 0,
+−1 ≤ v≤ 1.
+SolutionObserve that the polygonal region deﬁned byu≥ 0,−1 ≤ v≤ 1,
+is the semi-inﬁnite strip shown in grayin Figure 7.23(b). The interior angles
+of this unbounded polygonal region areα
+1 = α2 = π/2, and the vertices are
+w1 = −iandw2 = i. To ﬁnd the desired mapping, we applyTheorem 7.4
+withx1 = −1 andx2 = 1. With these identiﬁcations, (6) gives
+f′(z)= A(z+1) − 1/2 (z− 1)− 1/2 . (7)
+y
+xB A
+(a) Half-plane y ≥ 0
+(b) Semi-infinite strip
+v
+i B′
+A′–i
+u
+π
+–11
+/2
+π/2
+Figure 7.23 Figure for Example 1
+From Theorem 7.4,w= f(z) is a conformal mapping from the half-plane
+y≥ 0 onto the polygonal regionu≥ 0,−1 ≤ v≤ 1. A formula forf(z)i s
+found byintegrating (7). Sincezis in the upper half-planey≥ 0, we ﬁrst use
+†For a bounded polygon in the plane, anyn −1 of its interior angles uniquely determine
+the remaining one.
+--- PAGE 26 ---
+414 Chapter 7 Conformal Mappings
+the principal square root to rewrite (7) as
+f′(z)= A
+(z2 − 1)1/2.
+Furthermore, since the principal value of (−1)1/2 = i,w eh a v e
+f′(z)= A
+(z2 − 1)1/2 = A
+[−1(1 − z2)]1/2 = A
+i
+1
+(1 − z2)1/2 = −Ai 1
+(1 − z2)1/2. (8)
+From (7) of Section 4.4 we recognize that an antiderivative of (8) is given by
+f(z)= −Aisin− 1 z+ B, (9)
+where sin− 1 zis the single-valued function obtained byusing the principal
+square root and principal value of the logarithm and whereAandBare
+complex constants. If we choosef(−1) =−iandf(1) =i, then the constants
+AandBmust satisfythe sy stem of equations
+−Aisin− 1(−1)+ B= Aiπ
+2 + B= −i
+−Aisin− 1(1)+ B= −Aiπ
+2 + B= i.
+Byadding these two equations we see that 2B= 0, or,B= 0. Now by
+substitutingB= 0 into either the ﬁrst or second equation we obtainA=
+−2/π. Therefore, the desired mapping is given by
+f(z)= i2
+πsin− 1 z.
+This mapping is shown in Figure 7.23. The line segments labeledAandB
+shown in color in Figure 7.23(a) are mapped byw= i2
+πsin− 1 zonto the line
+segments labeledA′ andB′ shown in black in Figure 7.23(b).
+EXAMPLE 2Using the Schwarz-Christoﬀel Formula
+Use the Schwarz-Christoﬀel formula (6) to construct a conformal mapping
+from the upper half-plane onto the polygonal region shown in gray in Figure
+7.24(b).
+y
+xB A
+(a) Half-plane y ≥ 0
+(b) Polygonal region for Example 2
+v
+i
+B′
+A′
+u
+–11
+π/2
+π/2
+3
+0
+Figure 7.24 Figure for Example 2
+SolutionWe proceed as in Example 1. The region shown in grayin Figure
+7.24(b) is an unbounded polygonal region with interior anglesα1 =3 π/2 and
+α1 = π/2 at the verticesw1 = iandw2 = 0, respectively. If we selectx1 = −1
+andx2 = 1 to map ontow1 andw2, respectively, then (6) gives
+f′(z)= A(z+1) 1/2 (z− 1)− 1/2 . (10)
+--- PAGE 27 ---
+7.3 Schwarz-Christoffel Transformations 415
+Since
+(z+1) 1/2 (z− 1)− 1/2 =
+(z+1
+z− 1
+) 1/2 (z+1
+z+1
+) 1/2
+= z+1
+(z2 − 1)1/2,
+we can rewrite (10) as
+f′(z)= A
+[
+z
+(z2 − 1)1/2 + 1
+(z2 − 1)1/2
+]
+. (11)
+An antiderivative of (11) is given by
+f(z)= A
+[(
+z2 − 1
+)1/2
++cosh− 1 z
+]
++ B,
+whereAandBare complex constants, and where
+(
+z2 − 1
+)1/2
+and cosh− 1 z
+represent branches of the square root and inverse hyperbolic cosine functions
+deﬁned on the domainy>0. Becausef(−1) =iandf(1) = 0, the constants
+AandBmust satisfythe sy stem of equations
+A
+(
+0+cosh− 1 (−1)
+)
++ B= Aπi+ B= i
+A
+(
+0+cosh− 1 1
+)
++ B= B=0.
+Therefore,A=1 /π,B= 0, and the desired mapping is given by
+f(z)= 1
+π
+[(
+z2 − 1
+)1/2
++cosh− 1 z
+]
+.
+The mapping is illustrated in Figure 7.24. The line segments labeledAand
+Bshown in color in Figure 7.24(a) are mapped byw= f(z) onto the line
+segments labeledA′ andB′ shown in black in Figure 7.24(b).
+When using the Schwarz-Christoﬀel formula, it is not always possible
+to expressf(z) in terms of elementaryfunctions. In such cases, however,
+numerical techniques can be used to approximatefwith great accuracy. The
+following example illustrates that even relativelysimple poly gonal regions can
+lead to integrals that cannot be expressed in terms of elementaryfunctions.
+EXAMPLE 3Using the Schwarz-Christoﬀel Formula
+Use the Schwarz-Christoﬀel formula (6) to construct a conformal mapping
+from the upper half-plane onto the polygonal region bounded by the equilat-
+eral triangle with verticesw
+1 =0 ,w2 = 1, andw3 = 1
+2 + 1
+2
+√
+3i. See Figure
+7.25.
+y
+xB A
+(a) Half-plane y ≥ 0
+(b) Equilateral triangle
+v
+B′A′
+u
+1 0
+π/3
+10
+/onenumeratorkerned/twodenominator + /onenumeratorkerned/twodenominator √3i—
+Figure 7.25 Figure for Example 3
+SolutionThe region bounded bythe equilateral triangle is a bounded
+polygonal region with interior anglesα1 = α2 = α3 = π/3. As mentioned
+on page 413, we can ﬁnd a desired mapping byusing the Schwarz-Christoﬀel
+--- PAGE 28 ---
+416 Chapter 7 Conformal Mappings
+formula (6) withn− 1 = 2 of the interior angles. After selectingx1 = 0 and
+x2 = 1, (6) gives
+f′(z)= Az− 2/3 (z− 1)− 2/3 . (12)
+There is no antiderivative of the function in (12) that can be expressed in
+termsofelementaryfunctions. However,f′ isanalyticinthesimplyconnected
+domainy>0, and so, from Theorem 5.8 of Section 5.4, an antiderivativef
+does exist in this domain. The antiderivative is given bythe integral formula
+f(z)= A
+∫ z
+0
+1
+s2/3 (s− 1)2/3ds+ B, (13)
+whereAandBare complex constants. Requiring thatf(0) = 0 allows us to
+solve for the constantB. Since
+∫ 0
+0 =0 ,w eh a v e
+f(0) =A
+∫ 0
+0
+1
+s2/3 (s− 1)2/3ds+ B=0+ B= B,
+and sof(0) = 0 implies thatB= 0. If we also require thatf(1) = 1, then
+f(1) =A
+∫ 1
+0
+1
+s2/3 (s− 1)2/3ds=1 .
+Let Γ denote value of the integral
+Γ=
+∫ 1
+0
+1
+s2/3 (s− 1)2/3ds.
+ThenA=1 /Γ andfcan be written as
+f(z)= 1
+Γ
+∫ z
+0
+1
+s2/3 (s− 1)2/3ds.
+Values offcan be approximated using a CAS. For example, using the
+NIntegratecommand inMathematicawe ﬁnd that
+f(i)≈ 0.4244+0 .3323iandf(1+ i)≈ 0.5756+0 .3323i.
+The Schwarz-Christoﬀel formula can also sometimes be used to ﬁnd map-
+pings onto nonpolygonal regions. Such mappings are often needed in the
+studyof ideal ﬂuid ﬂows. The Schwarz-Christoﬀel formula can be used when
+the desired nonpolygonal region can be obtained as a “limit” of a sequence of
+polygonal regions. The following example illustrates this technique.
+--- PAGE 29 ---
+7.3 Schwarz-Christoffel Transformations 417
+EXAMPLE 4Using the Schwarz-Christoﬀel Formula
+Use the Schwarz-Christoﬀel formula (6) to construct a conformal mapping
+from the upper half-plane onto the nonpolygonal region deﬁned byv≥ 0,
+with the horizontal half-linev= π,−∞ <u≤ 0, deleted. See Figure 7.26(c).
+y
+xB A
+(a) Half-plane y ≥ 0
+–10
+(b) Polygonal region 
+v
+v = i
+B′
+A′
+uu0
+ππ
+α 2
+α 1
+(c) Limit of polygonal regions
+v
+v = i
+B′
+A′
+u
+ππ
+Figure 7.26 Figure for Example 4
+SolutionLetu0 be a point on the nonpositiveu-axis in thew-plane. We
+can approximate the non-polygonal region deﬁned byv≥ 0, with the half-line
+v= π,−∞ <u≤ 0, deleted bythe poly gonal region whose boundaryconsists
+of the horizontal half-linev= π,−∞ <u≤ 0, the line segment fromπito
+u0, and the horizontal half-linev=0 ,u0 ≤ u≤∞ . The vertices of this
+polygonal region arew1 = πiandw2 = u0, with corresponding interior angles
+α1 andα2. See Figure 7.26(b). If we choose the pointsz1 = −1 andz2 =0t o
+map onto the verticesw1 = πiandw2 = u0, respectively, then (6) gives the
+derivative
+A(z+1) (α 1/π)− 1 z(α 2/π)− 1. (14)
+Observe in Figure 7.26(b) that asu0 approaches−∞ along theu-axis, the
+interior angleα1 approaches 2πand the interior angleα2 approaches 0. With
+these limiting values, (14) suggests that our desired mappingfhas derivative
+f′(z)= A(z+1) 1 z− 1 = A
+(
+1+ 1
+z
+)
+. (15)
+An antiderivative of the function in (15) is given by
+f(z)= A(z+Lnz)+ B, (16)
+whereAandBare complex constants.
+In order to determine the appropriate values of the constantsAandB,
+we ﬁrst consider the mappingg(z)= z+Lnzon the upper half-planey≥ 0.
+The functionghas a point of discontinuityatz= 0; thus, we will consider
+separatelytheboundaryhalf-linesy=0 ,−∞ <x<0, andy=0 ,0<x<∞ ,
+of the half-planey≥ 0. Ifz= x+0iis on the half-liney=0 ,−∞ <x<0,
+then Arg(z)= π, and sog(z)= x+loge |x|+ iπ.
+Whenx<0,x+ loge |x|takes on all values from−∞ to−1. Thus,
+the image of the negativex-axis undergis the horizontal half-linev= π,
+−∞ <u<−1. On the other hand, ifz= x+0iis on the half-liney=0 ,
+0<x<∞ , then Arg(z) = 0, and sog(z)= x+ loge |x|. Whenx>0,
+x+ loge |x|takes on all values from−∞ to∞ . Therefore, the image of the
+positivex-axis undergis theu-axis. It follows that the image of the half-plane
+y≥ 0 underg(z)= z+L nzis the region deﬁned byv≥ 0, with the horizontal
+half-linev= π,−∞ <u<−1 deleted. In order to obtain the region shown
+in Figure 7.26(c), we should composegwith a translation by1. Therefore,
+the desired mapping is given by
+f(z)= z+Ln(z)+1 .
+--- PAGE 30 ---
+418 Chapter 7 Conformal Mappings
+EXERCISES 7.3Answers to selected odd-numbered problems begin on page ANS-22.
+In Problems 1–6, use Theorem 7.5 to describe the image of the upper half-plane
+y≥ 0 under the conformal mappingw= f(z) that satisﬁes the given conditions.
+Donottrytosolveforf(z).
+1. f′(z)=( z−1)− 1/2,f(1)=0
+2. f′(z)=( z+1) − 1/3,f( −1)=0
+3. f′(z)=( z+1) − 1/2(z−1)1/2,f( −1)=0, f(1)=1
+4. f′(z)=( z+1) − 1/2(z−1)− 3/4,f( −1)=0, f(0)=1
+5. f′(z)=( z+1) 1/2z− 1/2(z−1)− 1/4,f( −1)= i,f(0)=0, f(1)=1
+6. f′(z)=( z−1)− 1/4z− 1/2(z−1)− 1/4,f( −1)= −1+ i,f(0)=0, f(1)=1+ i
+InProblems7–10,usetheSchwarz-Christoﬀelformula(6)toﬁndf′(z)foraconfor-
+mal mappingw= f(z) from the upper half-plane onto the given polygonal region
+showningray. Usethevaluesx1 = −1,x2 =0, x3 =1, andsoonin(6). Donot
+trytosolveforf(z).
+7. f( −1)=0 ,f(0)=1 8. f( −1)= −1,f(0)=0
+1 0
+v
+i
+u
+Figure 7.27 Figure for Problem 7
+10
+/3
+v
+u
+π
+Figure 7.28 Figure for Problem 8
+9. f( −1)= −1,f(0)=1 10. f( −1)= i, f(0)=0
+1–1
+/3 2
+v
+u
+π /3 2π
+Figure 7.29 Figure for Problem 9
+v
+i
+u
+/4π
+Figure 7.30 Figure for Problem 10
+--- PAGE 31 ---
+7.3 Schwarz-Christoffel Transformations 419
+Focus on Concepts
+11. UsetheSchwarz-Christoﬀelformula(6)toconstructaconformalmappingfrom
+the upper half-plane onto the polygonal region shown in gray in Figure 7.31.
+Requirethatf( −1)= πiandf(1)=0.
+12. Use Schwarz-Christoﬀel formula (6) to construct a conformal mapping from
+the upper half-plane onto the polygonal region shown in gray in Figure 7.32.
+Requirethatf( −1)= −aiandf(1)= ai.
+v
+i
+u
+π
+Figure 7.31 Figure for Problem 11
+v
+ai
+–ai
+u
+Figure 7.32 Figure for Problem 12
+13. Use the Schwarz-Christoﬀel formula (6) to verify the conformal mapping in
+entryM-3ofAppendixIIIbyﬁrstconstructingthederivativeofamappingof
+the upper half-plane onto the polygonal region shown in gray in Figure 7.33.
+Require thatf( −1) =−af(0) =v
+1i, andf(1) =a, and then letv1 →− ∞
+alongthev-axis.
+14. Use the Schwarz-Christoﬀel formula (6) to verify the conformal mapping in
+entryM-4ofAppendixIIIbyﬁrstconstructingthederivativeofamappingof
+the upper half-plane onto the polygonal region shown in gray in Figure 7.34.
+Require thatf( −1) =−u
+1,f(0) =ai, andf(1) =u1, and then letu1 → 0
+alongtheu-axis.
+v
+v1i
+u–aa
+Figure 7.33 Figure for Problem 13
+v
+ai
+u
+u1–u1
+Figure 7.34 Figure for Problem 14
+Computer Lab Assignments
+InProblems15–18,useaCAStoapproximatetheimagesofthepointsz1 = iand
+z2 =1+ iunderthegivenfunction.
+15. w= f(z)isthemappingfromProblem3.
+16. w= f(z)isthemappingfromProblem6.
+17. w= f(z)isthemappingfromProblem8.
+18. w= f(z)isthemappingfromProblem9.
+--- PAGE 32 ---
+420 Chapter 7 Conformal Mappings
+7.4 Poisson Integral Formulas
+7.4The success of using a conformal mapping to solve a boundary-value problem associated
+with Laplace’s equation often depends on the abilityto solve a related boundary -value
+problem in a simple domain such as the upper half-planey>0 or the open unit disk
+|z|<1. In this section we present two important integral formulas for solving a Dirichlet
+problem in these domains.
+y
+z 
+x
+= 0
+x1
+θ
+= 0φ
+θ
+= k1φ
+= θπ
+= k0φ
+∇ 2
+Figure 7.35 Dirichlet problem (1)
+Formula for the Upper Half-PlaneWe begin byinvestigating
+the following Dirichlet problem:
+Solve:∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,−∞ <x<∞ ,y>0
+(1)
+Subject to:φ(x,0) =
+
+
+
+k0,−∞ <x<x1
+k1,x1 <x<∞ ,
+wherek0 andk1 are real constants andx1 is a point on thexfunctionφ(x, y)
+thatdependsontheangleθbetweentherayemanatingfromx1 andcontaining
+the pointx1 +1 on thex-axis and the rayemanating fromx1 and containing
+the pointz= x+ iyin the upper half-planey>0. After applying the
+translationz− x1, we observe that the angleθis also the angle between the
+positivex-axis and the vector representation ofz−x1. Sincezis in the upper
+half-plane, this angle is given byθ= Arg(z− x1). In order to satisfythe
+boundaryconditions in (1),φ(x, y) must range fromk1 tok0 asθvaries from
+0t oπ. The parametrization of a line segment given by(7) in Section 2.2
+suggests thatφ(x, y) be deﬁned as a function ofθby:
+φ(θ)= k1
+(
+1 − θ
+π
+)
++ k0
+θ
+π
+or φ(x,y)= k1 + 1
+π(k0 − k1)Arg(z− x1), (2)
+where 0≤ θ≤ π.
+We will now show that the functionφ(x, y) deﬁned in (2) is, in fact, a
+solution of the Dirichlet problem (1). In the upper half-planey>0, we have
+thatφ(x, y) is the imaginarypart of the function
+f(z)= ik1 +Ln
+[k0 − k1
+π (z− x1)
+]
+.
+Becausefis analytic wheny>0, it follows from Theorem 3.7 that its imag-
+inarypart is harmonic. Therefore,φ(x, y) satisﬁes Laplace’s equation
+∂2φ
+∂x2 + ∂2φ
+∂y2 = 0 (3)
+when−∞ <x<∞ andy>0.
+--- PAGE 33 ---
+7.4 Poisson Integral Formulas 421
+Wenextverifythattheboundaryconditionsof(1)aresatisﬁedbyφ(x, y).
+Assume thatzis in the interval (x1,∞ ) in the real axis. That is,z= x+0i
+withx1 <x<∞ . In this case, Arg(z− x1) = 0, and so (2) gives
+φ(x,0) =k1 + 1
+π(k0 − k1)Arg(z− x1)= k1 + 1
+π(k0 − k1)0= k1. (4)
+On the other hand, ifz= x+0iwith−∞ <x<x1, then Arg(z− x1)= π,
+and so
+φ(x,0) =k1 + 1
+π(k0 − k1)Arg(z− x1)= k1 + 1
+π(k0 − k1)π= k0. (5)
+Therefore,from(3),(4),and(5),weconcludethatthefunctionφ(x, y)deﬁned
+by(2) is a solution of the Dirichlet problem (1).
+The foregoing discussion can be generalized. In particular, consider the
+Dirichlet problem
+Solve:∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,−∞ <x<∞ ,y>0
+(6)
+Subject to:φ(x,0) =
+
+
+
+
+
+
+
+
+
+
+
+
+
+k
+0,−∞ <x<x1
+k1,x1 <x<x2
+..
+. .
+.
+.
+k
+n,xn <x<∞ ,
+wherex1 <x2 < ... < xn arendistinct points on thex-axis andk0,k1,
+...,kn aren+1 real constants. See Figure 7.36. Observe that (1) is simply
+a special case of (6) corresponding ton= 1. With reasoning similar to that
+used to obtain (2) we construct the function
+φ(x,y)= kn + 1
+π
+n∑
+j=1
+(kj− 1 − kj)Arg(z− xj). (7)
+x1 x2 xn
+y
+x
+= 0φ
+= k0φ = k1φ = k2φ = knφ
+∇ 2
+Figure 7.36 Dirichlet problem (6)As with (2), we can verifythat this function is harmonic in the domainy>0
+byobserving thatφ(x, y) is the imaginarypart of the analy tic function
+f(z)= ikn +
+n∑
+j=1
+Ln
+[kj− 1 − kj
+π (z− xj)
+]
+.
+Now we show thatφ(x, y) satisﬁes the boundaryconditions in (6). LetN
+be a ﬁxed value ofj.I fz= x+0iis a point withxN <x<xN +1 , then
+--- PAGE 34 ---
+422 Chapter 7 Conformal Mappings
+Arg(z− xj) = 0 for 1≤ j≤ N, while Arg(z− xj)= πforN+1 ≤ j≤ n.
+Therefore, forz= x+0iwithxN <x<xN +1 , (7) gives
+φ(x,0) =kn + 1
+π
+n∑
+j=1
+(kj− 1 − kj)Arg(z−xj)
+= kn + 1
+π
+N∑
+j=1
+(kj− 1 − kj)Arg(z−xj)+ 1
+π
+n∑
+j= N +1
+(kj− 1 − kj)Arg(z−xj)
+= kn + 1
+π
+N∑
+j=1
+(kj− 1 − kj)·0+ 1
+π
+n∑
+j= N +1
+(kj− 1 − kj)·π
+= kn +( kN − kN +1 )+(kN +1 − kN +2 )+ ···+( kn− 1 − kn)
+= kN .
+Therefore, the functionφ(x, y) satisﬁes the boundaryconditions of (6). In
+summary, we have shown that the functionφ(x, y) deﬁned in (7) is a solution
+of the Dirichlet problem given by(6). This solution will be used to ﬁnd an
+integral formula for a solution of a more general type of Dirichlet problem in
+the upper half-planey>0.
+EXAMPLE 1Using the Poisson Integral Formula
+Use (7) to solve the Dirichlet problem
+Solve:∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,−∞ <x<∞ ,y>0
+Subject to:φ(x,0) =
+
+
+
+
+
+
+
+2, −∞ <x<0
+−1, 0<x<3
+5, 3<x<∞ ,
+illustrated in Figure 7.37.
+3
+y
+x
+= 0
+0
+φ
+= 5φ= 2φ = –1φ
+∇ 2
+Figure 7.37 Figure for Example 1
+SolutionIdentifyingk0 =2 ,k1 = −1,k2 =5 ,x1 = 0, andx2 = 3 in (7), we
+obtain the solution
+φ(x,y)=5+ 1
+π(2+1)Arg(z− 0)+1
+π(−1 − 5)Arg(z− 3)
+=5+ 3
+πArg(z)− 6
+πArg(z− 3).
+Poisson Integral FormulaA special case of the Dirichlet problem
+(6) occurs whenk0 = kn =0 .
+--- PAGE 35 ---
+7.4 Poisson Integral Formulas 423
+Solve:∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,−∞ <x<∞ ,y>0
+(8)
+Subject to:φ(x,0) =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0, −∞ <x<x
+1
+k1,x 1 <x<x2
+..
+.
+.
+.
+.
+k
+n− 1,xn− 1 <x<xn
+0,x n <x<∞ .
+After settingzi = z− xi fori=1 ,2 ,... nand identifyingk0 = kn = 0, the
+solution given by(7) can be written as
+φ(x,y)=0+ 1
+π[(0− k1)Argz1 +( k1 − k2)Argz2 + ···+( kn− 1 − 0)Argzn]
+= 1
+π[k1(Argz2 − Argz1)+ k2(Argz3 − Argz2)+ ···+ kn− 1(Argzn − Argzn− 1)]
+=
+n− 1∑
+j=1
+kj
+π(Argzj+1 − Argzj)
+That is, the function
+φ(x,y)=
+n− 1∑
+j=1
+kj
+π[Arg(z− xj+1 )− Arg(z− xj)] (9)
+is a solution of the Dirichlet problem in (8).
+We can write (9) in terms of a real improper integral. In order to do so,
+lettbe a real variable and observe that ify>0, then
+Arg(z− t) = cot− 1
+(x− t
+y
+)
+andd
+dtArg(z− t)= y
+(x− t)2 + y2.
+Put another way,
+Arg(zj+1 )− Arg(zj)=
+∫ xj+1
+xj
+d
+dt
+[ y
+(x− t)2 + y2
+]
+dt.
+With these substitutions, (9) becomes
+φ(x,y)= 1
+π
+n− 1∑
+j=1
+∫ xj+1
+xj
+kjy
+(x− t)2 + y2dt.
+Sinceφ(x,0) = 0 whenx<x1 orx>xn,φ(x, y) can also be written as
+φ(x,y)= y
+π
+∫ ∞
+−∞
+φ(t,0)
+(x− t)2 + y2dt. (10)
+--- PAGE 36 ---
+424 Chapter 7 Conformal Mappings
+The integral formula in (10) is called thePoisson integral formulafor the
+upper half-planey>0, and it gives a solutionφ(x, y) of the Dirichlet problem
+in (8). The Poisson integral formula can also be used to solve a more general
+type of Dirichlet problem in which the boundary conditions are speciﬁed by
+anypiecewise continuous and bounded function. This is the content of the
+following theorem.
+Theorem 7.6 Poisson Integral Formula for the Half-Plane
+Letf(x) be a piecewise continuous and bounded function on
+−∞ <x<∞ . Then the function deﬁned by
+φ(x,y)= y
+π
+∫ ∞
+−∞
+f(t)
+(x− t)2 + y2dt (11)
+is a solution of the Dirichlet problem in the upper half-planey>0 with
+boundaryconditionφ(x,0) =f(x) at all points of continuityoff.
+Unfortunately, there are few functionsffor which the Poisson integral
+formula (11) can be evaluated. The following example represents an exception
+to the previous remark.
+EXAMPLE 2Using the Poisson Integral Formula
+Use the Poisson integral formula (11) to ﬁnd a solution of the Dirichlet
+problem
+Solve:∂
+2φ
+∂x2 + ∂2φ
+∂y2 =0 ,−∞ <x<∞ ,y>0
+Subject to:φ(x,0) =
+
+
+
+
+
+
+0,−∞ <x<−1
+x,−1 <x<1
+0, 1 <x<∞ ,
+illustrated in Figure 7.38.
+y
+x
+= 0
+–11
+φ
+= 0φ= 0φ = xφ
+∇ 2
+Figure 7.38 Figure for Example 2
+SolutionWe ﬁrst deﬁne a real functionfbyf(x)= φ(x,0). Then
+f(x)= xon−1 <x<1 and 0 elsewhere. Thus,fis piecewise continu-
+ous and bounded on the real line−∞ <x<∞ . After replacing the symbol
+xwith the integration variablet, we identifyf(t)= φ(t,0) =tfor−1 <t<1
+and 0 elsewhere. Then (11) gives
+φ(x,y)= y
+π
+∫ ∞
+−∞
+φ(t,0)
+(x− t)2 + y2dt= y
+π
+∫ 1
+− 1
+t
+(x− t)2 + y2dt.
+--- PAGE 37 ---
+7.4 Poisson Integral Formulas 425
+With the substitutionss= x− tandds= −dtthis integral becomes
+φ(x,y)= −y
+π
+∫ x− 1
+x+1
+x− s
+s2 + y2ds= −y
+π
+∫ x− 1
+x+1
+x
+s2 + y2ds+ y
+π
+∫ x− 1
+x+1
+s
+s2 + y2ds.
+From elementarycalculus we have that
+∫ x
+s2 + y2ds= x
+ytan− 1
+(s
+y
+)
++ C1
+∫ s
+s2 + y2ds= 1
+2 loge
+(
+s2 + y2)
++ C2.and
+Therefore,
+φ(x,y)= −x
+πtan− 1
+(s
+y
+) ⏐⏐
+⏐
+⏐
+s= x− 1
+s= x+1
++ y
+2πloge
+(
+s2 + y2)⏐
+⏐
+⏐
+s= x− 1
+s= x+1
+= x
+π
+[
+tan− 1
+(x+1
+y
+)
+− tan− 1
+(x− 1
+y
+)]
++ y
+2πloge
+[(x− 1)2 + y2
+(x+1) 2 + y2
+]
+is a solution of the Dirichlet problem.
+FormulafortheUnitDiskA Poisson integral formula for the unit
+disk can be derived in a similar manner. This gives an integral formula for
+a solution of a Dirichlet problem in the open unit disk|z|<1 subject to
+certain types of boundary conditions. The following theorem gives the precise
+statement of this result.
+Theorem 7.7 Poisson Integral Formula for the Unit Disk
+Letf(z) be a complex function for which the valuesf
+(
+eiθ)
+on the unit
+circlez= eiθ give a piecewise continuous and bounded function for
+−π≤ θ≤ π. Then the function deﬁned by
+φ(x,y)= 1
+2π
+∫ π
+− π
+f
+(
+eit) 1 −|z|2
+|eit− z|2dt (12)
+is a solution of the Dirichlet problem in the open unit disk|z|<1 with
+boundaryconditionφ(cosθ,sinθ)= f
+(
+eiθ)
+atallpointsofcontinuityoff.
+As with Theorem 7.5, the integral given in (12) can seldom be expressed
+in terms of elementaryfunctions. When we cannot evaluate the integral, we
+appeal to numerical methods to approximate values of a solution given by
+(12).
+--- PAGE 38 ---
+426 Chapter 7 Conformal Mappings
+EXAMPLE 3Using the Poisson Integral Formula
+Use the Poisson integral formula (12) to ﬁnd a solution of the Dirichlet
+problem
+Solve:∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,x2 + y2 <1
+Subject to:φ(cosθ,sinθ)= |θ|,−π<θ≤ π,
+illustrated in Figure 7.39.
+y
+x= 0φ θ
+θ= |  |φ
+∇ 2
+Figure 7.39 Figure for Example 3
+SolutionThe functionf
+(
+eiθ)
+= φ(cosθ,sinθ)= |θ|is piecewise continuous
+and bounded for−π≤ θ≤ π. Thus, after identifyingf
+(
+eit)
+= φ(cost,sint)=
+|t|in (12) we obtain the integral formula
+φ(x,y)= 1
+2π
+∫ π
+− π
+|t|1 −|z|2
+|eit− z|2dt.
+This integral cannot be evaluated in terms of elementaryfunctions. However,
+with the use of theNIntegratecommand inMathematicawe can approxi-
+mate values of the functionφ(x, y). For example,Mathematicaindicates that
+φ
+(1
+2,0
+)
+≈ 0.9147 andφ
+(
+0,1
+2
+)
+≈ 1.5708.
+EXERCISES 7.4Answers to selected odd-numbered problems begin on page ANS-22.
+InProblems1–4,use(7)tosolvethegivenDirichletproblemintheupperhalf-plane
+y>0.
+1. 2. y
+x
+= 0
+–11
+φ
+= 0
+0
+φ= 0φ = 1φ= –1φ
+∇ 2
+Figure 7.40 Figure for Problem 1
+y
+x
+= 0
+–21
+φ
+= 0
+0
+φ= –1φ = 1φ= 5φ
+∇ 2
+Figure 7.41 Figure for Problem 2
+--- PAGE 39 ---
+7.4 Poisson Integral Formulas 427
+3. 4. y
+x
+= 0
+–2 –11
+φ
+= 5
+0
+φ= 0φ = 1φ = 0φ= –1φ
+∇ 2
+Figure 7.42 Figure for Problem 3
+y
+x
+= 0
+–2 –11
+φ
+= 4
+0
+φ= 1φ = 1φ = 2φ= –1φ
+∇ 2
+Figure 7.43 Figure for Problem 4
+InProblems5–8,usethePoissonintegralformula(11)tosolvetheDirichletproblem
+intheupperhalf-planey>0subjecttothegivenboundaryconditions.
+5. φ(x,0)=
+
+
+
+
+
+
+
+0, −∞ <x<0
+2x−1, 0<x<2
+0, 2<x< ∞
+6. φ(x,0)=
+
+
+
+
+
+
+
+−1, −∞ <x< −1
+x, −1 <x<1
+1, 1 <x< ∞
+7. φ(x,0)=
+
+
+
+
+
+
+
+0,−∞ <x<0
+x2, 0<x<1
+0, 1 <x< ∞
+8. φ(x,0)=
+
+
+
+
+
+
+
+0,−∞ <x<0
+x2, 0<x<1
+1, 1 <x< ∞
+9. ( a)Use the techniques presented in Section 6.6 to establish the integral
+formulas
+∫ ∞
+−∞
+coss
+s2 + a2 ds= πe− a
+a and
+∫ ∞
+−∞
+sins
+s2 + a2 ds=0fora>0.
+( b)SolvetheDirichletintheupperhalf-planey>0subjecttotheboundary
+conditionφ(x,0) = cosx,−∞ <x< ∞.[Hint: Make the substitution
+s= t− xandusetheformulasinpart(a).]
+10. Solve the Dirichlet in the upper half-planey> 0 subject to the boundary
+conditionφ(x,0)=sinx,−∞ <x< ∞.[Hint: Makethesubstitutions= t−x
+andusetheformulasinpart(a)ofProblem9.]
+Focus on Concepts
+11. Letf(z) be a complex function and suppose that on the unit diskz= eiθ,
+−π≤ θ≤ π, we have thatf
+(
+eiθ)
+is piecewise continuous and bounded. Let
+z= reiθ,0 ≤ r<1, be a point inside the unit disk. Show that the Poisson
+integralformula(12)canbewrittenas
+φ(x,y)= 1
+2π
+∫ π
+− π
+f
+(
+eit
+) 1 −|z|2
+|eit− z|2 dt= 1
+2π
+∫ π
+− π
+f
+(
+eit
+) 1 − r2
+1+ r2 −2rcos(t− θ)dt.(13)
+12. In this problem we determine a solution of the Dirichlet problem on the unit
+disksubjecttoapiecewiseconstantboundarycondition. Thatis,wederivea
+formulaforasolutionofaDirichletproblemintheunitdiskthatisanalogous
+totheDirichletproblem(6)inthehalf-plane.
+--- PAGE 40 ---
+428 Chapter 7 Conformal Mappings
+( a)Verifythat
+1
+2π
+∫ 1 − r2
+1+ r2 −2rcos(t− θ)dt= 1
+πtan− 1
+[1+ r
+1 − rtan
+( t− θ
+2
+)]
++ C. (14)
+( b)Assumethatθ1 <θ2 <. . .<θn arendistinctpointsintheinterval(−π,π).
+Explainhow(13)and(14)canbeusedtosolvetheDirichletproblem
+Solve: ∂2φ
+∂x2 + ∂2φ
+∂y2 =0 ,x2 + y2 <1
+Subject to: φ(cosθ,sinθ)=
+
+
+
+
+
+
+
+
+
+
+
+
+
+k0,−π<θ<θ1
+k1,θ1 <θ<θ2
+..
+.
+.
+.
+.
+k
+n,θn <θ<π.
+13. UseProblems11and12tosolvetheDirichletproblemintheunitdiskshown
+inFigure7.44.
+14. UseProblems11and12tosolvetheDirichletproblemintheunitdiskshown
+inFigure7.45.
+y
+x
+i
+= 0φ
+= –1φ
+= 1
+1
+φ
+∇ 2
+Figure 7.44 Figure for Problem 13
+–i
+y
+x
+= 0φ
+= –1φ= 1
+1–1
+φ
+= 0φ
+∇ 2
+Figure 7.45 Figure for Problem 14
+Computer Lab Assignments
+InProblems15and16,(a)usethePoissonintegralformula(12)toﬁndanintegral
+representationofasolutionofthegivenDirichletproblemintheunitdisk,and(b)
+useaCAStoapproximatethevaluesofthesolutionatthepoints(0,0),
+(1
+2 ,1
+2
+)
+,and(
+0,1
+3
+)
+.
+15. 16. y
+x
+= 0φ
+(cos  , sin  ) =φ θθ θ
+1
+∇ 2
+2
+π 2—
+Figure 7.46 Figure for Problem 15
+y
+x
+= 0φ
+= 0φ
+(cos  , sin  )=e–| |φ θθ θ
+1–1
+∇ 2
+Figure 7.47 Figure for Problem 16
+--- PAGE 41 ---
+7.5 Applications 429
+7.5 Applications
+7.5In this section we revisit the method introduced in Section 4.5 for solving Dirichlet prob-
+lems; here we incorporate the new mappings deﬁned in this chapter or in Appendix III. We
+also describe a similar process for solving a new type of boundary-value problem that relies
+on ﬁnding a conformal mapping between two domains. This allows us to investigate more
+complicated boundary-value problems arising in the two-dimensional modeling of electro-
+statics and heat ﬂow. We conclude this section with an application of conformal mapping
+to the problem of ﬁnding an irrotational ﬂow of an incompressible ﬂuid, that is, the ﬂow of
+anideal ﬂuid, in a region of the plane.
+7.5.1 Boundary-Value Problems
+DirichletProblemsRevisitedSuppose thatDis a domain in the
+z-plane and thatgis a function deﬁned on the boundaryCofD. The problem
+of ﬁnding a functionφ(x, y) that satisﬁes Laplace’s equation∇ 2φ=0 ,o r
+∂2φ
+∂x2 + ∂2φ
+∂y2 =0, (1)
+inDand that equalsgon the boundaryofD, is called aDirichlet problem.
+In Section 4.5, we saw that analytic functions can be used to solve certain
+Dirichlet problems. We obtained a solution of a Dirichlet problem in a domain
+Dbyﬁnding ananalytic mappingofDonto a domainD
+′ in which the
+associated, or transformed, Dirichlet problem can be solved. That is, we
+found a mappingw= f(z)o fDontoD
+′ such thatf(z)= u(x, y)+ iv(x, y)
+is analytic inD. ByTheorem 4.5, if Φ(u, v) is a solution of the transformed
+Dirichlet problem inD′, thenφ(x, y)=Φ (u(x, y),v(x, y)) is a solution of
+the Dirichlet problem inD. Thus, our method presented in Section 4.5 for
+solving Dirichlet problems consisted of the following four steps:
+• Find an analytic mappingw= f(z)= u(x, y)+iv(x, y) of the domain
+Donto a domainD′,
+• transform the boundaryconditions fromDtoD′,
+• solve the transformed Dirichlet problem inD′, and
+• setφ(x, y)=Φ (u(x, y),v(x, y)).
+For a more detailed discussion of these steps refer to Section 4.5 and Figure
+4.19.
+In this chapter we investigate a number of topics that can help complete
+these four steps. The table of conformal mappings discussed in Section 7.1,
+the linear fractional transformations studied in Section 7.2, and the Schwarz-
+ChristoﬀeltransformationofSection7.3provideavaluablesourceofmappings
+to use in Step 1. In addition, ifD
+′ is taken to be either the upper half-plane
+y>0 or the open unit disk|z|<1, then the Poisson integral formulas of
+Section 7.4 provide a means to determine a solution of the associated Dirichlet
+problem inD
+′.
+--- PAGE 42 ---
+430 Chapter 7 Conformal Mappings
+In the following examples, we will applysome ideas from the preceding
+sections in this chapter to help solve Dirichlet problems arising in the areas
+of electrostatics, ﬂuid ﬂow, and heat ﬂow. Recall from Section 3.3 that if
+a functionφ(x, y) satisﬁes Laplace’s equation (1) in some domainD, then
+φ(x, y) is harmonic inD. Moreover, ifψ(x, y) is a harmonic conjugate of
+φ(x, y)i nD, then the function
+Ω(z)= φ(x,y)+ iψ(x,y)
+is analytic inDand is called acomplex potential function. The level
+curves ofφandψhave important physical interpretations in applied mathe-
+matics. Their interpretations are summarized in Table 3.1 of Section 3.4.
+EXAMPLE 1A Heat Flow Application
+Determine the steady-state temperatureφin the domainDconsisting of all
+points outside of the two circles|z|= 1 and
+⏐⏐z− 5
+2
+⏐
+⏐ =
+1
+2, shown in color in
+Figure 7.48(a), that satisﬁes the indicated boundaryconditions.
+y
+v
+= 0φ
+= 30φ = 0φ
+1
+1
+23
+∇ 2
+= 0
+= 0
+= 30
+∇ 2
+x
+ur0
+(a) Dirichlet problem
+(b) Transformed Dirichlet problem
+Φ
+Φ
+Φ
+Figure 7.48 Figure for Example 1
+SolutionThe steady-state temperatureφis a solution of Laplace’s equation
+(1) inDthat satisﬁes the boundaryconditions
+φ(x,y) = 30 ifx2 + y2 =1 ,
+φ(x,y)=0 i f
+(
+x− 5
+2
+)2
++ y2 = 1
+4.
+We solve this problem using the four steps given on page 429.
+Step 1EntryC-1 in Appendix III indicates that we can mapDonto an
+annulus. Identifyingb= 2 andc= 3 in EntryC-1, we ﬁnd that
+a= bc+1+
+√
+(b2 − 1)(c2 − 1)
+b+ c = 7+2
+√
+6
+5 ,
+r0 = bc− 1 −
+√
+(b2 − 1)(c2 − 1)
+c− b =5 − 2
+√
+6.and
+Thus, the domainDis mapped onto the annulus 5− 2
+√
+6<w<1 shown in
+grayin Figure 7.48(b) bythe analy tic mappingw= f(z), where
+f(z)= 5z− 7 − 2
+√
+6(
+7+2
+√
+6
+)
+z− 5. (2)
+Step2InspectionofentryC-1inAppendixIIIshowsthattheboundarycircle⏐⏐z− 5
+2
+⏐
+⏐ =
+1
+2 is mapped onto the boundarycircle|w|= r0 =5 − 2
+√
+6. Thus,
+the boundaryconditionφ= 0 is transformed to the boundarycondition Φ = 0
+on the circle|w|=5 − 2
+√
+6. Similarly, we see that the boundary condition
+φ= 30 on the circle|z|= 1 is transformed to the boundarycondition Φ = 30
+on the circle|w|= 1. See Figure 7.48(b).
+--- PAGE 43 ---
+7.5 Applications 431
+Step 3The shape of the annulus along with the fact that the two bound-
+aryconditions are constant in Figure 7.48(b) suggests that a solution of the
+transformed Dirichlet problem is given bya function Φ(u, v) that is deﬁned in
+terms of the modulusr=
+√
+u2 + v2 ofw= u+ iv. In Problem 14 in Exercises
+3.4 you were asked to show that a solution is given by
+Φ(u,v)= Aloge
+√
+u2 + v2 + B, (3)
+where
+A= k0 − k1
+loge(a/b) andB= −k0 logeb+ k1 logea
+loge(a/b) .
+Following the deﬁnitions ofk0,k1,a, andbgiven in Problem 14, we have
+a=5 − 2
+√
+6,b=1 ,k0 = 0, andk1 = 30. Thus, we obtain the solution
+Φ(u,v)= −30loge
+√
+u2 + v2
+loge
+(
+5 − 2
+√
+6
+) +30 (4)
+of the transformed Dirichlet problem.
+Step 4The ﬁnal step is to substitute the real and imaginaryparts of the
+functionfgiven by(2) for the variablesuandvin (4). Since
+u(x,y)+ iv(x,y)= 5z− 7 − 2
+√
+6(
+7+2
+√
+6
+)
+z− 5,
+we have
+√
+u(x,y)2 + v(x,y)2 =
+⏐⏐⏐
+⏐
+⏐
+5z− 7 − 2
+√
+6(
+7+2
+√
+6
+)
+z− 5
+⏐⏐⏐
+⏐
+⏐.
+Therefore, the steady-state temperature is given by the function
+φ(x,y)= −30
+loge
+(
+5 − 2
+√
+6
+)loge
+⏐
+⏐
+⏐
+⏐
+⏐
+5z− 7 − 2
+√
+6(
+7+2
+√
+6
+)
+z− 5
+⏐
+⏐
+⏐
+⏐
+⏐+30.
+A complex potential functionΩ(z)= φ(x, y)+iψ(x, y) for the harmonic
+functionφ(x, y) found in Example 1 is
+Ω(z)= −30
+loge
+(
+5 − 2
+√
+6
+)Ln
+⏐
+⏐
+⏐
+⏐
+⏐
+5z− 7 − 2
+√
+6(
+7+2
+√
+6
+)
+z− 5
+⏐
+⏐
+⏐
+⏐
+⏐+30.
+If we deﬁne this function asΩ[z]inMathematica, then the real and imagi-
+narypartsφ(x, y) andψ(x, y)o fΩ(z) are given byRe[Ω[z]] andIm[Ω[z]],
+respectively. We can then use theContourPlotcommand inMathematica
+--- PAGE 44 ---
+432 Chapter 7 Conformal Mappings
+to plot the level curves of the real and imaginaryparts ofΩ. For example,
+the command
+ContourPlot[ Re[Ω[x + I y]] ,{x, a, b},{y, c, d} ]
+produces a plot of the level curvesφ= c1 in the rectangular regiona≤ x≤ b,
+c≤ y≤ dof the plane. According to Table 3.1 in Section 3.4, the level curves
+ofφandψrepresent the isotherms and lines of heat ﬂux, respectively. Both
+sets of level curves are shown in Figure 7.49. The isotherms are the curves
+shown in color and the lines of heat ﬂux are the curves shown in black.
+3
+2
+1
+0
+–1
+–2
+–2 –10123
+–3
+y
+x
+Figure 7.49Isotherms and lines of heat
+ﬂux for Example 1
+EXAMPLE 2An Electrostatics Application
+Determine the electrostatic potentialφin the domainDbetween the circles
+|z|= 1 and
+⏐⏐z− 1
+2
+⏐
+⏐ =
+1
+2, shown in color in Figure 7.50(a), that satisﬁes the
+indicated boundaryconditions.
+SolutionThe electrostatic potentialφis a solution of Laplace’s equation (1)
+inDthat satisﬁes the boundaryconditions
+φ(x,y)= −10 onx2 + y2 =1 ,
+φ(x,y) = 20 on
+(
+x− 1
+2
+)2
++ y2 = 1
+4.
+We proceed as in Example 1.
+Step 1The given domainDcan be mapped onto the inﬁnite horizontal
+strip 0<v<1, shown in grayin Figure 7.50(b), bya linear fractional
+transformation. One wayto do this is to require that the points 1,i, and
+−1 on the circle|z|= 1 map onto the points∞ , 0, and 1, respectively.
+ByTheorem 7.4 in Section 7.2 the desired linear fractional transformation
+w= T(z) must satisfy
+z− 1
+z+1
+i+1
+i− 1 = lim
+w 1→∞
+w− w1
+w− 1
+0− 1
+0− w1
+, orz− 1
+z+1 (−i)= −1
+w− 1.
+y
+v
+= 0φ = 20φ
+= –10φ
+1
+i
+∇ 2
+= 0
+= 20
+= –10
+∇ 2
+x
+u
+(a) Dirichlet problem
+(b) Transformed Dirichlet problem
+Φ
+Φ
+Φ
+Figure 7.50 Figure for Example 2
+After solving forw= T(z), we obtain
+T(z)=( 1 − i)z− i
+z− 1. (5)
+Byconstruction, the circle|z|= 1 is mapped onto the linev=0b yw= T(z).
+Furthermore, because the polez= 1 of (5) is on the circle
+⏐⏐z− 1
+2
+⏐
+⏐ =
+1
+2,i t
+follows that this circle is also mapped onto a line. The image line can be
+determined byﬁnding the image of two points on the circle
+⏐⏐z− 1
+2
+⏐
+⏐ =
+1
+2.F o r
+the pointsz= 0 andz= 1
+2 + 1
+2ion the circle
+⏐
+⏐z−
+1
+2
+⏐
+⏐ =
+1
+2, we haveT(0) = 1+i
+andT
+(1
+2 + 1
+2i
+)
+= −1+ i. Therefore, the image of the circle
+⏐
+⏐z−
+1
+2
+⏐
+⏐ =
+1
+2 must
+be the horizontal linev= 1. Using the test pointz= − 1
+2, we ﬁnd that
+T
+(
+− 1
+2
+)
+=1+ 1
+3i, and so we conclude that the domain shown in color between
+the circles in Figure 7.50(a) is mapped byw= T(z) onto the domain shown
+in graybetween the horizontal lines in Figure 7.50(b).
+--- PAGE 45 ---
+7.5 Applications 433
+Step 2From Step 1 we havew= T(z) maps the circle|z|= 1 onto the
+horizontal linev= 0, and it maps the circle
+⏐⏐z− 1
+2
+⏐
+⏐ =
+1
+2 onto the horizontal
+linev= 1. Thus, the transformed boundaryconditions are Φ =−10 on the
+linev= 0 and Φ = 20 on the linev= 1. See Figure 7.50(b).
+Step 3Modeled after Example 2 in Section 3.4 and Problem 12 in Exercises
+3.4, a solution of the transformed Dirichlet problem is given by
+Φ(u,v)=3 0v− 10.
+Step 4A solution of the original Dirichlet problem is now obtained bysub-
+stituting the real and imaginaryparts ofT(z) deﬁned in (5) for the variables
+uandvin Φ(u, v). Byreplacing the sy mbolzwithx+ iyinT(z) and
+simplifying we obtain:
+T(x+ iy)=( 1 − i)x+ iy− i
+x+ iy− 1 =( 1 − i)x+ i(y− 1)
+x− 1+ yi
+x− 1 − iy
+x− 1 − iy
+= x2 + y2 − 2x− 2y+1
+(x− 1)2 + y2 + 1 − x2 − y2
+(x− 1)2 + y2i.
+Therefore,
+φ(x,y)=3 01 − x2 − y2
+(x− 1)2 + y2 − 10 (6)
+is the desired electrostatic potential function.
+A complex potential function for the harmonic functionφ(x, y) given by
+(6) in Example 2 can be found as follows. IfΩ(z) is a complex potential for
+φ, thenΩ(z)= φ(x, y)+ iψ(x, y) andΩ(z) is analytic inD. From Step
+4 of Example 2 we have that the complex functionT(z) given by(5) has
+real and imaginarypartsu= x2 + y2 − 2x− 2y+1
+(x− 1)2 + y2 andv= 1 − x2 − y2
+(x− 1)2 + y2,
+respectively. That is,T(z)= u+ iv. We also have from Step 4 thatφ(x, y)=
+30v− 10. In order to obtain a function with 30v− 10 as its real part, we
+multiplyT(z)b y−30ithen subtract 10:
+−30iT(z)− 10 = −30i(u+ iv)− 10 = 30v− 10− 30ui.
+SinceT(z)=( 1 − i)z− i
+z− 1 is analytic inD, it follows that the function
+−30iT(z)− 10 is also analytic inD. Therefore,
+Ω(z)= −30i(1 − i)z− i
+z− 1 − 10 (7)
+isacomplexpotentialfunctionforφ(x, y). Sinceφrepresentstheelectrostatic
+potential, the level curves of the real and imaginaryparts ofΩrepresent
+--- PAGE 46 ---
+434 Chapter 7 Conformal Mappings
+the equipotential curves and lines of force, respectively. TheMathematica-
+generated plot in Figure 7.51 shows the equipotential curves in color and the
+lines of force in black.
+1
+0
+–0.5
+–1
+–1 –0.5 0 0.5 1
+y
+x
+0.5
+Figure 7.51 Equipotential curves and
+lines of force for Example 2
+NeumannProblemsTheorem7.1statesthatananalyticmappingis
+conformal at a point where the derivative is nonzero. This fact did not appear
+to be of immediate importance in previous examples when we solved Dirichlet
+problems, but it is extremelyimportant in another class of boundary -value
+problems associated with Laplace’s equation called Neumann problems.
+Neumann Problem
+SupposethatDisadomainintheplaneandthathisafunctiondeﬁnedon
+theboundaryCofD.Theproblemofﬁndingafunctionφ(x, y)thatsat-
+isﬁes Laplace’s equation in D and whose normal derivativedφ/dnequals
+h on the boundary C of D is called aNeumann problem.
+Certain types of Neumann problems occur naturally in the study of elec-
+trostatics, ﬂuid ﬂow, and heat ﬂow. For example, consider the problem of
+determining the steady-state temperatureφin a domainDwith boundary
+C. If the temperatures on the boundaryCofDare speciﬁed, then we have
+a Dirichlet problem. However, it mayalso be the case that all or part of
+the boundaryisinsulated. This means that there is no heat ﬂow across the
+boundary, and, itcanbeshownthatthisimpliesthatthedirectionalderivative
+ofφin the direction of the normal vectorntoCis 0. We call this derivative
+thenormal derivativeand denote it bydφ/dn. In summary, an insulated
+boundarycurveinaheatﬂowproblemcorrespondstoaboundaryconditionof
+the formdφ/dn= 0, and, thus, is an example of a Neumann problem. As the
+following theorem asserts, conformal mappings preserve boundaryconditions
+of the formdφ/dn=0 .
+Theorem 7.8 Preservation of Boundary Conditions
+Suppose that the functionf(z)= u(x, y)+iv(x, y) is conformal at every
+point of a smooth curveC. LetC′ be the image ofCunderw= f(z). If
+the normal derivativedΦ/dNof the function Φ(u, v) satisﬁes
+dΦ
+dN=0
+at everypoint onC′ in thew-plane, then the normal derivativedφ/dnof
+the functionφ(x, y)=Φ (u(x, y),v(x, y)) satisﬁes
+dφ
+dn=0
+at everypoint ofCin thez-plane.
+--- PAGE 47 ---
+7.5 Applications 435
+ProofAssume thatfandhsatisfythe hy pothesis of the theorem. Let
+z0 = x0 + iy0 be a point onCand letw0 = u0 + iv0 = f(z0) be its image on
+C′. Recall from calculus that ifNis a normal vector toC′ atw0, then the
+normal derivative atw0 is given bythe dot product
+dΦ
+dN= ∇Φ·N,
+where∇Φ is the gradient vector Φu(u0,v0)i+Φ v(u0,v0)j. The condition
+dΦ/dN= 0 implies that∇Φ andNare orthogonal, or, equivalently, that
+∇Φ is a tangent vector toC′ atw0. LetB′ be the level curve Φ(u, v)= c0
+containing (u0,v0). In multivariable calculus, you learned that the gradient
+vector∇Φ is orthogonal to the level curveB′. Thus, since the gradient is
+tangent toC′ and orthogonal toB′, we conclude thatC′ is orthogonal toB′
+atw0. See Figure 7.52.
+v
+u
+NC′
+w0
+= c0
+∇Φ
+Φ
+B′
+Figure 7.52 Figure for the proof of
+Theorem 7.8
+Now consider the level curveBin thez-plane given by
+φ(x,y)=Φ (u(x,y),v(x,y)) =c0.
+The point (x0,y0)i so nBand the gradient vector∇φis orthogonal toBat
+this point. Moreover, given anypoint (x, y)o nBin thez-plane, we have
+that the point (u(x, y),v(x, y)) is onB′ in thew-plane. That is, the image
+ofBunderw= f(z)i sB′. The curveCintersectsBatz0, and becausef
+is conformal atz0, it follows that the angle betweenCandBatz0 is the
+same as the angle betweenC′ andB′ atw0. In the preceding paragraph we
+found that this angle isπ/2, and soCandBare orthogonal atz0. Since
+∇φis orthogonal toB, we must have that∇φis tangent toC.I fnis a
+normal vector toCatz0, then we have shown that∇φandnare orthogonal.
+Therefore,
+dφ
+dn= ∇φ·n=0. ✎
+Theorem 7.8 gives us a procedure for solving Nuemann problems associ-
+ated with boundaryconditions of the formdφ/dn= 0. Namely, we follow
+the same four steps given on page 429 to solve a Dirichlet problem. In Step
+1, however, we ﬁnd a conformal mapping fromDontoD′. Since conformal
+mappings preserve boundaryconditions of the formdφ/dn= 0, solving the
+associated Nuemann problem inD′ will give us a solution of the original
+Nuemann problem. Because analytic mappings are conformal at noncritical
+points, this approach also works withmixedboundaryconditions. Roughly ,
+these are boundaryconditions where values ofφare speciﬁed on some bound-
+arycurves, whereas the normal derivative is required to satisfydφ/dn=0o n
+other boundarycurves.
+EXAMPLE 3A Heat Flow Application
+Find the steady-state temperatureφin the ﬁrst quadrant, shown in color in
+Figure 7.53(a), which satisﬁes the indicated mixed boundaryconditions.
+--- PAGE 48 ---
+436 Chapter 7 Conformal Mappings
+SolutionThe steady-state temperatureφis a solution of Laplace’s equation
+in the domainDdeﬁned by0<x<∞ ,0<y<∞ , which satisﬁes the
+boundaryconditions
+φ(0,y)=0 ,y >1
+φ(x,0 )=1,x >1
+dφ
+dn=0 ,for 0<y<1,x=0,and 0<x<1,y=0.
+We will ﬁndφusing the four steps given on page 429.
+y
+x
+1
+i
+= 0φ= 0φ
+= 1= 0 φφ
+∇ 2
+= 0
+d
+dn
+v
+—–
+= 0d
+dN—–
+= 0
+φd
+dn—–
+(a) Boundary-value problem
+(b) Transformed boundary-value problem
+u
+= 0
+∇ 2Φ
+Φ
+Φ = 0d
+dN—–
+Φ π
+= 1Φ
+—
+2
+π—
+2
+–
+Figure 7.53 Figure for Example 3
+Step 1As we will see in Step 3, this particular type of boundary-value
+problem is easyto solve in the half-inﬁnite vertical strip−a<u<a,v>0,
+when the boundarycurve−a<u<a,v= 0, is insulated. Thus, in this
+step we ﬁnd a conformal mapping of the ﬁrst quadrant onto a half-inﬁnite
+vertical strip. Byidentify ingα= 2 in entryE-4 of Appendix III, we see that
+the ﬁrst quadrant is mapped onto the upper half-planev>0 bythe mapping
+w= z2. Next we applythe mappingw= sin− 1 zof entryE-6. Under this
+mapping, the upper half-planey>0 is mapped onto the half-inﬁnite vertical
+strip− 1
+2π<u<1
+2π,v>0. Therefore, the composition
+w= sin− 1 (
+z2)
+(8)
+maps the ﬁrst quadrantx>0,y>0, onto the domainD′ deﬁned by
+− 1
+2π<u<1
+2π,v>0.
+Step 2From entries E-4 and E-6 of Appendix III we see that the boundary
+curves 1<x< ∞ ,y= 0, and 1<y<∞ ,x= 0, are mapped byw=
+sin− 1 (
+z2)
+onto the half-linesu= 1
+2π,v >0, andu= − 1
+2π,v >0, respectively.
+We also see that the segments 0<x<1,y= 0, and 0<y<1,x= 0, are
+mapped onto the segments 0<u<1
+2π,v= 0, and− 1
+2π<u<0,v=0 ,
+respectively. Thus, the transformed boundary conditions are
+Φ
+(
+−π
+2,v
+)
+=0 ,Φ
+(π
+2,v
+)
+=1 ,v>0
+dΦ
+dN=0 , −π
+2 <u<π
+2,v=0.
+Step3InspectionofthedomainD′ andthetransformedboundaryconditions
+suggests that a solution Φ is a linear function in the variableu. That is,
+Φ(u,v)= Au+ B
+for some real constantsAandB. Since the vectorN=0 i+1 jis normal to
+the boundarycurve− 1
+2π<u<1
+2π,v= 0, we have
+dΦ
+dN= ∇Φ·N= A(0)+0(1) = 0,
+and so, for anyvalues ofAandB, Φ satisﬁes the boundarycondition for the
+normal derivative. Byrequiring that
+Φ
+(
+−π
+2,v
+)
+= −Aπ
+2 + B= 0 and Φ
+(π
+2,v
+)
+= Aπ
+2 + B=1 ,
+--- PAGE 49 ---
+7.5 Applications 437
+we can solve for the constantsAandBto obtain the solution
+Φ(u,v)= 1
+πu+ 1
+2. (9)
+Step 4In order to ﬁnd a solution of the original boundary-value problem, we
+substitute the real and imaginaryparts of the mapping in (8) for the variables
+uandvin (9). Since the formula for the real part of the expression sin− 1 (
+z2)
+is complicated, the simplest wayof writing the solutionφis
+φ(x,y)= 1
+πRe
+[
+sin− 1 (
+z2)]
++ 1
+2.
+Since both 1/πand1
+2 are real, a complex potential functionΩ(z)=
+φ(x, y)+ iψ(x, y) for the steady-state temperature functionφfound in
+Example 3 is
+Ω(z)= 1
+πsin− 1 (
+z2)
++ 1
+2.
+The level curves of the real and imaginaryparts ofΩrepresent isotherms and
+lines of heat ﬂux, respectively. In Figure 7.54, we have usedMathematicato
+plot these curves. The isotherms are shown in color and the lines of heat ﬂux
+are shown in black.
+3
+2.5
+2
+1.5
+1
+0.5
+0
+0 0.5 1 1.5 2 2.5 3
+y
+x
+Figure 7.54Isotherms and lines of heat
+ﬂux for Example 3
+7.5.2 Fluid Flow
+StreamliningWe now discuss a method of using conformal mappings
+to model the planar ﬂow of an ideal ﬂuid. Recall from Section 5.6 that an
+ideal ﬂuid is an incompressible nonviscous ﬂuid whose ﬂow is irrotational. If
+Ω(z)= φ(x, y)+ iψ(x, y) is the complex velocitypotential of the ﬂow of an
+ideal ﬂuid in a domainD, thenΩ(z) is analytic inDandf(z)=
+Ω′(z)i sa
+complex representation of the velocityﬁeld. Furthermore, thestreamlines
+of the ﬂow of an ideal ﬂuid are the level curvesψ(x, y)= c2, and, for this
+reason,ψis called thestream functionof the ﬂow.
+As a simple example consider the complex analytic functionΩ(z)= Az,
+whereA>0 is a real constant. As presented in part (b) of Example 3 in
+Section 5.6, this function is the complex velocitypotential of the velocityﬁeld
+oftheﬂowofanidealﬂuidwhosecomplexrepresentationisf(z)= Ω′(z)= A.
+SinceΩ(z)= Az= Ax+iAy,thestreamlinesofthisﬂowarethecurvesy= c2.
+All streamlines are therefore horizontal. See Figure 7.55. Recall from Section
+5.6 that this particular ﬂow is called theuniform ﬂow.
+y
+x
+Figure 7.55 Uniform ﬂow The process of constructing a ﬂow of an ideal ﬂuid that remains inside
+a given domainDis calledstreamlining.I fCis a boundarycurve ofD,
+then the requirement that the ﬂow remain inside ofDmeans that there is
+no ﬂow acrossC, or, equivalently, that the directional derivative ofψin the
+direction of the normal vectorntoCis 0. Since the gradient vector∇ψis
+always normal to the level curveψ(x, y)= c2, this condition is equivalent to
+--- PAGE 50 ---
+438 Chapter 7 Conformal Mappings
+ψbeing constant onC. Put yet another way, the boundary ofDmust be a
+streamline of the ﬂow. The following summarizes this discussion.
+Streamlining
+Suppose that the complex velocitypotentialΩ(z)= φ(x, y)+ iψ(x, y)
+is analytic in a domainDand thatψis constant on the boundaryofD.
+Thenf(z)= Ω′(z) is a complex representation of the velocityﬁeld of a
+ﬂow of an ideal ﬂuid inD. Moreover, if a particle is placed inDand
+allowed to ﬂow with the ﬂuid, then its pathz(t) remains inD.
+Manystreamlining problems can be solved using conformal mappings in
+a manner similar to that presented for solving Dirichlet and Neumann prob-
+lems. In order to do so, we consider the complex velocitypotential as an
+conformal mapping of thez-plane to thew-plane. Ifz(t)= x(t)+ iy(t)i sa
+parametrization of a streamlineψ(x, y)= c
+2 in thez-plane, then
+w(t)= Ω(z(t)) =φ(x(t),y(t))+iψ(x(t),y(t)) =φ(x(t),y(t))+ic2.
+Thus, the image of a streamline under the conformal mappingw= Ω(z)i s
+a horizontal line in thew-plane. Since the boundaryCis required to be a
+streamline, the image ofCunderw= Ω(z) must be a horizontal line. That
+is, we can determine the complex velocitypotential byﬁnding a conformal
+mapping fromDonto a domain in thew-plane that maps the boundaryCof
+Donto a horizontal line. It is often the case, however, that it is easier to ﬁnd a
+conformal mappingz= Ω
+− 1(w) from, say, the upper half-planev>0o n t oD
+that takes the boundaryv= 0 onto the boundaryCofD.I fz= Ω− 1(z)i sa
+one-to-one function, then its inversew= Ω(z) is the desired complex velocity
+potential. In summary, we have the following method for solving streamlining
+problems.
+Solving a Streamlining Problem
+Ifw= Ω(z)= φ(x, y)+ iψ(x, y)is a one-to-one conformal mapping of
+the domain D in the z-plane onto a domainD′ in the w-plane such that
+theimageoftheboundaryCofD isahorizontallineinthew-plane,then
+f(z)= Ω′(z)isacomplexrepresentationofaﬂowofanidealﬂuidinD.
+EXAMPLE 4Flow arounda Corner
+Construct a ﬂow of an ideal ﬂuid in the ﬁrst quadrant.
+SolutionLetDdenote the ﬁrst quadrantx>0,y>0. From EntryE-4
+of Appendix III with the identiﬁcationα= 2, we see thatw= Ω(z)= z2 is
+a one-to-one conformal mapping of the domainDonto the upper half-plane
+v>0 and that the image of the boundaryofDunder this mapping is the real
+axisv= 0. Therefore,f(z)= Ω′(z)=2 ¯zis a complex representation of the
+--- PAGE 51 ---
+7.5 Applications 439
+ﬂow of an ideal ﬂuid in the ﬁrst quadrant. SinceΩ(z)= z2 = x2 −y2 +2 xyi,
+the streamlines of this ﬂow are the curves 2xy= c2. Some streamlines have
+been plotted in Figure 7.56. It should be clear from this ﬁgure whythis ﬂow
+is referred to as “ﬂow around a corner.”
+y
+x
+Figure 7.56 Flow around a corner
+EXAMPLE 5Flow arounda Cylind er
+Construct a ﬂow of an ideal ﬂuid in the domain consisting of all points outside
+the unit circle|z|= 1 and in the upper half-planey>0 shown in Figure 7.57.
+y
+x
+i
+Figure 7.57 Flow around a cylinder
+SolutionLetDbe the domain shown in Figure 7.57. Identifyinga=2i n
+entryH-3 of Appendix III, we obtain the one-to-one conformal mapping
+w= Ω(z)= z+ 1
+z
+ofDonto the upper half-planev>0. In addition, entryH-3 indicates that
+the boundaryofDis mapped onto the real axisv= 0. Therefore,
+f(z)= Ω′(z)= 1 − 1
+z2 =1 − 1
+¯z2
+is a complex representation of a ﬂow of an ideal ﬂuid inD. Since
+Ω(z)= z+ 1
+z= x+ x
+x2 + y2 + i
+(
+y− y
+x2 + y2
+)
+,
+the streamlines of this ﬂow are the curves
+ψ(x,y)= c2, ory− y
+x2 + y2 = c2.
+Some streamlines for this ﬂow have been plotted in Figure 7.57.
+It is not always possible to describe the streamlines with a Cartesian
+equation in the variablesxandy. This situation occurs when an appropriate
+mappingz= Ω− 1(w) of a domainD′ in thew-plane onto the domainDin
+thez-plane can be found, but you cannot solve for the mappingw= Ω(z).
+In such cases, it is possible to describe the streamlines parametrically.
+EXAMPLE 6Streamlines DeﬁnedParametrically
+ConstructaﬂowofanidealﬂuidinthedomainDconsistingofallpointsinthe
+upper half-planey>0 excluding the points on the rayy= π,−∞ <x≤ 0,
+shown in Figure 7.58.
+SolutionInExample4ofSection7.3weusedtheSchwarz-Christoﬀelformula
+to ﬁnd a conformal mapping of the upper half-planey>0 onto the domainD.
+--- PAGE 52 ---
+440 Chapter 7 Conformal Mappings
+Byreplacing the sy mbolzwith the symbolwin the solution from Example
+4, we obtain the mapping
+z= Ω− 1(w)= w+Ln(w)+1 (10)
+y
+x
+y = π
+Figure 7.58 Flow for Example 6
+oftheupperhalf-planev>0on toD. TheinverseΩofthemappingin(10)isa
+complex velocitypotential of a ﬂow of an ideal ﬂuid inD, but we cannot solve
+forwto obtain an explicit formula forΩ. In order to describe the streamlines,
+we recall that the streamlines inDare the images of horizontal linesv= c2
+in the upper half-planev>0 under the mappingz= w+Ln(w)+1. Since
+a horizontal line can be described byw(t)= t+ ic2,−∞ <t<∞ , it follows
+that the streamlines inDare given parametricallyby
+z(t)= Ω− 1(w(t)) =w(t)+Ln[w(t)]+1= t+ ic2 +Ln[t+ ic2]+1,
+orx(t)= t+ 1
+2 loge
+(
+t2 + c2
+2
+)
++1,y(t)= c2+ Arg(t+ ic2),−∞ <t<∞ .Some
+streamlines for this ﬂow have been plotted usingMathematicain Figure 7.58.
+A stream functionψ(x, y) is harmonic, but unlike a solution of a Dirichlet
+problem,ψ(x, y) need not be bounded inDnor satisfya ﬁxed boundary
+condition. Therefore, there can be manydiﬀerent stream functions for a
+given domainD. We illustrate this in the following example.
+EXAMPLE 7Streamlines DeﬁnedParametrically
+The one-to-one conformal mapping
+z= Ω− 1(w)= w+ ew +1
+also maps the upper half-planev>0 onto the domainDshown in Figure
+7.58. The streamlines for this ﬂow are parametrized by
+z(t)= t+ ic2 + et+ ic2 +1 ,
+orx(t)= t+ etcosc2 +1 ,y(t)= c2 + etsinc2,−∞ <t<∞ .From the
+Mathematica-generated plot of the streamlines in Figure 7.59, we observe
+that this ﬂow is diﬀerent from the one constructed in Example 6.
+y
+y = π
+x
+Figure 7.59 Flow for Example 7
+Sources and SinksRecall from Section 5.6 that ifFis the velocity
+ﬁeld of a planar ﬂuid ﬂow, then asourceis a pointz0 at which ﬂuid is
+produced and asinkis a pointz0 at which ﬂuid disappears. IfCis a simple
+closedcontour, thenanonzerovalueofthenetﬂuxacrossC, thatis, anonzero
+value of the integral
+∮
+C F·Nds, indicates the presence of either a source or
+a sink inside ofC. We saw in Section 5.6 that ifFis the velocityﬁeld of the
+ﬂow of an incompressible ﬂuid in a domainD, then there are no sources or
+sinks inD. Incompressibilitydoes not, however, rule out the existence of a
+--- PAGE 53 ---
+7.5 Applications 441
+source or sink on the boundaryofD. Sources and sinks on the boundaryofD
+are used to model planar ﬂows in which ﬂuid is entering or leavingDthrough
+a small slit in the boundary.
+In Problem 23 in Exercises 5.6 we found that a source at a pointz= x1
+on the boundaryy= 0 of the upper half-planey>0 can be described bythe
+complex velocitypotential
+Ω(z)= kLn(z− x1), (11)
+wherekis a positive constant. Similarly,z= x1 is a sink whenkis a neg-
+ative constant. The strength of the source or sink is proportional to|k|.A
+ﬂow containing both sources and sinks can be described byadding together
+functions of the form (11). For example,
+Ω(z) = Ln(z+1) − Ln(z− 1) = Lnz+1
+z− 1 (12)
+y
+4
+3
+2
+1–1–22 x
+1
+Figure 7.60 Source and sink
+is a complex velocitypotential for the ﬂow of an ideal ﬂuid in the upper half-
+planey>0 that has a source atx1 = −1 and a sink atx2 = 1 of equal
+strength. See Figure 7.60. You should also compare (12) with Problem 24 in
+Exercises 5.6.
+Our method of determining the stream function in a domain with sources
+or sinks on the boundaryis similar to that used in the absence of sources
+and sinks. Letψ(u, v) be the stream function of a ﬂow of an ideal ﬂuid
+in a domainD
+′ in thew-plane with sources or sinks on the boundary. If
+f(z)= u(x, y)+iv(x, y) is a conformal mapping of a domainDin thez-plane
+onto the domainD′, thenψ(x, y)= ψ(u(x, y),v(x, y)) is a stream function
+for a ﬂow of an ideal ﬂuid inDwith sources and sinks on the boundary. We
+illustrate this method in our ﬁnal example.
+EXAMPLE 8Flow with a Source andSink of Equal Strength
+Construct a ﬂow of an ideal ﬂuid in the domainDgiven by0<arg(z)<π/4
+with a source at the boundarypointx1 = 1 and sink of equal strength at the
+boundarypointx2 =3 .
+SolutionFrom entryE-4 in Appendix III withα= 4, we have thatf(z)= z4
+is a one-to-one conformal mapping ofDonto the upper half-planev>0.
+Under this mapping, the image ofx1 =1i su1 =1 4 = 1 and the image of
+x2 =3i su2 =3 4 = 81. With the obvious modiﬁcations to (12), we obtain
+the complex velocitypotential
+Ln(w− 1)− Ln(w− 81), (13)
+which describes the ﬂow of an ideal ﬂuid in the upper half-planev>0 that
+has a source atu1 = 1 and a sink of equal strength atu2 = 81. Since the
+domainDis mapped on the domainv>0 bythe conformal mappingw= z4,
+--- PAGE 54 ---
+442 Chapter 7 Conformal Mappings
+we obtain a complex potential function for a ﬂow inDbyreplacing the sy mbol
+wwithz4 in (13). This yields
+Ω(z)=L n
+(
+z4 − 1
+)
+− Ln
+(
+z4 − 81
+)
+. (14)
+Streamlines of this ﬂow are given byψ(x,y)= c2,o r
+Arg
+(
+z4 − 1
+)
+− Arg
+(
+z4 − 81
+)
+= c2.
+See Figure 7.61.
+y
+4
+3
+2
+1234 x
+1
+Figure 7.61 Figure for Example 8
+Remarks
+The complex mappingw= J(z)= z+ k2/zis called theJoukowski
+transformation. Under this mapping, a circle in thez-plane that con-
+tains the pointz1 = −1 and passes through the pointz2 = 1 is mapped
+onto a curve in thew-plane that resembles the cross-section of an airplane
+wing. See Figure 7.62(c). The image curve is called aJoukowski airfoil,
+and the air ﬂow around this curve can be determined using techniques
+from this section. We begin with the ﬂow shown in Figure 7.62(a) given
+byΩ(z)= z+1 /zaround the unit circle|z|= 1. Using an appropriate
+linear mapping, we can adjust this ﬂow to be one around a circle contain-
+ing the pointz
+1 = −1 and passing through the pointz2 = 1. See Figure
+7.62(b). The Joukowski transformation is then used to “transform” this
+ﬂow to one around the airfoil as shown in Figure 7.62(c).
+(a) Flow around the unit circle
+(b) Flow around a circle containing 
+z1 = –1 and passing through z2 = 1
+(c) Flow around an airfoil
+y
+y
+y
+x
+x
+x
+Figure 7.62 Flow around a Joukowski
+airfoil
+EXERCISES 7.5Answers to selected odd-numbered problems begin on page ANS-23.
+7.5.1 Boundary-Value Problems
+InProblems1–6,(a)ﬁndaconformalmappingofthedomainshownincoloronto
+the upper half-plane, and (b) use the mapping from (a) and the solution (7) in
+Section 7.4 to ﬁnd the steady-state temperatureφ(x, y) in the domain subject to
+thegivenboundaryconditions.
+1. 2. y
+x
+i
+= 0φ
+= 1
+1
+φ
+= 2φ = 0φ
+= 0φ ∇ 2
+Figure 7.63 Figure for Problem 1
+y
+x
+–11= 1φ = –1φ
+= 2φ= 0φ
+= 0φ∇ 2
+i
+Figure 7.64 Figure for Problem 2
+--- PAGE 55 ---
+7.5 Applications 443
+3. 4. y
+x
+i
+–11 = 1φ= –1φ
+= 2φ= 0φ
+= 0φ∇ 2
+Figure 7.65 Figure for Problem 3
+x
+i
+= 1φ = –10φ
+= 0φ= 10φ
+= 0
+0
+φ∇ 2
+y
+Figure 7.66 Figure for Problem 4
+5. 6.
+= 1φ= 0φ
+= 3φ = 0φ
+= 0φ∇ 2
+y
+x
+2–2
+Figure 7.67 Figure for Problem 5
+= 20φ
+= 10φ = 0φ
+= 0φ∇ 2
+x
+y
+i
+Figure 7.68 Figure for Problem 6 [Hint: Use
+the inverse of the mapping in entry M-4 of
+Appendix III.]
+InProblems7and8,(a)ﬁndalinearfractionaltransformationofthedomainshown
+in color onto an inﬁnite strip, and (b) use the mapping from (a) and the solution
+from Example 2 of Section 3.4 to ﬁnd the electrostatic potentialφ(x, y)i nt h e
+domainsubjecttothegivenboundaryconditions.
+7. 8.
+1
+= 0φ
+= 2φ
+= 0φ∇ 2
+x
+y
+Figure 7.69 Figure for Problem 7
+2–1
+= 10φ
+= –15φ
+= 0φ∇ 2
+x
+y
+Figure 7.70 Figure for Problem 8
+--- PAGE 56 ---
+444 Chapter 7 Conformal Mappings
+In Problems 9 and 10, (a) ﬁnd a linear fractional transformation of the domain
+shown in color onto an annulus, and (b) use the mapping from (a) and a solution
+similartothatinExample1toﬁndtheelectrostaticpotentialφ(x, y)inthedomain
+subjecttothegivenboundaryconditions.
+9. 10.
+= 0φ = 10
+2 1–1
+φ
+= 0φ∇ 2
+x
+y
+Figure 7.71 Figure for Problem 9
+–1
+= 1φ
+= 0φ
+2
+= 0φ∇ 2
+x
+y
+Figure 7.72 Figure for Problem 10
+InProblems11and12,(a)ﬁndaconformalmappingofthedomainshownincolor
+ontothedomainusedinExample3,and(b)usethemappingfrom(a)andasolution
+similar to that in Example 3 to ﬁnd the steady-state temperatureφ(x, y) in the
+domainsubjecttothegivenboundaryconditions.
+11. 12.
+–11 = 10φφ= 0 = 0φ
+= 0φ∇ 2
+x
+y
+d
+dn— φ = 0d
+dn—
+Figure 7.73 Figure for Problem 11
+= –10φ
+= 5φ
+= 0φ∇ 2
+x
+i
+y
+0
+φ = 0d
+dn—
+φ = 0d
+dn—
+Figure 7.74 Figure for Problem 12
+7.5.2 Fluid Flow
+InProblems13–16,ﬁndthecomplexvelocitypotentialΩ(z)fortheﬂowofanideal
+ﬂuidinthedomainshownincolor.
+13. 14.
+/4π
+x
+y
+Figure 7.75 Figure for Problem 13
+x
+y
+Figure 7.76 Figure for Problem 14
+--- PAGE 57 ---
+7.5 Applications 445
+15. 16.
+π
+y
+i
+x
+0
+Figure 7.77 Figure for Problem 15
+y
+i
+x
+1
+Figure 7.78 Figure for Problem 16
+In Problems 17–20, the ﬂow of an ideal ﬂuid is shown in a domain in thez-plane.
+( a) Find a conformal mapping of the upper half-planew> 0 onto the domain in
+thez-plane,and(b)ﬁndaparametricrepresentationofthestreamlinesoftheﬂow.
+17. 18. yy =
+x
+π
+y = π/2
+Figure 7.79 Figure for Problem 17
+x
+y
+i
+Figure 7.80 Figure for Problem 18
+19. 20.
+x
+y
+i
+Figure 7.81 Figure for Problem 19
+x
+y
+i
+Figure 7.82 Figure for Problem 20
+InProblems21and22,constructtheﬂowofanidealﬂuidinthegivendomainwith
+sinksorsourcesontheboundaryofthedomain.
+21. ThedomainfromProblem13withasourceatz1 =1+ iandasinkatz2 =2
+22. ThedomainfromProblem16withasourceatz1 = 1
+2
+√
+2+ 1
+2
+√
+2iandsinksat
+z2 =2andz3 =3 i
+= k0φ
+= 0φ∇ 2
+φ = 0d
+dn—
+φ
+= k1φ
+= 0φ∇ 2
+x
+y
+abd
+dn— φ = 0d
+dn— —
+Figure 7.83 Figure for Problem 23
+Focus on Concepts
+23. Showthatthefunctiongivenby(3)withthesymbolsuandvreplacedbythe
+symbolsxandyis a solution of the boundary-value problem in the domain
+shownincolorinFigure7.83.
+--- PAGE 58 ---
+446 Chapter 7 Conformal Mappings
+24. UseaconformalmappingandProblem23tosolvetheboundary-valueproblem
+inthedomainshownincolorinFigure7.84.
+25. UseaconformalmappingandProblem23tosolvetheboundary-valueproblem
+inthedomainshownincolorinFigure7.85.
+φ = 0d
+dn—
+π
+= 0φ
+= –1φ
+/4 x
+y
+d
+dn—
+φ = 0d
+dn—d
+dn—
+Figure 7.84 Figure for Problem 24
+= 0φ∇ 2
+= 10φ
+= 30φ
+∇ 2
+x
+y
+φ = 0
+12 3
+d
+dn— —
+Figure 7.85 Figure for Problem 25
+26. InProblem22inExercises5.6wedeﬁnedastagnation pointofaﬂowtobe
+apointatwhichF(x, y)= 0. Findthestagnationpointsfor:
+( a)theﬂowinExample5
+( b)theﬂowinProblem16.
+27. Inthisproblemyouwillconstructtheﬂowofanidealﬂuidthroughaslitshown
+inFigure7.87.
+( a)Determineavelocitypotentialfortheﬂowofanidealﬂuidinthedomain
+−π/2<x<π /2,−∞ <y< ∞,showninFigure7.86.
+( b)Use the potential from part (a) and a conformal mapping to ﬁnd the
+velocity potential for the ﬂow of an ideal ﬂuid in the region shown in
+Figure7.87.
+π x
+y
+– —    2
+π— 2
+Figure 7.86 Figure for Problem 27
+y
+x–11
+Figure 7.87 Figure for Problem 27
+--- PAGE 59 ---
+7.5 Applications 447
+28. In this problem you will construct the ﬂow of an ideal ﬂuid around a plate
+shownFigure7.89.
+( a)UsealinearmappingandthevelocitypotentialfromExample5toshow
+thatthevelocitypotentialofanidealﬂuidinthedomainshowninFigure
+7.88isgivenby
+Ω(z)= z
+eiα + eiα
+z.
+( b)ThedomainoutsideoftheunitcircleshowninFigure7.88ismappedonto
+thecomplexplaneexcludingthelinesegmenty=0 ,−2≤ x≤2,shownin
+Figure7.89bytheconformalmapping
+w= z+
+(
+z2 −4
+)1/2
+2 .
+Use the velocity potential from part (a) and this conformal mapping to
+ﬁndthevelocitypotentialfortheﬂowofanidealﬂuidintheregionshown
+inFigure7.89.
+y
+x1α
+Figure 7.88 Figure for Problem 28
+x
+y
+–2
+2
+Figure 7.89 Figure for Problem 28
+Computer Lab Assignments
+In Problems 29–36, use a CAS to plot the isotherms for the given steady-state
+temperatureφ(x, y).
+29. φ(x, y)isthesteady-statetemperaturefromProblem1.
+30. φ(x, y)isthesteady-statetemperaturefromProblem2.
+31. φ(x, y)isthesteady-statetemperaturefromProblem3.
+32. φ(x, y)isthesteady-statetemperaturefromProblem4.
+33. φ(x, y)isthesteady-statetemperaturefromProblem5.
+34. φ(x, y)isthesteady-statetemperaturefromProblem6.
+35. φ(x, y)isthesteady-statetemperaturefromProblem11.
+36. φ(x, y)isthesteady-statetemperaturefromProblem12.
+--- PAGE 60 ---
+448 Chapter 7 Conformal Mappings
+In Problems 37–40, use a CAS to plot the equipotential curves for the given elec-
+trostaticpotentialφ(x, y).
+37. φ(x, y)istheelectrostaticpotentialfromProblem7.
+38. φ(x, y)istheelectrostaticpotentialfromProblem8.
+39. φ(x, y)istheelectrostaticpotentialfromProblem9.
+40. φ(x, y)istheelectrostaticpotentialfromProblem10.
+InProblems41–44,useaCAStoplotthestreamlinesofthegivenﬂow.
+41. TheﬂowfromProblem13.
+42. TheﬂowfromProblem14.
+43. TheﬂowfromProblem15.
+44. TheﬂowfromProblem16.
+CHAPTER 7 REVIEW QUIZ
+Answerstoselectedodd-numberedproblemsbegin
+on page ANS-23.
+InProblems1–15,answertrueorfalse. Ifthestatementisfalse,justifyyouranswer
+byeitherexplainingwhyitisfalseorgivingacounterexample; ifthestatementis
+true, justify your answer by either proving the statement or citing an appropriate
+resultinthischapter.
+1. Iff(z)isanalyticatapointz
+0,thenthemappingw= f(z)isconformalatz0.
+2. Themappingw= z2 + iz+1isnotconformalatz= − 1
+2 i.
+3. Themappingw= z2 +1isnotconformalatz= ±i.
+4. Themappingw=¯zfailstobeconformalateverypointinthecomplexplane.
+5. Alinearfractionaltransformationisconformalateverypointinitsdomain.
+6. Theimageofacircleunderalinearfractionaltransformationisacircle.
+7. ThelinearfractionaltransformationT(z)= z− i
+z+1 mapsthepoints0,−1,and
+iontothepoints−i, ∞,and0,respectively.
+8. Givenanythreedistinctpointsz1,z2,andz3,thereisalinearfractionaltrans-
+formationthatmapsz1,z2,andz3 onto0,1,and∞.
+9. TheinverseofthelinearfractionaltransformationT(z)=( az+ b)/(cz+ d)is
+T− 1(z)=( cz+ d)/(az+ b).
+10. Iff′(z)= A(z+1) − 1/2(z−1)− 3/4, thenw= f(z)mapstheupperhalf-plane
+ontoanunboundedpolygonalregion.
+11. Iff′(z)= A(z+1) − 1/2z− 1/2(z−1)− 1/2, thenw= f(z)mapstheupperhalf-
+planeontoarectangle.
+12. EveryDirichletproblemintheupperhalf-planecanbesolvedusingthePoisson
+integralformula.
+--- PAGE 61 ---
+Chapter 7 Review Quiz 449
+13. Ifw= f(z)= u(x, y)+ iv(x, y)isaconformalmappingofadomainDonto
+the upper half-planev>0 and if Φ(u, v) is a harmonic function forv>0,
+thenφ(x, y)=Φ(u(x, y),v(x, y))isharmoniconD.
+14. Ifψ(x, y) is a function deﬁned on a domainDand if the boundary ofDis
+a level curve ofψ(x, y), thenψ(x, y) is the stream function of an ideal ﬂuid
+inD.
+15. Given a domainD, there can be more than one ﬂow of an ideal ﬂuid that
+remainsinsideofD.
+InProblems16–30,trytoﬁllintheblankswithoutreferringbacktothetext.
+16. Theanalyticfunctionf(z)=coshzisconformalexceptatz= .
+17. Conformal mappings preserve both the magnitude and theof an
+angle.
+18. Themappingisanexampleofamappingthatisconformalatevery
+pointinthecomplexplane.
+19. Iff′(z0)= f′′(z0)=0andf′′′(z0) ̸=0,thenthemappingw= f(z)
+themagnitudeofanglesatthepointz0.
+20. T(z)= isalinearfractionaltransformationthatmapsthepoints0,
+1+ i,andiontothepoints1,i,and∞.
+21. The image of the circle|z−1|=2 under the linear fractional transformation
+T(z)=(2 z− i)/(iz+1)isa .
+22. The image of a lineL under the linear fractional transformation
+T(z)=( iz−2)/(3z+1 − i) is a circle if and only if the pointz=
+isonL.
+23. Thecross-ratioofthepointsz,z1,z2,andz3 is and .
+24. ThederivativeofaSchwarz-Christoﬀelmappingfromtheupperhalf-planeonto
+thetrianglewithverticesat0,1,and1+iisf′(z)= .
+25. Iff′(z)= A(z+1) − 1/2z− 1/4,thenw= f(z)mapstheupperhalf-planeontoa
+polygonalregionwithinteriorangles.
+26. The Poisson integral formula gives an integral solutionφ(x,y) to a Dirichlet
+problemintheupperhalf-planey>0providedthefunctionf(x)= φ(x,0)is
+and on−∞ <x< ∞.
+27. The complex velocity potentialΩ(z)= z5 describes the ﬂow of an ideal ﬂuid
+inthedomain0<argz< .
+28. IfΩ(z)= ez + e− z is the complex velocity potential for the ﬂow of an ideal
+ﬂuidinadomainD,thenacomplexrepresentationofthevelocityﬁeldisgiven
+byf(z)= .
+29. Ifz=
+(1+ w
+1 − w
+)2
+isaone-to-oneconformalmappingoftheupperhalf-planeonto
+adomainD,thenastreamlineoftheﬂowofanidealﬂuidinDisparametrized
+byz(t)= .
+30. ThecomplexvelocitypotentialΩ(z)=Ln(z−2)+Ln(z−3)−Ln(z−4)describes
+theﬂowofanidealﬂuidintheupperhalf-planey>0withaatz=2
+andz=3anda atz=4.
+--- PAGE 62 ---
+

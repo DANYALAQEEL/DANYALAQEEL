@@ -1,0 +1,863 @@
+Chapter 1:  Introduction
+--- NOTES ---
+
+
+==============
+Chapter 1: Introduction
+What Operating Systems Do
+Computer-System Organization
+Computer-System Architecture
+Operating-System Operations
+Resource Management
+Security and Protection
+Virtualization
+Distributed Systems
+Kernel Data Structures
+Computing Environments
+Free/Libre and Open-Source Operating Systems
+
+
+--- NOTES ---
+
+
+==============
+Objectives
+Describe the general organization of a computer system and the role of interrupts
+Describe the components in a modern, multiprocessor computer system
+Illustrate the transition from user mode to kernel mode
+Discuss how operating systems are used in various computing environments
+Provide examples of free and open-source operating systems
+--- NOTES ---
+
+
+==============
+What Does the Term Operating System Mean?
+An operating system is “fill in the blanks”
+What about:
+Car 
+Airplane
+Printer
+Washing Machine
+Toaster
+Compiler
+Etc.
+--- NOTES ---
+
+
+==============
+What is an Operating System?
+A software layer between users/applications and computer hardware
+Controls and coordinates the use of hardware resources
+Provides a convenient and consistent environment for program execution
+
+Key Idea:
+No application accesses hardware directly - the operating system is always involved.
+--- NOTES ---
+
+
+==============
+Why Do We Need an Operating System?
+Hardware is complex and unsafe to use directly
+Multiple programs compete for limited resources
+The system must be protected from misuse and errors
+Without an OS
+Programs would interfere with each other
+Hardware could be misused or damaged
+System reliability and security would be compromised
+--- NOTES ---
+
+
+==============
+OS as an Intermediary
+The operating system:
+Accepts requests from applications
+Decides when and how hardware is used
+Ensures safe and fair access to resources
+Example
+Application requests to read a file→ OS checks permissions→ OS accesses disk→ OS returns data to application
+--- NOTES ---
+
+
+==============
+Abstract View of Components of Computer
+--- NOTES ---
+
+
+==============
+Computer System Components
+Hardware
+CPU, Memory, I/O Devices
+Operating System
+Manages and Controls Hardware
+Application Programs
+Use OS Services to solve user problems
+Users
+Humans, Machines, or other systems
+--- NOTES ---
+
+
+==============
+What Operating Systems Do
+Major Roles of an Operating System:
+Resource Manager
+Control Program
+Service Provider
+Abstraction Provider
+
+==============
+OS as a Resource Manager
+The OS manages:
+CPU time
+Main Memory
+Storage Space
+I/O Devices
+Goal
+Efficient utilization of hardware
+Fair allocation among competing programs
+
+
+==============
+OS as a Control Program
+
+Prevents illegal or unsafe operations
+Ensures correct execution of programs
+Protects the system from errors and misuse
+Key Mechanisms
+User Mode vs Kernel Mode
+Privileged Instructions
+Controlled Access via System Calls
+--- NOTES ---
+
+
+==============
+OS as a Service Provider
+The OS provides common services such as:
+Program execution
+File manipulation
+I/O operations
+Communication between processes
+Error detection and handling
+Benefit
+Application developers do not need to handle hardware
+
+--- NOTES ---
+
+
+==============
+OS as an Abstraction Provider
+The OS hides hardware complexity by providing:
+Files instead of raw disk blocks
+Processes instead of raw CPU execution
+Virtual memory instead of physical memory
+Why This Matters
+Simplifies programming
+Improves portability
+Enhances safety
+
+--- NOTES ---
+
+
+==============
+Overview of Computer System Structure 
+--- NOTES ---
+
+
+==============
+Computer System Organization
+Computer-system operation
+One or more CPUs, device controllers connect through common bus providing access to shared memory
+Concurrent execution of CPUs and devices competing for memory cycles
+
+--- NOTES ---
+
+
+==============
+Computer-System Operation
+I/O devices and the CPU can execute concurrently
+Each device controller is in charge of a particular device type
+Each device controller has a local buffer
+Each device controller type has an operating system device driver to manage it
+CPU moves data from/to main memory to/from local buffers
+I/O is from the device to local buffer of controller
+Device controller informs CPU that it has finished its operation by causing an interrupt
+--- NOTES ---
+
+
+==============
+Common Functions of Interrupts
+Interrupt transfers control to the interrupt service routine generally, through the interrupt vector, which contains the addresses of all the service routines
+Interrupt architecture must save the address of the interrupted instruction
+A trap or exception is a software-generated interrupt caused either by an error or a user request
+An operating system is interrupt driven
+--- NOTES ---
+
+
+==============
+Interrupt Timeline
+--- NOTES ---
+
+
+==============
+Interrupt Handling
+The operating system preserves the state of the CPU by storing the registers and the program counter
+Determines which type of interrupt has occurred:
+Separate segments of code determine what action should be taken for each type of interrupt
+--- NOTES ---
+
+
+==============
+Interrupt-drive I/O Cycle
+--- NOTES ---
+
+
+==============
+I/O Structure
+Two methods for handling I/O
+After I/O starts, control returns to user program only upon I/O completion
+After I/O starts, control returns to user program without waiting for I/O completion
+--- NOTES ---
+
+
+==============
+I/O Structure (Cont.)
+After I/O starts, control returns to user program only upon I/O completion
+Wait instruction idles the CPU until the next interrupt
+Wait loop (contention for memory access)
+At most one I/O request is outstanding at a time, no simultaneous I/O processing
+After I/O starts, control returns to user program without waiting for I/O completion
+System call – request to the OS to allow user to wait for I/O completion
+Device-status table contains entry for each I/O device indicating its type, address, and state
+OS indexes into I/O device table to determine device status and to modify table entry to include interrupt
+
+--- NOTES ---
+
+
+==============
+Computer Startup
+Bootstrap program is loaded at power-up or reboot
+Typically stored in ROM or EPROM, generally known as firmware
+Initializes all aspects of system
+Loads operating system kernel and starts execution
+--- NOTES ---
+
+
+==============
+Storage Structure
+--- NOTES ---
+
+
+==============
+Storage Structure
+Main memory – only large storage media that the CPU can access directly
+Random access
+Typically volatile
+Typically random-access memory in the form of Dynamic Random-access Memory (DRAM)
+Secondary storage – extension of main memory that provides large nonvolatile storage capacity
+--- NOTES ---
+
+
+==============
+Storage Structure (Cont.)
+Hard Disk Drives (HDD) – rigid metal or glass platters covered with magnetic recording material 
+Disk surface is logically divided into tracks, which are subdivided into sectors
+The disk controller determines the logical interaction between the device and the computer 
+Non-volatile memory (NVM) devices– faster than hard disks, nonvolatile
+Various technologies
+Becoming more popular as capacity and performance increases, price drops
+--- NOTES ---
+
+
+==============
+Storage Definitions and Notation Review
+ The basic unit of computer storage is the bit. A bit can contain one of two
+values, 0 and 1. All other storage in a computer is based on collections of bits.
+Given enough bits, it is amazing how many things a computer can represent:
+numbers, letters, images, movies, sounds, documents, and programs, to name
+a few. A byte is 8 bits, and on most computers it is the smallest convenient
+chunk of storage. For example, most computers don’t have an instruction to
+move a bit but do have one to move a byte. A less common term is word,
+which is a given computer architecture’s native unit of data. A word is made
+up of one or more bytes. For example, a computer that has 64-bit registers and
+64-bit memory addressing typically has 64-bit (8-byte) words. A computer
+executes many operations in its native word size rather than a byte at a time.
+
+Computer storage, along with most computer throughput, is generally
+measured and manipulated in bytes and collections of bytes. A kilobyte, or
+KB , is 1,024 bytes; a megabyte, or MB, is 1,0242  bytes; a gigabyte, or GB, is
+1,0243  bytes; a terabyte, or TB, is 1,0244  bytes; and a petabyte, or PB, is 1,0245
+bytes. Computer manufacturers often round off these numbers and say that
+a megabyte is 1 million bytes and a gigabyte is 1 billion bytes. Networking
+measurements are an exception to this general rule; they are given in bits
+(because networks move data a bit at a time).
+
+
+==============
+Storage Hierarchy
+Storage systems organized in hierarchy
+Speed
+Cost
+Volatility
+Caching – copying information into faster storage system; main memory can be viewed as a cache for secondary storage
+Device Driver for each device controller to manage I/O
+Provides uniform interface between controller and kernel
+--- NOTES ---
+
+
+==============
+Storage-Device Hierarchy
+--- NOTES ---
+
+
+==============
+How a Modern Computer Works
+A von Neumann architecture
+--- NOTES ---
+
+
+==============
+Direct Memory Access Structure
+Used for high-speed I/O devices able to transmit information at close to memory speeds
+Device controller transfers blocks of data from buffer storage directly to main memory without CPU intervention
+Only one interrupt is generated per block, rather than the one interrupt per byte
+--- NOTES ---
+
+
+==============
+Operating-System Operations
+Bootstrap program – simple code to initialize the system, load the kernel
+Kernel loads
+Starts system daemons (services provided outside of the kernel)
+Kernel interrupt driven (hardware and software)
+Hardware interrupt by one of the devices 
+Software interrupt (exception or trap):
+Software error (e.g., division by zero)
+Request for operating system service – system call
+Other process problems include infinite loop, processes modifying each other or the operating system
+
+--- NOTES ---
+
+
+==============
+Multiprogramming (Batch system)
+
+Single user cannot always keep CPU and I/O devices busy 
+Multiprogramming organizes jobs (code and data) so CPU always has one to execute
+A subset of total jobs in system is kept in memory
+One job selected and run via job scheduling
+When job has to wait (for I/O for example), OS switches to another job
+
+--- NOTES ---
+
+
+==============
+Multitasking (Timesharing)
+
+
+A logical extension of Batch systems– the CPU switches jobs so frequently that users can interact with each job while it is running, creating interactive computing
+Response time should be < 1 second
+Each user has at least one program executing in memory  process
+If several jobs ready to run at the same time  CPU scheduling
+If processes don’t fit in memory, swapping moves them in and out to run
+Virtual memory allows execution of processes not completely in memory
+--- NOTES ---
+
+
+==============
+Memory Layout for Multiprogrammed System
+--- NOTES ---
+
+
+==============
+Dual-mode Operation
+Dual-mode operation allows OS to protect itself and other system components
+User mode and kernel mode 
+Mode bit provided by hardware 
+Provides ability to distinguish when system is running user code or kernel code.
+When a user is running  mode bit is “user”
+When kernel code is executing  mode bit is “kernel”
+How do we guarantee that user does not explicitly set the mode bit to “kernel”?
+System call changes mode to kernel, return from call resets it to user
+Some instructions designated as privileged, only executable in kernel mode
+--- NOTES ---
+
+
+==============
+Transition from User to Kernel Mode
+--- NOTES ---
+
+
+==============
+Timer
+Timer to prevent infinite loop (or process hogging resources)
+Timer is set to interrupt the computer after some time period
+Keep a counter that is decremented by the physical clock
+Operating system set the counter (privileged instruction)
+When counter zero generate an interrupt
+Set up before scheduling process to regain control or terminate program that exceeds allotted time
+--- NOTES ---
+
+
+==============
+Process Management
+
+A process is a program in execution. It is a unit of work within the system. Program is a passive entity; process is an active entity.
+Process needs resources to accomplish its task
+CPU, memory, I/O, files
+Initialization data
+Process termination requires reclaim of any reusable resources
+Single-threaded process has one program counter specifying location of next instruction to execute
+Process executes instructions sequentially, one at a time, until completion
+Multi-threaded process has one program counter per thread
+Typically system has many processes, some user, some operating system running concurrently on one or more CPUs
+Concurrency by multiplexing the CPUs among the processes / threads
+
+--- NOTES ---
+
+
+==============
+Process Management Activities
+     
+Creating and deleting both user and system processes
+Suspending and resuming processes
+Providing mechanisms for process synchronization
+Providing mechanisms for process communication
+Providing mechanisms for deadlock handling
+The operating system is responsible for the following activities in connection with process management:
+--- NOTES ---
+
+
+==============
+Memory Management
+To execute a program all (or part) of the instructions must be in memory
+All  (or part) of the data that is needed by the program must be in memory
+Memory management determines what is in memory and when
+Optimizing CPU utilization and computer response to users
+Memory management activities
+Keeping track of which parts of memory are currently being used and by whom
+Deciding which processes (or parts thereof) and data to move into and out of memory
+Allocating and deallocating memory space as needed
+
+--- NOTES ---
+
+
+==============
+File-system Management
+OS provides uniform, logical view of information storage
+Abstracts physical properties to logical storage unit  - file
+Each medium is controlled by device (i.e., disk drive, tape drive)
+Varying properties include access speed, capacity, data-transfer rate, access method (sequential or random)
+
+File-System management
+Files usually organized into directories
+Access control on most systems to determine who can access what
+OS activities include
+Creating and deleting files and directories
+Primitives to manipulate files and directories
+Mapping files onto secondary storage
+Backup files onto stable (non-volatile) storage media
+--- NOTES ---
+
+
+==============
+Mass-Storage Management
+Usually disks used to store data that does not fit in main memory or data that must be kept for a “long” period of time
+Proper management is of central importance
+Entire speed of computer operation hinges on disk subsystem and its algorithms
+OS activities
+Mounting and unmounting
+Free-space management
+Storage allocation
+Disk scheduling
+Partitioning
+Protection
+--- NOTES ---
+
+
+==============
+Caching
+Important principle, performed at many levels in a computer (in hardware, operating system, software)
+Information in use copied from slower to faster storage temporarily
+Faster storage (cache) checked first to determine if information is there
+If it is, information used directly from the cache (fast)
+If not, data copied to cache and used there
+Cache smaller than storage being cached
+Cache management important design problem
+Cache size and replacement policy
+
+--- NOTES ---
+
+
+==============
+Characteristics of Various Types of Storage
+
+
+
+
+
+
+
+
+
+    Movement between levels of storage hierarchy can be explicit or implicit
+--- NOTES ---
+
+
+==============
+Migration of data “A” from Disk to Register
+Multitasking environments must be careful to use most recent value, no matter where it is stored in the storage hierarchy
+Multiprocessor environment must provide cache coherency in hardware such that all CPUs have the most recent value in their cache
+Distributed environment situation even more complex
+Several copies of a datum can exist
+Various solutions covered in Chapter 19
+--- NOTES ---
+
+
+==============
+I/O Subsystem
+One purpose of OS is to hide peculiarities of hardware devices from the user
+I/O subsystem responsible for
+Memory management of I/O including buffering (storing data temporarily while it is being transferred), caching (storing parts of data in faster storage for performance), spooling (the overlapping of output of one job with input of other jobs)
+General device-driver interface
+Drivers for specific hardware devices
+--- NOTES ---
+
+
+==============
+Protection and Security
+Protection – any mechanism for controlling access of processes or users to resources defined by the OS
+Security – defense of the system against internal and external attacks
+Huge range, including denial-of-service, worms, viruses, identity theft, theft of service
+Systems generally first distinguish among users, to determine who can do what
+User identities (user IDs, security IDs) include name and associated number, one per user
+User ID then associated with all files, processes of that user to determine access control
+Group identifier (group ID) allows set of users to be defined and controls managed, then also associated with each process, file
+Privilege escalation allows user to change to effective ID with more rights
+--- NOTES ---
+
+
+==============
+Virtualization
+Allows operating systems to run applications within other OSes
+Vast and growing industry
+Emulation used when source CPU type different from target type (i.e. PowerPC to Intel x86)
+Generally slowest method
+When computer language not compiled to native code – Interpretation
+Virtualization – OS natively compiled for CPU, running guest OSes  also natively compiled 
+Consider VMware running WinXP guests, each running applications, all on native WinXP host OS
+VMM (virtual machine Manager) provides virtualization services
+--- NOTES ---
+
+
+==============
+Virtualization (cont.)
+Use cases involve laptops and desktops running multiple OSes for exploration or compatibility
+Apple laptop running Mac OS X host, Windows as a guest
+Developing apps for multiple OSes without having multiple systems
+Quality assurance testing applications without having multiple systems
+Executing and managing compute environments within data centers
+VMM can run natively, in which case they are also the host
+There is no general-purpose host then (VMware ESX and Citrix XenServer)
+
+--- NOTES ---
+
+
+==============
+Computing Environments - Virtualization
+--- NOTES ---
+
+
+==============
+Distributed Systems
+Collection of separate, possibly heterogeneous, systems networked together
+Network is a communications path, TCP/IP most common
+Local Area Network (LAN)
+Wide Area Network (WAN)
+Metropolitan Area Network (MAN)
+Personal Area Network (PAN)
+Network Operating System provides features between systems across network
+Communication scheme allows systems to exchange messages
+Illusion of a single system
+
+==============
+Computer System Architecture
+--- NOTES ---
+
+
+==============
+Computer-System Architecture
+Most systems use a single general-purpose processor
+Most systems have special-purpose processors as well
+Multiprocessors systems growing in use and importance
+Also known as parallel systems, tightly-coupled systems
+Advantages include:
+Increased throughput
+Economy of scale
+Increased reliability – graceful degradation or fault tolerance
+Two types:
+Asymmetric Multiprocessing – each processor is assigned a specie task.
+Symmetric Multiprocessing – each processor performs all tasks
+
+--- NOTES ---
+
+
+==============
+Symmetric Multiprocessing Architecture
+--- NOTES ---
+
+
+==============
+Dual-Core Design
+Multi-chip and multicore
+Systems containing all  chips
+Chassis containing multiple separate systems
+
+--- NOTES ---
+
+
+==============
+Non-Uniform Memory Access System
+
+==============
+Clustered Systems
+Like multiprocessor systems, but multiple systems working together
+Usually sharing storage via a storage-area network (SAN)
+Provides a high-availability service which survives failures
+Asymmetric clustering has one machine in hot-standby mode
+Symmetric clustering has multiple nodes running applications, monitoring each other
+Some clusters are for high-performance computing (HPC)
+Applications must be written to use parallelization
+Some have distributed lock manager (DLM) to avoid conflicting operations
+--- NOTES ---
+
+
+==============
+Clustered Systems
+
+==============
+PC Motherboard
+
+==============
+Computer System Environments
+--- NOTES ---
+
+
+==============
+Computing Environments
+Traditional
+Mobile
+Client Server
+Pear-to-Pear
+Cloud computing
+Real-time Embedded
+
+
+==============
+Traditional
+Stand-alone general-purpose machines
+But blurred as most systems interconnect with others (i.e., the Internet)
+Portals provide web access to internal systems
+Network computers (thin clients) are like Web terminals
+Mobile computers interconnect via wireless networks
+Networking becoming ubiquitous – even home systems use firewalls to protect home computers from Internet attacks
+
+==============
+Mobile
+Handheld smartphones, tablets, etc.
+What is the functional difference between them and a “traditional” laptop?
+Extra feature – more OS features (GPS, gyroscope)
+Allows new types of apps like augmented reality
+Use IEEE 802.11 wireless, or cellular data networks for connectivity
+Leaders are Apple iOS and Google Android
+
+==============
+Client Server
+Client-Server Computing
+Dumb terminals supplanted by smart PCs
+Many systems now servers, responding to requests generated by clients
+Compute-server system provides an interface to client to request services (i.e., database)
+File-server system provides interface for clients to store and retrieve files
+--- NOTES ---
+
+
+==============
+Peer-to-Peer
+Another model of distributed system
+P2P does not distinguish clients and servers
+Instead all nodes are considered peers
+May each act as client, server or both
+Node must join P2P network
+Registers its service with central lookup service on network, or
+Broadcast request for service and respond to requests for service via discovery protocol
+Examples include Napster and Gnutella, Voice over IP (VoIP) such as Skype 
+--- NOTES ---
+
+
+==============
+Cloud Computing
+Delivers computing, storage, even apps as a service across a network
+Logical extension of virtualization as it uses virtualization as the base for its functionality.
+Amazon EC2  has thousands of servers, millions of virtual machines, petabytes of storage available across the Internet, pay based on usage
+--- NOTES ---
+
+
+==============
+Cloud Computing (Cont.)
+Many types
+Public cloud – available via Internet to anyone willing to pay
+Private cloud – run by a company for the company’s own use
+Hybrid cloud – includes both public and private cloud components
+Software as a Service (SaaS) – one or more applications available via the Internet (i.e., word processor)
+Platform as a Service (PaaS) – software stack ready for application use via the Internet (i.e., a database server)
+Infrastructure as a Service (IaaS) – servers or storage available over Internet (i.e., storage available for backup use)
+--- NOTES ---
+
+
+==============
+Cloud computing environments composed of traditional OSes, plus VMMs, plus cloud management tools
+Internet connectivity requires security like firewalls
+Load balancers spread traffic across multiple applications
+Cloud Computing (cont.)
+--- NOTES ---
+
+
+==============
+Real-Time Embedded Systems
+Real-time embedded systems most prevalent form of computers
+Vary considerable, special purpose, limited purpose OS,  real-time OS
+Use expanding
+Many other special computing environments as well
+Some have OSes, some perform tasks without an OS
+Real-time OS has well-defined fixed time constraints
+Processing must be done within constraint
+Correct operation only if constraints met
+
+
+==============
+Free and Open-Source Operating Systems
+Operating systems made available in source-code format rather than just binary closed-source and proprietary
+Counter to the copy protection and Digital Rights Management (DRM) movement
+Started by Free Software Foundation (FSF), which has “copyleft” GNU Public License (GPL)
+Free software and open-source software are two different ideas championed by different groups of people
+http://gnu.org/philosophy/open-source-misses-the-point.html/
+Examples include GNU/Linux and BSD UNIX (including core of Mac OS X), and many more
+Can use VMM like VMware Player (Free on Windows), Virtualbox (open source and free on many platforms - http://www.virtualbox.com) 
+Use to run guest operating systems for exploration
+--- NOTES ---
+
+
+==============
+The Study of Operating Systems
+There has never been a more interesting time to study operating systems, and it has never been 
+easier. The open-source movement has overtaken operating systems, causing many of them to be
+made available in both source and binary (executable) format. The list of operating
+systems available in both formats includes Linux, BUSD UNIX, Solaris, and part of macOS. 
+The availability of source code allows us to study operating systems from the inside out. 
+Questions that we could once answer only by looking at documentation or the behavior of an
+operating system we can now answer by examining the code itself.
+
+Operating systems that are no longer commercially viable have been open-sourced as well, enabling 
+us to study how systems operated in a time of fewer CPU, memory, and storage resources. 
+An extensive but incomplete list of open-source operating-system projects is available
+from https://curlie.org/Computers/Software/Operating_Systems/Open_Source/
+
+In addition, the rise of virtualization as a mainstream (and frequently free) computer function 
+makes it possible to run many operating systems on top of one core system. For example, VMware
+(http://www.vmware.com) providesa free “player” for Windows on which hundreds of free
+“virtual appliances” can run. Virtualbox (http://www.virtualbox.com) provides a free, open-source
+virtual machine manager on many operating systems. Using such tools, students can try out 
+hundreds of operating systems without dedicated hardware.
+
+The advent of open-source operating systems has also made it easier to make the move from 
+student to operating-system developer. With some knowledge, some effort, and an Internet 
+connection, a student can even create a new operating-system distribution. Just a few years ago, 
+it was difficult or impossible to get access to source code. Now, such access is limited only by
+how much interest, time, and disk space a student has.
+--- NOTES ---
+
+
+==============
+End of Chapter 1
+--- NOTES ---
+
+
+==============
+Kernel Data Structures
+Many similar to standard programming data structures
+Singly linked list
+
+
+
+Doubly linked list
+
+
+
+Circular linked list
+
+
+
+
+
+
+
+==============
+Kernel Data Structures
+Binary search treeleft <= right
+Search performance is O(n)
+Balanced binary search tree is O(lg n)
+
+
+
+
+
+
+
+
+
+
+==============
+Kernel Data Structures
+Hash function can create a hash map
+
+
+
+
+
+
+
+Bitmap – string of n binary digits representing the status of n items
+Linux data structures defined in include files <linux/list.h>, <linux/kfifo.h>, <linux/rbtree.h>
+
+
+
+
+
+
+
+
+
+
+==============
+Computer Startup
+Bootstrap program is loaded at power-up or reboot
+Typically stored in ROM or EPROM, generally known as firmware
+Initializes all aspects of system
+Loads operating system kernel and starts execution
+--- NOTES ---
+
+
+==============
+Characteristics of Various Types of Storage
+
+
+
+
+
+
+
+
+
+    Movement between levels of storage hierarchy can be explicit or implicit
+--- NOTES ---
+
+
+==============

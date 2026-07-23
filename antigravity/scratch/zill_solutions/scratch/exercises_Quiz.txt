@@ -1,0 +1,257 @@
+CHAPTER 5 REVIEW QUIZ
+Answerstoselectedodd-numberedproblemsbegin
+onpageANS-17.
+In Problems 1–20, answer true or false. If the statement is false, justify your answer
+by either explaining why it is false or giving a counterexample; if the statement is
+true, justify your answer by either proving the statement or citing an appropriate
+result in this chapter.
+1.Ifz(t),a≤ t≤ b, is a parametrization of a contourCandz(a)= z(b), thenC
+is a simple closed contour.
+2.The real line integral
+∫
+C (x2 + y2) dx+2 xydy, whereCis given byy= x3 from
+(0, 0) to (1,1), has the same value on the curvey= x6 from (0, 0) to (1,1).
+3.The sector deﬁned by−π/6<arg(z) <π /6 is a simply connected domain.
+4.Iffis analytic atz0, thenf′′′ necessarily exists atz0.
+5.Iffis analytic within and on a simple closed contourCandz0 is any point
+withinC, then the value off(z0) is determined by the values off(z)o nC.
+6.Iffis analytic on a simple closed contourC, then
+∮
+C f(z) dz=0 .
+7.Iffis continuous in a domainD and has an antiderivativeFinD, then an
+integral
+∫
+C f(z) dzhas the same value on all contoursCinDbetween the initial
+pointz0 and terminal pointz1.
+8.If
+∮
+C f(z) dz= 0 for every simple closed contourC, thenfis analytic within
+and onC.
+9.The value of
+∫
+C
+z− 2
+z dzis the same for any pathCin the right half-plane
+Re(z) >0 betweenz=1+ iandz=10+8 i.
+10.Ifgis entire, then
+∮
+C
+g(z)
+z− idz=
+∮
+C 1
+g(z)
+z− idz, whereCis the circle|z|= 3 and
+C1 is the ellipsex2 + 1
+9y2 =1 .
+11.
+∮
+C
+1
+(z− z0)(z− z1) dz= 0 for every simple closed contourCthat encloses the
+pointsz0 andz1.
+12.Iffis analytic within and on the simple closed contourCandz0 is a point
+withinC, then
+∮
+C
+f′(z)
+z− z0
+dz=
+∮
+C
+f(z)
+(z− z0) 2 dz.
+13.
+∮
+C Re(z) dzis independent of the pathCbetweenz0 = 0 andz1 =1+ i.
+14.
+∫
+C
+(
+4z3 − 2z+1
+)
+dz=
+∫ 2
+− 2
+(
+4x3 − 2x+1
+)
+dx, where the contourC is com-
+prised of segmentsC1 andC2 shown in Figure 5.58.
+y
+x
+C1
+2i
+–22
+C2
+Figure 5.58 Figure for Problem 14
+15.
+∫
+C 1
+zn dz=
+∫
+C 2
+zn dzfor all integersn, whereC1 isz(t)= eit,0 ≤ t≤ 2πand
+C2 isz(t)= Reit,R>1,0 ≤ t≤ 2π.
+16.Iffis continuous on the contourC, then
+∫
+C f(z) dz+
+∫
+− C f(z) dz=0 .
+17.On any contourCwith initial pointz0 = −iand terminal pointz1 = ithat
+lies in a simply connected domainDnot containing the origin or the negative
+real axis,
+∫ i
+− i
+1
+zdz= Ln(i) − Ln(−i)= πi.
+18.
+∮
+C
+1
+z2 +1 dz= 0, whereCis the ellipsex2 + 1
+4y2 =1 .
+
+=== PAGE 64 ===
+298 Chapter 5 Integration in the Complex Plane
+19.Ifp(z) is a polynomial inzthen the functionf(z)=1 /p(z) can be never be an
+entire function.
+20.The functionf(z) = coszis entire and not a constant and so must be un-
+bounded.
+In Problems 21–40, try to ﬁll in the blanks without referring back to the text.
+21.z(t)= eit2
+,0 ≤ t≤
+√
+2π, is a parametrization for a.
+22.z(t)= z0 + eit,0 ≤ t≤ 2π, is a parametrization for a.
+23.The diﬀerence betweenz1(t)= eit,0 ≤ t≤ 2πandz2(t)= ei(2π − t),0 ≤ t≤ 2π
+is .
+24.
+∮
+C
+(2y+ x− 6ix2) dz= , whereCis the triangle with vertices 0,i ,
+1+ i, traversed counterclockwise.
+25.Iff is a polynomial function andC is a simple closed contour, then∮
+C
+f(z) dz= .
+26.
+∫
+C
+zIm(z) dz= , whereCis given byz(t)=2 t+ t2i,0 ≤ t≤ 1.
+27.
+∫
+C
+|z|2 dz= , whereCis the line segment for 1− ito 1+i.
+28.
+∮
+C
+(¯z) n dz= , wherenis an integer andCisz(t)= eit,0 ≤ t≤ 2π.
+29.
+∫
+C
+sinz
+2dz= , whereCis given byz(t)=2 i+4 eit,0 ≤ t≤ π/2.
+30.
+∮
+C
+seczdz= , whereCis|z|=1 .
+31.
+∮
+C
+1
+z(z− 1) dz= , whereCis|z− 1 |= 1
+2.
+32.Iff(z)=
+∮
+C
+ξ2 +6 ξ− 2
+ξ− z dξ,whereCis|z|= 3, thenf(1+ i)= .
+33.Iff(z)= z3 + ez andC is a contourz =8 eit,0 ≤ t ≤ 2π, then∮
+C
+f(z)
+(z+ πi) 3 dz= .
+34.If|f(z) |≤ 2 on the circle|z|=3,then
+⏐⏐⏐⏐
+∮
+C
+f(z) dz
+⏐
+⏐⏐⏐
+≤ .
+35.Ifn is a positive integer andC is the contour|z| = 2, then∮
+C
+z− nez dz= .
+36.On|z|= 1, the contour integral
+∮
+C
+cosz
+zn dzequals forn= 1, equals
+forn= 2, and equalsforn=3 .
+37.
+∮
+C
+zndz=
+
+
+
+0, ifn
+2πi,ifn
+, wherenis an integer andCis the circle
+|z|=1 .
+
+=== PAGE 65 ===
+Chapter 5 Review Quiz 299
+38.The value of the integral
+∮
+C
+z
+z+ idzon the contour C shown in Figure 5.59 is
+.
+39.The value of the integral
+∫
+C
+(2z+1) dzon the contourC, comprised of line
+segmentsC1,C2,...,C11 shown in Figure 5.60 is.
+40.The value of the integral
+∮
+C
+ez
+z2(z− πi) dzon the closed contourCshown in
+Figure 5.61 is.
+y
+x
+C
+3–2
+Figure 5.59 Figure for Problem 38
+y
+(0, 5) (3, 5)
+(3, 3)
+(5, 3)
+(1, 1)
+(1, 2)(0, 2)
+(–2, 3)
+(–2, 1)
+03
+x
+C4
+C5
+C6
+C7
+C8
+C9
+C10
+C11
+C1
+C2
+C3
+Figure 5.60 Figure for Problem 39
+1
+1
+y
+C
+x
+Figure 5.61 Figure for Problem 40
+
+=== PAGE 66 ===
+
+

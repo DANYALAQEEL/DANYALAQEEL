@@ -1,0 +1,161 @@
+
+
+========================================
+LECTURE: 2. Complex Conjugate and Algebra of Complex Numbers.pdf
+========================================
+
+Complex 
+Conjugate and 
+algebra of 
+complex numbers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.1
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 1
+• Section: 1.1
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+Review of Complex Numbers
+Complex Conjugate & Algebra of Complex 
+Numbers
+Polar form of Complex Number
+Euler’s Theorem and Exponential Form
+De Moivre’s Theorem
+
+In the sixteen century, Girolamo Cardano first introduced 
+imaginary numbers in the sixteenth century in the study of 
+solutions to a quadratic equation of the form 𝑥2 + 𝛼= 0,
+with 𝛼> 0. The solutions to  this equation are 𝑥= ± −𝛼.
+Cardano defined −1 to be an “imagined” or imaginary 
+number.
+In the eighteenth century, Euler introduced the symbol 𝑖to 
+represent −1 .
+A Brief History
+
+Imaginary Unit 𝒊
+The imaginary unit 𝑖is defined by 𝑖=
+−1 or 𝑖2 = −1.
+
+
+Example 1; Powers of 𝒊
+Find the powers of 𝑖.
+a. 𝑖37
+b. 𝑖2006
+c. 𝑖−3927
+
+A complex number is a number that can be expressed in
+the form 𝒂+ 𝒊𝒃, where 𝑎and 𝑏are real numbers and 𝑖is 
+the imaginary unit.
+Complex Number
+
+The real number 𝑎in z = 𝑎+ 𝑖𝑏is called real part of 𝑧and 
+abbreviated as 𝑅𝑒(𝑧). 
+The real number 𝑏in z = 𝑎+ 𝑖𝑏is called the imaginary 
+part of 𝑧and is abbreviated as 𝐼𝑚𝑧.
+Real and Imaginary Parts of a Complex 
+Number
+
+
+Complex Number System
+𝑎+ 𝑏𝑖
+Reals
+Rationals
+(Can be written as fractions)
+Integers
+(…, -1, -2, 0, 1, 2, …)
+Whole
+(0, 1, 2, …)
+Natural
+(1, 2, …)
+Irrationals
+(Cannot be 
+written as a 
+fraction)
+𝜋, 𝑒
+Pure Imaginary
+𝑖, 2𝑖, −7𝑖, etc.
+
+Complex numbers z1 = 𝑎1 + 𝑖𝑏1 and z2 = 𝑎2 + 𝑖𝑏2
+are equal if and only if 
+𝑎1 = 𝑎2 and 𝑏1 = 𝑏2.
+Equality of Complex Numbers
+
+Arithmetic Operations on Complex Numbers
+
+Laws for Complex Numbers
+
+The zero in the complex number system is the number 0 + 0𝑖. 
+The zero is the additive identity in the complex number system.
+The unity in complex numbers is 1 + 0𝑖. The unity is the 
+multiplicative identity.
+Zero and Unity of Complex Numbers
+
+Conjugate of Complex Numbers
+If 𝑧is a complex number, the number obtained by changing 
+the sign of its imaginary part is called the complex conjugate, 
+or simply conjugate, of 𝑧and is denoted by the symbol ҧ𝑧. 
+In other words, if 𝑧= 𝑎+ 𝑖𝑏, then its conjugate is
+ҧ𝑧= 𝑎−𝑖𝑏.
+
+Example 3; Conjugate of Complex Numbers
+If 𝑧= 6 + 3𝑖, then  ҧ𝑧= 6 −3𝑖
+If 𝑧= −5 −𝑖, then ҧ𝑧= −5 + 𝑖.
+If 𝑧is a real number, say, 𝑧= 7, then ҧ𝑧= 7.
+
+Properties of Conjugate
+𝑧1 + 𝑧2 = ഥ𝑧1 + ഥ𝑧2
+𝑧1 −𝑧2 = ഥ𝑧1 −ഥ𝑧2
+𝑧1𝑧2 = ഥ𝑧1 ഥ𝑧2
+𝑧1
+𝑧2
+= ഥ𝑧1
+ഥ𝑧2
+ҧҧ𝑧= 𝑧
+
+Developing Useful Rules
+𝑧+ ҧ𝑧= 𝑎+ 𝑖𝑏+ 𝑎−𝑖𝑏= 2𝑎
+𝑧−ҧ𝑧= 𝑎+ 𝑖𝑏−𝑎−𝑖𝑏= 2𝑖𝑏
+∴𝒂= 𝑹𝒆𝒛=
+𝒛+ത𝒛
+𝟐and 𝒃= 𝑰𝒎𝒛=
+𝒛−ത𝒛
+𝟐𝒊
+Also   𝒛ത𝒛= 𝒂+ 𝒊𝒃
+𝒂−𝒊𝒃= 𝒂𝟐+ 𝒃𝟐
+
+In the complex number system, every number 𝑧has a
+unique additive inverse. As in the real number system, the
+additive inverse of 𝑧= 𝑎+ 𝑖𝑏is its negative, −𝑧, where
+−𝑧= −𝑎−𝑖𝑏. For any complex number 𝑧, we have
+𝑧+ (−𝑧) = 0.
+Additive Inverse of a Complex Number
+
+Every nonzero complex number 𝑧has a multiplicative inverse.
+For 𝑧≠0 there exists one and only one nonzero
+complex number 𝑧−1 such that 𝑧𝑧−1 = 1. The multiplicative
+inverse 𝑧−1 is the same as the reciprocal 1/𝑧. 
+Multiplicative Inverse of a Complex Number
+
+• Chapter: 1
+• Exercise: 1.1
+• Questions: 1−42
+A First Course in
+Complex Analysis
+with Applications 
+by Dennis G. Zill
+and Patrick D.
+Shanahan.
+Practice Questions
+

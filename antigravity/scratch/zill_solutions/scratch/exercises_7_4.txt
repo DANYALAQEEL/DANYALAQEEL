@@ -1,0 +1,1198 @@
+2416: EXERCISES 7.4Answers to selected odd-numbered problems begin on page ANS-22.
+2417: InProblems1–4,use(7)tosolvethegivenDirichletproblemintheupperhalf-plane
+2418: y>0.
+2419: 1. 2. y
+2420: x
+2421: = 0
+2422: –11
+2423: φ
+2424: = 0
+2425: 0
+2426: φ= 0φ = 1φ= –1φ
+2427: ∇ 2
+2428: Figure 7.40 Figure for Problem 1
+2429: y
+2430: x
+2431: = 0
+2432: –21
+2433: φ
+2434: = 0
+2435: 0
+2436: φ= –1φ = 1φ= 5φ
+2437: ∇ 2
+2438: Figure 7.41 Figure for Problem 2
+2439: --- PAGE 39 ---
+2440: 7.4 Poisson Integral Formulas 427
+2441: 3. 4. y
+2442: x
+2443: = 0
+2444: –2 –11
+2445: φ
+2446: = 5
+2447: 0
+2448: φ= 0φ = 1φ = 0φ= –1φ
+2449: ∇ 2
+2450: Figure 7.42 Figure for Problem 3
+2451: y
+2452: x
+2453: = 0
+2454: –2 –11
+2455: φ
+2456: = 4
+2457: 0
+2458: φ= 1φ = 1φ = 2φ= –1φ
+2459: ∇ 2
+2460: Figure 7.43 Figure for Problem 4
+2461: InProblems5–8,usethePoissonintegralformula(11)tosolvetheDirichletproblem
+2462: intheupperhalf-planey>0subjecttothegivenboundaryconditions.
+2463: 5. φ(x,0)=
+2464: 
+2465: 
+2466: 
+2467: 
+2468: 
+2469: 
+2470: 
+2471: 0, −∞ <x<0
+2472: 2x−1, 0<x<2
+2473: 0, 2<x< ∞
+2474: 6. φ(x,0)=
+2475: 
+2476: 
+2477: 
+2478: 
+2479: 
+2480: 
+2481: 
+2482: −1, −∞ <x< −1
+2483: x, −1 <x<1
+2484: 1, 1 <x< ∞
+2485: 7. φ(x,0)=
+2486: 
+2487: 
+2488: 
+2489: 
+2490: 
+2491: 
+2492: 
+2493: 0,−∞ <x<0
+2494: x2, 0<x<1
+2495: 0, 1 <x< ∞
+2496: 8. φ(x,0)=
+2497: 
+2498: 
+2499: 
+2500: 
+2501: 
+2502: 
+2503: 
+2504: 0,−∞ <x<0
+2505: x2, 0<x<1
+2506: 1, 1 <x< ∞
+2507: 9. ( a)Use the techniques presented in Section 6.6 to establish the integral
+2508: formulas
+2509: ∫ ∞
+2510: −∞
+2511: coss
+2512: s2 + a2 ds= πe− a
+2513: a and
+2514: ∫ ∞
+2515: −∞
+2516: sins
+2517: s2 + a2 ds=0fora>0.
+2518: ( b)SolvetheDirichletintheupperhalf-planey>0subjecttotheboundary
+2519: conditionφ(x,0) = cosx,−∞ <x< ∞.[Hint: Make the substitution
+2520: s= t− xandusetheformulasinpart(a).]
+2521: 10. Solve the Dirichlet in the upper half-planey> 0 subject to the boundary
+2522: conditionφ(x,0)=sinx,−∞ <x< ∞.[Hint: Makethesubstitutions= t−x
+2523: andusetheformulasinpart(a)ofProblem9.]
+2524: Focus on Concepts
+2525: 11. Letf(z) be a complex function and suppose that on the unit diskz= eiθ,
+2526: −π≤ θ≤ π, we have thatf
+2527: (
+2528: eiθ)
+2529: is piecewise continuous and bounded. Let
+2530: z= reiθ,0 ≤ r<1, be a point inside the unit disk. Show that the Poisson
+2531: integralformula(12)canbewrittenas
+2532: φ(x,y)= 1
+2533: 2π
+2534: ∫ π
+2535: − π
+2536: f
+2537: (
+2538: eit
+2539: ) 1 −|z|2
+2540: |eit− z|2 dt= 1
+2541: 2π
+2542: ∫ π
+2543: − π
+2544: f
+2545: (
+2546: eit
+2547: ) 1 − r2
+2548: 1+ r2 −2rcos(t− θ)dt.(13)
+2549: 12. In this problem we determine a solution of the Dirichlet problem on the unit
+2550: disksubjecttoapiecewiseconstantboundarycondition. Thatis,wederivea
+2551: formulaforasolutionofaDirichletproblemintheunitdiskthatisanalogous
+2552: totheDirichletproblem(6)inthehalf-plane.
+2553: --- PAGE 40 ---
+2554: 428 Chapter 7 Conformal Mappings
+2555: ( a)Verifythat
+2556: 1
+2557: 2π
+2558: ∫ 1 − r2
+2559: 1+ r2 −2rcos(t− θ)dt= 1
+2560: πtan− 1
+2561: [1+ r
+2562: 1 − rtan
+2563: ( t− θ
+2564: 2
+2565: )]
+2566: + C. (14)
+2567: ( b)Assumethatθ1 <θ2 <. . .<θn arendistinctpointsintheinterval(−π,π).
+2568: Explainhow(13)and(14)canbeusedtosolvetheDirichletproblem
+2569: Solve: ∂2φ
+2570: ∂x2 + ∂2φ
+2571: ∂y2 =0 ,x2 + y2 <1
+2572: Subject to: φ(cosθ,sinθ)=
+2573: 
+2574: 
+2575: 
+2576: 
+2577: 
+2578: 
+2579: 
+2580: 
+2581: 
+2582: 
+2583: 
+2584: 
+2585: 
+2586: k0,−π<θ<θ1
+2587: k1,θ1 <θ<θ2
+2588: ..
+2589: .
+2590: .
+2591: .
+2592: .
+2593: k
+2594: n,θn <θ<π.
+2595: 13. UseProblems11and12tosolvetheDirichletproblemintheunitdiskshown
+2596: inFigure7.44.
+2597: 14. UseProblems11and12tosolvetheDirichletproblemintheunitdiskshown
+2598: inFigure7.45.
+2599: y
+2600: x
+2601: i
+2602: = 0φ
+2603: = –1φ
+2604: = 1
+2605: 1
+2606: φ
+2607: ∇ 2
+2608: Figure 7.44 Figure for Problem 13
+2609: –i
+2610: y
+2611: x
+2612: = 0φ
+2613: = –1φ= 1
+2614: 1–1
+2615: φ
+2616: = 0φ
+2617: ∇ 2
+2618: Figure 7.45 Figure for Problem 14
+2619: Computer Lab Assignments
+2620: InProblems15and16,(a)usethePoissonintegralformula(12)toﬁndanintegral
+2621: representationofasolutionofthegivenDirichletproblemintheunitdisk,and(b)
+2622: useaCAStoapproximatethevaluesofthesolutionatthepoints(0,0),
+2623: (1
+2624: 2 ,1
+2625: 2
+2626: )
+2627: ,and(
+2628: 0,1
+2629: 3
+2630: )
+2631: .
+2632: 15. 16. y
+2633: x
+2634: = 0φ
+2635: (cos  , sin  ) =φ θθ θ
+2636: 1
+2637: ∇ 2
+2638: 2
+2639: π 2—
+2640: Figure 7.46 Figure for Problem 15
+2641: y
+2642: x
+2643: = 0φ
+2644: = 0φ
+2645: (cos  , sin  )=e–| |φ θθ θ
+2646: 1–1
+2647: ∇ 2
+2648: Figure 7.47 Figure for Problem 16
+2649: --- PAGE 41 ---
+2650: 7.5 Applications 429
+2651: 7.5 Applications
+2652: 7.5In this section we revisit the method introduced in Section 4.5 for solving Dirichlet prob-
+2653: lems; here we incorporate the new mappings deﬁned in this chapter or in Appendix III. We
+2654: also describe a similar process for solving a new type of boundary-value problem that relies
+2655: on ﬁnding a conformal mapping between two domains. This allows us to investigate more
+2656: complicated boundary-value problems arising in the two-dimensional modeling of electro-
+2657: statics and heat ﬂow. We conclude this section with an application of conformal mapping
+2658: to the problem of ﬁnding an irrotational ﬂow of an incompressible ﬂuid, that is, the ﬂow of
+2659: anideal ﬂuid, in a region of the plane.
+2660: 7.5.1 Boundary-Value Problems
+2661: DirichletProblemsRevisitedSuppose thatDis a domain in the
+2662: z-plane and thatgis a function deﬁned on the boundaryCofD. The problem
+2663: of ﬁnding a functionφ(x, y) that satisﬁes Laplace’s equation∇ 2φ=0 ,o r
+2664: ∂2φ
+2665: ∂x2 + ∂2φ
+2666: ∂y2 =0, (1)
+2667: inDand that equalsgon the boundaryofD, is called aDirichlet problem.
+2668: In Section 4.5, we saw that analytic functions can be used to solve certain
+2669: Dirichlet problems. We obtained a solution of a Dirichlet problem in a domain
+2670: Dbyﬁnding ananalytic mappingofDonto a domainD
+2671: ′ in which the
+2672: associated, or transformed, Dirichlet problem can be solved. That is, we
+2673: found a mappingw= f(z)o fDontoD
+2674: ′ such thatf(z)= u(x, y)+ iv(x, y)
+2675: is analytic inD. ByTheorem 4.5, if Φ(u, v) is a solution of the transformed
+2676: Dirichlet problem inD′, thenφ(x, y)=Φ (u(x, y),v(x, y)) is a solution of
+2677: the Dirichlet problem inD. Thus, our method presented in Section 4.5 for
+2678: solving Dirichlet problems consisted of the following four steps:
+2679: • Find an analytic mappingw= f(z)= u(x, y)+iv(x, y) of the domain
+2680: Donto a domainD′,
+2681: • transform the boundaryconditions fromDtoD′,
+2682: • solve the transformed Dirichlet problem inD′, and
+2683: • setφ(x, y)=Φ (u(x, y),v(x, y)).
+2684: For a more detailed discussion of these steps refer to Section 4.5 and Figure
+2685: 4.19.
+2686: In this chapter we investigate a number of topics that can help complete
+2687: these four steps. The table of conformal mappings discussed in Section 7.1,
+2688: the linear fractional transformations studied in Section 7.2, and the Schwarz-
+2689: ChristoﬀeltransformationofSection7.3provideavaluablesourceofmappings
+2690: to use in Step 1. In addition, ifD
+2691: ′ is taken to be either the upper half-plane
+2692: y>0 or the open unit disk|z|<1, then the Poisson integral formulas of
+2693: Section 7.4 provide a means to determine a solution of the associated Dirichlet
+2694: problem inD
+2695: ′.
+2696: --- PAGE 42 ---
+2697: 430 Chapter 7 Conformal Mappings
+2698: In the following examples, we will applysome ideas from the preceding
+2699: sections in this chapter to help solve Dirichlet problems arising in the areas
+2700: of electrostatics, ﬂuid ﬂow, and heat ﬂow. Recall from Section 3.3 that if
+2701: a functionφ(x, y) satisﬁes Laplace’s equation (1) in some domainD, then
+2702: φ(x, y) is harmonic inD. Moreover, ifψ(x, y) is a harmonic conjugate of
+2703: φ(x, y)i nD, then the function
+2704: Ω(z)= φ(x,y)+ iψ(x,y)
+2705: is analytic inDand is called acomplex potential function. The level
+2706: curves ofφandψhave important physical interpretations in applied mathe-
+2707: matics. Their interpretations are summarized in Table 3.1 of Section 3.4.
+2708: EXAMPLE 1A Heat Flow Application
+2709: Determine the steady-state temperatureφin the domainDconsisting of all
+2710: points outside of the two circles|z|= 1 and
+2711: ⏐⏐z− 5
+2712: 2
+2713: ⏐
+2714: ⏐ =
+2715: 1
+2716: 2, shown in color in
+2717: Figure 7.48(a), that satisﬁes the indicated boundaryconditions.
+2718: y
+2719: v
+2720: = 0φ
+2721: = 30φ = 0φ
+2722: 1
+2723: 1
+2724: 23
+2725: ∇ 2
+2726: = 0
+2727: = 0
+2728: = 30
+2729: ∇ 2
+2730: x
+2731: ur0
+2732: (a) Dirichlet problem
+2733: (b) Transformed Dirichlet problem
+2734: Φ
+2735: Φ
+2736: Φ
+2737: Figure 7.48 Figure for Example 1
+2738: SolutionThe steady-state temperatureφis a solution of Laplace’s equation
+2739: (1) inDthat satisﬁes the boundaryconditions
+2740: φ(x,y) = 30 ifx2 + y2 =1 ,
+2741: φ(x,y)=0 i f
+2742: (
+2743: x− 5
+2744: 2
+2745: )2
+2746: + y2 = 1
+2747: 4.
+2748: We solve this problem using the four steps given on page 429.
+2749: Step 1EntryC-1 in Appendix III indicates that we can mapDonto an
+2750: annulus. Identifyingb= 2 andc= 3 in EntryC-1, we ﬁnd that
+2751: a= bc+1+
+2752: √
+2753: (b2 − 1)(c2 − 1)
+2754: b+ c = 7+2
+2755: √
+2756: 6
+2757: 5 ,
+2758: r0 = bc− 1 −
+2759: √
+2760: (b2 − 1)(c2 − 1)
+2761: c− b =5 − 2
+2762: √
+2763: 6.and
+2764: Thus, the domainDis mapped onto the annulus 5− 2
+2765: √
+2766: 6<w<1 shown in
+2767: grayin Figure 7.48(b) bythe analy tic mappingw= f(z), where
+2768: f(z)= 5z− 7 − 2
+2769: √
+2770: 6(
+2771: 7+2
+2772: √
+2773: 6
+2774: )
+2775: z− 5. (2)
+2776: Step2InspectionofentryC-1inAppendixIIIshowsthattheboundarycircle⏐⏐z− 5
+2777: 2
+2778: ⏐
+2779: ⏐ =
+2780: 1
+2781: 2 is mapped onto the boundarycircle|w|= r0 =5 − 2
+2782: √
+2783: 6. Thus,
+2784: the boundaryconditionφ= 0 is transformed to the boundarycondition Φ = 0
+2785: on the circle|w|=5 − 2
+2786: √
+2787: 6. Similarly, we see that the boundary condition
+2788: φ= 30 on the circle|z|= 1 is transformed to the boundarycondition Φ = 30
+2789: on the circle|w|= 1. See Figure 7.48(b).
+2790: --- PAGE 43 ---
+2791: 7.5 Applications 431
+2792: Step 3The shape of the annulus along with the fact that the two bound-
+2793: aryconditions are constant in Figure 7.48(b) suggests that a solution of the
+2794: transformed Dirichlet problem is given bya function Φ(u, v) that is deﬁned in
+2795: terms of the modulusr=
+2796: √
+2797: u2 + v2 ofw= u+ iv. In Problem 14 in Exercises
+2798: 3.4 you were asked to show that a solution is given by
+2799: Φ(u,v)= Aloge
+2800: √
+2801: u2 + v2 + B, (3)
+2802: where
+2803: A= k0 − k1
+2804: loge(a/b) andB= −k0 logeb+ k1 logea
+2805: loge(a/b) .
+2806: Following the deﬁnitions ofk0,k1,a, andbgiven in Problem 14, we have
+2807: a=5 − 2
+2808: √
+2809: 6,b=1 ,k0 = 0, andk1 = 30. Thus, we obtain the solution
+2810: Φ(u,v)= −30loge
+2811: √
+2812: u2 + v2
+2813: loge
+2814: (
+2815: 5 − 2
+2816: √
+2817: 6
+2818: ) +30 (4)
+2819: of the transformed Dirichlet problem.
+2820: Step 4The ﬁnal step is to substitute the real and imaginaryparts of the
+2821: functionfgiven by(2) for the variablesuandvin (4). Since
+2822: u(x,y)+ iv(x,y)= 5z− 7 − 2
+2823: √
+2824: 6(
+2825: 7+2
+2826: √
+2827: 6
+2828: )
+2829: z− 5,
+2830: we have
+2831: √
+2832: u(x,y)2 + v(x,y)2 =
+2833: ⏐⏐⏐
+2834: ⏐
+2835: ⏐
+2836: 5z− 7 − 2
+2837: √
+2838: 6(
+2839: 7+2
+2840: √
+2841: 6
+2842: )
+2843: z− 5
+2844: ⏐⏐⏐
+2845: ⏐
+2846: ⏐.
+2847: Therefore, the steady-state temperature is given by the function
+2848: φ(x,y)= −30
+2849: loge
+2850: (
+2851: 5 − 2
+2852: √
+2853: 6
+2854: )loge
+2855: ⏐
+2856: ⏐
+2857: ⏐
+2858: ⏐
+2859: ⏐
+2860: 5z− 7 − 2
+2861: √
+2862: 6(
+2863: 7+2
+2864: √
+2865: 6
+2866: )
+2867: z− 5
+2868: ⏐
+2869: ⏐
+2870: ⏐
+2871: ⏐
+2872: ⏐+30.
+2873: A complex potential functionΩ(z)= φ(x, y)+iψ(x, y) for the harmonic
+2874: functionφ(x, y) found in Example 1 is
+2875: Ω(z)= −30
+2876: loge
+2877: (
+2878: 5 − 2
+2879: √
+2880: 6
+2881: )Ln
+2882: ⏐
+2883: ⏐
+2884: ⏐
+2885: ⏐
+2886: ⏐
+2887: 5z− 7 − 2
+2888: √
+2889: 6(
+2890: 7+2
+2891: √
+2892: 6
+2893: )
+2894: z− 5
+2895: ⏐
+2896: ⏐
+2897: ⏐
+2898: ⏐
+2899: ⏐+30.
+2900: If we deﬁne this function asΩ[z]inMathematica, then the real and imagi-
+2901: narypartsφ(x, y) andψ(x, y)o fΩ(z) are given byRe[Ω[z]] andIm[Ω[z]],
+2902: respectively. We can then use theContourPlotcommand inMathematica
+2903: --- PAGE 44 ---
+2904: 432 Chapter 7 Conformal Mappings
+2905: to plot the level curves of the real and imaginaryparts ofΩ. For example,
+2906: the command
+2907: ContourPlot[ Re[Ω[x + I y]] ,{x, a, b},{y, c, d} ]
+2908: produces a plot of the level curvesφ= c1 in the rectangular regiona≤ x≤ b,
+2909: c≤ y≤ dof the plane. According to Table 3.1 in Section 3.4, the level curves
+2910: ofφandψrepresent the isotherms and lines of heat ﬂux, respectively. Both
+2911: sets of level curves are shown in Figure 7.49. The isotherms are the curves
+2912: shown in color and the lines of heat ﬂux are the curves shown in black.
+2913: 3
+2914: 2
+2915: 1
+2916: 0
+2917: –1
+2918: –2
+2919: –2 –10123
+2920: –3
+2921: y
+2922: x
+2923: Figure 7.49Isotherms and lines of heat
+2924: ﬂux for Example 1
+2925: EXAMPLE 2An Electrostatics Application
+2926: Determine the electrostatic potentialφin the domainDbetween the circles
+2927: |z|= 1 and
+2928: ⏐⏐z− 1
+2929: 2
+2930: ⏐
+2931: ⏐ =
+2932: 1
+2933: 2, shown in color in Figure 7.50(a), that satisﬁes the
+2934: indicated boundaryconditions.
+2935: SolutionThe electrostatic potentialφis a solution of Laplace’s equation (1)
+2936: inDthat satisﬁes the boundaryconditions
+2937: φ(x,y)= −10 onx2 + y2 =1 ,
+2938: φ(x,y) = 20 on
+2939: (
+2940: x− 1
+2941: 2
+2942: )2
+2943: + y2 = 1
+2944: 4.
+2945: We proceed as in Example 1.
+2946: Step 1The given domainDcan be mapped onto the inﬁnite horizontal
+2947: strip 0<v<1, shown in grayin Figure 7.50(b), bya linear fractional
+2948: transformation. One wayto do this is to require that the points 1,i, and
+2949: −1 on the circle|z|= 1 map onto the points∞ , 0, and 1, respectively.
+2950: ByTheorem 7.4 in Section 7.2 the desired linear fractional transformation
+2951: w= T(z) must satisfy
+2952: z− 1
+2953: z+1
+2954: i+1
+2955: i− 1 = lim
+2956: w 1→∞
+2957: w− w1
+2958: w− 1
+2959: 0− 1
+2960: 0− w1
+2961: , orz− 1
+2962: z+1 (−i)= −1
+2963: w− 1.
+2964: y
+2965: v
+2966: = 0φ = 20φ
+2967: = –10φ
+2968: 1
+2969: i
+2970: ∇ 2
+2971: = 0
+2972: = 20
+2973: = –10
+2974: ∇ 2
+2975: x
+2976: u
+2977: (a) Dirichlet problem
+2978: (b) Transformed Dirichlet problem
+2979: Φ
+2980: Φ
+2981: Φ
+2982: Figure 7.50 Figure for Example 2
+2983: After solving forw= T(z), we obtain
+2984: T(z)=( 1 − i)z− i
+2985: z− 1. (5)
+2986: Byconstruction, the circle|z|= 1 is mapped onto the linev=0b yw= T(z).
+2987: Furthermore, because the polez= 1 of (5) is on the circle
+2988: ⏐⏐z− 1
+2989: 2
+2990: ⏐
+2991: ⏐ =
+2992: 1
+2993: 2,i t
+2994: follows that this circle is also mapped onto a line. The image line can be
+2995: determined byﬁnding the image of two points on the circle
+2996: ⏐⏐z− 1
+2997: 2
+2998: ⏐
+2999: ⏐ =
+3000: 1
+3001: 2.F o r
+3002: the pointsz= 0 andz= 1
+3003: 2 + 1
+3004: 2ion the circle
+3005: ⏐
+3006: ⏐z−
+3007: 1
+3008: 2
+3009: ⏐
+3010: ⏐ =
+3011: 1
+3012: 2, we haveT(0) = 1+i
+3013: andT
+3014: (1
+3015: 2 + 1
+3016: 2i
+3017: )
+3018: = −1+ i. Therefore, the image of the circle
+3019: ⏐
+3020: ⏐z−
+3021: 1
+3022: 2
+3023: ⏐
+3024: ⏐ =
+3025: 1
+3026: 2 must
+3027: be the horizontal linev= 1. Using the test pointz= − 1
+3028: 2, we ﬁnd that
+3029: T
+3030: (
+3031: − 1
+3032: 2
+3033: )
+3034: =1+ 1
+3035: 3i, and so we conclude that the domain shown in color between
+3036: the circles in Figure 7.50(a) is mapped byw= T(z) onto the domain shown
+3037: in graybetween the horizontal lines in Figure 7.50(b).
+3038: --- PAGE 45 ---
+3039: 7.5 Applications 433
+3040: Step 2From Step 1 we havew= T(z) maps the circle|z|= 1 onto the
+3041: horizontal linev= 0, and it maps the circle
+3042: ⏐⏐z− 1
+3043: 2
+3044: ⏐
+3045: ⏐ =
+3046: 1
+3047: 2 onto the horizontal
+3048: linev= 1. Thus, the transformed boundaryconditions are Φ =−10 on the
+3049: linev= 0 and Φ = 20 on the linev= 1. See Figure 7.50(b).
+3050: Step 3Modeled after Example 2 in Section 3.4 and Problem 12 in Exercises
+3051: 3.4, a solution of the transformed Dirichlet problem is given by
+3052: Φ(u,v)=3 0v− 10.
+3053: Step 4A solution of the original Dirichlet problem is now obtained bysub-
+3054: stituting the real and imaginaryparts ofT(z) deﬁned in (5) for the variables
+3055: uandvin Φ(u, v). Byreplacing the sy mbolzwithx+ iyinT(z) and
+3056: simplifying we obtain:
+3057: T(x+ iy)=( 1 − i)x+ iy− i
+3058: x+ iy− 1 =( 1 − i)x+ i(y− 1)
+3059: x− 1+ yi
+3060: x− 1 − iy
+3061: x− 1 − iy
+3062: = x2 + y2 − 2x− 2y+1
+3063: (x− 1)2 + y2 + 1 − x2 − y2
+3064: (x− 1)2 + y2i.
+3065: Therefore,
+3066: φ(x,y)=3 01 − x2 − y2
+3067: (x− 1)2 + y2 − 10 (6)
+3068: is the desired electrostatic potential function.
+3069: A complex potential function for the harmonic functionφ(x, y) given by
+3070: (6) in Example 2 can be found as follows. IfΩ(z) is a complex potential for
+3071: φ, thenΩ(z)= φ(x, y)+ iψ(x, y) andΩ(z) is analytic inD. From Step
+3072: 4 of Example 2 we have that the complex functionT(z) given by(5) has
+3073: real and imaginarypartsu= x2 + y2 − 2x− 2y+1
+3074: (x− 1)2 + y2 andv= 1 − x2 − y2
+3075: (x− 1)2 + y2,
+3076: respectively. That is,T(z)= u+ iv. We also have from Step 4 thatφ(x, y)=
+3077: 30v− 10. In order to obtain a function with 30v− 10 as its real part, we
+3078: multiplyT(z)b y−30ithen subtract 10:
+3079: −30iT(z)− 10 = −30i(u+ iv)− 10 = 30v− 10− 30ui.
+3080: SinceT(z)=( 1 − i)z− i
+3081: z− 1 is analytic inD, it follows that the function
+3082: −30iT(z)− 10 is also analytic inD. Therefore,
+3083: Ω(z)= −30i(1 − i)z− i
+3084: z− 1 − 10 (7)
+3085: isacomplexpotentialfunctionforφ(x, y). Sinceφrepresentstheelectrostatic
+3086: potential, the level curves of the real and imaginaryparts ofΩrepresent
+3087: --- PAGE 46 ---
+3088: 434 Chapter 7 Conformal Mappings
+3089: the equipotential curves and lines of force, respectively. TheMathematica-
+3090: generated plot in Figure 7.51 shows the equipotential curves in color and the
+3091: lines of force in black.
+3092: 1
+3093: 0
+3094: –0.5
+3095: –1
+3096: –1 –0.5 0 0.5 1
+3097: y
+3098: x
+3099: 0.5
+3100: Figure 7.51 Equipotential curves and
+3101: lines of force for Example 2
+3102: NeumannProblemsTheorem7.1statesthatananalyticmappingis
+3103: conformal at a point where the derivative is nonzero. This fact did not appear
+3104: to be of immediate importance in previous examples when we solved Dirichlet
+3105: problems, but it is extremelyimportant in another class of boundary -value
+3106: problems associated with Laplace’s equation called Neumann problems.
+3107: Neumann Problem
+3108: SupposethatDisadomainintheplaneandthathisafunctiondeﬁnedon
+3109: theboundaryCofD.Theproblemofﬁndingafunctionφ(x, y)thatsat-
+3110: isﬁes Laplace’s equation in D and whose normal derivativedφ/dnequals
+3111: h on the boundary C of D is called aNeumann problem.
+3112: Certain types of Neumann problems occur naturally in the study of elec-
+3113: trostatics, ﬂuid ﬂow, and heat ﬂow. For example, consider the problem of
+3114: determining the steady-state temperatureφin a domainDwith boundary
+3115: C. If the temperatures on the boundaryCofDare speciﬁed, then we have
+3116: a Dirichlet problem. However, it mayalso be the case that all or part of
+3117: the boundaryisinsulated. This means that there is no heat ﬂow across the
+3118: boundary, and, itcanbeshownthatthisimpliesthatthedirectionalderivative
+3119: ofφin the direction of the normal vectorntoCis 0. We call this derivative
+3120: thenormal derivativeand denote it bydφ/dn. In summary, an insulated
+3121: boundarycurveinaheatﬂowproblemcorrespondstoaboundaryconditionof
+3122: the formdφ/dn= 0, and, thus, is an example of a Neumann problem. As the
+3123: following theorem asserts, conformal mappings preserve boundaryconditions
+3124: of the formdφ/dn=0 .
+3125: Theorem 7.8 Preservation of Boundary Conditions
+3126: Suppose that the functionf(z)= u(x, y)+iv(x, y) is conformal at every
+3127: point of a smooth curveC. LetC′ be the image ofCunderw= f(z). If
+3128: the normal derivativedΦ/dNof the function Φ(u, v) satisﬁes
+3129: dΦ
+3130: dN=0
+3131: at everypoint onC′ in thew-plane, then the normal derivativedφ/dnof
+3132: the functionφ(x, y)=Φ (u(x, y),v(x, y)) satisﬁes
+3133: dφ
+3134: dn=0
+3135: at everypoint ofCin thez-plane.
+3136: --- PAGE 47 ---
+3137: 7.5 Applications 435
+3138: ProofAssume thatfandhsatisfythe hy pothesis of the theorem. Let
+3139: z0 = x0 + iy0 be a point onCand letw0 = u0 + iv0 = f(z0) be its image on
+3140: C′. Recall from calculus that ifNis a normal vector toC′ atw0, then the
+3141: normal derivative atw0 is given bythe dot product
+3142: dΦ
+3143: dN= ∇Φ·N,
+3144: where∇Φ is the gradient vector Φu(u0,v0)i+Φ v(u0,v0)j. The condition
+3145: dΦ/dN= 0 implies that∇Φ andNare orthogonal, or, equivalently, that
+3146: ∇Φ is a tangent vector toC′ atw0. LetB′ be the level curve Φ(u, v)= c0
+3147: containing (u0,v0). In multivariable calculus, you learned that the gradient
+3148: vector∇Φ is orthogonal to the level curveB′. Thus, since the gradient is
+3149: tangent toC′ and orthogonal toB′, we conclude thatC′ is orthogonal toB′
+3150: atw0. See Figure 7.52.
+3151: v
+3152: u
+3153: NC′
+3154: w0
+3155: = c0
+3156: ∇Φ
+3157: Φ
+3158: B′
+3159: Figure 7.52 Figure for the proof of
+3160: Theorem 7.8
+3161: Now consider the level curveBin thez-plane given by
+3162: φ(x,y)=Φ (u(x,y),v(x,y)) =c0.
+3163: The point (x0,y0)i so nBand the gradient vector∇φis orthogonal toBat
+3164: this point. Moreover, given anypoint (x, y)o nBin thez-plane, we have
+3165: that the point (u(x, y),v(x, y)) is onB′ in thew-plane. That is, the image
+3166: ofBunderw= f(z)i sB′. The curveCintersectsBatz0, and becausef
+3167: is conformal atz0, it follows that the angle betweenCandBatz0 is the
+3168: same as the angle betweenC′ andB′ atw0. In the preceding paragraph we
+3169: found that this angle isπ/2, and soCandBare orthogonal atz0. Since
+3170: ∇φis orthogonal toB, we must have that∇φis tangent toC.I fnis a
+3171: normal vector toCatz0, then we have shown that∇φandnare orthogonal.
+3172: Therefore,
+3173: dφ
+3174: dn= ∇φ·n=0. ✎
+3175: Theorem 7.8 gives us a procedure for solving Nuemann problems associ-
+3176: ated with boundaryconditions of the formdφ/dn= 0. Namely, we follow
+3177: the same four steps given on page 429 to solve a Dirichlet problem. In Step
+3178: 1, however, we ﬁnd a conformal mapping fromDontoD′. Since conformal
+3179: mappings preserve boundaryconditions of the formdφ/dn= 0, solving the
+3180: associated Nuemann problem inD′ will give us a solution of the original
+3181: Nuemann problem. Because analytic mappings are conformal at noncritical
+3182: points, this approach also works withmixedboundaryconditions. Roughly ,
+3183: these are boundaryconditions where values ofφare speciﬁed on some bound-
+3184: arycurves, whereas the normal derivative is required to satisfydφ/dn=0o n
+3185: other boundarycurves.
+3186: EXAMPLE 3A Heat Flow Application
+3187: Find the steady-state temperatureφin the ﬁrst quadrant, shown in color in
+3188: Figure 7.53(a), which satisﬁes the indicated mixed boundaryconditions.
+3189: --- PAGE 48 ---
+3190: 436 Chapter 7 Conformal Mappings
+3191: SolutionThe steady-state temperatureφis a solution of Laplace’s equation
+3192: in the domainDdeﬁned by0<x<∞ ,0<y<∞ , which satisﬁes the
+3193: boundaryconditions
+3194: φ(0,y)=0 ,y >1
+3195: φ(x,0 )=1,x >1
+3196: dφ
+3197: dn=0 ,for 0<y<1,x=0,and 0<x<1,y=0.
+3198: We will ﬁndφusing the four steps given on page 429.
+3199: y
+3200: x
+3201: 1
+3202: i
+3203: = 0φ= 0φ
+3204: = 1= 0 φφ
+3205: ∇ 2
+3206: = 0
+3207: d
+3208: dn
+3209: v
+3210: —–
+3211: = 0d
+3212: dN—–
+3213: = 0
+3214: φd
+3215: dn—–
+3216: (a) Boundary-value problem
+3217: (b) Transformed boundary-value problem
+3218: u
+3219: = 0
+3220: ∇ 2Φ
+3221: Φ
+3222: Φ = 0d
+3223: dN—–
+3224: Φ π
+3225: = 1Φ
+3226: —
+3227: 2
+3228: π—
+3229: 2
+3230: –
+3231: Figure 7.53 Figure for Example 3
+3232: Step 1As we will see in Step 3, this particular type of boundary-value
+3233: problem is easyto solve in the half-inﬁnite vertical strip−a<u<a,v>0,
+3234: when the boundarycurve−a<u<a,v= 0, is insulated. Thus, in this
+3235: step we ﬁnd a conformal mapping of the ﬁrst quadrant onto a half-inﬁnite
+3236: vertical strip. Byidentify ingα= 2 in entryE-4 of Appendix III, we see that
+3237: the ﬁrst quadrant is mapped onto the upper half-planev>0 bythe mapping
+3238: w= z2. Next we applythe mappingw= sin− 1 zof entryE-6. Under this
+3239: mapping, the upper half-planey>0 is mapped onto the half-inﬁnite vertical
+3240: strip− 1
+3241: 2π<u<1
+3242: 2π,v>0. Therefore, the composition
+3243: w= sin− 1 (
+3244: z2)
+3245: (8)
+3246: maps the ﬁrst quadrantx>0,y>0, onto the domainD′ deﬁned by
+3247: − 1
+3248: 2π<u<1
+3249: 2π,v>0.
+3250: Step 2From entries E-4 and E-6 of Appendix III we see that the boundary
+3251: curves 1<x< ∞ ,y= 0, and 1<y<∞ ,x= 0, are mapped byw=
+3252: sin− 1 (
+3253: z2)
+3254: onto the half-linesu= 1
+3255: 2π,v >0, andu= − 1
+3256: 2π,v >0, respectively.
+3257: We also see that the segments 0<x<1,y= 0, and 0<y<1,x= 0, are
+3258: mapped onto the segments 0<u<1
+3259: 2π,v= 0, and− 1
+3260: 2π<u<0,v=0 ,
+3261: respectively. Thus, the transformed boundary conditions are
+3262: Φ
+3263: (
+3264: −π
+3265: 2,v
+3266: )
+3267: =0 ,Φ
+3268: (π
+3269: 2,v
+3270: )
+3271: =1 ,v>0
+3272: dΦ
+3273: dN=0 , −π
+3274: 2 <u<π
+3275: 2,v=0.
+3276: Step3InspectionofthedomainD′ andthetransformedboundaryconditions
+3277: suggests that a solution Φ is a linear function in the variableu. That is,
+3278: Φ(u,v)= Au+ B
+3279: for some real constantsAandB. Since the vectorN=0 i+1 jis normal to
+3280: the boundarycurve− 1
+3281: 2π<u<1
+3282: 2π,v= 0, we have
+3283: dΦ
+3284: dN= ∇Φ·N= A(0)+0(1) = 0,
+3285: and so, for anyvalues ofAandB, Φ satisﬁes the boundarycondition for the
+3286: normal derivative. Byrequiring that
+3287: Φ
+3288: (
+3289: −π
+3290: 2,v
+3291: )
+3292: = −Aπ
+3293: 2 + B= 0 and Φ
+3294: (π
+3295: 2,v
+3296: )
+3297: = Aπ
+3298: 2 + B=1 ,
+3299: --- PAGE 49 ---
+3300: 7.5 Applications 437
+3301: we can solve for the constantsAandBto obtain the solution
+3302: Φ(u,v)= 1
+3303: πu+ 1
+3304: 2. (9)
+3305: Step 4In order to ﬁnd a solution of the original boundary-value problem, we
+3306: substitute the real and imaginaryparts of the mapping in (8) for the variables
+3307: uandvin (9). Since the formula for the real part of the expression sin− 1 (
+3308: z2)
+3309: is complicated, the simplest wayof writing the solutionφis
+3310: φ(x,y)= 1
+3311: πRe
+3312: [
+3313: sin− 1 (
+3314: z2)]
+3315: + 1
+3316: 2.
+3317: Since both 1/πand1
+3318: 2 are real, a complex potential functionΩ(z)=
+3319: φ(x, y)+ iψ(x, y) for the steady-state temperature functionφfound in
+3320: Example 3 is
+3321: Ω(z)= 1
+3322: πsin− 1 (
+3323: z2)
+3324: + 1
+3325: 2.
+3326: The level curves of the real and imaginaryparts ofΩrepresent isotherms and
+3327: lines of heat ﬂux, respectively. In Figure 7.54, we have usedMathematicato
+3328: plot these curves. The isotherms are shown in color and the lines of heat ﬂux
+3329: are shown in black.
+3330: 3
+3331: 2.5
+3332: 2
+3333: 1.5
+3334: 1
+3335: 0.5
+3336: 0
+3337: 0 0.5 1 1.5 2 2.5 3
+3338: y
+3339: x
+3340: Figure 7.54Isotherms and lines of heat
+3341: ﬂux for Example 3
+3342: 7.5.2 Fluid Flow
+3343: StreamliningWe now discuss a method of using conformal mappings
+3344: to model the planar ﬂow of an ideal ﬂuid. Recall from Section 5.6 that an
+3345: ideal ﬂuid is an incompressible nonviscous ﬂuid whose ﬂow is irrotational. If
+3346: Ω(z)= φ(x, y)+ iψ(x, y) is the complex velocitypotential of the ﬂow of an
+3347: ideal ﬂuid in a domainD, thenΩ(z) is analytic inDandf(z)=
+3348: Ω′(z)i sa
+3349: complex representation of the velocityﬁeld. Furthermore, thestreamlines
+3350: of the ﬂow of an ideal ﬂuid are the level curvesψ(x, y)= c2, and, for this
+3351: reason,ψis called thestream functionof the ﬂow.
+3352: As a simple example consider the complex analytic functionΩ(z)= Az,
+3353: whereA>0 is a real constant. As presented in part (b) of Example 3 in
+3354: Section 5.6, this function is the complex velocitypotential of the velocityﬁeld
+3355: oftheﬂowofanidealﬂuidwhosecomplexrepresentationisf(z)= Ω′(z)= A.
+3356: SinceΩ(z)= Az= Ax+iAy,thestreamlinesofthisﬂowarethecurvesy= c2.
+3357: All streamlines are therefore horizontal. See Figure 7.55. Recall from Section
+3358: 5.6 that this particular ﬂow is called theuniform ﬂow.
+3359: y
+3360: x
+3361: Figure 7.55 Uniform ﬂow The process of constructing a ﬂow of an ideal ﬂuid that remains inside
+3362: a given domainDis calledstreamlining.I fCis a boundarycurve ofD,
+3363: then the requirement that the ﬂow remain inside ofDmeans that there is
+3364: no ﬂow acrossC, or, equivalently, that the directional derivative ofψin the
+3365: direction of the normal vectorntoCis 0. Since the gradient vector∇ψis
+3366: always normal to the level curveψ(x, y)= c2, this condition is equivalent to
+3367: --- PAGE 50 ---
+3368: 438 Chapter 7 Conformal Mappings
+3369: ψbeing constant onC. Put yet another way, the boundary ofDmust be a
+3370: streamline of the ﬂow. The following summarizes this discussion.
+3371: Streamlining
+3372: Suppose that the complex velocitypotentialΩ(z)= φ(x, y)+ iψ(x, y)
+3373: is analytic in a domainDand thatψis constant on the boundaryofD.
+3374: Thenf(z)= Ω′(z) is a complex representation of the velocityﬁeld of a
+3375: ﬂow of an ideal ﬂuid inD. Moreover, if a particle is placed inDand
+3376: allowed to ﬂow with the ﬂuid, then its pathz(t) remains inD.
+3377: Manystreamlining problems can be solved using conformal mappings in
+3378: a manner similar to that presented for solving Dirichlet and Neumann prob-
+3379: lems. In order to do so, we consider the complex velocitypotential as an
+3380: conformal mapping of thez-plane to thew-plane. Ifz(t)= x(t)+ iy(t)i sa
+3381: parametrization of a streamlineψ(x, y)= c
+3382: 2 in thez-plane, then
+3383: w(t)= Ω(z(t)) =φ(x(t),y(t))+iψ(x(t),y(t)) =φ(x(t),y(t))+ic2.
+3384: Thus, the image of a streamline under the conformal mappingw= Ω(z)i s
+3385: a horizontal line in thew-plane. Since the boundaryCis required to be a
+3386: streamline, the image ofCunderw= Ω(z) must be a horizontal line. That
+3387: is, we can determine the complex velocitypotential byﬁnding a conformal
+3388: mapping fromDonto a domain in thew-plane that maps the boundaryCof
+3389: Donto a horizontal line. It is often the case, however, that it is easier to ﬁnd a
+3390: conformal mappingz= Ω
+3391: − 1(w) from, say, the upper half-planev>0o n t oD
+3392: that takes the boundaryv= 0 onto the boundaryCofD.I fz= Ω− 1(z)i sa
+3393: one-to-one function, then its inversew= Ω(z) is the desired complex velocity
+3394: potential. In summary, we have the following method for solving streamlining
+3395: problems.
+3396: Solving a Streamlining Problem
+3397: Ifw= Ω(z)= φ(x, y)+ iψ(x, y)is a one-to-one conformal mapping of
+3398: the domain D in the z-plane onto a domainD′ in the w-plane such that
+3399: theimageoftheboundaryCofD isahorizontallineinthew-plane,then
+3400: f(z)= Ω′(z)isacomplexrepresentationofaﬂowofanidealﬂuidinD.
+3401: EXAMPLE 4Flow arounda Corner
+3402: Construct a ﬂow of an ideal ﬂuid in the ﬁrst quadrant.
+3403: SolutionLetDdenote the ﬁrst quadrantx>0,y>0. From EntryE-4
+3404: of Appendix III with the identiﬁcationα= 2, we see thatw= Ω(z)= z2 is
+3405: a one-to-one conformal mapping of the domainDonto the upper half-plane
+3406: v>0 and that the image of the boundaryofDunder this mapping is the real
+3407: axisv= 0. Therefore,f(z)= Ω′(z)=2 ¯zis a complex representation of the
+3408: --- PAGE 51 ---
+3409: 7.5 Applications 439
+3410: ﬂow of an ideal ﬂuid in the ﬁrst quadrant. SinceΩ(z)= z2 = x2 −y2 +2 xyi,
+3411: the streamlines of this ﬂow are the curves 2xy= c2. Some streamlines have
+3412: been plotted in Figure 7.56. It should be clear from this ﬁgure whythis ﬂow
+3413: is referred to as “ﬂow around a corner.”
+3414: y
+3415: x
+3416: Figure 7.56 Flow around a corner
+3417: EXAMPLE 5Flow arounda Cylind er
+3418: Construct a ﬂow of an ideal ﬂuid in the domain consisting of all points outside
+3419: the unit circle|z|= 1 and in the upper half-planey>0 shown in Figure 7.57.
+3420: y
+3421: x
+3422: i
+3423: Figure 7.57 Flow around a cylinder
+3424: SolutionLetDbe the domain shown in Figure 7.57. Identifyinga=2i n
+3425: entryH-3 of Appendix III, we obtain the one-to-one conformal mapping
+3426: w= Ω(z)= z+ 1
+3427: z
+3428: ofDonto the upper half-planev>0. In addition, entryH-3 indicates that
+3429: the boundaryofDis mapped onto the real axisv= 0. Therefore,
+3430: f(z)= Ω′(z)= 1 − 1
+3431: z2 =1 − 1
+3432: ¯z2
+3433: is a complex representation of a ﬂow of an ideal ﬂuid inD. Since
+3434: Ω(z)= z+ 1
+3435: z= x+ x
+3436: x2 + y2 + i
+3437: (
+3438: y− y
+3439: x2 + y2
+3440: )
+3441: ,
+3442: the streamlines of this ﬂow are the curves
+3443: ψ(x,y)= c2, ory− y
+3444: x2 + y2 = c2.
+3445: Some streamlines for this ﬂow have been plotted in Figure 7.57.
+3446: It is not always possible to describe the streamlines with a Cartesian
+3447: equation in the variablesxandy. This situation occurs when an appropriate
+3448: mappingz= Ω− 1(w) of a domainD′ in thew-plane onto the domainDin
+3449: thez-plane can be found, but you cannot solve for the mappingw= Ω(z).
+3450: In such cases, it is possible to describe the streamlines parametrically.
+3451: EXAMPLE 6Streamlines DeﬁnedParametrically
+3452: ConstructaﬂowofanidealﬂuidinthedomainDconsistingofallpointsinthe
+3453: upper half-planey>0 excluding the points on the rayy= π,−∞ <x≤ 0,
+3454: shown in Figure 7.58.
+3455: SolutionInExample4ofSection7.3weusedtheSchwarz-Christoﬀelformula
+3456: to ﬁnd a conformal mapping of the upper half-planey>0 onto the domainD.
+3457: --- PAGE 52 ---
+3458: 440 Chapter 7 Conformal Mappings
+3459: Byreplacing the sy mbolzwith the symbolwin the solution from Example
+3460: 4, we obtain the mapping
+3461: z= Ω− 1(w)= w+Ln(w)+1 (10)
+3462: y
+3463: x
+3464: y = π
+3465: Figure 7.58 Flow for Example 6
+3466: oftheupperhalf-planev>0on toD. TheinverseΩofthemappingin(10)isa
+3467: complex velocitypotential of a ﬂow of an ideal ﬂuid inD, but we cannot solve
+3468: forwto obtain an explicit formula forΩ. In order to describe the streamlines,
+3469: we recall that the streamlines inDare the images of horizontal linesv= c2
+3470: in the upper half-planev>0 under the mappingz= w+Ln(w)+1. Since
+3471: a horizontal line can be described byw(t)= t+ ic2,−∞ <t<∞ , it follows
+3472: that the streamlines inDare given parametricallyby
+3473: z(t)= Ω− 1(w(t)) =w(t)+Ln[w(t)]+1= t+ ic2 +Ln[t+ ic2]+1,
+3474: orx(t)= t+ 1
+3475: 2 loge
+3476: (
+3477: t2 + c2
+3478: 2
+3479: )
+3480: +1,y(t)= c2+ Arg(t+ ic2),−∞ <t<∞ .Some
+3481: streamlines for this ﬂow have been plotted usingMathematicain Figure 7.58.
+3482: A stream functionψ(x, y) is harmonic, but unlike a solution of a Dirichlet
+3483: problem,ψ(x, y) need not be bounded inDnor satisfya ﬁxed boundary
+3484: condition. Therefore, there can be manydiﬀerent stream functions for a
+3485: given domainD. We illustrate this in the following example.
+3486: EXAMPLE 7Streamlines DeﬁnedParametrically
+3487: The one-to-one conformal mapping
+3488: z= Ω− 1(w)= w+ ew +1
+3489: also maps the upper half-planev>0 onto the domainDshown in Figure
+3490: 7.58. The streamlines for this ﬂow are parametrized by
+3491: z(t)= t+ ic2 + et+ ic2 +1 ,
+3492: orx(t)= t+ etcosc2 +1 ,y(t)= c2 + etsinc2,−∞ <t<∞ .From the
+3493: Mathematica-generated plot of the streamlines in Figure 7.59, we observe
+3494: that this ﬂow is diﬀerent from the one constructed in Example 6.
+3495: y
+3496: y = π
+3497: x
+3498: Figure 7.59 Flow for Example 7
+3499: Sources and SinksRecall from Section 5.6 that ifFis the velocity
+3500: ﬁeld of a planar ﬂuid ﬂow, then asourceis a pointz0 at which ﬂuid is
+3501: produced and asinkis a pointz0 at which ﬂuid disappears. IfCis a simple
+3502: closedcontour, thenanonzerovalueofthenetﬂuxacrossC, thatis, anonzero
+3503: value of the integral
+3504: ∮
+3505: C F·Nds, indicates the presence of either a source or
+3506: a sink inside ofC. We saw in Section 5.6 that ifFis the velocityﬁeld of the
+3507: ﬂow of an incompressible ﬂuid in a domainD, then there are no sources or
+3508: sinks inD. Incompressibilitydoes not, however, rule out the existence of a
+3509: --- PAGE 53 ---
+3510: 7.5 Applications 441
+3511: source or sink on the boundaryofD. Sources and sinks on the boundaryofD
+3512: are used to model planar ﬂows in which ﬂuid is entering or leavingDthrough
+3513: a small slit in the boundary.
+3514: In Problem 23 in Exercises 5.6 we found that a source at a pointz= x1
+3515: on the boundaryy= 0 of the upper half-planey>0 can be described bythe
+3516: complex velocitypotential
+3517: Ω(z)= kLn(z− x1), (11)
+3518: wherekis a positive constant. Similarly,z= x1 is a sink whenkis a neg-
+3519: ative constant. The strength of the source or sink is proportional to|k|.A
+3520: ﬂow containing both sources and sinks can be described byadding together
+3521: functions of the form (11). For example,
+3522: Ω(z) = Ln(z+1) − Ln(z− 1) = Lnz+1
+3523: z− 1 (12)
+3524: y
+3525: 4
+3526: 3
+3527: 2
+3528: 1–1–22 x
+3529: 1
+3530: Figure 7.60 Source and sink
+3531: is a complex velocitypotential for the ﬂow of an ideal ﬂuid in the upper half-
+3532: planey>0 that has a source atx1 = −1 and a sink atx2 = 1 of equal
+3533: strength. See Figure 7.60. You should also compare (12) with Problem 24 in
+3534: Exercises 5.6.
+3535: Our method of determining the stream function in a domain with sources
+3536: or sinks on the boundaryis similar to that used in the absence of sources
+3537: and sinks. Letψ(u, v) be the stream function of a ﬂow of an ideal ﬂuid
+3538: in a domainD
+3539: ′ in thew-plane with sources or sinks on the boundary. If
+3540: f(z)= u(x, y)+iv(x, y) is a conformal mapping of a domainDin thez-plane
+3541: onto the domainD′, thenψ(x, y)= ψ(u(x, y),v(x, y)) is a stream function
+3542: for a ﬂow of an ideal ﬂuid inDwith sources and sinks on the boundary. We
+3543: illustrate this method in our ﬁnal example.
+3544: EXAMPLE 8Flow with a Source andSink of Equal Strength
+3545: Construct a ﬂow of an ideal ﬂuid in the domainDgiven by0<arg(z)<π/4
+3546: with a source at the boundarypointx1 = 1 and sink of equal strength at the
+3547: boundarypointx2 =3 .
+3548: SolutionFrom entryE-4 in Appendix III withα= 4, we have thatf(z)= z4
+3549: is a one-to-one conformal mapping ofDonto the upper half-planev>0.
+3550: Under this mapping, the image ofx1 =1i su1 =1 4 = 1 and the image of
+3551: x2 =3i su2 =3 4 = 81. With the obvious modiﬁcations to (12), we obtain
+3552: the complex velocitypotential
+3553: Ln(w− 1)− Ln(w− 81), (13)
+3554: which describes the ﬂow of an ideal ﬂuid in the upper half-planev>0 that
+3555: has a source atu1 = 1 and a sink of equal strength atu2 = 81. Since the
+3556: domainDis mapped on the domainv>0 bythe conformal mappingw= z4,
+3557: --- PAGE 54 ---
+3558: 442 Chapter 7 Conformal Mappings
+3559: we obtain a complex potential function for a ﬂow inDbyreplacing the sy mbol
+3560: wwithz4 in (13). This yields
+3561: Ω(z)=L n
+3562: (
+3563: z4 − 1
+3564: )
+3565: − Ln
+3566: (
+3567: z4 − 81
+3568: )
+3569: . (14)
+3570: Streamlines of this ﬂow are given byψ(x,y)= c2,o r
+3571: Arg
+3572: (
+3573: z4 − 1
+3574: )
+3575: − Arg
+3576: (
+3577: z4 − 81
+3578: )
+3579: = c2.
+3580: See Figure 7.61.
+3581: y
+3582: 4
+3583: 3
+3584: 2
+3585: 1234 x
+3586: 1
+3587: Figure 7.61 Figure for Example 8
+3588: Remarks
+3589: The complex mappingw= J(z)= z+ k2/zis called theJoukowski
+3590: transformation. Under this mapping, a circle in thez-plane that con-
+3591: tains the pointz1 = −1 and passes through the pointz2 = 1 is mapped
+3592: onto a curve in thew-plane that resembles the cross-section of an airplane
+3593: wing. See Figure 7.62(c). The image curve is called aJoukowski airfoil,
+3594: and the air ﬂow around this curve can be determined using techniques
+3595: from this section. We begin with the ﬂow shown in Figure 7.62(a) given
+3596: byΩ(z)= z+1 /zaround the unit circle|z|= 1. Using an appropriate
+3597: linear mapping, we can adjust this ﬂow to be one around a circle contain-
+3598: ing the pointz
+3599: 1 = −1 and passing through the pointz2 = 1. See Figure
+3600: 7.62(b). The Joukowski transformation is then used to “transform” this
+3601: ﬂow to one around the airfoil as shown in Figure 7.62(c).
+3602: (a) Flow around the unit circle
+3603: (b) Flow around a circle containing 
+3604: z1 = –1 and passing through z2 = 1
+3605: (c) Flow around an airfoil
+3606: y
+3607: y
+3608: y
+3609: x
+3610: x
+3611: x
+3612: Figure 7.62 Flow around a Joukowski
+3613: airfoil

@@ -1,0 +1,78 @@
+3914: CHAPTER 7 REVIEW QUIZ
+3915: Answerstoselectedodd-numberedproblemsbegin
+3916: on page ANS-23.
+3917: InProblems1–15,answertrueorfalse. Ifthestatementisfalse,justifyyouranswer
+3918: byeitherexplainingwhyitisfalseorgivingacounterexample; ifthestatementis
+3919: true, justify your answer by either proving the statement or citing an appropriate
+3920: resultinthischapter.
+3921: 1. Iff(z)isanalyticatapointz
+3922: 0,thenthemappingw= f(z)isconformalatz0.
+3923: 2. Themappingw= z2 + iz+1isnotconformalatz= − 1
+3924: 2 i.
+3925: 3. Themappingw= z2 +1isnotconformalatz= ±i.
+3926: 4. Themappingw=¯zfailstobeconformalateverypointinthecomplexplane.
+3927: 5. Alinearfractionaltransformationisconformalateverypointinitsdomain.
+3928: 6. Theimageofacircleunderalinearfractionaltransformationisacircle.
+3929: 7. ThelinearfractionaltransformationT(z)= z− i
+3930: z+1 mapsthepoints0,−1,and
+3931: iontothepoints−i, ∞,and0,respectively.
+3932: 8. Givenanythreedistinctpointsz1,z2,andz3,thereisalinearfractionaltrans-
+3933: formationthatmapsz1,z2,andz3 onto0,1,and∞.
+3934: 9. TheinverseofthelinearfractionaltransformationT(z)=( az+ b)/(cz+ d)is
+3935: T− 1(z)=( cz+ d)/(az+ b).
+3936: 10. Iff′(z)= A(z+1) − 1/2(z−1)− 3/4, thenw= f(z)mapstheupperhalf-plane
+3937: ontoanunboundedpolygonalregion.
+3938: 11. Iff′(z)= A(z+1) − 1/2z− 1/2(z−1)− 1/2, thenw= f(z)mapstheupperhalf-
+3939: planeontoarectangle.
+3940: 12. EveryDirichletproblemintheupperhalf-planecanbesolvedusingthePoisson
+3941: integralformula.
+3942: --- PAGE 61 ---
+3943: Chapter 7 Review Quiz 449
+3944: 13. Ifw= f(z)= u(x, y)+ iv(x, y)isaconformalmappingofadomainDonto
+3945: the upper half-planev>0 and if Φ(u, v) is a harmonic function forv>0,
+3946: thenφ(x, y)=Φ(u(x, y),v(x, y))isharmoniconD.
+3947: 14. Ifψ(x, y) is a function deﬁned on a domainDand if the boundary ofDis
+3948: a level curve ofψ(x, y), thenψ(x, y) is the stream function of an ideal ﬂuid
+3949: inD.
+3950: 15. Given a domainD, there can be more than one ﬂow of an ideal ﬂuid that
+3951: remainsinsideofD.
+3952: InProblems16–30,trytoﬁllintheblankswithoutreferringbacktothetext.
+3953: 16. Theanalyticfunctionf(z)=coshzisconformalexceptatz= .
+3954: 17. Conformal mappings preserve both the magnitude and theof an
+3955: angle.
+3956: 18. Themappingisanexampleofamappingthatisconformalatevery
+3957: pointinthecomplexplane.
+3958: 19. Iff′(z0)= f′′(z0)=0andf′′′(z0) ̸=0,thenthemappingw= f(z)
+3959: themagnitudeofanglesatthepointz0.
+3960: 20. T(z)= isalinearfractionaltransformationthatmapsthepoints0,
+3961: 1+ i,andiontothepoints1,i,and∞.
+3962: 21. The image of the circle|z−1|=2 under the linear fractional transformation
+3963: T(z)=(2 z− i)/(iz+1)isa .
+3964: 22. The image of a lineL under the linear fractional transformation
+3965: T(z)=( iz−2)/(3z+1 − i) is a circle if and only if the pointz=
+3966: isonL.
+3967: 23. Thecross-ratioofthepointsz,z1,z2,andz3 is and .
+3968: 24. ThederivativeofaSchwarz-Christoﬀelmappingfromtheupperhalf-planeonto
+3969: thetrianglewithverticesat0,1,and1+iisf′(z)= .
+3970: 25. Iff′(z)= A(z+1) − 1/2z− 1/4,thenw= f(z)mapstheupperhalf-planeontoa
+3971: polygonalregionwithinteriorangles.
+3972: 26. The Poisson integral formula gives an integral solutionφ(x,y) to a Dirichlet
+3973: problemintheupperhalf-planey>0providedthefunctionf(x)= φ(x,0)is
+3974: and on−∞ <x< ∞.
+3975: 27. The complex velocity potentialΩ(z)= z5 describes the ﬂow of an ideal ﬂuid
+3976: inthedomain0<argz< .
+3977: 28. IfΩ(z)= ez + e− z is the complex velocity potential for the ﬂow of an ideal
+3978: ﬂuidinadomainD,thenacomplexrepresentationofthevelocityﬁeldisgiven
+3979: byf(z)= .
+3980: 29. Ifz=
+3981: (1+ w
+3982: 1 − w
+3983: )2
+3984: isaone-to-oneconformalmappingoftheupperhalf-planeonto
+3985: adomainD,thenastreamlineoftheﬂowofanidealﬂuidinDisparametrized
+3986: byz(t)= .
+3987: 30. ThecomplexvelocitypotentialΩ(z)=Ln(z−2)+Ln(z−3)−Ln(z−4)describes
+3988: theﬂowofanidealﬂuidintheupperhalf-planey>0withaatz=2
+3989: andz=3anda atz=4.
+3990: --- PAGE 62 ---
+3991: 

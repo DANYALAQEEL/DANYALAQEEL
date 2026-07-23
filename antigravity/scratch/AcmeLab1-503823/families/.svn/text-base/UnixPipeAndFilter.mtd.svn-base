@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AcmeModel>
+  <family name="UnixPipeAndFilter">
+    <userdata key="SaveData">
+      <data date="1/21/13 2:25 PM"/>
+    </userdata>
+    <userdata key="connection-patterns">
+      <data>
+        <portConnectionRule connector="Connector" name="">
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+        </portConnectionRule>
+      </data>
+    </userdata>
+    <port-type name="UnixFilterOutputPortT">
+      <userdata key="element-description">
+        <data label="output"/>
+      </userdata>
+    </port-type>
+    <port-type name="UnixFilterInputPortT">
+      <userdata key="element-description">
+        <data label="input"/>
+      </userdata>
+    </port-type>
+    <component-type name="FileSystemSourceT">
+      <userdata key="element-description">
+        <data label="FileSystemIn"><![CDATA[Represents an input directory, file, or wildcard. The "path" property specifies where in the filesystem the input is located.]]></data>
+      </userdata>
+      <userdata key="element-visualization">
+        <data>
+          <visualization hideFromPalette="false" type="COMPONENT">
+            <shape visualizationStrategyKey="org.acmestudio.ui.RepositoryVisualizationStrategy">
+              <decoration label="?" source="Acme Identifier" type="string" xRegion="1" yRegion="1"/>
+              <fillColor blue="156" green="164" red="227"/>
+            </shape>
+            <label margin="2" property="path" source="Acme Property Value" vertAlign="Below">
+              <labelColor/>
+            </label>
+            <font/>
+            <representation>
+              <data>
+                <attribute key="repPortSize" type="string" val="ORIGINAL"/>
+              </data>
+            </representation>
+            <restrictPortType allowedTypes="" on="false"/>
+            <forcePortPlacement on="true">
+              <portPlacementRule alignment="Center" portType="FilterOutputPortT" side="Right"/>
+            </forcePortPlacement>
+            <resizeToFitPorts on="false"/>
+          </visualization>
+        </data>
+      </userdata>
+      <component name="prototype">
+        <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+          </userdata>
+        </design-rule>
+        <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+          </userdata>
+        </design-rule>
+      </component>
+    </component-type>
+    <component-type name="UnixFilterT">
+      <userdata key="element-description">
+        <data label="UnixFilter"><![CDATA[Represents a filter command in Unix. The command is specified in the "cmd" property.]]></data>
+      </userdata>
+      <userdata key="element-visualization">
+        <data>
+          <visualization hideFromPalette="false" type="COMPONENT">
+            <shape visualizationStrategyKey="org.acmestudio.ui.FilterVisualizationStrategy">
+              <decoration label="U" source="Static Label" type="string" xRegion="0" yRegion="2">
+                <font bold="true" height="8" italics="false" name="Courier"/>
+              </decoration>
+              <fillColor blue="192" green="192" red="192"/>
+            </shape>
+            <label>
+              <labelColor/>
+            </label>
+            <font/>
+            <representation>
+              <data>
+                <attribute key="repPortSize" type="string" val="ORIGINAL"/>
+              </data>
+            </representation>
+            <restrictPortType allowedTypes="" on="false"/>
+            <forcePortPlacement on="true">
+              <portPlacementRule alignment="Center" portType="FilterInputPortT" side="Left"/>
+              <portPlacementRule alignment="Center" portType="FilterOutputPortT" side="Right"/>
+            </forcePortPlacement>
+            <resizeToFitPorts on="false"/>
+          </visualization>
+        </data>
+      </userdata>
+      <userdata key="SubElementRules">
+        <data>
+          <createRule prefix="stdout" types="UnixFilterOutputPortT"/>
+          <createRule prefix="stdin" types="UnixFilterInputPortT"/>
+        </data>
+      </userdata>
+      <component name="prototype">
+        <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+          </userdata>
+        </design-rule>
+        <design-rule name="atLeast1portOfTypeFilterInputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+          </userdata>
+        </design-rule>
+        <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+          </userdata>
+        </design-rule>
+      </component>
+    </component-type>
+    <component-type name="FileSystemSinkT">
+      <userdata key="element-description">
+        <data label="FileSystemOut"><![CDATA[Represents an output directory, file, or wildcard. The "path" property specifies where in the filesystem the output is located.]]></data>
+      </userdata>
+      <userdata key="element-visualization">
+        <data>
+          <visualization hideFromPalette="false" type="COMPONENT">
+            <shape visualizationStrategyKey="org.acmestudio.ui.RepositoryVisualizationStrategy">
+              <decoration label="?" source="Acme Identifier" type="string" xRegion="1" yRegion="1"/>
+              <fillColor blue="204" green="199" red="155"/>
+            </shape>
+            <label margin="2" property="path" source="Acme Property Value" vertAlign="Below">
+              <labelColor blue="1" green="1" red="1"/>
+            </label>
+            <font/>
+            <representation>
+              <data>
+                <attribute key="repPortSize" type="string" val="ORIGINAL"/>
+              </data>
+            </representation>
+            <restrictPortType allowedTypes="" on="false"/>
+            <forcePortPlacement on="true">
+              <portPlacementRule alignment="Center" portType="FilterInputPortT" side="Left"/>
+            </forcePortPlacement>
+            <resizeToFitPorts on="false"/>
+          </visualization>
+        </data>
+      </userdata>
+      <component name="prototype">
+        <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+          </userdata>
+        </design-rule>
+        <design-rule name="atLeast1portOfTypeFilterInputPortT">
+          <userdata key="RuleInfo">
+            <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+          </userdata>
+        </design-rule>
+      </component>
+    </component-type>
+    <system name="prototype">
+      <userdata key="connection-patterns">
+        <data>
+          <portConnectionRule connector="Connector" name="">
+            <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+            <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          </portConnectionRule>
+        </data>
+      </userdata>
+    </system>
+  </family>
+</AcmeModel>

@@ -1,0 +1,128 @@
+
+SE-211: Software Design and Architecture Assignment 1 Report 
+Strategy Design Pattern 
+
+Date: 14/03/2025 
+Class: BESE-14 
+Submitted To: 
+Dr. Mehvish Rashid 
+School of Electrical Engineering and Computer Science (SEECS) National University of Sciences & Technology (NUST) 
+
+
+Introduction ........................................................................................................................................ 2-3 Best Practices and Common Mistakes ............................................................................................. 3-5 Usability Analysis ............................................................................................................................... 5-7 Alternative Design Pattern ................................................................................................................ 7-9 
+`1 
+
+
+In large-scale software development, maintaining flexibility and scalability is an important concern, especially when designing systems that need to support multiple variations of a behavior to the same result. The strategy pattern is a behavioral design pattern that enables a program to select a variation of an algorithm at runtime from a group of interchangeable ones. 
+The pattern involves defining a family of interchangeable algorithms and encapsulating them into their own classes. These classes each implement an interface for abstraction. Following contexts which intend to use one of these algorithms can simply interact with the abstract interface without knowing which specific algorithm is applied. The strategy used can be switched at runtime without requiring additional modifications to the code. 
+
+The above figure shows how this pattern accomplishes the SOLID principles, specifically, the Single Responsibility Principle and the Open Closed Principle. Each of the algorithm variations has a single responsibility, and the context is open to extension simply by adding new behaviors. Additionally, the strategy pattern minimizes coupling as the context is only coupled with the abstraction of a strategy, not a concrete realization of it.1
+Further details of the core concepts, implementation details, advantages, disadvantages and real-world use cases of the strategy design pattern are explored in the following pages. 
+1 Page 105 - Design Patterns Explained Simply (2013) by Alexander Shvets 
+`2 
+
+
+Before discussing best practices and common mistakes, let’s first formally describe the participants of the Strategy pattern and how they collaborate. 
+•	Strategy: Declares a common interface for all algorithms. The context will interact 	with this interface without caring about implementation details.
+•	ConcreteStrategy: Implements specific algorithms that can be used interchangeably.•	Context: The Context is initialized with a ConcreteStrategy, allowing it to delegate 	execution without depending on a specific implementation. 
+A client that wishes to use a specific ConcreteStrategy will instantiate the Context with that strategy, which will then call the strategy's method to execute the algorithm. 2
+	coupling and maximize flexibility. Clients should depend on abstract interfaces rather 	than concrete classes. This ensures that changes in specific implementations don’t 	affect the client while also hiding implementation details. 3
+•	Favor Composition over Inheritance: The design rule for this pattern is to prefer the 	HAS-A relationship over the IS-A relationship because it gives flexibility. It lets you 	change the behaviors at run time, reduces code redundancy and avoids issues that arise 	with deep chained inheritance. 4
+•Data Access: Keep Strategy and Context loosely coupled by passing only the necessary 	data as parameters to Strategy operations. This can be done by having the Context pass 	data as parameters to the Strategy algorithms. 5
+•Optional Strategy Objects: We can further simplify the design by giving some default 	behaviors to the Context. Context checks if it needs to access a Strategy object. If 	yes, it applies the specified behavior; if not, it uses the defined default behavior. •Consider What Should be Variable: Focus on identifying parts of your system that 	are likely to change and encapsulate them into separate classes or modules (algorithms). 
+2 Page 317 - Design Patterns Elements of Reusable Object-Oriented Software 3 Page 106 - Design Patterns Explained Simply (2013) by Alexander Shvets 4 Page 23 - Head First Design Patterns by Eric Freeman & Elisabeth Robson 5 Page 319 - Design Patterns Elements of Reusable Object-Oriented Software 
+`3 
+
+
+Use abstraction (interfaces or abstract classes) to decouple fixed parts from variable ones, allowing modifications without redesign. 6
+the code can simply be extended by adding a new strategy for it, but this results in an excessive number of strategy classes and unnecessary complexity. Use the Strategy pattern only in scenarios where behavior genuinely varies.
+•Poor Naming Convention: Don’t use vague or generic names for strategy classes, making it hard to understand their purpose. Instead use proper naming conventions. If a system supports multiple payment methods, using names like PaymentMethodA is 
+
+unclear. Instead, use meaningful names like PayPalPayment. 
+
+CreditCardPayment or 
+
+•Tight Coupling of Context and Strategy Implementations: Hardcoding strategy 
+implementations inside the context makes it rigid to extend. If a new strategy is needed, 
+modifying the context class becomes necessary, violating the Open-Closed Principle. 
+Like in the payment processing system: 
+public class PaymentService { 
+ private PaymentStrategy paymentStrategy; 
+ public PaymentService() { 
+		 // Hardcoding a specific strategy 
+		 this.paymentStrategy = new CreditCardPayment();  } 
+ public void processPayment(int amount) { 
+		 paymentStrategy.pay(amount); 
+ } 
+} 
+Instead, use dependency injection to inject strategies dynamically. 
+public class PaymentService { 
+	 private PaymentStrategy paymentStrategy; 
+	 // Constructor with dependency injection 
+	 @Autowired 
+	 public PaymentService(PaymentStrategy paymentStrategy) 			{ 
+				 this.paymentStrategy = paymentStrategy; 
+	 } 
+ public void processPayment(int amount) { 
+6 Page 231 - Design Patterns Explained by Addison Wesley 
+7https://javanexus.com/blog/overcoming-pitfalls-strategy-design-patterns
+`4 
+
+
+			 paymentStrategy.pay(amount); 
+	 } 
+	} 
+•Not Taking Advantage of Composition: Instead of using composition to assign 	behaviors dynamically, developers often create separate subclasses for each strategy, 	leading to unnecessary hierarchy of classes. 
+The Strategy pattern excels in scenarios where different algorithms or behaviors must be interchangeable and selected at runtime. 
+Ideally, it should be usedwhen a class must support various behaviors that can be swapped easily, using separate strategy classes allows each behavior to be encapsulated. If we assume a situation where the application needs to choose the appropriate algorithm during runtime based on context or user input, the strategy pattern makes this process flexible. This is particularly useful when multiple variants of the same algorithm exist, and one needs to be selected based on space/time trade-offs at the runtime. 
+By isolating each algorithm in its own class and programming against an abstraction, the system adheres to the Open-Closed Principle. New strategies can be introduced without modifying existing code. Moreover, instead of relying on multiple conditionals like if-else or switch statements, to select behavior, the strategy pattern encapsulates variations, which leads to cleaner and more modular code. 8 
+On the other hand, the Strategy pattern should be avoided when there are only one or two behaviors, since introducing additional classes may overcomplicate a system that could be handled with simpler conditional logic or polymorphism via inheritance. 
+There are also cases where if a strategy requires too much data from the context, this can lead to tight coupling between the context and the strategy, undermining the flexibility intended by the pattern. This extra layer of indirection (through multiple objects and method calls) may also introduce performance overhead. So, in cases where every microsecond counts, a more straightforward implementation might be preferable. 
+8 Page 316 - Design Patterns Elements of Reusable Object-Oriented Software 
+`5 
+
+
+Reference: 
+Christopoulou, A., Giakoumakis, E. A., Zafeiris, V. E., & Soukara, V. (2012). Automated refactoring to the Strategy design pattern. Information and Software Technology, 54, 1202–1214. 
+Overview and Relevance to Usability Analysis:
+This paper offers a detailed examination of how the Strategy pattern can be applied in practice to simplify complex conditional logic in object-oriented systems. In the context of usability analysis, the paper reinforces that the Strategy pattern is best applied when:
+•Multiple, Interchangeable Algorithms Are Present: The paper identifies conditional statements where each branch implements an alternative algorithm—precisely the scenario where the Strategy pattern shines. 
+•Decoupling Behavior Selection from the Core Logic: By automating the 	transformation of conditional logic into polymorphic method calls, the approach 	decouples the behavior (strategies) from the Context class, enhancing maintainability. •Dynamic and External Control of Behavior: The method checks that branch 	selection is controlled externally (by clients) rather than by the Context itself, 	underscoring a key usability criterion for when the Strategy pattern is beneficial. 
+Methodology and Implementation:
+•Detection and Analysis: 
+The authors propose an algorithm that examines classes to detect “code smells” in the form of conditional statements. By using syntactic, control flow, and data flow analysis (leveraging Program Dependence Graphs), the algorithm identifies conditional blocks where the selection variable is driven by external input. 
+•Automated Transformation: 
+The identified conditional blocks are then refactored into a Strategy-based design, where each branch of the conditional becomes a concrete strategy class. In cases where all branches depend on a single, externally controlled variable, the method supports the Total Replacement of Conditional Logic—effectively removing the conditional in favor of direct polymorphic invocations. 
+`6 
+
+
+Experimental Evaluation and Usability Outcomes:
+•Efficiency and Quality: 
+The automated refactoring approach was evaluated on several Java projects. The results showed notable reductions in cyclomatic complexity (15–30%) and method size (20–30%), indicating improved code maintainability. 
+The algorithm’s precision, recall, and overall accuracy confirmed that a significant proportion of the suggested refactorings were both correct and useful. 
+•Implications for Usability: 
+The study demonstrates that the Strategy pattern is highly usable when the system’s behavior is complex and subject to variation, particularly when behavior selection is externally determined. By refactoring conditional logic into distinct strategy classes, the design becomes more modular, testable, and easier to extend—a direct reflection of the usability benefits discussed in the broader analysis of the Strategy pattern. 
+`7 
+
+
+The design problem that the strategy design pattern solves can also be solved by the State Design Pattern. 
+The strategy and state design pattern are very similar in their functionality and structure. However, a few semantic, conventional and use-case differences do exist. 
+Strategy: 
+In the strategy design pattern, the functionality of an object depends on the behavior (strategy) that its assigned, from a list of available strategies. The strategy is assigned to a class externally, and depending on the particular set of strategies that an object uses, we can view the object as a specific type of object. 
+For example, consider a Duck class, that has the FlyingBehavior strategy and a QuackBehaviour strategy. There are two subclasses of the Duck class, that differ based on the strategies they use for these behaviors: RubberDuck uses the NoFlyBehaviour 
+FlyWithWingsBehavior and NaturalQuackBehavior. 
+This example uses the strategy design pattern, and each different combination of behaviors specifies a different type of Duck. 
+State: 
+In the state design pattern, the functionality of an object depends on the state that it has currently. The state of the object is managed internally instead of externally, and the state transitions as the object uses its functionality. Each particular state specifies a different set of functionalities, but they are regarded as different functionalities of the same object. Thus, this is useful when an object has dynamically self-changing behavior. 
+For example, consider again a Duck class, that has the methods fly(), quack() and eat(). 
+Duck has a variable called DuckState duckState, which is an interface that also has the same three methods. The methods of the Duck class, simply call the methods of the 
+`8 
+
+
+duckState instance. Each method of duckState, returns a new DuckState that may be the same or different. This state is then assigned to the Duck class. 
+In this example, we have two states ActiveDuck and TiredDuck. Each duck starts off in active state, when the fly() method is called on this state, the state changes to TiredDuck and it can no longer fly. When eat() is called in this state, the state reverts to ActiveDuck. 
+Both of these patterns, solve the same problem: different objects of the same type having different functionality. We want to be able to change this functionality without having to alter the code of the class, in accordance with the OCP principle. Both these patterns allow this to happen with slightly different approaches. 
+The tradeoff between the two is that: 
+•In strategy, the behaviors are changed externally. And different types of behaviors 	can change independent of one another. 
+•In state, the behaviors are changed internally by the object itself. And sets of 	behaviors are bundled together into a “state” which changes altogether. 
+`9 

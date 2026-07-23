@@ -1,0 +1,5041 @@
+=== PAGE 1 ===
+Integration 
+in the
+Complex Plane
+5
+Normalized velocity vector field for 
+f(z) = (1 + i)z See page 293.
+C
+5.1 Real Integrals
+5.2 Complex Integrals
+5.3 Cauchy-Goursat Theorem
+5.4 Independence of Path
+5.5 Cauchy’s Integral Formulas and their Consequences
+5.5.1 Cauchy’s Two Integral Formulas
+5.5.2 Some Consequences of the Integral Formulas
+5.6 Applications
+Chapter 5 Review Quiz
+Introduction To deﬁne an integral of a complex
+functionf, we start with a complex functionf
+deﬁned along some curveC or coutour in the
+complex plane. We shall see in this section that
+the deﬁnition of a complex integral, its proper-
+ties, and method of evaluation are quite similar
+to those of a real line integral in the Cartesian
+plane.
+235
+
+=== PAGE 2 ===
+236 Chapter 5 Integration in the Complex Plane
+5.1 Real Integrals
+5.1To the Instructor: We present this section as a review of the deﬁnitions and methods
+ofevaluationofthedeﬁniteintegralandlineintegralsintheplane. Inourexperiencewe
+havefoundthatare-examinationofthismaterialcontributestoasmootherintroductionto
+complexintegration. Youcan,ofcourse,skipthissectionandmovedirectlyintocomplex
+contourintegralsifyouthinkyourstudentshaveadequatefamiliaritywiththeseconcepts.
+However,theterminologyaboutcurvesintheplaneintroducedinthissectionwillbeused
+inthesucceedingsection.
+Deﬁnite IntegralItislikelythatyouhaveretainedatleasttwoas-
+sociationsfromyourstudyofelementarycalculus: thederivativewithslope,
+andthedeﬁniteintegralwitharea. Butasthederivativef
+′(x)ofarealfunc-
+tiony= f(x) has other uses besides ﬁnding slopes of tangent lines, so too
+thevalueofadeﬁniteintegral
+∫ b
+a f(x)dxneednotbearea“underacurve.”
+Recall,ifF(x)isanantiderivativeofacontinuousfunctionf,thatis,Fisa
+functionforwhichF′(x)= f(x),thenthedeﬁniteintegraloffontheinterval
+[a,b]isthenumber
+∫ b
+a
+f(x)dx= F(x)|b
+a = F(b)−F(a). (1)
+Forexample,
+∫ 2
+− 1x2dx= 1
+3x3⏐⏐2
+− 1 = 8
+3 −
+(
+− 1
+3
+)
+=3 .Bearinmindthatthefun-
+damental theorem of calculus,justgivenin(1),isamethodofevaluating∫ b
+a f(x)dx;itisnotthedeﬁnitionof
+∫ b
+a f(x)dx.
+Inthediscussionthatfollowswepresentthedeﬁnitionsoftwotypesof
+real integrals. Webeginwiththeﬁvestepsleadingtothedeﬁnitionofthe
+deﬁnite(orRiemann)integralofafunctionf;wefollowitwiththedeﬁnition
+of line integrals in the Cartesian plane. Both deﬁnitions rest on the limit
+concept.
+x1*
+x1 xk–1 xn= ba =x0
+xk*
+xk
+Figure 5.1 Partition of [a, b] withx∗
+k
+in each subinterval [xk− 1 ,x k]
+Steps Leading to the Deﬁnition of the
+Deﬁnite Integral
+1.Let f be a function of a single variable x deﬁned at all points in a
+closedinterval[a,b].
+2.LetPbeapartition:
+a= x0 <x1 <x2 <···<xn− 1 <xn = b
+of[a,b]intonsubintervals[xk− 1,xk]of length∆xk = xk −xk− 1.
+SeeFigure5.1.
+
+=== PAGE 3 ===
+5.1 Real Integrals 237
+3.Let∥P∥bethenormofthepartitionPof[a,b],thatis,thelength
+ofthelongestsubinterval.
+4.Choose a numberx∗
+k in each subinterval[xk− 1,xk]o f[a,b].See
+Figure5.1.
+5.Formn productsf(x∗
+k
+)∆xk,k=1 ,2 ,...,n,and then sumthese
+products:
+n∑
+k=1
+f(x∗
+k)∆xk.
+Definition 5.1 Deﬁnite Integral
+Thedeﬁnite integraloffon[a,b]is
+∫ b
+a
+f(x)dx= lim
+∥P ∥→ 0
+n∑
+k=1
+f(x∗
+k
+)∆xk. (2)
+Whenever the limit in (2) exists we say thatfisintegrableon the
+interval[a,b]orthatthedeﬁniteintegraloffexists. Itcanbeprovedthat
+iffiscontinuouson[a,b],thentheintegraldeﬁnedin(2)exists.
+Thenotionofthedeﬁniteintegral
+∫ b
+a f(x)dx,thatis,integrationofareal
+functionf(x)over an interval on the x-axis fromx= atox= bcan be
+generalizedtointegrationofarealmultivariablefunctionG(x, y)onacurve
+C frompoint A to point Bin the Cartesian plane. To this end we need to
+introducesometerminologyaboutcurves.
+TerminologySupposeacurveCintheplaneisparametrizedbyaset
+ofequationsx= x(t),y= y(t),a≤t≤b,wherex(t)andy(t)arecontinuous
+realfunctions. LettheinitialandterminalpointsofC,thatis,(x(a),y(a))
+and(x(b),y(b)),bedenotedbythesymbolsAandB,respectively. Wesay
+that:
+(i)Cisasmooth curveifx′andy′ arecontinuousontheclosedinterval
+[a,b]andnotsimultaneouslyzeroontheopeninterval(a,b).
+(ii)Cis apiecewise smooth curveif it consists of a ﬁnite number of
+smoothcurvesC1,C2,..., Cn joinedendtoend,thatis,theterminal
+pointofonecurveCk coincidingwiththeinitialpointofthenextcurve
+Ck+1.
+(iii)Cisasimple curveifthecurveCdoesnotcrossitselfexceptpossibly
+att= aandt= b.
+(iv)Cisaclosed curveifA= B.
+(v)Cis asimple closed curveif the curveCdoes not cross itself and
+A= B;thatis,Cissimpleandclosed.
+
+=== PAGE 4 ===
+238 Chapter 5 Integration in the Complex Plane
+Figure5.2illustrateseachtypeofcurvedeﬁnedin(i)–(v).
+A A
+A =B
+A =B
+B
+B
+C1
+C2
+C3
+(a) Smooth
+      curve and
+      simple
+(b) Piecewise smooth
+       curve and simple
+(c) Closed but
+      not simple
+(d) Simple closed
+       curve
+Figure 5.2 Types of curves in the plane
+Line Integrals in the PlaneThefollowingﬁvestepsleadtothe
+deﬁnitionofthreeline integrals∗ intheplaneandareanalogoustotheﬁve
+stepsgivenpriortothedeﬁnitionofthedeﬁniteintegral.
+Steps Leading to the Deﬁnition of Line Integrals
+1.LetGbeafunctionoftworealvariablesxandydeﬁnedatallpoints
+onasmoothcurveCthatliesinsomeregionofthexy-plane. LetC
+bedeﬁnedbytheparametrizationx= x(t),y= y(t),a≤t≤b.
+2.LetPbeapartitionoftheparameterinterval[a,b]into
+nsubintervals[t
+k− 1,tk]oflength∆tk = tk −tk− 1:
+a= t0 <t1 <t2 <···<tn− 1 <tn = b.
+The partition P induces a partition of the curve C into n subarcs of
+length∆s
+k.Lettheprojectionofeachsubarcontothex-andy-axes
+havelengths∆xk and∆yk,respectively. SeeFigure5.3.
+3.Let∥P∥bethenormofthepartitionPof[a,b],thatis,thelengthof
+thelongestsubinterval.
+4.Chooseapoint(x∗
+k,y∗
+k)oneachsubarcofC.SeeFigure5.3.
+5.FormnproductsG(x∗
+k
+,y∗
+k)∆xk, G(x∗
+k
+,y∗
+k)∆yk, G(x∗
+k
+,y∗
+k)∆sk,
+k=1,2,..., n,andthensumtheseproducts
+n∑
+k=1
+G(x∗
+k,y∗
+k)∆xk,
+n∑
+k=1
+G(x∗
+k
+,y∗
+k)∆yk, and
+n∑
+k=1
+G(x∗
+k
+,y∗
+k)∆sk.
+y
+B
+C
+A x∆ xk
+(xk*, yk*)∆ yk
+∆ sk
+Figure 5.3 Partition of curveC inton
+subarcs induced by a partitionP of the
+parameter interval [a, b]
+Definition 5.2 Line Integrals in the Plane
+(i) Theline integral ofGalongCwith respect toxis
+∫
+C
+G(x,y)dx= lim
+∥P ∥→ 0
+n∑
+k=1
+G(x∗
+k
+,y∗
+k)∆xk. (3)
+(ii) Theline integral ofGalongCwith respect toyis
+∫
+C
+G(x,y)dy= lim
+∥P ∥→ 0
+n∑
+k=1
+G(x∗
+k
+,y∗
+k)∆yk. (4)
+(Deﬁnitioncontinuesonpage239)
+∗An unfortunate choice of names.Curve integralswould be more appropriate.
+
+=== PAGE 5 ===
+5.1 Real Integrals 239
+(iii) Theline integral ofGalongCwith respect to arc lengths
+is
+∫
+C
+G(x,y)ds= lim
+∥P ∥→ 0
+n∑
+k=1
+G(x∗
+k,y∗
+k)∆sk. (5)
+ItcanbeprovedthatifGiscontinuousonC,thenthethreetypesofline
+integralsdeﬁnedin(3),(4),and(5)exist. WeshallassumecontinuityofG
+asmatterofcourse. ThecurveCisreferredtoasthepathofintegration.
+Method of Evaluation–C Deﬁned ParametricallyThe
+line integrals in Deﬁnition 5.2 can be evaluated in two ways, depending on
+whether the curveCis deﬁned by a pair of parametric equations or by an
+explicitfunction. Eitherway,thebasicideaistoconvertalineintegraltoa
+deﬁnite integralin a single variable. IfCis smooth curve parametrized by
+x= x(t),y= y(t),a≤ t≤ b,then replacexandyin the integral by the
+functionsx(t)andy(t),andtheappropriatediﬀerentialdx,dy,ordsby
+x′(t)dt, y′(t)dt,or
+√
+[x′(t)]2+[y′(t)]2dt.
+Thetermds=
+√
+[x′(t)]2+[y′(t)]2dtiscalledthediﬀerentialofthearclength.
+InthismannereachofthelineintegralsinDeﬁnition5.2becomesadeﬁnite
+integralinwhichthevariableofintegrationistheparametert. Thatis,
+∫
+C
+G(x,y)dx=
+∫ b
+a
+G(x(t),y(t))x′(t)dt, (6)
+∫
+C
+G(x,y)dy=
+∫ b
+a
+G(x(t),y(t))y′(t)dt, (7)
+∫
+C
+G(x,y)ds=
+∫ b
+a
+G(x(t),y(t))
+√
+[x′(t)]2+[y′(t)]2dt. (8)
+EXAMPLE 1C Deﬁned Parametrically
+Evaluate(a)
+∫
+C xy2dx,(b)
+∫
+C xy2dy,and(c)
+∫
+C xy2ds,wherethepathofinte-
+grationCis the quarter circle deﬁned byx= 4cost,y= 4sint,
+0≤t≤π/2.
+SolutionThepathCofintegrationisshownincolorinFigure5.4. Ineach
+ofthethreegivenlineintegrals,xisreplacedby4costandyisreplacedby
+4sint.
+y
+C
+x
+t = 0 gives (4, 0)
+t =      gives
+(0,4)
+π
+2
+Figure 5.4 PathC of integration
+(a) Sincedx= −4sintdt,wehavefrom(6):
+∫
+C
+xy2dx=
+∫ π/2
+0
+(4cost)(4sint)2( −4sintdt)
+= −256
+∫ π/2
+0
+sin3tcostdt= −256
+[1
+4sin4t
+]π/2
+0
+= −64.
+
+=== PAGE 6 ===
+240 Chapter 5 Integration in the Complex Plane
+(b) Sincedy=4costdt,wehavefrom(7):
+∫
+C
+xy2dy=
+∫ π/2
+0
+(4cost)(4sint)2(4costdt)
+=256
+∫ π/2
+0
+sin2tcos2tdt
+=256
+∫ π/2
+0
+1
+4sin22tdt
+=64
+∫ π/2
+0
+1
+2(1−cos4t)dt=32
+[
+t−1
+4sin4t
+]π/2
+0
+=16 π.
+Noteinthisintegrationwehaveusedtwotrigonometricidentities:sin2θ=
+2sinθcosθandsin2θ= 1
+2(1−cos2θ).
+(c) Sinceds=
+√
+16
+(
+sin2t+cos2t
+)
+dt=4 dt,itfollowsfrom(8):
+∫
+C
+xy2ds=
+∫ π/2
+0
+(4cost)(4sint)2(4dt)
+=256
+∫ π/2
+0
+sin2tcostdt=256
+[1
+3 sin3t
+]π/2
+0
+= 256
+3 .
+Method of Evaluation–C Deﬁned by a FunctionIf the
+pathofintegrationCisthegraphofanexplicitfunctiony= f(x),a≤x≤b,
+then we can usexas a parameter. In this situation, the diﬀerential ofyis
+dy= f′(x)dx, and the diﬀerential of arc length isds=
+√
+1+[f′(x)]2dx.
+Aftersubstituting,thethreelineintegralsofDeﬁnition5.2become,inturn,
+thedeﬁniteintegrals:
+∫
+C
+G(x,y)dx=
+∫ b
+a
+G(x,f(x))dx, (9)
+∫
+C
+G(x,y)dy=
+∫ b
+a
+G(x,f(x))f′(x)dx, (10)
+∫
+C
+G(x,y)ds=
+∫ b
+a
+G(x,f(x))
+√
+1+[f′(x)]2dx. (11)
+AlineintegralalongapiecewisesmoothcurveCisdeﬁnedasthesumof
+theintegralsoverthevarioussmoothcurveswhoseunioncomprisesC.F o r
+example,toevaluate
+∫
+C G(x, y)dswhenCiscomposedoftwosmoothcurves
+C1 andC2,webeginbywriting
+∫
+C
+G(x,y)ds=
+∫
+C 1
+G(x,y)ds+
+∫
+C 2
+G(x,y)ds. (12)
+
+=== PAGE 7 ===
+5.1 Real Integrals 241
+The integrals
+∫
+C 1
+G(x, y)dsand
+∫
+C 2
+G(x, y)dsare then evaluated in the
+mannergivenin(8)or(11).
+NotationIn many applications, line integrals appear as a sum∫
+C P(x,y)dx+
+∫
+C Q(x,y)dy.Itiscommonpracticetowritethissumasone
+integralwithoutparenthesesas
+∫
+C
+P(x,y)dx+ Q(x,y)dyorsimply
+∫
+C
+Pdx+ Qdy.(13)
+AlineintegralalongaclosedcurveCisusuallydenotedby
+∮
+C
+Pdx+ Qdy.
+EXAMPLE 2C Deﬁned by an Explicit Function
+Evaluate
+∫
+C xydx+ x2dy,whereCisthegraphofy= x3,−1≤x≤2.
+SolutionThe curveCis illustrated in Figure 5.5 and is deﬁned by the
+explicit functiony= x3. Hence we can usexas the parameter. Using the
+diﬀerentialdy=3 x2dx,weapply(9)and(10):
+y
+C
+x
+(–1, –1)
+(2, 8)
+Figure 5.5 Graph ofy = x3 on the
+interval−1 ≤ x ≤ 2
+∫
+C
+xydx+ x2dy=
+∫ 2
+− 1
+x
+(
+x3)
+dx+ x2 (
+3x2dx
+)
+=
+∫ 2
+− 1
+4x4dx= 4
+5x5
+⏐⏐
+⏐
+⏐
+2
+− 1
+= 132
+5 .
+EXAMPLE 3C is a Closed Curve
+Evaluate
+∮
+C xdx, whereCis the circle deﬁned byx= cost,y= sint,
+0≤t≤2π.
+SolutionThediﬀerentialofx=costisdx= −sintdt,andsofrom(6),
+∮
+C
+xdx=
+∫ 2π
+0
+cost( −sintdt)= 1
+2 cos2t
+⏐⏐
+⏐
+⏐
+2π
+0
+= 1
+2[1−1]=0.
+y
+y = x2
+x
+Figure 5.6 Piecewise smooth path
+of integration
+EXAMPLE 4C is a Closed Curve
+Evaluate
+∮
+C y2dx−x2dy,whereCistheclosedcurveshowninFigure5.6.
+
+=== PAGE 8 ===
+242 Chapter 5 Integration in the Complex Plane
+SolutionSinceCis piecewise smooth, we proceed as illustrated in (12);
+namely,thegivenintegralisexpressedasasumofintegrals. Symbolically,we
+write
+∮
+C =
+∫
+C 1
++
+∫
+C 2
++
+∫
+C 3
+,wheretheC1,C2,andC3 arethecurveslabeledin
+Figure5.7. OnC1,weusexasaparameter. Sincey=0,dy=0;therefore
+∫
+C 1
+y2dx−x2dy=
+∫ 2
+0
+0dx−x2(0)=0.
+y
+ C3  C2
+ C1
+x
+(0, 0) (2, 0)
+(2, 4)
+Figure 5.7 C consists of the union
+ofC 1, C 2, andC 3.
+OnC2,weuseyasaparameter. Fromx=2, dx=0,wehave
+∫
+C 2
+y2dx−x2dy=
+∫ 4
+0
+y2(0)−4dy= −
+∫ 4
+0
+4dy= −16.
+OnC3,weagainusexasaparameter. Fromy= x2,wegetdy=2 xdxand
+so
+∫
+C 3
+y2dx−x2dy=
+∫ 0
+2
+(
+x2)2
+dx−x2(2xdx)
+=
+∫ 0
+2
+(
+x4 −2x3)
+dx=
+(1
+5x5 −1
+2 x4
+)⏐⏐
+⏐
+⏐
+0
+2
+= 8
+5.
+Hence,
+∮
+C
+y2dx−x2dy=
+∫
+C 1
++
+∫
+C 2
++
+∫
+C 3
+=0+( −16)+ 8
+5 = −72
+5 .
+ C  –C
+AA
+BB
+Figure 5.8 CurveC and its opposite−C
+Orientation of a CurveIndeﬁniteintegrationwenormallyassume
+thattheintervalofintegrationisa≤ x≤ bandthesymbol
+∫ b
+a f(x)dxindi-
+catesthatweareintegratinginthepositivedirectiononthex-axis. Integra-
+tionintheoppositedirection,fromx= btox= a,resultsinthenegativeof
+theoriginalintegral:
+∫ a
+b
+f(x)dx= −
+∫ b
+a
+f(x)dx. (14)
+Lineintegralspossessapropertysimilarto(14),butﬁrstwehavetointroduce
+thenotionoforientationofthepathC.I fCisnotaclosedcurve,thenwe
+saythepositive directiononC,orthatChaspositive orientation,ifwe
+traverseCfromitsinitialpointAtoitsterminalpointB. Inotherwords,
+ifx= x(t),y= y(t),a≤ t≤ bare parametric equations forC, then the
+positivedirectiononCcorrespondstoincreasingvaluesoftheparametert.
+IfCistraversedinthesenseoppositetothatofthepositiveorientation,then
+Cissaidtohavenegative orientation.I fChasanorientation(positiveor
+negative),thentheopposite curve,thecurvewiththeoppositeorientation,
+willbedenotedbythesymbol−C. InFigure5.8ifweassumethatAand
+Bare the initial and terminal points of the curveC, respectively, then the
+arrowsoncurveCindicatethatwearetraversingthecurvefromitsinitial
+pointtoitsterminalpoint,andsoChaspositiveorientation. Thecurveto
+therightofCthatislabeled−Cthenhasnegativeorientation. Finally,if−C
+
+=== PAGE 9 ===
+5.1 Real Integrals 243
+denotesthecurvehavingtheoppositeorientationofC,thentheanalogueof
+(14)forlineintegralsis
+∫
+− C
+Pdx+ Qdy= −
+∫
+C
+Pdx+ Qdy, (15)
+or,equivalently
+∫
+− C
+Pdx+ Qdy+
+∫
+C
+Pdx+ Qdy=0. (16)
+For example, in part (a) of Example 1 we saw that
+∫
+C xy2dx= −64; we
+concludefrom(15)that
+∫
+− C xy2dx=64 .
+Note It is important to be aware that a line integral is independent of the
+parametrization of the curveC, providedCis given the same orientation
+by all sets of parametric equations deﬁning the curve. See Problem 33 in
+Exercises5.1.
+EXERCISES 5.1Answerstoselectedodd-numberedproblemsbeginonpageANS-15.
+In Problems 1–10, evaluate the deﬁnite integral. If necessary, review the techniques
+of integration in your calculus text.
+1.
+∫ 3
+− 1
+x(x− 1)(x+2) dx 2.
+∫ 0
+− 1
+t2 dt+
+∫ 2
+0
+x2 dx+
+∫ 3
+2
+u2 du
+3.
+∫ 1
+1/2
+sin2πxdx 4.
+∫ π/8
+0
+sec2 2xdx
+5.
+∫ 4
+0
+dx
+2x+1 6.
+∫ ln 3
+ln 2
+e− x dx
+7.
+∫ 4
+2
+xe− x/2 dx 8.
+∫ e
+1
+lnxdx
+9.
+∫ 4
+2
+dx
+x2 − 6x+5 10.
+∫ 4
+2
+2x− 1
+(x+3) 2 dx
+In Problems 11–14, evaluate the line integrals
+∫
+C G(x, y) dx,
+∫
+C G(x, y) dy, and∫
+C G(x, y) dson the indicated curveC.
+11.G(x, y)=2 xy;x= 5cost, y= 5sint,0 ≤ t≤ π/4
+12.G(x, y)= x3 +2 xy2 +2 x;x=2t, y= t2,0 ≤ t≤ 1
+13.G(x, y)=3 x2 +6 y2;y=2x+1 ,−1 ≤ x≤ 0
+14.G(x, y)= x2/y
+3
+;2y=3x3/2,1 ≤ t≤ 8
+
+=== PAGE 10 ===
+244 Chapter 5 Integration in the Complex Plane
+In Problems 15–18, evaluate
+∫
+C (2x+ y) dx+ xydyon the given curve from (−1,2)
+to (2,5).
+15.y= x+3 16.y= x2 +1
+17. 18.y
+x
+(2, 2)
+(2, 5)
+(–1, 2)
+Figure 5.9 Figure for Problem 17
+y
+x
+(2, 0) (–1, 0)
+(2, 5)
+(–1, 2)
+Figure 5.10 Figure for Problem 18
+In Problems 19–22, evaluate
+∫
+C
+ydx+ xdyon the given curve from (0,0) to (1,1).
+19.y= x2 20.y= x
+21.Cconsists of the line segments from (0,0) to (0,1) and from (0,1) to (1,1).
+22.Cconsists of the line segments from (0,0) to (1,0) and from (1,0) to (1,1).
+23.Evaluate
+∫
+C
+(
+6x2 +2 y2 )
+dx+4 xydy, whereC is given byx=
+√
+t, y= t,
+4 ≤ t≤ 9.
+24.Evaluate
+∫
+C
+−y2 dx+ xydy, whereCis given byx=2t, y= t3,0 ≤ t≤ 2.
+25.Evaluate
+∫
+C
+2x3ydx+( 3x+ y) dy, whereCis given byx= y2 from (1,−1)
+to (1,1).
+26.Evaluate
+∫
+C
+4xdx+2 ydy, whereC is given byx= y3 + 1 from (0,−1)
+to (9,2).
+In Problems 27 and 28, evaluate
+∮
+C
+(
+x2 + y2 )
+dx−2xydyon the given closed curve.
+27. 28.
+y
+x
+x2 + y2 = 4
+Figure 5.11 Figure for Problem 27
+y = x2
+y = √x
+y
+x
+(1, 1)
+Figure 5.12 Figure for Problem 28
+
+=== PAGE 11 ===
+5.2 Complex Integrals 245
+In Problems 29 and 30, evaluate
+∮
+C x2y3 dx− xy2 dyon the given closed curve.
+29. 30.
+y
+x
+(1, 1)(–1, 1)
+(1, –1)(–1, –1)
+Figure 5.13 Figure for Problem 29
+y
+x
+(2, 4)
+Figure 5.14 Figure for Problem 30
+31.Evaluate
+∮
+C
+(
+x2 − y2 )
+ds,whereCisgivenbyx= 5cost, y= 5sint,0 ≤ t≤ 2π.
+32.Evaluate
+∫
+− C ydx−xdy, whereCis given byx= 2cost, y= 3sint,0 ≤ t≤ π.
+33.Verify that the line integral
+∫
+C y2 dx+ xydyhas the same value onCfor each
+of the following parametrizations:
+C:x=2t+1 ,y=4t+2 ,0 ≤ t≤ 1
+C:x= t2,y=2t2,1 ≤ t≤
+√
+3
+C:x=l nt, y=2l nt, e≤ t≤ e3.
+34.Consider the three curves between (0, 0) and (2, 4):
+C:x= t, y=2t,0 ≤ t≤ 2
+C:x= t, y= t2,0 ≤ t≤ 2
+C:x=2t− 4,y=4t− 8,2≤ t≤ 3.
+Show that
+∫
+C 1
+xyds=
+∫
+C 3
+xyds, but
+∫
+C 1
+xyds̸=
+∫
+C 2
+xyds.Explain.
+35.Ifρ(x,y) is the density of a wire (mass per unit length), then the mass of
+the wire ism =
+∫
+C ρ(x, y) ds. Find the mass of a wire having the shape of
+a semicirclex= 1 + cost, y= sint,0 ≤ t≤ π,if the density at a pointPis
+directly proportional to the distance from they-axis.
+36.The coordinates of the center of mass of a wire with variable density are given
+by ¯x= My/m,¯y= Mx/mwhere
+m=
+∫
+C
+ρ(x,y) ds, Mx =
+∫
+C
+yρ(x,y) ds, My =
+∫
+C
+xρ(x,y) ds.
+Find the center of mass of the wire in Problem 35.
+5.2 Complex Integrals
+5.2Intheprecedingsectionwereviewedtwotypesofrealintegrals. Wesawthatthedeﬁnition
+ofthedeﬁniteintegralstartswitharealfunctiony= f(x)thatisdeﬁnedonanintervalon
+thex-axis. Becauseaplanarcurveisthetwo-dimensionalanalogueofaninterval,wethen
+generalizedthedeﬁnitionof
+∫ b
+a f(x)dxtointegralsofrealfunctionsoftwovariablesdeﬁned
+onacurveCintheCartesianplane. Weshallseeinthissectionthatacomplexintegralis
+deﬁnedinamannerthatisquitesimilartothatofalineintegralintheCartesianplane.
+Since curves play a big part in the deﬁnition of a complex integral, we begin with a
+briefreviewofhowcurvesarerepresentedinthecomplexplane.
+
+=== PAGE 12 ===
+246 Chapter 5 Integration in the Complex Plane
+Curves RevisitedSuppose the continuous real-valued functions
+x= x(t),y= y(t),a≤ t≤ b, are parametric equations of a curveCin
+thecomplexplane. Ifweusetheseequationsastherealandimaginaryparts
+inz= x+ iy,wesawinSection2.2thatwecandescribethepointszonCby
+meansofacomplex-valuedfunctionofarealvariabletcalledaparametriza-
+tionofC:
+z(t)= x(t)+ iy(t),a≤t≤b. (1)
+For example, the parametric equationsx= cost,y= sint,0 ≤ t≤ 2π,
+describeaunitcirclecenteredattheorigin. Aparametrizationofthiscircle
+isz(t)=cost+ isint,orz(t)= e
+it,0≤t≤2π.See(6)–(10)inSection2.2.
+Thepointz(a)= x(a)+ iy(a)orA=( x(a),y(a))iscalledtheinitial
+pointofCandz(b)= x(b)+ iy(b)orB=( x(b),y(b))isitsterminal point.
+WealsosawinSection2.7thatz(t)= x(t)+ iy(t)couldalsobeinterpreted
+as a two-dimensional vector function. Consequently,z(a) andz(b) can be
+interpreted as position vectors. Astvaries fromt= atot= bwe can
+envisionthecurveCbeingtracedoutbythemovingarrowheadofz(t). See
+Figure5.15.
+y
+z(a)
+z(t)
+z(b)
+C
+A
+B
+x
+Figure 5.15 z(t)= x(t)+ iy(t)a sa
+position vector
+ContoursThenotionsofcurvesinthecomplexplanethataresmooth,
+piecewisesmooth,simple,closed,andsimpleclosedareeasilyformulatedin
+terms of the vector function (1). Suppose the derivative of (1) isz
+′(t)=
+x′(t)+ iy′(t). We say a curveCin the complex plane issmoothifz′(t)
+is continuous and never zero in the intervala≤ t≤ b. As shown Figure
+5.16,sincethevectorz′(t)isnotzeroatanypointPonC,thevectorz′(t)is
+tangenttoCatP. Inotherwords,asmoothcurvehasacontinuouslyturning
+tangent; putyetanotherway,asmoothcurvecanhavenosharpcornersor
+cusps. SeeFigure5.17. Apiecewise smooth curveChasacontinuously
+turningtangent,exceptpossiblyatthepointswherethecomponentsmooth
+curvesC
+1,C2,..., Cn arejoinedtogether. AcurveCinthecomplexplane
+issaidtobeasimpleifz(t1) ̸= z(t2)fort1 ̸= t2,exceptpossiblyfort= a
+andt= b. Cisaclosed curveifz(a)= z(b).Cisasimple closed curve
+ifz(t1) ̸= z(t2)fort1 ̸= t2 andz(a)= z(b). Incomplexanalysis,apiecewise
+smoothcurveCiscalledacontourorpath.
+y
+z′(t)
+z(t) C
+P
+Tangent
+x
+Figure 5.16 z′(t)= x′(t)+ iy′(t)a sa
+tangent vector
+z(b)
+z(a)
+C
+Figure 5.17 CurveC is not smooth
+since it has a cusp.
+C
+C
+(a) Positive direction
+(b) Positive direction
+Figure 5.18 Interior of each curve is to
+the left.
+Justaswedidintheprecedingsection,wedeﬁnethepositive direction
+onacontourCtobethedirectiononthecurvecorrespondingtoincreasing
+values of the parametert. It is also said that the curveChaspositive
+orientation. In the case of a simple closed curveC, the positive direction
+roughly corresponds to the counterclockwise direction or the direction that
+apersonmustwalkonCinordertokeeptheinteriorofCtotheleft. For
+example,thecirclez(t)= e
+it,0≤t≤2π,haspositiveorientation. SeeFigure
+5.18. Thenegative directiononacontourCisthedirectionoppositethe
+positive direction. IfChas an orientation, theopposite curve, that is, a
+curvewithoppositeorientation,isdenotedby−C. Onasimpleclosedcurve,
+thenegativedirectioncorrespondstotheclockwisedirection.
+Complex IntegralAnintegralofafunctionfofacomplexvariablez
+thatisdeﬁnedonacontourCisdenotedby
+∫
+C f(z)dzandiscalledacomplex
+
+=== PAGE 13 ===
+5.2 Complex Integrals 247
+integral. Thefollowinglistofassumptionsisapreludetothedeﬁnitionofa
+complexintegral. Forthesakeofcomparison,youareencouragedtoreview
+thelistsgivenpriortoDeﬁnitions5.1and5.2. Also,lookoverFigure5.19as
+youreadthisnewlist.C
+zk*
+zk
+zn
+zk–1
+z1* z2* z2
+z1
+z0
+Figure 5.19 Partition of curveC into
+n subarcs is induced by a partitionP
+of the parameter interval [a, b].
+Steps Leading to the Deﬁnition of the
+Complex Integral
+1.Letfbeafunctionofacomplexvariablezdeﬁnedatallpointsona
+smoothcurveCthatliesinsomeregionofthecomplexplane. LetC
+bedeﬁnedbytheparametrizationz(t)= x(t)+ iy(t),a≤t≤b.
+2.LetPbeapartitionoftheparameterinterval[a,b]intonsubintervals
+[tk− 1,tk]oflength∆tk = tk −tk− 1:
+a= t0 <t1 <t2 <···<tn− 1 <tn = b.
+The partitionPinduces a partition of the curveCinto n subarcs
+whoseinitialandterminalpointsarethepairsofnumbers
+z0 = x(t0)+ iy(t0),z 1 = x(t1)+ iy(t1),
+z1 = x(t1)+ iy(t1),z 2 = x(t2)+ iy(t2),
+..
+. .
+.
+.
+z
+n− 1 = x(tn− 1)+ iy(tn− 1),z n = x(tn)+ iy(tn).
+Let∆zk = zk −zk− 1,k=1,2,...,n .SeeFigure5.19.
+3.Let∥P∥bethenormofthepartitionPof[a,b],thatis,thelengthof
+thelongestsubinterval.
+4.Chooseapointz∗
+k = x∗
+k+ iy∗
+k oneachsubarcofC. SeeFigure5.19.
+5.Formnproductsf(z∗
+k)∆zk,k=1 ,2,...,n,and then sumthese
+products:
+n∑
+k=1
+f(z∗
+k)∆zk.
+Definition 5.3 Complex Integral
+Thecomplex integraloffonCis
+∫
+C
+f(z)dz= lim
+∥P ∥→ 0
+n∑
+k=1
+f(z∗
+k)∆zk. (2)
+
+=== PAGE 14 ===
+248 Chapter 5 Integration in the Complex Plane
+If the limit in (2) exists, thenfis said to beintegrableonC. The
+limit exists whenever iffis continuous at all points onCandCis either
+smoothorpiecewisesmooth. Consequentlyweshall,hereafter,assumethese
+conditionsasamatterofcourse. Moreover,wewillusethenotation
+∮
+C f(z)dz
+torepresentacomplexintegralaroundapositively orientedclosedcurveC.
+When it is important to distinguish the direction of integration around a
+closedcurve,wewillemploythenotations
+∫
+C
+f(z)dzand
+∫
+C
+f(z)dz
+Generalassumptionsthroughoutthis
+text
+todenoteintegrationinthepositiveandnegativedirections,respectively.
+Note
+Thepointhavingbeenmadethatthedeﬁnitionsofrealintegralsdiscussed
+inSection5.1andDeﬁnition5.3areformallythesame,weshallfromnowon
+refer to a complex integral
+∫
+C f(z)dzby its more common name,contour
+integral.
+Complex-Valued Function of a Real VariableBeforeturn-
+ing to the properties of contour integrals and the all-important question of
+howtoevaluateacontourintegral,weneedtodigressbrieﬂytoenlargeupon
+theconceptofacomplex-valued function of a real variableintroduced
+intheRemarksinSection2.1. Asalreadymentioned, aparametrizationof
+acurveCoftheformgivenin(1)isacaseinpoint. Let’sconsideranother
+simpleexample. Iftrepresentsarealvariable,thentheoutputofthefunction
+f(t)=(2 t+ i)
+2 isacomplexnumber. Fort=2,
+f(2)=(4+ i)2 =16+8 i+ i2 =15+8 i.
+Ingeneral,iff1 andf2 arereal-valuedfunctionsofarealvariablet(thatis,
+realfunctions), thenf(t)= f1(t)+ if2(t)isacomplex-valuedfunctionofa
+realvariablet. Whatwearereallyinterestedinatthemomentisthedeﬁ-
+niteintegral
+∫ b
+a f(t)dt,inotherwords,integrationofcomplex-valuedfunction
+f(t)= f1(t)+ if2(t)ofrealvariabletcarriedoutoverarealinterval. Con-
+tinuingwiththespeciﬁcfunctionf(t)=(2 t+ i)2 itseemslogicaltowriteon,
+say,theinterval0≤t≤1,
+∫ 1
+0
+(2t+ i)2dt=
+∫ 1
+0
+(
+4t2 −1+4ti
+)
+dt=
+∫ 1
+0
+(4t2 −1)dt+ i
+∫ 1
+0
+4tdt.(3)
+Theintegrals
+∫ 1
+0 (4t2 −1)dtand
+∫ 1
+0 4tdtin(3)arereal,andsoonewouldbe
+inclined to call themthe real and im aginary parts of
+∫ 1
+0 (2t+ i)2dt. Each
+of these real integrals can be evaluated using the fundamental theorem of
+calculus((1)ofSection5.1):
+∫
+1
+0
+(4t2 −1)dt=
+(4
+3 t3 −t
+)⏐⏐
+⏐
+⏐
+⏐
+1
+0
+= 1
+3 and
+∫ 1
+0
+4tdt=2 t2
+⏐⏐
+⏐
+1
+0
+=2 .
+Thus(3)becomes
+∫ 1
+0 (2t+ i)2dt= 1
+3 +2 i.
+Sincetheprecedingintegrationseemsveryordinaryandroutine,wegive
+thefollowinggeneralization. Iff1 andf2 arereal-valuedfunctionsofareal
+
+=== PAGE 15 ===
+5.2 Complex Integrals 249
+variabletcontinuous on a common intervala≤ t≤ b, then wedeﬁnethe
+integralofthecomplex-valuedfunctionf(t)= f1(t)+ if2(t)ona≤ t≤ bin
+termsofthedeﬁniteintegralsoftherealandimaginarypartsoff:
+∫ b
+a
+f(t)dt=
+∫ b
+a
+f1(t)dt+ i
+∫ b
+a
+f2(t)dt. (4)
+The continuity off1 andf2 on [a,b] guarantees that both
+∫ b
+a f1(t)dtand∫ b
+a f2(t)dtexist.
+These properties are important in
+the evaluation of contour integrals.
+Theywilloftenbeusedwithoutmen-
+tion.
+Allofthefollowingfamiliarpropertiesofintegralscanbeproveddirectly
+fromthedeﬁnitiongivenin(4). Iff(t)= f1(t)+if2(t)andg(t)= g1(t)+ig2(t)
+are complex-valued functions of a real variabletcontinuous on an interval
+a≤t≤b,then
+∫ b
+a
+kf(t)dt= k
+∫ b
+a
+f(t)dt, kacomplexconstant, (5)
+∫ b
+a
+(f(t)+ g(t))dt=
+∫ b
+a
+f(t)dt+
+∫ b
+a
+g(t)dt, (6)
+∫ b
+a
+f(t)dt=
+∫ c
+a
+f(t)dt+
+∫ b
+c
+f(t)dt, (7)
+∫ a
+b
+f(t)dt= −
+∫ b
+a
+f(t)dt. (8)
+In(7)wechoosetoassumethattherealnumbercisintheinterval[a,b].
+Wenowresumeourdiscussionofcontourintegrals.
+Evaluation of Contour IntegralsTofacilitatethediscussionon
+howtoevaluateacontourintegral
+∫
+C f(z)dz,letuswrite(2)inanabbreviated
+form. Ifweuseu+ ivforf,∆x+ i∆yfor∆z,limfor lim
+||P ||→0
+,∑ for∑n
+k=1 and
+thensuppressallsubscripts,(2)becomes
+∫
+C
+f(z)dz=lim
+∑
+(u+ iv)(∆x+ i∆y)
+=lim
+[∑
+(u∆x−v∆y)+ i
+∑
+(v∆x+ u∆y)
+]
+.
+Theinterpretationofthelastlineis
+∫
+C
+f(z)dz=
+∫
+C
+udx−vdy+ i
+∫
+C
+vdx+ udy. (9)
+See Deﬁnition 5.2. In other words, the real and imaginary parts of a con-
+tour integral
+∫
+C f(z)dzare a pair of real line integrals
+∫
+C udx−vdyand∫
+C vdx+ udy.Nowifx= x(t),y= y(t),a≤t≤bareparametricequations
+ofC, thendx= x′(t)dt, dy= y′(t)dt. By replacing the symbolsx,y,dx,
+
+=== PAGE 16 ===
+250 Chapter 5 Integration in the Complex Plane
+anddybyx(t),y(t),x′(t)dt,andy′(t)dt, respectively, the right side of (9)
+becomes
+∫
+C udx− vdy
+  ∫ b
+a
+[u(x(t),y(t))x′(t)−v(x(t),y(t))y′(t)]dt
++ i
+∫
+C vdx+ udy
+  ∫ b
+a
+[v(x(t),y(t))x′(t)+ u(x(t),y(t))y′(t)]dt.
+(10)
+Ifweusethecomplex-valuedfunction(1)todescribethecontourC,then
+(10)isthesameas
+∫ b
+a f(z(t))z′(t)dtwhentheintegrand
+f(z(t))z′(t)=[u(x(t),y(t))+ iv(x(t),y(t))][x′(t)+ iy′(t)]
+ismultipliedoutand
+∫ b
+a f(z(t))z′(t)dtisexpressedintermsofitsrealand
+imaginaryparts. Thuswearriveatapracticalmeansofevaluatingacontour
+integral.
+Theorem 5.1 Evaluation of a Contour Integral
+Iffis continuous on a smooth curveCgiven by the parametrization
+z(t)= x(t)+ iy(t),a≤t≤b,then
+∫
+C
+f(z)dz=
+∫ b
+a
+f(z(t))z′(t)dt. (11)
+Theforegoingresultsin(10)and(11)bearrepeating—thistimeinsome-
+whatdiﬀerentwords. Supposez(t)= x(t)+ iy(t)andz′(t)= x′(t)+ iy′(t).
+Thentheintegrandf(z(t))z′(t)isacomplex-valuedfunctionofarealvari-
+ablet. Hencetheintegral
+∫ b
+a f(z(t))z′(t)dtisevaluatedinthemannerdeﬁned
+in(4).
+Thenextexampleillustratesthemethod.
+EXAMPLE 1Evaluating a Contour Integral
+Evaluate
+∫
+C ¯zdz,whereCisgivenbyx=3 t,y= t2,−1≤t≤4.
+SolutionFrom(1)aparametrizationofthecontourCisz(t)=3 t+ it2.
+Therefore, with the identiﬁcationf(z)=¯zwe havef(z(t)) =3t+ it2 =
+3t−it2.Also,z′(t)=3+2 it,andsoby(11)theintegralis
+∫
+C
+¯zdz=
+∫ 4
+− 1
+(3t−it2)(3+2 it)dt=
+∫ 4
+− 1
+[
+2t3+9 t+3 t2i
+]
+dt.
+
+=== PAGE 17 ===
+5.2 Complex Integrals 251
+Nowinviewof(4),thelastintegralisthesameas
+∫
+C
+¯zdz=
+∫ 4
+− 1
+(2t3+9 t)dt+ i
+∫ 4
+− 1
+3t2dt
+=
+(1
+2 t4+ 9
+2 t2
+) ⏐⏐
+⏐
+⏐
+⏐
+4
+− 1
++ it3
+⏐⏐
+⏐
+⏐
+⏐
+4
+− 1
+=195+65 i.
+EXAMPLE 2Evaluating a Contour Integral
+Evaluate
+∮
+C
+1
+zdz,whereCisthecirclex=cost,y=sint,0≤t≤2π.
+SolutionInthiscasez(t)=cost+ isint= eit,z′(t)= ieit,andf(z(t))=
+1
+z(t)= e− it. Hence,
+∮
+C
+1
+zdz=
+∫ 2π
+0
+(e− it)ieitdt= i
+∫ 2π
+0
+dt=2 πi.
+As discussed in Section 5.1, for some curves the real variablexitself
+can be used as the parameter. For example, to evaluate
+∫
+C (8x2 −iy)dz
+on the line segmenty=5 x,0 ≤ x≤ 2, we writez= x+5 xi, dz=
+(1+5 i)dx,
+∫
+C (8x2 −iy)dz=
+∫ 2
+0 (8x2 −5ix)(1+5 i)dx, and then integrate
+intheusualmanner:
+∫
+C
+(8x2 −iy)dz=(1+5 i)
+∫ 2
+0
+(8x2 −5ix)dx
+=(1+5 i)
+[8
+3 x3
+]2
+0
+−(1+5 i)i
+[5
+2 x2
+]2
+0
+= 214
+3 + 290
+3 i.
+In general, ifxandyare related by means of a continuous real func-
+tiony= f(x),thenthecorrespondingcurveCinthecomplexplanecanbe
+parametrizedbyz(x)= x+ if(x). Equivalently,wecanletx= tsothat
+asetofparametricequationsforCisx= t,y= f(t).
+PropertiesThefollowingpropertiesofcontourintegralsareanalogous
+tothepropertiesofreallineintegralsaswellasthepropertieslistedin(5)–(8).
+Theorem 5.2 Properties of Contour Integrals
+SupposethefunctionsfandgarecontinuousinadomainD,andCisa
+smoothcurvelyingentirelyinD. Then
+(i)
+∫
+C kf(z)dz= k
+∫
+C f(z)dz,kacomplexconstant.
+(Theoremcontinuesonpage252)
+
+=== PAGE 18 ===
+252 Chapter 5 Integration in the Complex Plane
+(ii)
+∫
+C [f(z)+ g(z)]dz=
+∫
+C f(z)dz+
+∫
+C g(z)dz.
+(iii)
+∫
+C f(z)dz=
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz, whereCconsists of the
+smoothcurvesC1 andC2 joinedendtoend.
+(iv)
+∫
+− C f(z)dz= −
+∫
+C f(z)dz,where–Cdenotesthecurvehavingthe
+oppositeorientationofC.
+ThefourpartsofTheorem5.2alsoholdifCisapiecewisesmoothcurve
+inD.
+EXAMPLE 3C Is a Piecewise Smooth Curve
+Evaluate
+∫
+C (x2+ iy2)dz,whereCisthecontourshowninFigure5.20.
+y
+x
+1 + 2i
+1 + i
+C2
+C1
+Figure 5.20 ContourC is piecewise
+smooth.
+SolutionInviewofTheorem5.2(iii)wewrite
+∫
+C
+(x2+ iy2)dz=
+∫
+C 1
+(x2+ iy2)dz+
+∫
+C 2
+(x2+ iy2)dz.
+SincethecurveC1 isdeﬁnedbyy= x,itmakessensetousexasaparameter.
+Therefore,z(x)= x+ ix, z′(x)=1+ i, f(z)= x2+ iy2,f(z(x))= x2+ ix2,
+and
+∫
+C 1
+(x2+ iy2)dz=
+∫ 1
+0
+(1+i)x2
+  
+(x2+ ix2)(1+ i)dx
+=(1+ i)2
+∫ 1
+0
+x2dx= (1+ i)2
+3 = 2
+3 i. (12)
+ThecurveC2 isdeﬁnedbyx=1,1 ≤y≤2. Ifweuseyasaparameter,then
+z(y)=1+ iy, z′(y)= i, f(z(y))=1+ iy2,and
+∫
+C 2
+(x2+ iy2)dz=
+∫ 2
+1
+(1+ iy2)idy= −
+∫ 2
+1
+y2dy+ i
+∫ 2
+1
+dy= −7
+3 + i.(13)
+Combining(10)and(13)gives
+∫
+C (x2+ iy2)dz= 2
+3i+( − 7
+3 + i)= − 7
+3 + 5
+3i.
+Therearetimesintheapplicationofcomplexintegrationthatitisuse-
+ful to ﬁnd an upper bound for the modulus or absolute value of a contour
+integral. In the next theoremwe use the fact that the length of a plane
+curve isL=
+∫ b
+a
+√
+[x′(t)]2+[y′(t)]2dt. But ifz′(t)= x′(t)+ iy′(t),then
+|z′(t)|=
+√
+[x′(t)]2+[y′(t)]2 and,consequently,L=
+∫ b
+a |z′(t)|dt.
+Theorem 5.3 A Bounding Theorem
+IffiscontinuousonasmoothcurveCandif|f(z)|≤MforallzonC,
+then
+⏐⏐∫
+C f(z)dz
+⏐
+⏐ ≤ML,whereListhelengthofC.
+
+=== PAGE 19 ===
+5.2 Complex Integrals 253
+ProofIt follows fromthe formof the triangle inequality given in (11) of
+Section1.2that
+⏐⏐
+⏐
+⏐
+⏐
+n∑
+k=1
+f(z∗
+k)∆zk
+⏐
+⏐
+⏐
+⏐
+⏐ ≤
+n∑
+k=1
+|f(z∗
+k)||∆zk|≤M
+n∑
+k=1
+|∆zk|. (14)
+Because|∆zk|=
+√
+(∆xk)2+(∆yk)2, we can interpret|∆zk|as the length
+ofthechordjoiningthepointszk andzk− 1 onC. Moreover, sincethesum
+of the lengths of the chords cannot be greater than the lengthLofC, the
+inequality(14)continuesas|∑n
+k=1 f(z∗
+k)∆zk|≤ML.Finally,thecontinuity
+offguarantees that
+∫
+C f(z)dzexists, and so if we let∥P∥→ 0, the last
+inequalityyields
+⏐⏐ ∫
+C f(z)dz
+⏐
+⏐ ≤ML.
+✎
+Theorem5.3 is used often in the theory of com plex integration and is
+sometimesreferredtoastheML-inequality. Itfollowsfromthediscussion
+onpage124ofSection2.6thatsincefiscontinuousonthecontourC,the
+boundMforthevaluesf(z)inTheorem5.3willalwaysexist.
+EXAMPLE 4A Bound for a Contour Integral
+Find an upper bound for the absolute value of
+∮
+C
+ez
+z+1 dzwhereCis the
+circle|z|=4.
+SolutionFirst,thelengthL(circumference)ofthecircleofradius4is8π.
+Next,fromtheinequality(7)ofSection1.2,itfollowsforallpointszonthe
+circlethat|z+1 |≥|z|−1=4 −1=3. Thus
+⏐
+⏐
+⏐
+⏐
+e
+z
+z+1
+⏐
+⏐
+⏐
+⏐ ≤ |e
+z|
+|z|−1= |ez|
+3 . (15)
+Inaddition,|ez|= |ex(cosy+ isiny)|= ex.Forpointsonthecircle|z|=4,
+themaximumthatx=Re(z)canbeis4,andso(15)yields
+⏐
+⏐
+⏐⏐
+e
+z
+z+1
+⏐⏐
+⏐⏐ ≤ e
+4
+3 .
+FromtheML-inequality(Theorem5.3)wehave
+⏐⏐
+⏐
+⏐
+∮
+C
+ez
+z+1 dz
+⏐
+⏐
+⏐
+⏐ ≤ 8πe
+4
+3 .
+
+=== PAGE 20 ===
+254 Chapter 5 Integration in the Complex Plane
+Remarks
+ThereisnouniqueparametrizationforacontourC. Youshouldverify
+that
+z(t)= eit=cost+ isint,0≤t≤2π
+z(t)= e2πit=cos2πt+ isin2πt,0≤t≤1
+z(t)= eπit/2 =cosπt
+2 + isinπt
+2 ,0≤t≤4
+are all parametrizations, oriented in the positive direction, for the unit
+circle|z|=1.
+EXERCISES 5.2Answerstoselectedodd-numberedproblemsbeginonpageANS-16.
+In Problems 1-16, evaluate the given integral along the indicated contour.
+1.
+∫
+C
+(z+3) dz, whereCisx=2t,y=4t− 1, 1 ≤ t≤ 3
+2.
+∫
+C
+(2¯z− z) dz, whereCisx= −t,y= t2 +2,0 ≤ t≤ 2
+3.
+∫
+C
+z2 dz, whereCisz(t)=3 t+2 it,−2≤ t≤ 2
+4.
+∫
+C
+(3z2 − 2z) dz, whereCisz(t)= t+ it2,0 ≤ t≤ 1
+5.
+∫
+C
+z+1
+z dz,whereCis the right half of the circle|z|= 1 fromz= −itoz= i
+6.
+∫
+C
+|z|2 dz, whereCisx= t2,y=1 /t,1 ≤ t<2
+7.
+∮
+C
+Re(z) dz, whereCis the circle|z|=1
+8.
+∮
+C
+( 1
+(z+ i) 3 − 5
+z+ i+8
+)
+dz, whereCis the circle|z+ i|=1 ,0 ≤ t≤ 2π
+9.
+∫
+C
+(x2 + iy3) dz, whereCis the straight line fromz=1t oz= i
+10.
+∫
+C
+(x2 − iy3) dz, whereCis the lower half of the circle|z|= 1 fromz= −1
+toz=1
+11.
+∫
+C
+ez dz,whereCis the polygonal path consisting of the line segments from
+z=0t oz= 2 and fromz=2t oz=1+ πi
+12.
+∫
+C
+sinzdz,whereCis the polygonal path consisting of the line segments from
+z=0t oz= 1 and fromz=1t oz=1+ i
+13.
+∫
+C
+Im(z− i) dz,whereCis the polygonal path consisting of the circular arc
+along|z|= 1 fromz=1t oz= iand the line segment fromz= itoz= −1
+
+=== PAGE 21 ===
+5.2 Complex Integrals 255
+14.
+∫
+C
+dz, whereC is the left half of the ellipse1
+36 x2 + 1
+4y2 = 1 fromz=2 i
+toz= −2i
+15.
+∮
+C
+zez dz,whereCis the square with verticesz=0 ,z=1 ,z=1+ i, andz= i
+16.
+∫
+C
+f(z) dz, wheref(z)=
+
+
+
+2,x <0
+6x, x >0
+andCis the parabolay= x2 from
+z= −1+ itoz=1+ i
+In Problems 17–20, evaluate the given integral along the contourC given in
+Figure 5.21.
+17.
+∮
+C
+xdz 18.
+∮
+C
+(2z− 1) dz
+19.
+∮
+C
+z2 dz 20.
+∮
+C
+¯z2 dz
+y
+x
+1
+1 + i
+Figure 5.21Figure for Problems 17–20
+In Problems 21–24, evaluate
+∫
+C (z2 − z+2) dzfromito 1 along the contourCgiven
+in the ﬁgures.
+21. 22.y
+x
+1
+i
+Figure 5.22 Figure for Problem 21
+y
+x
+1
+1 + i i
+Figure 5.23 Figure for Problem 22
+23. 24.
+y
+x
+1
+y = 1 – x2i
+Figure 5.24 Figure for Problem 23
+y
+x
+1
+x2 + y2 = 1i
+Figure 5.25 Figure for Problem 24
+In Problems 25–28, ﬁnd an upper bound for the absolute value of the given integral
+along the indicated contour.
+25.
+∮
+C
+ez
+z2 +1 dz,whereCis the circle|z|=5
+26.
+∫
+C
+1
+z2 − 2idz,whereCis the right half of the circle|z|= 6 fromz= −6i
+toz=6i
+
+=== PAGE 22 ===
+256 Chapter 5 Integration in the Complex Plane
+27.
+∫
+C
+(z2 +4) dz, whereCis the line segment fromz=0t oz=1+ i
+28.
+∫
+C
+1
+z3 dz,whereCis one-quarter of the circle|z|= 4 fromz=4itoz=4
+Focus on Concepts
+29.(a) Use Deﬁnition 5.3 to show for any smooth curveCbetweenz0 andzn that∫
+C dz= zn − z0.
+(b) Use the result in part (a) to verify your answer to Problem 14.
+(c) What is
+∮
+C dzwhenCis a simple closed curve?
+30.Use Deﬁnition 5.3 to show for any smooth curveCbetweenz0 andzn that∫
+C zdz= 1
+2(z2
+n − z2
+0).[Hint: The integral exists. So choosez∗
+k = zk and
+z∗
+k = zk–1.]
+31.Use the results of Problems 29 and 30 to evaluate
+∫
+C (6z+4) dzwhereCis:
+(a) The straight line from 1+ito2+3i.
+(b) The closed contourx4 + y4 =4 .
+32.Find an upper bound for the absolute value of the integral
+∫
+C
+1
+z2 +1 dz, where
+the contourCis the line segment fromz=3t oz=3+ i. Use the fact that⏐⏐z2 +1
+⏐
+⏐
+= |z− i||z+ i|where|z− i|and|z+ i|represent, respectively, the
+distances fromiand−ito pointszonC.
+33.Find an upper bound for the absolute value of the integral
+∫
+C Ln(z+3) dz,
+where the contourCis the line segment fromz=3itoz=4+3 i.
+5.3 Cauchy-Goursat Theorem
+5.3Inthissectionweshallconcentrateoncontourintegrals,wherethecontourCisasimple
+closed curvewithapositive(counterclockwise)orientation. Speciﬁcally,weshallseethat
+whenfisanalyticinaspecialkindofdomainD,thevalueofthecontourintegral
+∮
+C f(z)dz
+isthesameforanysimpleclosedcurveCthatliesentirelywithinD. Thistheorem,called
+theCauchy-Goursat theorem,isoneofthefundamentalresultsincomplexanalysis.
+PreliminarytodiscussingtheCauchy-Goursattheoremandsomeofitsramiﬁcations,
+weneedtodistinguishtwokindsofdomainsinthecomplexplain: simplyconnectedand
+multiplyconnected.
+Simply and Multiply Connected DomainsRecallfromSec-
+tion1.5thatadomainisanopenconnectedsetinthecomplexplane. Wesay
+thatadomainDissimply connectedifeverysimpleclosedcontourClying
+entirelyinDcanbeshrunktoapointwithoutleavingD. SeeFigure5.26.
+Inotherwords,ifwedrawanysimpleclosedcontourCsothatitliesentirely
+withinasimplyconnecteddomain,thenCenclosesonlypointsofthedomain
+
+=== PAGE 23 ===
+5.3 Cauchy-Goursat Theorem 257
+D. Expressedyetanotherway,asimplyconnecteddomainhasno“holes”in
+it. The entire complex plane is an example of a simply connected domain;
+theannulusdeﬁnedby1<|z|<2isnotsimplyconnected. (Why?) Ado-
+mainthatisnotsimplyconnectediscalledamultiply connected domain;
+thatis,amultiplyconnecteddomainhas“holes”init. NoteinFigure5.27
+thatif the curveC
+2 enclosing the“hole” wereshrunkto apoint, thecurve
+wouldhavetoleaveDeventually. Wecalladomainwithone“hole”doubly
+connected,adomainwithtwo“holes”triply connected,andsoon. The
+opendiskdeﬁnedby|z|<2isasimplyconnecteddomain;theopencircular
+annulusdeﬁnedby1<|z|<2isadoublyconnecteddomain.
+D C
+Figure 5.26 Simply connected
+domainD
+D
+C2
+C1
+Figure 5.27 Multiply connected
+domainD
+Cauchy’s TheoremIn1825theFrenchmathematicianLouis-Augustin
+Cauchyprovedonethemostimportanttheoremsincomplexanalysis.
+Cauchy’s Theorem
+Supposethatafunctionfisanalyticinasimplyconnecteddomain
+Dandthatf
+′ iscontinuousinD. Thenforevery simpleclosed(1)
+contourCinD,
+∮
+C f(z)dz=0.
+Cauchy’s Proof of (1)Theproofofthistheoremisanimmediateconse-
+quenceofGreen’stheoremintheplaneandtheCauchy-Riemannequations.
+RecallfromcalculusthatifCisapositivelyoriented,piecewisesmooth,sim-
+ple closed curve forming the boundary of a regionRwithinD, and if the
+real-valuedfunctionsP(x,y)andQ(x,y)alongwiththeirﬁrst-orderpartial
+derivativesarecontinuousonadomainthatcontainsCandR,then
+∮
+C
+Pdx+ Qdy=
+∫∫
+R
+(∂Q
+∂x− ∂P
+∂y
+)
+dA. (2)Green’s theorem expresses a real
+line integral as a double integral
+Nowinthestatement(1)wehaveassumedthatf′ iscontinuousthroughout
+thedomainD. Asaconsequence,therealandimaginarypartsoff(z)= u+iv
+and their ﬁrst partial derivatives are continuous throughoutD. By (9) of
+Section5.2wewrite
+∮
+C f(z)dzintermsofreallineintegralsandapplyGreen’s
+theorem(2)toeachlineintegral:
+∮
+C
+f(z)dz=
+∮
+C
+u(x,y)dx−v(x,y)dy+ i
+∮
+C
+v(x,y)dx+ u(x,y)dy
+=
+∫∫
+R
+(
+−∂v
+∂x− ∂u
+∂y
+)
+dA+ i
+∫∫
+R
+(∂u
+∂x− ∂v
+∂y
+)
+dA. (3)
+Becausefis analytic inD, the real functionsuandvsatisfy the Cauchy-
+Riemannequations,∂u/∂x= ∂v/∂yand∂u/∂y= −∂v/∂x,ateverypointin
+
+=== PAGE 24 ===
+258 Chapter 5 Integration in the Complex Plane
+D. UsingtheCauchy-Riemannequationstoreplace∂u/∂yand∂u/∂xin(3)
+showsthat
+∮
+C
+f(z)dz=
+∫∫
+R
+(
+−∂v
+∂x+ ∂v
+∂x
+)
+dA+ i
+∫∫
+R
+(∂v
+∂y− ∂v
+∂y
+)
+dA
+=
+∫∫
+R
+(0)dA+ i
+∫∫
+R
+(0)dA=0.
+Thiscompletestheproof.✎
+In 1883 the French mathematician Edouard Goursat proved that the
+assumption of continuity off′ is not necessary to reach the conclusion of
+Cauchy’s theorem. The resulting modiﬁed version of Cauchy’s theorem is
+knowntodayastheCauchy-Goursat theorem. Asonemightexpect,with
+fewerhypotheses,theproofofthisversionofCauchy’stheoremismorecom-
+plicatedthantheonejustpresented. AformoftheproofdevisedbyGoursat
+isoutlinedinAppendixII.
+Theorem 5.4 Cauchy-Goursat Theorem
+SupposethatafunctionfisanalyticinasimplyconnecteddomainD.
+ThenforeverysimpleclosedcontourCinD,
+∮
+C f(z)dz=0.
+Sincetheinteriorofasimpleclosedcontourisasimplyconnecteddomain,
+theCauchy-Goursattheoremcanbestatedintheslightlymorepracticalman-
+ner:
+IffisanalyticatallpointswithinandonasimpleclosedcontourC,
+then
+∮
+C f(z)dz=0. (4)
+EXAMPLE 1Applying the Cauchy-Goursat Theorem
+Evaluate
+∮
+C ezdz,wherethecontourCisshowninFigure5.28.
+SolutionThefunctionf(z)= ez isentireandconsequentlyisanalyticatall
+pointswithinandonthesimpleclosedcontourC. Itfollowsfromtheformof
+theCauchy-Goursattheoremgivenin(4)that
+∮
+C ezdz=0.
+y
+x
+C
+Figure 5.28 Contour for Example 1
+ThepointofExample1isthat
+∮
+C ezdz=0foranysimpleclosedcontour
+in the complex plane. Indeed, it follows that for any simple closed contour
+Candanyentirefunctionf,suchasf(z)=sinz,f(z)=cosz,andp(z)=
+a
+nzn + an− 1zn + ···+ a1z+ a0,n=0,1,2,...,that
+∮
+C
+sinzdz=0,
+∮
+C
+coszdz=0,
+∮
+C
+p(z)dz=0,
+andsoon.
+
+=== PAGE 25 ===
+5.3 Cauchy-Goursat Theorem 259
+EXAMPLE 2Applying the Cauchy-Goursat Theorem
+Evaluate
+∮
+C
+dz
+z2,wherethecontourCistheellipse(x−2)2+ 1
+4(y−5)2 =1.
+SolutionTherationalfunctionf(z)=1 /z2 isanalyticeverywhereexcept
+atz=0. Butz=0isnotapointinteriortooronthesimpleclosedelliptical
+contourC. Thus,from(4)wehavethat
+∮
+C
+dz
+z2 =0.
+Cauchy-Goursat Theorem for Multiply Connected
+DomainsIffis analytic in a multiply connected domainDthen we
+cannotconcludethat
+∮
+C f(z)dz=0foreverysimpleclosedcontourCinD.
+Tobegin, supposethatDisadoublyconnecteddomainandCandC1 are
+simpleclosedcontourssuchthatC1 surroundsthe“hole”inthedomainand
+isinteriortoC. SeeFigure5.29(a). Suppose,also,thatfisanalyticoneach
+contourandateachpointinteriortoCbutexteriortoC1. Byintroducing
+the crosscutABshown in Figure 5.29(b), the region bounded between the
+curvesisnowsimplyconnected. From(iv)ofTheorem5.2,theintegralfrom
+AtoBhastheoppositevalueoftheintegralfromBtoA,andsofrom(4)
+wehave
+∫
+C
+f(z)dz+
+∫
+AB
+f(z)dz+
+∫
+− AB
+f(z)dz+
+∫
+C 1
+f(z)dz=0
+or
+∫
+C
+f(z)dz=
+∫
+C 1
+f(z)dz. (5)
+D
+C
+C
+A
+B
+D
+C1
+C1
+(a)
+(b)
+Figure 5.29 Doubly connected
+domainD
+Thelastresultissometimescalledtheprinciple of deformation of con-
+tourssince we can think of the contourC1 as a continuous deformation of
+thecontourC. Underthisdeformationofcontours,thevalueoftheintegral
+doesnotchange. Inotherwords,(5)allowsustoevaluateanintegralovera
+complicatedsimpleclosedcontourCbyreplacingCwithacontourC1 that
+ismoreconvenient.
+EXAMPLE 3Applying Deformation of Contours
+Evaluate
+∮
+C
+dz
+z−i,whereCisthecontourshowninblackinFigure5.30.
+y
+C C1
+i
+x
+–2
+–2i
+4i
+2 – 2i
+2 + 3i
+–2 + 4i
+Figure 5.30 We use the simpler
+contourC 1 in Example 3.
+SolutionInviewof(5),wechoosethemoreconvenientcircularcontourC1
+drawnincolorintheﬁgure. Bytakingtheradiusofthecircletober=1,
+we are guaranteed thatC1 lies withinC. In other words,C1 is the circle
+
+=== PAGE 26 ===
+260 Chapter 5 Integration in the Complex Plane
+|z−i|=1,whichfrom(10)ofSection2.2canbeparametrizedbyz= i+ eit,
+0≤t≤2π. Fromz−i= eitanddz= ieitdtweobtain
+∮
+C
+dz
+z−i=
+∮
+C 1
+dz
+z−i=
+∫ 2π
+0
+ieit
+eitdt= i
+∫ 2π
+0
+dt=2 πi.
+TheresultobtainedinExample3canbegeneralized. Usingtheprinciple
+of deformation of contours (5) and proceeding as in the example, it can be
+shownthatifz0 isanyconstantcomplexnumberinteriortoanysimpleclosed
+contourC,thenfornanintegerwehave
+∮
+C
+dz
+(z−z0)n =
+
+
+
+2πi n=1
+0,n ̸=1.
+(6)
+For example, 1/(z − z0)− 3 =
+(z − z0)3 is a polynomial.
+The fact that the integral in (6) is zero whenn̸= 1 follows only partially
+fromthe Cauchy-Goursat theorem . Whennis zero or a negative integer,
+1/(z−z0)n isapolynomialandthereforeentire. Theorem5.4andthedis-
+cussion following Example 1 then indicates that
+∮
+C dz/(z−z0)n =0 .I ti s
+leftasanexercisetoshowthattheintegralisstillzerowhennisapositive
+integerdiﬀerentfrom1. SeeProblem24inExercises5.3.
+Analyticityofthefunctionfatallpointswithinandonasimpleclosed
+contourCissuﬃcienttoguaranteethat
+∮
+C f(z)dz=0. However,theresult
+in (6) emphasizes that analyticity is notnecessary; in other words, it can
+happenthat
+∮
+C f(z)dz=0withoutfbeinganalyticwithinC. Forinstance,
+ifCinExample2isthecircle|z|=1,then(6),withtheidentiﬁcationsn=2
+andz0 = 0, immediately gives
+∮
+C
+dz
+z2 = 0. Note thatf(z)=1 /z2 is not
+analyticatz=0withinC.
+EXAMPLE 4Applying Formula (6)
+Evaluate
+∮
+C
+5z+7
+z2+2 z−3 dz,whereCiscircle|z−2 |=2 .
+SolutionSincethedenominatorfactorsasz2+2 z−3=( z−1)(z+3)the
+integrandfailstobeanalyticatz=1andz= −3. Ofthesetwopoints,only
+z=1lieswithinthecontourC,whichisacirclecenteredatz=2ofradius
+r=2. Nowbypartialfractions
+5z+7
+z2+2 z−3 = 3
+z−1+ 2
+z+3
+andso
+∮
+C
+5z+7
+z2+2 z−3 dz=3
+∮
+C
+1
+z−1dz+2
+∮
+C
+1
+z+3 dz. (7)
+Inviewoftheresultgivenin(6),theﬁrstintegralin(7)hasthevalue2πi,
+whereasthevalueofthesecondintegralis0bytheCauchy-Goursattheorem.
+
+=== PAGE 27 ===
+5.3 Cauchy-Goursat Theorem 261
+Hence,(7)becomes
+∮
+C
+5z+7
+z2+2 z−3 dz=3(2 πi)+2(0)=6 πi.
+IfC,C1, andC2 aresimpleclosedcontoursasshowninFigure5.31(a)
+and iffis analytic on each of the three contours as well as at each point
+interiortoCbutexteriortobothC1 andC2,thenbyintroducingcrosscuts
+betweenC1 andCandbetweenC2 andC,asillustratedinFigure5.31(b),it
+followsfromTheorem5.4that
+∫
+C
+f(z)dz+
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz=0
+∫
+C
+f(z)dz=
+∫
+C 1
+f(z)dz+
+∫
+C 2
+f(z)dz. (7)andso
+C1
+C
+D
+C2
+C1
+C
+D
+C2
+(a)
+(b)
+Figure 5.31 Triply connected domainD
+The next theorem summarizes the general result for a multiply connected
+domainwithn“holes.”
+Theorem 5.5 Cauchy-Goursat Theorem for Multiply
+Connnected Domains
+SupposeC,C1,...,Cn aresimpleclosedcurveswithapositiveorientation
+suchthatC1,C2,...,Cn areinteriortoCbuttheregionsinteriortoeach
+Ck,k=1 ,2,...,n,havenopointsincommon. Iffisanalyticoneach
+contourandateachpointinteriortoCbutexteriortoalltheCk,k=1,2,
+...,n,then
+∮
+C
+f(z)dz=
+n∑
+k=1
+∮
+C k
+f(z)dz. (8)
+EXAMPLE 5Applying Theorem 5.5
+Evaluate
+∮
+C
+dz
+z2+1,whereCisthecircle|z|=4.
+SolutionInthiscasethedenominatoroftheintegrandfactorsasz2+1=
+(z−i)(z+ i). Consequently,theintegrand1/(z2+1)isnotanalyticatz= i
+andatz= −i. BothofthesepointsliewithinthecontourC. Usingpartial
+fractiondecompositiononcemore,wehave
+1
+z2+1 = 1
+2i
+1
+z−i− 1
+2i
+1
+z+ i
+
+=== PAGE 28 ===
+262 Chapter 5 Integration in the Complex Plane
+∮
+C
+dz
+z2+1 = 1
+2i
+∮
+C
+[ 1
+z−i− 1
+z+ i
+]
+dz.and
+Wenowsurroundthepointsz= iandz= −ibycircularcontoursC1 and
+C2,respectively,thatlieentirelywithinC. Speciﬁcally,thechoice|z−i|= 1
+2
+forC1 and|z+ i|= 1
+2 forC2 willsuﬃce. SeeFigure5.32. FromTheorem5.5
+wecanwrite
+∮
+C
+dz
+z2+1 = 1
+2i
+∮
+C 1
+[ 1
+z−i− 1
+z+ i
+]
+dz+ 1
+2i
+∮
+C 2
+[ 1
+z−i− 1
+z+ i
+]
+dz
+= 1
+2i
+∮
+C 1
+1
+z−idz− 1
+2i
+∮
+C 1
+1
+z+ idz+ 1
+2i
+∮
+C 2
+1
+z−idz− 1
+2i
+∮
+C 2
+1
+z+ idz.(9)
+C1
+C2
+C
+y
+i
+–i
+x
+Figure 5.32 Contour for Example 5Because1/(z+i)isanalyticonC1andateachpointinitsinteriorandbecause
+1/(z−i)isanalyticonC2 andateachpointinitsinterior,itfollowsfrom(4)
+thatthesecondandthirdintegralsin(9)arezero. Moreover,itfollowsfrom
+(6),withn=1,that
+∮
+C 1
+dz
+z−i=2 πiand
+∮
+C 2
+dz
+z+ i=2 πi.
+Thus(9)becomes
+∮
+C
+dz
+z2+1 = π−π=0.
+C
+D
+Figure 5.33 ContourC is closed but
+not simple.
+Remarks
+Throughout the foregoing discussion we assumed thatCwas a simple
+closed contour, in other words,Cdid not intersect itself. Although we
+shallnotgivetheproof,itcanbeshownthattheCauchy-Goursattheorem
+is valid for any closed contourCin a simply connected domainD.A s
+showninFigure5.33,thecontourCisclosedbutnotsimple. Nevertheless,
+iffis analytic inD, then
+∮
+C f(z)dz=0 .See Problem23 in Exercises
+5.3.
+EXERCISES 5.3Answerstoselectedodd-numberedproblemsbeginonpageANS-16.
+In Problems 1–8, show that
+∮
+C f(z) dz= 0, wherefis the given function andCis
+the unit circle|z|=1 .
+1.f(z)= z3 − 1+3 i 2.f(z)= z2 + 1
+z− 4
+3.f(z)= z
+2z+3 4.f(z)= z− 3
+z2 +2 z+2
+
+=== PAGE 29 ===
+5.3 Cauchy-Goursat Theorem 263
+5.f(z)= sinz
+(z2 − 25)(z2 +9) 6.f(z)= ez
+2z2 +11 z+15
+7.f(z) = tanz 8.f(z)= z2 − 9
+coshz
+9.Evaluate
+∮
+C
+1
+zdz, whereCis the contour shown in Figure 5.34.
+10.Evaluate
+∮
+C
+5
+z+1+ idz,whereCis the contour shown in Figure 5.35.
+C
+x
+y
+2
+Figure 5.34 Figure for Problem 9
+C
+x
+y
+x4 + y4 = 16
+Figure 5.35 Figure for Problem 10
+InProblems11–22, useanyoftheresultsinthissectiontoevaluatethegivenintegral
+along the indicated closed contour(s).
+11.
+∮
+C
+(
+z+ 1
+z
+)
+dz;|z|=2 12.
+∮
+C
+(
+z+ 1
+z2
+)
+dz;|z|=2
+13.
+∮
+C
+z
+z2 − π2 dz;|z|=3
+14.
+∮
+C
+10
+(z+ i) 4 dz;|z+ i|=1
+15.
+∮
+C
+2z+1
+z2 + zdz;(a) |z|= 1
+2,(b) |z|=2,(c) |z− 3i|=1
+16.
+∮
+C
+2z
+z2 +3 dz;(a) |z|=1 ,(b) |z− 2i|=1 ,(c) |z|=4
+17.
+∮
+C
+−3z+2
+z2 − 8z+12 dz;(a) |z− 5 |=2,(b) |z|=9
+18.
+∮
+C
+( 3
+z+2 − 1
+z− 2i
+)
+dz;(a) |z|=5 ,(b) |z− 2i|= 1
+2
+19.
+∮
+C
+z− 1
+z(z− i)(z− 3i) dz;|z− i|= 1
+2
+20.
+∮
+C
+1
+z3 +2 iz2 dz;|z|=1
+21.
+∮
+C
+Ln(z+10) dz;|z|=2
+22.
+∮
+C
+[ 5
+(z− 2)3 + 3
+(z− 2)2 − 10
+z− 2+7cscz
+]
+dz;|z− 2|= 1
+2
+23.Evaluate
+∮
+C
+8z− 3
+z2 − zdz,whereCis the “ﬁgure-eight” contour shown in Figure
+5.36. [Hint: ExpressCas the union of two closed curvesC1 andC2.]
+C
+1
+x
+y
+Figure 5.36 Figure for Problem 23
+24.Supposez0 is any constant complex number interior to any simple closed curve
+contourC. Show that for a positive integern,
+∮
+C
+dz
+(z− z0) n =
+
+
+
+2πi, n=1
+0,n > 1.
+In Problems 25 and 26, evaluate the given contour integral by any means.
+25.
+∮
+C
+( ez
+z+3 − 3¯z
+)
+dz,whereCis the unit circle|z|=1
+
+=== PAGE 30 ===
+264 Chapter 5 Integration in the Complex Plane
+26.
+∮
+C
+(
+z3 + z2 +Re(z)
+)
+dz,whereCis the triangle with verticesz=0 ,z=1+2 i,
+andz=1
+Focus on Concepts
+27.Explain why
+∮
+C
+f(z) dz= 0 for each of the following functions andCis any
+simple closed contour in the complex plane.
+(a) f(z)=( 5iz4 − 4z2 +2 − 6i) 9 (b) f(z)=( z2 − 3iz)e5z
+(c) f(z)= sinz
+ez2 (d) f(z)= zcos2 z
+28.Describe contoursCfor which we are guaranteed that
+∮
+C
+f(z) dz= 0 for each
+of the following functions.
+(a) f(z)= 1
+z3 + z (b) f(z) = cscz
+(c) f(z)= 1
+1 − ez (d) f(z)=L nz
+29.Explain why the integral in Problem 25 is the same as
+∮
+C
+( ez
+z+3 − 3
+z
+)
+dz
+and why, in view of (6), this form makes the integral slightly easier to evaluate.
+30.Evaluate
+∫
+C ez dzfromz=0t oz=2+2 ion the contourCshown in Figure
+5.37 that consists of the liney= xand a circle tangent to the line at (1, 1).
+31.From Example 1 we know the value of
+∮
+C ezdzfor any simple closed contourC
+in the complex plane. In particular, use|z|=1a sCand the parametrization
+z= eiθ,0 ≤ θ≤ 2π, to discover the values of the real integrals
+∫ 2π
+0
+ecos θsin(θ+sinθ)dθ and
+∫ 2π
+0
+ecos θcos(θ+sinθ)dθ.
+C3
+C1
+C2 (2, 2)
+(1, 1)
+x
+y
+Figure 5.37 Figure for Problem 30
+5.4 Independence of Path
+5.4InSection5.1wesawthatwhenarealfunctionfpossessesanelementaryantiderivative,
+thatis, afunctionFforwhichF′(x)= f(x), adeﬁniteintegralcanbeevaluatedbythe
+fundamentaltheoremofcalculus:
+∫ b
+a
+f(x)dx= F(b)−F(a). (1)
+
+=== PAGE 31 ===
+5.4 Independence of Path 265
+Notethat
+∫ b
+a f(x)dxdependsonlyonthenumbersaandbattheinitialandterminalpoints
+oftheintervalofintegration. Incontrast,thevalueofareallineintegral
+∫
+C Pdx+ Qdy
+generally depends on the curveC. However, there exist integrals
+∫
+C Pdx+ Qdywhose
+value depends only on the initial pointAand terminal pointBof the curveC, and not
+onCitself. Inthiscasewesaythatthelineintegralisindependent of the path.F o r
+example,
+∫
+C ydx+ xdyisindependentofthepath. SeeProblems19–22inExercises5.1.
+Alineintegralthatisindependentofthepathcanbeevaluatedinamannersimilarto(1).
+Itseemsnaturalthentoask:
+Isthereacomplexversionofthefundamentaltheoremofcalculus?
+Canacontourintegral
+∫
+C f(z)dzbeindependentofthepath?
+Inthissectionwewillseethattheanswertobothofthesequestionsisyes.
+Path IndependenceThe deﬁnition ofpath independencefor a
+contour integral
+∫
+C f(z)dzis essentially the same as for a real line integral∫
+C Pdx+ Qdy.
+Definition 5.4 Independence of the Path
+Letz0 andz1 be points in a domainD. A contour integral
+∫
+C f(z)dz
+issaidtobeindependent of the pathifitsvalueisthesameforall
+contoursCinDwithinitialpointz0 andterminalpointz1.
+At the end of the preceding section we noted that the Cauchy-Goursat
+theoremalsoholdsforclosedcontours,notjustsimpleclosedcontours,ina
+simplyconnecteddomainD. Nowsuppose,asshowninFigure5.38,thatC
+andC
+1 aretwocontourslyingentirelyinasimplyconnecteddomainDand
+bothwithinitialpointz0 andterminalpointz1. NotethatCjoinedwiththe
+opposite curve−C1 forms a closed contour. Thus, iffis analytic inD,i t
+followsfromtheCauchy-Goursattheoremthat
+∫
+C
+f(z)dz+
+∫
+− C 1
+f(z)dz=0. (2)
+z0
+z1
+C1 C
+D
+Figure 5.38 Iff is analytic inD ,
+integrals onC andC 1 are equal.But(2)isequivalentto
+∫
+C
+f(z)dz=
+∫
+C 1
+f(z)dz. (3)
+Theresultin(3)isalsoanexampleoftheprincipleofdeformationofcontours
+introducedin(5)ofSection5.3. Wesummarizethelastresultasatheorem.
+Theorem 5.6 Analyticity Implies Path Independence
+Suppose that a functionfis analytic in a simply connected domain
+DandCis any contour inD. Then
+∫
+C f(z)dzis independent of the
+pathC.
+
+=== PAGE 32 ===
+266 Chapter 5 Integration in the Complex Plane
+EXAMPLE 1Choosing a Diﬀerent Path
+Evaluate
+∫
+C 2zdz,whereCisthecontourshownincolorinFigure5.39.
+C1
+C
+–1
+–1 + i
+x
+y
+Figure 5.39 Contour for Example 1
+SolutionSincethefunctionf(z)=2 zisentire,wecan,inviewofTheorem
+5.6,replacethepiecewisesmoothpathCbyanyconvenientcontourC1joining
+z0 = −1andz1 = −1+ i. Speciﬁcally,ifwechoosethecontourC1 tobethe
+verticallinesegmentx= −1,0≤y≤1,showninblackinFigure5.39,then
+z= −1+ iy,dz= idy. Therefore,
+∫
+C
+2zdz=
+∫
+C 1
+2zdz= −2
+∫ 1
+0
+ydy−2i
+∫ 1
+0
+dy= −1−2i.
+Acontourintegral
+∫
+C f(z)dzthatisindependentofthepathCisusually
+written
+∫ z1
+z0
+f(z)dz,wherez0 andz1 aretheinitialandterminalpointsofC.
+Hence,inExample1wecanwrite
+∫ − 1+ i
+− 1 2zdz.
+ThereisaneasierwaytoevaluatethecontourintegralinExample1,but
+beforeproceedingweneedanotherdeﬁnition.
+Definition 5.5 Antiderivative
+SupposethatafunctionfiscontinuousonadomainD. Ifthereexists
+afunctionFsuchthatF′(z)= f(z)foreachzinD,thenFiscalledan
+antiderivativeoff.
+Forexample, thefunctionF(z)= −coszisanantiderivativeoff(z)=
+sinzsinceF′(z) = sinz.As in calculus of a real variable, the most gen-
+eral antiderivative, orindeﬁnite integral,of a functionf(z) is written∫
+f(z)dz= F(z)+ C,whereF′(z)= f(z)andCissomecomplexconstant.
+Forexample,
+∫
+sinzdz= −cosz+ C.
+Recall, diﬀerentiability implies
+continuity.
+SinceanantiderivativeFofafunctionfhasaderivativeateachpoint
+inadomainD,itisnecessarilyanalyticandhence continuousateachpoint
+inD.
+Wearenowinapositiontoprovethecomplexanalogueof(1).
+Theorem 5.7 Fundamental Theorem for Contour Integrals
+Suppose that a functionfis continuous on a domainDandFis an
+antiderivativeoffinD. ThenforanycontourCinDwithinitialpoint
+z0 andterminalpointz1,
+∫
+C
+f(z)dz= F(z1)−F(z0). (4)
+ProofWewillprove(4)inthecasewhenCisasmoothcurveparametrized
+byz= z(t),a≤t≤b. TheinitialandterminalpointsonCarethenz(a)= z0
+
+=== PAGE 33 ===
+5.4 Independence of Path 267
+andz(b)= z1. Using(11)ofSection5.2andthefactthatF′(z)= f(z)for
+eachzinD,wethenhave
+∫
+C
+f(z)dz=
+∫ b
+a
+f(z(t))z′(t)dt=
+∫ b
+a
+F′(z(t))z′(t)dt
+=
+∫ b
+a
+d
+dtF(z(t))dt← chain rule
+= F(z(t))|b
+a
+= F(z(b))−F(z(a))= F(z1)−F(z0). ✎
+EXAMPLE 2Applying Theorem 5.7
+InExample1wesawthattheintegral
+∫
+C 2zdz,whereCisshowninFigure
+5.39,isindependentofthepath. Nowsincethef(z)=2 zisanentirefunction,
+itiscontinuous. Moreover,F(z)= z2 isanantiderivativeoffsinceF′(z)=
+2z= f(z). Hence,by(4)ofTheorem5.7wehave
+∫ − 1+ i
+− 1
+2zdz= z2⏐⏐− 1+ i
+− 1 =( −1+ i)2 −( −1)2 = −1−2i.
+EXAMPLE 3Applying Theorem 5.7
+Evaluate
+∫
+C coszdz, whereCis any contour with initial pointz0 = 0 and
+terminalpointz1 =2+ i.
+SolutionF(z) = sinzis an antiderivative off(z) = coszsinceF′(z)=
+cosz= f(z).Therefore,from(4)wehave
+∫
+C
+coszdz=
+∫ 2+ i
+0
+coszdz= sinz|2+ i
+0 =sin(2+i)−sin0=sin(2+i).
+Ifwedesireacomplexnumberoftheforma+ ibforananswer,wecanuse
+sin(2+i) ≈1.4031−0.4891i(seepart(b)ofExample1inSection4.3). Hence,
+∫
+C
+coszdz=
+∫ 2+ i
+0
+coszdz≈1.4031–0.4891i.
+Some ConclusionsWecandrawseveralimmediateconclusionsfrom
+Theorem5.7. First,observethatifthecontourCisclosed,thenz0 = z1 and,
+consequently,
+∮
+C
+f(z)dz=0. (5)
+
+=== PAGE 34 ===
+268 Chapter 5 Integration in the Complex Plane
+Next,sincethevalueof
+∫
+C f(z)dzdependsonlyonthepointsz0 andz1,this
+valueisthesameforanycontourCinDconnectingthesepoints. Inother
+words:
+IfacontinuousfunctionfhasanantiderivativeFinD,then(6)∫
+C f(z)dzisindependentofthepath.
+Inaddition,wehavethefollowingsuﬃcientconditionfortheexistenceofan
+antiderivative.
+Iffiscontinuousand
+∫
+C f(z)dzisindependentofthepathCina(7)
+domainD,thenfhasanantiderivativeeverywhereinD.
+Thelaststatementisimportantanddeservesaproof.
+Proof of (7)Assumefiscontinuousand
+∫
+C f(z)dzisindependentofthe
+pathinadomainDandthatFisafunctiondeﬁnedbyF(z)=
+∫ z
+z0
+f(s)ds,
+wheresdenotesacomplexvariable,z0 isaﬁxedpointinD,andzrepresents
+anypointinD. WewishtoshowthatF′(z)= f(z),thatis,
+Important F(z)=
+∫ z
+z0
+f(s)ds (8)
+isanantiderivativeoffinD.N o w ,
+F(z+∆z)−F(z)=
+∫ z+∆ z
+z0
+f(s)ds−
+∫ z
+z0
+f(s)ds=
+∫ z+∆ z
+z
+f(s)ds.(9)
+BecauseDisadomain,wecanchoose∆zsothatz+∆zisinD. Moreover,
+zandz+∆zcanbejoinedbyastraightsegmentasshowninFigure5.40.
+Thisisthecontourweuseinthelastintegralin(9). Withzﬁxed, wecan
+write
+f(z)∆z= f(z)
+∫ z+∆ z
+z
+ds=
+∫ z+∆ z
+z
+f(z)dsorf(z)= 1
+∆z
+∫ z+∆ z
+z
+f(z)ds.(10)
+D
+z
+z + ∆ z
+s
+z0
+Figure 5.40Contour used in proof
+of (7)
+From(9)andthelastresultin(10)wehave
+F(z+∆z)−F(z)
+∆z −f(z)= 1
+∆z
+∫ z+∆ z
+z
+[f(s)−f(z)]ds.
+Nowfiscontinuousatthepointz. Thismeansforanyε>0thereexists
+aδ>0sothat|f(s)−f(z)|<εwhenever|s−z|<δ. Consequently,ifwe
+choose∆zsothat|∆z|<δ,itfollowsfromtheML-inequalityofSection5.2
+that
+⏐⏐
+⏐⏐
+F(z+∆z)−F(z)
+∆z −f(z)
+⏐⏐
+⏐⏐=
+⏐⏐⏐
+⏐
+⏐
+1
+∆z
+∫ z+∆ z
+z
+[f(s)−f(z)]ds
+⏐⏐⏐
+⏐
+⏐
+=
+⏐
+⏐
+⏐
+⏐
+1
+∆z
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+∫
+z+∆ z
+z
+[f(s)−f(z)]ds
+⏐
+⏐
+⏐
+⏐
+⏐ ≤
+⏐
+⏐
+⏐
+⏐
+1
+∆z
+⏐
+⏐
+⏐
+⏐ε|∆z|= ε.
+
+=== PAGE 35 ===
+5.4 Independence of Path 269
+Hence,wehaveshownthat
+lim
+∆ z→ 0
+F(z+∆z)−F(z)
+∆z = f(z)o rF′(z)= f(z). ✎
+IffisananalyticfunctioninasimplyconnecteddomainD,itisnecessar-
+ilycontinuousthroughoutD. Thisfact,whenputtogetherwiththeresults
+in Theorem5.6 and (7), leads to a theoremwhich states that an analytic
+functionpossessesananalyticantiderivative.
+Theorem 5.8 Existence of an Antiderivative
+SupposethatafunctionfisanalyticinasimplyconnecteddomainD.
+ThenfhasanantiderivativeinD;thatis,thereexistsafunctionFsuch
+thatF′(z)= f(z)forallzinD.
+Be careful when using Lnz as an
+antiderivative of 1/z.
+In (21) of Section 4.1 we saw for|z|>0,−π<arg(z)<π, that 1/z
+is the derivative of Lnz. This means that under some circumstances Lnz
+isanantiderivativeof1/z. Butcaremustbeexercisedinusingthisresult.
+Forexample,supposeDistheentirecomplexplanewithouttheorigin. The
+function1/zisanalyticinthismultiplyconnecteddomain. IfCisanysimple
+closedcontourcontainingtheorigin,itdoesnotfollowfrom(5)that
+∮
+C dz/z=
+0. Infact,from(6)ofSection5.3withn=1andtheidentiﬁcationofz0 =0,
+weseethat∮
+C
+1
+zdz=2 πi.
+In this case, Lnzis not an antiderivative of 1/zinDsince Lnzis not
+analyticinD. Recall, Lnzfailstobeanalyticonthenonpositiverealaxis
+which,recall,isthebranchcutoftheprincipalbranchf1(z)ofthelogarithm.
+Seepage187inSection4.1.
+EXAMPLE 4Using the Logarithmic Function
+Evaluate
+∫
+C
+1
+zdz,whereCisthecontourshowninFigure5.41.
+C
+3
+2i
+x
+y
+Figure 5.41 Contour for Example 4
+SolutionSuppose thatDis the simply connected domain deﬁned by
+x>0,y>0,inotherwords,Distheﬁrstquadrantinthez-plane. Inthis
+case,Lnzisanantiderivativeof1/zsinceboththesefunctionsareanalytic
+inD. Henceby(4),
+∫ 2i
+3
+1
+zdz=L nz|2i
+3 =Ln2i−Ln3.
+From(14)ofSection4.1,
+Ln2i=loge2+ π
+2 i and Ln3=loge3
+
+=== PAGE 36 ===
+270 Chapter 5 Integration in the Complex Plane
+andso,
+∫ 2i
+3
+1
+zdz=loge
+2
+3 + π
+2 i≈−0.4055+1 .5708i.loge2−loge3 = loge
+2
+3
+EXAMPLE 5Using an Antiderivative ofz− 1/2
+Evaluate
+∫
+C
+1
+z1/2 dz,whereCisthelinesegmentbetweenz0 = iandz1 =9.
+SolutionThroughout we takef1(z)= z1/2 to be the principal branch of
+the square root function. In the domain|z|>0,−π<arg(z) <π, the
+functionf1(z)=1 /z1/2 = z− 1/2 isanalyticandpossessestheantiderivative
+F(z)=2 z1/2 (see(9)inSection4.2). Hence,
+∫ 9
+i
+1
+z1/2dz=2 z1/2
+⏐⏐⏐
+⏐
+9
+i
+=2
+[
+3 −
+See Problem 5 in Exercise 1.4
+  ( √
+2
+2 + i
+√
+2
+2
+)]
+=(6 −
+√
+2) −i
+√
+2.
+Remarks Comparison with Real Analysis
+(i) Inthestudyoftechniquesofintegrationincalculusyoulearnedthat
+indeﬁnite integrals of certain kinds of products could be evaluated
+byintegrationbyparts:
+∫
+f(x)g′(x)dx= f(x)g(x)−
+∫
+g(x)f′(x)dx. (11)
+You undoubtedly have used (11) in the more compact form∫
+udv= uv−
+∫
+vdu.Formula(11)carriesovertocomplexanalysis.
+SupposefandgareanalyticinasimplyconnecteddomainD. Then
+∫
+f(z)g′(z)dz= f(z)g(z)−
+∫
+g(z)f′(z)dz. (12)
+In addition, ifz0 andz1 are the initial and terminal points of a
+contourClyingentirelyinD,then
+∫ z1
+z0
+f(z)g′(z)dz= f(z)g(z)
+⏐⏐
+⏐
+⏐
+⏐
+z1
+z0
+−
+∫ z1
+z0
+g(z)f′(z)dz.(13)
+TheseresultscanbeprovedinastraightforwardmannerusingThe-
+orem5.7 on the functiond
+dzfg. See Problems 21–24 in Exercises
+5.4.
+
+=== PAGE 37 ===
+5.4 Independence of Path 271
+(ii)I ffisarealfunctioncontinuousontheclosedinterval[a,b],then
+thereexistsanumbercintheopeninterval(a,b)suchthat
+∫ b
+a
+f(x)dx= f(c)(b−a). (14)
+Theresultin(14)isknownasthemean-valuetheoremfordeﬁnite
+integrals. Iffisacomplexfunctionanalyticinasimplyconnected
+domainD,itiscontinuousateverypointonacontourCinDwith
+initial pointz0 and terminal pointz1. One might expect a result
+parallelto(14)foranintegral
+∫ z1
+z0
+f(z)dz. However,thereisnosuch
+complexcounterpart.
+EXERCISES 5.4Answerstoselectedodd-numberedproblemsbeginonpageANS-16.
+In Problems 1 and 2, evaluate the given integral, where the contourCis given in
+the ﬁgure, (a) by using an alternative path of integration and (b) by using Theorem
+5.7.
+1.
+∫
+C
+(4z− 1) dz 2.
+∫
+C
+ez dz
+|z| =1
+i
+–i
+x
+y
+Figure 5.42 Figure for Problem 1
+3 + i
+3 + 3i
+x
+y
+0
+Figure 5.43 Figure for Problem 2
+In Problems 3 and 4, evaluate the given integral along the indicated contourC.
+3.
+∫
+C
+2zdz,whereCisz(t)=2 t3 + i(t4 − 4t3 +2) ,−1 ≤ t≤ 1
+4.
+∫
+C
+2zdz,whereCisz(t)=2c o s3 πt− isin2 π
+4t,0 ≤ t≤ 2
+In Problems 5-20, use Theorem 5.7 to evaluate the given integral. Write each answer
+in the forma+ ib.
+5.
+∫ 3+ i
+0
+z2 dz 6.
+∫ 1
+− 2i
+(3z2 − 4z+5 i) dz
+7.
+∫ 1+ i
+1− i
+z3 dz 8.
+∫ 2i
+− 3i
+(z3 − z) dz
+9.
+∫ 1− i
+− i/2
+(2z+1) 2 dz 10.
+∫ i
+1
+(iz+1) 3 dz
+11.
+∫ i
+i/2
+eπz dz 12.
+∫ 1+2 i
+1− i
+zez2
+dz
+13.
+∫ π +2 i
+π
+sinz
+2dz 14.
+∫ πi
+1− 2i
+coszdz
+
+=== PAGE 38 ===
+272 Chapter 5 Integration in the Complex Plane
+15.
+∫ 2πi
+πi
+coshzdz 16.
+∫ 1+( π/2)i
+i
+sinh3zdz
+17.
+∫
+C
+1
+zdz, Cis the arc of the circlez=4eit,−π/2≤ t≤ π/2
+18.
+∫
+C
+1
+zdz, Cis the line segment between 1+iand 4+4i
+19.
+∫ 4i
+− 4i
+1
+z2 dz, Cis any contour not passing through the origin
+20.
+∫ 1+
+√
+3i
+1− i
+(1
+z+ 1
+z2
+)
+dz,Cis any contour in the right half-plane Re(z) >0
+In Problems 21–24, use integration by parts (13) to evaluate the given integral.
+Write each answer in the forma+ ib.
+21.
+∫ i
+π
+ez coszdz 22.
+∫ i
+0
+zsinzdz
+23.
+∫ 1+ i
+i
+zez dz 24.
+∫ πi
+0
+z2ez dz
+In Problems 25 and 26, use Theorem 5.7 to evaluate the given integral. In each
+integralz
+1/2 is the principal branch of the square root function. Write each answer
+in the forma+ ib.
+25.
+∫
+C
+1
+4z1/2 dz,Cis the arc of the circlez=4eit,−π/2≤ t≤ π/2
+26.
+∫
+C
+3z1/2 dz,Cis the line segment betweenz0 = 1 andz1 =9 i
+Focus on Concepts
+27.Find an antiderivative off(z) = sinz2. Do not think profound thoughts.
+28.Give a domainD over whichf(z)= z(z+1 ) 1/2 is analytic. Then ﬁnd an
+antiderivative offinD.
+5.5 Cauchy’s Integral Formulas and
+Their Consequences
+5.5In the last two sections we saw the importance of the Cauchy-Goursat theorem in the
+evaluationofcontourintegrals. Inthissectionwearegoingtoexamineseveralmorecon-
+sequencesoftheCauchy-Goursattheorem. Unquestionably,themostsigniﬁcantoftheseis
+thefollowingresult:
+Thevalueofaanalyticfunctionfatanypointz
+0 inasimplyconnecteddomain
+canberepresentedbyacontourintegral.
+
+=== PAGE 39 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 273
+Afterestablishingthispropositionweshalluseittofurthershowthat:
+Ananalyticfunctionfinasimplyconnecteddomainpossessesderivativesofall
+orders.
+Theramiﬁcationsofthesetworesultsalonewillkeepusbusynotonlyfortheremainderof
+thissectionbutinthenextchapteraswell.
+5.5.1 Cauchy’s Two Integral Formulas
+First FormulaIffisanalyticinasimplyconnecteddomainDand
+z0 is any point inD, the quotientf(z)/(z− z0) is not deﬁned atz0 and
+henceisnotanalyticinD. Therefore,wecannotconcludethattheintegral
+off(z)/(z−z0) around a simple closed contourCthat containsz0 is zero
+bytheCauchy-Goursattheorem. Indeed,asweshallnowsee,theintegralof
+f(z)/(z−z
+0)aroundChasthevalue2πif(z0). Theﬁrstoftworemarkable
+formulasisknownsimplyastheCauchy integral formula.
+Theorem 5.9 Cauchy’s Integral Formula
+Suppose thatfis analytic in a simply connected domainDandCis
+anysimpleclosedcontourlyingentirelywithinD. Thenforanypointz0
+withinC,
+f(z0)= 1
+2πi
+∮
+C
+f(z)
+z−z0
+dz. (1)
+ProofLetDbeasimplyconnecteddomain,Casimpleclosedcontourin
+D,andz0 aninteriorpointofC. Inaddition,letC1 beacirclecenteredat
+z0 withradiussmallenoughsothatC1 lieswithintheinteriorofC. Bythe
+principleofdeformationofcontours,(5)ofSection5.3,wecanwrite
+∮
+C
+f(z)
+z−z0
+dz=
+∮
+C 1
+f(z)
+z−z0
+dz. (2)
+Wewishtoshowthatthevalueoftheintegralontherightis2πif(z0). Tothis
+endweaddandsubtracttheconstantf(z0)inthenumeratoroftheintegrand,
+∮
+C 1
+f(z)
+z−z0
+dz=
+∮
+C 1
+f(z0)−f(z0)+ f(z)
+z−z0
+dz.
+= f(z0)
+∮
+C 1
+1
+z−z0
+dz+
+∮
+C 1
+f(z)−f(z0)
+z−z0
+dz.(3)
+From(6)ofSection5.3weknowthat
+∮
+C 1
+1
+z−z0
+dz=2 πi (4)
+
+=== PAGE 40 ===
+274 Chapter 5 Integration in the Complex Plane
+andso(3)becomes
+∮
+C 1
+f(z)
+z−z0
+dz=2 πif(z0)+
+∮
+C 1
+f(z)−f(z0)
+z−z0
+dz. (5)
+Sincefis continuous atz0, we know that for any arbitrarily smallε>0
+thereexistsaδ>0suchthat|f(z) −f(z0)|<εwhenever|z−z0|<δ.I n
+particular, if we choose the circleC1 to be|z−z0|= 1
+2δ<δ, then by the
+ML-inequality(Theorem5.3)theabsolutevalueoftheintegralontheright
+sideoftheequalityin(5)satisﬁes
+⏐⏐
+⏐
+⏐
+∮
+C 1
+f(z)−f(z0)
+z−z0
+dz
+⏐
+⏐
+⏐
+⏐ ≤ ε
+δ/2 2π
+(δ
+2
+)
+=2 πε.
+In other words, the absolute value of the integral can be made arbitrarily
+smallbytakingtheradiusofthecircleC1 tobesuﬃcientlysmall. Thiscan
+happenonlyiftheintegralis0. Thus(5)is
+∮
+C 1
+f(z)
+z−z0
+dz=2 πif(z0).The
+theoremisprovedbydividingbothsidesofthelastresultby2πi. ✎
+Note BecausethesymbolzrepresentsapointonthecontourC,(1)indicates
+thatthe values of an analytic function f at pointsz0 inside a simple closed
+contourCaredeterminedbythevaluesoffonthecontourC.
+Cauchy’sintegralformula(1)canbeusedtoevaluatecontourintegrals.
+Sinceweoftenworkproblemswithoutasimplyconnecteddomainexplicitly
+deﬁned,amorepracticalrestatementofTheorem5.9is:
+IffisanalyticatallpointswithinandonasimpleclosedcontourC,and
+z0 isanypointinteriortoC,thenf(z0)= 1
+2πi
+∮
+C
+f(z)
+z−z0
+dz.
+EXAMPLE 1Using Cauchy’s Integral Formula
+Evaluate
+∮
+C
+z2 −4z+4
+z+ i dz,whereCisthecircle|z|=2.
+SolutionFirst,weidentifyf(z)= z2 −4z+4andz0 = −iasapointwithin
+thecircleC. Next,weobservethatfisanalyticatallpointswithinandon
+thecontourC. Thus,bytheCauchyintegralformula(1)weobtain
+∮
+C
+z2 −4z+4
+z+ i dz=2 πif( −i)=2 πi(3+4 i)= π( −8+6 i).
+EXAMPLE 2Using Cauchy’s Integral Formula
+Evaluate
+∮
+C
+z
+z2+9 dz,whereCisthecircle|z−2i|=4.
+
+=== PAGE 41 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 275
+SolutionByfactoringthedenominatorasz2+9=( z−3i)(z+3 i)wesee
+that3iistheonlypointwithintheclosedcontourCatwhichtheintegrand
+failstobeanalytic. SeeFigure5.44. Thenbyrewritingtheintegrandas
+z
+z2+9 =
+z
+z+3 i
+}
+f(z)
+z−3i ,
+3i
+–3i
+x
+y
+C
+Figure 5.44 Contour for Example 2
+we can identifyf(z)= z/(z+3 i). The functionfis analytic at all points
+withinandonthecontourC. Hence,fromCauchy’sintegralformula(1)we
+have
+∮
+C
+z
+z2+9 dz=
+∫
+C
+z
+z+3 i
+z−3idz=2 πif(3i)=2 πi3i
+6i= πi.
+Second FormulaWeshallnowbuildonTheorem5.9byusingitto
+provethatthevaluesofthederivativesf(n)(z0),n=1,2,3,... ofananalytic
+functionarealsogivenbyaintegralformula. Thissecondintegralformulais
+similar to (1) and is known by the nameCauchy’s integral formula for
+derivatives.
+Theorem 5.10 Cauchy’s Integral Formula for Derivatives
+Suppose thatfis analytic in a simply connected domainDandCis
+anysimpleclosedcontourlyingentirelywithinD. Thenforanypointz0
+withinC,
+f(n)(z0)= n!
+2πi
+∮
+C
+f(z)
+(z−z0)n+1 dz. (6)
+Partial ProofWewillprove(6)onlyforthecasen=1. Theremainder
+oftheproofcanbecompletedusingtheprincipleofmathematicalinduction.
+Webeginwiththedeﬁnitionofthederivativeand(1):
+f
+′(z0)= lim
+∆ z→ 0
+f(z0+∆z)−f(z0)
+∆z
+= lim
+∆ z→ 0
+1
+2πi∆z
+[∮
+C
+f(z)
+z−(z0+∆z)dz−
+∮
+C
+f(z)
+z−z0
+dz
+]
+= lim
+∆ z→ 0
+1
+2πi
+∮
+C
+f(z)
+(z−z0 −∆z)(z−z0)dz.
+Beforecontinuing,letussetoutsomepreliminaries. Continuityoffonthe
+contourCguaranteesthatfisbounded(seepage124ofSection2.6), that
+is,thereexistsarealnumberMsuchthat|f(z)|≤MforallpointszonC.
+
+=== PAGE 42 ===
+276 Chapter 5 Integration in the Complex Plane
+Inaddition, letLbethelengthofCandletδdenotetheshortestdistance
+betweenpointsonCandthepointz0. ThusforallpointszonCwehave
+|z−z0|≥δ or 1
+|z−z0|2 ≤ 1
+δ2.
+Furthermore,ifwechoose|∆z|≤ 1
+2δ,thenby(10)ofSection1.2,
+|z−z0 −∆z|≥| |z−z0|−|∆z|| ≥δ−|∆z|≥ 1
+2δ
+1
+|z−z0 −∆z|≤ 2
+δ.andso,
+Now,
+⏐⏐
+⏐
+⏐
+∮
+C
+f(z)
+(z−z0)2 dz−
+∮
+C
+f(z)
+(z−z0 −∆z)(z−z0)dz
+⏐
+⏐
+⏐
+⏐
+=
+⏐
+⏐
+⏐
+⏐
+∮
+C
+−∆zf(z)
+(z−z0 −∆z)(z−z0)2 dz
+⏐
+⏐
+⏐
+⏐ ≤ 2ML|∆z|
+δ3 .
+Becausethelastexpressionapproacheszeroas∆z→ 0,wehaveshownthat
+f′(z0)= lim
+∆ z→ 0
+f(z0+∆z)−f(z0)
+∆z = 1
+2πi
+∮
+C
+f(z)
+(z−z0)2 dz,
+whichis(6)forn=1. ✎
+Like(1),formula(6)canbeusedtoevaluateintegrals.
+EXAMPLE 3Using Cauchy’s Integral Formula for Derivatives
+Evaluate
+∮
+C
+z+1
+z4+2 iz3 dz,whereCisthecircle|z|=1.
+SolutionInspectionoftheintegrandshowsthatitisnotanalyticatz=0
+andz= −2i,butonlyz=0lieswithintheclosedcontour. Bywritingthe
+integrandas
+z+1
+z4+2 iz3 =
+z+1
+z+2 i
+z3
+we can identify,z0 =0 ,n= 2, andf(z)=( z+1)/(z+2 i). The quotient
+rulegivesf′′(z)=(2 −4i)/(z+2 i)3andsof′′(0)=(2 i−1)/4i. Hencefrom
+(6)weﬁnd
+∮
+C
+z+1
+z4+4z3 dz= 2πi
+2! f′′(0)= −π
+4+ π
+2 i.
+
+=== PAGE 43 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 277
+EXAMPLE 4Using Cauchy’s Integral Formula for Derivatives
+Evaluate
+∫
+C
+z3+3
+z(z−i)2 dz,whereCistheﬁgure-eightcontourshowninFigure
+5.45.
+C2
+C1
+0
+i
+x
+y
+Figure 5.45 Contour for Example 4
+SolutionAlthoughCisnotasimpleclosedcontour,wecanthinkofitas
+the union of two simple closed contoursC1 andC2 as indicated in Figure
+5.45. SincethearrowsonC1 ﬂowclockwiseorinthenegativedirection,the
+oppositecurve–C1 haspositiveorientation. Hence,wewrite
+∫
+C
+z3+3
+z(z−i)2 dz=
+∫
+C 1
+z3+3
+z(z−i)2 dz+
+∫
+C 2
+z3+3
+z(z−i)2 dz
+= −
+∮
+− C 1
+z3+3
+(z−i)2
+z dz+
+∮
+C 2
+z3+3
+z
+(z−i)2 dz= −I1+ I2,
+andweareinapositiontousebothformulas(1)and(6).
+ToevaluateI1weidentifyz0 =0,f(z)=( z3+3) /(z−i)2,andf(0)= −3.
+By(1)itfollowsthat
+I1 =
+∮
+− C 1
+z3+3
+(z−i)2
+z dz=2 πif(0)=2 πi( −3)= −6πi.
+To evaluateI2 we now identifyz0 = i,n=1 ,f(z)=( z3 +3) /z,f′(z)=
+(2z3 −3)/z2,andf′(i)=3+2 i. From(6)weobtain
+I2 =
+∮
+C 2
+z3+3
+z
+(z−i)2 dz= 2πi
+1!f′(i)=2 πi(3+2 i)= −4π+6 πi.
+Finally,weget
+∫
+C
+z3+3
+z(z−i)2 dz= −I1+ I2 =6 πi+( −4π+6 πi)= −4π+12 πi.
+5.5.2 Some Consequences of the Integral Formulas
+AnimmediateandimportantcorollarytoTheorem5.10issummarizednext.
+Theorem 5.11 Derivative of an Analytic Function Is Analytic
+Suppose thatfis analytic in a simply connected domainD. Thenf
+possessesderivativesofallordersateverypointzinD. Thederivatives
+f′,f′′,f′′′,...areanalyticfunctionsinD.
+
+=== PAGE 44 ===
+278 Chapter 5 Integration in the Complex Plane
+Ifafunctionf(z)= u(x, y)+ iv(x, y)isanalyticinasimplyconnected
+domainD,wehavejustseenitsderivativesofallordersexistatanypointz
+inDandsof′,f′′,f′′′,...arecontinuous. From
+f′(z)= ∂u
+∂x+ i∂v
+∂x= ∂v
+∂y− i∂u
+∂y
+f′′(z)= ∂2u
+∂x2 + i∂2v
+∂x2 = ∂2v
+∂y∂x−i∂2u
+∂y∂x
+..
+.
+wecanalsoconcludethattherealfunctionsuandvhavecontinuouspartial
+derivativesofallordersatapointofanalyticity.Cauchy’s InequalityWebeginwithaninequalityderivedfromthe
+Cauchyintegralformulaforderivatives.
+Theorem 5.12 Cauchy’s Inequality
+SupposethatfisanalyticinasimplyconnecteddomainDandCisa
+circledeﬁnedby|z−z0|= rthatliesentirelyinD.I f|f(z)|≤Mforall
+pointszonC,then
+⏐⏐
+⏐f
+(n)(z0)
+⏐
+⏐
+⏐ ≤ n!M
+rn . (7)
+ProofFromthehypothesis,
+⏐
+⏐
+⏐
+⏐
+f(z)
+(z−z0)n+1
+⏐
+⏐
+⏐
+⏐= |f(z)|
+rn+1 ≤ M
+rn+1 .
+Thusfrom(6)andtheML-inequality(Theorem5.3),wehave
+⏐
+⏐
+⏐f
+(n)(z0)
+⏐
+⏐
+⏐= n!
+2π
+⏐
+⏐
+⏐
+⏐
+∮
+C
+f(z)
+(z−z0)n+1 dz
+⏐
+⏐
+⏐
+⏐ ≤ n!
+2π
+M
+rn+1 2πr= n!M
+rn . ✎
+ThenumberMinTheorem5.12dependsonthecircle|z−z0|= r. But
+noticein(7)thatifn=0,thenM≥|f(z0)|foranycircleCcenteredatz0
+aslongasClieswithinD. Inotherwords,anupperboundMof|f(z)|onC
+cannotbesmallerthan|f(z0)|.
+Liouville’s TheoremTheorem5.12 is then used to prove the next
+result. Although it bears the name “Liouville’s theorem,” it probably was
+ﬁrstprovedbyCauchy. Thegistofthetheoremisthatanentirefunctionf,
+onethatisanalyticforallz,cannotbeboundedunlessfitselfisaconstant.
+
+=== PAGE 45 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 279
+Theorem 5.13 Liouville’s Theorem
+Theonlyboundedentirefunctionsareconstants.
+ProofSupposefisanentirefunctionandisbounded,thatis,|f(z)|≤M
+for allz. Then for any pointz0, (7) gives|f′(z0)|≤ M/r. By making
+rarbitrarily large we can make|f′(z0)|as small as we wish. This means
+f′(z0)=0forallpointsz0 inthecomplexplane. Hence,byTheorem3.6(ii),
+fmustbeaconstant. ✎
+Fundamental Theorem of AlgebraTheorem5.13enablesusto
+establisharesultusuallylearned—butneverproved—inelementaryalgebra.
+Theorem 5.14 Fundamental Theorem of Algebra
+Ifp(z) is a nonconstant polynomial, then the equationp(z) = 0 has at
+leastoneroot.
+ProofLetussupposethatthepolynomialp(z)= anzn + an− 1zn− 1+ ···+
+a1z+ a0,n>0, isnot0foranycomplexnumberz. Thisimpliesthatthe
+reciprocalofp,f(z)=1 /p(z),isanentirefunction. Now
+|f(z)|= 1
+|anzn + an− 1zn− 1+ ···+ a1z+ a0|
+= 1
+|z|n ⏐⏐an + an− 1/z+ ···+ a1
+/
+zn− 1 + a0/zn
+⏐
+⏐.
+Thus,weseethat|f(z)|→ 0as|z|→∞ ,andconcludethatthefunctionf
+mustbeboundedforﬁnitez. ItthenfollowsfromLiouville’stheoremthatf
+isaconstant,andthereforepisaconstant. Butthisisacontradictiontoour
+underlyingassumptionthatpwasnotaconstantpolynomial. Weconclude
+thattheremustexistatleastonenumberzforwhichp(z)=0.
+✎
+Itisleftasanexercisetoshow,usingTheorem5.14,thatifp(z)isanon-
+constantpolynomialofdegreen,thenp(z)=0hasexactlynroots(counting
+multipleroots). SeeProblem29inExercises5.5.
+Morera’s TheoremThe proof of the next theoremenshrined the
+nameoftheItalianmathematicianGiacintoMoreraforeverintextsoncom-
+plexanalysis. Morera’stheorem,whichgivesasuﬃcientconditionforanalyt-
+icity,isoftentakentobetheconverseoftheCauchy-Goursattheorem. For
+itsproofwereturntoTheorem5.11.
+
+=== PAGE 46 ===
+280 Chapter 5 Integration in the Complex Plane
+Theorem 5.15 Morera’s Theorem
+IffiscontinuousinasimplyconnecteddomainDandif
+∮
+C f(z)dz=0
+foreveryclosedcontourCinD,thenfisanalyticinD.
+ProofBy the hypotheses of continuity offand
+∮
+C f(z)dz= 0 for every
+closed contourCinD, we conclude that
+∫
+C f(z)dzis independent of the
+path. In the proof of (7) of Section 5.4 we then saw that the functionF
+deﬁned byF(z)=
+∫ z
+z0
+f(s)ds(wheresdenotes a complex variable,z0 is a
+ﬁxed point inD, andzrepresents any point inD) is an antiderivative of
+f; that is,F′(z)= f(z). Hence,Fis analytic inD. In addition,F′(z)
+is analytic in view of Theorem5.11. Sincef(z)= F′(z), we see thatfis
+analyticinD. ✎
+AnalternativeproofofthislastresultisoutlinedinProblem31inExer-
+cises5.5.
+Wecouldgoonatlengthstatingmoreandmoreresultswhoseproofsrest
+onafoundationoftheorythatincludestheCauchy-Goursattheoremandthe
+Cauchyintegralformulas. Butweshallstopafteronemoretheorem.
+InSection2.6wesawthatifafunctionfiscontinuousonaclosedand
+boundedregionR,thenfisbounded;thatis,thereissomeconstantMsuch
+that|f(z)|≤MforzinR. IftheboundaryofRisasimpleclosedcurveC,
+thenthenexttheorem, whichwepresentwithoutproof, tellsusthat|f(z)|
+assumesitsmaximumvalueatsomepointzontheboundaryC.
+Theorem 5.16 Maximum Modulus Theorem
+SupposethatfisanalyticandnonconstantonaclosedregionRbounded
+byasimpleclosedcurveC. Thenthemodulus|f(z)|attainsitsmaximum
+onC.
+Ifthestipulationthatf(z) ̸=0forallzinRisaddedtothehypotheses
+ofTheorem5.16,thenthemodulus|f(z)|alsoattainsitsminimumonC. See
+Problems27and33inExercises5.5.
+EXAMPLE 5Maximum Modulus
+Findthemaximummodulusoff(z)=2 z+5 iontheclosedcircularregion
+deﬁnedby|z|≤2.
+SolutionFrom(2)ofSection1.2weknowthat|z|2 = z¯z. Byreplacingthe
+symbolzby2z+5 iwehave
+|2z+5 i|2 =(2 z+5 i)(2z+5 i)=(2 z+5 i)(2¯z−5i)=4 z¯z−10i(z−¯z)+25 .(8)
+Butfrom(6)ofSection1.1,¯z−z=2 iIm(z),andso(8)is
+|2z+5 i|2 =4 |z|2+20Im(z)+25 . (9)
+
+=== PAGE 47 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 281
+Becausefisapolynomial,itisanalyticontheregiondeﬁnedby|z|≤2. By
+Theorem5.16,max|z|≤2 |2z+5 i|occursontheboundary|z|=2. Therefore,
+on|z|=2,(9)yields
+|2z+5 i|=
+√
+41+20Im(z). (10)
+ThelastexpressionattainsitsmaximumwhenIm(z)attainsitsmaximumon
+|z|=2,namely,atthepointz=2 i. Thus,max|z|≤2 |2z+5 i|=
+√
+81=9.
+NoteinExample5thatf(z)=0onlyatz= − 5
+2iandthatthispointis
+outsidetheregiondeﬁnedby|z|≤2. Hencewecanconcludethat(10)attains
+itsminimumwhenIm(z)attainsitsminimumon|z|=2atz= −2i.A sa
+result,min|z|≤2 |2z+5 i|=
+√
+1=1 .
+Remarks Comparison with Real Analysis
+Inrealanalysismanyfunctionsarebounded,thatis,|f(x)|≤Mforallx.
+Forexample,sinxandcosxareboundedsince|sinx|≤1and|cosx|≤1
+forallx,butwehaveseeninSection4.3thatneithersinznorcoszare
+boundedinabsolutevalue.
+EXERCISES 5.5Answerstoselectedodd-numberedproblemsbeginonpageANS-17.
+5.5.1 Cauchy’s Integral Formulas
+In Problems 1–22, use Theorems 5.9 and 5.10, when appropriate, to evaluate the
+given integral along the indicated closed contour(s).
+1.
+∮
+C
+4
+z− 3idz;|z|=5 2.
+∮
+C
+z2
+(z− 3i) 2 dz;|z|=5
+3.
+∮
+C
+ez
+z− πidz;|z|=4 4.
+∮
+C
+1+ ez
+z dz;|z|=1
+5.
+∮
+C
+z2 − 3z+4 i
+z+2 i dz;|z|=3 6.
+∮
+C
+cosz
+3z− πdz;|z|=1 .1
+7.
+∮
+C
+z2
+z2 +4 dz;(a) |z− i|=2,(b) |z+2 i|=1
+8.
+∮
+C
+z2 +3 z+2 i
+z2 +3 z− 4 dz;(a) |z|=2,(b) |z+5 |= 3
+2
+9.
+∮
+C
+z2 +4
+z2 − 5iz− 4dz;|z− 3i|=1 .3 10.
+∮
+C
+sinz
+z2 + π2 dz;|z− 2i|=2
+11.
+∮
+C
+ez2
+(z− i) 3 dz;|z− i|=1 12.
+∮
+C
+z
+(z+ i) 4 dz;|z|=2
+13.
+∮
+C
+cos2z
+z5 dz;|z|=1 14.
+∮
+C
+e− z sinz
+z3 dz;|z− 1 |=3
+
+=== PAGE 48 ===
+282 Chapter 5 Integration in the Complex Plane
+15.
+∮
+C
+2z+5
+z2 − 2zdz;(a) |z|= 1
+2,(b) |z+1 |=2(c) |z− 3|=2,(d) |z+2 i|=1
+16.
+∮
+C
+z
+(z− 1)(z− 2)dz;(a) |z|= 1
+2,(b) |z+1 |=1( c) |z− 1 |= 1
+2,(d) |z|=4
+17.
+∮
+C
+z+2
+z2(z− 1 − i) dz;(a) |z|=1 ,(b) |z− 1 − i|=1
+18.
+∮
+C
+1
+z3(z− 4) dz;(a) |z|=1 ,(b) |z− 2|=1
+19.
+∮
+C
+(e2iz
+z4 − z4
+(z− i) 3
+)
+dz;|z|=6
+20.
+∮
+C
+( coshz
+(z− π) 3 − sin2 z
+(2z− π) 3
+)
+dz;|z|=3
+21.
+∮
+C
+1
+z3(z− 1) 2 dz;|z− 2|=5
+22.
+∮
+C
+1
+z2(z2 +1) dz;|z− i|= 3
+2
+In Problems 23 and 24, evaluate the given integral, whereC is the ﬁgure-eight
+contour in the ﬁgure.
+23.
+∮
+C
+3z+1
+z(z− 2)2 dz 24.
+∮
+C
+eiz
+(z2 +1) 2 dz
+C
+0 2
+x
+y
+Figure 5.46 Figure for Problem 23
+C
+i
+–i
+x
+y
+Figure 5.47 Figure for Problem 24
+5.5.2 Some Consequences of the Integral Formulas
+In Problems 25 and 26, proceed as in Example 5 to ﬁnd the maximum modulus of
+the given function on indicated closed circular region.
+25.f(z)= −iz+ i;|z|≤ 5 26.f(z)= z2 +4 z;|z|≤ 1
+27.Suppose the boundaryCof the closed circular regionRdeﬁned by|z|≤ 1i s
+parametrized byx= cost,y= sint,0 ≤ t≤ 2π. By considering|f(z(t)) |,
+ﬁnd the maximum modulus and the minimum modulus of the given analytic
+functionfand the pointszonCthat give these values.
+(a) f(z)=( iz+3) 2
+
+=== PAGE 49 ===
+5.5 Cauchy’s Integral Formulas and Their Consequences 283
+(b) f(z)=( z− 2− 2
+√
+3i) 2
+(c) f(z)= −2iz2 +5
+[Hint: In parts (b) and (c), it may help to recall from calculus how to ﬁnd the
+relative extrema of a real-valued function of real variablet.]
+Focus on Concepts
+28.(Cauchy’s Integral Formula) Supposefis analytic within and on a circleC
+of radiusrwith center atz0. Use (1) to obtain
+f(z0)= 1
+2π
+∫ 2π
+0
+f(z0 + reiθ) dθ.
+This result is known asGauss’ mean-value theoremand shows that the
+value offat the centerz0 of the circle is the average of all the values offon
+the circumference ofC.
+29.(Fundamental Theorem of Algebra) Suppose
+p(z)= anzn + an − 1zn − 1 + ···+ a1z+ a0
+is a polynomial of degreen>1 and thatz1 is number such thatp(z1)=0 .
+Then
+(a) Show thatp(z)= p(z) − p(z1)= an(zn − zn
+1 )+ an − 1(zn − 1 − zn − 1
+1 )+ ···+
+a1(z− z1).
+(b) Use the result in part (a) to show thatp(z)=( z− z1)q(z),whereqis a
+polynomial of degreen− 1.
+(c) Use the result in part (b) to give a sound explanation why the equation
+p(z) = 0 hasnroots.
+30.Use Problem 29 to factor the polynomial
+p(z)= z3 +(3 − 4i)z2 − (15+4 i)z− 1+12 i.
+Do not use technology.
+31.(Morera’s Theorem) Sometimes in the proof of Theorem 5.15 continuity of
+f′ inDis also assumed. If this is the case, then (3) of Section 5.1 and Green’s
+theorem can be used to write
+∮
+C f(z) dzas
+∮
+C
+f(z) dz=
+∮
+C
+udx− vdy+ i
+∮
+C
+vdx+ udy
+=
+∫∫
+R
+(
+− ∂v
+∂x− ∂u
+∂y
+)
+dA+ i
+∫∫
+R
+(∂u
+∂x− ∂v
+∂y
+)
+dA,
+whereRdenotes the region bounded byC. Supply the next step(s) in the proof
+and state the conclusion.
+32.(Maximum Modulus Theorem) Critique the following reasoning:
+Consider the functionf(z)= z2 +5 z− 1 deﬁned the closed circular region
+region deﬁned by|z|≤ 1. It follows from the triangle inequality, (10) of Section
+1.2, that
+⏐⏐z2 +5 z− 1
+⏐
+⏐
+≤|z|2 +5 |z|+ |−1 |.
+
+=== PAGE 50 ===
+284 Chapter 5 Integration in the Complex Plane
+Since the maximum modulus offoccurs on|z|= 1, the inequality shows that
+the maximum modulus off(z)= z2 +5 z− 1 over the region is 7.
+33.In this problem we will start you out in the proof of theminimum modulus
+theorem.
+If f is analytic on a closed region R bounded by a simple closed curve
+C and f(z) ̸=0 for allzin R, then the modulus |f(z) |attains its
+minimum on C.
+Deﬁne the functiong(z)=1 /f(z), reread Theorem 5.16, and then complete
+the proof of the theorem.
+34.Supposef(z)= z+1 −iis deﬁned over the triangular regionRthat has vertices
+i, 1, and 1+i. Discuss how the concept ofdistancefrom the point−1+ ican
+be used to ﬁnd the points on the boundary ofRfor which|f(z) |attains its
+maximum value and its minimum value.
+5.6 Applications
+5.6InSection1.2weintroducedthenotionthatacomplexnumbercouldbeinterpretedasa
+two-dimensionalvector. Becauseofthis,wesawinSection2.7thatatwo-dimensionalvector
+ﬁeldF(x, y)= P(x, y)i+ Q(x, y)jcould be represented by means of a complex-valued
+functionfbytakingthecomponentsPandQofFtobetherealandimaginarypartsof
+f; thatis,f(z)= P(x, y)+ iQ(x, y)isavectorwhoseinitialpointisz. Inthissection
+wewillexploretheuseofthiscomplexrepresentationofthevectorfunctionF(x, y)inthe
+contextofanalyzingcertainaspectsofﬂuidﬂow. Becausethevectorﬁeldconsistsofvectors
+representing velocities at various points in the ﬂow,F(x,y)o rf(z) is called avelocity
+ﬁeld. Themagnitude∥F∥ofF,orthemodulus|f(z)|ofthecomplexrepresentationf,is
+calledspeed.
+ItwillassumedthroughoutthissectionthateverydomainDissimplyconnected.
+Irrotational Vector FieldThroughout this section we consider
+onlyatwo-dimensionalorplanar ﬂowofaﬂuid(seeSections2.7and3.4).
+Thisassumptionpermitsustoanalyzeasinglesheetofﬂuidﬂowingacross
+a domainDin the plane. Suppose thatF(x, y)= P(x, y)i+ Q(x, y)j
+representsasteady-statevelocityﬁeldofthisﬂuidﬂowinD. Inotherwords,
+thevelocityoftheﬂuidatapointinthesheetdependsonlyonitsposition
+(x,y)andnotontimet. Inthestudyofﬂuids,ifcurlF= 0,thentheﬂuidﬂow
+issaidtobeirrotational. Ifapaddledevice,suchasshowninFigure5.48,
+isinsertedinaﬂowingﬂuid,thenthecurlofitsvelocityﬁeldFisameasure
+ofthetendencyoftheﬂuidtoturnthedeviceaboutitsverticalaxis(imagine
+thisverticalaxispointingstraightoutofthepage). Theﬂowsillustratedin
+Figures5.48(a)and5.48(b)areirrotationalbecausethepaddledeviceisnot
+turning. Theword“irrotational”issomewhatmisleadingbecause,asisseen
+in Figure 5.48(b), it doesnotmean that the ﬂuid does not rotate. Rather,
+ifcurlF= 0, thentheﬂowoftheﬂuidisfreeofturbulenceintheformof
+vortices or whirlpools that would cause the paddle to turn. In the case of
+
+=== PAGE 51 ===
+5.6 Applications 285
+A
+B
+A
+B
+A
+B
+(a) (b) (c)
+A
+A AB B
+B
+A
+B
+A
+A
+B
+B
+Figure 5.48 Three ﬂuid ﬂows
+Figure5.48(c),theﬂowisrotational;noticethevorticesandthatthepaddle
+deviceisdepictedasturning.
+The divergence of the vector ﬁeldF(x,y)= P(x,y)i+ Q(x,y)jis a
+measure of the rate of change of the density of the ﬂuid at a point. If div
+F= 0, the ﬂuid is said to beincompressible; that is, an incompressible
+ﬂuidishomogeneous(constantdensity)throughoutthedomainD. Inasimply
+connecteddomainD,anincompressibleﬂowhasthespecialpropertythatthe
+amountofﬂuidintheinteriorofanysimpleclosedcontourCisindependent
+of time. The rate at which ﬂuid enters the interior ofCmatches the rate
+atwhichitleaves,andconsequentlytherecanbenoﬂuidsourcesorsinksat
+pointsinD. Inelectromagnetictheory,ifFrepresentsavectorﬁeldforwhich
+divF=0,thenFissaidtobesolenoidal. LetusassumethatPandQare
+continuousandhavecontinuouspartialderivativesinD. Thenfromvector
+calculusdivF(or∇·F)isascalarfunctionandcurlF(or∇× F)isavector:
+divF= ∂P
+∂x+ ∂Q
+∂y and curlF=
+(∂Q
+∂x− ∂P
+∂y
+)
+k. (1)
+Inthecaseofanideal ﬂuid,thatis,anincompressiblenonviscousﬂuid
+whoseplanarﬂowisirrotational,weseefrom(1)thatdivF=0andcurlF
+= 0yieldthesimultaneousequations
+∂P
+∂x= −∂Q
+∂y and∂P
+∂y= ∂Q
+∂x. (2)
+Thesystemofpartialdiﬀerentialequationsin(2)isreminiscentoftheCauchy-
+Riemann equations—a criterion for analyticity presented in Theorem 3.5 of
+Section3.2. IfthevectorﬁeldF(x,y)= P(x,y)i+ Q(x,y)jisrepresented
+bythecomplexfunctionf(z)= P(x, y)+ iQ(x, y),thenitturnsoutthat(2)
+impliesthattheconjugateoff,thatis,g(z)=
+f(z)= P(x, y)−iQ(x, y),is
+ananalyticfunctioninD.
+Theorem 5.17 Vector Fields and Analyticity
+Supposethefunctionsu,v,P,andQarecontinuousandhavecontinuous
+ﬁrstpartialderivativesinadomainD.
+(Theoremcontinuesonpage286)
+
+=== PAGE 52 ===
+286 Chapter 5 Integration in the Complex Plane
+(i)I fF(x,y)= P(x,y)i+ Q(x,y)jis a vector ﬁeld for which
+divF=0andcurlF= 0inD,andiff(z)= P(x, y)+ iQ(x, y)
+isthecomplexrepresentationofF,thenthefunctiong(z)= f(z)=
+P(x, y)−iQ(x, y)isanalyticinD.
+(ii) Conversely,ifg(z)= u(x,y)+iv(x,y)isanalyticinD,thenthefunc-
+tionf(z)= g(z)= u(x, y)−iv(x, y)isthecomplexrepresentation
+ofavectorﬁeldF(x,y)= P(x,y)i+ Q(x,y)jforwhichdivF=0
+andcurlF= 0inD.
+Proof(i) Ifweletu(x,y)andv(x,y)denotetherealandimaginaryparts
+ofg(z)= f(z)= P(x,y)−iQ(x,y),thenP= uandQ= −v. BecausedivF
+=0andcurlF= 0,theequationsin(2)become,respectively,
+∂u
+∂x= −∂( −v)
+∂y and∂u
+∂y= ∂( −v)
+∂x.
+∂u
+∂x= ∂v
+∂y and∂u
+∂y= −∂v
+∂x. (3)Thatis,
+The equations in (3) are the usual Cauchy-Riemann equations, and so by
+Theorem3.5 we conclude thatg(z)= f(z)= P(x,y) −iQ(x,y) is analytic
+inD.
+(ii) We now letP(x,y) andQ(x,y) denote the real and imaginary parts
+off(z)= g(z)= u(x, y) −iv(x, y).Sinceu= Pandv= −Q,theCauchy-
+Riemannequationsbecome
+∂P
+∂x= ∂( −Q)
+∂y= −∂Q
+∂yand∂P
+∂y= −∂( −Q)
+∂x= ∂Q
+∂x. (4)
+Thesearetheequationsin(2)andsodivF=0andcurlF= 0. ✎
+EXAMPLE 1Vector Field Gives an Analytic Function
+Thetwo-dimensionalvectorﬁeld
+F(x,y)= K
+2π
+[
+y−y0
+(x−x0)2+( y−y0)2i− x−x0
+(x−x0)2+( y−y0)2j
+]
+,K>0,
+canbeinterpretedasthevelocityﬁeldoftheﬂowofanidealﬂuidinadomain
+Dofthexy-planenotcontaining(x
+0,y0). Itiseasilyveriﬁedthattheﬂuidis
+incompressible(divF=0)andirrotational(curlF= 0)inD. Thecomplex
+representationofFis
+f(z)= K
+2π
+[
+y−y0
+(x−x0)2+( y−y0)2 −i x−x0
+(x−x0)2+( y−y0)2
+]
+.
+
+=== PAGE 53 ===
+5.6 Applications 287
+Indeed,byrewritingfas
+f(z)= K
+2πi
+[
+x−x0
+(x−x0)2+( y−y0)2 + i y−y0
+(x−x0)2+( y−y0)2
+]
+andusingz0 = x0 + iy0 andz= x+ iy,youshouldbeabletorecognizef(z)
+isthesameas
+f(z)= K
+2πi
+z−z0
+|z−z0|2 orf(z)= K
+2πi
+1
+¯z−¯z0
+.
+HencefromTheorem5.17(i),thecomplexfunctiong(z)deﬁnedastheconju-
+gateoff(z)isarationalfunction,
+g(z)= f(z)= − K
+2πi
+1
+z−z0
+,K>0,
+andisanalyticinadomainDofthez-planenotcontainingz0.
+Anyanalyticfunctiong(z)canbeinterpretedasacomplexrepresentation
+ofthevelocityﬁeldFofaplanarﬂuidﬂow.ButinviewofTheorem5.17(ii),it
+isthefunctionfdeﬁnedastheconjugateofg,f(z)= g(z),thatisacomplex
+representationofavelocityﬁeldF(x, y)= P(x, y)i+ Q(x, y)joftheplanar
+ﬂowofanidealﬂuidinsomedomainDoftheplane.
+EXAMPLE 2Analytic Function Gives a Vector Field
+The polynomial functiong(z)= kz= k(x+ iy),k>0, is analytic in any
+domainDofthecomplexplane. FromTheorem5.17(ii),f(z)= g(z)= k¯z=
+kx−ikyisthecomplexrepresentationofavelocityﬁeldFofanidealﬂuid
+inD. With the identiﬁcationsP(x, y)= kxandQ(x, y)= −ky, we have
+F(x, y)= k(xi−yj). Aquickinspectionof(2)veriﬁesthatdivF=0and
+curlF= 0.
+Streamlines RevisitedWe can now tie up a few loose ends be-
+tweenSection2.7andSection3.4. InSection2.7,wesawthatifF(x,y)=
+P(x,y)i+ Q(x,y)jorf(z)= P(x, y)+ iQ(x, y)representedthevelocity
+ﬁeld ofanyplanar ﬂuid ﬂow, then the actual pathz(t)= x(t)+ iy(t)o fa
+particle(suchasasmallcork)placedintheﬂowmustsatisfythesystemof
+ﬁrst-orderdiﬀerentialequations:
+dx
+dt= P(x,y)
+dy
+dt= Q(x,y).
+(5)
+Thefamilyofallsolutionsof(5)werecalledstreamlinesoftheﬂow.
+
+=== PAGE 54 ===
+288 Chapter 5 Integration in the Complex Plane
+InSection3.4wesawthatinthecaseofaplanarﬂowofanidealﬂuid,
+the velocity vectorFcould be represented by the gradient of a real-valued
+functionφcalledavelocity potential. Thelevelcurvesφ(x, y)= c1 were
+calledequipotential curves. Mostimportantly,thefunctionφisasolution
+of Laplace’s equation in some domainDand so is harmonic inD. After
+ﬁndingtheharmonicconjugateψ(x, y)ofφ,weformedafunction
+Ω(z)= φ(x,y)+ iψ(x,y), (6)
+calledthecomplex velocity potential,whichisanalyticinD. Inthatcon-
+text,wecalledψ(x, y)astream functionanditslevelcurvesψ(x, y)= c2
+streamlines.
+Weshallnowdemonstratethatwearetalkingaboutthesamethingin
+(5)and(6). LetusassumethatF(x, y)= P(x, y)i+ Q(x, y)jisthevelocity
+ﬁeldoftheﬂowofanidealﬂuidinsomedomainD. Let’sstartbyreviewing
+thecontentoftheparagraphcontaining(6). BecauseF(x, y)= P(x, y)i+
+Q(x, y)jisagradientﬁeld,thereexistsascalarfunctionφsuchthat
+F(x,y)= ∇φ= ∂φ
+∂xi+ ∂φ
+∂yj, (7)
+∂φ
+∂x= P(x,y) and∂φ
+∂y= Q(x,y). (8)andso
+BecauseφisharmonicinD,wecallitapotentialfunctionforF.Wethenﬁnd
+its harmonic conjugateψand use it to formthe com plex velocity potential
+Ω(z)= φ+ iψ. SinceΩ(z)isanalyticinD,wecanusetheCauchy-Riemann
+equations
+∂φ
+∂x= ∂ψ
+∂yand∂φ
+∂y= −∂ψ
+∂x (9)
+torewrite(8)as
+∂ψ
+∂y= P(x,y) and∂ψ
+∂x= −Q(x,y). (10)
+Nowletusre-examinethesystemofdiﬀerentialequationsin(5). Ifwe
+dividethesecondequationinthesystembytheﬁrst,weobtainasingleﬁrst-
+orderdiﬀerentialequationdy/dx= Q(x, y)/P(x, y)or
+−Q(x,y)dx+ P(x,y)dy=0. (11)
+Then by (2), we see thatPandQare related by∂P/∂x= ∂( −Q)/∂y=
+−∂Q/∂y. Thislastconditionprovesthat(11)isanexactﬁrst-orderdiﬀer-
+entialequation. Moretothepoint,theequationsin(10)showusthat(11)is
+thesameas
+∂ψ
+∂xdx+ ∂ψ
+∂ydy=0. (12)
+
+=== PAGE 55 ===
+5.6 Applications 289
+Ifyouhavenothadacourseindiﬀerentialequations,thentheforegoing
+manipulationsmaynotimpressyou. Butthosereaderswithsomeknowledge
+of that subject should recognize the result in (12) establishes that (11) is
+equivalent to the exact diﬀerentiald(ψ(x, y)) = 0. Integrating this last
+equationshowsthatallsolutionsof(5)satisfyψ(x, y)= c
+2. Inotherwords,
+thestreamlinesofthevelocityﬁeldF(x, y)= P(x, y)i+ Q(x, y)jobtained
+from(5)arethesameasthelevelcurvesoftheharmonicconjugateψofφ
+in(6).
+Note
+Complex Potential RevisitedAssume thatF(x,y)= P(x,y)i
++ Q(x,y)jisthevelocityﬁeldoftheﬂowofanidealﬂuidinsomedomain
+DoftheplaneandthatΩ(z)= φ(x, y)+ iψ(x, y)isthecomplexvelocity
+potentialoftheﬂow. WeknowfromTheorem5.17(i)thatfromthecomplex
+representationf(z)= P(x, y)+ iQ(x, y)ofFwecanconstructananalytic
+functiong(z)= f(z)= P(x, y)−iQ(x, y). Thetwoanalyticfunctionsgand
+Ωarerelated. Toseewhythisisso,weﬁrstwritethegradientvectorFin
+(7)inequivalentcomplexnotationas
+f(z)= ∂φ
+∂x+ i∂φ
+∂y. (13)
+Now by (9) of Section 3.2, the derivative of the analytic functionΩ(z)=
+φ(x, y)+ iψ(x, y)istheanalyticfunction
+Ω′(z)= ∂φ
+∂x+ i∂ψ
+∂x. (14)
+Wenowreplace∂ψ/∂xin(14)usingthesecondoftheCauchy-Riemannequa-
+tionsin(9):
+Ω′(z)= ∂φ
+∂x−i∂φ
+∂y. (15)
+By comparing (13) and (15) we see immediately thatf(z)= Ω′(z) and,
+consequently,
+g(z)= Ω′(z). (16)
+Theconjugateofthisanalyticfunction,g(z)= f(z)= f(z),isthecomplex
+representation of the vector ﬁeldFwhose complex potential isΩ(z). In
+symbols,
+f(z)= Ω′(z). (17)
+Becausef(z)isacomplexrepresentationofvelocityvectorﬁeld,thequantity
+Ω′(z)in(17)issometimesreferredtoasthecomplex velocity.
+Youmaylegitimatelyask: Is(17)merelyinterestingorisituseful? An-
+swer: Useful. Hereisonepracticalobservation: Anyfunctionanalyticinsome
+domainDcanberegardedasacomplexpotentialfortheplanarﬂowofan
+idealﬂuid.
+
+=== PAGE 56 ===
+290 Chapter 5 Integration in the Complex Plane
+EXAMPLE 3Complex Potentials
+(a) The analytic functionΩ(z)= 1
+2kz2,k>0,is a complex potential for
+theﬂowinExample2. By(16),thederivativeg(z)= Ω′(z)= kzisan
+analyticfunction. By(17), theconjugatef(z)= Ω′(z)orf(z)= k¯z=
+kx−ikyis the complex representation of the velocity vector ﬁeldFof
+theﬂowofanidealﬂuidinsomedomainDoftheplane. Thecomplex
+potentialofFisΩ(z). SinceΩ(z)= 1
+2k(x2 −y2+2 xyi),weseethatthe
+streamlinesoftheﬂowarexy= c2.
+(b) The complex functionΩ(z)= Az, A >0,is a complex potential for a
+verysimplebutimportanttypeofﬂow. From
+Ω′(z)= AandΩ′(z)= A,
+weseethatΩ(z)isthecomplexpotentialofvectorﬁeldFwhosecomplex
+representationisf(z)= A. Becausethespeed|f|= Aisconstantatevery
+point,wesaythatthevelocityﬁeldF(x,y)= Aiisauniformﬂow. In
+otherwords,inadomainDsuchastheupperhalf-plane,aparticleinthe
+ﬂuidmoveswithaconstantspeed. FromΩ(z)= Az= Ax+ iAy,wesee
+thatapathofamovingparticle,astreamlinefortheﬂow,isahorizontal
+linefromthefamilydeﬁnedbyy= c2. Noticethattheboundaryofthe
+domainD,y=0,isitselfastreamline. SeeFigure5.49.
+y
+x
+FF
+Figure 5.49 Uniform ﬂow
+2
+2
+1
+–1
+–2
+1 x
+y
+–1 –2
+C
+Figure 5.50 Positive circulation and
+zero net ﬂux
+Circulation and Net FluxGivenasimpleclosedcurveCoriented
+counterclockwiseintheplaneandacomplexfunctionfthatrepresentsthe
+velocityﬁeldofaplanarﬂuidﬂow,wecanaskthefollowingtwoquestions:
+(i)TowhatdegreedoestheﬂuidtendtoﬂowaroundthecurveC?
+(ii)Whatisthenetdiﬀerencebetweentheratesatwhichﬂuidentersand
+leavestheregionboundedbythecurveC?
+Thequantitiesconsideredinquestions(i)and(ii)arecalledthecirculation
+aroundCand thenet ﬂuxacrossC, respectively. A precise deﬁnition of
+circulation and ﬂux depends on the use of a contour integral involving the
+complex representationfand will be given shortly. In the meantime, we
+can decide whether the circulation or net ﬂux is positive, negative, or 0 by
+graphingthevelocityvectorﬁeldfoftheﬂow. Aswithargumentsofcomplex
+numbers,weconsiderthecounterclockwisedirectionofaﬂowasthe“positive”
+direction. Thus,aﬂowwillhaveapositivecirculationaroundCiftheﬂuid
+tends to ﬂow counterclockwise aroundC. Similarly, a negative circulation
+meanstheﬂuidtendstoﬂowclockwisearoundC,anda0circulationmeans
+thattheﬂowisperpendiculartoC.Forexample,inFigure5.50,thecirculation
+ispositivesincetheﬂuidtendstoﬂowcounterclockwisearoundC, whereas
+thecirculationinFigure5.51is0sincetheﬂowisperpendiculartothecurve
+C. In a similar manner, we consider a positive net ﬂux to mean that ﬂuid
+
+=== PAGE 57 ===
+5.6 Applications 291
+leaves the region bounded by the curveCat a greater rate than it enters.
+ThisindicatesthepresenceofasourcewithinC, thatis, apointatwhich
+ﬂuidisproduced. Conversely,anegativenetﬂuxindicatesthatﬂuidenters
+theregionboundedbyCatagreaterratethanitleaves,andthisindicates
+the presence of asinkinsideC, that is, a point at which ﬂuid disappears.
+Ifthenetﬂuxis0, thentheﬂuidentersandleavesCatthesamerate. In
+Figure5.50,theﬂowistangenttothecircleC. Thus,noﬂuidcrossesC,and
+thisimpliesthatthenetﬂuxacrossCis0. Ontheotherhand,inFigure5.51,
+thenetﬂuxacrossCispositivebecausetheﬂowappearstobeonlyleaving
+theregionboundedbyC.
+2
+2
+1
+–1
+–2
+1 x
+y
+–1–2
+C
+Figure 5.51 Zero circulation and posi-
+tive net ﬂux
+2
+2
+1
+–1
+–2
+1 x
+y
+–1–2
+Figure 5.52 Velocity ﬁeld for part (a)
+of Example 4
+2
+2
+1
+–1
+–2
+1 x
+y
+–1–2
+Figure 5.53 Velocity ﬁeld for part (b)
+of Example 4
+EXAMPLE 4Circulation and Net Flux of a Flow
+LetCbe the unit circle|z|= 1 in the complex plane. For each ﬂowf
+determinegraphicallywhetherthecirculationaroundCispositive,negative,
+or 0. Also, determine whether the net ﬂux acrossCis positive, negative,
+or0: (a)f(z)=( z−i)2 (b)f(z)=1 /z.
+SolutionIneachpart,wehaveusedacomputeralgebrasystemtoplotthe
+velocityvectorﬁeldfandthecurveC.
+(a) The velocity ﬁeldf(z)=( z−i)2 is given in Figure 5.52. Because the
+vectorﬁeldfshowsthattheﬂuidﬂowsclockwiseaboutC,weconclude
+thatthecirculationisnegative. Moreover,sinceitappearsthatnoﬂuid
+crossesthecurveC,thenetﬂuxis0.
+(b) Thevelocityﬁeldf(z)=1 /zgiveninFigure5.53indicatesthattheﬂuid
+ﬂows an equal amount counterclockwise as it does clockwise aboutC.
+This suggests that the circulation is 0. In addition, because the same
+amount of ﬂuid appears to enter the region bounded byCas exits the
+regionboundedbyC,wealsohavethatthenetﬂuxis0.
+Circulation and Net Flux RevisitedLetTdenote the unit
+tangentvectortoapositivelyoriented,simpleclosedcontourC.I fF(x,y)=
+P(x,y)i+ Q(x,y)jrepresentsavelocityvectorﬁeldofatwo-dimensionalﬂuid
+ﬂow,wedeﬁnethecirculationofFalongCasthereallineintegral
+∮
+C F·dr,
+wheredr= dxi+dyj.Sincedr/dt=( dr/ds)(ds/dt),wheredr/ds=( dx/ds)i+
+(dy/ds)j= TisaunittangenttoC,thelineintegralcanbewritteninterm
+ofthetangentialcomponentofthevelocityvectorF;thatis,
+circulation=
+∮
+C
+F·Tds. (18)
+Aswehavealreadydiscussed,thecirculationofFisameasureoftheamount
+bywhichtheﬂuidtendstoturnthecurveCbyrotating,orcirculating,around
+it. IfFisperpendiculartoTforevery(x,y)onC,then
+∮
+C F·Tds=0and
+the curve does not move at all. On the other hand,
+∮
+C F·Tds >0 and
+
+=== PAGE 58 ===
+292 Chapter 5 Integration in the Complex Plane
+∮
+C F·Tds<0meanthattheﬂuidtendstorotateCinthecounterclockwise
+andclockwisedirections,respectively. SeeFigure5.54.
+T
+F
+C
+Figure 5.54 Flow of ﬂuid tends to
+turnC .
+Now ifN=( dy/ds)i−(dx/ds)jdenotes the normal unit vector to a
+positively oriented, simple closed contourC, and ifF(x, y)= P(x, y)i+
+Q(x, y)jagainrepresentsavelocityﬁeldofatwo-dimensionalﬂuidﬂow,we
+deﬁnethenet ﬂuxofFasthereallineintegralofthenormalcomponentof
+thevelocityvectorF:
+netﬂux=
+∮
+C
+F·Nds. (19)
+Speciﬁcally,(19)deﬁnesanet rateatwhichtheﬂuidiscrossingthecurveC
+in the direction of the normalNand is measured in units of area per unit
+time. Inotherwords,thenetﬂuxacrossCisthediﬀerencebetweentherate
+atwhichﬂuidentersandtherateatwhichﬂuidleavestheregionboundedby
+C. Anonzerovalueof
+∮
+C F·Ndsindicatesthepresenceofsourcesorsinks
+fortheﬂuidinsidethecurveC.
+Nowiff(z)= P(x, y)+ iQ(x, y)isthecomplexrepresentationofthe
+velocityﬁeldFofaﬂuid, thelineintegrals(18)and(19)canbecomputed
+simultaneously by evaluating the single contour integral
+∮
+C f(z)dz. To see
+howthisisdone,ﬁrstobserve:
+∮
+C
+F·Tds=
+∮
+C
+(Pi+ Qj)·
+(dx
+dsi+ dy
+dsj
+)
+ds=
+∮
+C
+Pdx+ Qdy
+∮
+C
+F·Nds=
+∮
+C
+(Pi+ Qj)·
+(dy
+dsi− dx
+dsj
+)
+ds=
+∮
+C
+Pdy−Qdx,
+andthen:
+∮
+C
+f(z)dz=
+∮
+C
+(P−iQ)(dx+ idy)
+=
+(∮
+C
+Pdx+ Qdy
+)
++ i
+(∮
+C
+Pdy−Qdx
+)
+=
+(∮
+C
+F·Tds
+)
++ i
+(∮
+C
+F·Nds
+)
+. (20)
+Equation(20)showsthat(18)and(19)canbefoundbycomputing
+∮
+C f(z)dz
+andidentifyingtherealandimaginarypartsoftheresult. Thatis,
+circulation=Re
+(∮
+C
+f(z)dz
+)
+andnetﬂux=Im
+(∮
+C
+f(z)dz
+)
+.(21)
+EXAMPLE 5Circulation and Net Flux
+Use(21)tocomputethecirculationandthenetﬂuxfortheﬂowandcurveC
+inpart(a)ofExample4.
+SolutionFrompart(a)ofExample4,theﬂowisf(z)=( z−i)2 andCis
+thecircle|z|=1. Thenf(z)=
+(
+z−i
+)2
+=(¯z+ i)2 =¯z2+2 i¯z−1,andCis
+
+=== PAGE 59 ===
+5.6 Applications 293
+parametrizedbyz(t)= eit,0≤t≤2π.Usingdz= ieitdtandtheintegration
+methodin(11)ofSection5.2,wehave:
+∮
+C
+f(z)dz=
+∫ 2π
+0
+(
+e− 2it+2 ie− it−1
+)
+ieitdt
+= i
+∫ 2π
+0
+(
+e− it+2 i−eit)
+dt
+=
+[
+−e− it−2t−eit]2π
+0 = −4π+0i.
+(22)
+Inthelastcomputationweusede− 2πi= e2πi= e0 =1. Now,bycomparing
+theresultsobtainedin(22)to(21),weseethatthecirculationaroundCis
+−4πand the net ﬂux acrossCis 0. The negative circulation and zero net
+ﬂuxareconsistentwithourgeometricanalysisinFigure5.52fortheﬂowf
+inpart(a)ofExample4.
+Theanalysisoftheﬂowfinpart(b)inExample4isleftasaexercise.
+SeeProblem25inExercises5.6.
+EXAMPLE 6Circulation and Net Flux
+Suppose the velocity ﬁeld of a ﬂuid ﬂow isf(z)=( 1+ i)z.Compute the
+circulationandnetﬂuxacrossC,whereCistheunitcircle|z|=1.
+SolutionSincef(z)=(1 −i)¯zandz(t)= eit,0≤ t≤2π, wehavefrom
+(21)
+∮
+C
+f(z)dz=
+∫ 2π
+0
+(1−i)e− itieitdt=(1+ i)
+∫ 2π
+0
+dt=2 π+2 πi.
+ThusthecirculationaroundCis2πandnetﬂuxacrossCisalso2π.
+EXAMPLE 7Applying the Cauchy-Goursat Theorem
+Suppose the velocity ﬁeld of a ﬂuid ﬂow isf(z)= cosz.Compute the cir-
+culation and net ﬂux acrossC, whereCis the square with verticesz=1 ,
+z= i, z= −1,andz= −i.
+SolutionWemustcompute
+∮
+C f(z)dz=
+∮
+C coszdz=
+∮
+C coszdz,andthen
+taketherealandimaginarypartsoftheintegraltoﬁndthecirculationand
+net ﬂux, respectively. But since the function coszis analytic everywhere,
+we immediately have
+∮
+C coszdz=0 by the Cauchy-Goursat theorem. The
+circulationandnetﬂuxarethereforeboth0.
+1
+–1
+0.5
+1 x
+y
+–1 –0.5
+–0.5
+0.5
+Figure 5.55 Velocity ﬁeld for
+Example 7
+The velocity ﬁeldf(z)= coszand the contourCare shown in Figure
+5.55. Theresultsjustobtainedforthecirculationandnetﬂuxareconsistent
+withourearlierdiscussioninExample4aboutthegeometryofﬂows.
+
+=== PAGE 60 ===
+294 Chapter 5 Integration in the Complex Plane
+EXAMPLE 8Circulation and Net Flux
+Thecomplexfunctionf(z)= k/(z−z0)wherek= a+ ibandz0 arecomplex
+constants,givesrisetoaﬂowinthedomaindeﬁnedbyz̸= z0.I fCisasimple
+closedcontourwithz0 initsinterior, thentheCauchyintegralformula, (1)
+ofSection5.5,gives
+∮
+C
+f(z)dz=
+∮
+C
+a−ib
+z−z0
+dz=2 πi(a−ib)=2 πb+2 πai.
+From(21)weseethatthecirculationaroundCisRe(2πb+2 πai)=2 πband
+thenetﬂuxacrossCisIm(2πb+2 πai)=2 πa.
+Note in Example 8, ifz0 were an exterior point of the region bounded
+byC,thenitwouldfollowfromtheCauchy-Goursattheoremthatboththe
+circulationandthenextﬂuxarezero. Moreover,whentheconstantkisreal
+(a̸=0,b=0),thecirculationaroundCis0,butthenetﬂuxacrossCis2πk.
+Fromour earlier discussion in this section, it follows that com plex num ber
+z0 is a source for the ﬂow whenk>0 and a sink whenk<0. Velocity
+ﬁelds corresponding to these two cases are shown in Figure 5.56. The ﬂow
+illustratedinFigure5.51isofthetypeshowninFigure5.56(a).
+y
+x
+z0
+(a) Source : k > 0
+y
+x
+z0
+(b) Sink : k < 0
+Figure 5.56 Two normalized velocity ﬁelds
+EXERCISES 5.6Answerstoselectedodd-numberedproblemsbeginonpageANS-17.
+In Problems 1–4, for the given velocity ﬁeldF(x,y), verify that divF= 0 and
+curlF=0in an appropriate domainD.
+1.F(x,y) = (cosθ0)i+(sinθ0)j,θ0 a constant
+2.F(x,y)= −yi− xj
+3.F(x,y)=2 xi+(3 − 2y)j
+4.F(x,y)= x
+x2 + y2i+ y
+x2 + y2j
+
+=== PAGE 61 ===
+5.6 Applications 295
+In Problems 5–8, give the complex representationf(z) of the velocity ﬁeldF(x,y).
+Express the functiong(z)= f(z) in terms of the symbolzand verify thatg(z)i sa n
+analytic function in an appropriate domainD.
+5. F(x,y) in Problem 1 6. F(x,y) in Problem 2
+7. F(x,y) in Problem 3 8. F(x,y) in Problem 4
+In Problems 9–12, ﬁnd the velocity ﬁeldF(x,y) of the ﬂow of an ideal ﬂuid deter-
+mined by the given analytic functiong(z).
+9.g(z)=( 1+ i)z2 10.g(z) = sinz
+11.g(z)= ex cosy+ iex siny 12.g(z)= x3 − 3xy2 + i
+(
+3x2y− y3 )
+In Problems 13–16, ﬁnd a complex velocity potentialΩ(z) of the complex represen-
+tationf(z) of the indicated velocity ﬁeldF(x,y). Verify your answer using (17).
+Describe the equipotential lines and the streamlines.
+13. F(x,y) in Problem 1 14. F(x,y) in Problem 2
+15. F(x,y) in Problem 3 16. F(x,y) in Problem 4
+In Problems 17 and 18, the given analytic functionΩ(z) is a complex velocity
+potential for the ﬂow of an ideal ﬂuid. Find the velocity ﬁeldF(x,y) of the ﬂow.
+17. Ω(z)= 1
+3iz3 18. Ω(z)= 1
+4z4 + z
+19.Show that
+F(x,y)= A
+[(
+1 − x2 − y2
+(x2 + y2) 2
+)
+i− 2xy
+(x2 + y2) 2j
+]
+,A>0,
+is a velocity ﬁeld for an ideal ﬂuid in any domainDnot containing the origin.
+20.Verify that the analytic functionΩ(z)= A
+(
+z+ 1
+z
+)
+is a complex velocity
+potential for the ﬂow whose velocity ﬁeldF(x,y) is in Problem 19.
+21.(a) Consider the velocity ﬁeld in Problem 19. Describe the ﬁeldF(x,y)a ta
+point (x,y) far from the origin.
+(b) For the complex velocity potential in Problem 20, how does the observation
+thatΩ(z) → Azas|z|increases verify your answer to part (a)?
+22.A stagnation pointin a ﬂuid ﬂow is a point at which the velocity ﬁeld
+F(x,y)= 0. Find the stagnation points for:
+(a) the ﬂow in Example 3(a).
+(b) the ﬂow in Problem 19.
+23.For any two real numberskandx1, the functionΩ(z)= kLn(z−x1) is analytic
+in the upper half-plane and therefore is complex potential for the ﬂow of an
+ideal ﬂuid. The real numberx
+1 is a sink whenk<0 and a source for the ﬂow
+whenk>0.
+(a) Show that the streamlines are rays emanating fromx1.
+(b) Show that the complex representationf(z) of the velocity ﬁeldF(x,y)o f
+the ﬂow is
+f(z)= kz− x1
+|z− x1 |2
+and conclude that the ﬂow is directed towardx1 precisely whenk<0.
+
+=== PAGE 62 ===
+296 Chapter 5 Integration in the Complex Plane
+24.The complex potentialΩ(z)= kLn(z− 1) − kLn(z+1 ) ,k> 0, determines
+the ﬂow of an ideal ﬂuid on the upper half-planey>0 with a single source at
+z= 1 and a single sink atz= −1. Show that the streamlines are the family of
+circlesx2 +(y− c2) 2 =1+ c2
+2.See Figure 5.57.
+x
+–11
+Figure 5.57 Figure for Problem 24
+In Problems 25–30, compute the circulation and net ﬂux for the given ﬂow and the
+indicated closed contourC.
+25.f(z)= 1
+z; whereCis the circle|z|=1
+26.f(z)=2 z; whereCis the circle|z|=1
+27.f(z)= 1
+z− 1 ; whereCis the circle|z− 1 |=2
+28.f(z)=¯z; whereCis the square with verticesz=0 ,z=1 ,z=1+ i, z= i
+29.F(x, y)=( 4x+3 y)i+(2x− y)j, whereCis the circlex2 + y2 =4
+30.F(x, y)=( x+2 y)i+(x− y)j, whereCis the square with verticesz=0 ,
+z=1+ i,z=2i,z= −1+ i
+Focus on Concepts
+31.Supposef(z)= P(x, y)+ iQ(x, y)isacomplexrepresentationofavelocityﬁeld
+Fof the ﬂow of an ideal ﬂuid on a simply connected domainDof the complex
+plane. AssumePandQhave continuous partial derivatives throughoutD.I fC
+is any simple closed curveClying withinD, show that the circulation around
+Cand the net ﬂux acrossCare zero.
+32.The ﬂow described by the velocity ﬁeldf(z)=( a+ ib)/zis said to have a
+vortexatz= 0. The geometric nature of the streamlines depends on the
+choice ofaandb.
+(a) Show that ifz(t)= x(t)+ iy(t) is the path of a particle in the ﬂow, then
+dx
+dt= ax− by
+x2 + y2
+dy
+dt= bx+ ay
+x2 + y2 .
+(b) Rectangularandpolarcoordinatesarerelatedbyr2 = x2+ y2,tanθ= y/x.
+Use these equations to show that
+dr
+dt= 1
+r
+(
+xdx
+dt+ ydy
+dt
+)
+,dθ
+dt= 1
+r2
+(
+−ydx
+dt+ xdy
+dt
+)
+.
+(c) Use the equations in parts (a) and (b) to establish that
+dr
+dt= a
+r,dθ
+dt= b
+r2 .
+(d) Use the equations in part (c) to conclude that the streamlines of the ﬂow
+are logarithmic spiralsr= ceaθ/b,b̸=0 .Use a graphing utility to verify
+that a particle traverses a path in a counterclockwise direction if and only
+ifa<0, and in a clockwise direction if and only ifb<0. Which of these
+directions corresponds to motion spiraling into the vortex?
+
+=== PAGE 63 ===
+Chapter 5 Review Quiz 297
+CHAPTER 5 REVIEW QUIZ
+Answerstoselectedodd-numberedproblemsbegin
+onpageANS-17.
+In Problems 1–20, answer true or false. If the statement is false, justify your answer
+by either explaining why it is false or giving a counterexample; if the statement is
+true, justify your answer by either proving the statement or citing an appropriate
+result in this chapter.
+1.Ifz(t),a≤ t≤ b, is a parametrization of a contourCandz(a)= z(b), thenC
+is a simple closed contour.
+2.The real line integral
+∫
+C (x2 + y2) dx+2 xydy, whereCis given byy= x3 from
+(0, 0) to (1,1), has the same value on the curvey= x6 from (0, 0) to (1,1).
+3.The sector deﬁned by−π/6<arg(z) <π /6 is a simply connected domain.
+4.Iffis analytic atz0, thenf′′′ necessarily exists atz0.
+5.Iffis analytic within and on a simple closed contourCandz0 is any point
+withinC, then the value off(z0) is determined by the values off(z)o nC.
+6.Iffis analytic on a simple closed contourC, then
+∮
+C f(z) dz=0 .
+7.Iffis continuous in a domainD and has an antiderivativeFinD, then an
+integral
+∫
+C f(z) dzhas the same value on all contoursCinDbetween the initial
+pointz0 and terminal pointz1.
+8.If
+∮
+C f(z) dz= 0 for every simple closed contourC, thenfis analytic within
+and onC.
+9.The value of
+∫
+C
+z− 2
+z dzis the same for any pathCin the right half-plane
+Re(z) >0 betweenz=1+ iandz=10+8 i.
+10.Ifgis entire, then
+∮
+C
+g(z)
+z− idz=
+∮
+C 1
+g(z)
+z− idz, whereCis the circle|z|= 3 and
+C1 is the ellipsex2 + 1
+9y2 =1 .
+11.
+∮
+C
+1
+(z− z0)(z− z1) dz= 0 for every simple closed contourCthat encloses the
+pointsz0 andz1.
+12.Iffis analytic within and on the simple closed contourCandz0 is a point
+withinC, then
+∮
+C
+f′(z)
+z− z0
+dz=
+∮
+C
+f(z)
+(z− z0) 2 dz.
+13.
+∮
+C Re(z) dzis independent of the pathCbetweenz0 = 0 andz1 =1+ i.
+14.
+∫
+C
+(
+4z3 − 2z+1
+)
+dz=
+∫ 2
+− 2
+(
+4x3 − 2x+1
+)
+dx, where the contourC is com-
+prised of segmentsC1 andC2 shown in Figure 5.58.
+y
+x
+C1
+2i
+–22
+C2
+Figure 5.58 Figure for Problem 14
+15.
+∫
+C 1
+zn dz=
+∫
+C 2
+zn dzfor all integersn, whereC1 isz(t)= eit,0 ≤ t≤ 2πand
+C2 isz(t)= Reit,R>1,0 ≤ t≤ 2π.
+16.Iffis continuous on the contourC, then
+∫
+C f(z) dz+
+∫
+− C f(z) dz=0 .
+17.On any contourCwith initial pointz0 = −iand terminal pointz1 = ithat
+lies in a simply connected domainDnot containing the origin or the negative
+real axis,
+∫ i
+− i
+1
+zdz= Ln(i) − Ln(−i)= πi.
+18.
+∮
+C
+1
+z2 +1 dz= 0, whereCis the ellipsex2 + 1
+4y2 =1 .
+
+=== PAGE 64 ===
+298 Chapter 5 Integration in the Complex Plane
+19.Ifp(z) is a polynomial inzthen the functionf(z)=1 /p(z) can be never be an
+entire function.
+20.The functionf(z) = coszis entire and not a constant and so must be un-
+bounded.
+In Problems 21–40, try to ﬁll in the blanks without referring back to the text.
+21.z(t)= eit2
+,0 ≤ t≤
+√
+2π, is a parametrization for a.
+22.z(t)= z0 + eit,0 ≤ t≤ 2π, is a parametrization for a.
+23.The diﬀerence betweenz1(t)= eit,0 ≤ t≤ 2πandz2(t)= ei(2π − t),0 ≤ t≤ 2π
+is .
+24.
+∮
+C
+(2y+ x− 6ix2) dz= , whereCis the triangle with vertices 0,i ,
+1+ i, traversed counterclockwise.
+25.Iff is a polynomial function andC is a simple closed contour, then∮
+C
+f(z) dz= .
+26.
+∫
+C
+zIm(z) dz= , whereCis given byz(t)=2 t+ t2i,0 ≤ t≤ 1.
+27.
+∫
+C
+|z|2 dz= , whereCis the line segment for 1− ito 1+i.
+28.
+∮
+C
+(¯z) n dz= , wherenis an integer andCisz(t)= eit,0 ≤ t≤ 2π.
+29.
+∫
+C
+sinz
+2dz= , whereCis given byz(t)=2 i+4 eit,0 ≤ t≤ π/2.
+30.
+∮
+C
+seczdz= , whereCis|z|=1 .
+31.
+∮
+C
+1
+z(z− 1) dz= , whereCis|z− 1 |= 1
+2.
+32.Iff(z)=
+∮
+C
+ξ2 +6 ξ− 2
+ξ− z dξ,whereCis|z|= 3, thenf(1+ i)= .
+33.Iff(z)= z3 + ez andC is a contourz =8 eit,0 ≤ t ≤ 2π, then∮
+C
+f(z)
+(z+ πi) 3 dz= .
+34.If|f(z) |≤ 2 on the circle|z|=3,then
+⏐⏐⏐⏐
+∮
+C
+f(z) dz
+⏐
+⏐⏐⏐
+≤ .
+35.Ifn is a positive integer andC is the contour|z| = 2, then∮
+C
+z− nez dz= .
+36.On|z|= 1, the contour integral
+∮
+C
+cosz
+zn dzequals forn= 1, equals
+forn= 2, and equalsforn=3 .
+37.
+∮
+C
+zndz=
+
+
+
+0, ifn
+2πi,ifn
+, wherenis an integer andCis the circle
+|z|=1 .
+
+=== PAGE 65 ===
+Chapter 5 Review Quiz 299
+38.The value of the integral
+∮
+C
+z
+z+ idzon the contour C shown in Figure 5.59 is
+.
+39.The value of the integral
+∫
+C
+(2z+1) dzon the contourC, comprised of line
+segmentsC1,C2,...,C11 shown in Figure 5.60 is.
+40.The value of the integral
+∮
+C
+ez
+z2(z− πi) dzon the closed contourCshown in
+Figure 5.61 is.
+y
+x
+C
+3–2
+Figure 5.59 Figure for Problem 38
+y
+(0, 5) (3, 5)
+(3, 3)
+(5, 3)
+(1, 1)
+(1, 2)(0, 2)
+(–2, 3)
+(–2, 1)
+03
+x
+C4
+C5
+C6
+C7
+C8
+C9
+C10
+C11
+C1
+C2
+C3
+Figure 5.60 Figure for Problem 39
+1
+1
+y
+C
+x
+Figure 5.61 Figure for Problem 40
+
+=== PAGE 66 ===
+
+

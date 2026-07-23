@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AcmeModel>
+  <system name="simple-pf">
+    <userdata key="SaveData">
+      <data date="1/23/13 11:00 AM"/>
+    </userdata>
+    <userdata key="connection-patterns">
+      <data>
+        <portConnectionRule connector="Connector" name="">
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+          <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+        </portConnectionRule>
+      </data>
+    </userdata>
+    <component name="Input">
+      <userdata key="vis-information">
+        <data category="component" height="50" rotation="0.0" width="100" x="73" y="67"/>
+      </userdata>
+      <port name="output">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="123" y="66"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="Capitalize">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="278" y="67"/>
+      </userdata>
+      <port name="stdout">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="328" y="66"/>
+        </userdata>
+      </port>
+      <port name="stdin">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="234" y="66"/>
+        </userdata>
+      </port>
+      <representation name="Capitalize_Rep">
+        <system name="Capitalize_Rep">
+          <userdata key="connection-patterns">
+            <data>
+              <portConnectionRule connector="Connector" name="">
+                <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+                <association componentType="Component" portName="p" portType="Port" roleName="r" roleType="Role"/>
+              </portConnectionRule>
+            </data>
+          </userdata>
+          <component name="Split">
+            <userdata key="vis-information">
+              <data category="component" rotation="0.0" x="93" y="107"/>
+            </userdata>
+            <port name="input">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="49" y="106"/>
+              </userdata>
+            </port>
+            <port name="output">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="48" relPosY="-8" rotation="0.0" x="141" y="99"/>
+              </userdata>
+            </port>
+            <port name="output0">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="48" relPosY="7" rotation="0.0" x="141" y="114"/>
+              </userdata>
+            </port>
+            <design-rule name="atLeast1portOfTypeFilterInputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+              </userdata>
+            </design-rule>
+          </component>
+          <component name="Upper">
+            <userdata key="vis-information">
+              <data category="component" rotation="0.0" x="279" y="12"/>
+            </userdata>
+            <port name="input">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="235" y="11"/>
+              </userdata>
+            </port>
+            <port name="output">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="329" y="11"/>
+              </userdata>
+            </port>
+            <design-rule name="atLeast1portOfTypeFilterInputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+              </userdata>
+            </design-rule>
+          </component>
+          <component name="Lower">
+            <userdata key="vis-information">
+              <data category="component" rotation="0.0" x="279" y="177"/>
+            </userdata>
+            <port name="input">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="235" y="176"/>
+              </userdata>
+            </port>
+            <port name="output">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="329" y="176"/>
+              </userdata>
+            </port>
+            <design-rule name="atLeast1portOfTypeFilterInputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+              </userdata>
+            </design-rule>
+          </component>
+          <component name="Merge">
+            <userdata key="vis-information">
+              <data category="component" rotation="0.0" x="451" y="107"/>
+            </userdata>
+            <port name="input">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="-46" relPosY="-7" rotation="0.0" x="405" y="100"/>
+              </userdata>
+            </port>
+            <port name="output">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="501" y="106"/>
+              </userdata>
+            </port>
+            <port name="input0">
+              <userdata key="vis-information">
+                <data category="port" componentManaged="true" relPosX="-46" relPosY="6" rotation="0.0" x="405" y="113"/>
+              </userdata>
+            </port>
+            <design-rule name="atLeast1portOfTypeFilterInputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+              </userdata>
+            </design-rule>
+            <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+              <userdata key="RuleInfo">
+                <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+              </userdata>
+            </design-rule>
+          </component>
+          <connector name="conn">
+            <userdata key="vis-information">
+              <data rotation="0.0" x="188" y="55"/>
+            </userdata>
+            <role name="input">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="141" y="99"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <role name="output">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="235" y="11"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <design-rule name="exactly2roles">
+              <userdata key="RuleInfo">
+                <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+              </userdata>
+            </design-rule>
+          </connector>
+          <connector name="conn0">
+            <userdata key="vis-information">
+              <data rotation="0.0" x="188" y="145"/>
+            </userdata>
+            <role name="input">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="141" y="114"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <role name="output">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="235" y="176"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <design-rule name="exactly2roles">
+              <userdata key="RuleInfo">
+                <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+              </userdata>
+            </design-rule>
+          </connector>
+          <connector name="conn1">
+            <userdata key="vis-information">
+              <data rotation="0.0" x="367" y="56"/>
+            </userdata>
+            <role name="input">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="329" y="11"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <role name="output">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="405" y="100"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <design-rule name="exactly2roles">
+              <userdata key="RuleInfo">
+                <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+              </userdata>
+            </design-rule>
+          </connector>
+          <connector name="conn2">
+            <userdata key="vis-information">
+              <data rotation="0.0" x="367" y="145"/>
+            </userdata>
+            <role name="input">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="329" y="176"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <role name="output">
+              <userdata key="vis-information">
+                <data category="role" rotation="0.0" x="405" y="113"/>
+              </userdata>
+              <design-rule name="exactly1attachment">
+                <userdata key="RuleInfo">
+                  <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+                </userdata>
+              </design-rule>
+            </role>
+            <design-rule name="exactly2roles">
+              <userdata key="RuleInfo">
+                <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+              </userdata>
+            </design-rule>
+          </connector>
+        </system>
+      </representation>
+      <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterInputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="Package">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="471" y="67"/>
+      </userdata>
+      <port name="stdout">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="521" y="66"/>
+        </userdata>
+      </port>
+      <port name="stdin">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="427" y="66"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterInputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="Compress">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="643" y="67"/>
+      </userdata>
+      <port name="stdout">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="50" relPosY="-1" rotation="0.0" x="693" y="66"/>
+        </userdata>
+      </port>
+      <port name="stdin">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-44" relPosY="-1" rotation="0.0" x="599" y="66"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterInputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterOutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterOutputPortT." label="Component has at least 1 port of type FilterOutputPortT."/>
+        </userdata>
+      </design-rule>
+    </component>
+    <component name="output">
+      <userdata key="vis-information">
+        <data category="component" rotation="0.0" x="812" y="67"/>
+      </userdata>
+      <port name="input">
+        <userdata key="vis-information">
+          <data category="port" componentManaged="true" relPosX="-50" relPosY="-1" rotation="0.0" x="762" y="66"/>
+        </userdata>
+      </port>
+      <design-rule name="atLeastTheseTypesInputPortT_OutputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have ports of type InputPortT,OutputPortT" label="Has ports of type InputPortT,OutputPortT"/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1portOfTypeFilterInputPortT">
+        <userdata key="RuleInfo">
+          <data errMsg="Component DOES NOT have at least 1 port of type FilterInputPortT." label="Component has at least 1 port of type FilterInputPortT."/>
+        </userdata>
+      </design-rule>
+    </component>
+    <connector name="conn2">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="179" y="66"/>
+      </userdata>
+      <role name="input">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="123" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <role name="output">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="234" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <design-rule name="exactly2roles">
+        <userdata key="RuleInfo">
+          <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+        </userdata>
+      </design-rule>
+    </connector>
+    <connector name="conn0">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="378" y="66"/>
+      </userdata>
+      <role name="input">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="328" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <role name="output">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="427" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <design-rule name="atLeast1RoleOfTypeDataInRoleT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have roles of type DataInRoleT" label="Has roles of type DataInRoleT"/>
+        </userdata>
+      </design-rule>
+      <design-rule name="atLeast1RoleOfTypeDataOutRoleT">
+        <userdata key="RuleInfo">
+          <data errMsg="Does not have roles of type DataOutRoleT" label="Has roles of type DataOutRoleT"/>
+        </userdata>
+      </design-rule>
+      <design-rule name="exactly2roles">
+        <userdata key="RuleInfo">
+          <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+        </userdata>
+      </design-rule>
+    </connector>
+    <connector name="conn">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="560" y="66"/>
+      </userdata>
+      <role name="input">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="521" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <role name="output">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="599" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <design-rule name="exactly2roles">
+        <userdata key="RuleInfo">
+          <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+        </userdata>
+      </design-rule>
+    </connector>
+    <connector name="conn1">
+      <userdata key="vis-information">
+        <data rotation="0.0" x="728" y="66"/>
+      </userdata>
+      <role name="input">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="693" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <role name="output">
+        <userdata key="vis-information">
+          <data category="role" rotation="0.0" x="762" y="66"/>
+        </userdata>
+        <design-rule name="exactly1attachment">
+          <userdata key="RuleInfo">
+            <data errMsg="Role DOES NOT have exactly 1 attachment." label="Role has exactly 1 attachment."/>
+          </userdata>
+        </design-rule>
+      </role>
+      <design-rule name="exactly2roles">
+        <userdata key="RuleInfo">
+          <data errMsg="Connector DOES NOT have exactly 2 roles." label="Connector has exactly 2 roles."/>
+        </userdata>
+      </design-rule>
+    </connector>
+  </system>
+</AcmeModel>

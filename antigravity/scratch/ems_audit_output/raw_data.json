@@ -1,0 +1,5445 @@
+[
+  {
+    "dashboard": "Super Admin",
+    "section": "Dashboard Home",
+    "url": "https://www.cfsmartems.com/Device/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0002_super_admin_dashboard_home.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Device",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "AddEdit"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Export",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Excel",
+        "class": "btn btn-secondary buttons-excel buttons-html5",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Manage Devices\nManage Devices\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Devices"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Offline",
+        "class": "badge badge-secondary fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "OFF",
+        "class": "badge badge-light fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "Online",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Device Status",
+      "Device Name",
+      "Organization",
+      "Gateway",
+      "Device Template",
+      "Switch",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All Users"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All status",
+          "Online",
+          "Offline",
+          "Alarm",
+          "Not Configured"
+        ]
+      },
+      {
+        "name": "Please input device name",
+        "type": "text",
+        "placeholder": "Please input device name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 13 records",
+    "notes": [],
+    "sidebar_items": [
+      {
+        "text": "appadmin@yopmail.com",
+        "href": "#"
+      },
+      {
+        "text": "My\n                                        Profile",
+        "href": "/Account/Profile"
+      },
+      {
+        "text": "Change Password",
+        "href": "/Account/ChangePassword"
+      },
+      {
+        "text": "Sign Out",
+        "href": "/Account/Logout"
+      },
+      {
+        "text": "Organizations",
+        "href": "/Organization/Index"
+      },
+      {
+        "text": "Users",
+        "href": "/User/Index"
+      },
+      {
+        "text": "Manage Gateway",
+        "href": "/Gateway/Index"
+      },
+      {
+        "text": "Devices List",
+        "href": "/Device/Index"
+      },
+      {
+        "text": "Devices List",
+        "href": "/Device/Index"
+      },
+      {
+        "text": "Devices Template",
+        "href": "/DeviceTemplate/Index"
+      },
+      {
+        "text": "Manage Icons",
+        "href": "/ManageIcons/Index"
+      },
+      {
+        "text": "Manage Products",
+        "href": "/ManageProducts/Index"
+      },
+      {
+        "text": "Manage Data",
+        "href": "/Data/Index"
+      },
+      {
+        "text": "Variable Alarm Record",
+        "href": "/Data/VariableAlarmHistory"
+      },
+      {
+        "text": "Linkage Record",
+        "href": "/Data/LinkageRecord"
+      },
+      {
+        "text": "Historical Data",
+        "href": "/Data/History"
+      },
+      {
+        "text": "Alarm Linkage",
+        "href": "javascript:;"
+      },
+      {
+        "text": "Template Triggers",
+        "href": "/AlarmLinkage/TemplateTriggers"
+      },
+      {
+        "text": "Alarm Settings",
+        "href": "/AlarmLinkage/AlarmSettings"
+      },
+      {
+        "text": "Alarm Contacts",
+        "href": "/AlarmLinkage/Contacts"
+      },
+      {
+        "text": "Device Timestamps",
+        "href": "/DeviceTimestamps/index"
+      },
+      {
+        "text": "Manage Schedule Task",
+        "href": "/ScheduleTask/index"
+      },
+      {
+        "text": "Manage Theme Settings",
+        "href": "/ThemeSettings/index"
+      },
+      {
+        "text": "Manage Settings",
+        "href": "/ManageSettings/index"
+      },
+      {
+        "text": "Manage List",
+        "href": "/Setting/List"
+      },
+      {
+        "text": "Manage List",
+        "href": "/Setting/List"
+      }
+    ],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "My\n                                        Profile",
+    "url": "https://www.cfsmartems.com/Account/Profile",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0003_super_admin_my_________________________________________profi.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Update",
+        "class": "btn btn-primary savebutton",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "card/widget",
+        "text": "Full Name\nEmail\nPhone Number"
+      },
+      {
+        "type": "heading",
+        "text": "Edit Profile"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "FullName",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Email",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Change Password",
+    "url": "https://www.cfsmartems.com/Account/ChangePassword",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0004_super_admin_change_password.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Change Password"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "CurrentPassword",
+        "type": "password",
+        "placeholder": "Current Password"
+      },
+      {
+        "name": "NewPassword",
+        "type": "password",
+        "placeholder": "New Password"
+      },
+      {
+        "name": "ConfirmPassword",
+        "type": "password",
+        "placeholder": "Repeat Password"
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Organizations",
+    "url": "https://www.cfsmartems.com/Organization/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0005_super_admin_organizations.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Organization",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditOrg",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations\nManage Organizations\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations"
+      },
+      {
+        "type": "heading",
+        "text": "Organization"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Organization Name",
+      "Organization Description",
+      "Creation Time",
+      "Status",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 10 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Organizations > Add Organization Form",
+    "url": "https://www.cfsmartems.com/Organization/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0006_super_admin_organizations___add_organization_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Organization",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditOrg",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations\nManage Organizations\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Organization Name",
+      "Organization Description",
+      "Creation Time",
+      "Status",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Status",
+        "type": "select",
+        "options": [
+          "Select Status",
+          "Active",
+          "Inactive"
+        ]
+      },
+      {
+        "name": "Description",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 10 records",
+    "notes": [
+      "Opened via button: Add Organization"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Users",
+    "url": "https://www.cfsmartems.com/User/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0007_super_admin_users.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add User",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditUser",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Users\nManage Users\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Users"
+      },
+      {
+        "type": "heading",
+        "text": "Add  User"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Inactive",
+        "class": "badge badge-light-danger fw-bold px-4 py-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Deleted",
+        "class": "badge badge-light-danger fw-bold px-4 py-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-light-success fw-bold px-4 py-2"
+      }
+    ],
+    "table_columns": [
+      "Organization",
+      "Full Name",
+      "Email",
+      "Phone Number",
+      "Role",
+      "Status",
+      "Creation Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Active",
+          "Inactive",
+          "Deleted"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 96 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Users > Add User Form",
+    "url": "https://www.cfsmartems.com/User/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0008_super_admin_users___add_user_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add User",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditUser",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Users\nManage Users\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Users"
+      },
+      {
+        "type": "heading",
+        "text": "Chart Configuration"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Inactive",
+        "class": "badge badge-light-danger fw-bold px-4 py-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Deleted",
+        "class": "badge badge-light-danger fw-bold px-4 py-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-light-success fw-bold px-4 py-2"
+      }
+    ],
+    "table_columns": [
+      "Organization",
+      "Full Name",
+      "Email",
+      "Phone Number",
+      "Role",
+      "Status",
+      "Creation Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Active",
+          "Inactive",
+          "Deleted"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Email",
+        "type": "email",
+        "placeholder": ""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Address",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Type",
+        "type": "select",
+        "options": [
+          "Select Type",
+          "Residential",
+          "Commercial"
+        ]
+      },
+      {
+        "name": "Role",
+        "type": "select",
+        "options": [
+          "Select Role",
+          "Customer",
+          "Admin"
+        ]
+      },
+      {
+        "name": "OrganizationId",
+        "type": "select",
+        "options": [
+          "Select Organization",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "ThemeSettingId",
+        "type": "select",
+        "options": [
+          "Select Theme Setting",
+          "Default",
+          "Midnight Slate Pro",
+          "Midnight Slate",
+          "Dark",
+          "Light",
+          "Night mode",
+          "CF",
+          "CF 2"
+        ]
+      },
+      {
+        "name": "PaymentMethod",
+        "type": "select",
+        "options": [
+          "Select Payment",
+          "Cheque",
+          "Jazz Cash",
+          "Easy Paisa",
+          "Other"
+        ]
+      },
+      {
+        "name": "OtherPaymentMethod",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "ChartIntervalMinutes",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "Status",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 96 records",
+    "notes": [
+      "Opened via button: Add User"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Gateway",
+    "url": "https://www.cfsmartems.com/Gateway/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0009_super_admin_manage_gateway.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Gateway",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/Gateway/Add"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Gateways\nManage Gateways\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Gateways"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Offline",
+        "class": "badge badge-secondary fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "Online",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Gateway Status",
+      "Gateway Name",
+      "Serial Number",
+      "Gateway Model",
+      "No Of Associated Devices",
+      "Organization",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All status",
+          "Online",
+          "Offline",
+          "Upgrading",
+          "In the configration",
+          "Gateway alarm",
+          "Disabled"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All Models",
+          "Unknown type"
+        ]
+      },
+      {
+        "name": "Please Enter SN or gateway name",
+        "type": "text",
+        "placeholder": "Please Enter SN or gateway name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 13 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Gateway > Add Gateway Form",
+    "url": "https://www.cfsmartems.com/Gateway/Add",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0010_super_admin_manage_gateway___add_gateway_form.png",
+    "tabs": [],
+    "elements": [],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [
+      "Opened via button: Add Gateway"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Devices Template",
+    "url": "https://www.cfsmartems.com/DeviceTemplate/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0011_super_admin_devices_template.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Template",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditTemplate",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "S",
+        "class": "btn btn-sm btn-icon btn-light-info btn-hover-info rounded me-1",
+        "href": "/DeviceTemplate/Slaves?tId=mYFICw9EaWDW2kpNlsEGiw=="
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Manage Device Templates\nManage Device Templates\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Device Templates"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Template Name",
+      "Organization",
+      "Total No Of Variables",
+      "NO Of Associated Devices",
+      "Acquisition Methods",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Please input template name",
+        "type": "text",
+        "placeholder": "Please input template name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 19 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Devices Template > Add Template Form",
+    "url": "https://www.cfsmartems.com/DeviceTemplate/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0012_super_admin_devices_template___add_template_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Template",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditTemplate",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "S",
+        "class": "btn btn-sm btn-icon btn-light-info btn-hover-info rounded me-1",
+        "href": "/DeviceTemplate/Slaves?tId=mYFICw9EaWDW2kpNlsEGiw=="
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Manage Device Templates\nManage Device Templates\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Device Templates"
+      },
+      {
+        "type": "heading",
+        "text": "Add Add Template"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Template Name",
+      "Organization",
+      "Total No Of Variables",
+      "NO Of Associated Devices",
+      "Acquisition Methods",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Please input template name",
+        "type": "text",
+        "placeholder": "Please input template name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "select",
+        "options": [
+          "Select Organization",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "AcquisitionMethods",
+        "type": "radio",
+        "placeholder": ""
+      },
+      {
+        "name": "AcquisitionMethods",
+        "type": "radio",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 19 records",
+    "notes": [
+      "Opened via button: Add Template"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Icons",
+    "url": "https://www.cfsmartems.com/ManageIcons/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0013_super_admin_manage_icons.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Icon",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditIcon",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Icons\nManage Icons\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Icons"
+      },
+      {
+        "type": "heading",
+        "text": "Icon"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Name",
+      "Icon",
+      "Active",
+      "Action"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 13 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Icons > Add Icon Form",
+    "url": "https://www.cfsmartems.com/ManageIcons/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0014_super_admin_manage_icons___add_icon_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Icon",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditIcon",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Icons\nManage Icons\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Icons"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Name",
+      "Icon",
+      "Active",
+      "Action"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "IconName",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Status",
+        "type": "select",
+        "options": [
+          "Select Status",
+          "Active",
+          "Inactive"
+        ]
+      },
+      {
+        "name": "IconFile",
+        "type": "file",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 13 records",
+    "notes": [
+      "Opened via button: Add Icon"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Products",
+    "url": "https://www.cfsmartems.com/ManageProducts/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0015_super_admin_manage_products.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Product",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditProduct",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Products\nManage Products\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Products"
+      },
+      {
+        "type": "heading",
+        "text": "Product"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Product Name",
+      "Price",
+      "Product Image",
+      "Description",
+      "Status",
+      "Action"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 2 of 2 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Products > Add Product Form",
+    "url": "https://www.cfsmartems.com/ManageProducts/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0016_super_admin_manage_products___add_product_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Product",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditProduct",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Products\nManage Products\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Products"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Product Name",
+      "Price",
+      "Product Image",
+      "Description",
+      "Status",
+      "Action"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "ProductName",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Price",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "Description",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "ProductFile",
+        "type": "file",
+        "placeholder": ""
+      },
+      {
+        "name": "Status",
+        "type": "select",
+        "options": [
+          "Select Status",
+          "Active",
+          "Inactive"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 2 of 2 records",
+    "notes": [
+      "Opened via button: Add Product"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Data",
+    "url": "https://www.cfsmartems.com/Data/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0017_super_admin_manage_data.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "card/widget",
+        "text": "Oops!\n\nNot Found\n\nPlease contact with system admin for details"
+      },
+      {
+        "type": "heading",
+        "text": "Oops!"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Variable Alarm Record",
+    "url": "https://www.cfsmartems.com/Data/VariableAlarmHistory",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0018_super_admin_variable_alarm_record.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Download Data",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Excel",
+        "class": "btn btn-secondary buttons-excel buttons-html5",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Cancel",
+        "class": "cancelBtn btn btn-sm btn-default",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Apply",
+        "class": "applyBtn btn btn-sm btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Data Center\nData Center\nVariable Alarm Record"
+      },
+      {
+        "type": "heading",
+        "text": "Data Center"
+      },
+      {
+        "type": "heading",
+        "text": "Process Alarms"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Device Name",
+      "Trigger Name",
+      "Trigger Type",
+      "Slave Name",
+      "Variable",
+      "Current Value",
+      "Triggering Condition",
+      "Alarm Time",
+      "Alarm State",
+      "Process State",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Imran's House",
+          "Fico",
+          "EMS PANEL",
+          "CF BAG",
+          "CF SMART TECHNOLOGIES",
+          "PV GENSET SYNC",
+          "Gulshan-e-Zia",
+          "FICO EV",
+          "C Power",
+          "Supra Steel Furnaces",
+          "Japan Electronics",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Import Power",
+          "Export Power"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Voltage A (40097)",
+          "Voltage B (40099)",
+          "Voltage C (40101)",
+          "Current A (40109)",
+          "Current B (40111)",
+          "Current C (40113)",
+          "Active Power (40121)",
+          "Reactive Power (40129)",
+          "Apparent Power (40137)",
+          "Power Factor (40084)",
+          "Frequency (40085)",
+          "Import Energy (40139)"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Normal",
+          "Alarm"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Unhandled",
+          "Misinformation",
+          "Processed"
+        ]
+      },
+      {
+        "name": "Pick date range",
+        "type": "text",
+        "placeholder": "Pick date range"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "ProcessAlarm",
+        "type": "radio",
+        "placeholder": ""
+      },
+      {
+        "name": "ProcessAlarm",
+        "type": "radio",
+        "placeholder": ""
+      },
+      {
+        "name": "result",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Linkage Record",
+    "url": "https://www.cfsmartems.com/Data/LinkageRecord",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0019_super_admin_linkage_record.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Download Data",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Excel",
+        "class": "btn btn-secondary buttons-excel buttons-html5",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Cancel",
+        "class": "cancelBtn btn btn-sm btn-default",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Apply",
+        "class": "applyBtn btn btn-sm btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Data Center\nData Center\nLinkage Record"
+      },
+      {
+        "type": "heading",
+        "text": "Data Center"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Device Name",
+      "Trigger Name",
+      "Trigger Type",
+      "Slave Name",
+      "Variable Name",
+      "Triggering Condition",
+      "Trigger Device",
+      "Linkage Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Imran's House",
+          "Fico",
+          "EMS PANEL",
+          "CF BAG",
+          "CF SMART TECHNOLOGIES",
+          "PV GENSET SYNC",
+          "Gulshan-e-Zia",
+          "FICO EV",
+          "C Power",
+          "Supra Steel Furnaces",
+          "Japan Electronics",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Import Power",
+          "Export Power"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Voltage A (40097)",
+          "Voltage B (40099)",
+          "Voltage C (40101)",
+          "Current A (40109)",
+          "Current B (40111)",
+          "Current C (40113)",
+          "Active Power (40121)",
+          "Reactive Power (40129)",
+          "Apparent Power (40137)",
+          "Power Factor (40084)",
+          "Frequency (40085)",
+          "Import Energy (40139)"
+        ]
+      },
+      {
+        "name": "Pick date range",
+        "type": "text",
+        "placeholder": "Pick date range"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Historical Data",
+    "url": "https://www.cfsmartems.com/Data/History",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0020_super_admin_historical_data.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Download Data",
+        "class": "btn btn-sm btn-primary fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Delete Data",
+        "class": "btn btn-sm btn-danger fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Cancel",
+        "class": "cancelBtn btn btn-sm btn-default",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Apply",
+        "class": "applyBtn btn btn-sm btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Data Center\nData Center\nHistorical Data"
+      },
+      {
+        "type": "heading",
+        "text": "Data Center"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Variable Name",
+      "Display Value",
+      "Received Time"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Imran's House",
+          "Fico",
+          "EMS PANEL",
+          "CF BAG",
+          "CF SMART TECHNOLOGIES",
+          "PV GENSET SYNC",
+          "Gulshan-e-Zia",
+          "FICO EV",
+          "C Power",
+          "Supra Steel Furnaces",
+          "Japan Electronics",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Pick date range",
+        "type": "text",
+        "placeholder": "Pick date range"
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Import Power",
+          "Export Power"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Voltage A (40097)",
+          "Voltage B (40099)",
+          "Voltage C (40101)",
+          "Current A (40109)",
+          "Current B (40111)",
+          "Current C (40113)",
+          "Active Power (40121)",
+          "Reactive Power (40129)",
+          "Apparent Power (40137)",
+          "Power Factor (40084)",
+          "Frequency (40085)",
+          "Import Energy (40139)"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Template Triggers",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/TemplateTriggers",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0021_super_admin_template_triggers.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add",
+        "class": "btn btn-flex btn-primary h-40px fs-7 fw-bold btnAddEditTemplateTrigger",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage\nTemplate Trigger\nTemplate Trigger List"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage"
+      },
+      {
+        "type": "heading",
+        "text": "Add Template Trigger"
+      },
+      {
+        "type": "heading",
+        "text": "Template Trigger Information"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Trigger Name",
+      "Organization",
+      "Template Name",
+      "Founder",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Please input trigger name",
+        "type": "text",
+        "placeholder": "Please input trigger name"
+      },
+      {
+        "name": "templateName",
+        "type": "text",
+        "placeholder": "Please input template name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Template Triggers > Add Form",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/TemplateTriggers",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0022_super_admin_template_triggers___add_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add",
+        "class": "btn btn-flex btn-primary h-40px fs-7 fw-bold btnAddEditTemplateTrigger",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage\nTemplate Trigger\nTemplate Trigger List"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage"
+      },
+      {
+        "type": "heading",
+        "text": "Add Template Trigger"
+      },
+      {
+        "type": "heading",
+        "text": "Template Trigger Information"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Trigger Name",
+      "Organization",
+      "Template Name",
+      "Founder",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Please input trigger name",
+        "type": "text",
+        "placeholder": "Please input trigger name"
+      },
+      {
+        "name": "templateName",
+        "type": "text",
+        "placeholder": "Please input template name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "DeviceTemplateId",
+        "type": "select",
+        "options": [
+          "CFBAG",
+          "CF SMART TECHNOLOGIES MONITORING SYSTEM",
+          "IMRAN's HOUSE",
+          "Fico Furnace",
+          "EMS PANEL",
+          "PV GENSET SYNC",
+          "CF Smart Main Panel",
+          "Gulshan-e-Zia",
+          "CF Smart Technologies Generator",
+          "Dummy",
+          "BAKERY DEVICE1",
+          "BAKERY DEVICE2",
+          "FICO EV",
+          "C Power",
+          "Guest Device Template",
+          "SUPRA STEEL FURNACE",
+          "JAPAN ELECTRONICS",
+          "RED CHILLI",
+          "DELICIA WAREHOUSE"
+        ]
+      },
+      {
+        "name": "DeviceSlaveId",
+        "type": "select",
+        "options": [
+          "CF BAG",
+          "CF BAG CONTROL"
+        ]
+      },
+      {
+        "name": "TemplateVariableId",
+        "type": "select",
+        "options": [
+          "Voltage (40067)",
+          "Current (40089)",
+          "Power (40101)",
+          "Reactive Power (40109)",
+          "Apparent Power (40117)",
+          "Power Factor (40125)",
+          "Frequency (40129)",
+          "Import Energy (40139)",
+          "Units Consumption (40141)"
+        ]
+      },
+      {
+        "name": "TriggerCondition",
+        "type": "select",
+        "options": [
+          "OFF",
+          "ON",
+          "Value is less than A",
+          "Value is more than B",
+          "Value is more than A and less than B",
+          "Value is more than B or less than A",
+          "Value is equal to A"
+        ]
+      },
+      {
+        "name": "AValue",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "BValue",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "AlarmDeadZone",
+        "type": "text",
+        "placeholder": "Please enter trigger threshold"
+      },
+      {
+        "name": "Alarm",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "Linkage",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "LinkageType",
+        "type": "select",
+        "options": [
+          "Acquisition",
+          "Control"
+        ]
+      },
+      {
+        "name": "LinkageSlaveId",
+        "type": "select",
+        "options": []
+      },
+      {
+        "name": "LinkageVariableId",
+        "type": "select",
+        "options": []
+      },
+      {
+        "name": "DistributionData",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [
+      "Opened via button: Add"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Alarm Settings",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/AlarmSettings",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0023_super_admin_alarm_settings.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditAlarm",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage\nAlarm Settings\nAlarm Settings List"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage"
+      },
+      {
+        "type": "heading",
+        "text": "Add Alarm Configuration"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm Configuration Information"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Alarm Configuration Name",
+      "Organization",
+      "Push Type",
+      "Push Body",
+      "Push Method",
+      "Pushing Mechanism",
+      "Status",
+      "Founder",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Template Trigger"
+        ]
+      },
+      {
+        "name": "Please input alarm configuration name",
+        "type": "text",
+        "placeholder": "Please input alarm configuration name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Alarm Settings > Add Form",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/AlarmSettings",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0024_super_admin_alarm_settings___add_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditAlarm",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "×",
+        "class": "toastr-close-button",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage\nAlarm Settings\nAlarm Settings List"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage"
+      },
+      {
+        "type": "heading",
+        "text": "Add Alarm Configuration"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm Configuration Information"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Alarm Configuration Name",
+      "Organization",
+      "Push Type",
+      "Push Body",
+      "Push Method",
+      "Pushing Mechanism",
+      "Status",
+      "Founder",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Template Trigger"
+        ]
+      },
+      {
+        "name": "Please input alarm configuration name",
+        "type": "text",
+        "placeholder": "Please input alarm configuration name"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "select",
+        "options": [
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "TemplateTriggerId",
+        "type": "select",
+        "options": []
+      },
+      {
+        "name": "ConfigDevices",
+        "type": "select",
+        "options": [
+          "CF SMART TECHNOLOGIES"
+        ]
+      },
+      {
+        "name": "Please choose devices",
+        "type": "search",
+        "placeholder": "Please choose devices"
+      },
+      {
+        "name": "PushingMechanism",
+        "type": "radio",
+        "placeholder": ""
+      },
+      {
+        "name": "PushingMechanism",
+        "type": "radio",
+        "placeholder": ""
+      },
+      {
+        "name": "AlarmSilenceMinute",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "PushMethod",
+        "type": "select",
+        "options": [
+          "SMS",
+          "Email"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "ConfigContacts",
+        "type": "select",
+        "options": [
+          "Huzaifa"
+        ]
+      },
+      {
+        "name": "Please choose contacts",
+        "type": "search",
+        "placeholder": "Please choose contacts"
+      },
+      {
+        "name": "PushRuleDescription",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [
+      "Opened via button: Add"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Alarm Contacts",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/Contacts",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0025_super_admin_alarm_contacts.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "AddEditContact"
+      },
+      {
+        "type": "button",
+        "text": "Batch Delete",
+        "class": "btn btn-sm btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body fs-7 fw-bold",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage\nAlarm contacts\nContacts List"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm linkage"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Contact Name",
+      "Orgaization",
+      "Mobile Phone",
+      "Email",
+      "Whatsapp",
+      "Remark",
+      "Add People",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "CF Smart Technology",
+          "FICO",
+          "C Power",
+          "NUST",
+          "Guest Org",
+          "Supra Steel",
+          "Japan Electronics",
+          "Bakery",
+          "Red Chilli",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Contact name, phone number or email",
+        "type": "text",
+        "placeholder": "Contact name, phone number or email"
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "checkbox",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 1 of 1 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Alarm Contacts > Add Form",
+    "url": "https://www.cfsmartems.com/AlarmLinkage/AddEditContact",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0026_super_admin_alarm_contacts___add_form.png",
+    "tabs": [],
+    "elements": [],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [
+      "Opened via button: Add"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Device Timestamps",
+    "url": "https://www.cfsmartems.com/DeviceTimestamps/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0027_super_admin_device_timestamps.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Device Timestamps\nDevice Timestamps\nManage Device Timestamps"
+      },
+      {
+        "type": "heading",
+        "text": "Device Timestamps"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Online",
+        "class": "badge badge-success fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "Offline",
+        "class": "badge badge-secondary fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Device Name",
+      "Last Date Activity",
+      "Last Active",
+      "Status"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "100"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 13 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Schedule Task",
+    "url": "https://www.cfsmartems.com/ScheduleTask/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0028_super_admin_manage_schedule_task.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Scheduled Task",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/ScheduleTask/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Tasks\nManage Scheduled Tasks\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Tasks"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "OFF",
+        "class": "badge badge-secondary fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      },
+      {
+        "type": "badge/status",
+        "text": "ON",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Serial No.",
+      "Device Variable",
+      "Action",
+      "Scheduled Time",
+      "Repeat Type",
+      "Status",
+      "Created by",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 3 of 3 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Schedule Task > Add Scheduled Task Form",
+    "url": "https://www.cfsmartems.com/ScheduleTask/AddEdit",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0029_super_admin_manage_schedule_task___add_scheduled_task_form.png",
+    "tabs": [],
+    "elements": [],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [
+      "Opened via button: Add Scheduled Task"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Theme Settings",
+    "url": "https://www.cfsmartems.com/ThemeSettings/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0030_super_admin_manage_theme_settings.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Theme",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/ThemeSettings/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Theme Settings\nManage Theme Settings\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Theme Settings"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Serial No.",
+      "Theme Name",
+      "Header Colors",
+      "Body Colors",
+      "Font Size",
+      "Status",
+      "Created By",
+      "Created Date",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 8 of 8 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Theme Settings > Add Theme Form",
+    "url": "https://www.cfsmartems.com/ThemeSettings/AddEdit",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0031_super_admin_manage_theme_settings___add_theme_form.png",
+    "tabs": [],
+    "elements": [],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [
+      "Opened via button: Add Theme"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage Settings",
+    "url": "https://www.cfsmartems.com/ManageSettings/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0032_super_admin_manage_settings.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Settings\nManage Settings\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Settings"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Logo",
+        "class": "badge badge-primary fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Key",
+      "Type",
+      "Value Preview",
+      "Description",
+      "Last Updated",
+      "Action"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All Types",
+          "Logo",
+          "Text",
+          "Image",
+          "Configuration"
+        ]
+      },
+      {
+        "name": "Search by key...",
+        "type": "text",
+        "placeholder": "Search by key..."
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 1 of 1 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage List",
+    "url": "https://www.cfsmartems.com/Setting/List",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0033_super_admin_manage_list.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Item",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditList",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Manage Lists\nManage Lists\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Lists"
+      },
+      {
+        "type": "heading",
+        "text": "List Item"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "List Type",
+      "Name",
+      "Description",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Product Catalog",
+          "Protocols and Drivers"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 17 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin",
+    "section": "Manage List > Add Item Form",
+    "url": "https://www.cfsmartems.com/Setting/List",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0034_super_admin_manage_list___add_item_form.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Item",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold  btnAddEditList",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Query",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 btn-query",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Manage Lists\nManage Lists\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Lists"
+      },
+      {
+        "type": "heading",
+        "text": "Add List Item"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "List Type",
+      "Name",
+      "Description",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All",
+          "Product Catalog",
+          "Protocols and Drivers"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      },
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "ListType",
+        "type": "select",
+        "options": [
+          "Select Type",
+          "Product Catalog",
+          "Protocols and Drivers"
+        ]
+      },
+      {
+        "name": "Description",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 17 records",
+    "notes": [
+      "Opened via button: Add Item"
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "Super Admin -> Organization",
+    "section": "Organization List",
+    "url": "https://www.cfsmartems.com/Organization/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0045_super_admin____organization_organization_list.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Add Organization",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold btnAddEditOrg",
+        "href": "javascript:;"
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Organizations\nUsers\nManage Gateway\nManage Devices\nManage Icons\nManage Products\nManage Data\nAlarm Linkage\nDevice Timestamps\nManage Schedule Task\nManage Theme Settings\nManage Settings\nOthers"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations\nManage Organizations\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Organizations"
+      },
+      {
+        "type": "heading",
+        "text": "Organization"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Admin",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      },
+      {
+        "type": "badge/status",
+        "text": "Active",
+        "class": "badge badge-success fs-7 fw-semibold"
+      }
+    ],
+    "table_columns": [
+      "Organization Name",
+      "Organization Description",
+      "Creation Time",
+      "Status",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 10 records",
+    "notes": [
+      "Direct impersonation of Organization Admins is restricted by backend role security policy (cannot impersonate another Admin)."
+    ],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Customer Dashboard Home",
+    "url": "https://www.cfsmartems.com/Dashboard/Dashboard",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0048_user_customer_dashboard_home.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "32",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Download Data",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/Dashboard/Index"
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nDashboard\nDetail\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "heading",
+        "text": "Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Total Power Consumption\n1h\n24h\n7d\n30d\n14.89kWh"
+      },
+      {
+        "type": "heading",
+        "text": "Total Export Power\n1h\n24h\n7d\n30d\n0.00kWh"
+      },
+      {
+        "type": "heading",
+        "text": "Voltage Imbalance (%)\n1h\n24h\n7d\n30d\n27.20"
+      },
+      {
+        "type": "heading",
+        "text": "Current Imbalance\n1h\n24h\n7d\n30d\n53.43"
+      },
+      {
+        "type": "heading",
+        "text": "Real Time Power Factor (Avg & Trend)\n1h\n24h\n7d\n30d\n0.90"
+      },
+      {
+        "type": "heading",
+        "text": "Predicted Consumption\n1h\n24h\n7d\n30d\n16.38"
+      },
+      {
+        "type": "heading",
+        "text": "Anomalies Detected (Count & Type)\n1h\n24h\n7d\n30d\n42\nTotal Anomalies Detected\n39\nOvervoltage (Voltage)\n2\nLow Power Factor (Power Factor)\n1 / 2"
+      },
+      {
+        "type": "heading",
+        "text": "THD-V\n1h\n24h\n7d\n30d\n0.00%"
+      },
+      {
+        "type": "heading",
+        "text": "THD-I\n1h\n24h\n7d\n30d\n0.00%"
+      },
+      {
+        "type": "heading",
+        "text": "Frequency\n1h\n24h\n7d\n30d\n0.00Hz"
+      },
+      {
+        "type": "heading",
+        "text": "No Additional Metrics"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [
+      {
+        "text": "maryamishtiaq185@gmail.com",
+        "href": "#"
+      },
+      {
+        "text": "Back to Admin",
+        "href": "/Account/BackToAdmin"
+      },
+      {
+        "text": "My\n                                        Profile",
+        "href": "/Account/Profile"
+      },
+      {
+        "text": "Change Password",
+        "href": "/Account/ChangePassword"
+      },
+      {
+        "text": "Sign Out",
+        "href": "/Account/Logout"
+      },
+      {
+        "text": "Dashboard",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "text": "Dashboard",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "text": "Detail",
+        "href": "/Dashboard/Index"
+      },
+      {
+        "text": "Subscription",
+        "href": "/home/subscription"
+      },
+      {
+        "text": "Products",
+        "href": "/home/productcatalog"
+      },
+      {
+        "text": "Schedule",
+        "href": "/schedule/index"
+      },
+      {
+        "text": "Manage Slab Rates",
+        "href": "/SlabRates/index"
+      },
+      {
+        "text": "Manage Interval History",
+        "href": "/IntervalHistory/index"
+      },
+      {
+        "text": "Alarm Template",
+        "href": "/AlarmTemplates/index"
+      },
+      {
+        "text": "Notification",
+        "href": "/Notification/index"
+      },
+      {
+        "text": "AI Analytics",
+        "href": "/DeviceForecastReadings/index"
+      },
+      {
+        "text": "AI Analytics",
+        "href": "/DeviceForecastReadings/index"
+      },
+      {
+        "text": "Voltage Imbalance",
+        "href": "/Dashboard/Voltage"
+      },
+      {
+        "text": "Current Imbalance",
+        "href": "/Dashboard/Current"
+      },
+      {
+        "text": "Power Factor",
+        "href": "/Dashboard/PowerFactor"
+      },
+      {
+        "text": "Energy Consumption",
+        "href": "/Dashboard/EnergyConsumption"
+      },
+      {
+        "text": "Anomalies",
+        "href": "/Dashboard/Anomalies"
+      }
+    ],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "My\n                                        Profile",
+    "url": "https://www.cfsmartems.com/Account/Profile",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0049_user_my_________________________________________profile.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "33",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Update",
+        "class": "btn btn-primary savebutton",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "card/widget",
+        "text": "Full Name\nEmail\nPhone Number"
+      },
+      {
+        "type": "heading",
+        "text": "Edit Profile"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "FullName",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "Email",
+        "type": "text",
+        "placeholder": ""
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "text",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Change Password",
+    "url": "https://www.cfsmartems.com/Account/ChangePassword",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0050_user_change_password.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "33",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "heading",
+        "text": "Change Password"
+      },
+      {
+        "type": "badge/status",
+        "text": "34",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger animate__animated animate__pulse"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "CurrentPassword",
+        "type": "password",
+        "placeholder": "Current Password"
+      },
+      {
+        "name": "NewPassword",
+        "type": "password",
+        "placeholder": "New Password"
+      },
+      {
+        "name": "ConfirmPassword",
+        "type": "password",
+        "placeholder": "Repeat Password"
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Detail",
+    "url": "https://www.cfsmartems.com/Dashboard/Index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0051_user_detail.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "34",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Download All",
+        "class": "btn btn-sm btn-primary fs-7 fw-bold",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Download Data",
+        "class": "btn btn-sm btn-primary fs-7 fw-bold",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Day",
+        "class": "tab-btn active",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Month",
+        "class": "tab-btn",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Year",
+        "class": "tab-btn",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Total",
+        "class": "tab-btn",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Close",
+        "class": "btn btn-secondary",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Save",
+        "class": "btn btn-primary",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nDashboard\nDetail\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "heading",
+        "text": "Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "VoltageA\n240.1 V"
+      },
+      {
+        "type": "heading",
+        "text": "VoltageB\n239 V"
+      },
+      {
+        "type": "heading",
+        "text": "VoltageC\n236.8 V"
+      },
+      {
+        "type": "heading",
+        "text": "Phase VoltageA\n413 V"
+      },
+      {
+        "type": "heading",
+        "text": "Phase VoltageB\n413 V"
+      },
+      {
+        "type": "heading",
+        "text": "Phase VoltageC\n413.9 V"
+      },
+      {
+        "type": "heading",
+        "text": "CurrentA\n16.09 A"
+      },
+      {
+        "type": "heading",
+        "text": "CurrentB\n27.23 A"
+      },
+      {
+        "type": "heading",
+        "text": "CurrentC\n46.2 A"
+      },
+      {
+        "type": "heading",
+        "text": "Active Power\n18.97 kW"
+      },
+      {
+        "type": "heading",
+        "text": "Reactive Power\n9.07 kVar"
+      },
+      {
+        "type": "heading",
+        "text": "Apparent Power\n21.32 kVA"
+      },
+      {
+        "type": "heading",
+        "text": "Power Consumption\n16032.2 kWh"
+      },
+      {
+        "type": "heading",
+        "text": "Export Power\n0.84 kWh"
+      },
+      {
+        "type": "heading",
+        "text": "Power Factor\n0.88"
+      },
+      {
+        "type": "heading",
+        "text": "Frequency\n49.54 Hz"
+      },
+      {
+        "type": "heading",
+        "text": "THDUa\n1.6 %"
+      },
+      {
+        "type": "heading",
+        "text": "THDUb\n1.6 %"
+      },
+      {
+        "type": "heading",
+        "text": "THDUc\n1.5 %"
+      },
+      {
+        "type": "heading",
+        "text": "THDIa\n4.8 %"
+      },
+      {
+        "type": "heading",
+        "text": "THDIb\n8.1 %"
+      },
+      {
+        "type": "heading",
+        "text": "THDIc\n17.6 %"
+      },
+      {
+        "type": "heading",
+        "text": "Total cost pertif\n0.00 PKR"
+      },
+      {
+        "type": "heading",
+        "text": "Set Interval"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Select date"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Select Start Date"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Select End Date"
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "",
+        "type": "number",
+        "placeholder": ""
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "",
+        "type": "number",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Subscription",
+    "url": "https://www.cfsmartems.com/home/subscription",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0052_user_subscription.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Submit",
+        "class": "btn btn-primary me-4",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "Subscription"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "Name",
+        "type": "text",
+        "placeholder": "Name"
+      },
+      {
+        "name": "Email",
+        "type": "text",
+        "placeholder": "Email"
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "text",
+        "placeholder": "Phone"
+      },
+      {
+        "name": "Description",
+        "type": "text",
+        "placeholder": "Description / Requirement"
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Products",
+    "url": "https://www.cfsmartems.com/home/productcatalog",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0053_user_products.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "heading",
+        "text": "Product Catalog"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Schedule",
+    "url": "https://www.cfsmartems.com/schedule/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0054_user_schedule.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "34",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Add Scheduled Task",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/schedule/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "card/widget",
+        "text": "Device \nAll locations\nDelicia Warehouse\nAll locations\nShow \n10\n25\n50\nAll\nSearch:\nSlave\tVariable\tAction\tScheduled Time\tRepeat Type\tStatus\tOperation\nNo data available in table\nShowing no records"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Schedule\nManage Scheduled\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Schedule"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Slave",
+      "Variable",
+      "Action",
+      "Scheduled Time",
+      "Repeat Type",
+      "Status",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All locations",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Manage Slab Rates",
+    "url": "https://www.cfsmartems.com/SlabRates/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0055_user_manage_slab_rates.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "34",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Add Slab Rate",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/SlabRates/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "card/widget",
+        "text": "Device \nAll locations\nDelicia Warehouse\nAll locations\nShow \n10\n25\n50\nAll\nSearch:\nSlave\tUnit From\tUnit To\tRate\tOn-Peak Rate\tOff-Peak Rate\tOperation\nNo data available in table\nShowing no records"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Slab Rates\nManage Slab Rates\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Slab Rates"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Slave",
+      "Unit From",
+      "Unit To",
+      "Rate",
+      "On-Peak Rate",
+      "Off-Peak Rate",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All locations",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Manage Interval History",
+    "url": "https://www.cfsmartems.com/IntervalHistory/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0056_user_manage_interval_history.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "34",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Add Interval",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/IntervalHistory/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "card/widget",
+        "text": "Device \nAll locations\nDelicia Warehouse\nAll locations\nShow \n10\n25\n50\nAll\nSearch:\nVariable Name\tSlave Name\tTotal Unit\tTariff\tStart Date\tEnd Date\tActions\nNo data available in table\nShowing no records"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Interval History\nManage Interval History\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Interval History"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Variable Name",
+      "Slave Name",
+      "Total Unit",
+      "Tariff",
+      "Start Date",
+      "End Date",
+      "Actions"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "All locations",
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing no records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Alarm Template",
+    "url": "https://www.cfsmartems.com/AlarmTemplates/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0057_user_alarm_template.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "34",
+        "class": "btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px position-relative",
+        "href": "/Notification/Index"
+      },
+      {
+        "type": "button",
+        "text": "Add Alarm Templates",
+        "class": "btn btn-sm btn-flex btn-primary fs-7 fw-bold",
+        "href": "/AlarmTemplates/AddEdit"
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "card/widget",
+        "text": "Show \n10\n25\n50\nAll\nSearch:\nTrigger Name\tOrganization\tTemplate Name\tFounder\tUpdate Time\tOperation\nsdf\tDelicia Warehouse\tDELICIA WAREHOUSE\tMiss Maryam\t2026-06-09 07:13:12\t\nShowing 1 to 1 of 1 records\n1"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Alarm Templates\nManage Alarm Templates\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Manage Alarm Templates"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Trigger Name",
+      "Organization",
+      "Template Name",
+      "Founder",
+      "Update Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 1 of 1 records",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Notification",
+    "url": "https://www.cfsmartems.com/Notification/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0058_user_notification.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Delete All",
+        "class": "btn btn-danger btn-sm ms-2",
+        "href": ""
+      },
+      {
+        "type": "card/widget",
+        "text": "Manage Dashboard\nSubscription\nProducts\nSchedule\nManage Slab Rates\nManage Interval History\nAlarm Template\nNotification\nManage AI Analytics"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm Notifications\nManage Alarm Notifications\nList"
+      },
+      {
+        "type": "heading",
+        "text": "Alarm Notifications"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Trigger Name",
+      "Device Name",
+      "Description",
+      "Time",
+      "Operation"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "DataTables_Table_0_length",
+        "type": "select",
+        "options": [
+          "10",
+          "25",
+          "50",
+          "All"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Showing 1 to 10 of 91 entries",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "AI Analytics",
+    "url": "https://www.cfsmartems.com/DeviceForecastReadings/index",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0059_user_ai_analytics.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "Next 10 Minutes",
+        "class": "time-range-tab active",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Next 5 Hours",
+        "class": "time-range-tab",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Next 7 Days",
+        "class": "time-range-tab",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Custom",
+        "class": "time-range-tab",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Cancel",
+        "class": "cancelBtn btn btn-sm btn-default",
+        "href": ""
+      },
+      {
+        "type": "button",
+        "text": "Apply",
+        "class": "applyBtn btn btn-sm btn-primary",
+        "href": ""
+      },
+      {
+        "type": "heading",
+        "text": "AI Analytics\nAI Analytics\nAI Analytics Readings"
+      },
+      {
+        "type": "heading",
+        "text": "AI Analytics"
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Variable Name",
+      "Display Value",
+      "Received Time"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "Pick date range",
+        "type": "text",
+        "placeholder": "Pick date range"
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Please Select",
+          "Main Wapda"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "VoltageA (40097)",
+          "VoltageB (40099)",
+          "VoltageC (40101)",
+          "Phase VoltageA (40103)",
+          "Phase VoltageB (40105)",
+          "Phase VoltageC (40107)",
+          "CurrentA (40109)",
+          "CurrentB (40111)",
+          "CurrentC (40113)",
+          "Active Power (40121)",
+          "Reactive Power (40129)",
+          "Apparent Power (40137)",
+          "Power Consumption (40139)",
+          "Export Power (40141)",
+          "Power Factor (40084)",
+          "Frequency (40085)",
+          "THDUa (40327)",
+          "THDUb (40328)",
+          "THDUc (40329)",
+          "THDIa (40330)"
+        ]
+      },
+      {
+        "name": "",
+        "type": "search",
+        "placeholder": ""
+      }
+    ],
+    "filters": [
+      [
+        "Delicia Warehouse"
+      ],
+      [
+        "Please Select",
+        "Main Wapda"
+      ],
+      [
+        "VoltageA (40097)",
+        "VoltageB (40099)",
+        "VoltageC (40101)",
+        "Phase VoltageA (40103)",
+        "Phase VoltageB (40105)",
+        "Phase VoltageC (40107)",
+        "CurrentA (40109)",
+        "CurrentB (40111)",
+        "CurrentC (40113)",
+        "Active Power (40121)",
+        "Reactive Power (40129)",
+        "Apparent Power (40137)",
+        "Power Consumption (40139)",
+        "Export Power (40141)",
+        "Power Factor (40084)",
+        "Frequency (40085)",
+        "THDUa (40327)",
+        "THDUb (40328)",
+        "THDUc (40329)",
+        "THDIa (40330)",
+        "THDIb (40331)",
+        "THDIc (40332)"
+      ]
+    ],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Voltage Imbalance",
+    "url": "https://www.cfsmartems.com/Dashboard/Voltage",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0060_user_voltage_imbalance.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "← Back",
+        "class": "btn btn-sm btn-light-primary",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Voltage Imbalance Details\nDashboard\nVoltage"
+      },
+      {
+        "type": "heading",
+        "text": "Voltage Imbalance Details"
+      },
+      {
+        "type": "heading",
+        "text": "Loading Data..."
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Time",
+      "Type"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Previous",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Current Imbalance",
+    "url": "https://www.cfsmartems.com/Dashboard/Current",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0061_user_current_imbalance.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "← Back",
+        "class": "btn btn-sm btn-light-primary",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Current Imbalance Details\nDashboard\nCurrent"
+      },
+      {
+        "type": "heading",
+        "text": "Current Imbalance Details"
+      },
+      {
+        "type": "heading",
+        "text": "Loading Data..."
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Time",
+      "Type"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Previous",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Power Factor",
+    "url": "https://www.cfsmartems.com/Dashboard/PowerFactor",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0062_user_power_factor.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "← Back",
+        "class": "btn btn-sm btn-light-primary",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Power Factor Details\nDashboard\nPower Factor"
+      },
+      {
+        "type": "heading",
+        "text": "Power Factor Details"
+      },
+      {
+        "type": "heading",
+        "text": "Loading Data..."
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Time",
+      "Type"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "Previous",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Energy Consumption",
+    "url": "https://www.cfsmartems.com/Dashboard/EnergyConsumption",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0063_user_energy_consumption.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "← Back",
+        "class": "btn btn-sm btn-light-primary",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Total Power Consumption\nDashboard\nEnergy Consumption"
+      },
+      {
+        "type": "heading",
+        "text": "Total Power Consumption"
+      },
+      {
+        "type": "heading",
+        "text": "Loading Data..."
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [
+      "Time",
+      "Type",
+      "Consumption"
+    ],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Power Consumption (kWh)",
+          "Export Power (kWh)"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  },
+  {
+    "dashboard": "User",
+    "section": "Anomalies",
+    "url": "https://www.cfsmartems.com/Dashboard/Anomalies",
+    "screenshot": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ems_audit_output\\screenshots\\0064_user_anomalies.png",
+    "tabs": [],
+    "elements": [
+      {
+        "type": "button",
+        "text": "← Back",
+        "class": "btn btn-sm btn-light-primary",
+        "href": "/Dashboard/Dashboard"
+      },
+      {
+        "type": "heading",
+        "text": "Anomalies Details\nDashboard\nAnomalies"
+      },
+      {
+        "type": "heading",
+        "text": "Anomalies Details"
+      },
+      {
+        "type": "heading",
+        "text": "Loading Data..."
+      },
+      {
+        "type": "badge/status",
+        "text": "0",
+        "class": "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      },
+      {
+        "type": "badge/status",
+        "text": "Customer",
+        "class": "badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"
+      }
+    ],
+    "table_columns": [],
+    "row_actions": [],
+    "forms": [
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Delicia Warehouse"
+        ]
+      },
+      {
+        "name": "",
+        "type": "select",
+        "options": [
+          "Main Wapda"
+        ]
+      }
+    ],
+    "filters": [],
+    "modals": [],
+    "pagination": "",
+    "notes": [],
+    "sidebar_items": [],
+    "page_title": "EMS"
+  }
+]

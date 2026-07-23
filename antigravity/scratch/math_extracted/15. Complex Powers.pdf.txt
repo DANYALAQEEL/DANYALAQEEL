@@ -1,0 +1,142 @@
+
+
+========================================
+LECTURE: 15. Complex Powers.pdf
+========================================
+
+Complex 
+powers
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 13
+• Sections: 13.7
+Advanced
+Engineering
+Mathematics (10th
+Edition) by Ervin
+Kreyszig
+• Chapter: 4
+• Section: 4.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+In Section 2.4 we examined special power functions of the form  𝑧𝑛
+and 𝑧1/𝑛for 𝑛an integer and 𝑛≥2. 
+In this section we analyze the problem of raising a complex number 
+to an arbitrary real or complex power. 
+For simple integer powers this process is easily understood in terms 
+of complex multiplication. For example, 
+1 + 𝑖3 = 1 + 𝑖
+1 + 𝑖
+1 + 𝑖= −2 + 2𝑖.
+However, there is no similar description for a complex power such as 
+1 + 𝑖𝑖. In order to define such expressions, we will use the 
+complex exponential and logarithmic functions.
+Introduction
+
+Complex Power
+If 𝛼is a complex number and 𝑧≠0, then the complex power 𝑧𝛼is
+defined to be:
+𝑧𝛼= 𝑒𝛼ln 𝑧.
+(1)
+In general, (1) gives an infinite set of values because the complex 
+logarithmic function ln 𝑧is a multiple-valued function. Thus, 𝑧𝛼= 𝑒𝛼ln 𝑧
+defines a multiple-valued function. However, when 𝛼= 𝑛is an integer, 
+the expression in (1) is single-valued in agreement with fact that 𝑧𝑛
+(special power functions) is a function when 𝑛is an integer.
+
+Example 1
+
+Example 1
+
+Algebraic Properties of 𝒛𝜶
+
+Principal Value of a Complex Power
+If 𝛼is a complex number and 𝑧≠0, then the function 
+defined by:
+𝑧𝛼= 𝑒𝛼Ln 𝑧,
+(2)
+is called the principal value of the complex power 𝑧𝛼.
+
+Example 2 
+
+Branches of 𝒛𝜶
+In general, the principal value of a complex power 𝑧𝛼defined by (2) is not a 
+continuous function on the complex plane because the function Ln 𝑧is not 
+continuous on the complex plane. However, since the function 𝑒𝛼𝑧is continuous 
+on the entire complex plane, and since the function Ln 𝑧is continuous on the 
+domain |𝑧| > 0, −𝜋< 𝜃< 𝜋, it follows that 𝑧𝛼is continuous on the domain 
+|𝑧| > 0, −𝜋< 𝜃< 𝜋.
+For the multiple-valued function 𝐹(𝑧) = 𝑧𝛼= 𝑒𝛼ln 𝑧
+Principal Branch:   𝑓1 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋< 𝜃< 𝜋,
+(3)
+Branch Cut:  
+non-positive real axis
+Branch Point:
+𝑧= 0
+
+Branches of 𝒛𝜶
+Other branches of the multiple-valued function 𝐹(𝑧) = 𝑧𝛼can be defined 
+using the formula in (3) with a different interval of length 2𝜋defining 𝜃. 
+For example, 
+𝑓2 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋
+4 < 𝜃< 7𝜋
+4 ,
+defines a branch of 𝐹(𝑧) whose branch cut is the ray 𝜃= −𝜋/4 together 
+with the branch point 𝑧= 0.
+
+Analyticity
+The function defined by:
+𝑓1 𝑧= 𝑒𝛼log𝑒𝑟+𝑖𝜃, −𝜋< 𝜃< 𝜋,
+(4)
+is the principal branch of the multiple-valued function 𝐹(𝑧) = 𝑧𝛼= 𝑒𝛼ln 𝑧. The 
+branch 𝑓1 defined by (4) agrees with the principal value of 𝑧𝛼defined by (2) on 
+the domain |𝑧| > 0, −𝜋< 𝜃< 𝜋. Consequently, the derivative of 𝑓1(𝑧) can be 
+found using the chain rule:
+𝑓1
+′ 𝑧= 𝑑
+𝑑𝑧𝑒𝛼Ln 𝑧= 𝑒𝛼Ln 𝑧𝑑
+𝑑𝑧𝛼Ln 𝑧= 𝑒𝛼Ln 𝑧α𝑧−1.
+Using the principal value 𝑧𝛼= 𝑒𝛼Ln 𝑧, the above equation simplifies to 
+𝑓1
+′ 𝑧= α𝑧α−1.
+Thus, on the domain |𝑧| > 0, −𝜋< θ < 𝜋, the principal value of the complex 
+power 𝑧𝛼is differentiable and
+𝑑
+𝑑𝑧𝑧𝛼= α𝑧𝛼−1.
+
+Example 3
+Find the derivative of the principal value 𝑧𝑖at the point 
+𝑧= 1 + 𝑖.
+
+Remarks
+There are some properties of real powers that are not satisfied by complex 
+powers. One example of this is that for complex powers, 𝑧𝛼1 𝛼2 ≠𝑧𝛼1𝛼2
+unless 𝛼2 is an integer. 
+As with complex logarithms, some properties that do hold for complex powers 
+do not hold for principal values of complex powers. For example, we can prove 
+that 𝑧1𝑧2 𝛼= 𝑧1
+𝛼𝑧2
+𝛼for any nonzero complex numbers 𝑧1 and 𝑧2. However, 
+this property does not hold for principal values of these complex powers. In 
+particular, if 𝑧1 = −1, 𝑧2 = 𝑖, and 𝛼= 𝑖, then we have that the principal 
+value of −1 · 𝑖𝑖is 𝑒𝑖𝐿𝑛−𝑖= 𝑒
+𝜋
+2. On the other hand, the product of the 
+principal values of −1 𝑖and 𝑖𝑖is 𝑒𝑖𝐿𝑛(−1)𝑒𝑖𝐿𝑛𝑖= 𝑒−𝜋𝑒−𝜋/2 = 𝑒−3𝜋/2. 
+
+• Chapter: 4
+• Exercise: 4.2
+• Questions: 1-18
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

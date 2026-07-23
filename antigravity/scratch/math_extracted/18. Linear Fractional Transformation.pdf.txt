@@ -1,0 +1,205 @@
+
+
+========================================
+LECTURE: 18. Linear Fractional Transformation.pdf
+========================================
+
+Linear 
+Fractional 
+Transformation
+Dr. Hina Dutt
+hina.dutt@seecs.edu.pk
+SEECS-NUST
+
+• Chapter: 7
+• Section: 7.2
+A First Course in
+Complex Analysis
+with Applications by
+Dennis G. Zill and
+Patrick D. Shanahan.
+
+The first step in the modeling process of solving boundary value problems is to 
+identify the correct conformal mapping that is related to the “geometry” of the 
+boundary value problem.
+The task is to get a good grasp of which conformal mappings map certain regions 
+conformally onto each other, such as, say mapping a disk onto a half-plane. 
+In many applications that involve boundary-value problems associated with 
+Laplace’s equation, it is necessary to find a conformal mapping that maps a disk 
+onto the half-plane 𝑣≥0.
+Such a mapping would have to map the circular boundary of the disk to the 
+boundary line of the half-plane. An important class of elementary conformal 
+mappings that map circles to lines (and vice versa) are the linear fractional 
+transformations.
+Introduction
+
+Linear Fractional Transformations
+If 𝑎, 𝑏, 𝑐, and 𝑑are complex constants with condition that: 𝑎𝑑−𝑏𝑐≠0, 
+then the complex function defined by:
+𝑤= 𝑇𝑧= 𝑎𝑧+ 𝑏
+𝑐𝑧+ 𝑑,
+(1)
+is called a linear fractional transformation. 
+Linear fractional transformations are also called M ሷ𝐨bius transformations or 
+bilinear transformations.
+The domain of a linear fractional transformation 𝑇(𝑧) given by (1) is the set 
+of all complex 𝑧such that 𝑧≠−𝑑/𝑐. 
+
+The Linear fractional transformation is linear in both 𝑧and 𝑤and is analytic
+everywhere except at 𝑧= −𝑑/𝑐. Since,
+𝑇′ 𝑧=
+𝑎𝑑−𝑏𝑐
+𝑐𝑧+ 𝑑2 ,
+it follows from theorem and the requirement that 𝑎𝑑−𝑏𝑐≠0 that linear
+fractional transformations are conformal on their domains.
+(2)
+Analyticity of Linear Fractional Transformations
+
+The linear fractional transformation 𝑇(𝑧) can be extended to the
+entire extended complex plane: ℂ∗= ℂ∪{∞} as:
+Here, 𝑧= −𝑑/𝑐is the pole of 𝑇(𝑧) and ∞is called the ideal point.
+(3)
+Linear Fractional Transformation on Extended 
+Complex Plane
+
+Every linear fractional transformation except 𝑓𝑧= 𝑧has one or 
+two fixed points.
+The linear fractional transformation sends circles and lines 
+to circles or lines.
+Linear fractional transformations preserve symmetry. 
+A linear fractional transformation is a composition of 
+translations, rotations, magnifications, and inversions. 
+Properties of Linear Fractional Transformation
+
+Special Cases of Linear Fractional Transformation
+Special cases of the transformation 𝑤= 𝑇𝑧=
+𝑎𝑧+ 𝑏
+𝑐𝑧+ 𝑑, are:
+𝑤= 𝑧+ 𝑏, 𝑏≠0.
+(Translation)
+𝑤= 𝑎𝑧, |𝑎| = 1.
+(Rotation)
+𝑤= 𝑎𝑧, 𝑎> 0.
+(Magnifications)
+𝑤= 𝑎𝑧+ 𝑏, 𝑎≠0.
+(Linear Mapping)
+𝑤=
+1
+𝑧.
+(Reciprocal Mapping)
+
+If 𝐶is a circle in the 𝑧−plane and if 𝑇is a linear fractional transformation 
+given by:
+then the image of 𝐶under 𝑇is either a circle or a line in the extended 
+𝑤−plane. The image is a line if and only if 𝑐≠0 and the pole
+𝑧= −𝑑/𝑐is on the circle 𝐶.
+(3)
+Theorem
+
+Example 1
+Find the image of the unit circle |𝑧| = 1 under the linear fractional 
+transformation
+𝑇𝑧= 𝑧+ 2
+𝑧−1 .
+What is the image of the interior |𝑧| < 1 of this circle?
+
+Example 1
+Solution:
+The pole of 𝑇is 𝑧= 1 and this point is on the unit circle |𝑧| = 1. Thus, we
+conclude that the image of the unit circle is a line. Since the image is a line, it is
+determined by any two points. Since, 𝑇(−1) = −1/2 and 𝑇(𝑖) = −(1 + 3𝑖)/2,
+we see that the image is the line 𝑢= −1/2. In order to determine the image of
+the interior |𝑧| < 1 of this circle, we note that a linear fractional transformation
+is a rational function, and so it is continuous on its domain. As a consequence,
+the image of the interior of the unit circle is either the half-plane 𝑢< −1/2 or
+the half-plane 𝑢> −1/2. Using 𝑧= 0 as a test point, we find that 𝑇(0) =
+−2, which is to the left of the line 𝑢= −1/2. Thus, we conclude that the image
+of the interior |𝑧| < 1 of this circle is the half-plane 𝑢< −1/2.
+
+Example 1
+
+Example 2
+Show that the mapping
+𝑇𝑧= 𝑖(1 −𝑧)
+1 + 𝑧
+maps the unit disk |𝑧| < 1 onto the upper half plane Im(𝑤) > 0.
+
+Cross-Ratios and Linear Fractional 
+Transformations
+In applications we often need to find a conformal mapping from a
+domain 𝐷that is bounded by circles onto a domain 𝐷′ that is bounded
+by lines. Linear fractional transformations are particularly well-suited for
+such applications. However, in order to use them, we must determine a
+general
+method
+for
+constructing
+the
+desired
+linear
+fractional
+transformation. This can be achieved by means of a cross ratio. The cross
+ratio is invariant under a linear fractional transformation. To determine a
+particular linear fractional transformation, specify the map of three
+points
+which
+preserve
+orientation.
+A
+particular
+linear
+fractional
+transformation is then uniquely determined.
+
+Theorem
+Note: If one of these points is the point ∞(the ideal point), the quotient of the 
+two differences containing this point must be replaced by 1.
+
+Example 3
+Construct a linear fractional transformation that maps the points 1, 𝑖, and −1
+on the unit circle |𝑧| = 1 onto the points −1, 0, 1 on the real axis. Determine
+the image of the interior |𝑧| < 1 under this transformation.
+
+Example 3
+Solution:
+Identifying 𝑧1 = 1, 𝑧2 = 𝑖, 𝑧3 = −1, 𝑤1 = −1, 𝑤2 = 0, and 𝑤3 = 1, in formula for 
+cross ratio, we see that the desired mapping 𝑤= 𝑇(𝑧) must satisfy:
+After solving for 𝑤and simplifying we obtain:
+𝑤= 𝑇𝑧= 𝑧−𝑖
+𝑖𝑧−1 .
+Using the test point 𝑧= 0, we obtain 𝑇(0) = 𝑖. Therefore, the image of the interior 
+|𝑧| < 1 is the upper half-plane 𝑣> 0.
+
+Example 4
+Find the linear fractional transformation that maps 𝑧1 = −1, 𝑧2 = 𝑖, 𝑧3 = 1
+onto 𝑤1 = 0, 𝑤2 = 𝑖, 𝑤3 = ∞, respectively, such that the unit disk is mapped 
+onto the right half-plane. 
+
+Example 4
+Solution:
+Using the given points in the formula for cross ratio, we obtain:
+𝑧+ 1
+𝑧−1
+𝑖−1
+𝑖+ 1 = 𝑤−0
+𝑤−∞
+𝑖−∞
+𝑖−0 .
+After replacing the ratio 
+𝑖−∞
+𝑤−∞by 1 and simplifying we obtain:
+𝑤= 𝑇𝑧= 𝑧+ 1
+1 −𝑧.
+Using the test point 𝑧= 0, we obtain 𝑇(0) = 1. Therefore, the unit disk is mapped 
+onto the right half-plane 𝑢≥0.
+
+• Chapter: 7
+• Exercise: 7.2
+• Questions: 1-16, 21-26
+A First Course in
+Complex Analysis with
+Applications by Dennis
+G. Zill and Patrick D.
+Shanahan.
+Practice Questions
+

@@ -1,0 +1,1 @@
+{"name":"create_project","description":"Creates a new Stitch project. A project is a container for UI designs and frontend code.\n","parameters":{"description":"Request message for CreateProject.","properties":{"title":{"description":"Optional. The title of the project.","type":"string"}},"type":"object"}}
