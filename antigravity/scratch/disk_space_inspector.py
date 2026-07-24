@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 ================================================================================
-🌐 UNIVERSAL MULTI-DRIVE READ-ONLY DISK & SYSTEM SPACE INSPECTOR v2.0 (PERFECT)
+UNIVERSAL MULTI-DRIVE READ-ONLY DISK & SYSTEM SPACE INSPECTOR v3.0
 ================================================================================
-Author: Antigravity AI Engine (Designed for DANYALAQEEL)
+Author: Open Source Community (Refined via Claude Code CLI)
 License: MIT (Free to Share, Modify & Run Anywhere)
 Safety: 100% Strictly Read-Only (Uses Standard Library `os`, `shutil`, `sys`, `time`)
 Dependencies: ZERO External Dependencies! Works out-of-the-box on Python 3.7+
@@ -21,12 +21,26 @@ import argparse
 import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ------------------------------------------------------------------------------
-# HELPER FUNCTIONS
-# ------------------------------------------------------------------------------
+VERSION = "3.0.0"
+
+# Reconfigure stdout for UTF-8 encoding safely where supported
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
+def safe_print(*args, **kwargs):
+    """Safely print text handling terminal encoding errors gracefully."""
+    try:
+        print(*args, **kwargs)
+    except UnicodeEncodeError:
+        text = " ".join(str(a) for a in args)
+        encoded_text = text.encode(sys.stdout.encoding or 'ascii', errors='replace').decode(sys.stdout.encoding or 'ascii')
+        print(encoded_text, **kwargs)
 
 def format_size(bytes_val):
-    """Format bytes into human-readable string (KB, MB, GB, TB)."""
+    """Format bytes into human-readable string (B, KB, MB, GB, TB)."""
     if bytes_val >= 1024**4:
         return f"{bytes_val / (1024**4):.2f} TB"
     elif bytes_val >= 1024**3:
@@ -63,27 +77,31 @@ def classify_file(path):
     """Categorize files based on path patterns for intelligent insights."""
     p_lower = path.lower()
     
-    # 🐳 Docker & WSL Disks
-    if ".vhdx" in p_lower or "docker" in p_lower or "wsl" in p_lower or "hyper-v" in p_lower:
-        return "Docker & WSL Virtual Disks"
+    # 🐳 Docker & Virtual Machines
+    if ".vhdx" in p_lower or "docker" in p_lower or "wsl" in p_lower or "hyper-v" in p_lower or ".qcow2" in p_lower or ".vmdk" in p_lower:
+        return "Docker & Virtual Machines"
     
     # 🤖 AI Model Weights & LLM Caches
-    elif "huggingface" in p_lower or "torch" in p_lower or "transformers" in p_lower or "ollama" in p_lower or "lm-studio" in p_lower:
+    elif "huggingface" in p_lower or "torch" in p_lower or "transformers" in p_lower or "ollama" in p_lower or "lm-studio" in p_lower or p_lower.endswith(('.gguf', '.safetensors', '.bin', '.onnx')):
         return "AI Models & LLM Weights"
     
-    # 📦 Package Manager Stores & Caches
-    elif ".bun" in p_lower or "npm-cache" in p_lower or ".pnpm-store" in p_lower or "pip\\cache" in p_lower or "pip/cache" in p_lower or ".cargo" in p_lower or ".m2" in p_lower or ".gradle" in p_lower:
-        return "Developer Package Caches (Bun/npm/pip/cargo)"
+    # 📦 Developer Package Caches & Environment Stores
+    elif ".bun" in p_lower or "npm-cache" in p_lower or ".pnpm-store" in p_lower or "yarn/cache" in p_lower or "pip/cache" in p_lower or "pip\\cache" in p_lower or ".cargo" in p_lower or ".m2" in p_lower or ".gradle" in p_lower or ".nuget" in p_lower:
+        return "Developer Package Caches (Bun/npm/pip/cargo/m2)"
+    elif "node_modules" in p_lower or ".venv" in p_lower or "anaconda" in p_lower or "miniconda" in p_lower:
+        return "Dependencies & Virtual Envs"
     
-    # 🛠️ IDE Backups & Updaters
+    # 🛠️ IDE Backups & Tool Data
     elif "pycharm" in p_lower and "backup" in p_lower:
         return "PyCharm IDE Update Backups"
     elif "updater" in p_lower or "autoupdate" in p_lower:
         return "Application Updater Caches"
-    elif ".vscode" in p_lower or "code\\user" in p_lower:
+    elif ".vscode" in p_lower or "code/user" in p_lower or "code\\user" in p_lower:
         return "VS Code & Extensions Data"
-    elif ".gemini" in p_lower or "antigravity" in p_lower:
-        return "Antigravity AI Engine Data"
+    
+    # 🌐 Browser Caches & Web Data
+    elif "chrome/user data" in p_lower or "edge/user data" in p_lower or "firefox/profiles" in p_lower or "chrome\\user data" in p_lower or "edge\\user data" in p_lower:
+        return "Web Browser User Data & Caches"
     
     # ⚡ System Temp & User Folders
     elif "appdata\\local\\temp" in p_lower or "windows\\temp" in p_lower or "/tmp" in p_lower:
@@ -101,23 +119,36 @@ def classify_file(path):
     else:
         return "Other Files & Directories"
 
+# Known Windows Junction Names to skip
+JUNCTION_SKIPS = frozenset([
+    "application data", "history", "local settings", "my documents", 
+    "nethood", "printhood", "recent", "sendto", "start menu", "templates"
+])
+
 def scan_directory_tree(target_dir, min_size_bytes):
-    """Recursively scan a directory in 100% read-only mode."""
+    """Recursively scan a directory tree using os.lstat (strictly read-only)."""
     heavy_files = []
     category_totals = {}
     total_bytes = 0
     scanned_files_count = 0
+    visited_inodes = set()
 
     try:
-        for root, dirs, files in os.walk(target_dir):
-            # Avoid Windows circular junction loops
-            if "Application Data" in root and "AppData" in root:
-                continue
+        for root, dirs, files in os.walk(target_dir, followlinks=False):
+            # Guard against circular Windows junctions
+            dirs[:] = [d for d in dirs if d.lower() not in JUNCTION_SKIPS]
 
             for f in files:
                 full_path = os.path.join(root, f)
                 try:
-                    st = os.stat(full_path)
+                    st = os.lstat(full_path)
+                    
+                    # Prevent double-counting hardlinks/inodes
+                    inode_key = (st.st_dev, st.st_ino)
+                    if inode_key in visited_inodes:
+                        continue
+                    visited_inodes.add(inode_key)
+
                     sz = st.st_size
                     total_bytes += sz
                     scanned_files_count += 1
@@ -136,29 +167,29 @@ def scan_directory_tree(target_dir, min_size_bytes):
     return total_bytes, scanned_files_count, category_totals, heavy_files
 
 # ------------------------------------------------------------------------------
-# MAIN EXECUTION ROUTINE
+# MAIN SCANNER ROUTINE
 # ------------------------------------------------------------------------------
 
-def run_inspector(min_size_mb=100, top_count=20, export_json=False):
+def run_inspector(min_size_mb=100, top_count=20, export_json=False, output_dir=None):
     start_time = time.time()
     min_size_bytes = min_size_mb * 1024 * 1024
 
-    print("=" * 80)
-    print("🌐 UNIVERSAL READ-ONLY DISK & SYSTEM SPACE INSPECTOR v2.0")
-    print("   Safe • Multi-Drive • Multi-Threaded • Zero Dependencies")
-    print("=" * 80)
+    safe_print("=" * 80)
+    safe_print(f"UNIVERSAL READ-ONLY DISK & SYSTEM SPACE INSPECTOR v{VERSION}")
+    safe_print("Safe • Multi-Drive • Multi-Threaded • Zero Dependencies")
+    safe_print("=" * 80)
 
     # 1. Profile Resolution
     user_home = os.path.expanduser("~")
     user_name = os.path.basename(user_home)
-    print(f"\n[INFO] Active User Profile : {user_home} ({user_name})")
+    safe_print(f"\n[INFO] Active User Profile : {user_home} ({user_name})")
 
     # 2. Multi-Drive Detection
     drives = detect_all_drives()
-    print(f"[INFO] Connected Drives    : {len(drives)} Drive(s) Found ({', '.join(drives)})\n")
+    safe_print(f"[INFO] Connected Drives    : {len(drives)} Drive(s) Found ({', '.join(drives)})\n")
 
-    print("--- DRIVE STORAGE OVERVIEW ---")
-    print("-" * 80)
+    safe_print("--- DRIVE STORAGE OVERVIEW ---")
+    safe_print("-" * 80)
     drive_stats = []
     for drv in drives:
         try:
@@ -167,17 +198,20 @@ def run_inspector(min_size_mb=100, top_count=20, export_json=False):
             pct_free = (free_disk / total_disk * 100) if total_disk > 0 else 0
             drive_stats.append({
                 "drive": drv,
-                "total": format_size(total_disk),
-                "used": format_size(used_disk),
-                "free": format_size(free_disk),
+                "total_bytes": total_disk,
+                "used_bytes": used_disk,
+                "free_bytes": free_disk,
+                "total_human": format_size(total_disk),
+                "used_human": format_size(used_disk),
+                "free_human": format_size(free_disk),
                 "used_pct": f"{pct_used:.1f}%",
                 "free_pct": f"{pct_free:.1f}%"
             })
-            print(f"  * Drive [{drv:<6}] Total: {format_size(total_disk):<10} | Used: {format_size(used_disk):<10} ({pct_used:>5.1f}%) | Free: {format_size(free_disk):<10} ({pct_free:>5.1f}%)")
+            safe_print(f"  * Drive [{drv:<6}] Total: {format_size(total_disk):<10} | Used: {format_size(used_disk):<10} ({pct_used:>5.1f}%) | Free: {format_size(free_disk):<10} ({pct_free:>5.1f}%)")
         except Exception:
-            print(f"  * Drive [{drv:<6}] [Drive Connected - Access Restricted]")
+            safe_print(f"  * Drive [{drv:<6}] [Drive Connected - Access Restricted]")
 
-    # 3. Dynamic Targets Resolution
+    # 3. Target Resolution & Parallel Scanning
     scan_roots = [
         os.path.join(user_home, "AppData") if os.name == 'nt' else os.path.join(user_home, ".config"),
         os.path.join(user_home, "Downloads"),
@@ -185,10 +219,9 @@ def run_inspector(min_size_mb=100, top_count=20, export_json=False):
         os.path.join(user_home, "Documents"),
         os.path.join(user_home, ".bun"),
         os.path.join(user_home, ".cargo"),
-        os.path.join(user_home, ".gemini"),
+        os.path.join(user_home, ".cache"),
     ]
 
-    # Include secondary drive root folders if present
     for drv in drives:
         if drv != "C:\\" and drv != "/":
             scan_roots.append(drv)
@@ -197,13 +230,14 @@ def run_inspector(min_size_mb=100, top_count=20, export_json=False):
         scan_roots.extend([r"C:\ProgramData", r"C:\Windows\Temp"])
 
     valid_roots = [r for r in scan_roots if os.path.exists(r)]
-    print(f"\n[SCAN] Parallel scanning {len(valid_roots)} system & user directories...")
+    safe_print(f"\n[SCAN] Parallel scanning {len(valid_roots)} system & user directories...")
 
     all_heavy = []
     aggregated_cats = {}
     total_files_scanned = 0
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    max_workers = min(8, len(valid_roots)) if valid_roots else 1
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_map = {executor.submit(scan_directory_tree, root, min_size_bytes): root for root in valid_roots}
         for future in as_completed(future_map):
             try:
@@ -216,80 +250,92 @@ def run_inspector(min_size_mb=100, top_count=20, export_json=False):
                 pass
 
     elapsed = time.time() - start_time
-    print(f"[OK] Scanned {total_files_scanned:,} files across all drives in {elapsed:.2f} seconds.\n")
+    safe_print(f"[OK] Scanned {total_files_scanned:,} files across all drives in {elapsed:.2f} seconds.\n")
 
     # 4. Storage Distribution Breakdown
-    print("=" * 80)
-    print("CATEGORY BREAKDOWN & STORAGE DISTRIBUTION")
-    print("=" * 80)
+    safe_print("=" * 80)
+    safe_print("CATEGORY BREAKDOWN & STORAGE DISTRIBUTION")
+    safe_print("=" * 80)
     sorted_cats = sorted(aggregated_cats.items(), key=lambda x: x[1], reverse=True)
     for cat, sz in sorted_cats:
         if sz > 10 * 1024 * 1024:  # Show > 10MB
-            print(f"  * {cat:<45} : {format_size(sz)}")
+            safe_print(f"  * {cat:<45} : {format_size(sz)}")
 
-    # 5. Heavyweight Files (> min_size_mb)
+    # 5. Heavyweight Files List (> min_size_mb)
     unique_heavy = {p: (sz, cat, mtime) for sz, p, cat, mtime in all_heavy}
     sorted_heavy = sorted([(sz, p, cat, mtime) for p, (sz, cat, mtime) in unique_heavy.items()], key=lambda x: x[0], reverse=True)
 
-    print("\n" + "=" * 80)
-    print(f"TOP HEAVYWEIGHT FILES (> {min_size_mb} MB)")
-    print("=" * 80)
+    safe_print("\n" + "=" * 80)
+    safe_print(f"TOP HEAVYWEIGHT FILES (> {min_size_mb} MB)")
+    safe_print("=" * 80)
     if sorted_heavy:
         for idx, (sz, p, cat, mtime) in enumerate(sorted_heavy[:top_count], 1):
-            print(f" {idx:2d}. [{format_size(sz):>9}] [{mtime}] [{cat}]")
-            print(f"     Path: {p}")
+            safe_print(f" {idx:2d}. [{format_size(sz):>9}] [{mtime}] [{cat}]")
+            safe_print(f"     Path: {p}")
     else:
-        print(f"  No individual files over {min_size_mb} MB found.")
+        safe_print(f"  No individual files over {min_size_mb} MB found.")
 
     # 6. Recommended Safe Cleanup Opportunities
-    print("\n" + "=" * 80)
-    print("RECOMMENDED SAFE CLEANUP OPPORTUNITIES")
-    print("=" * 80)
+    safe_print("\n" + "=" * 80)
+    safe_print("RECOMMENDED SAFE CLEANUP OPPORTUNITIES")
+    safe_print("=" * 80)
+    
+    _CLEANUP_ADVICE = [
+        ("Developer Package Caches (Bun/npm/pip/cargo/m2)", "Clear Package Manager Caches (Bun/npm/pip/cargo/m2)"),
+        ("PyCharm IDE Update Backups", "Remove PyCharm IDE Update Backups"),
+        ("Application Updater Caches", "Delete Application Updater Binaries"),
+        ("System & User Temp Files", "Clear Temporary Files"),
+        ("Web Browser User Data & Caches", "Clear Browser Cache Directories")
+    ]
+
     reclaimable = 0
-    if "Developer Package Caches (Bun/npm/pip/cargo)" in aggregated_cats:
-        sz = aggregated_cats["Developer Package Caches (Bun/npm/pip/cargo)"]
-        reclaimable += sz
-        print(f"  * Clear Developer Package Caches (Bun/npm/pip/cargo) : {format_size(sz)}")
-    if "PyCharm IDE Update Backups" in aggregated_cats:
-        sz = aggregated_cats["PyCharm IDE Update Backups"]
-        reclaimable += sz
-        print(f"  * Remove PyCharm Update Backups                       : {format_size(sz)}")
-    if "Application Updater Caches" in aggregated_cats:
-        sz = aggregated_cats["Application Updater Caches"]
-        reclaimable += sz
-        print(f"  * Delete Application Updater Binaries                : {format_size(sz)}")
-    if "System & User Temp Files" in aggregated_cats:
-        sz = aggregated_cats["System & User Temp Files"]
-        reclaimable += sz
-        print(f"  * Clear Temporary Files                              : {format_size(sz)}")
+    for cat_key, advice_label in _CLEANUP_ADVICE:
+        if cat_key in aggregated_cats:
+            sz = aggregated_cats[cat_key]
+            reclaimable += sz
+            safe_print(f"  * {advice_label:<50} : {format_size(sz)}")
 
-    print(f"\n  [TARGET] Total Instantly Reclaimable Storage         : {format_size(reclaimable)}")
+    safe_print(f"\n  [TARGET] Total Instantly Reclaimable Storage         : {format_size(reclaimable)}")
 
-    print("\n" + "=" * 80)
-    print("SCAN SAFETY: 100% STRICTLY READ-ONLY (Zero System State Modifications)")
-    print("=" * 80)
+    safe_print("\n" + "=" * 80)
+    safe_print("SCAN SAFETY: 100% STRICTLY READ-ONLY (Zero System State Modifications)")
+    safe_print("=" * 80)
 
-    # 7. JSON Export (Optional)
+    # 7. Timestamped JSON Export Option
     if export_json:
+        out_target = output_dir if (output_dir and os.path.exists(output_dir)) else user_home
+        timestamp_str = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        json_filename = f"disk_scan_{timestamp_str}.json"
+        json_path = os.path.join(out_target, json_filename)
+        
         report_data = {
+            "version": VERSION,
             "timestamp": datetime.datetime.now().isoformat(),
             "user": user_name,
             "drives": drive_stats,
-            "categories": {cat: format_size(sz) for cat, sz in sorted_cats},
-            "top_files": [{"size": format_size(sz), "path": p, "category": cat, "modified": mtime} for sz, p, cat, mtime in sorted_heavy[:top_count]],
+            "categories": {cat: {"bytes": sz, "formatted": format_size(sz)} for cat, sz in sorted_cats},
+            "top_files": [{"size_bytes": sz, "size_formatted": format_size(sz), "path": p, "category": cat, "modified": mtime} for sz, p, cat, mtime in sorted_heavy[:top_count]],
             "reclaimable_bytes": reclaimable,
             "reclaimable_formatted": format_size(reclaimable)
         }
-        json_path = os.path.join(user_home, "disk_scan_report.json")
+        
         with open(json_path, "w", encoding="utf-8") as jf:
             json.dump(report_data, jf, indent=2)
-        print(f"\n[REPORT] Saved JSON inspection report to: {json_path}")
+        safe_print(f"\n[REPORT] Saved timestamped JSON inspection report to: {json_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Universal Multi-Drive Read-Only Disk & System Inspector")
     parser.add_argument("--min-size", type=int, default=100, help="Minimum file size threshold in MB (default: 100)")
     parser.add_argument("--top", type=int, default=20, help="Number of top heavyweight files to display (default: 20)")
-    parser.add_argument("--json", action="store_true", help="Export inspection report to disk_scan_report.json")
+    parser.add_argument("--json", action="store_true", help="Export inspection report to timestamped disk_scan_YYYYMMDD_HHMMSS.json")
+    parser.add_argument("--output-dir", type=str, default=None, help="Directory to save JSON report (defaults to user home)")
+    parser.add_argument("--version", action="version", version=f"%(prog)s {VERSION}")
+    
     args = parser.parse_args()
 
-    run_inspector(min_size_mb=args.min_size, top_count=args.top, export_json=args.json)
+    if args.min_size < 1:
+        parser.error("--min-size must be a positive integer greater than 0")
+    if args.top < 1:
+        parser.error("--top must be a positive integer greater than 0")
+
+    run_inspector(min_size_mb=args.min_size, top_count=args.top, export_json=args.json, output_dir=args.output_dir)
