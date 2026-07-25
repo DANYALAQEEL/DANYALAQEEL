@@ -1,3 +1,0 @@
-# Product Feedback Loop
-
-A product feedback loop is the cycle of shipping something, collecting feedback from users or stakeholders, and using that input to improve future iterations. This usually means working closely with the customer to observe how the delivered product is actually being used, identifying gaps between expectation and reality, and feeding those observations back into the build process while still on the engagement.

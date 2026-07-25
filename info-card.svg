@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="370" viewBox="0 0 490 370">
+  <defs>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
+      .header-title { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; font-weight: 700; fill: #8b949e; }
+      .text-prompt { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 15px; font-weight: 800; fill: #10b981; }
+      .text-label { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 700; fill: #f0883e; }
+      .text-val { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; fill: #c9d1d9; }
+      .text-val-bright { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 600; fill: #58a6ff; }
+      .text-sub { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; font-weight: 700; fill: #8b949e; }
+      .line { stroke: #21262d; stroke-width: 1px; }
+      .anim-1 { animation: fadeIn 0.4s ease-out 0.1s forwards; opacity: 0; }
+      .anim-2 { animation: fadeIn 0.4s ease-out 0.25s forwards; opacity: 0; }
+      .anim-3 { animation: fadeIn 0.4s ease-out 0.4s forwards; opacity: 0; }
+      .anim-4 { animation: fadeIn 0.4s ease-out 0.55s forwards; opacity: 0; }
+      .anim-5 { animation: fadeIn 0.4s ease-out 0.7s forwards; opacity: 0; }
+      .anim-6 { animation: fadeIn 0.4s ease-out 0.85s forwards; opacity: 0; }
+      .anim-7 { animation: fadeIn 0.4s ease-out 1.0s forwards; opacity: 0; }
+      .anim-8 { animation: fadeIn 0.4s ease-out 1.15s forwards; opacity: 0; }
+    </style>
+  </defs>
+
+  <!-- Terminal Frame -->
+  <rect width="490" height="370" class="bg" />
+  
+  <!-- Window Title Bar -->
+  <rect x="0" y="0" width="490" height="36" fill="#161b22" rx="10" ry="10" />
+  <rect x="0" y="26" width="490" height="10" fill="#161b22" />
+  <circle cx="18" cy="18" r="5.5" fill="#ff5f56" />
+  <circle cx="36" cy="18" r="5.5" fill="#ffbd2e" />
+  <circle cx="54" cy="18" r="5.5" fill="#27c93f" />
+  <text x="245" y="23" text-anchor="middle" class="header-title">danyal@github: ~$ neofetch</text>
+  <line x1="0" y1="36" x2="490" y2="36" stroke="#30363d" stroke-width="1" />
+
+  <!-- Body Content -->
+  <g transform="translate(20, 62)">
+    <!-- Header Prompt -->
+    <g class="anim-1">
+      <text x="0" y="0" class="text-prompt">danyal@github</text>
+      <line x1="0" y1="10" x2="450" y2="10" class="line" />
+    </g>
+
+    <!-- Key Info -->
+    <g class="anim-2" transform="translate(0, 30)">
+      <text x="0" y="0" class="text-label">Now</text>
+      <text x="85" y="0" class="text-val-bright">Backend &amp; Search Architect | Resilience Eng.</text>
+    </g>
+    
+    <g class="anim-3" transform="translate(0, 52)">
+      <text x="0" y="0" class="text-label">Edu</text>
+      <text x="85" y="0" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;26)</text>
+    </g>
+
+    <!-- Divider 1 -->
+    <g class="anim-4" transform="translate(0, 72)">
+      <text x="0" y="0" class="text-sub">— Stack ———————————————————————————————————</text>
+    </g>
+
+    <!-- Stack Details -->
+    <g class="anim-5" transform="translate(0, 96)">
+      <text x="0" y="0" class="text-label">Backend</text>
+      <text x="85" y="0" class="text-val">Python, C++, Java, Node.js, FastAPI, Redis</text>
+    </g>
+    
+    <g class="anim-6" transform="translate(0, 118)">
+      <text x="0" y="0" class="text-label">Search &amp; AI</text>
+      <text x="85" y="0" class="text-val">Vector Search, RAG, Antigravity Agents</text>
+    </g>
+    
+    <g class="anim-7" transform="translate(0, 140)">
+      <text x="0" y="0" class="text-label">DevSecOps</text>
+      <text x="85" y="0" class="text-val">Docker, CI/CD, Serverless, Git Automation</text>
+    </g>
+
+    <!-- Divider 2 -->
+    <g class="anim-8" transform="translate(0, 162)">
+      <text x="0" y="0" class="text-sub">— Highlights —————————————————───────────────</text>
+      <text x="0" y="24" class="text-val" fill="#10b981">• 1,760+ Antigravity Agentic Skills &amp; Frameworks</text>
+      <text x="0" y="44" class="text-val" fill="#10b981">• Private Decoupled Engine (Chess + Blackbox Sync)</text>
+      <text x="0" y="64" class="text-val" fill="#10b981">• High-Availability Search &amp; Resilience Indexing</text>
+    </g>
+  </g>
+</svg>

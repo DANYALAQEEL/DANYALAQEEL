@@ -1,9 +1,0 @@
-test_id: "B29"
-# Runner reads fixture.users (iteration) and fixture.tools (placeholder fill).
-# fixture.metadata.domain is a sub-field of metadata (always present) and is
-# not listed separately. roles and permissions are not consumed by this runner.
-fixture_requirements: ["users", "tools", "metadata"]
-# B29 sources its prompts from prompts.yaml, not from step templates here.
-# The runner does not load definition.yaml steps — this file exists solely
-# for fixture_requirements enforcement at run time.
-steps: []

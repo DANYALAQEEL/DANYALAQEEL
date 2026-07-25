@@ -1,5 +1,0 @@
-Starting download of https://www.cfsmartems.com/assets/js/scripts.bundle.js...
-Total size: 0.09 MB
-  Downloaded 0.06 MB / 0.09 MB (66.6%) - Speed: 25.38 KB/s - Time: 2.5s
-  Downloaded 0.09 MB / 0.09 MB (100.0%) - Speed: 26.53 KB/s - Time: 3.6s
-Successfully saved to scripts.bundle.js

@@ -1,3 +1,0 @@
-# Decision-Making Support
-
-Decision making support plays a crucial role in UX design by providing users with the necessary information, options, and feedback to make informed choices when interacting with a product or interface. This UX pattern focuses on helping users make decisions through clear presentation of information, minimizing cognitive load, and offering guidance throughout the various interactions.

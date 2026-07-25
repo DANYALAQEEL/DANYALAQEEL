@@ -1,4 +1,0 @@
-{
-  "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "cd ../../packages/boneyard && npx tsc && cd ../../apps/docs && npx next build"
-}
