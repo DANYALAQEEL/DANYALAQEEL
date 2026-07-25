@@ -1,16 +1,16 @@
 ---
 name: project-based-learning
-description: Curated list of project-based programming tutorials where learners build real-world web apps, mobile apps, compilers, games, and security tools from scratch.
+description: Complete knowledge base, implementation patterns, and reference materials for project-based-learning.
 ---
 
 # Project Based Learning Master Skill
 
 This skill provides comprehensive architectural patterns, tutorials, roadmaps, and reference guides extracted from **project-based-learning**.
 
-## 🎯 Key Content & Knowledge Extracted
-- **Source Scratch Location:** ntigravity/scratch/project-based-learning/
+## 🎯 Key Content Summary
+- **Source Repository:** [project-based-learning](https://github.com/practical-tutorials/project-based-learning.git)
 - **Total Reference Links / Tutorials:** 484
-- **Key Sections & Topics:**
+- **Top Categories & Sections Included:**
   - Project Based Learning
   - Table of Contents:
   - C/C++:
@@ -28,5 +28,5 @@ This skill provides comprehensive architectural patterns, tutorials, roadmaps, a
   - HTML and CSS:
 
 ## 🚀 How to Utilize
-- Query deep reference materials and guides located in ntigravity/scratch/project-based-learning/.
-- Access curated code samples, system design diagrams, roadmaps, and topic guides directly when building software, preparing for interviews, or mastering concepts.
+- Reference deep guides and tutorials located in `antigravity/scratch/project-based-learning/`.
+- Access curated code samples, diagrams, and topic roadmaps directly when building software architecture, preparing for interviews, or implementing core technologies from scratch.
