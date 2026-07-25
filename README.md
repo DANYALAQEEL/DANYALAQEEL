@@ -102,8 +102,10 @@ I view software as a living operational ecosystem. My work focuses on the inters
 <br>
 
 <div align="center">
-  <p align="center"><b>🏙️ 3D ISOMETRIC CONTRIBUTION CITY MATRIX</b></p>
-  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D Isometric Contribution City Graph" />
+  <p align="center"><b>🏙️ OFFICIAL 3D ISOMETRIC CONTRIBUTION CITY LANDSCAPE</b></p>
+  <a href="https://github.com/DANYALAQEEL">
+    <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="Official 3D Isometric Contribution City Landscape" />
+  </a>
 </div>
 
 <br>
