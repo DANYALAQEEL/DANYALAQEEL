@@ -111,14 +111,6 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <br>
 
-### ⏱️ ### 🏙️ 3D Contribution Isometric City
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=10B981&line=10B981&point=FFFFFF&area=true" width="100%" alt="3D Contribution Graph Peak Matrix" />
-
-</div>
-
 ---
 
 04. Live Keystroke Telemetry
@@ -215,14 +207,12 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 ### Top Players
 <!-- BEGIN TOP MOVES -->
 
-
 | Total moves |  User  |
 | :---------: | :----- |
 | 2 | [@muhammadabdulwasay100-dotcom](https://github.com/muhammadabdulwasay100-dotcom) |
 | 1 | [@DANYALAQEEL](https://github.com/DANYALAQEEL) |
 | 1 | [@testuser](https://github.com/testuser) |
 | 1 | [DANYALAQEEL](https://github.com/ANYALAQEEL) |
-
 
 <!-- END TOP MOVES -->
 
