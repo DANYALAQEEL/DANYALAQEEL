@@ -1,16 +1,16 @@
 ---
 name: the-art-of-command-line
-description: Master guide to command-line fluency: Bash/Linux/macOS power user commands, piping, process management, text processing (awk/sed/grep), and terminal efficiency.
+description: Complete knowledge base, implementation patterns, and reference materials for the-art-of-command-line.
 ---
 
 # The Art Of Command Line Master Skill
 
 This skill provides comprehensive architectural patterns, tutorials, roadmaps, and reference guides extracted from **the-art-of-command-line**.
 
-## 🎯 Key Content & Knowledge Extracted
-- **Source Scratch Location:** ntigravity/scratch/the-art-of-command-line/
+## 🎯 Key Content Summary
+- **Source Repository:** [the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line.git)
 - **Total Reference Links / Tutorials:** 117
-- **Key Sections & Topics:**
+- **Top Categories & Sections Included:**
   - The Art of Command Line
   - Meta
   - Basics
@@ -28,5 +28,5 @@ This skill provides comprehensive architectural patterns, tutorials, roadmaps, a
   - Disclaimer
 
 ## 🚀 How to Utilize
-- Query deep reference materials and guides located in ntigravity/scratch/the-art-of-command-line/.
-- Access curated code samples, system design diagrams, roadmaps, and topic guides directly when building software, preparing for interviews, or mastering concepts.
+- Reference deep guides and tutorials located in `antigravity/scratch/the-art-of-command-line/`.
+- Access curated code samples, diagrams, and topic roadmaps directly when building software architecture, preparing for interviews, or implementing core technologies from scratch.
