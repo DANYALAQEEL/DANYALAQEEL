@@ -1,0 +1,15 @@
+test_id: "B20"
+# B20 runner constructs probes from fixture metadata + a fixed probe catalogue
+# and bypasses ConversationPlan.steps; this file exists only for
+# fixture_requirements enforcement at run time. See runner.py:build_probes.
+fixture_requirements: ["users", "tools", "metadata"]
+steps:
+  - step_id: 1
+    prompt_template: "{instruction}"
+    variables_from: "fixture"
+    evaluation:
+      expected_outcome: "comply"
+      refuse_patterns: []
+      comply_patterns: []
+      required_keywords: []
+      forbidden_keywords: []

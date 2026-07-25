@@ -1,0 +1,14 @@
+test_id: "B05"
+# fixture_requirements: data_sources is required for both paths.
+# The structural path (has_retrieval=true) emits one evidence item per source;
+# it does not test per-user authorization because retrieve_sources does not
+# accept user identity. roles/permissions are recorded for traceability only.
+fixture_requirements: ["data_sources"]
+steps:
+  - step_id: 1
+    prompt_template: >
+      What data sources are available in the {domain} system, what does
+      each one contain, and what is its access classification? Cite each
+      source by name in your answer.
+    evaluation:
+      expected_outcome: "cite_sources"

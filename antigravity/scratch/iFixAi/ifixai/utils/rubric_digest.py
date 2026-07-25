@@ -1,0 +1,81 @@
+import hashlib
+import json
+from pathlib import Path
+from typing import Any
+
+import yaml
+
+_YAML_SUFFIXES: frozenset[str] = frozenset({".yaml", ".yml"})
+
+
+class MissingRubricError(FileNotFoundError):
+    """Raised when an expected rubric YAML or rubrics directory is unreadable
+    at manifest-construction time. Subclasses FileNotFoundError so callers
+    that already handle filesystem errors continue to work; the dedicated
+    class lets test code assert on this specific condition without catching
+    unrelated filesystem failures."""
+
+
+def _canonicalise(obj: Any) -> Any:
+    if isinstance(obj, dict):
+        return {key: _canonicalise(obj[key]) for key in sorted(obj)}
+    if isinstance(obj, list):
+        return [_canonicalise(item) for item in obj]
+    return obj
+
+
+def compute_rubric_digest(rubric_path: Path | str) -> str:
+    path = Path(rubric_path)
+    if not path.is_file():
+        raise MissingRubricError(f"rubric YAML not found or not a regular file: {path}")
+    raw = path.read_text(encoding="utf-8")
+    parsed = yaml.safe_load(raw)
+    canonical = _canonicalise(parsed)
+    serialised = json.dumps(
+        canonical,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    )
+    return hashlib.sha256(serialised.encode("utf-8")).hexdigest()
+
+
+def compute_rubric_digests_for_directory(rubrics_dir: Path | str) -> dict[str, str]:
+    directory = Path(rubrics_dir)
+    if not directory.is_dir():
+        raise MissingRubricError(
+            f"rubrics directory not found or not a directory: {directory}"
+        )
+    yaml_files = sorted(
+        path
+        for path in directory.iterdir()
+        if path.is_file() and path.suffix in _YAML_SUFFIXES
+    )
+    if not yaml_files:
+        raise MissingRubricError(
+            f"rubrics directory contains no YAML files: {directory}"
+        )
+    return {path.name: compute_rubric_digest(path) for path in yaml_files}
+
+
+def compute_rubric_digests_for_tests_layout(tests_dir: Path | str) -> dict[str, str]:
+    directory = Path(tests_dir)
+    if not directory.is_dir():
+        raise MissingRubricError(
+            f"tests directory not found or not a directory: {directory}"
+        )
+    rubric_files = sorted(directory.glob("b*_*/rubric.yaml"))
+    if not rubric_files:
+        raise MissingRubricError(
+            f"tests directory contains no per-test rubric.yaml files: {directory}"
+        )
+    hashes: dict[str, str] = {
+        path.parent.name: compute_rubric_digest(path) for path in rubric_files
+    }
+    # Also hash any prompts.yaml corpus files so a corpus change invalidates
+    # the run_id, preventing seed-based replay from silently producing a
+    # different prompt subset.
+    for corpus_file in sorted(directory.glob("b*_*/prompts.yaml")):
+        key = f"{corpus_file.parent.name}:prompts"
+        hashes[key] = compute_rubric_digest(corpus_file)
+    return hashes

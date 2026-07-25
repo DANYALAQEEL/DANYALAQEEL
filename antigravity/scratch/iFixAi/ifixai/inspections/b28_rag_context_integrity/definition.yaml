@@ -1,0 +1,12 @@
+test_id: "B28"
+# B28 sources its prompts from corpus.yaml (in this directory): each seed
+# carries a literal `b28_prompt`, `expected_outcome`, and `expected_behavior`.
+# At runtime the harness/adversarial_mutator.py applies surface variance
+# (case, punctuation, filler-word, synonym swap) seeded by config.b28_seed,
+# producing `variants_per_seed` copies per seed. Scoring uses rubric.yaml /
+# rubric_comply.yaml + references.yaml via load_analytic_rubric.
+#
+# The runner does not load definition.yaml steps — this file exists solely
+# for schema/fixture_requirements compliance at run time.
+fixture_requirements: []
+steps: []
