@@ -96,6 +96,10 @@ I view software as a living operational ecosystem. My work focuses on the inters
 <br>
 <div align="center">
   <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg?v=1" alt="GitHub Contribution Snake" width="100%" />
+<br>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D Contribution City Graph" />
+</div>
 </div>
 
 <div align="center">
