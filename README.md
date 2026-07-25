@@ -86,34 +86,33 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" width="49%" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0a0a0a&amp;title_color=10B981&amp;count_private=true&amp;include_all_commits=true" width="49%" />
   </a>
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="49%" />
+    <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&amp;theme=tokyonight&amp;hide_border=true&amp;background=0a0a0a&amp;ring=10B981&amp;fire=10B981&amp;currStreakLabel=10B981" width="49%" />
   </a>
 </div>
 
 <br>
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg?v=1" alt="GitHub Contribution Snake" width="100%" />
-<br>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D Contribution City Graph" />
-</div>
 </div>
 
+<br>
+
 <div align="center">
-  
+  <p align="center"><b>🏙️ 3D ISOMETRIC CONTRIBUTION CITY MATRIX</b></p>
+  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D Isometric Contribution City Graph" />
 </div>
+
 <br>
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=10B981&line=10B981&point=FFFFFF&area=true" width="100%" alt="Danyal Aqeel High-Definition Activity Graph" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&amp;theme=tokyo-night&amp;hide_border=true&amp;bg_color=0d1117&amp;color=10B981&amp;line=10B981&amp;point=FFFFFF&amp;area=true" width="100%" alt="Danyal Aqeel High-Definition Activity Graph" />
   </a>
 </div>
-
-<br>
 
 ---
 
