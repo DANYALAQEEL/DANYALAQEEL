@@ -67,7 +67,9 @@
         "command(npm run)",
         "read_url(gioumeh.com)",
         "read_url(elsolucionario.net)",
-        "mcp(github-mcp-server/search_repositories)"
+        "mcp(github-mcp-server/search_repositories)",
+        "command(powershell)",
+        "command(powershell)"
       ]
     },
     "remoteControlHostname": "desktop-av2paro-quantum-vapor",
