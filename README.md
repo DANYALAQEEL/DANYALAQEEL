@@ -111,7 +111,17 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <br>
 
-### ⏱️ 04. Live Keystroke Telemetry
+### ⏱️ ### 🏙️ 3D Contribution Isometric City
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=10B981&line=10B981&point=FFFFFF&area=true" width="100%" alt="3D Contribution Graph Peak Matrix" />
+
+</div>
+
+---
+
+04. Live Keystroke Telemetry
 > *Auto-refreshed weekly via WakaTime CI workflow — shows real coding time across all active projects.*
 <!--START_SECTION:waka-->
 
