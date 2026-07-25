@@ -1,16 +1,16 @@
 ---
 name: coding-interview-university
-description: Complete Computer Science study plan for software engineering interview preparation: Data Structures, Algorithms, System Design, OS, Networking, and Technical Interview Solutions.
+description: Complete knowledge base, implementation patterns, and reference materials for coding-interview-university.
 ---
 
 # Coding Interview University Master Skill
 
 This skill provides comprehensive architectural patterns, tutorials, roadmaps, and reference guides extracted from **coding-interview-university**.
 
-## 🎯 Key Content & Knowledge Extracted
-- **Source Scratch Location:** ntigravity/scratch/coding-interview-university/
+## 🎯 Key Content Summary
+- **Source Repository:** [coding-interview-university](https://github.com/jwasham/coding-interview-university.git)
 - **Total Reference Links / Tutorials:** 865
-- **Key Sections & Topics:**
+- **Top Categories & Sections Included:**
   - Coding Interview University
   - What is it?
   - Table of Contents
@@ -28,5 +28,5 @@ This skill provides comprehensive architectural patterns, tutorials, roadmaps, a
   - For this Study Plan
 
 ## 🚀 How to Utilize
-- Query deep reference materials and guides located in ntigravity/scratch/coding-interview-university/.
-- Access curated code samples, system design diagrams, roadmaps, and topic guides directly when building software, preparing for interviews, or mastering concepts.
+- Reference deep guides and tutorials located in `antigravity/scratch/coding-interview-university/`.
+- Access curated code samples, diagrams, and topic roadmaps directly when building software architecture, preparing for interviews, or implementing core technologies from scratch.
