@@ -105,7 +105,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0a0a0a&color=10B981&line=10B981&point=FFFFFF" width="100%" alt="Activity Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=10B981&line=10B981&point=FFFFFF&area=true" width="100%" alt="Danyal Aqeel High-Definition Activity Graph" />
   </a>
 </div>
 
