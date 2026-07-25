@@ -18,6 +18,23 @@
   <br><br>
   <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&color=10B981&style=flat-square&label=PROFILE+HITS" alt="Visitors" />
 </p>
+
+<div align="center">
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="370" align="center" valign="top">
+      <img src="./danyal-ascii.svg" width="370" alt="Danyal Aqeel ASCII Portrait" />
+    </td>
+    <td width="490" align="center" valign="top">
+      <img src="./info-card.svg" width="490" alt="Danyal Aqeel Neofetch Info Card" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
 </div>
 
 
@@ -89,10 +106,10 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-stats.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" width="49%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" width="49%" />
   </a>
   <a href="https://github.com/DANYALAQEEL">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="49%" />
+  <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" width="49%" />
   </a>
 </div>
 
@@ -102,7 +119,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" alt="3D Isometric Commit Graph" width="100%" />
+  
 </div>
 <br>
 
@@ -172,14 +189,14 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 <!-- BEGIN CHESS BOARD -->
 |   | A | B | C | D | E | F | G | H |   |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **8** | <img src="img/black/rook.svg" width=50px> | <img src="img/black/knight.svg" width=50px> | <img src="img/black/bishop.svg" width=50px> | <img src="img/black/queen.svg" width=50px> | <img src="img/black/king.svg" width=50px> | <img src="img/black/bishop.svg" width=50px> | <img src="img/black/knight.svg" width=50px> | <img src="img/black/rook.svg" width=50px> | **8** |
-| **7** | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | <img src="img/black/pawn.svg" width=50px> | **7** |
-| **6** | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | **6** |
-| **5** | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | **5** |
-| **4** | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | **4** |
-| **3** | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | <img src="img/blank.png" width=50px> | **3** |
-| **2** | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | <img src="img/white/pawn.svg" width=50px> | **2** |
-| **1** | <img src="img/white/rook.svg" width=50px> | <img src="img/white/knight.svg" width=50px> | <img src="img/white/bishop.svg" width=50px> | <img src="img/white/queen.svg" width=50px> | <img src="img/white/king.svg" width=50px> | <img src="img/white/bishop.svg" width=50px> | <img src="img/white/knight.svg" width=50px> | <img src="img/white/rook.svg" width=50px> | **1** |
+| **8** | <img src="./img/black/rook.svg" width=50px> | <img src="./img/black/knight.svg" width=50px> | <img src="./img/black/bishop.svg" width=50px> | <img src="./img/black/queen.svg" width=50px> | <img src="./img/black/king.svg" width=50px> | <img src="./img/black/bishop.svg" width=50px> | <img src="./img/black/knight.svg" width=50px> | <img src="./img/black/rook.svg" width=50px> | **8** |
+| **7** | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | <img src="./img/black/pawn.svg" width=50px> | **7** |
+| **6** | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | **6** |
+| **5** | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | **5** |
+| **4** | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | **4** |
+| **3** | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | <img src="./img/blank.png" width=50px> | **3** |
+| **2** | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | <img src="./img/white/pawn.svg" width=50px> | **2** |
+| **1** | <img src="./img/white/rook.svg" width=50px> | <img src="./img/white/knight.svg" width=50px> | <img src="./img/white/bishop.svg" width=50px> | <img src="./img/white/queen.svg" width=50px> | <img src="./img/white/king.svg" width=50px> | <img src="./img/white/bishop.svg" width=50px> | <img src="./img/white/knight.svg" width=50px> | <img src="./img/white/rook.svg" width=50px> | **1** |
 |   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |
 <!-- END CHESS BOARD -->
 
@@ -218,7 +235,7 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 ### 🏆 07. Achievement Matrix
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=dracula&margin-w=15&margin-h=15&no-frame=true&column=6" alt="Trophies" />
+  
 </div>
 
 <br>
