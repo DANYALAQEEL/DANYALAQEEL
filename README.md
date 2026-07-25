@@ -36,6 +36,45 @@
 
 </div>
 
+<br>
+
+01.5 Professional Experience
+
+<div align="center">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" bgcolor="#0d1117" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+      <h3 align="left" style="color: #10b981; margin-top: 0; margin-bottom: 6px;">
+        ⚡ Embedded AI &amp; IoT Software Engineering Intern
+      </h3>
+      <p align="left" style="margin-top: 0; color: #c9d1d9;">
+        <b>EmbedAIoT</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>June 2026 – Present</code>
+      </p>
+      <hr style="border: 0; border-top: 1px solid #21262d; margin: 12px 0;">
+      <ul align="left" style="color: #8b949e; line-height: 1.6;">
+        <li><b>⚡ AI Energy &amp; EV Telemetry Dashboards:</b> Engineered <i>Voltix / ElsaEnergy v3</i> agritech fleet telemetry, interactive EV client tour modes, and mode-responsive appliance anomaly detectors (<code>ELSAxEV</code>, <code>Elsaenergy-Agritech</code>).</li>
+        <li><b>🤖 RAG Chatbots &amp; Laravel EMS:</b> Integrated <i>Elsa RAG Chatbot</i> with secure Laravel proxy architectures, custom EV details knowledge base, and layout widgets (<code>ROI</code>).</li>
+        <li><b>🌐 Full-Stack Web &amp; Security Systems:</b> Developed official <i>EmbedAIoT</i> web portal with Vercel email relay, OTP verification, and password reset authentication flows (<code>website-embedaiot</code>).</li>
+        <li><b>📷 Computer Vision &amp; OCR Telemetry:</b> Built <i>card-logger</i> webcam live OCR detection feed, CNIC endpoint parsers, and DirectShow camera streaming interfaces (<code>card-logger</code>).</li>
+      </ul>
+      <p align="left" style="margin-bottom: 0;">
+        <img src="https://img.shields.io/badge/Production_Repos-7_Active-0A0A0A?style=flat-square&amp;logo=git&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="7 Active Repos" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Domain-AIoT_%26_Agritech-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="AIoT Domain" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Lab-SINES_%40_NUST-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="NUST SINES" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br>
+
+
+
 </div>
 
 <br>
