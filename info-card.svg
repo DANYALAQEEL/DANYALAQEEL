@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="450" height="370" viewBox="0 0 450 370">
   <defs>
     <style>
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(5px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
       .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
       .header-title { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
       .text-prompt { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14.5px; font-weight: 800; fill: #10b981; }
@@ -13,14 +9,6 @@
       .text-val-bright { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; font-weight: 600; fill: #58a6ff; }
       .text-sub { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11.5px; font-weight: 700; fill: #8b949e; }
       .line { stroke: #21262d; stroke-width: 1px; }
-      .anim-1 { animation: fadeIn 0.35s ease-out 0.1s forwards; opacity: 0; }
-      .anim-2 { animation: fadeIn 0.35s ease-out 0.2s forwards; opacity: 0; }
-      .anim-3 { animation: fadeIn 0.35s ease-out 0.3s forwards; opacity: 0; }
-      .anim-4 { animation: fadeIn 0.35s ease-out 0.4s forwards; opacity: 0; }
-      .anim-5 { animation: fadeIn 0.35s ease-out 0.5s forwards; opacity: 0; }
-      .anim-6 { animation: fadeIn 0.35s ease-out 0.6s forwards; opacity: 0; }
-      .anim-7 { animation: fadeIn 0.35s ease-out 0.7s forwards; opacity: 0; }
-      .anim-8 { animation: fadeIn 0.35s ease-out 0.8s forwards; opacity: 0; }
     </style>
   </defs>
 
@@ -33,46 +21,38 @@
   <text x="225" y="22" text-anchor="middle" class="header-title">danyal@github: ~$ neofetch</text>
   <line x1="0" y1="34" x2="450" y2="34" stroke="#30363d" stroke-width="1" />
 
-  <g transform="translate(20, 58)">
-    <g class="anim-1">
-      <text x="0" y="0" class="text-prompt">danyal@github</text>
-      <line x1="0" y1="10" x2="410" y2="10" class="line" />
-    </g>
+  <g transform="translate(20, 48)">
+    <!-- Line 1: User Prompt -->
+    <text x="0" y="20" class="text-prompt">danyal@github</text>
+    <line x1="0" y1="30" x2="410" y2="30" class="line" />
 
-    <g class="anim-2" transform="translate(0, 28)">
-      <text x="0" y="0" class="text-label">Now</text>
-      <text x="85" y="0" class="text-val-bright">Backend &amp; Search Architect | Resilience Eng.</text>
-    </g>
-    
-    <g class="anim-3" transform="translate(0, 48)">
-      <text x="0" y="0" class="text-label">Edu</text>
-      <text x="85" y="0" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;26)</text>
-    </g>
+    <!-- Line 2: Now -->
+    <text x="0" y="55" class="text-label">Now</text>
+    <text x="85" y="55" class="text-val-bright">Backend &amp; Search Architect | Resilience Eng.</text>
 
-    <g class="anim-4" transform="translate(0, 68)">
-      <text x="0" y="0" class="text-sub">— Stack ———————————————————————————————————</text>
-    </g>
+    <!-- Line 3: Edu -->
+    <text x="0" y="78" class="text-label">Edu</text>
+    <text x="85" y="78" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;26)</text>
 
-    <g class="anim-5" transform="translate(0, 90)">
-      <text x="0" y="0" class="text-label">Backend</text>
-      <text x="85" y="0" class="text-val">Python, C++, Java, Node.js, FastAPI, Redis</text>
-    </g>
-    
-    <g class="anim-6" transform="translate(0, 110)">
-      <text x="0" y="0" class="text-label">Search &amp; IR</text>
-      <text x="85" y="0" class="text-val">Vector Search, RAG Pipelines, Elasticsearch</text>
-    </g>
-    
-    <g class="anim-7" transform="translate(0, 130)">
-      <text x="0" y="0" class="text-label">DevSecOps</text>
-      <text x="85" y="0" class="text-val">Docker, CI/CD Pipelines, Git Automation</text>
-    </g>
+    <!-- Divider 1 -->
+    <text x="0" y="105" class="text-sub">— Stack ———————————————————————————————————</text>
 
-    <g class="anim-8" transform="translate(0, 150)">
-      <text x="0" y="0" class="text-sub">— Highlights —————————————————───────────────</text>
-      <text x="0" y="24" class="text-val" fill="#10b981">• Decoupled Serverless Engine Architecture</text>
-      <text x="0" y="44" class="text-val" fill="#10b981">• High-Availability IR &amp; Vector Search Indexing</text>
-      <text x="0" y="64" class="text-val" fill="#10b981">• Custom C++ WebAssembly Game Engines</text>
-    </g>
+    <!-- Stack Items -->
+    <text x="0" y="128" class="text-label">Backend</text>
+    <text x="85" y="128" class="text-val">Python, C++, Java, Node.js, FastAPI, Redis</text>
+
+    <text x="0" y="150" class="text-label">Search &amp; IR</text>
+    <text x="85" y="150" class="text-val">Vector Search, RAG Pipelines, Elasticsearch</text>
+
+    <text x="0" y="172" class="text-label">DevSecOps</text>
+    <text x="85" y="172" class="text-val">Docker, CI/CD Pipelines, Git Automation</text>
+
+    <!-- Divider 2 -->
+    <text x="0" y="202" class="text-sub">— Highlights —————————————————───────────────</text>
+
+    <!-- Highlights -->
+    <text x="0" y="226" class="text-val" fill="#10b981">• Decoupled Serverless Engine Architecture</text>
+    <text x="0" y="248" class="text-val" fill="#10b981">• High-Availability IR &amp; Vector Search Indexing</text>
+    <text x="0" y="270" class="text-val" fill="#10b981">• Custom C++ WebAssembly Game Engines</text>
   </g>
 </svg>
