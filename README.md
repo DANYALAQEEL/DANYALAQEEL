@@ -216,14 +216,20 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 <div align="center">
 
-<a href="https://github.com/DANYALAQEEL"><img src="https://github-profile-trophy.vercel.app/?username=DANYALAQEEL&theme=darkhub&no-frame=true&column=6" width="860" alt="Achievement Trophies" /></a>
-
-<br><br>
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub-Pull_Shark-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Pull Shark" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-Pair_Extraordinaire-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Pair Extraordinaire" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-Quickdraw-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Quickdraw" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-YOLO-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="YOLO" />
+</p>
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" height="170" alt="GitHub Stats" />
+  <img src="https://img.shields.io/badge/Academic-NUST_SEECS_Engineering-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=10B981" alt="Academic Excellence" />
   &nbsp;
-  <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981" height="170" alt="GitHub Streak" />
+  <img src="https://img.shields.io/badge/Impact-1%2C600%2B_Commits-0A0A0A?style=for-the-badge&logo=git&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Total Commits" />
 </p>
 
 </div>
