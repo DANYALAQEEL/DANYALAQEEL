@@ -1,0 +1,10 @@
+# Skills
+
+AI coding assistants can leverage "skills" – pre-defined functions or tools exposed to the AI that allow it to perform specific actions. Instead of relying solely on their internal knowledge and large language models, these assistants can call upon these skills (like running tests, deploying code, or querying databases) when needed. This allows the AI to interact with the development environment and execute tasks directly, improving accuracy and efficiency, all while minimizing the context window required for each action.
+
+Visit the following resources to learn more:
+
+- [@course@Agent Skills with Anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
+- [@article@Agent Skills: The Universal Standard Transforming AI Agents](https://medium.com/@richardhightower/agent-skills-the-universal-standard-transforming-how-ai-agents-work-fc7397406e2e)
+- [@video@Claude Agent Skills Explained](https://www.youtube.com/watch?v=fOxC44g8vig)
+- [@video@Agent Skills Explained](https://www.youtube.com/watch?v=Ihoxov5x66k)

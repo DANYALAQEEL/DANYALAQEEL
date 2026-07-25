@@ -1,0 +1,3 @@
+# Frameworks
+
+Frameworks in iOS development are modular, reusable packages of code and resources that provide specific functionality to applications. They offer a hierarchical structure containing compiled code, header files, resources like images and localization files, and often documentation. iOS provides numerous built-in frameworks such as UIKit for user interface elements, Foundation for fundamental data types and collections, and Core Data for data management.

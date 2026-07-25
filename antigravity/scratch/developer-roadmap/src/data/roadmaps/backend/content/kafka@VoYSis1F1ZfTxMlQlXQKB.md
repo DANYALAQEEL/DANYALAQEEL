@@ -1,0 +1,10 @@
+# Kafka
+
+Apache Kafka is a distributed event streaming platform for high-throughput, fault-tolerant data processing. Acts as message broker with publish/subscribe model. Features topics, partitions for parallel processing, and replication for fault tolerance. Ideal for real-time analytics and data integration.
+
+Visit the following resources to learn more:
+
+- [@official@Apache Kafka](https://kafka.apache.org/quickstart)
+- [@official@Apache Kafka Streams](https://kafka.apache.org/documentation/streams/)
+- [@official@Kafka Streams Confluent](https://docs.confluent.io/platform/current/streams/concepts.html)
+- [@video@Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)

@@ -1,0 +1,3 @@
+# Copy on Write
+
+The Copy-on-Write (CoW) idiom is an optimization technique used to defer or eliminate the cost of copying resources until the first write operation. Instead of creating a new copy of an object immediately, the original object and the "copy" share the same underlying resource. Only when one of the objects attempts to modify the shared resource is a true copy created. This can significantly improve performance by avoiding unnecessary copying, especially for large objects.

@@ -1,0 +1,3 @@
+# Compilers and Features
+
+C++ compilers translate human-readable C++ code into machine-executable code. They offer various features, including optimization techniques to improve program performance by eliminating redundancies and restructuring code, debugging information generation to aid in troubleshooting, and warning systems to flag potentially problematic code. Popular compilers include GCC, a versatile open-source option; Clang, known for its compatibility and diagnostics; Microsoft Visual C++, integrated within the Visual Studio IDE; and the Intel C++ Compiler, part of the Intel Parallel Studio XE suite. Familiarizing yourself with your chosen compiler's documentation is essential to fully leverage its capabilities.

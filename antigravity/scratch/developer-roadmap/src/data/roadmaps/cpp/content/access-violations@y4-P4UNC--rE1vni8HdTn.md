@@ -1,0 +1,3 @@
+# Access Violations
+
+An access violation occurs when a program tries to read from or write to a memory location that it doesn't have permission to access. This is a common error in C++ that can arise from issues like dereferencing null or invalid pointers, accessing arrays beyond their bounds, or attempting to use memory that has already been freed. Debugging tools such as debuggers, static analyzers (like those in Visual Studio), and runtime memory error detectors (such as Valgrind or AddressSanitizer) are essential for identifying and resolving these violations by pinpointing the offending code.

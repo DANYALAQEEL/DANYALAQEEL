@@ -1,0 +1,3 @@
+# Working with Libraries
+
+Libraries in C++ are collections of pre-written code designed to be reused in different programs, offering functionalities like specialized algorithms, data structures, or system interfaces. These libraries come in two main types: static libraries, which are linked directly into your executable at compile time, and dynamic libraries, which are loaded at runtime. Utilizing libraries involves including their header files in your source code and linking them during compilation, allowing you to extend the capabilities of your C++ programs without rewriting common functionalities from scratch.

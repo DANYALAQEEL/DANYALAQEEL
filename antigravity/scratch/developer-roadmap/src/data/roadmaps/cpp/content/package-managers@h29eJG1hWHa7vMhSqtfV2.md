@@ -1,0 +1,3 @@
+# Package Managers
+
+Package managers are essential tools that streamline the process of incorporating external libraries and dependencies into C++ projects. They automate the tasks of installing, updating, and managing these components, simplifying development and promoting code reuse. Popular options in the C++ ecosystem include Conan, a decentralized, cross-platform solution; vcpkg, a package manager developed by Microsoft; and cppan, which is now part of the build2 build toolchain. These tools help developers efficiently manage dependencies, improving code quality and accelerating development.
