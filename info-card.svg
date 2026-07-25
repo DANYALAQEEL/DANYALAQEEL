@@ -2,12 +2,12 @@
   <defs>
     <style>
       .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
-      .header-title { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
-      .text-prompt { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14.5px; font-weight: 800; fill: #10b981; }
-      .text-label { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; font-weight: 700; fill: #f0883e; }
-      .text-val { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; fill: #c9d1d9; }
-      .text-val-bright { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; font-weight: 600; fill: #58a6ff; }
-      .text-sub { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11.5px; font-weight: 700; fill: #8b949e; }
+      .header-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
+      .text-prompt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14.5px; font-weight: 800; fill: #10b981; }
+      .text-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; fill: #f0883e; }
+      .text-val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; fill: #c9d1d9; }
+      .text-val-bright { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 600; fill: #58a6ff; }
+      .text-sub { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #8b949e; }
       .line { stroke: #21262d; stroke-width: 1px; }
     </style>
   </defs>
