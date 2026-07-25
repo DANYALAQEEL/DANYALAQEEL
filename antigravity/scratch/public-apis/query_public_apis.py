@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ================================================================================
-🌐 PUBLIC APIS QUERY ENGINE & NAVIGATOR
+PUBLIC APIS QUERY ENGINE & NAVIGATOR
 ================================================================================
 Author: Antigravity AI Engine (for DANYALAQEEL)
 Database: 1,602+ Free Public APIs across 52 Categories
@@ -63,7 +63,7 @@ def main():
     results = search_apis(query=args.query, category=args.category, no_auth=args.no_auth, cors_only=args.cors, limit=args.limit)
 
     print("=" * 80)
-    print(f"🌐 PUBLIC APIS SEARCH RESULTS ({len(results)} matches found)")
+    print(f"[SEARCH RESULTS] PUBLIC APIS ({len(results)} matches found)")
     print("=" * 80)
 
     if not results:
