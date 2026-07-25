@@ -7,100 +7,22 @@
         100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); opacity: 1; }
       }
       .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
-      .header-title { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; font-weight: 700; fill: #8b949e; }
-      .ascii-text { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 8.5px; fill: #8b949e; letter-spacing: 0.5px; }
-      .row { animation: wipeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards; opacity: 0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 8.5px; fill: #10b981; letter-spacing: 0.8px; }
+      .header-title { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
+      .row { animation: wipeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards; opacity: 0; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 8px; fill: #10b981; letter-spacing: 0.5px; white-space: pre; }
       .footer-prompt { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; font-weight: 700; fill: #58a6ff; }
     </style>
   </defs>
 
-  <!-- Terminal Frame -->
   <rect width="370" height="370" class="bg" />
-  
-  <!-- Window Title Bar -->
-  <rect x="0" y="0" width="370" height="36" fill="#161b22" rx="10" ry="10" />
-  <rect x="0" y="26" width="370" height="10" fill="#161b22" />
-  <circle cx="18" cy="18" r="5.5" fill="#ff5f56" />
-  <circle cx="36" cy="18" r="5.5" fill="#ffbd2e" />
-  <circle cx="54" cy="18" r="5.5" fill="#27c93f" />
-  <text x="185" y="23" text-anchor="middle" class="header-title">danyal@github: ~$ ./portrait.sh</text>
-  <line x1="0" y1="36" x2="370" y2="36" stroke="#30363d" stroke-width="1" />
+  <rect x="0" y="0" width="370" height="34" fill="#161b22" rx="10" ry="10" />
+  <rect x="0" y="24" width="370" height="10" fill="#161b22" />
+  <circle cx="16" cy="17" r="5" fill="#ff5f56" />
+  <circle cx="32" cy="17" r="5" fill="#ffbd2e" />
+  <circle cx="48" cy="17" r="5" fill="#27c93f" />
+  <text x="185" y="22" text-anchor="middle" class="header-title">danyal@github: ~$ ./portrait.sh</text>
+  <line x1="0" y1="34" x2="370" y2="34" stroke="#30363d" stroke-width="1" />
 
-  <!-- ASCII Render Area -->
-  
-    <g class="row" style="animation-delay: 0.00s;">
-      <text x="18" y="65.0">                     .---::=---..</text>
-    </g>
-    <g class="row" style="animation-delay: 0.08s;">
-      <text x="18" y="76.5">                  .-:-=*######%*=-:.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.16s;">
-      <text x="18" y="88.0">                 :-::-%@@@@@@@@@#==:-</text>
-    </g>
-    <g class="row" style="animation-delay: 0.24s;">
-      <text x="18" y="99.5">                .::=:#@@@@@@@@@@@%*=::-</text>
-    </g>
-    <g class="row" style="animation-delay: 0.32s;">
-      <text x="18" y="111.0">               .::+:*@@@@@@@@@@@@@%+-::.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.40s;">
-      <text x="18" y="122.5">               ::-=*@@@@@@@@@@@@@@@#+::.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.48s;">
-      <text x="18" y="134.0">              .::+*@@@@@@@@@@@@@@@@%*:::.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.56s;">
-      <text x="18" y="145.5">              .::+#@@@@@@@@@@@@@@@@@#:::.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.64s;">
-      <text x="18" y="157.0">              .:=+#@@@@@@@@@@@@@@@@@#=::.</text>
-    </g>
-    <g class="row" style="animation-delay: 0.72s;">
-      <text x="18" y="168.5">              .:=+#@@@@@@@@@@@@@@@@@#+::-</text>
-    </g>
-    <g class="row" style="animation-delay: 0.80s;">
-      <text x="18" y="180.0">              ::-+*%@@@@@@@@@@@@@@@@#+::-</text>
-    </g>
-    <g class="row" style="animation-delay: 0.88s;">
-      <text x="18" y="191.5">              ::-+*#%@@@@@@@@@@@@@@%#+::-</text>
-    </g>
-    <g class="row" style="animation-delay: 0.96s;">
-      <text x="18" y="203.0">             .::-=+#%@@@@@@@@@@@@@@%#+::-</text>
-    </g>
-    <g class="row" style="animation-delay: 1.04s;">
-      <text x="18" y="214.5">             .:::-=*#%@@@@@@@@@@@@%#+:::-</text>
-    </g>
-    <g class="row" style="animation-delay: 1.12s;">
-      <text x="18" y="226.0">            .::::-=*#%@@@@@@@@@@@%#+=::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.20s;">
-      <text x="18" y="237.5">          ..:::::-=*#%@@@@@@@@@@%#+=::::::..</text>
-    </g>
-    <g class="row" style="animation-delay: 1.28s;">
-      <text x="18" y="249.0">        ..:::::::-=*#%@@@@@@@@@@%#+=:::::::...</text>
-    </g>
-    <g class="row" style="animation-delay: 1.36s;">
-      <text x="18" y="260.5">      ..:::::::::-=*#%@@@@@@@@@@%#+=::::::::...</text>
-    </g>
-    <g class="row" style="animation-delay: 1.44s;">
-      <text x="18" y="272.0">    .::::::::::::-=*#%@@@@@@@@@@%#+=::::::::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.52s;">
-      <text x="18" y="283.5">  .::::::::::::::-=*#%@@@@@@@@@@%#+=:::::::::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.60s;">
-      <text x="18" y="295.0"> .:::::::::::::::=-+#%@@@@@@@@@@%#+=::::::::::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.68s;">
-      <text x="18" y="306.5">.::::::::::::::::=-+#%@@@@@@@@@@%#+=::::::::::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.76s;">
-      <text x="18" y="318.0">:::::::::::::::::=-+#%@@@@@@@@@@%#+=::::::::::::.</text>
-    </g>
-    <g class="row" style="animation-delay: 1.84s;">
-      <text x="18" y="329.5">:::::::::::::::::=-+#%@@@@@@@@@@%#+=::::::::::::.</text>
-    </g>
+  <g class="row" style="animation-delay: 0.00s;"><text x="16" y="52.0">                                                              </text></g><g class="row" style="animation-delay: 0.06s;"><text x="16" y="61.2">                                                              </text></g><g class="row" style="animation-delay: 0.12s;"><text x="16" y="70.4"> ..                                           .. .  ..        </text></g><g class="row" style="animation-delay: 0.18s;"><text x="16" y="79.6">                                                              </text></g><g class="row" style="animation-delay: 0.24s;"><text x="16" y="88.8">                                                              </text></g><g class="row" style="animation-delay: 0.30s;"><text x="16" y="98.0">                                                              </text></g><g class="row" style="animation-delay: 0.36s;"><text x="16" y="107.2">= .--::---:---::---:.-+.-.                                    </text></g><g class="row" style="animation-delay: 0.42s;"><text x="16" y="116.4">                                                              </text></g><g class="row" style="animation-delay: 0.48s;"><text x="16" y="125.6">                                                              </text></g><g class="row" style="animation-delay: 0.54s;"><text x="16" y="134.8">---.                         -==-::..- -:-:--:-               </text></g><g class="row" style="animation-delay: 0.60s;"><text x="16" y="144.0">                                                              </text></g><g class="row" style="animation-delay: 0.66s;"><text x="16" y="153.2">                                                              </text></g><g class="row" style="animation-delay: 0.72s;"><text x="16" y="162.4">..                           . ....   .::.. :......   . . ....</text></g><g class="row" style="animation-delay: 0.78s;"><text x="16" y="171.6">                                                              </text></g><g class="row" style="animation-delay: 0.84s;"><text x="16" y="180.8">                                                              </text></g><g class="row" style="animation-delay: 0.90s;"><text x="16" y="190.0">    .                                             ..          </text></g><g class="row" style="animation-delay: 0.96s;"><text x="16" y="199.2">                                                              </text></g><g class="row" style="animation-delay: 1.02s;"><text x="16" y="208.4">                             . : ..               ...        .</text></g><g class="row" style="animation-delay: 1.08s;"><text x="16" y="217.6">                                                              </text></g><g class="row" style="animation-delay: 1.14s;"><text x="16" y="226.8">                                                              </text></g><g class="row" style="animation-delay: 1.20s;"><text x="16" y="236.0">                                                              </text></g><g class="row" style="animation-delay: 1.26s;"><text x="16" y="245.2">.           ..                                                </text></g><g class="row" style="animation-delay: 1.32s;"><text x="16" y="254.4">::.:=:::..  .:.:..::..::: :.::.:.                             </text></g><g class="row" style="animation-delay: 1.38s;"><text x="16" y="263.6">                                                              </text></g><g class="row" style="animation-delay: 1.44s;"><text x="16" y="272.8">                              .                               </text></g><g class="row" style="animation-delay: 1.50s;"><text x="16" y="282.0">:--.                         :-:::-..: :::::=::               </text></g><g class="row" style="animation-delay: 1.56s;"><text x="16" y="291.2">                                                              </text></g><g class="row" style="animation-delay: 1.62s;"><text x="16" y="300.4">                                                              </text></g><g class="row" style="animation-delay: 1.68s;"><text x="16" y="309.6">                                    .                         </text></g><g class="row" style="animation-delay: 1.74s;"><text x="16" y="318.8">                                                              </text></g><g class="row" style="animation-delay: 1.80s;"><text x="16" y="328.0">..... . . .                  .   . ....: ...... ..  ...    ...</text></g><g class="row" style="animation-delay: 1.86s;"><text x="16" y="337.2">                                                              </text></g><g class="row" style="animation-delay: 1.92s;"><text x="16" y="346.4">                                                              </text></g><g class="row" style="animation-delay: 1.98s;"><text x="16" y="355.6">:  ::..                      : ...: ....:.. :...: ::...:: :.. </text></g>
 
-  <!-- Footer Tag -->
-  <text x="18" y="352" class="footer-prompt">danyal@github: ~$ whoami Danyal Aqeel</text>
+  <text x="16" y="354" class="footer-prompt">danyal@github: ~$ whoami Danyal Aqeel</text>
 </svg>
