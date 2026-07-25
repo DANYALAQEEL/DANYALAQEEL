@@ -1,16 +1,16 @@
 ---
 name: build-your-own-x
-description: Complete knowledge base, implementation patterns, and reference materials for build-your-own-x.
+description: Master step-by-step guides to build 30+ technologies from scratch (3D Renderer, OS, Programming Languages, Git, Docker, Databases, Physics Engine, Web Servers, etc.).
 ---
 
 # Build Your Own X Master Skill
 
 This skill provides comprehensive architectural patterns, tutorials, roadmaps, and reference guides extracted from **build-your-own-x**.
 
-## 🎯 Key Content Summary
-- **Source Repository:** [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x.git)
+## 🎯 Key Content & Knowledge Extracted
+- **Source Scratch Location:** ntigravity/scratch/build-your-own-x/
 - **Total Reference Links / Tutorials:** 397
-- **Top Categories & Sections Included:**
+- **Key Sections & Topics:**
   - Build your own &lt;insert-technology-here&gt;
   - Tutorials
   - Build your own `Distributed Systems`
@@ -28,5 +28,5 @@ This skill provides comprehensive architectural patterns, tutorials, roadmaps, a
   - Build your own `Game`
 
 ## 🚀 How to Utilize
-- Reference deep guides and tutorials located in `antigravity/scratch/build-your-own-x/`.
-- Access curated code samples, diagrams, and topic roadmaps directly when building software architecture, preparing for interviews, or implementing core technologies from scratch.
+- Query deep reference materials and guides located in ntigravity/scratch/build-your-own-x/.
+- Access curated code samples, system design diagrams, roadmaps, and topic guides directly when building software, preparing for interviews, or mastering concepts.
