@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Embed AIoT — Admin Dashboard</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:system-ui,sans-serif;background:#0a0f1c;color:#e6f1ff;display:flex;min-height:100vh;}
+
+  /* ── SIDEBAR ── */
+  #sidebar{width:240px;min-height:100vh;background:#050a14;border-right:1px solid #1a2a3a;display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100;}
+  #sidebar .logo{padding:24px 20px;border-bottom:1px solid #1a2a3a;}
+  #sidebar .logo h2{font-size:18px;color:#22d3ee;font-weight:700;}
+  #sidebar .logo p{font-size:11px;color:#64748b;margin-top:4px;}
+  #sidebar nav{flex:1;padding:16px 0;}
+  #sidebar nav a{display:flex;align-items:center;gap:12px;padding:12px 20px;color:#94a3b8;text-decoration:none;font-size:14px;border-left:3px solid transparent;transition:all .2s;}
+  #sidebar nav a:hover,#sidebar nav a.active{color:#22d3ee;background:#0d1829;border-left-color:#22d3ee;}
+  #sidebar nav a span.icon{font-size:18px;width:22px;text-align:center;}
+  #sidebar .logout{padding:20px;}
+  #sidebar .logout button{width:100%;padding:10px;background:#1e293b;border:1px solid #334155;color:#94a3b8;border-radius:8px;cursor:pointer;font-size:14px;transition:all .2s;}
+  #sidebar .logout button:hover{background:#dc2626;color:#fff;border-color:#dc2626;}
+
+  /* ── MAIN ── */
+  #main{margin-left:240px;flex:1;padding:32px;}
+  .page{display:none;}
+  .page.active{display:block;}
+  .page-header{margin-bottom:28px;}
+  .page-header h1{font-size:26px;font-weight:700;color:#f1f5f9;}
+  .page-header p{color:#64748b;font-size:14px;margin-top:4px;}
+
+  /* ── LOGIN ── */
+  #login-screen{position:fixed;inset:0;background:#0a0f1c;display:flex;align-items:center;justify-content:center;z-index:999;}
+  .login-box{background:#050a14;border:1px solid #1a2a3a;border-radius:16px;padding:40px;width:100%;max-width:400px;}
+  .login-box h1{font-size:24px;font-weight:700;color:#22d3ee;margin-bottom:6px;}
+  .login-box p{color:#64748b;font-size:14px;margin-bottom:28px;}
+
+  /* ── STATS BAR ── */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:32px;}
+  .stat-card{background:#050a14;border:1px solid #1a2a3a;border-radius:12px;padding:20px;}
+  .stat-card .num{font-size:28px;font-weight:700;color:#22d3ee;}
+  .stat-card .label{font-size:12px;color:#64748b;margin-top:4px;}
+
+  /* ── FORMS ── */
+  .card{background:#050a14;border:1px solid #1a2a3a;border-radius:12px;padding:24px;margin-bottom:24px;}
+  .card h2{font-size:16px;font-weight:600;color:#f1f5f9;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid #1a2a3a;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .form-grid.single{grid-template-columns:1fr;}
+  .field{display:flex;flex-direction:column;gap:6px;}
+  .field.full{grid-column:1/-1;}
+  label{font-size:12px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:.5px;}
+  input,textarea,select{background:#0d1829;border:1px solid #1e3a4a;color:#e6f1ff;border-radius:8px;padding:10px 14px;font-size:14px;width:100%;outline:none;transition:border .2s;font-family:inherit;}
+  input:focus,textarea:focus,select:focus{border-color:#22d3ee;}
+  textarea{min-height:100px;resize:vertical;}
+  input[type=file]{padding:8px;cursor:pointer;}
+
+  /* ── BUTTONS ── */
+  .btn{padding:10px 20px;border-radius:8px;border:none;cursor:pointer;font-size:14px;font-weight:500;transition:all .2s;}
+  .btn-primary{background:#22d3ee;color:#000;}
+  .btn-primary:hover{background:#06b6d4;}
+  .btn-danger{background:#dc2626;color:#fff;}
+  .btn-danger:hover{background:#b91c1c;}
+  .btn-secondary{background:#1e293b;color:#94a3b8;border:1px solid #334155;}
+  .btn-secondary:hover{background:#334155;color:#fff;}
+  .btn-sm{padding:6px 14px;font-size:12px;}
+  .btn-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+
+  /* ── TABLE ── */
+  .table-wrap{overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th{text-align:left;padding:10px 14px;color:#64748b;font-size:12px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid #1a2a3a;}
+  td{padding:12px 14px;border-bottom:1px solid #0d1829;vertical-align:middle;}
+  tr:hover td{background:#0d1829;}
+  td img{width:48px;height:48px;object-fit:cover;border-radius:8px;background:#1a2a3a;}
+  .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;}
+  .badge-cyan{background:#083344;color:#22d3ee;}
+  .badge-green{background:#052e16;color:#4ade80;}
+
+  /* ── MESSAGES ── */
+  .msg-card{background:#0d1829;border:1px solid #1a2a3a;border-radius:10px;padding:18px;margin-bottom:14px;}
+  .msg-card .msg-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+  .msg-card .sender{font-weight:600;color:#f1f5f9;}
+  .msg-card .email{font-size:12px;color:#22d3ee;margin-top:2px;}
+  .msg-card .date{font-size:11px;color:#475569;}
+  .msg-card .body{color:#94a3b8;font-size:14px;line-height:1.6;}
+
+  /* ── ALERT ── */
+  #alert{position:fixed;top:24px;right:24px;padding:14px 22px;border-radius:10px;font-size:14px;font-weight:500;z-index:9999;display:none;max-width:320px;}
+  #alert.success{background:#052e16;border:1px solid #166534;color:#4ade80;}
+  #alert.error{background:#450a0a;border:1px solid #991b1b;color:#f87171;}
+
+  /* ── EMPTY STATE ── */
+  .empty{text-align:center;padding:48px;color:#475569;}
+  .empty .icon{font-size:48px;margin-bottom:12px;}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:768px){
+    #sidebar{width:60px;}
+    #sidebar nav a span.text{display:none;}
+    #sidebar .logo p,#sidebar .logo h2{display:none;}
+    #sidebar .logout button span{display:none;}
+    #main{margin-left:60px;padding:16px;}
+    .form-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     LOGIN SCREEN
+═══════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="login-box">
+    <h1>Embed AIoT</h1>
+    <p>Admin Dashboard — Sign in to continue</p>
+    <div class="field" style="margin-bottom:14px">
+      <label>Email</label>
+      <input type="email" id="login-email" placeholder="admin@embedaiot.com"/>
+    </div>
+    <div class="field" style="margin-bottom:22px">
+      <label>Password</label>
+      <input type="password" id="login-password" placeholder="••••••••"/>
+    </div>
+    <button class="btn btn-primary" style="width:100%;padding:12px" onclick="login()">Sign In</button>
+    <p id="login-error" style="color:#f87171;font-size:13px;margin-top:12px;display:none"></p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SIDEBAR
+═══════════════════════════════════════ -->
+<div id="sidebar">
+  <div class="logo">
+    <h2>Embed AIoT</h2>
+    <p>Admin Dashboard</p>
+  </div>
+  <nav>
+    <a href="#" class="active" onclick="showPage('dashboard',this)">
+      <span class="icon">📊</span><span class="text">Dashboard</span>
+    </a>
+    <a href="#" onclick="showPage('messages',this)">
+      <span class="icon">✉️</span><span class="text">Messages</span>
+    </a>
+    <a href="#" onclick="showPage('portfolio',this)">
+      <span class="icon">📁</span><span class="text">Portfolio</span>
+    </a>
+    <a href="#" onclick="showPage('services',this)">
+      <span class="icon">⚙️</span><span class="text">Services</span>
+    </a>
+    <a href="#" onclick="showPage('products',this)">
+      <span class="icon">📦</span><span class="text">Products</span>
+    </a>
+    <a href="#" onclick="showPage('team',this)">
+      <span class="icon">👥</span><span class="text">Team</span>
+    </a>
+    <a href="#" onclick="showPage('stories',this)">
+      <span class="icon">📖</span><span class="text">Our Story</span>
+    </a>
+  </nav>
+  <div class="logout">
+    <button onclick="logout()"><span>🚪</span> <span>Sign Out</span></button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     MAIN CONTENT
+═══════════════════════════════════════ -->
+<div id="main">
+
+  <!-- DASHBOARD -->
+  <div class="page active" id="page-dashboard">
+    <div class="page-header">
+      <h1>Dashboard</h1>
+      <p>Welcome back! Here's an overview of your website content.</p>
+    </div>
+    <div class="stats" id="stats-bar">
+      <div class="stat-card"><div class="num" id="stat-portfolio">—</div><div class="label">Projects</div></div>
+      <div class="stat-card"><div class="num" id="stat-services">—</div><div class="label">Services</div></div>
+      <div class="stat-card"><div class="num" id="stat-products">—</div><div class="label">Products</div></div>
+      <div class="stat-card"><div class="num" id="stat-team">—</div><div class="label">Team Members</div></div>
+      <div class="stat-card"><div class="num" id="stat-messages">—</div><div class="label">Messages</div></div>
+      <div class="stat-card"><div class="num" id="stat-stories">—</div><div class="label">Stories</div></div>
+    </div>
+    <div class="card">
+      <h2>Quick Actions</h2>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="showPage('portfolio',null)">+ Add Project</button>
+        <button class="btn btn-secondary" onclick="showPage('services',null)">+ Add Service</button>
+        <button class="btn btn-secondary" onclick="showPage('products',null)">+ Add Product</button>
+        <button class="btn btn-secondary" onclick="showPage('team',null)">+ Add Team Member</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MESSAGES -->
+  <div class="page" id="page-messages">
+    <div class="page-header">
+      <h1>Contact Messages</h1>
+      <p>Messages sent through your website contact form.</p>
+    </div>
+    <div id="messages-list"><div class="empty"><div class="icon">✉️</div><p>Loading messages...</p></div></div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div class="page" id="page-portfolio">
+    <div class="page-header">
+      <h1>Portfolio</h1>
+      <p>Manage your project showcase.</p>
+    </div>
+    <div class="card">
+      <h2 id="portfolio-form-title">Add New Project</h2>
+      <input type="hidden" id="portfolio-edit-id"/>
+      <div class="form-grid">
+        <div class="field">
+          <label>Project Title</label>
+          <input type="text" id="p-title" placeholder="e.g. Smart Farming System"/>
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <select id="p-category">
+            <option value="">Select category</option>
+            <option>3D Printing</option>
+            <option>Software Solutions</option>
+            <option>Mechanical Design</option>
+            <option>Consumer Electronics</option>
+            <option>IoT Development</option>
+            <option>Security Systems</option>
+            <option>Artificial Intelligence</option>
+            <option>Embedded Systems</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Description</label>
+          <textarea id="p-description" placeholder="Describe the project..."></textarea>
+        </div>
+        <div class="field">
+          <label>Technologies (comma separated)</label>
+          <input type="text" id="p-technologies" placeholder="React, Node.js, MongoDB"/>
+        </div>
+        <div class="field">
+          <label>Client Name (optional)</label>
+          <input type="text" id="p-client" placeholder="e.g. ABC Company"/>
+        </div>
+        <div class="field full">
+          <label>Project Image</label>
+          <input type="file" id="p-image" accept="image/*"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="savePortfolio()">Save Project</button>
+        <button class="btn btn-secondary" onclick="clearPortfolioForm()">Clear</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>All Projects</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Image</th><th>Title</th><th>Category</th><th>Technologies</th><th>Actions</th></tr></thead>
+          <tbody id="portfolio-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="page" id="page-services">
+    <div class="page-header">
+      <h1>Services</h1>
+      <p>Manage the services your company offers.</p>
+    </div>
+    <div class="card">
+      <h2 id="service-form-title">Add New Service</h2>
+      <input type="hidden" id="service-edit-id"/>
+      <div class="form-grid">
+        <div class="field">
+          <label>Service Title</label>
+          <input type="text" id="s-title" placeholder="e.g. Embedded Systems"/>
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <input type="text" id="s-category" placeholder="e.g. Hardware"/>
+        </div>
+        <div class="field full">
+          <label>Description</label>
+          <textarea id="s-description" placeholder="Describe the service..."></textarea>
+        </div>
+        <div class="field">
+          <label>Featured</label>
+          <select id="s-featured">
+            <option value="false">No</option>
+            <option value="true">Yes — show on homepage</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Service Image</label>
+          <input type="file" id="s-image" accept="image/*"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveService()">Save Service</button>
+        <button class="btn btn-secondary" onclick="clearServiceForm()">Clear</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>All Services</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Image</th><th>Title</th><th>Category</th><th>Featured</th><th>Actions</th></tr></thead>
+          <tbody id="services-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="page" id="page-products">
+    <div class="page-header">
+      <h1>Products</h1>
+      <p>Manage your products catalog.</p>
+    </div>
+    <div class="card">
+      <h2 id="product-form-title">Add New Product</h2>
+      <input type="hidden" id="product-edit-id"/>
+      <div class="form-grid">
+        <div class="field">
+          <label>Product Title</label>
+          <input type="text" id="pr-title" placeholder="e.g. IoT Sensor Module"/>
+        </div>
+        <div class="field">
+          <label>Price (PKR)</label>
+          <input type="number" id="pr-price" placeholder="e.g. 5000"/>
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <input type="text" id="pr-category" placeholder="e.g. Sensors"/>
+        </div>
+        <div class="field">
+          <label>Featured</label>
+          <select id="pr-featured">
+            <option value="false">No</option>
+            <option value="true">Yes — show on homepage</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Description</label>
+          <textarea id="pr-description" placeholder="Describe the product..."></textarea>
+        </div>
+        <div class="field">
+  <label>Technologies</label>
+  <input
+    type="text"
+    id="pr-technologies"
+    placeholder="React, Node.js, MongoDB"
+  />
+</div>
+
+<div class="field">
+  <label>Features</label>
+  <input
+    type="text"
+    id="pr-features"
+    placeholder="WiFi, Bluetooth, Mobile App"
+  />
+</div>
+        <div class="field full">
+          <label>Product Image</label>
+          <input type="file" id="pr-image" accept="image/*"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveProduct()">Save Product</button>
+        <button class="btn btn-secondary" onclick="clearProductForm()">Clear</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>All Products</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Image</th><th>Title</th><th>Price</th><th>Category</th><th>Featured</th><th>Actions</th></tr></thead>
+          <tbody id="products-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="page" id="page-team">
+    <div class="page-header">
+      <h1>Team Members</h1>
+      <p>Manage your team displayed on the About page.</p>
+    </div>
+    <div class="card">
+      <h2 id="team-form-title">Add Team Member</h2>
+      <input type="hidden" id="team-edit-id"/>
+      <div class="form-grid">
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" id="t-name" placeholder="e.g. Dr. Shahzad Younis"/>
+        </div>
+        <div class="field">
+          <label>Role / Position</label>
+          <input type="text" id="t-role" placeholder="e.g. Chief Executive Officer"/>
+        </div>
+        <div class="field">
+          <label>Department</label>
+          <select id="t-department">
+            <option value="">Select department</option>
+            <option>Director & CEO</option>
+            <option>Team Leads</option>
+            <option>Research & Development</option>
+            <option>Sales & Marketing</option>
+            <option>Engineering</option>
+            <option>Design</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Featured (show as highlighted)</label>
+          <select id="t-featured">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Photo</label>
+          <input type="file" id="t-image" accept="image/*"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveTeamMember()">Save Member</button>
+        <button class="btn btn-secondary" onclick="clearTeamForm()">Clear</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>All Team Members</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Photo</th><th>Name</th><th>Role</th><th>Department</th><th>Actions</th></tr></thead>
+          <tbody id="team-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORIES -->
+  <div class="page" id="page-stories">
+    <div class="page-header">
+      <h1>Our Story</h1>
+      <p>Manage your company story sections.</p>
+    </div>
+    <div class="card">
+      <h2 id="story-form-title">Add Story Section</h2>
+      <input type="hidden" id="story-edit-id"/>
+      <div class="form-grid single">
+        <div class="field">
+          <label>Title</label>
+          <input type="text" id="st-title" placeholder="e.g. How We Started"/>
+        </div>
+        <div class="field">
+          <label>Story Text</label>
+          <textarea id="st-description" style="min-height:140px" placeholder="Write the story..."></textarea>
+        </div>
+        <div class="field">
+          <label>Display Order (1 = first)</label>
+          <input type="number" id="st-order" placeholder="1" value="1"/>
+        </div>
+        <div class="field">
+          <label>Story Image (optional)</label>
+          <input type="file" id="st-image" accept="image/*"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveStory()">Save Story</button>
+        <button class="btn btn-secondary" onclick="clearStoryForm()">Clear</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>All Story Sections</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Image</th><th>Title</th><th>Order</th><th>Preview</th><th>Actions</th></tr></thead>
+          <tbody id="stories-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end #main -->
+
+<!-- ALERT -->
+<div id="alert"></div>
+
+<script>
+// ═══════════════════════════════════════
+// CONFIG — change this if your backend
+// runs on a different port
+// ═══════════════════════════════════════
+const API = window.location.origin + '/api';
+
+// ═══════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════
+const token = () => localStorage.getItem('adminToken');
+
+function showAlert(msg, type='success') {
+  const el = document.getElementById('alert');
+  el.textContent = msg;
+  el.className = type;
+  el.style.display = 'block';
+  setTimeout(() => el.style.display = 'none', 3500);
+}
+
+function imgSrc(filename) {
+  if (!filename) return '';
+  if (filename.startsWith('http')) return filename;
+  return window.location.origin + `/uploads/${filename}`;
+}
+
+async function apiFetch(path, options={}) {
+  const adminToken = localStorage.getItem('adminToken');
+  
+  const headers = {};
+  
+  if (adminToken) {
+    headers['Authorization'] = `Bearer ${adminToken}`;
+  }
+  
+  if (!(options.body instanceof FormData)) {
+    headers['Content-Type'] = 'application/json';
+  }
+  
+  const res = await fetch(API + path, { 
+    ...options, 
+    headers: { ...headers, ...(options.headers || {}) }
+  });
+  
+  return res;
+}
+
+// ═══════════════════════════════════════
+// LOGIN / LOGOUT
+// ═══════════════════════════════════════
+async function login() {
+  const email = document.getElementById('login-email').value.trim();
+  const pass  = document.getElementById('login-password').value.trim();
+  if (!email || !pass) return showAlert('Enter email and password','error');
+  try {
+    const res  = await fetch(`${API}/admin/login`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ email, password: pass })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message);
+    localStorage.setItem('adminToken', data.token);
+    document.getElementById('login-screen').style.display = 'none';
+    loadDashboard();
+  } catch(e) {
+    document.getElementById('login-error').textContent = e.message;
+    document.getElementById('login-error').style.display = 'block';
+  }
+}
+
+function logout() {
+  localStorage.removeItem('adminToken');
+  location.reload();
+}
+
+// Auto-login if token exists
+window.onload = () => {
+  if (token()) {
+    document.getElementById('login-screen').style.display = 'none';
+    loadDashboard();
+  }
+};
+
+// Enter key on login
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.getElementById('login-screen').style.display !== 'none') login();
+});
+
+// ═══════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════
+function showPage(name, linkEl) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#sidebar nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  if (linkEl) linkEl.classList.add('active');
+  // Load data for the page
+  if (name==='dashboard')  loadDashboard();
+  if (name==='messages')   loadMessages();
+  if (name==='portfolio')  loadPortfolio();
+  if (name==='services')   loadServices();
+  if (name==='products')   loadProducts();
+  if (name==='team')       loadTeam();
+  if (name==='stories')    loadStories();
+}
+
+// ═══════════════════════════════════════
+// DASHBOARD STATS
+// ═══════════════════════════════════════
+async function loadDashboard() {
+  const endpoints = [
+    ['portfolio','stat-portfolio'],
+    ['services','stat-services'],
+    ['products','stat-products'],
+    ['team','stat-team'],
+    ['contact','stat-messages'],
+    ['stories','stat-stories'],
+  ];
+  for (const [ep, elId] of endpoints) {
+    try {
+      const res  = await apiFetch('/'+ep);
+      const data = await res.json();
+      const count = Array.isArray(data) ? data.length : '?';
+      document.getElementById(elId).textContent = count;
+    } catch { document.getElementById(elId).textContent = '?'; }
+  }
+}
+
+// ═══════════════════════════════════════
+// MESSAGES
+// ═══════════════════════════════════════
+async function loadMessages() {
+  const res  = await apiFetch('/contact');
+  const data = await res.json();
+  const el   = document.getElementById('messages-list');
+  if (!data.length) {
+    el.innerHTML = '<div class="empty"><div class="icon">✉️</div><p>No messages yet.</p></div>';
+    return;
+  }
+  el.innerHTML = data.map(m => `
+    <div class="msg-card">
+      <div class="msg-top">
+        <div>
+          <div class="sender">${m.name}</div>
+          <div class="email">${m.email}</div>
+          
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span class="date">${new Date(m.date).toLocaleDateString()}</span>
+          <button class="btn btn-danger btn-sm" onclick="deleteMessage('${m._id}')">Delete</button>
+        </div>
+      </div>
+      <div class="body">${m.message}</div>
+    </div>
+  `).join('');
+}
+
+async function deleteMessage(id) {
+  if (!confirm('Delete this message?')) return;
+  await apiFetch('/contact/'+id, { method:'DELETE' });
+  showAlert('Message deleted');
+  loadMessages();
+}
+
+// ═══════════════════════════════════════
+// PORTFOLIO
+// ═══════════════════════════════════════
+async function loadPortfolio() {
+  const res  = await apiFetch('/portfolio');
+  const data = await res.json();
+  const tb   = document.getElementById('portfolio-table');
+  if (!data.length) { tb.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#475569;padding:32px">No projects yet.</td></tr>'; return; }
+  tb.innerHTML = data.map(p => `
+    <tr>
+      <td>${p.image ? `<img src="${imgSrc(p.image)}" alt="${p.title}"/>` : '—'}</td>
+      <td><strong>${p.title}</strong></td>
+      <td><span class="badge badge-cyan">${p.category||'—'}</span></td>
+      <td style="font-size:12px;color:#64748b">${(p.technologies||[]).join(', ')}</td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick='editPortfolio(${JSON.stringify(p)})'>Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deletePortfolio('${p._id}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+async function savePortfolio() {
+  const id    = document.getElementById('portfolio-edit-id').value;
+  const title = document.getElementById('p-title').value.trim();
+  const cat   = document.getElementById('p-category').value;
+  const desc  = document.getElementById('p-description').value.trim();
+  const tech  = document.getElementById('p-technologies').value.trim();
+  const cli   = document.getElementById('p-client').value.trim();
+  const img   = document.getElementById('p-image').files[0];
+  if (!title || !desc) return showAlert('Title and description required','error');
+
+  const form = new FormData();
+  form.append('title', title);
+  form.append('category', cat);
+  form.append('description', desc);
+  form.append('technologies', tech);
+  if (cli) form.append('clientName', cli);
+  if (img) form.append('image', img);
+
+  const method = id ? 'PUT' : 'POST';
+  const url    = id ? `/portfolio/${id}` : '/portfolio';
+  const res    = await apiFetch(url, { method, body: form });
+  if (!res.ok) return showAlert('Error saving project','error');
+  showAlert(id ? 'Project updated!' : 'Project added!');
+  clearPortfolioForm();
+  loadPortfolio();
+}
+
+function editPortfolio(p) {
+  document.getElementById('portfolio-edit-id').value    = p._id;
+  document.getElementById('p-title').value              = p.title||'';
+  document.getElementById('p-category').value           = p.category||'';
+  document.getElementById('p-description').value        = p.description||'';
+  document.getElementById('p-technologies').value       = (p.technologies||[]).join(', ');
+  document.getElementById('p-client').value             = p.clientName||'';
+  document.getElementById('portfolio-form-title').textContent = 'Edit Project';
+  window.scrollTo(0,0);
+}
+
+async function deletePortfolio(id) {
+  if (!confirm('Delete this project?')) return;
+  await apiFetch('/portfolio/'+id, { method:'DELETE' });
+  showAlert('Project deleted');
+  loadPortfolio();
+}
+
+function clearPortfolioForm() {
+  ['portfolio-edit-id','p-title','p-description','p-technologies','p-client'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('p-category').value = '';
+  document.getElementById('p-image').value = '';
+  document.getElementById('portfolio-form-title').textContent = 'Add New Project';
+}
+
+// ═══════════════════════════════════════
+// SERVICES
+// ═══════════════════════════════════════
+async function loadServices() {
+  const res  = await apiFetch('/services');
+  const data = await res.json();
+  const tb   = document.getElementById('services-table');
+  if (!data.length) { tb.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#475569;padding:32px">No services yet.</td></tr>'; return; }
+  tb.innerHTML = data.map(s => `
+    <tr>
+      <td>${s.image ? `<img src="${imgSrc(s.image)}" alt="${s.title}"/>` : '—'}</td>
+      <td><strong>${s.title}</strong></td>
+      <td>${s.category||'—'}</td>
+      <td>${s.featured ? '<span class="badge badge-green">Yes</span>' : '<span style="color:#475569">No</span>'}</td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick='editService(${JSON.stringify(s)})'>Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteService('${s._id}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+async function saveService() {
+  const id   = document.getElementById('service-edit-id').value;
+  const title= document.getElementById('s-title').value.trim();
+  const desc = document.getElementById('s-description').value.trim();
+  const cat  = document.getElementById('s-category').value.trim();
+  const feat = document.getElementById('s-featured').value;
+  const img  = document.getElementById('s-image').files[0];
+  if (!title || !desc) return showAlert('Title and description required','error');
+
+  const form = new FormData();
+  form.append('title', title);
+  form.append('description', desc);
+  form.append('category', cat);
+  form.append('featured', feat);
+  if (img) form.append('image', img);
+
+  const method = id ? 'PUT' : 'POST';
+  const url    = id ? `/services/${id}` : '/services';
+  const res    = await apiFetch(url, { method, body: form });
+  if (!res.ok) return showAlert('Error saving service','error');
+  showAlert(id ? 'Service updated!' : 'Service added!');
+  clearServiceForm();
+  loadServices();
+}
+
+function editService(s) {
+  document.getElementById('service-edit-id').value   = s._id;
+  document.getElementById('s-title').value           = s.title||'';
+  document.getElementById('s-description').value     = s.description||'';
+  document.getElementById('s-category').value        = s.category||'';
+  document.getElementById('s-featured').value        = s.featured ? 'true' : 'false';
+  document.getElementById('service-form-title').textContent = 'Edit Service';
+  window.scrollTo(0,0);
+}
+
+async function deleteService(id) {
+  if (!confirm('Delete this service?')) return;
+  await apiFetch('/services/'+id, { method:'DELETE' });
+  showAlert('Service deleted');
+  loadServices();
+}
+
+function clearServiceForm() {
+  ['service-edit-id','s-title','s-description','s-category'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('s-featured').value = 'false';
+  document.getElementById('s-image').value = '';
+  document.getElementById('service-form-title').textContent = 'Add New Service';
+}
+
+// ═══════════════════════════════════════
+// PRODUCTS
+// ═══════════════════════════════════════
+async function loadProducts() {
+  const res  = await apiFetch('/products');
+  const data = await res.json();
+  const tb   = document.getElementById('products-table');
+  if (!data.length) { tb.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#475569;padding:32px">No products yet.</td></tr>'; return; }
+  tb.innerHTML = data.map(p => `
+    <tr>
+      <td>${p.image ? `<img src="${imgSrc(p.image)}" alt="${p.title}"/>` : '—'}</td>
+      <td><strong>${p.title}</strong></td>
+      <td>PKR ${p.price||0}</td>
+      <td>${p.category||'—'}</td>
+      <td>${p.featured ? '<span class="badge badge-green">Yes</span>' : '<span style="color:#475569">No</span>'}</td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick='editProduct(${JSON.stringify(p)})'>Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteProduct('${p._id}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+async function saveProduct() {
+  const id   = document.getElementById('product-edit-id').value;
+  const title= document.getElementById('pr-title').value.trim();
+  const price= document.getElementById('pr-price').value;
+  const cat  = document.getElementById('pr-category').value.trim();
+  const desc = document.getElementById('pr-description').value.trim();
+  const tech = document.getElementById('pr-technologies').value.trim();
+  const featList = document.getElementById('pr-features').value.trim();
+  const feat = document.getElementById('pr-featured').value;
+  const img  = document.getElementById('pr-image').files[0];
+  if (!title || !desc || !price) return showAlert('Title, description and price required','error');
+
+  const form = new FormData();
+  form.append('title', title);
+  form.append('price', price);
+  form.append('category', cat);
+  form.append('description', desc);
+  form.append('featured', feat);
+  form.append('technologies', tech);
+  form.append('features', featList);
+  if (img) form.append('image', img);
+
+  const method = id ? 'PUT' : 'POST';
+  const url    = id ? `/products/${id}` : '/products';
+  const res    = await apiFetch(url, { method, body: form });
+  if (!res.ok) return showAlert('Error saving product','error');
+  showAlert(id ? 'Product updated!' : 'Product added!');
+  clearProductForm();
+  loadProducts();
+}
+
+function editProduct(p) {
+  document.getElementById('product-edit-id').value   = p._id;
+  document.getElementById('pr-title').value          = p.title||'';
+  document.getElementById('pr-price').value          = p.price||'';
+  document.getElementById('pr-category').value       = p.category||'';
+  document.getElementById('pr-description').value    = p.description||'';
+  document.getElementById('pr-technologies').value   =(p.technologies || []).join(', ');
+  document.getElementById('pr-features').value       =(p.features || []).join(', ');
+  document.getElementById('pr-featured').value       = p.featured ? 'true' : 'false';
+  document.getElementById('product-form-title').textContent = 'Edit Product';
+  window.scrollTo(0,0);
+}
+
+async function deleteProduct(id) {
+  if (!confirm('Delete this product?')) return;
+  await apiFetch('/products/'+id, { method:'DELETE' });
+  showAlert('Product deleted');
+  loadProducts();
+}
+
+function clearProductForm() {
+  [
+ 'product-edit-id',
+ 'pr-title',
+ 'pr-price',
+ 'pr-category',
+ 'pr-description',
+ 'pr-technologies',
+ 'pr-features'
+].forEach(id => document.getElementById(id).value='');
+  document.getElementById('pr-featured').value = 'false';
+  document.getElementById('pr-image').value = '';
+  document.getElementById('product-form-title').textContent = 'Add New Product';
+}
+
+// ═══════════════════════════════════════
+// TEAM
+// ═══════════════════════════════════════
+async function loadTeam() {
+  const res  = await apiFetch('/team');
+  const data = await res.json();
+  const tb   = document.getElementById('team-table');
+  if (!data.length) { tb.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#475569;padding:32px">No team members yet.</td></tr>'; return; }
+  tb.innerHTML = data.map(m => `
+    <tr>
+      <td>${m.image ? `<img src="${imgSrc(m.image)}" alt="${m.name}" style="border-radius:50%"/>` : '—'}</td>
+      <td><strong>${m.name}</strong></td>
+      <td>${m.role||'—'}</td>
+      <td><span class="badge badge-cyan">${m.department||'—'}</span></td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick='editTeamMember(${JSON.stringify(m)})'>Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteTeamMember('${m._id}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+async function saveTeamMember() {
+  const id   = document.getElementById('team-edit-id').value;
+  const name = document.getElementById('t-name').value.trim();
+  const role = document.getElementById('t-role').value.trim();
+  const dept = document.getElementById('t-department').value;
+  const feat = document.getElementById('t-featured').value;
+  const img  = document.getElementById('t-image').files[0];
+  if (!name || !role || !dept) return showAlert('Name, role and department required','error');
+  if (!id && !img) return showAlert('Please upload a photo','error');
+
+  const form = new FormData();
+  form.append('name', name);
+  form.append('role', role);
+  form.append('department', dept);
+  form.append('featured', feat);
+  if (img) form.append('image', img);
+
+  const method = id ? 'PUT' : 'POST';
+  const url    = id ? `/team/${id}` : '/team';
+  const res    = await apiFetch(url, { method, body: form });
+  if (!res.ok) return showAlert('Error saving team member','error');
+  showAlert(id ? 'Member updated!' : 'Member added!');
+  clearTeamForm();
+  loadTeam();
+}
+
+function editTeamMember(m) {
+  document.getElementById('team-edit-id').value    = m._id;
+  document.getElementById('t-name').value          = m.name||'';
+  document.getElementById('t-role').value          = m.role||'';
+  document.getElementById('t-department').value    = m.department||'';
+  document.getElementById('t-featured').value      = m.featured ? 'true' : 'false';
+  document.getElementById('team-form-title').textContent = 'Edit Team Member';
+  window.scrollTo(0,0);
+}
+
+async function deleteTeamMember(id) {
+  if (!confirm('Delete this team member?')) return;
+  await apiFetch('/team/'+id, { method:'DELETE' });
+  showAlert('Team member deleted');
+  loadTeam();
+}
+
+function clearTeamForm() {
+  ['team-edit-id','t-name','t-role'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('t-department').value = '';
+  document.getElementById('t-featured').value   = 'false';
+  document.getElementById('t-image').value       = '';
+  document.getElementById('team-form-title').textContent = 'Add Team Member';
+}
+
+// ═══════════════════════════════════════
+// STORIES
+// ═══════════════════════════════════════
+async function loadStories() {
+  const res  = await apiFetch('/stories');
+  const data = await res.json();
+  const tb   = document.getElementById('stories-table');
+  if (!data.length) { tb.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#475569;padding:32px">No stories yet.</td></tr>'; return; }
+  tb.innerHTML = data.map(s => `
+    <tr>
+      <td>${s.image ? `<img src="${imgSrc(s.image)}" alt="${s.title}"/>` : '—'}</td>
+      <td><strong>${s.title}</strong></td>
+      <td style="text-align:center">${s.order}</td>
+      <td style="font-size:12px;color:#64748b;max-width:240px">${(s.description||'').substring(0,80)}...</td>
+      <td>
+        <button class="btn btn-secondary btn-sm" onclick='editStory(${JSON.stringify(s)})'>Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteStory('${s._id}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+async function saveStory() {
+  const id   = document.getElementById('story-edit-id').value;
+  const title= document.getElementById('st-title').value.trim();
+  const desc = document.getElementById('st-description').value.trim();
+  const ord  = document.getElementById('st-order').value;
+  const img  = document.getElementById('st-image').files[0];
+  if (!title || !desc) return showAlert('Title and story text required','error');
+
+  const form = new FormData();
+  form.append('title', title);
+  form.append('description', desc);
+  form.append('order', ord);
+  if (img) form.append('image', img);
+
+  const method = id ? 'PUT' : 'POST';
+  const url    = id ? `/stories/${id}` : '/stories';
+  const res    = await apiFetch(url, { method, body: form });
+  if (!res.ok) return showAlert('Error saving story','error');
+  showAlert(id ? 'Story updated!' : 'Story added!');
+  clearStoryForm();
+  loadStories();
+}
+
+function editStory(s) {
+  document.getElementById('story-edit-id').value      = s._id;
+  document.getElementById('st-title').value           = s.title||'';
+  document.getElementById('st-description').value     = s.description||'';
+  document.getElementById('st-order').value           = s.order||1;
+  document.getElementById('story-form-title').textContent = 'Edit Story';
+  window.scrollTo(0,0);
+}
+
+async function deleteStory(id) {
+  if (!confirm('Delete this story?')) return;
+  await apiFetch('/stories/'+id, { method:'DELETE' });
+  showAlert('Story deleted');
+  loadStories();
+}
+
+function clearStoryForm() {
+  ['story-edit-id','st-title','st-description'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('st-order').value  = '1';
+  document.getElementById('st-image').value  = '';
+  document.getElementById('story-form-title').textContent = 'Add Story Section';
+}
+</script>
+</body>
+</html>

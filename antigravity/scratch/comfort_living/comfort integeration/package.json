@@ -1,0 +1,16 @@
+{
+  "name": "website-embedaiot",
+  "version": "1.0.0",
+  "description": "Embed AIoT Integrated Website (Frontend & Backend)",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install-all": "npm install && npm run install:backend && npm run install:frontend",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
