@@ -23,40 +23,18 @@
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="370" align="center" valign="top">
-      <img src="./danyal-ascii.svg" width="370" alt="Danyal Aqeel ASCII Portrait" />
+    <td width="410" align="center" valign="top">
+      <img src="./danyal-ascii.svg" width="410" alt="Danyal Aqeel ASCII Portrait" />
     </td>
-    <td width="490" align="center" valign="top">
-      <img src="./info-card.svg" width="490" alt="Danyal Aqeel Neofetch Info Card" />
+    <td width="450" align="center" valign="top">
+      <img src="./info-card.svg" width="450" alt="Danyal Aqeel Neofetch Info Card" />
     </td>
   </tr>
 </table>
 
 </div>
 
-
 </div>
-
-
-<!-- TERMINAL SUITE START -->
-<div align="center">
-
-<h3><code>danyal@github ~ $ ./contributions.sh</code></h3>
-<img src="./contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
-
-<br><br>
-
-<h3><code>danyal@github ~ $ whoami</code></h3>
-<table>
-  <tr>
-    <td valign="top" width="370"><img src="./danyal-ascii.svg" width="370" alt="Danyal Aqeel ASCII Portrait" /></td>
-    <td valign="top" width="490"><img src="./info-card.svg" width="490" alt="Neofetch System Info Card" /></td>
-  </tr>
-</table>
-
-</div>
-<!-- TERMINAL SUITE END -->
-
 
 <br>
 
