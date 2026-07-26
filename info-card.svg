@@ -8,7 +8,7 @@
       .text-val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; fill: #c9d1d9; }
       .text-val-bright { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 600; fill: #58a6ff; }
       .text-sub { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #8b949e; }
-      .line { stroke: #21262d; stroke-width: 1px; }
+      .line { stroke: #21282d; stroke-width: 1px; }
     </style>
   </defs>
 
@@ -51,7 +51,7 @@
     <text x="0" y="202" class="text-sub">— Highlights —————————————————───────────────</text>
 
     <!-- Highlights -->
-    <text x="0" y="226" class="text-val" fill="#10b981">• Decoupled Serverless Engine Architecture</text>
+    <text x="0" y="228" class="text-val" fill="#10b981">• Decoupled Serverless Engine Architecture</text>
     <text x="0" y="248" class="text-val" fill="#10b981">• High-Availability IR &amp; Vector Search Indexing</text>
     <text x="0" y="270" class="text-val" fill="#10b981">• Custom C++ WebAssembly Game Engines</text>
   </g>
