@@ -32,7 +32,7 @@
 
     <!-- Line 3: Edu -->
     <text x="0" y="78" class="text-label">Edu</text>
-    <text x="85" y="78" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;26)</text>
+    <text x="85" y="78" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;28)</text>
 
     <!-- Divider 1 -->
     <text x="0" y="105" class="text-sub">— Stack ———————————————————————————————————</text>
