@@ -29,7 +29,7 @@
       <img src="./danyal-ascii.svg" width="410" alt="Danyal Aqeel ASCII Portrait" />
     </td>
     <td width="450" align="center" valign="top">
-      <img src="./info-card.svg" width="450" alt="Danyal Aqeel Neofetch Info Card" />
+      <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/info-card.svg?v=2028_final_bust" width="450" alt="Danyal Aqeel Neofetch Info Card" />
     </td>
   </tr>
 </table>
