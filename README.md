@@ -93,7 +93,7 @@
 
 I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
 
-> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST (SEECS)  
+> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST SEECS (SE 2024 Batch / NUST '28)  
 > 🔭 **Current Focus:** Building AI-driven autonomous agents (Gemini-powered RPA), cross-repo CI/CD chess engines, and C++ games compiled to WebAssembly  
 > ⚙️ **Architecture:** Repository Dispatch Split, Event-Driven Backend Decoupling, Container Orchestration  
 
