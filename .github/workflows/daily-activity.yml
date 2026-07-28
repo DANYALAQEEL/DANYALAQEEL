@@ -1,0 +1,31 @@
+name: Daily GitHub 3D City & Contribution Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs automatically every single day at 00:00 UTC
+  workflow_dispatch:      # Enables 1-click manual trigger from the GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  daily-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Update Daily Activity Log
+        run: |
+          mkdir -p .github
+          echo "{\"last_updated\": \"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\", \"status\": \"active\", \"city_sync\": true}" > .github/daily-activity.json
+
+      - name: Commit and Push Daily Activity
+        run: |
+          git config --global user.name "Danyal Aqeel"
+          git config --global user.email "raqeel.bese24seecs@seecs.edu.pk"
+          git add .github/daily-activity.json
+          git commit -m "Auto-sync GitHub 3D City & contribution calendar: $(date -u +'%Y-%m-%d')" || exit 0
+          git push origin main
