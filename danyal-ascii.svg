@@ -6,11 +6,40 @@
         15% { opacity: 1; }
         100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); opacity: 1; }
       }
+      @keyframes phosphorPulse {
+        0%, 100% { fill: #10b981; filter: drop-shadow(0 0 1px rgba(16, 185, 129, 0.4)); }
+        50% { fill: #34d399; filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.8)); }
+      }
+      @keyframes phosphorPulseAlt {
+        0%, 100% { fill: #059669; filter: drop-shadow(0 0 1px rgba(5, 150, 105, 0.3)); }
+        50% { fill: #10b981; filter: drop-shadow(0 0 3px rgba(16, 185, 129, 0.7)); }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateY(34px); opacity: 0; }
+        10% { opacity: 0.8; }
+        90% { opacity: 0.8; }
+        100% { transform: translateY(346px); opacity: 0; }
+      }
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+
       .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
       .header-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
       .row { animation: wipeIn 0.22s cubic-bezier(0.4, 0, 0.2, 1) forwards; opacity: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 8.5px; font-weight: 700; fill: #10b981; letter-spacing: 0.5px; white-space: pre; }
+      .row-odd text { animation: phosphorPulse 3s ease-in-out infinite; }
+      .row-even text { animation: phosphorPulseAlt 3s ease-in-out infinite 1.5s; }
       .footer-prompt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; font-weight: 700; fill: #58a6ff; }
+      .cursor { fill: #10b981; animation: cursorBlink 1s steps(1) infinite; }
+      .scanline-beam { animation: scanBeam 3.5s ease-in-out infinite; mix-blend-mode: screen; pointer-events: none; }
     </style>
+
+    <linearGradient id="scanlineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0" />
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
   <rect width="410" height="370" class="bg" />
@@ -22,7 +51,37 @@
   <text x="205" y="22" text-anchor="middle" class="header-title">danyal@github: ~$ ./portrait.sh</text>
   <line x1="0" y1="34" x2="410" y2="34" stroke="#30363d" stroke-width="1" />
 
-  <g class="row" style="animation-delay: 0.00s;"><text x="14" y="52.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢄⢄⢄⣀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.05s;"><text x="14" y="64.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡰⣱⣹⣼⣺⢯⢷⣳⡷⣕⣆⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.10s;"><text x="14" y="76.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡐⡵⡵⣝⣗⢟⣾⢽⣝⣯⢷⣻⠛⠙⠑⠹⡢⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.15s;"><text x="14" y="88.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣪⢖⣵⣟⣯⢷⣳⡽⣪⣳⢳⣫⡿⡽⣆⡄⡂⣀⣸⢜⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.20s;"><text x="14" y="100.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣟⣾⣻⣯⡿⣯⡿⣟⡿⣗⡷⣯⢾⢽⢽⣳⡽⣿⣳⣗⢕⣕⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.25s;"><text x="14" y="112.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣷⣟⣷⣻⡷⣿⣻⡽⡯⡿⣝⣽⣫⣟⣯⣻⢽⢽⢚⢪⢩⠡⡠⡁⢄⢀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.30s;"><text x="14" y="124.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣷⡿⣾⡯⣿⣳⣯⡿⣟⣿⢿⣽⡯⣟⣗⢝⢵⡱⣣⡣⡧⣣⣣⢧⣗⠳⠿⣿⡿⣷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.35s;"><text x="14" y="136.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣾⣟⣯⡿⣽⣾⣯⣿⣟⣟⡯⣗⣯⣳⡳⣝⣗⣝⢞⣮⠿⡺⢽⢻⠡⡀⠀⠀⠉⠋⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.40s;"><text x="14" y="148.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⣯⣿⢷⣿⢿⡷⣿⡾⣟⣿⣻⢟⢷⢷⢿⡾⣞⣞⣭⣦⣕⡌⡔⣵⢟⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.45s;"><text x="14" y="160.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣝⢝⣟⣾⡿⣟⣯⣿⢿⣻⢸⠸⡱⡹⡵⢟⣫⢕⣽⡷⣯⣓⡈⢊⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.50s;"><text x="14" y="172.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣞⣮⣿⣻⣯⣿⢿⣻⣟⣿⢿⡘⡌⢎⠪⠪⠫⡓⠔⠕⡝⣗⢵⢱⢂⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.55s;"><text x="14" y="184.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢗⣷⡿⣾⠫⡟⠎⡻⡮⡪⣻⣯⣪⢪⢪⢸⠨⠂⠄⠡⠑⠡⡣⣣⡣⡣⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.60s;"><text x="14" y="196.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⣱⣟⣿⣻⣧⡑⡈⡈⠺⡦⡪⣿⣮⡳⡕⣕⢍⢎⠌⠄⢅⢑⢼⣇⣇⣽⡨⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.65s;"><text x="14" y="208.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣹⣽⣟⣷⡿⣦⣌⠑⠀⠑⣿⢾⢮⡳⡱⡱⡡⠣⡑⢔⢐⢠⣱⢿⠽⠪⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.70s;"><text x="14" y="220.0">⠀⠀⠀⠀⠀⠀⠀⠀⢐⠾⣽⡾⡛⣽⣿⣻⣽⣾⣾⣞⡿⣿⣽⡺⣕⡕⡎⡎⡌⣲⡽⡯⢞⠺⠚⠺⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.75s;"><text x="14" y="232.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢙⠽⡢⣐⣽⢮⢿⣯⣗⢷⡳⡽⡽⣾⢿⣺⢮⡳⣱⢱⢱⠡⠫⡶⡶⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.80s;"><text x="14" y="244.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠳⠻⣯⣶⣻⡽⠊⣎⢗⡝⣎⢯⣻⣻⢷⣯⣞⣼⣔⢅⢕⡠⣃⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.85s;"><text x="14" y="256.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣽⣻⣅⢎⢎⣗⢽⡸⣕⣗⢗⡯⣿⣽⣷⢿⣻⢷⠿⣯⡷⡁⠀⠡⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.90s;"><text x="14" y="268.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡰⡌⠠⠂⣿⣻⣗⢯⡳⣕⢧⢳⡱⣪⡫⡺⡱⡓⡍⡇⡣⠐⢀⣽⡳⡅⠐⡀⢊⢷⣅⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 0.95s;"><text x="14" y="280.0">⠀⠀⠀⠀⠀⠀⢀⢠⣖⢯⣞⡆⡃⡕⡸⣟⣯⣧⡫⣗⢽⡱⡣⣗⡽⣞⡴⡸⣸⠸⡐⢅⢲⣻⢜⡆⡁⡂⡂⢽⡻⣷⣌⠒⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 1.00s;"><text x="14" y="292.0">⠀⠀⠀⠀⡂⢈⣴⡿⣝⢧⢿⣆⢂⠢⢡⢹⣿⢾⣳⣜⢘⢎⢏⢎⢞⡕⣝⢜⢎⠪⡪⢪⣾⢣⠳⣕⠠⠂⠄⡳⣻⡎⡿⣷⢰⡙⣆⣂⢀⠀⠀⠀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 1.05s;"><text x="14" y="304.0">⠀⠀⡠⢡⡰⣽⡳⣝⢮⡳⣻⢿⣆⢊⠄⢂⠹⡻⡻⣞⡷⣦⣥⡐⠀⠅⡱⠱⡁⠡⢐⢵⠗⡱⡩⣒⠠⢁⢐⣿⢸⣻⡜⡽⡧⡳⣕⢵⣣⡪⡐⡀⠀⠀⠀⠀</text></g><g class="row" style="animation-delay: 1.10s;"><text x="14" y="316.0">⣄⢧⣗⡯⣺⡳⣝⢮⡳⣝⡽⡯⣟⣷⣈⣦⣶⣿⢾⣻⣟⣯⣷⣿⡄⠂⠌⠌⣰⣾⣺⣬⣦⣔⣬⣄⠠⡀⠰⣻⢕⢽⣳⡹⣻⡜⣜⣗⢵⢯⣺⢜⢄⠄⠀⠀</text></g><g class="row" style="animation-delay: 1.15s;"><text x="14" y="328.0">⡮⣗⢷⢽⡺⣪⢯⡳⡯⣳⢽⢝⣗⡽⣻⣫⢿⣺⢟⡿⣮⣻⣗⣟⣿⡆⣠⣿⣟⣿⣻⣯⣿⣽⣷⢿⣟⡷⣞⢽⢕⢝⡞⣯⢺⣯⢺⣺⢽⣝⢾⢕⡇⡆⠄⠀</text></g><g class="row" style="animation-delay: 1.20s;"><text x="14" y="340.0">⡽⡮⣯⣻⡪⣗⣽⣺⢽⡪⣞⢵⡳⣝⢞⢮⡳⣝⢵⣫⢯⢗⣷⡻⣾⠝⢿⡳⡯⣞⢗⡗⣗⢗⡽⡳⣕⢯⣪⡳⣣⢣⡫⡽⣕⢿⡳⣝⣷⢳⣫⣗⢽⡧⢑⠀</text></g>
+  <!-- ASCII Art Rows -->
+  <g class="row row-odd" style="animation-delay: 0.00s;"><text x="14" y="52.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢄⢄⢄⣀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.05s;"><text x="14" y="64.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡰⣱⣹⣼⣺⢯⢷⣳⡷⣕⣆⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.10s;"><text x="14" y="76.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡐⡵⡵⣝⣗⢟⣾⢽⣝⣯⢷⣻⠛⠙⠑⠹⡢⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.15s;"><text x="14" y="88.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣪⢖⣵⣟⣯⢷⣳⡽⣪⣳⢳⣫⡿⡽⣆⡄⡂⣀⣸⢜⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.20s;"><text x="14" y="100.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣟⣾⣻⣯⡿⣯⡿⣟⡿⣗⡷⣯⢾⢽⢽⣳⡽⣿⣳⣗⢕⣕⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.25s;"><text x="14" y="112.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣷⣟⣷⣻⡷⣿⣻⡽⡯⡿⣝⣽⣫⣟⣯⣻⢽⢽⢚⢪⢩⠡⡠⡁⢄⢀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.30s;"><text x="14" y="124.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣷⡿⣾⡯⣿⣳⣯⡿⣟⣿⢿⣽⡯⣟⣗⢵⡱⣣⡣⡧⣣⣣⢧⣗⠳⠿⣿⡿⣷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.35s;"><text x="14" y="136.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣾⣟⣯⡿⣽⣾⣯⣿⣟⣟⡯⣗⣯⣳⡳⣝⣗⣝⢞⣮⠿⡺⢽⢻⠡⡀⠀⠀⠉⠋⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.40s;"><text x="14" y="148.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⣯⣿⢷⣿⢿⡷⣿⡾⣟⣿⣻⢟⢷⢷⢿⡾⣞⣞⣭⣦⣕⡌⡔⣵⢟⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.45s;"><text x="14" y="160.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣝⢝⣟⣾⡿⣟⣯⣿⢿⣻⢸⠸⡱⡹⡵⢟⣫⢕⣽⡷⣯⣓⡈⢊⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.50s;"><text x="14" y="172.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣞⣮⣿⣻⣯⣿⢿⣻⣟⣿⢿⡘⡌⢎⠪⠪⠫⡓⠔⠕⡝⣗⢵⢱⢂⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.55s;"><text x="14" y="184.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢗⣷⡿⣾⠫⡟⠎⡻⡮⡪⣻⣯⣪⢪⢪⢸⠨⠂⠄⠡⠑⠡⡣⣣⡣⡣⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.60s;"><text x="14" y="196.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⣱⣟⣿⣻⣧⡑⡈⡈⠺⡦⡪⣿⣮⡳⡕⣕⢍⢎⠌⠄⢅⢑⢼⣇⣇⣽⡨⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.65s;"><text x="14" y="208.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣹⣽⣟⣷⡿⣦⣌⠑⠀⠑⣿⢾⢮⡳⡱⡱⡡⠣⡑⢔⢐⢠⣱⢿⠽⠪⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.70s;"><text x="14" y="220.0">⠀⠀⠀⠀⠀⠀⠀⠀⢐⠾⣽⡾⡛⣽⣿⣻⣽⣾⣾⣞⡿⣿⣽⡺⣕⡕⡎⡎⡌⣲⡽⡯⢞⠺⠚⠺⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.75s;"><text x="14" y="232.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢙⠽⡢⣐⣽⢮⢿⣯⣗⢷⡳⡽⡽⣾⢿⣺⢮⡳⣱⢱⢱⠡⠫⡶⡶⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.80s;"><text x="14" y="244.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠳⠻⣯⣶⣻⡽⠊⣎⢗⡝⣎⢯⣻⣻⢷⣯⣞⣼⣔⢅⢕⡠⣃⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.85s;"><text x="14" y="256.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣽⣻⣅⢎⢎⣗⢽⡸⣕⣗⡯⣿⣽⣷⢿⣻⢷⠿⣯⡷⡁⠀⠡⢄⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 0.90s;"><text x="14" y="268.0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡰⡌⠠⠂⣿⣻⣗⢯⡳⣕⢧⢳⡱⣪⡫⡺⡱⡓⡍⡇⡣⠐⢀⣽⡳⡅⠐⡀⢊⢷⣅⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 0.95s;"><text x="14" y="280.0">⠀⠀⠀⠀⠀⠀⢀⢠⣖⢯⣞⡆⡃⡕⡸⣟⣯⣧⡫⣗⢽⡱⡣⣗⡽⣞⡴⡸⣸⠸⡐⢅⢲⣻⢜⡆⡁⡂⡂⢽⡻⣷⣌⠒⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 1.00s;"><text x="14" y="292.0">⠀⠀⠀⠀⡂⢈⣴⡿⣝⢧⢿⣆⢂⠢⢡⢹⣿⢾⣳⣜⢘⢎⢏⢎⢞⡕⣝⢜⢎⠪⡪⢪⣾⢣⠳⣕⠠⠂⠄⡳⣻⡎⡿⣷⢰⡙⣆⣂⢀⠀⠀⠀⠀⠀⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 1.05s;"><text x="14" y="304.0">⠀⠀⡠⢡⡰⣽⡳⣝⢮⡳⣻⢿⣆⢊⠄⢂⠹⡻⡻⣞⡷⣦⣥⡐⠀⠅⡱⠱⡁⠡⢐⢵⠗⡱⡩⣒⠠⢁⢐⣿⢸⣻⡜⡽⡧⡳⣕⢵⣣⡪⡐⡀⠀⠀⠀⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 1.10s;"><text x="14" y="316.0">⣄⢧⣗⡯⣺⡳⣝⡳⣝⡽⡯⣟⣷⣈⣦⣶⣿⢾⣻⣟⣯⣷⣿⡄⠂⠌⠌⣰⣾⣺⣬⣦⣔⣬⣄⠠⡀⠰⣻⢕⢽⣳⡹⣻⡜⣜⣗⢵⢯⣺⢜⢄⠄⠀⠀</text></g>
+  <g class="row row-even" style="animation-delay: 1.15s;"><text x="14" y="328.0">⡮⣗⢷⢽⡺⣪⢯⡳⡯⣳⢽⢝⣗⡽⣻⣫⢿⣺⢟⡿⣮⣻⣗⣟⣿⡆⣠⣿⣟⣿⣻⣯⣿⣽⣷⢿⣟⡷⣞⢽⢕⢝⡞⣯⢺⣯⢺⣺⢽⣝⢾⢕⡇⡆⠄⠀</text></g>
+  <g class="row row-odd" style="animation-delay: 1.20s;"><text x="14" y="340.0">⡽⡮⣯⣻⡪⣗⣽⣺⢽⡪⣞⡳⣝⢞⢮⡳⣝⢵⣫⢯⢗⣷⡻⣾⠝⢿⡳⡯⣞⢗⡗⣗⢗⡽⡳⣕⢯⣪⡳⣣⢣⡫⡽⣕⢿⡳⣝⣷⢳⣫⣗⢽⡧⢑⠀</text></g>
 
+  <!-- Animated Matrix Holographic Scanline Beam -->
+  <rect x="0" y="0" width="410" height="24" fill="url(#scanlineGrad)" class="scanline-beam" />
+
+  <!-- Footer Prompt & Blinking Cursor -->
   <text x="14" y="356" class="footer-prompt">danyal@github: ~$ whoami Danyal Aqeel</text>
+  <rect x="238" y="346" width="7" height="12" class="cursor" />
 </svg>
