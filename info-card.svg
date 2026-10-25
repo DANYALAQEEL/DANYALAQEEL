@@ -1,20 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="450" height="370" viewBox="0 0 450 370">
   <defs>
     <style>
-      .bg { fill: #0d1117; rx: 10px; ry: 10px; stroke: #30363d; stroke-width: 1px; }
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; }
       .header-title { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; fill: #8b949e; }
       .text-prompt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14.5px; font-weight: 800; fill: #10b981; }
       .text-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; fill: #f0883e; }
       .text-val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; fill: #c9d1d9; }
       .text-val-bright { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 600; fill: #58a6ff; }
+      .text-highlight { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; fill: #10b981; }
       .text-sub { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; font-weight: 700; fill: #8b949e; }
-      .line { stroke: #21282d; stroke-width: 1px; }
+      .footer-prompt { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; font-weight: 700; fill: #58a6ff; }
+      .line { stroke: #21262d; stroke-width: 1px; }
     </style>
   </defs>
 
-  <rect width="450" height="370" class="bg" />
-  <rect x="0" y="0" width="450" height="34" fill="#161b22" rx="10" ry="10" />
-  <rect x="0" y="24" width="450" height="10" fill="#161b22" />
+  <rect x="0.5" y="0.5" width="449" height="369" rx="10" ry="10" class="bg" />
+  <rect x="1" y="1" width="448" height="33" fill="#161b22" rx="9.5" ry="9.5" />
+  <rect x="1" y="24" width="448" height="10" fill="#161b22" />
   <circle cx="16" cy="17" r="5" fill="#ff5f56" />
   <circle cx="32" cy="17" r="5" fill="#ffbd2e" />
   <circle cx="48" cy="17" r="5" fill="#27c93f" />
@@ -32,10 +34,11 @@
 
     <!-- Line 3: Edu -->
     <text x="0" y="78" class="text-label">Edu</text>
-    <text x="85" y="78" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;28)</text>
+    <text x="85" y="78" class="text-val">B.S. Software Engineering @ NUST SEECS (&apos;26)</text>
 
     <!-- Divider 1 -->
-    <text x="0" y="105" class="text-sub">— Stack ———————————————————————————————————</text>
+    <text x="0" y="105" class="text-sub">Stack</text>
+    <line x1="50" y1="101" x2="410" y2="101" class="line" />
 
     <!-- Stack Items -->
     <text x="0" y="128" class="text-label">Backend</text>
@@ -48,11 +51,14 @@
     <text x="85" y="172" class="text-val">Docker, CI/CD Pipelines, Git Automation</text>
 
     <!-- Divider 2 -->
-    <text x="0" y="202" class="text-sub">— Highlights —————————————————───────────────</text>
+    <text x="0" y="202" class="text-sub">Highlights</text>
+    <line x1="85" y1="198" x2="410" y2="198" class="line" />
 
     <!-- Highlights -->
-    <text x="0" y="228" class="text-val" fill="#10b981">• Decoupled Serverless Engine Architecture</text>
-    <text x="0" y="248" class="text-val" fill="#10b981">• High-Availability IR &amp; Vector Search Indexing</text>
-    <text x="0" y="270" class="text-val" fill="#10b981">• Custom C++ WebAssembly Game Engines</text>
+    <text x="0" y="226" class="text-highlight">• Decoupled Serverless Engine Architecture</text>
+    <text x="0" y="248" class="text-highlight">• High-Availability IR &amp; Vector Search Indexing</text>
+    <text x="0" y="270" class="text-highlight">• Custom C++ WebAssembly Game Engines</text>
   </g>
+
+  <text x="20" y="356" class="footer-prompt">danyal@github: ~$ uptime --status ONLINE</text>
 </svg>
