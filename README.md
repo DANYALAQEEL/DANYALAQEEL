@@ -1,13 +1,9 @@
-
-
 <!--
   README authored by DANYAL AQEEL (@DANYALAQEEL)
   Watermarked — unauthorized replication is actively tracked.
   Protected under CC BY-NC-ND 4.0
   Original: https://github.com/DANYALAQEEL/DANYALAQEEL
 -->
-
-![](https://readme-tracker-lexc.vercel.app/api/ping)
 
 <div align="center">
 
@@ -29,7 +25,7 @@
       <img src="./danyal-ascii.svg" width="410" alt="Danyal Aqeel ASCII Portrait" />
     </td>
     <td width="450" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/info-card.svg?v=2028_final_bust" width="450" alt="Danyal Aqeel Neofetch Info Card" />
+      <img src="./info-card.svg" width="450" alt="Danyal Aqeel Neofetch Info Card" />
     </td>
   </tr>
 </table>
@@ -37,43 +33,6 @@
 </div>
 
 <br>
-
-01.5 Professional Experience
-
-<div align="center">
-
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="left" bgcolor="#0d1117" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
-      <h3 align="left" style="color: #10b981; margin-top: 0; margin-bottom: 6px;">
-        ⚡ Embedded AI &amp; IoT Software Engineering Intern
-      </h3>
-      <p align="left" style="margin-top: 0; color: #c9d1d9;">
-        <b>EmbedAIoT</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>June 2026 – Present</code>
-      </p>
-      <hr style="border: 0; border-top: 1px solid #21262d; margin: 12px 0;">
-      <ul align="left" style="color: #8b949e; line-height: 1.6;">
-        <li><b>⚡ AI Energy &amp; EV Telemetry Dashboards:</b> Engineered <i>Voltix / ElsaEnergy v3</i> agritech fleet telemetry, interactive EV client tour modes, and mode-responsive appliance anomaly detectors (<code>ELSAxEV</code>, <code>Elsaenergy-Agritech</code>).</li>
-        <li><b>🤖 RAG Chatbots &amp; Laravel EMS:</b> Integrated <i>Elsa RAG Chatbot</i> with secure Laravel proxy architectures, custom EV details knowledge base, and layout widgets (<code>ROI</code>).</li>
-        <li><b>🌐 Full-Stack Web &amp; Security Systems:</b> Developed official <i>EmbedAIoT</i> web portal with Vercel email relay, OTP verification, and password reset authentication flows (<code>website-embedaiot</code>).</li>
-        <li><b>📷 Computer Vision &amp; OCR Telemetry:</b> Built <i>card-logger</i> webcam live OCR detection feed, CNIC endpoint parsers, and DirectShow camera streaming interfaces (<code>card-logger</code>).</li>
-      </ul>
-      <p align="left" style="margin-bottom: 0;">
-        <img src="https://img.shields.io/badge/Production_Repos-7_Active-0A0A0A?style=flat-square&amp;logo=git&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="7 Active Repos" />
-        &nbsp;
-        <img src="https://img.shields.io/badge/Domain-AIoT_%26_Agritech-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="AIoT Domain" />
-        &nbsp;
-        <img src="https://img.shields.io/badge/Lab-SINES_%40_NUST-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="NUST SINES" />
-      </p>
-    </td>
-  </tr>
-</table>
-
-</div>
-
-<br>
-
-
 
 </div>
 
@@ -93,9 +52,46 @@
 
 I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
 
-> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST SEECS (SE 2024 Batch / NUST '28)  
+> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST (SEECS)  
 > 🔭 **Current Focus:** Building AI-driven autonomous agents (Gemini-powered RPA), cross-repo CI/CD chess engines, and C++ games compiled to WebAssembly  
-> ⚙️ **Architecture:** Repository Dispatch Split, Event-Driven Backend Decoupling, Container Orchestration  
+> ⚙️ **Architecture:** Repository Dispatch Split, Event-Driven Backend Decoupling, Container Orchestration
+
+<br>
+
+### ⚡ 01.5 Professional Experience
+
+<div align="center">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" bgcolor="#0d1117" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+      <h3 align="left" style="color: #10b981; margin-top: 0; margin-bottom: 6px;">
+        ⚡ Embedded AI &amp; IoT Software Engineering Intern
+      </h3>
+      <p align="left" style="margin-top: 0; color: #c9d1d9;">
+        <b>EmbedAIoT</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>June 2026 – Present</code>
+      </p>
+      <hr style="border: 0; border-top: 1px solid #21262d; margin: 12px 0;">
+      <ul align="left" style="color: #8b949e; line-height: 1.6;">
+        <li><b>⚡ AI Energy &amp; EV Telemetry Dashboards:</b> Engineered <i>Voltix / ElsaEnergy v3</i> agritech fleet telemetry, interactive EV client tour modes, and mode-responsive appliance anomaly detectors (<code>ELSAxEV</code>, <code>Elsaenergy-Agritech</code>).</li>
+        <li><b>🤖 RAG Chatbots &amp; Laravel EMS:</b> Integrated <i>Elsa RAG Chatbot</i> with secure Laravel proxy architectures, custom EV details knowledge base, and layout widgets (<code>ROI</code>).</li>
+        <li><b>🌐 Full-Stack Web &amp; Security Systems:</b> Developed official <i>EmbedAIoT</i> web portal with Vercel email relay, OTP verification, and password reset authentication flows (<a href="https://github.com/DANYALAQEEL/website-embedaiot"><code>website-embedaiot</code></a>).</li>
+        <li><b>📷 Computer Vision &amp; OCR Telemetry:</b> Built <i>card-logger</i> webcam live OCR detection feed, CNIC endpoint parsers, and DirectShow camera streaming interfaces (<code>card-logger</code>).</li>
+      </ul>
+      <p align="left" style="margin-bottom: 0;">
+        <a href="https://github.com/DANYALAQEEL/website-embedaiot"><img src="https://img.shields.io/badge/Public_Repo-website--embedaiot-0A0A0A?style=flat-square&amp;logo=github&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="website-embedaiot repository" /></a>
+        &nbsp;
+        <img src="https://img.shields.io/badge/Production_Repos-7_Active-0A0A0A?style=flat-square&amp;logo=git&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="7 Active Repos" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Domain-AIoT_%26_Agritech-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="AIoT Domain" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Lab-SINES_%40_NUST-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="NUST SINES" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 <br>
 
@@ -125,10 +121,10 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0a&title_color=10B981&count_private=true&include_all_commits=true" width="49%" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0a0a0a&amp;title_color=10B981&amp;count_private=true&amp;include_all_commits=true" width="49%" />
   </a>
   <a href="https://github.com/DANYALAQEEL">
-    <img src="https://github-streak-stats.vercel.app/?user=DANYALAQEEL&theme=tokyonight&hide_border=true&background=0a0a0a&ring=10B981&fire=10B981&currStreakLabel=10B981&v=2026_streak_live" width="49%" />
+    <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&amp;theme=tokyonight&amp;hide_border=true&amp;background=0a0a0a&amp;ring=10B981&amp;fire=10B981&amp;currStreakLabel=10B981" width="49%" />
   </a>
 </div>
 
@@ -147,18 +143,12 @@ I view software as a living operational ecosystem. My work focuses on the inters
   </a>
 </div>
 
-<br>
-
-<div align="center">
-  <a href="https://github.com/DANYALAQEEL">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=DANYALAQEEL&amp;theme=tokyo-night&amp;hide_border=true&amp;bg_color=0d1117&amp;color=10B981&amp;line=10B981&amp;point=FFFFFF&amp;area=true" width="100%" alt="Danyal Aqeel High-Definition Activity Graph" />
-  </a>
-</div>
-
 ---
 
-04. Live Keystroke Telemetry
+### ⌨️ 04. Live Keystroke Telemetry
+
 > *Auto-refreshed weekly via WakaTime CI workflow — shows real coding time across all active projects.*
+
 <!--START_SECTION:waka-->
 
 ```txt
@@ -173,27 +163,31 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 ### 📡 05. High-Yield Operations
 
-> **[WEB_CHESS — C++ Chess Engine → WebAssembly](https://github.com/DANYALAQEEL/WEB_CHESS)**  
+> **WEB_CHESS — C++ Chess Engine → WebAssembly** · [Play WebAssembly Game Live ↗](https://danyalaqeel.github.io/WEB_CHESS/)  
 > A fully playable chess game written in C++ with SDL2, compiled to WebAssembly via Emscripten and deployed on GitHub Pages. Includes a start menu, interactive board, and cross-platform mobile input bridge.  
 > *C++ / SDL2 / Emscripten / WebAssembly / GitHub Actions* <img align="right" src="https://img.shields.io/badge/STATUS-DEPLOYED-10B981?style=flat-square" />
+
 <br>
 
-> **[Autonomous Supervisor Agent](https://github.com/DANYALAQEEL/Autonomous-Supervisor-Agent)**  
+> **Autonomous Supervisor Agent** `[Private Enterprise Architecture]` · [View Portfolio Architecture Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
 > AI-powered visual RPA supervisor that monitors the screen using computer vision (MSS + image hashing) and Gemini AI for intelligent UI interpretation. Features a glassmorphism-styled real-time dashboard with emergency kill-switch controls.  
 > *Python / Gemini AI / FastAPI / React / Tesseract OCR / MSS* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
 <br>
 
-> **[Carbon Sentinel](https://github.com/DANYALAQEEL/fluidhack)**  
+> **Carbon Sentinel** `[Private Repository]` · [View Portfolio Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
 > Autonomous AI-driven environmental agent executing on-chain offsets.  
 > *Flask / React / Web3 / Supabase* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
 <br>
 
-> **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)**  
+> **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
 > Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline.  
 > *Vector Search / Parallel Processing* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
 <br>
 
-> **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)**  
+> **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
 > Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic.  
 > *System Resilience / Automated Pooling* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
 
@@ -253,10 +247,11 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 | Total moves |  User  |
 | :---------: | :----- |
-| 2 | [@muhammadabdulwasay100-dotcom](https://github.com/muhammadabdulwasay100-dotcom) |
-| 1 | [@DANYALAQEEL](https://github.com/DANYALAQEEL) |
-| 1 | [@testuser](https://github.com/testuser) |
-| 1 | [DANYALAQEEL](https://github.com/ANYALAQEEL) |
+| 6 | [@muhammadabdulwasay100-dotcom](https://github.com/muhammadabdulwasay100-dotcom) |
+| 5 | [@DANYALAQEEL](https://github.com/DANYALAQEEL) |
+| 3 | [@usmanriazz](https://github.com/usmanriazz) |
+| 3 | [@SaabK](https://github.com/SaabK) |
+| 1 | [@danyalaqeel1234](https://github.com/danyalaqeel1234) |
 
 <!-- END TOP MOVES -->
 
@@ -290,7 +285,7 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 ---
 
-08. TERMINAL LOGOUT
+### 💻 08. Terminal Logout
 
 ```diff
 - connection_timeout_detected
