@@ -69,7 +69,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
         ⚡ Embedded AI &amp; IoT Software Engineering Intern
       </h3>
       <p align="left" style="margin-top: 0; color: #c9d1d9;">
-        <b>EmbedAIoT</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>June 2026 – Present</code>
+        <b>EmbedAIoT Smarter Solutions</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>10 Weeks · Completed Sep 2026</code>
       </p>
       <hr style="border: 0; border-top: 1px solid #21262d; margin: 12px 0;">
       <ul align="left" style="color: #8b949e; line-height: 1.6;">
@@ -86,7 +86,45 @@ I view software as a living operational ecosystem. My work focuses on the inters
         <img src="https://img.shields.io/badge/Domain-AIoT_%26_Agritech-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="AIoT Domain" />
         &nbsp;
         <img src="https://img.shields.io/badge/Lab-SINES_%40_NUST-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="NUST SINES" />
+        &nbsp;
+        <a href="#embedaiot-credential"><img src="https://img.shields.io/badge/Credential-CEO_Signed_%E2%9C%93-0A0A0A?style=flat-square&amp;logo=googlescholar&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="CEO-signed certificate" /></a>
       </p>
+
+      <a id="embedaiot-credential"></a>
+      <blockquote>
+        <i>"Throughout his internship, He demonstrated unwavering dedication, remarkable creativity, and a strong aptitude for design. His contributions have been invaluable for our team."</i><br>
+        — <b>Dr. Shahzad Younis</b>, CEO · EmbedAIoT Smarter Solutions
+      </blockquote>
+
+      <details>
+        <summary><b>🛡️ CREDENTIAL // Certificate of Appreciation</b> — EmbedAIoT Smarter Solutions · <code>Sep 2026</code> &nbsp;<sub>▸ click to inspect</sub></summary>
+        <br>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle" width="56%">
+              <a href="./assets/embedaiot-certificate.png">
+                <img src="./assets/embedaiot-certificate-framed.svg" width="380" alt="Certificate of Appreciation awarded to Danyal Aqeel by EmbedAIoT Smarter Solutions for a 10-week Software Engineering internship, signed by CEO Dr. Shahzad Younis, Islamabad, September 2026" />
+              </a>
+              <br><sub>🔍 click to open full resolution</sub>
+            </td>
+            <td align="left" valign="middle" width="44%">
+<pre>
+$ verify --credential embedaiot-se
+
+holder   : Danyal Aqeel
+role     : Software Engineering
+           (SE) Intern
+duration : 10 weeks
+issuer   : EmbedAIoT Smarter
+           Solutions
+signatory: Dr. Shahzad Younis, CEO
+issued   : Islamabad, Sep 2026
+status   : ✔ ISSUED · SIGNED
+</pre>
+            </td>
+          </tr>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -279,6 +317,8 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
   <img src="https://img.shields.io/badge/Academic-NUST_SEECS_Engineering-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=10B981" alt="Academic Excellence" />
   &nbsp;
   <img src="https://img.shields.io/badge/Impact-1%2C600%2B_Commits-0A0A0A?style=for-the-badge&logo=git&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Total Commits" />
+  &nbsp;
+  <a href="#embedaiot-credential"><img src="https://img.shields.io/badge/EmbedAIoT-SE_Intern_Certificate_%E2%9C%93-0A0A0A?style=for-the-badge&logo=googlescholar&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="EmbedAIoT SE Internship Certificate of Appreciation" /></a>
 </p>
 
 </div>
