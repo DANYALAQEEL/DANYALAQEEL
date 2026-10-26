@@ -78,7 +78,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
         <li><b>🌐 Full-Stack Web &amp; Security Systems:</b> Developed official <i>EmbedAIoT</i> web portal with Vercel email relay, OTP verification, and password reset authentication flows (<a href="https://github.com/DANYALAQEEL/website-embedaiot"><code>website-embedaiot</code></a>).</li>
         <li><b>📷 Computer Vision &amp; OCR Telemetry:</b> Built <i>card-logger</i> webcam live OCR detection feed, CNIC endpoint parsers, and DirectShow camera streaming interfaces (<code>card-logger</code>).</li>
       </ul>
-      <p align="left" style="margin-bottom: 0;">
+      <p align="left" style="margin-bottom: 8px;">
         <a href="https://github.com/DANYALAQEEL/website-embedaiot"><img src="https://img.shields.io/badge/Public_Repo-website--embedaiot-0A0A0A?style=flat-square&amp;logo=github&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="website-embedaiot repository" /></a>
         &nbsp;
         <img src="https://img.shields.io/badge/Production_Repos-7_Active-0A0A0A?style=flat-square&amp;logo=git&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="7 Active Repos" />
@@ -89,41 +89,20 @@ I view software as a living operational ecosystem. My work focuses on the inters
         &nbsp;
         <a href="#embedaiot-credential"><img src="https://img.shields.io/badge/Credential-CEO_Signed_%E2%9C%93-0A0A0A?style=flat-square&amp;logo=googlescholar&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="CEO-signed certificate" /></a>
       </p>
-
       <a id="embedaiot-credential"></a>
-      <blockquote>
+      <blockquote style="margin: 12px 0;">
         <i>"Throughout his internship, He demonstrated unwavering dedication, remarkable creativity, and a strong aptitude for design. His contributions have been invaluable for our team."</i><br>
         — <b>Dr. Shahzad Younis</b>, CEO · EmbedAIoT Smarter Solutions
       </blockquote>
-
       <details>
         <summary><b>🛡️ CREDENTIAL // Certificate of Appreciation</b> — EmbedAIoT Smarter Solutions · <code>Sep 2026</code> &nbsp;<sub>▸ click to inspect</sub></summary>
-        <br>
-        <table border="0" width="100%" cellspacing="0" cellpadding="0">
-          <tr>
-            <td align="center" valign="middle" width="56%">
-              <a href="./assets/embedaiot-certificate.png">
-                <img src="./assets/embedaiot-certificate-framed.svg" width="380" alt="Certificate of Appreciation awarded to Danyal Aqeel by EmbedAIoT Smarter Solutions for a 10-week Software Engineering internship, signed by CEO Dr. Shahzad Younis, Islamabad, September 2026" />
-              </a>
-              <br><sub>🔍 click to open full resolution</sub>
-            </td>
-            <td align="left" valign="middle" width="44%">
-<pre>
-$ verify --credential embedaiot-se
-
-holder   : Danyal Aqeel
-role     : Software Engineering
-           (SE) Intern
-duration : 10 weeks
-issuer   : EmbedAIoT Smarter
-           Solutions
-signatory: Dr. Shahzad Younis, CEO
-issued   : Islamabad, Sep 2026
-status   : ✔ ISSUED · SIGNED
-</pre>
-            </td>
-          </tr>
-        </table>
+        <div align="center" style="margin-top: 12px;">
+          <a href="./assets/embedaiot-certificate.png">
+            <img src="./assets/embedaiot-certificate-framed.svg" width="680" alt="Certificate of Appreciation awarded to Danyal Aqeel by EmbedAIoT Smarter Solutions for a 10-week Software Engineering internship, signed by CEO Dr. Shahzad Younis, Islamabad, September 2026" />
+          </a>
+          <br>
+          <sub>🔍 click certificate to view full-resolution original</sub>
+        </div>
       </details>
     </td>
   </tr>
