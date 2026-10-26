@@ -180,41 +180,41 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 ### 📡 05. High-Yield Operations
 
+> **[CS212 Concurrent Banking & Real-Time Fraud Engine](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine)** · [View Repository ↗](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine) · [Read Architectural Proofs (DESIGN.md) ↗](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine/blob/main/DESIGN.md)  
+> Multi-threaded financial core engineered with deterministic lock-ordering (preventing Coffman's circular wait condition), bounded priority transaction queues, sliding-window velocity fraud detectors, and hardened `ObjectInputFilter` snapshot deserialization. Backed by a verified 55-test JUnit suite running on automated GitHub Actions CI.  
+> *Java 21 / Multi-Threading / ReentrantLock / JUnit 5 / GitHub Actions CI / JavaFX* <img align="right" src="https://img.shields.io/badge/CI-55%20TESTS%20PASSING-10B981?style=flat-square&logo=githubactions&logoColor=white" />
+
+<br>
+
+> **[EmbedAIoT Official Enterprise Web Portal](https://github.com/DANYALAQEEL/website-embedaiot)** · [View Repository ↗](https://github.com/DANYALAQEEL/website-embedaiot)  
+> Production web platform for EmbedAIoT Smarter Solutions featuring automated OTP verification flows, Vercel serverless email relay, password reset cryptographic tokens, and responsive mobile-first UI.  
+> *JavaScript / Vercel Serverless / REST APIs / Production Deployment* <img align="right" src="https://img.shields.io/badge/STATUS-PRODUCTION-10B981?style=flat-square" />
+
+<br>
+
 > **WEB_CHESS — C++ Chess Engine → WebAssembly** · [Play WebAssembly Game Live ↗](https://danyalaqeel.github.io/WEB_CHESS/)  
-> A fully playable chess game written in C++ with SDL2, compiled to WebAssembly via Emscripten and deployed on GitHub Pages. Includes a start menu, interactive board, and cross-platform mobile input bridge.  
-> *C++ / SDL2 / Emscripten / WebAssembly / GitHub Actions* <img align="right" src="https://img.shields.io/badge/STATUS-DEPLOYED-10B981?style=flat-square" />
+> Playable terminal and browser chess game written in C++ with SDL2, compiled to WebAssembly via Emscripten and deployed on GitHub Pages. Features strict FIDE move validation, board state rendering, and mobile touch bridge.  
+> *C++ / SDL2 / Emscripten / WebAssembly / GitHub Pages* <img align="right" src="https://img.shields.io/badge/STATUS-DEPLOYED-10B981?style=flat-square" />
 
 <br>
 
-> **Autonomous Supervisor Agent** `[Private Enterprise Architecture]` · [View Portfolio Architecture Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
-> AI-powered visual RPA supervisor that monitors the screen using computer vision (MSS + image hashing) and Gemini AI for intelligent UI interpretation. Features a glassmorphism-styled real-time dashboard with emergency kill-switch controls.  
-> *Python / Gemini AI / FastAPI / React / Tesseract OCR / MSS* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+> **[Production Core Engine // Architectural Case Study](https://github.com/DANYALAQEEL/Production-Core-Engine)** `[Proprietary Architecture // NDA]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
+> Architectural case study, system topology, and technical specification for an enterprise backend core designed for automated database health, connection pooling, and resilient worker failover routines.  
+> *System Design / Python AsyncIO / PostgreSQL / Redis / Docker* <img align="right" src="https://img.shields.io/badge/ACCESS-NDA%20WHITE_PAPER-blue?style=flat-square" />
 
 <br>
 
-> **Carbon Sentinel** `[Private Repository]` · [View Portfolio Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
-> Autonomous AI-driven environmental agent executing on-chain offsets.  
-> *Flask / React / Web3 / Supabase* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
-
-<br>
-
-> **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
-> Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline.  
-> *Vector Search / Parallel Processing* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
-
-<br>
-
-> **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
-> Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic.  
-> *System Resilience / Automated Pooling* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+> **[Search Engine Elite // Retrieval Specification](https://github.com/DANYALAQEEL/Search-Engine-Elite)** `[Proprietary Architecture // NDA]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
+> Technical documentation and pipeline topology for a hybrid scientific discovery search engine combining BM25 sparse lexical matching with dense vector embeddings across 117K+ arXiv publications.  
+> *Hybrid Search / Information Retrieval / BM25 / Vector Indexing* <img align="right" src="https://img.shields.io/badge/ACCESS-NDA%20WHITE_PAPER-blue?style=flat-square" />
 
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/IR_Query_Latency-<50ms-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/Uptime_SLA-99.9%25-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/System_Resilience-Self--Healing-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/Architecture-Infinite_Scaling-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Concurrency-Lock_Ordering_Proven-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/CI%2FCD-Automated_55_Tests-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Security-ObjectInputFilter_Hardened-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Verified_Experience-EmbedAIoT_SE_Intern-0A0A0A?style=for-the-badge&color=10B981" />
 </p>
 
 <br>
