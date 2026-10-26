@@ -121,7 +121,7 @@ I view software as a living operational ecosystem. My work focuses on the inters
 
 <div align="center">
   <a href="https://github.com/DANYALAQEEL">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=DANYALAQEEL&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0a0a0a&amp;title_color=10B981&amp;count_private=true&amp;include_all_commits=true" width="49%" />
+    <img src="./stats.svg" width="49%" alt="Danyal Aqeel GitHub Stats" />
   </a>
   <a href="https://github.com/DANYALAQEEL">
     <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&amp;theme=tokyonight&amp;hide_border=true&amp;background=0a0a0a&amp;ring=10B981&amp;fire=10B981&amp;currStreakLabel=10B981" width="49%" />
