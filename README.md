@@ -181,6 +181,7 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 ### 📡 05. High-Yield Operations
 
 > **[CS212 Concurrent Banking & Real-Time Fraud Engine](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine)** · [View Repository ↗](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine) · [Read Architectural Proofs (DESIGN.md) ↗](https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine/blob/main/DESIGN.md)  
+> *Collaborative Systems Project (NUST SEECS) — Danyal Aqeel (Concurrency & Lock Architecture Lead), Muhammad Arslan, Hamza Zahoor.*  
 > Multi-threaded financial core engineered with deterministic lock-ordering (preventing Coffman's circular wait condition), bounded priority transaction queues, sliding-window velocity fraud detectors, and hardened `ObjectInputFilter` snapshot deserialization. Backed by a verified 55-test JUnit suite running on automated GitHub Actions CI.  
 > *Java 21 / Multi-Threading / ReentrantLock / JUnit 5 / GitHub Actions CI / JavaFX* <img align="right" src="https://img.shields.io/badge/CI-55%20TESTS%20PASSING-10B981?style=flat-square&logo=githubactions&logoColor=white" />
 
@@ -198,22 +199,22 @@ Python   10 mins               ░░░░░░░░░░░░░░░░�
 
 <br>
 
-> **[Production Core Engine // Architectural Case Study](https://github.com/DANYALAQEEL/Production-Core-Engine)** `[Proprietary Architecture // NDA]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
+> **[Production Core Engine // Architectural Case Study](https://github.com/DANYALAQEEL/Production-Core-Engine)** `[Architectural Design Study & Pipeline Topology (Private Core)]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
 > Architectural case study, system topology, and technical specification for an enterprise backend core designed for automated database health, connection pooling, and resilient worker failover routines.  
-> *System Design / Python AsyncIO / PostgreSQL / Redis / Docker* <img align="right" src="https://img.shields.io/badge/ACCESS-NDA%20WHITE_PAPER-blue?style=flat-square" />
+> *System Design / Python AsyncIO / PostgreSQL / Redis / Docker* <img align="right" src="https://img.shields.io/badge/SPECIFICATION-SYSTEM%20DESIGN-blue?style=flat-square" />
 
 <br>
 
-> **[Search Engine Elite // Retrieval Specification](https://github.com/DANYALAQEEL/Search-Engine-Elite)** `[Proprietary Architecture // NDA]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
+> **[Search Engine Elite // Retrieval Specification](https://github.com/DANYALAQEEL/Search-Engine-Elite)** `[Architectural Design Study & Pipeline Topology (Private Core)]` · [Read Whitepaper ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
 > Technical documentation and pipeline topology for a hybrid scientific discovery search engine combining BM25 sparse lexical matching with dense vector embeddings across 117K+ arXiv publications.  
-> *Hybrid Search / Information Retrieval / BM25 / Vector Indexing* <img align="right" src="https://img.shields.io/badge/ACCESS-NDA%20WHITE_PAPER-blue?style=flat-square" />
+> *Hybrid Search / Information Retrieval / BM25 / Vector Indexing* <img align="right" src="https://img.shields.io/badge/SPECIFICATION-SYSTEM%20DESIGN-blue?style=flat-square" />
 
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Concurrency-Lock_Ordering_Proven-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/CI%2FCD-Automated_55_Tests-0A0A0A?style=for-the-badge&color=10B981" />
-  <img src="https://img.shields.io/badge/Security-ObjectInputFilter_Hardened-0A0A0A?style=for-the-badge&color=10B981" />
+  <a href="https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine/blob/main/DESIGN.md#1-system-concurrency-architecture--lock-ordering-invariant"><img src="https://img.shields.io/badge/Concurrency-Lock_Ordering_Proven-0A0A0A?style=for-the-badge&color=10B981" /></a>
+  <a href="https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine/actions"><img src="https://img.shields.io/badge/CI%2FCD-Automated_55_Tests-0A0A0A?style=for-the-badge&color=10B981" /></a>
+  <a href="https://github.com/DANYALAQEEL/CS212-Banking-Fraud-Engine/blob/main/DESIGN.md#4-security-architecture-snapshot-persistence"><img src="https://img.shields.io/badge/Security-ObjectInputFilter_Hardened-0A0A0A?style=for-the-badge&color=10B981" /></a>
   <img src="https://img.shields.io/badge/Verified_Experience-EmbedAIoT_SE_Intern-0A0A0A?style=for-the-badge&color=10B981" />
 </p>
 
