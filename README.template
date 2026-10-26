@@ -1,47 +1,372 @@
-# # DANYA AL-AQEEL | Elite Backend Architect
-> Bridging the gap between complex infrastructure and high-performance algorithms.
+<!--
+  README authored by DANYAL AQEEL (@DANYALAQEEL)
+  Watermarked — unauthorized replication is actively tracked.
+  Protected under CC BY-NC-ND 4.0
+  Original: https://github.com/DANYALAQEEL/DANYALAQEEL
+-->
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=32&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=800&height=80&lines=Danyal+Aqeel;Backend+%26+Search+Architect;System+Resilience+Engineer;Building+Scalable+Intelligence" alt="Animated Terminal Typetext" />
+
+<p align="center">
+  <a href="https://danyalaqeelportfolio.vercel.app/"><img src="https://img.shields.io/badge/Live_Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0A0A0A&color=10B981" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/danyal-aqeel-853431404/"><img src="https://img.shields.io/badge/LinkedIn-Node_Connected-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=0A0A0A&color=10B981" alt="LinkedIn"/></a>
+  <a href="mailto:raqeel.bese24seecs@seecs.edu.pk"><img src="https://img.shields.io/badge/Email-Comm_Link-0A0A0A?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0A0A0A&color=10B981" alt="Email"/></a>
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=DANYALAQEEL&color=10B981&style=flat-square&label=PROFILE+HITS" alt="Visitors" />
+</p>
+
+<div align="center">
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="410" align="center" valign="top">
+      <img src="./danyal-ascii.svg" width="410" alt="Danyal Aqeel ASCII Portrait" />
+    </td>
+    <td width="450" align="center" valign="top">
+      <img src="./info-card.svg" width="450" alt="Danyal Aqeel Neofetch Info Card" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br>
+
+</div>
+
+<br>
+
+```diff
++ [NODE_INIT] Booting backend consciousness matrix...
++ [IR_CORE] Loading Information Retrieval engines...
++ [SEC_MODULE] Resilience protocols: ACTIVE
++ [FULL_STACK] System orchestration: ONLINE
++ [STATUS] All nodes operational — ELITE MODE ENABLED
+```
+
+<br>
+
+### 💡 01. The Mission Logic
+
+I view software as a living operational ecosystem. My work focuses on the intersection of **Information Retrieval** and **System Resilience**—bridging the gap between raw data and actionable intelligence through optimized indexing and self-healing backend nodes. I engineer the underlying pipes that make systems fast, stable, and intelligent at scale.
+
+> 🎓 **Current Vector:** Software Engineering Undergraduate at NUST (SEECS)  
+> 🔭 **Current Focus:** Building AI-driven autonomous agents (Gemini-powered RPA), cross-repo CI/CD chess engines, and C++ games compiled to WebAssembly  
+> ⚙️ **Architecture:** Repository Dispatch Split, Event-Driven Backend Decoupling, Container Orchestration
+
+<br>
+
+### ⚡ 01.5 Professional Experience
+
+<div align="center">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" bgcolor="#0d1117" style="padding: 16px; border: 1px solid #30363d; border-radius: 8px;">
+      <h3 align="left" style="color: #10b981; margin-top: 0; margin-bottom: 6px;">
+        ⚡ Embedded AI &amp; IoT Software Engineering Intern
+      </h3>
+      <p align="left" style="margin-top: 0; color: #c9d1d9;">
+        <b>EmbedAIoT Smarter Solutions</b> — <i>Agritec Lab, SINES @ NUST University</i> &nbsp;|&nbsp; <code>10 Weeks · Completed Sep 2026</code>
+      </p>
+      <hr style="border: 0; border-top: 1px solid #21262d; margin: 12px 0;">
+      <ul align="left" style="color: #8b949e; line-height: 1.6;">
+        <li><b>⚡ AI Energy &amp; EV Telemetry Dashboards:</b> Engineered <i>Voltix / ElsaEnergy v3</i> agritech fleet telemetry, interactive EV client tour modes, and mode-responsive appliance anomaly detectors (<code>ELSAxEV</code>, <code>Elsaenergy-Agritech</code>).</li>
+        <li><b>🤖 RAG Chatbots &amp; Laravel EMS:</b> Integrated <i>Elsa RAG Chatbot</i> with secure Laravel proxy architectures, custom EV details knowledge base, and layout widgets (<code>ROI</code>).</li>
+        <li><b>🌐 Full-Stack Web &amp; Security Systems:</b> Developed official <i>EmbedAIoT</i> web portal with Vercel email relay, OTP verification, and password reset authentication flows (<a href="https://github.com/DANYALAQEEL/website-embedaiot"><code>website-embedaiot</code></a>).</li>
+        <li><b>📷 Computer Vision &amp; OCR Telemetry:</b> Built <i>card-logger</i> webcam live OCR detection feed, CNIC endpoint parsers, and DirectShow camera streaming interfaces (<code>card-logger</code>).</li>
+      </ul>
+      <p align="left" style="margin-bottom: 0;">
+        <a href="https://github.com/DANYALAQEEL/website-embedaiot"><img src="https://img.shields.io/badge/Public_Repo-website--embedaiot-0A0A0A?style=flat-square&amp;logo=github&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="website-embedaiot repository" /></a>
+        &nbsp;
+        <img src="https://img.shields.io/badge/Production_Repos-7_Active-0A0A0A?style=flat-square&amp;logo=git&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="7 Active Repos" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Domain-AIoT_%26_Agritech-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="AIoT Domain" />
+        &nbsp;
+        <img src="https://img.shields.io/badge/Lab-SINES_%40_NUST-0A0A0A?style=flat-square&amp;labelColor=0A0A0A&amp;color=10B981" alt="NUST SINES" />
+        &nbsp;
+        <a href="#embedaiot-credential"><img src="https://img.shields.io/badge/Credential-CEO_Signed_%E2%9C%93-0A0A0A?style=flat-square&amp;logo=googlescholar&amp;logoColor=10B981&amp;labelColor=0A0A0A&amp;color=10B981" alt="CEO-signed certificate" /></a>
+      </p>
+
+      <a id="embedaiot-credential"></a>
+      <blockquote>
+        <i>"Throughout his internship, He demonstrated unwavering dedication, remarkable creativity, and a strong aptitude for design. His contributions have been invaluable for our team."</i><br>
+        — <b>Dr. Shahzad Younis</b>, CEO · EmbedAIoT Smarter Solutions
+      </blockquote>
+
+      <details>
+        <summary><b>🛡️ CREDENTIAL // Certificate of Appreciation</b> — EmbedAIoT Smarter Solutions · <code>Sep 2026</code> &nbsp;<sub>▸ click to inspect</sub></summary>
+        <br>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle" width="56%">
+              <a href="./assets/embedaiot-certificate.png">
+                <img src="./assets/embedaiot-certificate-framed.svg" width="380" alt="Certificate of Appreciation awarded to Danyal Aqeel by EmbedAIoT Smarter Solutions for a 10-week Software Engineering internship, signed by CEO Dr. Shahzad Younis, Islamabad, September 2026" />
+              </a>
+              <br><sub>🔍 click to open full resolution</sub>
+            </td>
+            <td align="left" valign="middle" width="44%">
+<pre>
+$ verify --credential embedaiot-se
+
+holder   : Danyal Aqeel
+role     : Software Engineering
+           (SE) Intern
+duration : 10 weeks
+issuer   : EmbedAIoT Smarter
+           Solutions
+signatory: Dr. Shahzad Younis, CEO
+issued   : Islamabad, Sep 2026
+status   : ✔ ISSUED · SIGNED
+</pre>
+            </td>
+          </tr>
+        </table>
+      </details>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br>
+
+### 🧠 02. Core Competencies & Arsenal
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Core_Backend-FastAPI_|_Flask_|_Node.js-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Search_&_IR-Elasticsearch-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Frontend-React_|_TypeScript_|_TailwindCSS_|_Vite-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Database-MySQL-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Infrastructure-Docker_|_Vercel_|_HuggingFace-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Graphics_/_Game_Dev-Raylib_|_SFML-0A0A0A?style=for-the-badge&color=10B981" />
+  <br>
+  <img src="https://img.shields.io/badge/Tools-LaTeX_|_Canva_|_Git-0A0A0A?style=for-the-badge&color=6B7280" />
+</p>
+<p align="center">
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,cpp,java,mysql,fastapi,flask,react,docker,bash,git&perline=10" alt="Tech Stack" />
+</a>
+</p>
+
+<br>
+
+### 📊 03. Global Telemetry
+
+<div align="center">
+  <a href="https://github.com/DANYALAQEEL">
+    <img src="./stats.svg" width="49%" alt="Danyal Aqeel GitHub Stats" />
+  </a>
+  <a href="https://github.com/DANYALAQEEL">
+    <img src="https://streak-stats.demolab.com/?user=DANYALAQEEL&amp;theme=tokyonight&amp;hide_border=true&amp;background=0a0a0a&amp;ring=10B981&amp;fire=10B981&amp;currStreakLabel=10B981" width="49%" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/output/github-contribution-grid-snake-dark.svg?v=1" alt="GitHub Contribution Snake" width="100%" />
+</div>
+
+<br>
+
+<div align="center">
+  <p align="center"><b>🏙️ OFFICIAL 3D ISOMETRIC CONTRIBUTION CITY LANDSCAPE</b></p>
+  <a href="https://github.com/DANYALAQEEL">
+    <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/profile-3d-contrib/profile-night-green.svg" width="100%" alt="Official 3D Isometric Contribution City Landscape" />
+  </a>
+</div>
 
 ---
 
-### 01. Tactical Overview
-Ex-Google DeepMind infrastructure analyst specializing in scalable backend systems and high-concurrency architecture. I build systems that don't just work - they perform under extreme load.
+### ⌨️ 04. Live Keystroke Telemetry
 
-- **Current Focus:** Distributed systems and AI-driven automation.
-- **Weapon of Choice:** Go, Python, Rust, and C++.
-- **Motto:** "Efficiency is not an option; it's a requirement."
+> *Auto-refreshed weekly via WakaTime CI workflow — shows real coding time across all active projects.*
 
----
+<!--START_SECTION:waka-->
 
-### 02. Tech Stack and Arsenal
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | Python, Go, Rust, C++, SQL |
-| **Backend** | Django, Flask, FastAPI, gRPC, Node.js |
-| **Infrastructure** | Docker, Kubernetes, Terraform, AWS, GCP |
-| **Databases** | PostgreSQL, Redis, MongoDB, Cassandra |
+```txt
+Total Time: 10 mins
 
----
+Python   10 mins               ░░░░░░░░░░░░░░░░░░░░░░░░░   100.00 %
+```
 
-### 03. Global Impact Metrics (Current)
-![Danya's GitHub Stats](./stats.svg"center">
+<!--END_SECTION:waka-->
 
-It's **<!-- BEGIN TURN -->?<!-- END TURN -->**'s turn!
+<br>
+
+### 📡 05. High-Yield Operations
+
+> **WEB_CHESS — C++ Chess Engine → WebAssembly** · [Play WebAssembly Game Live ↗](https://danyalaqeel.github.io/WEB_CHESS/)  
+> A fully playable chess game written in C++ with SDL2, compiled to WebAssembly via Emscripten and deployed on GitHub Pages. Includes a start menu, interactive board, and cross-platform mobile input bridge.  
+> *C++ / SDL2 / Emscripten / WebAssembly / GitHub Actions* <img align="right" src="https://img.shields.io/badge/STATUS-DEPLOYED-10B981?style=flat-square" />
+
+<br>
+
+> **Autonomous Supervisor Agent** `[Private Enterprise Architecture]` · [View Portfolio Architecture Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
+> AI-powered visual RPA supervisor that monitors the screen using computer vision (MSS + image hashing) and Gemini AI for intelligent UI interpretation. Features a glassmorphism-styled real-time dashboard with emergency kill-switch controls.  
+> *Python / Gemini AI / FastAPI / React / Tesseract OCR / MSS* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
+<br>
+
+> **Carbon Sentinel** `[Private Repository]` · [View Portfolio Showcase ↗](https://danyalaqeelportfolio.vercel.app/)  
+> Autonomous AI-driven environmental agent executing on-chain offsets.  
+> *Flask / React / Web3 / Supabase* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
+<br>
+
+> **[Search Engine Elite](https://github.com/DANYALAQEEL/Search-Engine-Elite)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Search-Engine-Elite)  
+> Performance IR ecosystem routing 117K+ docs via a 500+ deployment pipeline.  
+> *Vector Search / Parallel Processing* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
+<br>
+
+> **[Production Core Engine](https://github.com/DANYALAQEEL/Production-Core-Engine)** · [View Public Repository ↗](https://github.com/DANYALAQEEL/Production-Core-Engine)  
+> Backend orchestrator engineered for 99.9% uptime SLA using self-healing node logic.  
+> *System Resilience / Automated Pooling* <img align="right" src="https://img.shields.io/badge/STATUS-OPERATIONAL-10B981?style=flat-square" />
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/IR_Query_Latency-<50ms-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Uptime_SLA-99.9%25-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/System_Resilience-Self--Healing-0A0A0A?style=for-the-badge&color=10B981" />
+  <img src="https://img.shields.io/badge/Architecture-Infinite_Scaling-0A0A0A?style=for-the-badge&color=10B981" />
+</p>
+
+<br>
+
+### ♟️ 06. Tactical Execution (Terminal Chess Node)
+> `ENCRYPTED TRANSMISSION DETECTED... INITIATING CHESS SEQUENCE...` <br>
+> Visitors from around the world can play a move by clicking a link in the **NEXT MOVE** table below. Let's see if the internet can outplay my logic!
 
 <!-- BEGIN CHESS BOARD -->
+
+|   | A | B | C | D | E | F | G | H |   |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **8** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/rook.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/knight.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/bishop.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/queen.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/king.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/bishop.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/knight.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/rook.svg" width=50px> | **8** |
+| **7** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | **7** |
+| **6** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | **6** |
+| **5** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/black/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | **5** |
+| **4** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | **4** |
+| **3** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | **3** |
+| **2** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/blank.png" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/pawn.svg" width=50px> | **2** |
+| **1** | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/rook.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/knight.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/bishop.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/queen.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/king.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/bishop.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/knight.svg" width=50px> | <img src="https://raw.githubusercontent.com/DANYALAQEEL/DANYALAQEEL/main/img/white/rook.svg" width=50px> | **1** |
+|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |   |
+
 <!-- END CHESS BOARD -->
 
-**Last 10 moves:**
+### NEXT MOVE
 <!-- BEGIN MOVES LIST -->
+
+|  FROM  | TO (Just click a link!) |
+| :----: | :---------------------- |
+| **A2** | [A3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+A2+to+A3), [A4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+A2+to+A4) |
+| **B1** | [A3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+B1+to+A3), [C3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+B1+to+C3) |
+| **B2** | [B3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+B2+to+B3), [B4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+B2+to+B4) |
+| **C2** | [C3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+C2+to+C3), [C4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+C2+to+C4) |
+| **D1** | [E2](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D1+to+E2), [F3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D1+to+F3), [G4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D1+to+G4), [H5](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D1+to+H5) |
+| **D2** | [D3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D2+to+D3), [D4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+D2+to+D4) |
+| **E1** | [E2](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+E1+to+E2) |
+| **F1** | [A6](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F1+to+A6), [B5](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F1+to+B5), [C4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F1+to+C4), [D3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F1+to+D3), [E2](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F1+to+E2) |
+| **F2** | [F3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F2+to+F3), [F4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+F2+to+F4) |
+| **G1** | [E2](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+G1+to+E2), [F3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+G1+to+F3), [H3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+G1+to+H3) |
+| **G2** | [G3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+G2+to+G3), [G4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+G2+to+G4) |
+| **H2** | [H3](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+H2+to+H3), [H4](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?body=Please+do+not+change+the+title.+Just+click+%22Submit+new+issue%22.+You+don%27t+need+to+do+anything+else+%3AD&title=Chess%3A+Move+H2+to+H4) |
+
 <!-- END MOVES LIST -->
+
+### Top Players
+<!-- BEGIN TOP MOVES -->
+
+| Total moves |  User  |
+| :---------: | :----- |
+| 6 | [@muhammadabdulwasay100-dotcom](https://github.com/muhammadabdulwasay100-dotcom) |
+| 5 | [@DANYALAQEEL](https://github.com/DANYALAQEEL) |
+| 3 | [@usmanriazz](https://github.com/usmanriazz) |
+| 3 | [@SaabK](https://github.com/SaabK) |
+| 1 | [@danyalaqeel1234](https://github.com/danyalaqeel1234) |
+
+<!-- END TOP MOVES -->
+
+> [▶ Start a new game](https://github.com/DANYALAQEEL/DANYALAQEEL/issues/new?title=Chess%3A+Start+new+game&body=Just+click+Submit)
+
+<br>
+
+---
+
+### 🏆 07. Achievement Matrix
+
+<div align="center">
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub-Pull_Shark-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Pull Shark" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-Pair_Extraordinaire-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Pair Extraordinaire" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-Quickdraw-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Quickdraw" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/GitHub-YOLO-0A0A0A?style=for-the-badge&logo=github&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="YOLO" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Academic-NUST_SEECS_Engineering-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=10B981" alt="Academic Excellence" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Impact-1%2C600%2B_Commits-0A0A0A?style=for-the-badge&logo=git&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="Total Commits" />
+  &nbsp;
+  <a href="#embedaiot-credential"><img src="https://img.shields.io/badge/EmbedAIoT-SE_Intern_Certificate_%E2%9C%93-0A0A0A?style=for-the-badge&logo=googlescholar&logoColor=10B981&labelColor=0A0A0A&color=10B981" alt="EmbedAIoT SE Internship Certificate of Appreciation" /></a>
+</p>
 
 </div>
 
 ---
 
-### 06. Uplink Establishment
-- **Site:** [danya.io](https://danya.io)
-- **LinkedIn:** [/in/danya-alaqeel](https://linkedin.com/in/danya-alaqeel)
-- **Twitter:** [@danya_arch](https://twitter.com/danya_arch)
+### 💻 08. Terminal Logout
 
----
-"The best code is the code that never had to be written." - D.A.
+```diff
+- connection_timeout_detected
+! root@matrix:~$ current_focus
++ [✓] Optimizing Vector Search Pipelines
++ [✓] Autonomous AI Telemetry
++ [✓] High-Availability Backend Orchestration
+# Treating infrastructure as a resilient, dynamic ecosystem.
+! root@matrix:~$ logout
+- Connection to node closed.
+```
+
+<br>
+
+<div align="center">
+
+```text
+╔═══════════════════════════════════════════════════════════════════════╗
+║                                                                       ║
+║   "A resilient system isn't one that never fails; it is one           ║
+║    that heals faster than anyone can notice."                         ║
+║                                                                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+```
+
+<br>
+
+⭐ **If this matrix inspired you, star a repository — it helps more than you know!** ⭐
+
+![Last Commit](https://img.shields.io/github/last-commit/DANYALAQEEL/DANYALAQEEL?label=Last+Updated&color=10B981&style=flat-square) | Built with 💚 and `<logic>`
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<sub>© 2026 DANYALAQEEL — Design & content originally crafted by me. Replication without credit violates the license.</sub>
+
+<br>
+
+### ░▒▓ END TRANSMISSION ▓▒░
+
+![](https://readme-tracker-lexc.vercel.app/api/ping)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=10B981&height=120&section=footer" width="100%" alt="Footer Wave" />
+
+</div>
